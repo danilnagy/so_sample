@@ -1,5 +1,7 @@
 # SoSample: the PO-33 K.O! backup format, decoded
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/127e3ad5-ade1-4d9f-9103-4d29c1033b31/deploy-status)](https://app.netlify.com/projects/sosample/deploys)
+
 The Teenage Engineering PO-33 K.O! has no USB data port. Its whole state (samples, kits,
 patterns, parameter locks, effects, song chain, tempo and swing) travels as a stereo
 audio signal through the 3.5 mm jack: the device plays a *backup* and listens for a

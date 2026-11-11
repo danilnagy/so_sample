@@ -125,6 +125,7 @@ predictions are registered before the session and failed ones are kept. See
 - [Hardware sessions](docs/hardware-sessions.md) and [edit plans](docs/edit-plans.md).
 - [Status log](docs/status-log.md): the chronological record.
 - [Prior art](docs/prior-art.md): related projects and how this one compares.
+- [Follow-ups](docs/follow-ups.md): open questions and ideas for later.
 - [DEVELOPMENT.md](DEVELOPMENT.md): the original implementation brief (historical).
 
 In the research docs, "the user" is the person operating the device during a session.

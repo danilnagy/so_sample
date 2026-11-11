@@ -30,3 +30,4 @@ cable-swap prompts in `po33 hw run`, never by software echo removal or mixer mod
 - `docs/release.md`: how the local-only web app is built, hosted and audited for release.
 - `docs/prior-art.md`: related projects, how this one compares, and open format questions.
 - `docs/sound-synthesis.md`: how every bundled sound is synthesized, recipe by recipe.
+- `docs/follow-ups.md`: the open questions and optional work left after the first release.

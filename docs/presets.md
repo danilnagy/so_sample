@@ -46,11 +46,11 @@ and the Synth 808 folder holds every 808 hit in use, shared by all.
 | Rainy Rhodes | lofi | F major, ii V I vi, melody section, IV turnaround | 808, 707, 626, 808 Percussion | 84, swing 7 | 28 | 174 |
 | Night Walk | lofi | D minor, half-time i iv VI V, melody section | 909, 909, 808, 808 Percussion | 76, swing 9 | 20 | 138 |
 | Corner Store | soul boom bap | A minor, Am9 Dm9 Fmaj7 E7, organ chops and brass stabs | 808, 909, 707, 626 | 92, swing 9 | 20 | 158 |
-| Dusty Crates | soul boom bap | C minor, Cm9 Fm9 Abmaj7 G7, same bones, darker | 808, 707, 606, 626 | 88, swing 10 | 20 | 155 |
+| Afterglow | italo disco | A minor, Am F C G; a sustained pad gated by note lengths, an octave bass of one-step notes, a staccato arpeggio with held phrase ends | 707, 808, 707 | 118 | 24 | 107 |
 | Warehouse Jack | Chicago house | A minor, piano stabs over an offbeat bass, breakdown | 909, 909, 909, 626 | 122, swing 2 | 28 | 83 |
 | Motor City | Detroit house | D minor, string pads over a sixteenth bassline, bleep hook | 909, 808, 909, 808 Percussion | 124 | 20 | 119 |
-| Late Shift | trap | F minor, half time, an 808 played across the keys with pitch-lock glides, hat rolls | 808 on all four | 140 | 24 | 61 |
-| Rinse Out | jungle | G minor, a two-step break, a reese bass whose filter lock opens over the intro | 909, 909, 606, 909 | 170 | 20 | 81 |
+| Late Shift | trap | F minor, half time, an 808 played across the keys with pitch-lock glides, hat rolls retriggered twice and three times | 808 on all four | 140 | 24 | 61 |
+| Rinse Out | jungle | G minor, a two-step break with a dragged snare in the fill, a reese bass whose filter lock opens over the intro | 909, 909, 606, 909 | 170 | 20 | 81 |
 | Echo Chamber | dub | A minor, one drop, offbeat skanks, a melodica, retrigger and reverse effects on the dub-out bars | 808, 808, 808, 626 | 75, swing 4 | 24 | 84 |
 | Concrete | techno | A minor, four to the floor, a stab whose filter sweeps across each bar at high resonance | 909 on all four | 130 | 28 | 41 |
 
@@ -61,8 +61,8 @@ stores four kits; one playing a single machine on all four sounds stores it once
 keys it plays (a 150 ms trap kick, a 200 ms jungle crash) keep the voices free, which is
 why a project may play a hit shorter than its kit does. Between them the ten cover the
 device's range: tempos from 75 to 170, swing from none to 10, parameter locks on pitch,
-volume, filter and resonance, punch-in effects, a drum sample used as a melodic
-instrument, and kits after six TR-series machines.
+volume, filter and resonance, punch-in effects, drum retriggers, melodic note lengths, a
+drum sample used as a melodic instrument, and kits after six TR-series machines.
 
 ## Sounds
 
@@ -72,7 +72,7 @@ Every pack uses the same layout, so a pattern from one plays sensibly on another
 | --- | --- | --- |
 | 1, 2, 3 (and 6) | Chord samples, one voicing per chord type, played at the keys that transpose it to each chord of the progression | Keys (Rhodes, organ, piano), Pads (strings), Stabs (brass) |
 | 4 | Bass: sub, sawtooth, reese or the 808 | Bass |
-| 5 | Lead: Rhodes, bleep, bell or melodica | Leads |
+| 5 | Lead: Rhodes, bleep, bell, melodica or square lead | Leads |
 | 11 | A standard kit, playing its kicks | the machine's folder |
 | 12 | A standard kit, playing its snare, rim and clap | the machine's folder |
 | 13 | A standard kit, playing its hats, shaker or ride | the machine's folder |
@@ -107,7 +107,8 @@ the kits alone, synthesized or from a pack.
 Each pack is scheduled through the app's own playback engine as it is written and the
 build fails rather than write one that would drop a note, and each is compiled to confirm
 it fits. The kits are defined in `scripts/kit-tools.ts` and voiced in `scripts/drum-synth.ts`; the song specs live in
-`scripts/make-lofi-packs.ts`, `scripts/make-genre-packs.ts` and `scripts/make-more-packs.ts`;
+`scripts/make-lofi-packs.ts`, `scripts/make-genre-packs.ts`, `scripts/make-more-packs.ts` and
+`scripts/make-italo-pack.ts`;
 `scripts/pack-tools.ts` holds the instruments and the checks; `scripts/build-presets.ts`
 writes the set and the index.
 

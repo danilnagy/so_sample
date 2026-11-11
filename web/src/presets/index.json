@@ -86,15 +86,15 @@
       "bytes": 510412
     },
     {
-      "slug": "dusty-crates",
-      "name": "Dusty Crates",
-      "file": "dusty-crates.sosample.zip",
-      "style": "soul boom bap",
-      "tempo": 88,
-      "swing": 10,
-      "bars": 20,
-      "pages": 155,
-      "bytes": 503754
+      "slug": "afterglow",
+      "name": "Afterglow",
+      "file": "afterglow.sosample.zip",
+      "style": "italo disco",
+      "tempo": 118,
+      "swing": 0,
+      "bars": 24,
+      "pages": 107,
+      "bytes": 304812
     },
     {
       "slug": "warehouse-jack",
@@ -127,7 +127,7 @@
       "swing": 0,
       "bars": 24,
       "pages": 61,
-      "bytes": 172615
+      "bytes": 172642
     },
     {
       "slug": "rinse-out",
@@ -138,7 +138,7 @@
       "swing": 0,
       "bars": 20,
       "pages": 81,
-      "bytes": 248010
+      "bytes": 248030
     },
     {
       "slug": "echo-chamber",

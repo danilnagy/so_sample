@@ -1,0 +1,418 @@
+{
+  "analysis_version": "aux-nibble-3-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "aux-nibble-003",
+  "expected_artifact_source": "Python decode of the TypeScript restore.wav",
+  "packets_json_sha256": "618941e8d92d34ce92cb253f3b76058e46586ea2063a46a3893a669e80f555f1",
+  "project_json_sha256": "3eca01e3cdb0d946615480dbbd7b538d0844aa575c0a97f03d119e94d04e3543",
+  "expected_body_sha256": "7180184111a30d27e1008451f62e1119896e3b088c238168a8afaf27cd3f4255",
+  "edited_artifact_sha256": "f083d6da9fc20e857960b270796149ebdbdebdbd83507dfedd1ad71fd49423aa",
+  "restore_wav_sha256": "816dff15d0c9578c3e0501635bfc92c8874155cc208c6a0dbfb04270ad3f5e89",
+  "decoded_restore_carries_typescript_packets": true,
+  "tempo": 120,
+  "swing": 12,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "drum_probes": [
+    {
+      "pattern": 1,
+      "step": 1,
+      "sound": 9,
+      "key": 1,
+      "nibble": 2
+    },
+    {
+      "pattern": 1,
+      "step": 6,
+      "sound": 9,
+      "key": 1,
+      "nibble": 2
+    },
+    {
+      "pattern": 1,
+      "step": 9,
+      "sound": 9,
+      "key": 1,
+      "nibble": 3
+    },
+    {
+      "pattern": 1,
+      "step": 14,
+      "sound": 9,
+      "key": 1,
+      "nibble": 3
+    },
+    {
+      "pattern": 2,
+      "step": 1,
+      "sound": 9,
+      "key": 1,
+      "nibble": 4
+    },
+    {
+      "pattern": 2,
+      "step": 6,
+      "sound": 9,
+      "key": 1,
+      "nibble": 4
+    },
+    {
+      "pattern": 2,
+      "step": 9,
+      "sound": 9,
+      "key": 1,
+      "nibble": 6
+    },
+    {
+      "pattern": 2,
+      "step": 14,
+      "sound": 9,
+      "key": 1,
+      "nibble": 6
+    },
+    {
+      "pattern": 3,
+      "step": 1,
+      "sound": 9,
+      "key": 1,
+      "nibble": 8
+    },
+    {
+      "pattern": 3,
+      "step": 6,
+      "sound": 9,
+      "key": 1,
+      "nibble": 8
+    }
+  ],
+  "melodic_probes": [
+    {
+      "pattern": 4,
+      "step": 1,
+      "sound": 1,
+      "key": 5,
+      "nibble": 1
+    },
+    {
+      "pattern": 4,
+      "step": 2,
+      "sound": 2,
+      "key": 5,
+      "nibble": 1
+    },
+    {
+      "pattern": 5,
+      "step": 1,
+      "sound": 1,
+      "key": 5,
+      "nibble": 2
+    },
+    {
+      "pattern": 5,
+      "step": 2,
+      "sound": 2,
+      "key": 5,
+      "nibble": 2
+    },
+    {
+      "pattern": 6,
+      "step": 1,
+      "sound": 1,
+      "key": 5,
+      "nibble": 3
+    },
+    {
+      "pattern": 6,
+      "step": 2,
+      "sound": 2,
+      "key": 5,
+      "nibble": 3
+    },
+    {
+      "pattern": 7,
+      "step": 1,
+      "sound": 1,
+      "key": 5,
+      "nibble": 4
+    },
+    {
+      "pattern": 7,
+      "step": 2,
+      "sound": 2,
+      "key": 5,
+      "nibble": 4
+    }
+  ],
+  "aux_bytes": [
+    {
+      "pattern": 1,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 32
+    },
+    {
+      "pattern": 1,
+      "step": 6,
+      "sound": 9,
+      "offset": 856,
+      "byte": 32
+    },
+    {
+      "pattern": 1,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 48
+    },
+    {
+      "pattern": 1,
+      "step": 14,
+      "sound": 9,
+      "offset": 984,
+      "byte": 48
+    },
+    {
+      "pattern": 2,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 64
+    },
+    {
+      "pattern": 2,
+      "step": 6,
+      "sound": 9,
+      "offset": 856,
+      "byte": 64
+    },
+    {
+      "pattern": 2,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 96
+    },
+    {
+      "pattern": 2,
+      "step": 14,
+      "sound": 9,
+      "offset": 984,
+      "byte": 96
+    },
+    {
+      "pattern": 3,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 128
+    },
+    {
+      "pattern": 3,
+      "step": 6,
+      "sound": 9,
+      "offset": 856,
+      "byte": 128
+    },
+    {
+      "pattern": 4,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 20
+    },
+    {
+      "pattern": 4,
+      "step": 2,
+      "sound": 2,
+      "offset": 785,
+      "byte": 20
+    },
+    {
+      "pattern": 5,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 36
+    },
+    {
+      "pattern": 5,
+      "step": 2,
+      "sound": 2,
+      "offset": 785,
+      "byte": 36
+    },
+    {
+      "pattern": 6,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 52
+    },
+    {
+      "pattern": 6,
+      "step": 2,
+      "sound": 2,
+      "offset": 785,
+      "byte": 52
+    },
+    {
+      "pattern": 7,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 68
+    },
+    {
+      "pattern": 7,
+      "step": 2,
+      "sound": 2,
+      "offset": 785,
+      "byte": 68
+    }
+  ],
+  "method_script": "scripts/aux_nibble3_method.py",
+  "method_script_sha256": "c7db38999f3507e3a39fa75e2bde9d7082b7421184fad3eca69634eec2f1d8ad",
+  "method_settings": {
+    "step_seconds": 0.125,
+    "swing_delay_seconds": 0.0625,
+    "steps_per_pattern": 16,
+    "chain_patterns": 7,
+    "click_band_hz": [
+      3800.0,
+      6500.0
+    ],
+    "tone_bands_hz": {
+      "1": [
+        600.0,
+        820.0
+      ],
+      "2": [
+        860.0,
+        1180.0
+      ]
+    },
+    "click_hop_seconds": 0.0005,
+    "tone_hop_seconds": 0.005,
+    "onset_on_fraction": 0.3,
+    "onset_off_fraction": 0.1,
+    "onset_min_gap_seconds": 0.006,
+    "search_seconds": 0.04,
+    "drum_window_steps": 2.3,
+    "tone_floor_fraction": 0.1,
+    "tone_window_steps": 10,
+    "min_click_level": 0.001
+  },
+  "playback_seconds": 60,
+  "predictions": {
+    "reception": "The backup equals the compiled target exactly (every packet and the whole body), every auxiliary byte, the tempo and the swing included",
+    "H_spacing_scales_with_step": {
+      "kind": "drum_spacing",
+      "statement": "A retrigger of n divides the tempo's step evenly from wherever the note starts: repeats 125/n ms apart on odd and on even (swung) steps alike (within 3 ms)",
+      "expected_seconds": {
+        "2o": 0.0625,
+        "2e": 0.0625,
+        "3o": 0.041666666666666664,
+        "3e": 0.041666666666666664,
+        "4o": 0.03125,
+        "4e": 0.03125,
+        "6o": 0.020833333333333332,
+        "6e": 0.020833333333333332
+      },
+      "tolerance_seconds": 0.003
+    },
+    "H_spacing_spans_swung_step": {
+      "kind": "drum_spacing",
+      "statement": "A retrigger of n divides the time until the next step as swing places it: an odd step lasts 1.5 steps (187.5 ms) and an even one 0.5 steps (62.5 ms), so repeats are 187.5/n ms apart on odd steps and 62.5/n ms on even ones (within 3 ms)",
+      "expected_seconds": {
+        "2o": 0.09375,
+        "2e": 0.03125,
+        "3o": 0.0625,
+        "3e": 0.020833333333333332,
+        "4o": 0.046875,
+        "4e": 0.015625,
+        "6o": 0.03125,
+        "6e": 0.010416666666666666
+      },
+      "tolerance_seconds": 0.003
+    },
+    "H_spacing_fixed_time": {
+      "kind": "drum_spacing",
+      "statement": "Repeat spacing does not follow the tempo: 250/n ms apart, as measured at 60 BPM (within 3 ms)",
+      "expected_seconds": {
+        "2o": 0.125,
+        "2e": 0.125,
+        "3o": 0.08333333333333333,
+        "3e": 0.08333333333333333,
+        "4o": 0.0625,
+        "4e": 0.0625,
+        "6o": 0.041666666666666664,
+        "6e": 0.041666666666666664
+      },
+      "tolerance_seconds": 0.003
+    },
+    "H_length_scales_with_step": {
+      "kind": "melodic_duration",
+      "statement": "A melodic length of n lasts n of the tempo's steps from the note's own start, swung or not: n x 125 ms (within 25 ms)",
+      "expected_seconds": {
+        "1o": 0.125,
+        "1e": 0.125,
+        "2o": 0.25,
+        "2e": 0.25,
+        "3o": 0.375,
+        "3e": 0.375,
+        "4o": 0.5,
+        "4e": 0.5
+      },
+      "tolerance_seconds": 0.025
+    },
+    "H_length_ends_on_swung_grid": {
+      "kind": "melodic_duration",
+      "statement": "A melodic note of length n ends where step (start + n) begins as swing places it: odd n from an odd step lasts n x 125 + 62.5 ms, from an even step n x 125 - 62.5 ms; even n lasts n x 125 ms (within 25 ms)",
+      "expected_seconds": {
+        "1o": 0.1875,
+        "1e": 0.0625,
+        "2o": 0.25,
+        "2e": 0.25,
+        "3o": 0.4375,
+        "3e": 0.3125,
+        "4o": 0.5,
+        "4e": 0.5
+      },
+      "tolerance_seconds": 0.025
+    },
+    "H_length_fixed_time": {
+      "kind": "melodic_duration",
+      "statement": "Note length does not follow the tempo: n x 250 ms, as measured at 60 BPM (within 25 ms)",
+      "expected_seconds": {
+        "1o": 0.25,
+        "1e": 0.25,
+        "2o": 0.5,
+        "2e": 0.5,
+        "3o": 0.75,
+        "3e": 0.75,
+        "4o": 1.0,
+        "4e": 1.0
+      },
+      "tolerance_seconds": 0.025
+    }
+  },
+  "decision": [
+    "Exact reception is decided by the native check of the backup against the target",
+    "Each audible prediction is decided by the frozen method on playback.wav, by the median over the full passes recorded, each listed value within its tolerance",
+    "The three spacing hypotheses exclude each other, as do the three length hypotheses on odd lengths (on even lengths the step and swung-grid rules agree); if none holds, the result is recorded as neither, with the measurements, and no rule is adopted",
+    "Retrigger 8 (repeats 7.8 to 31.3 ms apart under the hypotheses), the onset counts, the start offsets from the grid and the user's answers are exploratory"
+  ],
+  "limits": [
+    "One session on one device, at one tempo and one swing value",
+    "Spacing is resolved down to about 6 ms (the onset method's minimum gap); the closest registered spacing is 10.4 ms"
+  ]
+}

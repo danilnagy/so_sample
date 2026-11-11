@@ -1,0 +1,56 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "browser-transfer-001",
+  "started_at": "2026-11-11T06:09:04+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "inputs": {
+    "restore": null,
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "b4e725ed81213edf5a1ea18a22672ab1eeaf91d4dc416e1354fd78c2ab13e542"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": null,
+  "backups": [],
+  "accepted": null,
+  "playback": null,
+  "observations": [],
+  "interrupted": true,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-11-11T06:09:28+00:00",
+  "result": {
+    "backup_decoded": false,
+    "native_target_exact": null,
+    "capture": null,
+    "analysis": null,
+    "playback": null
+  }
+}

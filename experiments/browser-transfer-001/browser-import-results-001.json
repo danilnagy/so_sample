@@ -1,0 +1,19 @@
+{
+  "analysis_version": "browser-transfer-import-check-0.1",
+  "hardware_verified": false,
+  "prediction": "import",
+  "registration_sha256": "e96895e07af277ae4fddb33dcb472d053c587253c96b96556b8404c7bcd7f42c",
+  "imported_archive_sha256": "bdcc6bc5cfdef2c400b7a4f5447f38afd04172773c6ef53977489d6692f66303",
+  "name": "PO-33 backup 11/11/2026, 1:16:04 AM",
+  "passed": true,
+  "checks": {
+    "every_sound_plays_the_same_codes": true,
+    "patterns_identical": true,
+    "chain_identical": true,
+    "tempo_identical": true,
+    "swing_identical": true,
+    "no_more_pages": true
+  },
+  "pages": 41,
+  "target_pages": 41
+}

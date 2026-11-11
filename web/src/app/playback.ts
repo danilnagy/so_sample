@@ -10,7 +10,7 @@
  */
 
 import { SAMPLE_RATE } from '../core/mulaw';
-import { DEFAULT_PARAMETERS, PARAMETER_NAMES, type Parameters, STEPS, readCell } from '../core/pattern';
+import { type Cell, DEFAULT_PARAMETERS, PARAMETER_NAMES, type Parameters, STEPS, drumRepeats, melodicLength, readCell } from '../core/pattern';
 import type { Clip, Project } from '../core/project';
 import { VOICE_RANK, keySemitones, resonanceLevel, volumeDb } from './laws';
 
@@ -43,7 +43,7 @@ export interface NoteEvent {
   gainDb: number;
   filter: FilterSettings | null;
   voice: number;
-  /** Seconds the note sounds at its rate. */
+  /** Seconds the note sounds at its rate: the whole clip, or less when its length or the next repeat cuts it. */
   duration: number;
   /** Silenced by the preview's mix; the note still takes its voice, as the device would play it. */
   muted: boolean;
@@ -190,15 +190,20 @@ export function scheduleStep(
   const dropped: DroppedNote[] = [];
   {
     // Locks apply first, note or not; then the notes on this step take voices in rank order.
-    const notes: { sound: number; key: number }[] = [];
+    const notes: { sound: number; key: number; cell: Cell }[] = [];
     for (const sound of VOICE_RANK) {
       const cell = readCell(data, step, sound);
       if (!cell) continue;
       const held = next.held[sound - 1];
       for (const p of PARAMETER_NAMES) if (cell[p]) held[p] = cell[p];
-      if (cell.key) notes.push({ sound, key: cell.key });
+      if (cell.key) notes.push({ sound, key: cell.key, cell });
     }
-    for (const { sound, key } of notes) {
+    // A note's timing is counted on the unswung grid: swing delays where a note starts, not
+    // where its time ends (aux-nibble-3-results.md, exploratory). The step's grid line is
+    // its swung time less the swing delay.
+    const stepLength = stepSeconds(project.tempo);
+    const gridStart = time - (stepOffsets(project.tempo, project.swing)[step - 1] - (step - 1) * stepLength);
+    for (const { sound, key, cell } of notes) {
       const clip = clipOf(project, sound, key);
       if (!clip) continue;
       const length = sampleLength(clip.sampleId);
@@ -209,7 +214,22 @@ export function scheduleStep(
       const previous = next.lastPitch[sound - 1];
       const glideFromRate = previous !== null && previous !== held.pitch ? rate * 2 ** ((previous - held.pitch) / 12) : null;
       next.lastPitch[sound - 1] = held.pitch;
-      const duration = (end - clip.start) / SAMPLE_RATE / rate;
+      const whole = (end - clip.start) / SAMPLE_RATE / rate;
+      // When the note sounds: a melodic note to its length in steps (F, the whole sample); a
+      // drum note once per repeat, every step/n from its start up to the next step's grid line,
+      // each repeat restarting the sample on the note's one voice (aux-nibble-2-results.md).
+      let starts = [time];
+      let duration = whole;
+      if (sound <= 8) {
+        const length = melodicLength(cell);
+        if (length !== null) duration = Math.min(whole, gridStart + length * stepLength - time);
+      } else {
+        const repeats = drumRepeats(cell);
+        if (repeats > 1) {
+          const gap = stepLength / repeats;
+          starts = Array.from({ length: repeats }, (_, k) => time + k * gap).filter((t) => t < gridStart + stepLength - 1e-6);
+        }
+      }
       // A voice is free when its note ends within the release window; a note that starts on this
       // very step is sounding, however short, and is never cut for another.
       const voice = next.voiceEnds.findIndex((voiceEnd, i) => voiceEnd - time <= VOICE_RELEASE_SECONDS && next.voiceStarts[i] < time);
@@ -217,21 +237,25 @@ export function scheduleStep(
         dropped.push({ step, sound, key });
         continue;
       }
+      const last = starts[starts.length - 1];
       next.voiceStarts[voice] = time;
-      next.voiceEnds[voice] = time + duration;
-      events.push({
-        step,
-        sound,
-        key,
-        time,
-        clip: { ...clip, end },
-        rate,
-        glideFromRate,
-        gainDb: volumeDb(held.volume),
-        filter: filterSettings(held.filter, held.resonance),
-        voice,
-        duration,
-        muted: isMuted(mix, sound, key),
+      next.voiceEnds[voice] = last + duration;
+      starts.forEach((start, k) => {
+        events.push({
+          step,
+          sound,
+          key,
+          time: start,
+          clip: { ...clip, end },
+          rate,
+          glideFromRate: k === 0 ? glideFromRate : null,
+          gainDb: volumeDb(held.volume),
+          filter: filterSettings(held.filter, held.resonance),
+          voice,
+          // A repeat sounds until the next one restarts the sample.
+          duration: k < starts.length - 1 ? Math.min(duration, starts[k + 1] - start) : duration,
+          muted: isMuted(mix, sound, key),
+        });
       });
     }
   }

@@ -1,0 +1,253 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "kind": "reanalysis",
+  "experiment": "aux-nibble-001",
+  "reanalyzed_session": "hardware-session-001.json",
+  "reanalyzed_session_sha256": "b320f9471880c9ae583044837c8c9deff97f035bf602721eec87770d6598800f",
+  "started_at": "2026-11-11T06:05:32+00:00",
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "8edcfef43223ce604040af9e767070580cad8ec7350e5a80bbefcc4507bda6ef",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1433250,
+        "duration_seconds": 32.5,
+        "signal_start_seconds": 5.1,
+        "signal_end_seconds": 31.0,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.017913818359375,
+        "signal_peaks_per_channel": [
+          0.012847900390625,
+          0.02044677734375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.01446363718103241,
+          "lag_ms": 38.79818594104308,
+          "channels": "right_from_left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "At least one channel is very quiet; check the stereo cable and level"
+          }
+        ]
+      },
+      "analysis_dir": "backup-01-reanalysis-001",
+      "analysis": {
+        "capture_sha256": "8edcfef43223ce604040af9e767070580cad8ec7350e5a80bbefcc4507bda6ef",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 32.5,
+          "peaks_per_channel": [
+            0.012847900390625,
+            0.02044677734375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.01,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0xfef3"
+          },
+          {
+            "method": "realigned",
+            "passed": false,
+            "error": "No leading-label realignment decoded"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured clock requires one exact pre-frame quarter alignment"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    },
+    {
+      "file": "backup-02.wav",
+      "sha256": "7b60514a881778f263064cde8ce9eaaeb01563df66ff2f0f5cedb16a45d5926f",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1305360,
+        "duration_seconds": 29.6,
+        "signal_start_seconds": 1.95,
+        "signal_end_seconds": 28.1,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.00067138671875,
+        "signal_peaks_per_channel": [
+          0.501861572265625,
+          0.807830810546875
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": -0.015392209073199867,
+          "lag_ms": 60.544217687074834,
+          "channels": "right_from_left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-02-reanalysis-001",
+      "analysis": {
+        "capture_sha256": "7b60514a881778f263064cde8ce9eaaeb01563df66ff2f0f5cedb16a45d5926f",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 29.6,
+          "peaks_per_channel": [
+            0.501861572265625,
+            0.807830810546875
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.01,
+            "passed": true,
+            "error": null
+          }
+        ],
+        "method": "crossing",
+        "native": {
+          "codec_version": "po33-crc-additive-0.1",
+          "frame_start_byte": 4095,
+          "frame_end_byte": 101906,
+          "required_complete_label_span": [
+            0,
+            203815
+          ],
+          "packet_count": 559,
+          "all_packet_checksums_valid": true,
+          "encoded_body_sha256": "89a96a9a646a7ec06579814fed805ba5a2ad5296660448ae35a2dddc92982ebb",
+          "tags": {
+            "0x985b": 1,
+            "0x7d5c": 2,
+            "0xa041": 16,
+            "0xc498": 80,
+            "0x68b5": 136,
+            "0xef78": 323,
+            "0x826f": 1
+          },
+          "sounds": [
+            {
+              "sound_id": 0,
+              "packet_count": 306,
+              "payload_bytes": 73737,
+              "header_hex": "00000000a912010000",
+              "payload_sha256": "b7f75c942a2fd4fc99faf7ab9fed255adbfad73ab194dd194372fbab9c1d0998"
+            },
+            {
+              "sound_id": 8,
+              "packet_count": 17,
+              "payload_bytes": 4105,
+              "header_hex": "000000001901000008",
+              "payload_sha256": "48fa73949831bff2675707a030eb05d3d24aef11e8dad3651da799f8e172b375"
+            }
+          ]
+        },
+        "hardware_verified": false
+      },
+      "target": {
+        "exact_target_body": true,
+        "target_body_sha256": "89a96a9a646a7ec06579814fed805ba5a2ad5296660448ae35a2dddc92982ebb",
+        "captured_body_sha256": "89a96a9a646a7ec06579814fed805ba5a2ad5296660448ae35a2dddc92982ebb",
+        "differences_from_target": {
+          "identical_body": true,
+          "packet_counts": [
+            559,
+            559
+          ],
+          "change_count": 0,
+          "changes": []
+        }
+      }
+    }
+  ],
+  "accepted": {
+    "attempt": "backup-02.wav",
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001"
+  },
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "0003a2034cc6a04ad86dc7dede48f8bfeda8c0096f987040df04d8ace564d20c",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 4046175,
+        "duration_seconds": 91.75,
+        "signal_onset_seconds": 1.75,
+        "seconds_after_onset": 90.0,
+        "peaks_per_channel": [
+          0.46832275390625,
+          0.711639404296875
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-01.wav",
+    "accepted_with_findings": false,
+    "sha256": "0003a2034cc6a04ad86dc7dede48f8bfeda8c0096f987040df04d8ace564d20c"
+  },
+  "hardware_verified": false,
+  "finished_at": "2026-11-11T06:05:33+00:00",
+  "result": {
+    "backup_decoded": true,
+    "native_target_exact": true,
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001",
+    "playback": "playback.wav"
+  },
+  "observations": [
+    {
+      "question": "Patterns 1 to 4 (clicks): did some steps play a quick burst of repeated clicks rather than one? Roughly how many? (notes)",
+      "answer": "yes, 1, 2, 3, 4 times"
+    },
+    {
+      "question": "Patterns 5 to 10 (a steady tone, one per bar): did some tones stop short of the others? (notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Did the device show ERR, or anything unusual on its screen? (yes/no/notes)",
+      "answer": "no"
+    },
+    {
+      "question": "Anything else you noticed (Enter to skip)",
+      "answer": ""
+    }
+  ]
+}

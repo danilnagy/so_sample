@@ -1,0 +1,261 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "aux-nibble-002",
+  "started_at": "2026-11-11T06:37:11+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "inputs": {
+    "restore": {
+      "path": "restore.wav",
+      "sha256": "52e549d09d3e401564bd7b787474eb7c0a5f08d2f018a8a0c3cecb0b27591316"
+    },
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "ba236cced998917dbad00e6480f3ec0a98b41b1baa1cca032cfd9c5ca1476182"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": {
+    "started_at": "2026-11-11T06:37:24+00:00",
+    "gain": 0.3,
+    "peak_after_gain": 0.15000000596046448,
+    "sample_rate_hz": 44100,
+    "frames": 5408614,
+    "duration_seconds": 122.64430839002267,
+    "padding_seconds": [
+      0.25,
+      1.0
+    ],
+    "wall_seconds": 124.36329608695814,
+    "stream_status_flags": []
+  },
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "12a29bf870a0d3f9e5b703e4d4bc54353fa54f406513eb2aa768b011aeafa0c4",
+      "recorded_at": "2026-11-11T06:41:57+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 5671260,
+        "duration_seconds": 128.6,
+        "signal_start_seconds": 4.6,
+        "signal_end_seconds": 127.1,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.0010986328125,
+        "signal_peaks_per_channel": [
+          0.5098876953125,
+          0.80194091796875
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.016741738379877903,
+          "lag_ms": 89.8639455782313,
+          "channels": "right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-01-analysis",
+      "analysis": {
+        "capture_sha256": "12a29bf870a0d3f9e5b703e4d4bc54353fa54f406513eb2aa768b011aeafa0c4",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 128.6,
+          "peaks_per_channel": [
+            0.5098876953125,
+            0.80194091796875
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": true,
+            "error": null
+          }
+        ],
+        "method": "crossing",
+        "native": {
+          "codec_version": "po33-crc-additive-0.1",
+          "frame_start_byte": 4095,
+          "frame_end_byte": 478232,
+          "required_complete_label_span": [
+            0,
+            956467
+          ],
+          "packet_count": 2089,
+          "all_packet_checksums_valid": true,
+          "encoded_body_sha256": "4a1166ff54dcf65fa7355f18e69ba18f8973f091699515b7f747d0a77c0e1ec7",
+          "tags": {
+            "0x985b": 1,
+            "0x7d5c": 2,
+            "0xa041": 16,
+            "0xc498": 80,
+            "0x68b5": 136,
+            "0xef78": 1853,
+            "0x826f": 1
+          },
+          "sounds": [
+            {
+              "sound_id": 0,
+              "packet_count": 255,
+              "payload_bytes": 61449,
+              "header_hex": "00000000e2e4000000",
+              "payload_sha256": "df5f792c9959209569f165e6c5a53f5a32eb451aebcce890095d6cc10df0395e"
+            },
+            {
+              "sound_id": 1,
+              "packet_count": 255,
+              "payload_bytes": 61449,
+              "header_hex": "00000000e2e4000001",
+              "payload_sha256": "34a5a38139ec03b47d7cdf351782580725bee4ebc1b7d48c5465bdfe21fdfef4"
+            },
+            {
+              "sound_id": 2,
+              "packet_count": 255,
+              "payload_bytes": 61449,
+              "header_hex": "00000000e2e4000002",
+              "payload_sha256": "938b6a58453c02b2949a891f4b656d5e150dcc44f10a9af97ae3c064eac62a75"
+            },
+            {
+              "sound_id": 4,
+              "packet_count": 493,
+              "payload_bytes": 118793,
+              "header_hex": "00000000c4c9010004",
+              "payload_sha256": "6a985734a4640b32b23070177b96994904611230ef95cba230ef9bf7fe237352"
+            },
+            {
+              "sound_id": 5,
+              "packet_count": 493,
+              "payload_bytes": 118793,
+              "header_hex": "00000000c4c9010005",
+              "payload_sha256": "c0cbe6cf3d45e565bde3abe10f6ca1890e226aa52b5f9e6477eca56b3e185568"
+            },
+            {
+              "sound_id": 8,
+              "packet_count": 102,
+              "payload_bytes": 24585,
+              "header_hex": "000000008e5b000008",
+              "payload_sha256": "d5117ec1fcd49da6139d593513ba609ff4896ee2df46ef74989c864f824e5aee"
+            }
+          ]
+        },
+        "hardware_verified": false
+      },
+      "target": {
+        "exact_target_body": true,
+        "target_body_sha256": "4a1166ff54dcf65fa7355f18e69ba18f8973f091699515b7f747d0a77c0e1ec7",
+        "captured_body_sha256": "4a1166ff54dcf65fa7355f18e69ba18f8973f091699515b7f747d0a77c0e1ec7",
+        "differences_from_target": {
+          "identical_body": true,
+          "packet_counts": [
+            2089,
+            2089
+          ],
+          "change_count": 0,
+          "changes": []
+        }
+      }
+    }
+  ],
+  "accepted": {
+    "attempt": "backup-01.wav",
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001"
+  },
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "9012cafab0567da815ad5b3ff178c9b7cde67525877ea5a40eb91472268b5745",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 5285385,
+        "duration_seconds": 119.85,
+        "signal_onset_seconds": 1.85,
+        "seconds_after_onset": 118.0,
+        "peaks_per_channel": [
+          0.48968505859375,
+          0.61370849609375
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-01.wav",
+    "accepted_with_findings": false,
+    "sha256": "9012cafab0567da815ad5b3ff178c9b7cde67525877ea5a40eb91472268b5745"
+  },
+  "observations": [
+    {
+      "question": "Pattern 1, second half, and Patterns 2 to 4 (the drum with low tones): did the drum burst sound the same in every bar, or thinner as more tones played? (notes)",
+      "answer": "same"
+    },
+    {
+      "question": "Patterns 9 to 14 (two steady tones per bar, then one): did the tones stop at different times? (notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Patterns 5 to 8 (effects): anything notable about how the bursts and the short tone behaved? (notes)",
+      "answer": ""
+    },
+    {
+      "question": "Did the device show ERR, or anything unusual on its screen? (yes/no/notes)",
+      "answer": ""
+    },
+    {
+      "question": "Anything else you noticed (Enter to skip)",
+      "answer": ""
+    }
+  ],
+  "interrupted": false,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-11-11T06:44:25+00:00",
+  "result": {
+    "backup_decoded": true,
+    "native_target_exact": true,
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001",
+    "playback": "playback.wav"
+  }
+}

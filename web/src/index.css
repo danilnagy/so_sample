@@ -781,8 +781,10 @@ table.memory th .sort:hover {
 .param-lane .selector {
   display: flex;
   align-items: center;
+  /* Against the lane, so the five choices fit the label column whatever their widths. */
+  justify-content: flex-end;
   gap: 2px;
-  padding-left: 47px;
+  padding-right: 6px;
 }
 
 .param-lane .selector button {
@@ -3299,4 +3301,32 @@ a.button.primary {
   background: var(--fg);
   color: var(--bg);
   font-size: var(--text-small);
+}
+
+/* The timing lane's stems: a note's length or repeats rise from the baseline, held by no later step. */
+.param-lane .stem {
+  stroke: var(--stroke-mid);
+  stroke-width: 1;
+  pointer-events: none;
+}
+
+/* A note's timing under another lane: a pale stem and tick, as the other parameters' curves are. */
+.param-lane .stem.under {
+  stroke: var(--stroke);
+}
+
+.param-lane .tick.under {
+  fill: var(--stroke);
+  pointer-events: none;
+}
+
+/* A note's timing other than the default, in the corner of its cell or pad: the hits or the steps. */
+.timing-badge {
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 700;
+  pointer-events: none;
 }

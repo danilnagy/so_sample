@@ -1,6 +1,6 @@
 /** Display meanings of step parameters, from the measured laws (docs/format-reference.md). */
 
-import type { ParameterName } from '../core/pattern';
+import { DRUM_REPEATS, type ParameterName, defaultTiming } from '../core/pattern';
 
 /** Semitones from key 1 for keys 1..16, as the 4x4 keyboard is laid out (measured, pattern1-key-scale-map). */
 export const KEY_SEMITONES = [0, 1, 3, 4, -7, -5, -4, -2, -12, -11, -9, -8, -19, -17, -16, -14];
@@ -139,3 +139,41 @@ export const FX_BEHAVIOUR: Record<number, string> = {
 
 /** Voice ranking on a shared step: lowest sound numbers win, Sound 11 after Sound 3. */
 export const VOICE_RANK = [1, 2, 3, 11, 4, 5, 6, 7, 8, 12, 13, 14, 15, 16, 9, 10];
+
+/** What a sound's parameter lane or row edits: one of the four locks, or the note's timing. */
+export type LaneParameter = ParameterName | 'timing';
+
+/** The timing a lane edits: a melodic note's length, a drum note's retriggers (aux-nibble-results.md). */
+export function timingLabel(sound: number): string {
+  return sound <= 8 ? 'Len' : 'Rpt';
+}
+
+export function timingTitle(sound: number): string {
+  return sound <= 8 ? 'Length' : 'Repeat';
+}
+
+/** The values a sound's timing takes, in order: 1 to 14 steps then full (F) for a melodic sound; the device's retrigger cycle for a drum. */
+export function timingChoices(sound: number): readonly number[] {
+  return sound <= 8 ? Array.from({ length: 15 }, (_, i) => i + 1) : DRUM_REPEATS;
+}
+
+/** The nearest choice to a stored nibble (a drum's 5 and 7 play as 6 and 8). */
+export function timingIndex(sound: number, timing: number | undefined): number {
+  const choices = timingChoices(sound);
+  const value = timing ?? defaultTiming(sound);
+  const at = choices.findIndex((c) => c >= value);
+  return at < 0 ? choices.length - 1 : at;
+}
+
+export function timingMeaning(sound: number, timing: number | undefined): string {
+  const value = timing ?? defaultTiming(sound);
+  if (sound <= 8) return value === 0xf ? 'full length' : `${value} step${value === 1 ? '' : 's'}`;
+  return value === 1 ? '1 hit' : `${value === 5 ? 6 : value === 7 ? 8 : value} hits`;
+}
+
+/** The number a note cell shows for a timing other than the default: hits for a drum, steps for a melodic note; empty for the default. */
+export function timingBadge(sound: number, timing: number | undefined): string {
+  if (timing === undefined) return '';
+  if (sound <= 8) return timing === 0xf ? '' : String(timing);
+  return String(timing === 5 ? 6 : timing === 7 ? 8 : timing);
+}

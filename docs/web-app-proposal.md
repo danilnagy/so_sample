@@ -239,7 +239,7 @@ The repository has no commits yet. Before the web app starts:
 | 1 | TypeScript core: format, modem, model, compile, golden tests against Python | done, hardware verified 2026-10-11 |
 | 2 | App shell, storage, track grid, patterns, FX row, song strip, themes | done |
 | 3 | Sample library and editor, modifications, resample | written 2026-11-06 |
-| 4 | Export with guided protocol and optional verify; import with recording and decode | written 2026-11-06; device session [browser-transfer-001](browser-transfer-control.md) prepared |
+| 4 | Export with guided protocol and optional verify; import with recording and decode | done; verified on the device 2026-11-11 ([browser transfer](browser-transfer-results.md)) |
 | 5 | Preview engine | done ([web playback](web-playback.md)) |
 | 6 | Accounts and cloud backup | later |
 

@@ -12,14 +12,14 @@ import { recoverFrame } from '../core/modem/decode';
 import { transferSeconds } from '../core/modem/encode';
 import { encodeRestoreWav } from '../core/modem/encode';
 import { encodePackets } from '../core/packets';
-import { type Cell, type ParameterName, PARAMETER_NAMES, emptyPattern, readCell, writeCell, writeEffects, readEffects, DEFAULT_PARAMETERS } from '../core/pattern';
+import { type Cell, type ParameterName, PARAMETER_NAMES, emptyPattern, readCell, writeCell, writeEffects, readEffects, DEFAULT_PARAMETERS, withDefaultTiming, defaultTiming } from '../core/pattern';
 import { type Clip, type MemoryRow, type Project, compileProject, emptyProject, importProject, memorySummary, projectPages } from '../core/project';
 import { parseFrame, serializeState } from '../core/state';
 import { emptyTemplateState } from '../core/template';
 import type { WavData } from '../core/wav';
 import { type KitRecord, type ProjectRecord, type SampleRecord, db, newId } from './db';
 import { bytesOf, unzipFiles, zipFiles } from './archive';
-import { BASE_KEY, VOICE_RANK } from './laws';
+import { BASE_KEY, VOICE_RANK, type LaneParameter } from './laws';
 import { type PlaybackMode, type PlaybackPosition, Player } from './player';
 import type { Mix } from './playback';
 import { PRESETS, PRESET_KITS, fetchPreset, presetsDisabled } from './presets';
@@ -57,7 +57,7 @@ export interface AppState {
   /** Sounds whose roll is unrolled below their row in the pattern grid. */
   unrolled: number[];
   /** The parameter each sound's lane shows, by sound; volume unless chosen. */
-  laneParameter: Record<number, ParameterName>;
+  laneParameter: Record<number, LaneParameter>;
   /** Kits saved in the app, by name. */
   kits: KitRecord[];
   device: DeviceMode;
@@ -827,7 +827,7 @@ class Store {
     this.setCurrentKey(sound, key);
   }
 
-  setLaneParameter(sound: number, parameter: ParameterName): void {
+  setLaneParameter(sound: number, parameter: LaneParameter): void {
     this.set({ laneParameter: { ...this.state.laneParameter, [sound]: parameter } });
   }
 
@@ -835,6 +835,19 @@ class Store {
    * Set one parameter of a step from the lane. A step without a cell becomes a lock without
    * a note; code 0 clears the lock, and a lock-only cell with nothing left is removed.
    */
+  /**
+   * A note's timing: a melodic note's length in steps (15, full, is the default), a drum
+   * note's retrigger count (1 is the default). Only a step with a note has one.
+   */
+  setStepTiming(step: number, sound: number, timing: number): void {
+    const data = this.state.project?.patterns[this.state.pattern - 1];
+    const cell = data ? readCell(data, step, sound) : null;
+    if (!cell?.key) return;
+    const next = timing === defaultTiming(sound) ? withDefaultTiming(cell) : { ...cell, timing };
+    if (next.timing === cell.timing) return;
+    this.setCell(step, sound, next);
+  }
+
   setStepParameter(step: number, sound: number, parameter: ParameterName, code: number): void {
     const data = this.state.project?.patterns[this.state.pattern - 1];
     if (!data) return;
@@ -1526,11 +1539,11 @@ function newNote(data: Uint8Array, step: number, sound: number, key: number): Ce
 function noteTemplate(data: Uint8Array, step: number, sound: number, key: number): Cell {
   for (let s = step; s >= 1; s--) {
     const c = readCell(data, s, sound);
-    if (c?.key) return { ...c, key };
+    if (c?.key) return { ...withDefaultTiming(c), key };
   }
   for (let s = step + 1; s <= 16; s++) {
     const c = readCell(data, s, sound);
-    if (c?.key) return { ...c, key };
+    if (c?.key) return { ...withDefaultTiming(c), key };
   }
   return { key, ...DEFAULT_PARAMETERS };
 }

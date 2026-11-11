@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { DEFAULT_PARAMETERS, changedParameters, decodeParameters, effectiveParameter, emptyPattern, encodeParameters, keysUsed, writeCell } from '../pattern';
+import { DEFAULT_PARAMETERS, auxByte, cellOffsets, changedParameters, decodeParameters, drumRepeats, effectiveParameter, emptyPattern, encodeParameters, keysUsed, melodicLength, readCell, withDefaultTiming, writeCell } from '../pattern';
 
 const note = (key: number, changes: Partial<typeof DEFAULT_PARAMETERS> = {}) => ({ key, ...DEFAULT_PARAMETERS, ...changes });
 
@@ -86,5 +86,51 @@ describe('encodeParameters', () => {
     expect(decodeParameters(encodeParameters({ ...DEFAULT_PARAMETERS, bit5: 1 })).bit5).toBe(1);
     expect(() => encodeParameters({ ...DEFAULT_PARAMETERS, bit5: 2 })).toThrow(/bit5/);
     expect(() => encodeParameters({ ...DEFAULT_PARAMETERS, bit5: -1 })).toThrow(/bit5/);
+  });
+});
+
+describe('note timing (the auxiliary high nibble: docs/aux-nibble-results.md)', () => {
+  it('a default note carries no timing and writes F (melodic) or 1 (drum), as before', () => {
+    const data = emptyPattern();
+    writeCell(data, 1, 1, { key: 5, ...DEFAULT_PARAMETERS });
+    writeCell(data, 1, 9, { key: 3, ...DEFAULT_PARAMETERS });
+    expect(data[cellOffsets(1, 1).aux]).toBe(0xf4);
+    expect(data[cellOffsets(1, 9).aux]).toBe(0x12);
+    expect(readCell(data, 1, 1)).toEqual({ key: 5, ...DEFAULT_PARAMETERS, bit5: 0 });
+    expect(readCell(data, 1, 1)!.timing).toBeUndefined();
+    expect(readCell(data, 1, 9)!.timing).toBeUndefined();
+  });
+
+  it('writes and reads a melodic length and a drum retrigger in the high nibble, beside the key', () => {
+    const data = emptyPattern();
+    writeCell(data, 2, 1, { key: 5, ...DEFAULT_PARAMETERS, timing: 4 });
+    writeCell(data, 2, 9, { key: 3, ...DEFAULT_PARAMETERS, timing: 6 });
+    expect(data[cellOffsets(2, 1).aux]).toBe(0x44);
+    expect(data[cellOffsets(2, 9).aux]).toBe(0x62);
+    expect(readCell(data, 2, 1)).toMatchObject({ key: 5, timing: 4 });
+    expect(readCell(data, 2, 9)).toMatchObject({ key: 3, timing: 6 });
+    // A melodic 1 and a drum F are not defaults: they are kept.
+    data[cellOffsets(3, 1).aux] = 0x14;
+    data[cellOffsets(3, 9).aux] = 0xf2;
+    expect(readCell(data, 3, 1)).toMatchObject({ key: 5, timing: 1 });
+    expect(readCell(data, 3, 9)).toMatchObject({ key: 3, timing: 15 });
+  });
+
+  it('refuses a timing of 0 (with key 1 it would be the byte that means no note) or above 15', () => {
+    expect(() => auxByte(9, 1, 0)).toThrow(/timing/);
+    expect(() => auxByte(1, 1, 16)).toThrow(/timing/);
+  });
+
+  it('reads what the device plays: drum nibbles 5 and 7 as 6 and 8 hits, melodic F as the full sample', () => {
+    const drum = (timing?: number) => drumRepeats({ key: 1, ...DEFAULT_PARAMETERS, timing });
+    expect([undefined, 2, 3, 4, 5, 6, 7, 8].map(drum)).toEqual([1, 2, 3, 4, 6, 6, 8, 8]);
+    const melodic = (timing?: number) => melodicLength({ key: 5, ...DEFAULT_PARAMETERS, timing });
+    expect([undefined, 15, 1, 4, 14].map(melodic)).toEqual([null, null, 1, 4, 14]);
+  });
+
+  it('withDefaultTiming drops only the timing', () => {
+    const cell = { key: 2, ...DEFAULT_PARAMETERS, volume: 50, timing: 3 };
+    expect(withDefaultTiming(cell)).toEqual({ key: 2, ...DEFAULT_PARAMETERS, volume: 50 });
+    expect(cell.timing).toBe(3);
   });
 });

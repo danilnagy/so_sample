@@ -1,0 +1,24 @@
+{
+  "experiment_id": "aux-nibble-002",
+  "capture_status": "validated_exact_native_aux_nibble_2",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../aux-nibble-registration-002.json",
+  "builder": "web/scripts/build-aux-nibble-2-test.ts",
+  "playback_seconds": 118,
+  "playback_instructions": "# Aux-nibble test 2\n\nAfter the restore, press PLAY and let the chain run: fourteen one-bar patterns at 60 BPM\n(four seconds each, 56 s a pass). Keep the volume where you set it, and do not touch any knob\nor button while it plays; the recording should hold two full passes.\n\n- Pattern 1: a single drum hit, then a burst of four.\n- Patterns 2 to 4: one, two, then three low tones, with the burst of four a second in.\n- Patterns 5 to 8: the burst and a short tone under punch-in effects.\n- Patterns 9 to 14: steady tones that stop after different lengths.\n",
+  "observation_questions": [
+    "Pattern 1, second half, and Patterns 2 to 4 (the drum with low tones): did the drum burst sound the same in every bar, or thinner as more tones played? (notes)",
+    "Patterns 9 to 14 (two steady tones per bar, then one): did the tones stop at different times? (notes)",
+    "Patterns 5 to 8 (effects): anything notable about how the bursts and the short tone behaved? (notes)",
+    "Did the device show ERR, or anything unusual on its screen? (yes/no/notes)",
+    "Anything else you noticed (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "measurements": "aux-nibble-measurements-002.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

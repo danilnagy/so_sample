@@ -210,6 +210,25 @@ test.describe('modals at phone width', () => {
     await expect(page.locator('.param-row')).toHaveClass(/disabled/);
   });
 
+  test('the parameter row sets a note\'s timing (Len or Rpt), shown in the pad\'s corner, and Clear returns it', async ({ page }) => {
+    await page.click('.viewbar button:has-text("Pattern")');
+    const pad = page.locator('.pad-grid .pad.step').nth(0);
+    await pad.click();
+    await expect(pad).toHaveClass(/note/);
+    await page.selectOption('.param-select', 'timing');
+    const value = page.locator('.param-row .param-value');
+    await expect(value).toHaveText(/full length|1 hit/);
+    await expect(page.locator('.param-clear')).toBeDisabled();
+    await page.locator('.param-slider').fill('2');
+    await expect(value).toHaveText(/3 steps|3 hits/);
+    await expect(value).toHaveClass(/locked/);
+    await expect(pad.locator('.timing-badge')).toHaveText('3');
+    await check(page, 'timing-row');
+    await page.click('.param-clear');
+    await expect(pad.locator('.timing-badge')).toHaveCount(0);
+    await expect(page.locator('.param-clear')).toBeDisabled();
+  });
+
   test('FX view carries pattern and effects actions; a pattern copy finishes in the strip', async ({ page }) => {
     await page.click('.viewbar button:has-text("Pattern")');
     await page.locator('.pad-grid .pad.step').nth(0).click();

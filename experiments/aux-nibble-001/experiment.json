@@ -1,6 +1,6 @@
 {
   "experiment_id": "aux-nibble-001",
-  "capture_status": "awaiting_hardware_session",
+  "capture_status": "validated_exact_native_aux_nibble",
   "restore_file": "restore.wav",
   "expected_artifact": "edited.symbols.npz",
   "registration": "../aux-nibble-registration-001.json",
@@ -14,6 +14,10 @@
     "Anything else you noticed (Enter to skip)"
   ],
   "hardware_restore": {
-    "status": "not_run"
-  }
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "measurements": "aux-nibble-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json"
 }

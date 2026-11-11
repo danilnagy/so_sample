@@ -1,0 +1,240 @@
+{
+  "analysis_version": "aux-nibble-3-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of raw auxiliary high nibbles at 120 BPM with swing 12, and how retrigger spacing and note length follow tempo and swing; predictions that failed are kept as failed",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "measurements_pin_matches": true,
+    "session_target_exact": true
+  },
+  "predictions": {
+    "reception": "The backup equals the compiled target exactly (every packet and the whole body), every auxiliary byte, the tempo and the swing included",
+    "H_spacing_scales_with_step": {
+      "kind": "drum_spacing",
+      "statement": "A retrigger of n divides the tempo's step evenly from wherever the note starts: repeats 125/n ms apart on odd and on even (swung) steps alike (within 3 ms)",
+      "expected_seconds": {
+        "2o": 0.0625,
+        "2e": 0.0625,
+        "3o": 0.041666666666666664,
+        "3e": 0.041666666666666664,
+        "4o": 0.03125,
+        "4e": 0.03125,
+        "6o": 0.020833333333333332,
+        "6e": 0.020833333333333332
+      },
+      "tolerance_seconds": 0.003
+    },
+    "H_spacing_spans_swung_step": {
+      "kind": "drum_spacing",
+      "statement": "A retrigger of n divides the time until the next step as swing places it: an odd step lasts 1.5 steps (187.5 ms) and an even one 0.5 steps (62.5 ms), so repeats are 187.5/n ms apart on odd steps and 62.5/n ms on even ones (within 3 ms)",
+      "expected_seconds": {
+        "2o": 0.09375,
+        "2e": 0.03125,
+        "3o": 0.0625,
+        "3e": 0.020833333333333332,
+        "4o": 0.046875,
+        "4e": 0.015625,
+        "6o": 0.03125,
+        "6e": 0.010416666666666666
+      },
+      "tolerance_seconds": 0.003
+    },
+    "H_spacing_fixed_time": {
+      "kind": "drum_spacing",
+      "statement": "Repeat spacing does not follow the tempo: 250/n ms apart, as measured at 60 BPM (within 3 ms)",
+      "expected_seconds": {
+        "2o": 0.125,
+        "2e": 0.125,
+        "3o": 0.08333333333333333,
+        "3e": 0.08333333333333333,
+        "4o": 0.0625,
+        "4e": 0.0625,
+        "6o": 0.041666666666666664,
+        "6e": 0.041666666666666664
+      },
+      "tolerance_seconds": 0.003
+    },
+    "H_length_scales_with_step": {
+      "kind": "melodic_duration",
+      "statement": "A melodic length of n lasts n of the tempo's steps from the note's own start, swung or not: n x 125 ms (within 25 ms)",
+      "expected_seconds": {
+        "1o": 0.125,
+        "1e": 0.125,
+        "2o": 0.25,
+        "2e": 0.25,
+        "3o": 0.375,
+        "3e": 0.375,
+        "4o": 0.5,
+        "4e": 0.5
+      },
+      "tolerance_seconds": 0.025
+    },
+    "H_length_ends_on_swung_grid": {
+      "kind": "melodic_duration",
+      "statement": "A melodic note of length n ends where step (start + n) begins as swing places it: odd n from an odd step lasts n x 125 + 62.5 ms, from an even step n x 125 - 62.5 ms; even n lasts n x 125 ms (within 25 ms)",
+      "expected_seconds": {
+        "1o": 0.1875,
+        "1e": 0.0625,
+        "2o": 0.25,
+        "2e": 0.25,
+        "3o": 0.4375,
+        "3e": 0.3125,
+        "4o": 0.5,
+        "4e": 0.5
+      },
+      "tolerance_seconds": 0.025
+    },
+    "H_length_fixed_time": {
+      "kind": "melodic_duration",
+      "statement": "Note length does not follow the tempo: n x 250 ms, as measured at 60 BPM (within 25 ms)",
+      "expected_seconds": {
+        "1o": 0.25,
+        "1e": 0.25,
+        "2o": 0.5,
+        "2e": 0.5,
+        "3o": 0.75,
+        "3e": 0.75,
+        "4o": 1.0,
+        "4e": 1.0
+      },
+      "tolerance_seconds": 0.025
+    }
+  },
+  "held": [],
+  "failed": [
+    "H_spacing_scales_with_step",
+    "H_spacing_spans_swung_step",
+    "H_spacing_fixed_time",
+    "H_length_scales_with_step",
+    "H_length_ends_on_swung_grid",
+    "H_length_fixed_time"
+  ],
+  "drum_spacing_seconds": {
+    "2o": 0.0629,
+    "2e": null,
+    "3o": 0.0417,
+    "3e": 0.04165,
+    "4o": 0.0314,
+    "4e": 0.0314,
+    "6o": 0.0205,
+    "6e": 0.02085,
+    "8o": 0.015,
+    "8e": 0.01525
+  },
+  "melodic_duration_seconds": {
+    "1o": 0.1297,
+    "1e": 0.0649,
+    "2o": 0.2544,
+    "2e": 0.1921,
+    "3o": 0.3816,
+    "3e": 0.3143,
+    "4o": 0.5063500000000001,
+    "4e": 0.4415
+  },
+  "exploratory": {
+    "retrigger_8_spacing_seconds": {
+      "8o": 0.015,
+      "8e": 0.01525
+    },
+    "drum_onsets_in_window": {
+      "2o": 2.0,
+      "2e": 1.0,
+      "3o": 3.0,
+      "3e": 2.0,
+      "4o": 4.0,
+      "4e": 2.0,
+      "6o": 6.0,
+      "6e": 3.0,
+      "8o": 8.0,
+      "8e": 4.0
+    },
+    "drum_offset_from_grid_seconds": {
+      "2o": 0.00105,
+      "2e": 0.06345,
+      "3o": 0.0005,
+      "3e": 0.06365,
+      "4o": 0.00145,
+      "4e": 0.0632,
+      "6o": 0.00095,
+      "6e": 0.0639,
+      "8o": 0.0017000000000000001,
+      "8e": 0.0636
+    },
+    "melodic_offset_from_grid_seconds": {
+      "1o": -0.00030000000000000003,
+      "1e": 0.0627,
+      "2o": 0.00019999999999999998,
+      "2e": 0.0632,
+      "3o": -0.00095,
+      "3e": 0.0636,
+      "4o": -0.0005,
+      "4e": 0.0641
+    },
+    "drum_onset_offsets_first_pass": {
+      "2o": [
+        0.0,
+        0.0614
+      ],
+      "2e": [
+        0.0
+      ],
+      "3o": [
+        0.0,
+        0.0424,
+        0.0833
+      ],
+      "3e": [
+        0.0,
+        0.0409
+      ],
+      "4o": [
+        0.0,
+        0.0314,
+        0.0629,
+        0.0943
+      ],
+      "4e": [
+        0.0,
+        0.0314
+      ],
+      "6o": [
+        0.0,
+        0.0205,
+        0.0409,
+        0.0629,
+        0.0833,
+        0.1038
+      ],
+      "6e": [
+        0.0,
+        0.0215,
+        0.0419
+      ],
+      "8o": [
+        0.0,
+        0.0165,
+        0.0314,
+        0.0479,
+        0.0629,
+        0.0793,
+        0.0943,
+        0.1093
+      ],
+      "8e": [
+        0.0,
+        0.015,
+        0.0314,
+        0.0464
+      ]
+    }
+  },
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "18fcf40c4a3146958aac14f7c96a5cfd6b5aa4022adc28b0cf4144ab778cacf8",
+  "session_answers": [],
+  "limits": [
+    "One session on one device, at one tempo and one swing value",
+    "Spacing is resolved down to about 6 ms (the onset method's minimum gap); the closest registered spacing is 10.4 ms"
+  ]
+}

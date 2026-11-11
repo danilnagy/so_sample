@@ -19,12 +19,12 @@ function offline(): Plugin {
     enforce: 'post',
     generateBundle(_options, bundle) {
       const files = Object.keys(bundle).filter((file) => !file.endsWith('.map'))
-      const publicDir = resolve(__dirname, 'public')
+      const publicDir = resolve(import.meta.dirname, 'public')
       // Netlify's _headers is configuration, not a file the site serves.
       for (const file of readdirSync(publicDir)) if (!file.startsWith('_') && !file.startsWith('.')) files.push(file)
       files.sort()
       const version = createHash('sha256').update(files.join('\n')).digest('hex').slice(0, 12)
-      const source = readFileSync(resolve(__dirname, 'src/offline/sw.js'), 'utf8')
+      const source = readFileSync(resolve(import.meta.dirname, 'src/offline/sw.js'), 'utf8')
         .replace("'__VERSION__'", JSON.stringify(version))
         .replace('__FILES__', JSON.stringify(files))
       this.emitFile({ type: 'asset', fileName: 'sw.js', source })
@@ -39,7 +39,7 @@ function offline(): Plugin {
 // https://vite.dev/config/
 export default defineConfig(({ mode, command }) => {
   const tr = mode === 'tr'
-  const presets = resolve(__dirname, tr ? 'presets-tr' : 'src/presets')
+  const presets = resolve(import.meta.dirname, tr ? 'presets-tr' : 'src/presets')
   if (tr && command === 'build') throw new Error('The TR presets are for local use only: build without --mode tr.')
   if (tr && !existsSync(resolve(presets, 'index.json'))) throw new Error('No web/presets-tr: run npm run presets -- --pack "<TR pack folder>" first.')
   return {

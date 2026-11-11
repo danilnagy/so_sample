@@ -1,0 +1,130 @@
+{
+  "analysis_version": "aux-nibble-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of raw auxiliary high nibbles, and their measured effect on drum onsets and melodic note length; predictions that failed are kept as failed",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "measurements_pin_matches": true,
+    "session_target_exact": true
+  },
+  "predictions": {
+    "reception": "The backup equals the compiled target exactly (every packet and the whole body), raw auxiliary bytes included",
+    "H1_drum_retrigger": {
+      "kind": "drum_onsets",
+      "statement": "A drum step with high nibble n in 1, 2, 3, 4, 6, 8 plays n onsets within its own step (the retrigger counts the device's interface cycles through)",
+      "expected": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "6": 6,
+        "8": 8
+      }
+    },
+    "H0_drum_no_effect": {
+      "kind": "drum_onsets",
+      "statement": "The nibble has no audible effect on a drum step: every probe plays one onset in its step, as stray-bits-results.md would suggest",
+      "expected": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "5": 1,
+        "7": 1
+      }
+    },
+    "H1_melodic_length": {
+      "kind": "melodic_duration",
+      "statement": "A melodic note with high nibble n in 1, 2, 4, 8 sounds for n steps (250 ms each, within 60 ms); F and E sound the whole 3 s tone, being longer than it",
+      "expected_seconds": {
+        "1": 0.25,
+        "2": 0.5,
+        "4": 1.0,
+        "8": 2.0,
+        "F": 3.0,
+        "E": 3.0
+      },
+      "tolerance_seconds": 0.06
+    },
+    "H0_melodic_no_effect": {
+      "kind": "melodic_duration",
+      "statement": "The nibble has no audible effect on a melodic note: every probe sounds the whole 3 s tone (within 100 ms), as stray-bits-results.md found for nibbles 2 and E",
+      "expected_seconds": {
+        "F": 3.0,
+        "1": 3.0,
+        "2": 3.0,
+        "4": 3.0,
+        "8": 3.0,
+        "E": 3.0
+      },
+      "tolerance_seconds": 0.1
+    }
+  },
+  "held": [
+    "H1_drum_retrigger",
+    "H1_melodic_length"
+  ],
+  "failed": [
+    "H0_drum_no_effect",
+    "H0_melodic_no_effect"
+  ],
+  "drum_own_step_onsets_by_nibble": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "6": 6,
+    "8": 8,
+    "5": 6,
+    "7": 8
+  },
+  "melodic_duration_seconds_by_nibble": {
+    "F": 3.01,
+    "1": 0.26,
+    "2": 0.505,
+    "4": 1.0150000000000001,
+    "8": 2.005,
+    "E": 3.005
+  },
+  "exploratory": {
+    "drum_nibbles_5_and_7_own_step_onsets": {
+      "5": 6,
+      "7": 8
+    },
+    "drum_window_onsets_first_pass": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "6": 6,
+      "8": 8,
+      "5": 6,
+      "7": 8
+    }
+  },
+  "harness_session": "hardware-session-002.json",
+  "harness_session_sha256": "a7d2fe3395c3b78ced8d0b2552e31bc3009fbe410074860eead62025da82d492",
+  "session_answers": [
+    {
+      "question": "Patterns 1 to 4 (clicks): did some steps play a quick burst of repeated clicks rather than one? Roughly how many? (notes)",
+      "answer": "yes, 1, 2, 3, 4 times"
+    },
+    {
+      "question": "Patterns 5 to 10 (a steady tone, one per bar): did some tones stop short of the others? (notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Did the device show ERR, or anything unusual on its screen? (yes/no/notes)",
+      "answer": "no"
+    }
+  ],
+  "limits": [
+    "One session on one device",
+    "Onset counting assumes repeats are separated by at least 12 ms; a retrigger faster than that would be undercounted",
+    "A length unit other than one step would fail H1 and show in the measured durations"
+  ]
+}

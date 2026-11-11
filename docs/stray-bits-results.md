@@ -28,8 +28,8 @@ With this, every field of a backup has a known role, a measured non-effect, or, 
 
 Later note (2026-11-10): no drum step here carried a nibble other than 1, and the melodic
 tone may have ended within its step, so this test neither shows nor excludes the nibble
-holding a note length or retrigger count, as the device's interface and other work suggest
-([prior art](prior-art.md#open-question-note-length-and-drum-retrigger)).
+holding a note length or retrigger count. Settled 2026-11-11: it holds both, a drum's
+retrigger count and a melodic note's length in steps ([aux nibble](aux-nibble-results.md)).
 
 - [Registration](../experiments/stray-bits-registration-001.json)
 - [Decision](../experiments/stray-bits-decision-001.json)

@@ -1,0 +1,79 @@
+{
+  "analysis_version": "aux-nibble-2-native-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "native_valid": true,
+    "target_body_matches_registration": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_is_new": true
+  },
+  "registration_sha256": "112e620571cd4e9efc2e4dfbc327bf7ab2871039845b56caf78f2cb8b8ad5059",
+  "capture_sha256": "12a29bf870a0d3f9e5b703e4d4bc54353fa54f406513eb2aa768b011aeafa0c4",
+  "artifact_sha256": "e44a1a47bd2c9f6b4007200324c6330a3d0d8126cba9a3ccf8714683bf7b8eeb",
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 478232,
+    "required_complete_label_span": [
+      0,
+      956467
+    ],
+    "packet_count": 2089,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "4a1166ff54dcf65fa7355f18e69ba18f8973f091699515b7f747d0a77c0e1ec7",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 1853,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 255,
+        "payload_bytes": 61449,
+        "header_hex": "00000000e2e4000000",
+        "payload_sha256": "df5f792c9959209569f165e6c5a53f5a32eb451aebcce890095d6cc10df0395e"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 255,
+        "payload_bytes": 61449,
+        "header_hex": "00000000e2e4000001",
+        "payload_sha256": "34a5a38139ec03b47d7cdf351782580725bee4ebc1b7d48c5465bdfe21fdfef4"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 255,
+        "payload_bytes": 61449,
+        "header_hex": "00000000e2e4000002",
+        "payload_sha256": "938b6a58453c02b2949a891f4b656d5e150dcc44f10a9af97ae3c064eac62a75"
+      },
+      {
+        "sound_id": 4,
+        "packet_count": 493,
+        "payload_bytes": 118793,
+        "header_hex": "00000000c4c9010004",
+        "payload_sha256": "6a985734a4640b32b23070177b96994904611230ef95cba230ef9bf7fe237352"
+      },
+      {
+        "sound_id": 5,
+        "packet_count": 493,
+        "payload_bytes": 118793,
+        "header_hex": "00000000c4c9010005",
+        "payload_sha256": "c0cbe6cf3d45e565bde3abe10f6ca1890e226aa52b5f9e6477eca56b3e185568"
+      },
+      {
+        "sound_id": 8,
+        "packet_count": 102,
+        "payload_bytes": 24585,
+        "header_hex": "000000008e5b000008",
+        "payload_sha256": "d5117ec1fcd49da6139d593513ba609ff4896ee2df46ef74989c864f824e5aee"
+      }
+    ]
+  }
+}

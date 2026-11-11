@@ -14,6 +14,9 @@ import { SAMPLE_RATE, decodeMulawCodes } from '../core/mulaw';
 import { STEPS } from '../core/pattern';
 import type { Project, SampleResolver } from '../core/project';
 import { GLIDE_SECONDS, type Mix, type PlaybackState, barSeconds, initialPlaybackState, scheduleStep, soundSilent, stepOffsets } from './playback';
+
+/** The fade at a note's cut (its length, or the next repeat): short enough to keep a 15 ms retrigger distinct. */
+const CUT_FADE_SECONDS = 0.004;
 import { audioContext } from './samples';
 import { volumeDb } from './laws';
 
@@ -304,6 +307,16 @@ export class Player {
       source.onended = release;
       this.releases.set(source, release);
       source.start(event.time, event.clip.start / SAMPLE_RATE, (event.clip.end - event.clip.start) / SAMPLE_RATE);
+      // A note shorter than its clip (its length, or the next repeat restarting it) stops at its
+      // duration, with a few milliseconds' fade so the cut does not click.
+      const whole = (event.clip.end - event.clip.start) / SAMPLE_RATE / event.rate;
+      if (event.duration < whole - 0.001) {
+        const stop = event.time + Math.max(0, event.duration);
+        const fade = Math.min(CUT_FADE_SECONDS, Math.max(0, event.duration) / 2);
+        gain.gain.setValueAtTime(10 ** (event.gainDb / 20), stop - fade);
+        gain.gain.linearRampToValueAtTime(0, stop);
+        source.stop(stop);
+      }
       this.sources.add(source);
       entry.sources.push(source);
       const note = { sound: event.sound, key: event.key, start: event.time, end: event.time + event.duration };

@@ -46,7 +46,7 @@ record's chain, length, tempo and swing offsets, and resonance at bits 18 to 23)
 - **Tooling:** frame diff and inspection, read-back verification, a capture doctor for bad
   recordings, streaming demodulation and fuzzing (libpo).
 
-## Open question: note length and drum retrigger
+## Settled: note length and drum retrigger
 
 The device's own interface sets a melodic note's length (hold a step, turn knob B) and a
 drum step's retrigger count (hold a step, press BPM, cycling 1, 2, 3, 4, 6, 8), as
@@ -55,13 +55,13 @@ libpo's docs associate the auxiliary byte's high nibble with these, units unreso
 report drum control bytes 0x19, 0x29, 0x39, 0x49, 0x69 and 0x89, whose high nibbles match
 the retrigger cycle.
 
-This project's [stray bits](stray-bits-results.md) test found that the high nibble does
-not select a note type and that the app should write F (melodic) and 1 (drum). That test
-did not put other nibbles on a drum sound, and its melodic tone may have ended within the
-step, so it neither shows nor excludes a length or retrigger meaning. The app therefore
-cannot yet write note lengths or retriggers, and its preview ignores them. The registered
-experiment [aux-nibble-001](aux-nibble-control.md) (drum steps with nibbles 1 to 8,
-melodic steps with a long sample and nibbles 1 to F) is prepared to settle it.
+This project's registered session [aux-nibble-001](aux-nibble-results.md) confirmed both on
+the device: a drum note's high nibble n plays n evenly spaced hits in its step (5 and 7
+play as 6 and 8), and a melodic note's high nibble n sounds for n steps (measured for 1, 2,
+4 and 8). Two further sessions settled the rest at 60 BPM ([aux nibble 2](aux-nibble-2-results.md):
+retriggers re-strike one voice and restart the sample; F plays the whole sample) and found
+how swing shortens them ([aux nibble 3](aux-nibble-3-results.md), exploratory). The earlier
+[stray bits](stray-bits-results.md) test could not have heard either.
 
 ## Adjacent tools
 

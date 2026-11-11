@@ -32,7 +32,7 @@ describe('the bundled projects', () => {
   it('ships seven kits and ten projects, each with a bundled asset', () => {
     expect(PRESET_KITS.map((k) => k.name)).toEqual(['Synth 505', 'Synth 606', 'Synth 626', 'Synth 707', 'Synth 808', 'Synth 808 Percussion', 'Synth 909']);
     expect(PRESETS).toHaveLength(10);
-    expect(PRESETS.map((p) => p.name)).toEqual(['Rainy Rhodes', 'Night Walk', 'Corner Store', 'Dusty Crates', 'Warehouse Jack', 'Motor City', 'Late Shift', 'Rinse Out', 'Echo Chamber', 'Concrete']);
+    expect(PRESETS.map((p) => p.name)).toEqual(['Rainy Rhodes', 'Night Walk', 'Corner Store', 'Afterglow', 'Warehouse Jack', 'Motor City', 'Late Shift', 'Rinse Out', 'Echo Chamber', 'Concrete']);
     for (const p of PRESETS) expect(presetUrl(p)).toMatch(/\.sosample\.zip$/);
     for (const k of PRESET_KITS) expect(presetUrl(k)).toMatch(/\.kit\.zip$/);
   });

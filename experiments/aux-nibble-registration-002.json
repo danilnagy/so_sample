@@ -1,0 +1,690 @@
+{
+  "analysis_version": "aux-nibble-2-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "aux-nibble-002",
+  "expected_artifact_source": "Python decode of the TypeScript restore.wav",
+  "packets_json_sha256": "357dad56c94c3a6796b9634b9daf05c001668c7c6ffbdc4eeba1e8765d871ea6",
+  "project_json_sha256": "92fa47dd754c4eea81472bc64eb6fe18d09e22f3432e1ec7fc9958486acaa200",
+  "expected_body_sha256": "4a1166ff54dcf65fa7355f18e69ba18f8973f091699515b7f747d0a77c0e1ec7",
+  "edited_artifact_sha256": "ba236cced998917dbad00e6480f3ec0a98b41b1baa1cca032cfd9c5ca1476182",
+  "restore_wav_sha256": "52e549d09d3e401564bd7b787474eb7c0a5f08d2f018a8a0c3cecb0b27591316",
+  "decoded_restore_carries_typescript_packets": true,
+  "tempo": 60,
+  "swing": 0,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "probes": {
+    "drum_sound": 9,
+    "hz_by_sound": {
+      "1": 250,
+      "2": 350,
+      "3": 500,
+      "5": 700,
+      "6": 1000
+    },
+    "reference": {
+      "pattern": 1,
+      "step": 1,
+      "sound": 9,
+      "key": 1,
+      "nibble": 1
+    },
+    "voice_probes": [
+      {
+        "held": 0,
+        "probe": {
+          "pattern": 1,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        }
+      },
+      {
+        "held": 1,
+        "probe": {
+          "pattern": 2,
+          "step": 5,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        }
+      },
+      {
+        "held": 2,
+        "probe": {
+          "pattern": 3,
+          "step": 5,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        }
+      },
+      {
+        "held": 3,
+        "probe": {
+          "pattern": 4,
+          "step": 5,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        }
+      }
+    ],
+    "holder_probes": [
+      {
+        "pattern": 2,
+        "step": 1,
+        "sound": 1,
+        "key": 5,
+        "nibble": 8
+      },
+      {
+        "pattern": 3,
+        "step": 1,
+        "sound": 1,
+        "key": 5,
+        "nibble": 8
+      },
+      {
+        "pattern": 3,
+        "step": 1,
+        "sound": 2,
+        "key": 5,
+        "nibble": 8
+      },
+      {
+        "pattern": 4,
+        "step": 1,
+        "sound": 1,
+        "key": 5,
+        "nibble": 8
+      },
+      {
+        "pattern": 4,
+        "step": 1,
+        "sound": 2,
+        "key": 5,
+        "nibble": 8
+      },
+      {
+        "pattern": 4,
+        "step": 1,
+        "sound": 3,
+        "key": 5,
+        "nibble": 8
+      }
+    ],
+    "length_probes": [
+      {
+        "pattern": 9,
+        "step": 1,
+        "sound": 5,
+        "key": 5,
+        "nibble": 3
+      },
+      {
+        "pattern": 9,
+        "step": 1,
+        "sound": 6,
+        "key": 5,
+        "nibble": 5
+      },
+      {
+        "pattern": 10,
+        "step": 1,
+        "sound": 5,
+        "key": 5,
+        "nibble": 6
+      },
+      {
+        "pattern": 10,
+        "step": 1,
+        "sound": 6,
+        "key": 5,
+        "nibble": 7
+      },
+      {
+        "pattern": 11,
+        "step": 1,
+        "sound": 5,
+        "key": 5,
+        "nibble": 9
+      },
+      {
+        "pattern": 11,
+        "step": 1,
+        "sound": 6,
+        "key": 5,
+        "nibble": 10
+      },
+      {
+        "pattern": 12,
+        "step": 1,
+        "sound": 5,
+        "key": 5,
+        "nibble": 11
+      },
+      {
+        "pattern": 12,
+        "step": 1,
+        "sound": 6,
+        "key": 5,
+        "nibble": 12
+      },
+      {
+        "pattern": 13,
+        "step": 1,
+        "sound": 5,
+        "key": 5,
+        "nibble": 13
+      },
+      {
+        "pattern": 13,
+        "step": 1,
+        "sound": 6,
+        "key": 5,
+        "nibble": 14
+      },
+      {
+        "pattern": 14,
+        "step": 1,
+        "sound": 5,
+        "key": 5,
+        "nibble": 15
+      }
+    ],
+    "fx_patterns": [
+      {
+        "pattern": 5,
+        "fx": 13,
+        "held": [
+          1,
+          8
+        ],
+        "probe": {
+          "pattern": 5,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        }
+      },
+      {
+        "pattern": 6,
+        "fx": 14,
+        "held": [
+          5,
+          12
+        ],
+        "probe": {
+          "pattern": 6,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        }
+      },
+      {
+        "pattern": 7,
+        "fx": 13,
+        "held": [
+          1,
+          8
+        ],
+        "probe": {
+          "pattern": 7,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 2
+        }
+      },
+      {
+        "pattern": 8,
+        "fx": 14,
+        "held": [
+          5,
+          12
+        ],
+        "probe": {
+          "pattern": 8,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 2
+        }
+      }
+    ]
+  },
+  "aux_bytes": [
+    {
+      "pattern": 1,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 16
+    },
+    {
+      "pattern": 1,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 64
+    },
+    {
+      "pattern": 2,
+      "step": 5,
+      "sound": 9,
+      "offset": 840,
+      "byte": 64
+    },
+    {
+      "pattern": 3,
+      "step": 5,
+      "sound": 9,
+      "offset": 840,
+      "byte": 64
+    },
+    {
+      "pattern": 4,
+      "step": 5,
+      "sound": 9,
+      "offset": 840,
+      "byte": 64
+    },
+    {
+      "pattern": 2,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 132
+    },
+    {
+      "pattern": 3,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 132
+    },
+    {
+      "pattern": 3,
+      "step": 1,
+      "sound": 2,
+      "offset": 769,
+      "byte": 132
+    },
+    {
+      "pattern": 4,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 132
+    },
+    {
+      "pattern": 4,
+      "step": 1,
+      "sound": 2,
+      "offset": 769,
+      "byte": 132
+    },
+    {
+      "pattern": 4,
+      "step": 1,
+      "sound": 3,
+      "offset": 770,
+      "byte": 132
+    },
+    {
+      "pattern": 5,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 64
+    },
+    {
+      "pattern": 6,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 64
+    },
+    {
+      "pattern": 7,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 36
+    },
+    {
+      "pattern": 8,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 36
+    },
+    {
+      "pattern": 9,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 52
+    },
+    {
+      "pattern": 9,
+      "step": 1,
+      "sound": 6,
+      "offset": 773,
+      "byte": 84
+    },
+    {
+      "pattern": 10,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 100
+    },
+    {
+      "pattern": 10,
+      "step": 1,
+      "sound": 6,
+      "offset": 773,
+      "byte": 116
+    },
+    {
+      "pattern": 11,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 148
+    },
+    {
+      "pattern": 11,
+      "step": 1,
+      "sound": 6,
+      "offset": 773,
+      "byte": 164
+    },
+    {
+      "pattern": 12,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 180
+    },
+    {
+      "pattern": 12,
+      "step": 1,
+      "sound": 6,
+      "offset": 773,
+      "byte": 196
+    },
+    {
+      "pattern": 13,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 212
+    },
+    {
+      "pattern": 13,
+      "step": 1,
+      "sound": 6,
+      "offset": 773,
+      "byte": 228
+    },
+    {
+      "pattern": 14,
+      "step": 1,
+      "sound": 5,
+      "offset": 772,
+      "byte": 244
+    }
+  ],
+  "effects": [
+    {
+      "pattern": 5,
+      "effects": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "pattern": 6,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "pattern": 7,
+      "effects": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "pattern": 8,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "method_script": "scripts/aux_nibble2_method.py",
+  "method_script_sha256": "e53fc55616475c097f7b69b1d54272a75525c77e75f973a6840a3461bc6ca0b4",
+  "method_settings": {
+    "step_seconds": 0.25,
+    "steps_per_pattern": 16,
+    "chain_patterns": 14,
+    "click_band_hz": [
+      6000.0,
+      8500.0
+    ],
+    "body_band_hz": [
+      2000.0,
+      4000.0
+    ],
+    "tone_bands_hz": {
+      "250": [
+        215.0,
+        290.0
+      ],
+      "350": [
+        300.0,
+        410.0
+      ],
+      "500": [
+        430.0,
+        580.0
+      ],
+      "700": [
+        600.0,
+        820.0
+      ],
+      "1000": [
+        860.0,
+        1180.0
+      ]
+    },
+    "click_hop_seconds": 0.001,
+    "tone_hop_seconds": 0.01,
+    "onset_on_fraction": 0.3,
+    "onset_off_fraction": 0.1,
+    "onset_min_gap_seconds": 0.01,
+    "search_seconds": 0.12,
+    "own_step_tolerance_seconds": 0.03,
+    "body_window_seconds": [
+      0.012,
+      0.052
+    ],
+    "reference_offsets_seconds": [
+      0.0,
+      0.0625,
+      0.125,
+      0.1875
+    ],
+    "tone_floor_fraction": 0.1,
+    "tone_window_steps": 24,
+    "min_click_level": 0.001
+  },
+  "playback_seconds": 118,
+  "predictions": {
+    "reception": "The backup equals the compiled target exactly (every packet and the whole body), every auxiliary byte and effect included",
+    "H1_one_voice": {
+      "kind": "voice_onsets",
+      "statement": "A drum note's repeats re-strike one voice: the retrigger of 4 plays all 4 onsets whether 0, 1, 2 or 3 other voices are held",
+      "expected": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "3": 4
+      }
+    },
+    "H2_voice_per_repeat": {
+      "kind": "voice_onsets",
+      "statement": "Each repeat needs a voice of its own and, like any new note, is dropped when none is free (a sounding note is never cut): with 0, 1, 2, 3 voices held the retrigger of 4 plays 4, 3, 2, 1 onsets",
+      "expected": {
+        "0": 4,
+        "1": 3,
+        "2": 2,
+        "3": 1
+      }
+    },
+    "H1_restart": {
+      "kind": "choke",
+      "model": "restart",
+      "statement": "A repeat cuts the previous one and restarts the sample: the body power 12 to 52 ms after the fourth onset of the unaccompanied retrigger equals the single hit's after its onset (0 dB, within 1.5 dB)",
+      "tolerance_db": 1.5
+    },
+    "H2_overlap": {
+      "kind": "choke",
+      "model": "overlap",
+      "statement": "Repeats overlap and their bodies add in power: after the fourth onset the body power is the single hit's summed at offsets 0, 62.5, 125 and 187.5 ms (predicted from the reference hit, about +4 dB), within 1.5 dB; undecided if that prediction is under 3 dB",
+      "tolerance_db": 1.5,
+      "min_separation_db": 3.0
+    },
+    "H_holders_continue": {
+      "kind": "holder_duration",
+      "statement": "No holder is cut by the drum: every holder sounds its full eight steps (2.0 s, within 60 ms), as a sounding note is never cut (voice-steal-results.md)",
+      "expected_seconds": 2.0,
+      "tolerance_seconds": 0.06
+    },
+    "H_length_steps": {
+      "kind": "melodic_duration",
+      "statement": "A melodic note with high nibble n in 3, 5, 6, 7, 9, A, B, C, D, E sounds for n steps (250 ms each, within 60 ms)",
+      "expected_seconds": {
+        "3": 0.75,
+        "5": 1.25,
+        "6": 1.5,
+        "7": 1.75,
+        "9": 2.25,
+        "A": 2.5,
+        "B": 2.75,
+        "C": 3.0,
+        "D": 3.25,
+        "E": 3.5
+      },
+      "tolerance_seconds": 0.06
+    },
+    "H_F_15_steps": {
+      "kind": "melodic_duration",
+      "statement": "Nibble F is fifteen steps like the others: 3.75 s (within 60 ms) of the 5 s tone",
+      "expected_seconds": {
+        "F": 3.75
+      },
+      "tolerance_seconds": 0.06
+    },
+    "H_F_whole_sample": {
+      "kind": "melodic_duration",
+      "statement": "Nibble F plays the whole sample: the 5 s tone sounds 5.0 s (within 100 ms)",
+      "expected_seconds": {
+        "F": 5.0
+      },
+      "tolerance_seconds": 0.1
+    }
+  },
+  "decision": [
+    "Exact reception is decided by the native check of the backup against the target",
+    "Each audible prediction is decided by the frozen method on playback.wav: onset counts by majority, durations and powers by median, over the full passes recorded",
+    "H1_one_voice and H2_voice_per_repeat exclude each other, as do H1_restart and H2_overlap, and H_F_15_steps and H_F_whole_sample; if neither of a pair holds, the result is recorded as neither, with the measurements, and no rule is adopted",
+    "The choke ratio is read only from passes where the unaccompanied retrigger played 4 onsets",
+    "The FX patterns (5 to 8), the onset offsets and the user's answers are exploratory"
+  ],
+  "limits": [
+    "One session on one device, at 60 BPM with no swing (aux-nibble-003 covers tempo and swing)",
+    "Onset counting assumes repeats at least 10 ms apart; the closest here are 62.5 ms",
+    "The choke reading assumes the body's noise adds in power when copies overlap; a restart that did not reset the sample's start would read as neither"
+  ]
+}

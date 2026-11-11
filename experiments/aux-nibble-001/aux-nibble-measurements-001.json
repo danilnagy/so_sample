@@ -1,0 +1,449 @@
+{
+  "analysis_version": "aux-nibble-measurements-0.1",
+  "hardware_verified": false,
+  "playback_sha256": "0003a2034cc6a04ad86dc7dede48f8bfeda8c0096f987040df04d8ace564d20c",
+  "settings": {
+    "step_seconds": 0.25,
+    "steps_per_pattern": 16,
+    "chain_patterns": 10,
+    "click_band_hz": [
+      2000.0,
+      4500.0
+    ],
+    "tone_band_hz": [
+      380.0,
+      650.0
+    ],
+    "click_hop_seconds": 0.002,
+    "tone_hop_seconds": 0.01,
+    "onset_on_fraction": 0.3,
+    "onset_off_fraction": 0.1,
+    "onset_min_gap_seconds": 0.012,
+    "search_seconds": 0.12,
+    "own_step_tolerance_seconds": 0.03,
+    "drum_window_steps": 8,
+    "tone_floor_fraction": 0.1,
+    "tone_window_steps": 16,
+    "min_click_level": 0.001
+  },
+  "first_onset_seconds": 1.7540136054421769,
+  "click_peak": 0.5925543222067327,
+  "passes": [
+    {
+      "pass": 1,
+      "start_seconds": 1.7540136054421769,
+      "drum": [
+        {
+          "pattern": 1,
+          "step": 1,
+          "nibble": 1,
+          "found": true,
+          "anchor_seconds": 1.7540136054421769,
+          "drift_seconds": 0.0,
+          "own_step_onsets": 1,
+          "window_onsets": 1,
+          "onset_offsets_seconds": [
+            0.0
+          ]
+        },
+        {
+          "pattern": 1,
+          "step": 9,
+          "nibble": 2,
+          "found": true,
+          "anchor_seconds": 3.75546485260771,
+          "drift_seconds": 0.0014512471655332426,
+          "own_step_onsets": 2,
+          "window_onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.1237
+          ]
+        },
+        {
+          "pattern": 2,
+          "step": 1,
+          "nibble": 3,
+          "found": true,
+          "anchor_seconds": 5.754920634920635,
+          "drift_seconds": 0.0009070294784585542,
+          "own_step_onsets": 3,
+          "window_onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0838,
+            0.1676
+          ]
+        },
+        {
+          "pattern": 2,
+          "step": 9,
+          "nibble": 4,
+          "found": true,
+          "anchor_seconds": 7.756371882086168,
+          "drift_seconds": 0.0023582766439913527,
+          "own_step_onsets": 4,
+          "window_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0599,
+            0.1237,
+            0.1856
+          ]
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "nibble": 6,
+          "found": true,
+          "anchor_seconds": 9.753832199546485,
+          "drift_seconds": -0.00018140589569171084,
+          "own_step_onsets": 6,
+          "window_onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0439,
+            0.0838,
+            0.1257,
+            0.1676,
+            0.2095
+          ]
+        },
+        {
+          "pattern": 3,
+          "step": 9,
+          "nibble": 8,
+          "found": true,
+          "anchor_seconds": 11.755283446712019,
+          "drift_seconds": 0.0012698412698419759,
+          "own_step_onsets": 8,
+          "window_onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0299,
+            0.0619,
+            0.0938,
+            0.1257,
+            0.1556,
+            0.1876,
+            0.2195
+          ]
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "nibble": 5,
+          "found": true,
+          "anchor_seconds": 13.754739229024944,
+          "drift_seconds": 0.0007256235827668434,
+          "own_step_onsets": 6,
+          "window_onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0419,
+            0.0838,
+            0.1257,
+            0.1676,
+            0.2095
+          ]
+        },
+        {
+          "pattern": 4,
+          "step": 9,
+          "nibble": 7,
+          "found": true,
+          "anchor_seconds": 15.756190476190477,
+          "drift_seconds": 0.00217687074830053,
+          "own_step_onsets": 8,
+          "window_onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0299,
+            0.0619,
+            0.0938,
+            0.1257,
+            0.1556,
+            0.1856,
+            0.2175
+          ]
+        }
+      ],
+      "melodic": [
+        {
+          "pattern": 5,
+          "step": 1,
+          "nibble": 15,
+          "found": true,
+          "onset_seconds": 17.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 3.01,
+          "duration_steps": 12.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 6,
+          "step": 1,
+          "nibble": 1,
+          "found": true,
+          "onset_seconds": 21.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 0.26,
+          "duration_steps": 1.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 7,
+          "step": 1,
+          "nibble": 2,
+          "found": true,
+          "onset_seconds": 25.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 0.51,
+          "duration_steps": 2.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 8,
+          "step": 1,
+          "nibble": 4,
+          "found": true,
+          "onset_seconds": 29.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 1.01,
+          "duration_steps": 4.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 9,
+          "step": 1,
+          "nibble": 8,
+          "found": true,
+          "onset_seconds": 33.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 2.01,
+          "duration_steps": 8.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 10,
+          "step": 1,
+          "nibble": 14,
+          "found": true,
+          "onset_seconds": 37.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 3.01,
+          "duration_steps": 12.04,
+          "full_tone_seconds": 3.0
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "start_seconds": 41.754013605442175,
+      "drum": [
+        {
+          "pattern": 1,
+          "step": 1,
+          "nibble": 1,
+          "found": true,
+          "anchor_seconds": 41.75709750566894,
+          "drift_seconds": 0.003083900226762637,
+          "own_step_onsets": 1,
+          "window_onsets": 1,
+          "onset_offsets_seconds": [
+            0.0
+          ]
+        },
+        {
+          "pattern": 1,
+          "step": 9,
+          "nibble": 2,
+          "found": true,
+          "anchor_seconds": 43.75655328798186,
+          "drift_seconds": 0.0025396825396839517,
+          "own_step_onsets": 2,
+          "window_onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.1257
+          ]
+        },
+        {
+          "pattern": 2,
+          "step": 1,
+          "nibble": 3,
+          "found": true,
+          "anchor_seconds": 45.75600907029479,
+          "drift_seconds": 0.001995464852612372,
+          "own_step_onsets": 3,
+          "window_onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0838,
+            0.1676
+          ]
+        },
+        {
+          "pattern": 2,
+          "step": 9,
+          "nibble": 4,
+          "found": true,
+          "anchor_seconds": 47.75746031746032,
+          "drift_seconds": 0.0034467120181460587,
+          "own_step_onsets": 4,
+          "window_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0619,
+            0.1237,
+            0.1876
+          ]
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "nibble": 6,
+          "found": true,
+          "anchor_seconds": 49.75691609977324,
+          "drift_seconds": 0.0029024943310673734,
+          "own_step_onsets": 6,
+          "window_onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0419,
+            0.0838,
+            0.1257,
+            0.1676,
+            0.2075
+          ]
+        },
+        {
+          "pattern": 3,
+          "step": 9,
+          "nibble": 8,
+          "found": true,
+          "anchor_seconds": 51.758367346938776,
+          "drift_seconds": 0.00435374149660106,
+          "own_step_onsets": 8,
+          "window_onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0299,
+            0.0599,
+            0.0918,
+            0.1237,
+            0.1556,
+            0.1856,
+            0.2175
+          ]
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "nibble": 5,
+          "found": true,
+          "anchor_seconds": 53.757823129251705,
+          "drift_seconds": 0.0038095238095294803,
+          "own_step_onsets": 6,
+          "window_onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0419,
+            0.0838,
+            0.1237,
+            0.1676,
+            0.2075
+          ]
+        },
+        {
+          "pattern": 4,
+          "step": 9,
+          "nibble": 7,
+          "found": true,
+          "anchor_seconds": 55.757278911564626,
+          "drift_seconds": 0.003265306122450795,
+          "own_step_onsets": 8,
+          "window_onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0319,
+            0.0619,
+            0.0938,
+            0.1257,
+            0.1576,
+            0.1876,
+            0.2195
+          ]
+        }
+      ],
+      "melodic": [
+        {
+          "pattern": 5,
+          "step": 1,
+          "nibble": 15,
+          "found": true,
+          "onset_seconds": 57.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 3.01,
+          "duration_steps": 12.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 6,
+          "step": 1,
+          "nibble": 1,
+          "found": true,
+          "onset_seconds": 61.75,
+          "drift_seconds": -0.0040136054421751055,
+          "duration_seconds": 0.26,
+          "duration_steps": 1.04,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 7,
+          "step": 1,
+          "nibble": 2,
+          "found": true,
+          "onset_seconds": 65.76,
+          "drift_seconds": 0.005986394557837116,
+          "duration_seconds": 0.5,
+          "duration_steps": 2.0,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 8,
+          "step": 1,
+          "nibble": 4,
+          "found": true,
+          "onset_seconds": 69.75,
+          "drift_seconds": -0.004013605442168,
+          "duration_seconds": 1.02,
+          "duration_steps": 4.08,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 9,
+          "step": 1,
+          "nibble": 8,
+          "found": true,
+          "onset_seconds": 73.76,
+          "drift_seconds": 0.005986394557837116,
+          "duration_seconds": 2.0,
+          "duration_steps": 8.0,
+          "full_tone_seconds": 3.0
+        },
+        {
+          "pattern": 10,
+          "step": 1,
+          "nibble": 14,
+          "found": true,
+          "onset_seconds": 77.76,
+          "drift_seconds": 0.005986394557837116,
+          "duration_seconds": 3.0,
+          "duration_steps": 12.0,
+          "full_tone_seconds": 3.0
+        }
+      ]
+    }
+  ]
+}

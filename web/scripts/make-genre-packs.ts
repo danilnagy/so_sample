@@ -3,7 +3,7 @@
  *
  *   npx tsx scripts/make-genre-packs.ts "<TR pack folder>" "<output folder>"
  *
- * Two soul-driven boom bap songs (organ and Rhodes chords, brass stabs, a sub bass, hard
+ * A soul-driven boom bap song (organ and Rhodes chords, brass stabs, a sub bass, hard
  * drums with swing) and two house songs: Chicago (piano stabs, a sawtooth bass on the
  * offbeats, 909 drums with the open hat on the "and") and Detroit (detuned string pads,
  * a sixteenth bassline, a bleep hook). Same layout as the lofi packs: chords on 1 to 3
@@ -132,64 +132,6 @@ export function cornerStore(): SongSpec {
       bar(Dm, bD, 'sparse', { lead: [[2, L.A5], [6, L.G], [10, L.E, 26]] }),
       bar(F, bF, 'sparse', { lead: [[3, L.C], [7, L.D], [11, L.E, 26], [14, L.G, 24]] }),
       stabBar('sparse', [[2, L.E], [6, L.D], [10, L.C, 26]]),
-    ],
-    chain: [1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 7, 8, 5, 6, 7, 8, 1, 2, 3, 4],
-  };
-}
-
-export function dustyCrates(): SongSpec {
-  // C minor soul: Cm9 | Fm9 | Abmaj7 | G7. Organ min9 at C (Fm9 is +5), Rhodes maj7 at Ab, brass dom7 at G; bass at C2; lead at G4.
-  const Cm: [number, number] = [1, K(0, 'Cm9')];
-  const Fm: [number, number] = [1, K(5, 'Fm9')];
-  const Ab: [number, number] = [2, K(0, 'Abmaj7')];
-  const G7 = K(0, 'G7');
-  const bC = K(0, 'bass C');
-  const bF = K(5, 'bass F');
-  const bAb = K(8, 'bass Ab');
-  const bG = K(7, 'bass G');
-  // Lead at G4: D4 -5, Eb4 -4, G4 0, Bb4 +3, C5 +5, D5 +7, Eb5 +8, F5 +10.
-  const L = { D4: K(-5, 'D4'), Eb4: K(-4, 'Eb4'), G: K(0, 'G'), Bb: K(3, 'Bb'), C: K(5, 'C'), D: K(7, 'D'), Eb: K(8, 'Eb'), F: K(10, 'F') };
-  const bar = (chord: [number, number], bassKey: number, groove: keyof typeof boom, extra: { chops?: number[]; lead?: [number, number, number?][] } = {}): Note[] => [
-    { step: 1, sound: chord[0], key: chord[1] },
-    ...(extra.chops ?? []).map((step) => ({ step, sound: chord[0], key: chord[1], volume: 24 })),
-    ...b.bassNotes([1, 8, 12], bassKey),
-    ...boom[groove](),
-    ...(extra.lead ?? []).map(([step, key, volume]) => ({ step, sound: 5, key, volume })),
-  ];
-  const stabBar = (groove: keyof typeof boom, lead: [number, number, number?][] = []): Note[] => [
-    ...b.bassNotes([1, 8, 12], bG),
-    ...boom[groove](),
-    ...[1, 4, 8, 11, 14].map((step, i) => ({ step, sound: 3, key: G7, volume: i % 2 ? 26 : 30 })),
-    ...lead.map(([step, key, volume]) => ({ step, sound: 5, key, volume })),
-  ];
-  return {
-    name: 'Dusty Crates',
-    tempo: 88,
-    swing: 10,
-    melodic: {
-      1: { id: 'min9', name: 'organ min9', samples: organChord([60, 63, 67, 70, 74], 0.85, 41) },
-      2: { id: 'maj7', name: 'rhodes maj7', samples: rhodesChord([56, 60, 63, 67], 1.0, 42) },
-      3: { id: 'dom7', name: 'brass dom7', samples: brassStab([55, 59, 62, 65], 0.35) },
-      4: { id: 'bass', name: 'sub bass', samples: subBass(36, 0.5) },
-      5: { id: 'lead', name: 'lead rhodes', samples: rhodesLead(67, 0.45, 43) },
-    },
-    // An 808 kick (kept shorter: the stab bars' kick, brass, bass and lead meet the hat on beat 3), 707 snare, rim and clap, 606 hats, 626 tambourine and cowbell.
-    kits: {
-      11: { kit: 'TR-808', trim: { [D.kick]: 0.15, [D.kick2]: 0.3 } },
-      12: { kit: 'TR-707', trim: BOOM_TRIMS.snares },
-      13: { kit: 'TR-606', trim: BOOM_TRIMS.hats },
-      14: { kit: 'TR-626', trim: BOOM_TRIMS.perc },
-    },
-    colour: BOOM_COLOUR,
-    bars: [
-      bar(Cm, bC, 'main', { chops: [7] }),
-      bar(Fm, bF, 'main', { chops: [7] }),
-      bar(Ab, bAb, 'main', { chops: [7] }),
-      stabBar('turn'),
-      bar(Cm, bC, 'sparse', { lead: [[3, L.G], [7, L.Bb], [11, L.G, 26], [14, L.F, 24]] }),
-      bar(Fm, bF, 'sparse', { lead: [[2, L.C], [6, L.Bb], [10, L.G, 26]] }),
-      bar(Ab, bAb, 'sparse', { lead: [[3, L.Eb], [7, L.D], [11, L.C, 26], [14, L.Bb, 24]] }),
-      stabBar('sparse', [[2, L.D], [6, L.Eb4, 26], [10, L.D4, 24]]),
     ],
     chain: [1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 7, 8, 5, 6, 7, 8, 1, 2, 3, 4],
   };
@@ -358,7 +300,7 @@ async function main(): Promise<void> {
   const [pack, out] = process.argv.slice(2);
   if (!pack || !out) throw new Error('usage: make-genre-packs.ts <TR pack folder> <output folder>');
   mkdirSync(out, { recursive: true });
-  for (const spec of [cornerStore(), dustyCrates(), warehouseJack(), motorCity()]) console.log((await writePack(spec, pack, out)).description);
+  for (const spec of [cornerStore(), warehouseJack(), motorCity()]) console.log((await writePack(spec, pack, out)).description);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

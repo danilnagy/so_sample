@@ -4,7 +4,7 @@ import { base64ToBytes, concatBytes } from '../bytes';
 import { preambleBytes } from '../labels';
 import { type Packet, decodeFrame, encodePackets } from '../packets';
 import { parseFrame } from '../state';
-import { emptyPattern, writeCell, writeEffects } from '../pattern';
+import { DEFAULT_PARAMETERS, cellOffsets, emptyPattern, readCell, writeCell, writeEffects } from '../pattern';
 import { type ArchiveProject, type ArchiveSample, codeFromG711, g711FromCode, mulawCodesFromWav, mulawWav, packKit, packProject, patternFromJson, patternToJson, unpackKit, unpackProject } from '../archive';
 import { decodeMulaw } from '../mulaw';
 import fxRules from '../__fixtures__/golden-compiled-fx-rules-001.json';
@@ -206,5 +206,34 @@ describe('kit archives', () => {
     expect(kit.slices.filter(Boolean).length).toBe(3);
     expect(unpacked.length).toBe(2);
     await expect(unpackProject(files)).rejects.toThrow(/no project.json/);
+  });
+});
+
+describe('note timing in archives', () => {
+  it('writes a melodic length and a drum repeat as named fields (and the raw byte for older readers), and reads them back', () => {
+    const data = emptyPattern();
+    writeCell(data, 1, 1, { key: 5, ...DEFAULT_PARAMETERS, timing: 4 });
+    writeCell(data, 1, 9, { key: 3, ...DEFAULT_PARAMETERS, timing: 6 });
+    writeCell(data, 2, 9, { key: 3, ...DEFAULT_PARAMETERS });
+    const json = patternToJson(data);
+    expect(json.notes.find((n) => n.step === 1 && n.sound === 1)).toMatchObject({ length: 4, aux: 0x44 });
+    expect(json.notes.find((n) => n.step === 1 && n.sound === 9)).toMatchObject({ repeat: 6, aux: 0x62 });
+    const plain = json.notes.find((n) => n.step === 2 && n.sound === 9)!;
+    expect(plain.repeat).toBeUndefined();
+    expect(plain.aux).toBeUndefined();
+    expect(patternFromJson(json, 'P')).toEqual(data);
+  });
+
+  it('reads a file from before the named fields by its raw byte, and prefers the named field when both are given', () => {
+    const data = emptyPattern();
+    writeCell(data, 1, 9, { key: 3, ...DEFAULT_PARAMETERS });
+    const json = patternToJson(data);
+    const note = json.notes[0] as { aux?: number; repeat?: number };
+    note.aux = 0x42;
+    expect(readCell(patternFromJson(json, 'P'), 1, 9)).toMatchObject({ key: 3, timing: 4 });
+    note.repeat = 2;
+    expect(patternFromJson(json, 'P')[cellOffsets(1, 9).aux]).toBe(0x22);
+    note.repeat = 0;
+    expect(() => patternFromJson(json, 'P')).toThrow(/repeat/);
   });
 });

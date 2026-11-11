@@ -1,0 +1,23 @@
+{
+  "experiment_id": "aux-nibble-003",
+  "capture_status": "validated_exact_native_aux_nibble_3",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../aux-nibble-registration-003.json",
+  "builder": "web/scripts/build-aux-nibble-3-test.ts",
+  "playback_seconds": 60,
+  "playback_instructions": "# Aux-nibble test 3\n\nAfter the restore, press PLAY and let the chain run: seven one-bar patterns at 120 BPM with\nswing (two seconds each, 14 s a pass). Keep the volume where you set it, and do not touch any\nknob or button while it plays; the recording should hold four full passes.\n\n- Patterns 1 to 3: bursts of 2, 3, 4, 6 and 8 clicks, each on a straight and a swung step.\n- Patterns 4 to 7: two short tones a bar, 1 to 4 steps long, a low one on a straight step\n  and a high one on the swung step after it.\n",
+  "observation_questions": [
+    "Patterns 1 to 3 (clicks): did the bursts sound evenly spaced, or did the swung ones sound squashed or stretched? (notes)",
+    "Patterns 4 to 7 (two short tones a bar, a low and a high): anything notable about their lengths? (notes)",
+    "Did the device show ERR, or anything unusual on its screen? (yes/no/notes)",
+    "Anything else you noticed (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "measurements": "aux-nibble-measurements-003.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

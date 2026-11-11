@@ -1,0 +1,726 @@
+{
+  "analysis_version": "aux-nibble-2-measurements-0.1",
+  "hardware_verified": false,
+  "playback_sha256": "9012cafab0567da815ad5b3ff178c9b7cde67525877ea5a40eb91472268b5745",
+  "settings": {
+    "step_seconds": 0.25,
+    "steps_per_pattern": 16,
+    "chain_patterns": 14,
+    "click_band_hz": [
+      6000.0,
+      8500.0
+    ],
+    "body_band_hz": [
+      2000.0,
+      4000.0
+    ],
+    "tone_bands_hz": {
+      "250": [
+        215.0,
+        290.0
+      ],
+      "350": [
+        300.0,
+        410.0
+      ],
+      "500": [
+        430.0,
+        580.0
+      ],
+      "700": [
+        600.0,
+        820.0
+      ],
+      "1000": [
+        860.0,
+        1180.0
+      ]
+    },
+    "click_hop_seconds": 0.001,
+    "tone_hop_seconds": 0.01,
+    "onset_on_fraction": 0.3,
+    "onset_off_fraction": 0.1,
+    "onset_min_gap_seconds": 0.01,
+    "search_seconds": 0.12,
+    "own_step_tolerance_seconds": 0.03,
+    "body_window_seconds": [
+      0.012,
+      0.052
+    ],
+    "reference_offsets_seconds": [
+      0.0,
+      0.0625,
+      0.125,
+      0.1875
+    ],
+    "tone_floor_fraction": 0.1,
+    "tone_window_steps": 24,
+    "min_click_level": 0.001
+  },
+  "first_onset_seconds": 1.871746031746032,
+  "click_peak": 0.26616849654133135,
+  "passes": [
+    {
+      "pass": 1,
+      "start_seconds": 1.871746031746032,
+      "reference_found": true,
+      "reference_body_powers": [
+        0.0060282298779495026,
+        0.004434775586565092,
+        0.002925701168061148,
+        0.0017338741224012363
+      ],
+      "voices": [
+        {
+          "held": 0,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629,
+            0.1247,
+            0.1876
+          ],
+          "power_after_last_onset": 0.0061144671297778215
+        },
+        {
+          "held": 1,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629,
+            0.1257,
+            0.1866
+          ],
+          "power_after_last_onset": 0.004495949374418446
+        },
+        {
+          "held": 2,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0619,
+            0.1237,
+            0.1866
+          ],
+          "power_after_last_onset": 0.0034671379056723096
+        },
+        {
+          "held": 3,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0609,
+            0.1237,
+            0.1866
+          ],
+          "power_after_last_onset": 0.002510778514507504
+        }
+      ],
+      "holders": [
+        {
+          "pattern": 2,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 5.87,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 9.870000000000001,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 2,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 9.870000000000001,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 13.870000000000001,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 2,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 13.870000000000001,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 3,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 13.870000000000001,
+          "duration_seconds": 2.01
+        }
+      ],
+      "lengths": [
+        {
+          "pattern": 9,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 3,
+          "nibble_hex": "3",
+          "onset_seconds": 33.87,
+          "duration_seconds": 0.76
+        },
+        {
+          "pattern": 9,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 5,
+          "nibble_hex": "5",
+          "onset_seconds": 33.87,
+          "duration_seconds": 1.26
+        },
+        {
+          "pattern": 10,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 6,
+          "nibble_hex": "6",
+          "onset_seconds": 37.87,
+          "duration_seconds": 1.51
+        },
+        {
+          "pattern": 10,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 7,
+          "nibble_hex": "7",
+          "onset_seconds": 37.87,
+          "duration_seconds": 1.76
+        },
+        {
+          "pattern": 11,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 9,
+          "nibble_hex": "9",
+          "onset_seconds": 41.87,
+          "duration_seconds": 2.26
+        },
+        {
+          "pattern": 11,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 10,
+          "nibble_hex": "A",
+          "onset_seconds": 41.87,
+          "duration_seconds": 2.51
+        },
+        {
+          "pattern": 12,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 11,
+          "nibble_hex": "B",
+          "onset_seconds": 45.87,
+          "duration_seconds": 2.76
+        },
+        {
+          "pattern": 12,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 12,
+          "nibble_hex": "C",
+          "onset_seconds": 45.87,
+          "duration_seconds": 3.01
+        },
+        {
+          "pattern": 13,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 13,
+          "nibble_hex": "D",
+          "onset_seconds": 49.870000000000005,
+          "duration_seconds": 3.26
+        },
+        {
+          "pattern": 13,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 14,
+          "nibble_hex": "E",
+          "onset_seconds": 49.870000000000005,
+          "duration_seconds": 3.51
+        },
+        {
+          "pattern": 14,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 15,
+          "nibble_hex": "F",
+          "onset_seconds": 53.870000000000005,
+          "duration_seconds": 5.01
+        }
+      ],
+      "fx": [
+        {
+          "pattern": 5,
+          "fx": 13,
+          "held_steps": [
+            1,
+            8
+          ],
+          "probe": {
+            "pattern": 5,
+            "step": 1,
+            "sound": 9,
+            "key": 1,
+            "nibble": 4
+          },
+          "click_onsets_seconds_in_pattern": [
+            -0.0004,
+            0.0625,
+            0.1244,
+            0.1872
+          ]
+        },
+        {
+          "pattern": 6,
+          "fx": 14,
+          "held_steps": [
+            5,
+            12
+          ],
+          "probe": {
+            "pattern": 6,
+            "step": 1,
+            "sound": 9,
+            "key": 1,
+            "nibble": 4
+          },
+          "click_onsets_seconds_in_pattern": [
+            0.0005,
+            0.0614,
+            0.1243,
+            0.1871,
+            0.9993,
+            1.0621,
+            1.125,
+            1.1868,
+            1.999,
+            2.0619,
+            2.1247,
+            2.1876
+          ]
+        },
+        {
+          "pattern": 7,
+          "fx": 13,
+          "held_steps": [
+            1,
+            8
+          ],
+          "probe": {
+            "pattern": 7,
+            "step": 1,
+            "sound": 5,
+            "key": 5,
+            "nibble": 2
+          },
+          "tone_intervals_seconds_in_pattern": [
+            [
+              0.0,
+              0.67
+            ]
+          ]
+        },
+        {
+          "pattern": 8,
+          "fx": 14,
+          "held_steps": [
+            5,
+            12
+          ],
+          "probe": {
+            "pattern": 8,
+            "step": 1,
+            "sound": 5,
+            "key": 5,
+            "nibble": 2
+          },
+          "tone_intervals_seconds_in_pattern": [
+            [
+              0.0,
+              0.51
+            ],
+            [
+              1.0,
+              1.51
+            ],
+            [
+              2.0,
+              2.51
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "start_seconds": 57.871746031746035,
+      "reference_found": true,
+      "reference_body_powers": [
+        0.004189664994064517,
+        0.0032270808690382856,
+        0.0021509996612108463,
+        0.0013133436341505435
+      ],
+      "voices": [
+        {
+          "held": 0,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629,
+            0.1257,
+            0.1876
+          ],
+          "power_after_last_onset": 0.006024652965512244
+        },
+        {
+          "held": 1,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629,
+            0.1257,
+            0.1886
+          ],
+          "power_after_last_onset": 0.004257458054281874
+        },
+        {
+          "held": 2,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629,
+            0.1247,
+            0.1866
+          ],
+          "power_after_last_onset": 0.00355726069822665
+        },
+        {
+          "held": 3,
+          "found": true,
+          "own_step_onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0619,
+            0.1237,
+            0.1866
+          ],
+          "power_after_last_onset": 0.0025103303242333644
+        }
+      ],
+      "holders": [
+        {
+          "pattern": 2,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 61.870000000000005,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 65.87,
+          "duration_seconds": 2.02
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 2,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 65.87,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 69.87,
+          "duration_seconds": 2.02
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 2,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 69.87,
+          "duration_seconds": 2.01
+        },
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 3,
+          "key": 5,
+          "nibble": 8,
+          "onset_seconds": 69.87,
+          "duration_seconds": 2.01
+        }
+      ],
+      "lengths": [
+        {
+          "pattern": 9,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 3,
+          "nibble_hex": "3",
+          "onset_seconds": 89.87,
+          "duration_seconds": 0.76
+        },
+        {
+          "pattern": 9,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 5,
+          "nibble_hex": "5",
+          "onset_seconds": 89.87,
+          "duration_seconds": 1.26
+        },
+        {
+          "pattern": 10,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 6,
+          "nibble_hex": "6",
+          "onset_seconds": 93.87,
+          "duration_seconds": 1.51
+        },
+        {
+          "pattern": 10,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 7,
+          "nibble_hex": "7",
+          "onset_seconds": 93.87,
+          "duration_seconds": 1.76
+        },
+        {
+          "pattern": 11,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 9,
+          "nibble_hex": "9",
+          "onset_seconds": 97.87,
+          "duration_seconds": 2.26
+        },
+        {
+          "pattern": 11,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 10,
+          "nibble_hex": "A",
+          "onset_seconds": 97.87,
+          "duration_seconds": 2.51
+        },
+        {
+          "pattern": 12,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 11,
+          "nibble_hex": "B",
+          "onset_seconds": 101.87,
+          "duration_seconds": 2.76
+        },
+        {
+          "pattern": 12,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 12,
+          "nibble_hex": "C",
+          "onset_seconds": 101.87,
+          "duration_seconds": 3.01
+        },
+        {
+          "pattern": 13,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 13,
+          "nibble_hex": "D",
+          "onset_seconds": 105.87,
+          "duration_seconds": 3.26
+        },
+        {
+          "pattern": 13,
+          "step": 1,
+          "sound": 6,
+          "key": 5,
+          "nibble": 14,
+          "nibble_hex": "E",
+          "onset_seconds": 105.87,
+          "duration_seconds": 3.51
+        },
+        {
+          "pattern": 14,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 15,
+          "nibble_hex": "F",
+          "onset_seconds": 109.87,
+          "duration_seconds": 5.01
+        }
+      ],
+      "fx": [
+        {
+          "pattern": 5,
+          "fx": 13,
+          "held_steps": [
+            1,
+            8
+          ],
+          "probe": {
+            "pattern": 5,
+            "step": 1,
+            "sound": 9,
+            "key": 1,
+            "nibble": 4
+          },
+          "click_onsets_seconds_in_pattern": [
+            0.0024,
+            0.0652,
+            0.1271,
+            0.1889
+          ]
+        },
+        {
+          "pattern": 6,
+          "fx": 14,
+          "held_steps": [
+            5,
+            12
+          ],
+          "probe": {
+            "pattern": 6,
+            "step": 1,
+            "sound": 9,
+            "key": 1,
+            "nibble": 4
+          },
+          "click_onsets_seconds_in_pattern": [
+            0.0023,
+            0.0651,
+            0.127,
+            0.1898,
+            1.002,
+            1.0649,
+            1.1277,
+            1.1906,
+            2.0027,
+            2.0656,
+            2.1264,
+            2.1893
+          ]
+        },
+        {
+          "pattern": 7,
+          "fx": 13,
+          "held_steps": [
+            1,
+            8
+          ],
+          "probe": {
+            "pattern": 7,
+            "step": 1,
+            "sound": 5,
+            "key": 5,
+            "nibble": 2
+          },
+          "tone_intervals_seconds_in_pattern": [
+            [
+              0.0,
+              0.68
+            ]
+          ]
+        },
+        {
+          "pattern": 8,
+          "fx": 14,
+          "held_steps": [
+            5,
+            12
+          ],
+          "probe": {
+            "pattern": 8,
+            "step": 1,
+            "sound": 5,
+            "key": 5,
+            "nibble": 2
+          },
+          "tone_intervals_seconds_in_pattern": [
+            [
+              0.0,
+              0.51
+            ],
+            [
+              1.0,
+              1.51
+            ],
+            [
+              2.0,
+              2.51
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

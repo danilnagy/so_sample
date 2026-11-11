@@ -1,0 +1,58 @@
+{
+  "analysis_version": "aux-nibble-3-native-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "native_valid": true,
+    "target_body_matches_registration": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_is_new": true
+  },
+  "registration_sha256": "b66a9aa76a87282bfdfaa73aaff7f2329c71eee67ee54e7e99b96581c0c3537c",
+  "capture_sha256": "eadb2883463950485f3d9a5c8cb498b870fbfbadd1057f0049447dd853d124d7",
+  "artifact_sha256": "3813a6397abe8da77d27ba825a84f36f7b24f15345d8788f030a6c70c048a35a",
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 127001,
+    "required_complete_label_span": [
+      0,
+      254005
+    ],
+    "packet_count": 661,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "7180184111a30d27e1008451f62e1119896e3b088c238168a8afaf27cd3f4255",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 425,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 204,
+        "payload_bytes": 49161,
+        "header_hex": "000000001bb7000000",
+        "payload_sha256": "0bb93f8a0a286fef7331f18277f74ec4bd7074879fb9d2edb3faa89288fdbd6b"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 204,
+        "payload_bytes": 49161,
+        "header_hex": "000000001bb7000001",
+        "payload_sha256": "e56cfb2b51c0787f6489c3ab6907e41f13c31e55e63a40dc0ba0e2c8a8f28288"
+      },
+      {
+        "sound_id": 8,
+        "packet_count": 17,
+        "payload_bytes": 4105,
+        "header_hex": "000000008d00000008",
+        "payload_sha256": "2506f848ca5d5844752909abc1249b81684b99606e2653ad942962114892e6f4"
+      }
+    ]
+  }
+}

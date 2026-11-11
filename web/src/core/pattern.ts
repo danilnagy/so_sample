@@ -4,8 +4,10 @@
  *
  * Primary bytes, 24 bits little-endian: pitch bits 0-4 (0 = no lock, 1..25 = one semitone
  * per code around 13), bit 5 inert, volume 6-11, filter 12-17, resonance 18-23 (0 = no
- * lock in each). Auxiliary byte: 0xF0 | (key-1) melodic note, 0x10 | (key-1) drum note,
- * 0 no note. A cell with primary bytes but no note is a parameter lock. Footer byte k:
+ * lock in each). Auxiliary byte: the note's timing in the high nibble and key-1 in the low,
+ * 0 no note. The timing is a melodic note's length in steps (F, the default, plays the
+ * sample to its end as far as measured) and a drum note's retrigger count (1, the default,
+ * a single hit; the device's cycle is 1, 2, 3, 4, 6, 8): docs/aux-nibble-results.md. A cell with primary bytes but no note is a parameter lock. Footer byte k:
  * step 2k+1 in the high nibble, step 2k+2 in the low nibble, FX key - 1, F = none.
  */
 
@@ -30,6 +32,43 @@ export interface Parameters {
 export interface Cell extends Parameters {
   /** Key 1..16, or null for a parameter lock without a note. */
   key: number | null;
+  /**
+   * The note's timing nibble, 1..15, only when it differs from the sound's default (15 for a
+   * melodic sound, 1 for a drum): a melodic note's length in steps, a drum note's retrigger
+   * count. It belongs to the note alone; it is not a lock that carries to later steps.
+   */
+  timing?: number;
+}
+
+/** The timing a note has when none is given: a melodic note plays its full length (F), a drum note one hit. */
+export function defaultTiming(sound: number): number {
+  return sound <= 8 ? 0xf : 1;
+}
+
+/** A drum note's retrigger counts, as the device cycles through them. */
+export const DRUM_REPEATS = [1, 2, 3, 4, 6, 8] as const;
+
+/**
+ * The hits a drum note plays in its step. Nibbles 5 and 7 play as 6 and 8 (measured); the
+ * others above 8 were not measured and are read as written.
+ */
+export function drumRepeats(cell: Cell): number {
+  const n = cell.timing ?? 1;
+  return n === 5 ? 6 : n === 7 ? 8 : n;
+}
+
+/** A melodic note's length in steps, or null for the full sample (F, the default). */
+export function melodicLength(cell: Cell): number | null {
+  const n = cell.timing ?? 0xf;
+  return n === 0xf ? null : n;
+}
+
+/** The same note with the sound's default timing: a new note copies a neighbour's parameters, not its timing. */
+export function withDefaultTiming(cell: Cell): Cell {
+  if (cell.timing === undefined) return cell;
+  const copy = { ...cell };
+  delete copy.timing;
+  return copy;
 }
 
 export const NO_LOCKS: Parameters = { pitch: 0, volume: 0, filter: 0, resonance: 0 };
@@ -68,9 +107,11 @@ export function decodeParameters(value: number): Required<Parameters> {
   };
 }
 
-export function auxByte(sound: number, key: number): number {
+export function auxByte(sound: number, key: number, timing = defaultTiming(sound)): number {
   checkRange(key, 1, 16, 'key');
-  return (sound <= 8 ? 0xf0 : 0x10) | (key - 1);
+  // Nibble 0 with key 1 would be the byte 0, which means no note.
+  checkRange(timing, 1, 15, 'timing');
+  return (timing << 4) | (key - 1);
 }
 
 /** Key 1..16 of an auxiliary byte, or null for no note. Other high nibbles play as notes too. */
@@ -82,7 +123,11 @@ export function readCell(pattern: Uint8Array, step: number, sound: number): Cell
   const { primary, aux } = cellOffsets(step, sound);
   const value = pattern[primary] | (pattern[primary + 1] << 8) | (pattern[primary + 2] << 16);
   if (pattern[aux] === 0 && value === 0) return null;
-  return { key: keyFromAux(pattern[aux]), ...decodeParameters(value) };
+  const key = keyFromAux(pattern[aux]);
+  const cell: Cell = { key, ...decodeParameters(value) };
+  const timing = pattern[aux] >> 4;
+  if (key !== null && timing !== defaultTiming(sound)) cell.timing = timing;
+  return cell;
 }
 
 export function writeCell(pattern: Uint8Array, step: number, sound: number, cell: Cell | null): void {
@@ -96,7 +141,7 @@ export function writeCell(pattern: Uint8Array, step: number, sound: number, cell
   pattern[primary] = value & 0xff;
   pattern[primary + 1] = (value >> 8) & 0xff;
   pattern[primary + 2] = (value >> 16) & 0xff;
-  pattern[aux] = cell.key === null ? 0 : auxByte(sound, cell.key);
+  pattern[aux] = cell.key === null ? 0 : auxByte(sound, cell.key, cell.timing);
 }
 
 export function readEffects(pattern: Uint8Array): (number | null)[] {

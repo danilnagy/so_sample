@@ -1,0 +1,48 @@
+{
+  "analysis_version": "browser-transfer-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "The web app's Send (a restore played by the browser) and Import (a backup recorded and decoded in the browser), on the device; a failed prediction is kept as failed",
+  "checks": {
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "imported_archive_pin_matches": true
+  },
+  "predictions": {
+    "send": "The backup the device makes after the browser's Send equals the compiled target exactly (every packet and the whole body)",
+    "import": "The project the app makes from its own recording of that backup (Device, Import from PO-33), exported as a project archive, compiles to a state that plays the same as the target: every sound the same codes from the same owner, every pattern byte for byte, the same chain, tempo and swing, and no more pages"
+  },
+  "held": {
+    "send": true,
+    "import": true
+  },
+  "send_checks": {
+    "native_valid": true,
+    "target_body_matches_registration": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_is_new": true
+  },
+  "import_checks": {
+    "every_sound_plays_the_same_codes": true,
+    "patterns_identical": true,
+    "chain_identical": true,
+    "tempo_identical": true,
+    "swing_identical": true,
+    "no_more_pages": true
+  },
+  "harness_session": "hardware-session-002.json",
+  "harness_session_sha256": "4d9ed4a4b584585bd829c65b74fa1502654ac7a2561a13e3cb066b00542ca453",
+  "session_answers": [
+    {
+      "question": "Send: at what level did the transfer succeed, and how many tries did it take? Did the PO-33 ever show ERR? (notes)",
+      "answer": "no"
+    },
+    {
+      "question": "Send: after the transfer, did PLAY on the PO-33 play Concrete (a techno beat with a filtered stab)? (yes/no/notes)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One session on one device, with this computer's audio interface and Chrome",
+    "The import is judged after the app's own export, which fits clip windows to their samples as Send does; the browser's decode itself is not compared packet by packet"
+  ]
+}

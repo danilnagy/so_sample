@@ -196,3 +196,64 @@ describe('mute and solo', () => {
     expect(dropped.map((d) => d.sound)).toEqual([4]);
   });
 });
+
+describe('note timing (aux-nibble-results, -2, -3)', () => {
+  const timed = (data: Uint8Array, step: number, sound: number, key: number, timing?: number) =>
+    writeCell(data, step, sound, { key, pitch: 0, volume: 0, filter: 0, resonance: 0, timing });
+  const at60 = () => {
+    const p = project();
+    p.tempo = 60;
+    p.swing = 0;
+    return p;
+  };
+
+  it('a drum retrigger plays n hits a step/n apart on one voice, each cut by the next (60 BPM)', () => {
+    const p = at60();
+    timed(p.patterns[0], 1, 9, 1, 4);
+    const { events, dropped } = scheduleBar(p, length, 0, 0, initialPlaybackState());
+    const hits = events.filter((e) => e.sound === 9);
+    expect(dropped).toEqual([]);
+    expect(hits.map((e) => e.time)).toEqual([0, 0.0625, 0.125, 0.1875]);
+    expect(new Set(hits.map((e) => e.voice)).size).toBe(1);
+    // The 85 ms hit restarts every 62.5 ms; the last plays out.
+    expect(hits.map((e) => +e.duration.toFixed(4))).toEqual([0.0625, 0.0625, 0.0625, +(2000 / 23437.5).toFixed(4)]);
+  });
+
+  it('the repeats never need another voice: with three voices held, all four hits still play', () => {
+    const p = at60();
+    for (const sound of [1, 2, 3]) timed(p.patterns[0], 1, sound, 5);
+    timed(p.patterns[0], 1, 9, 1, 4);
+    const { events, dropped } = scheduleBar(p, length, 0, 0, initialPlaybackState());
+    expect(dropped).toEqual([]);
+    expect(events.filter((e) => e.sound === 9)).toHaveLength(4);
+    // The held tones play out, whole: the retriggers cut nothing of theirs.
+    for (const held of events.filter((e) => e.sound <= 3)) expect(held.duration).toBeCloseTo(23438 / 23437.5, 6);
+  });
+
+  it('a melodic note lasts its length in steps; F (the default) plays the whole sample', () => {
+    const p = at60();
+    timed(p.patterns[0], 1, 4, 5, 2);
+    timed(p.patterns[0], 9, 4, 5);
+    const long = scheduleBar(p, length, 0, 0, initialPlaybackState()).events.filter((e) => e.sound === 4);
+    expect(long[0].duration).toBeCloseTo(0.5, 6);
+    expect(long[1].duration).toBeCloseTo(60000 / 23437.5, 6);
+  });
+
+  it('under swing a note starts late but its time ends on the unswung grid (120 BPM, swing 12)', () => {
+    const p = project();
+    p.tempo = 120;
+    p.swing = 12;
+    timed(p.patterns[0], 1, 9, 1, 4);
+    timed(p.patterns[0], 2, 11, 1, 4);
+    timed(p.patterns[0], 3, 4, 5, 1);
+    timed(p.patterns[0], 6, 4, 5, 1);
+    const { events } = scheduleBar(p, length, 0, 0, initialPlaybackState());
+    // Odd step: all four repeats, 31.25 ms apart. Even step (62.5 ms late): only the two before the next grid line.
+    expect(events.filter((e) => e.sound === 9).map((e) => +e.time.toFixed(5))).toEqual([0, 0.03125, 0.0625, 0.09375]);
+    expect(events.filter((e) => e.sound === 11).map((e) => +e.time.toFixed(5))).toEqual([0.1875, 0.21875]);
+    // One step: 125 ms from an odd step, 62.5 ms from an even one.
+    const melodic = events.filter((e) => e.sound === 4);
+    expect(melodic[0].duration).toBeCloseTo(0.125, 6);
+    expect(melodic[1].duration).toBeCloseTo(0.0625, 6);
+  });
+});

@@ -1,0 +1,1123 @@
+{
+  "analysis_version": "aux-nibble-3-measurements-0.1",
+  "hardware_verified": false,
+  "playback_sha256": "5f79500187f25b2ee0108f5592d565112f8652e504a1eb3fa166c89bae8a085c",
+  "settings": {
+    "step_seconds": 0.125,
+    "swing_delay_seconds": 0.0625,
+    "steps_per_pattern": 16,
+    "chain_patterns": 7,
+    "click_band_hz": [
+      3800.0,
+      6500.0
+    ],
+    "tone_bands_hz": {
+      "1": [
+        600.0,
+        820.0
+      ],
+      "2": [
+        860.0,
+        1180.0
+      ]
+    },
+    "click_hop_seconds": 0.0005,
+    "tone_hop_seconds": 0.005,
+    "onset_on_fraction": 0.3,
+    "onset_off_fraction": 0.1,
+    "onset_min_gap_seconds": 0.006,
+    "search_seconds": 0.04,
+    "drum_window_steps": 2.3,
+    "tone_floor_fraction": 0.1,
+    "tone_window_steps": 10,
+    "min_click_level": 0.001
+  },
+  "first_onset_seconds": 1.52702947845805,
+  "click_peak": 0.5556691927196507,
+  "passes": [
+    {
+      "pass": 1,
+      "start_seconds": 1.52702947845805,
+      "drum": [
+        {
+          "pattern": 1,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0614
+          ],
+          "spacing_seconds": 0.0614
+        },
+        {
+          "pattern": 1,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0614,
+          "onsets": 1,
+          "onset_offsets_seconds": [
+            0.0
+          ],
+          "spacing_seconds": null
+        },
+        {
+          "pattern": 1,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0008,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0424,
+            0.0833
+          ],
+          "spacing_seconds": 0.0417
+        },
+        {
+          "pattern": 1,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0627,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0409
+          ],
+          "spacing_seconds": 0.0409
+        },
+        {
+          "pattern": 2,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.001,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314,
+            0.0629,
+            0.0943
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0619,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0003,
+          "onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0205,
+            0.0409,
+            0.0629,
+            0.0833,
+            0.1038
+          ],
+          "spacing_seconds": 0.0205
+        },
+        {
+          "pattern": 2,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0616,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0215,
+            0.0419
+          ],
+          "spacing_seconds": 0.021
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0011,
+          "onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0165,
+            0.0314,
+            0.0479,
+            0.0629,
+            0.0793,
+            0.0943,
+            0.1093
+          ],
+          "spacing_seconds": 0.015
+        },
+        {
+          "pattern": 3,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0623,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.015,
+            0.0314,
+            0.0464
+          ],
+          "spacing_seconds": 0.015
+        }
+      ],
+      "melodic": [
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0041,
+          "duration_seconds": 0.1347
+        },
+        {
+          "pattern": 4,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0604,
+          "duration_seconds": 0.0649
+        },
+        {
+          "pattern": 5,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0037,
+          "duration_seconds": 0.2544
+        },
+        {
+          "pattern": 5,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0609,
+          "duration_seconds": 0.1946
+        },
+        {
+          "pattern": 6,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0032,
+          "duration_seconds": 0.3841
+        },
+        {
+          "pattern": 6,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0613,
+          "duration_seconds": 0.3143
+        },
+        {
+          "pattern": 7,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0028,
+          "duration_seconds": 0.5088
+        },
+        {
+          "pattern": 7,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0618,
+          "duration_seconds": 0.444
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "start_seconds": 15.52702947845805,
+      "drum": [
+        {
+          "pattern": 1,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0007,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629
+          ],
+          "spacing_seconds": 0.0629
+        },
+        {
+          "pattern": 1,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0626,
+          "onsets": 1,
+          "onset_offsets_seconds": [
+            0.0
+          ],
+          "spacing_seconds": null
+        },
+        {
+          "pattern": 1,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0004,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0424,
+            0.0833
+          ],
+          "spacing_seconds": 0.0417
+        },
+        {
+          "pattern": 1,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0633,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0409
+          ],
+          "spacing_seconds": 0.0409
+        },
+        {
+          "pattern": 2,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0011,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314,
+            0.0614,
+            0.0928
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0631,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0009,
+          "onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0205,
+            0.0419,
+            0.0629,
+            0.0833,
+            0.1038
+          ],
+          "spacing_seconds": 0.0205
+        },
+        {
+          "pattern": 2,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0638,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0205,
+            0.0409
+          ],
+          "spacing_seconds": 0.0205
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0016,
+          "onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.015,
+            0.0299,
+            0.0464,
+            0.0614,
+            0.0778,
+            0.0928,
+            0.1093
+          ],
+          "spacing_seconds": 0.015
+        },
+        {
+          "pattern": 3,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0635,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.016,
+            0.0309,
+            0.0464
+          ],
+          "spacing_seconds": 0.0155
+        }
+      ],
+      "melodic": [
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.001,
+          "duration_seconds": 0.1297
+        },
+        {
+          "pattern": 4,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0636,
+          "duration_seconds": 0.0649
+        },
+        {
+          "pattern": 5,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0005,
+          "duration_seconds": 0.2544
+        },
+        {
+          "pattern": 5,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0641,
+          "duration_seconds": 0.1896
+        },
+        {
+          "pattern": 6,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0,
+          "duration_seconds": 0.3791
+        },
+        {
+          "pattern": 6,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0645,
+          "duration_seconds": 0.3143
+        },
+        {
+          "pattern": 7,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0004,
+          "duration_seconds": 0.5039
+        },
+        {
+          "pattern": 7,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.065,
+          "duration_seconds": 0.439
+        }
+      ]
+    },
+    {
+      "pass": 3,
+      "start_seconds": 29.52702947845805,
+      "drum": [
+        {
+          "pattern": 1,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0014,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629
+          ],
+          "spacing_seconds": 0.0629
+        },
+        {
+          "pattern": 1,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0643,
+          "onsets": 1,
+          "onset_offsets_seconds": [
+            0.0
+          ],
+          "spacing_seconds": null
+        },
+        {
+          "pattern": 1,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0006,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0424,
+            0.0833
+          ],
+          "spacing_seconds": 0.0417
+        },
+        {
+          "pattern": 1,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.064,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0424
+          ],
+          "spacing_seconds": 0.0424
+        },
+        {
+          "pattern": 2,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0018,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314,
+            0.0629,
+            0.0938
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0633,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.001,
+          "onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.022,
+            0.0424,
+            0.0629,
+            0.0833,
+            0.1053
+          ],
+          "spacing_seconds": 0.0205
+        },
+        {
+          "pattern": 2,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.064,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0205,
+            0.0414
+          ],
+          "spacing_seconds": 0.0207
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0018,
+          "onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.015,
+            0.0314,
+            0.0464,
+            0.0629,
+            0.0778,
+            0.0928,
+            0.1093
+          ],
+          "spacing_seconds": 0.015
+        },
+        {
+          "pattern": 3,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0637,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0165,
+            0.0314,
+            0.0479
+          ],
+          "spacing_seconds": 0.0165
+        }
+      ],
+      "melodic": [
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0022,
+          "duration_seconds": 0.1297
+        },
+        {
+          "pattern": 4,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0618,
+          "duration_seconds": 0.0698
+        },
+        {
+          "pattern": 5,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0027,
+          "duration_seconds": 0.2544
+        },
+        {
+          "pattern": 5,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0623,
+          "duration_seconds": 0.1946
+        },
+        {
+          "pattern": 6,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0019,
+          "duration_seconds": 0.3841
+        },
+        {
+          "pattern": 6,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0627,
+          "duration_seconds": 0.3193
+        },
+        {
+          "pattern": 7,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": -0.0014,
+          "duration_seconds": 0.5088
+        },
+        {
+          "pattern": 7,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0632,
+          "duration_seconds": 0.444
+        }
+      ]
+    },
+    {
+      "pass": 4,
+      "start_seconds": 43.52702947845805,
+      "drum": [
+        {
+          "pattern": 1,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0015,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0629
+          ],
+          "spacing_seconds": 0.0629
+        },
+        {
+          "pattern": 1,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.065,
+          "onsets": 1,
+          "onset_offsets_seconds": [
+            0.0
+          ],
+          "spacing_seconds": null
+        },
+        {
+          "pattern": 1,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0023,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0409,
+            0.0833
+          ],
+          "spacing_seconds": 0.0417
+        },
+        {
+          "pattern": 1,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0642,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0424
+          ],
+          "spacing_seconds": 0.0424
+        },
+        {
+          "pattern": 2,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.002,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314,
+            0.0629,
+            0.0943
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0649,
+          "onsets": 2,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0314
+          ],
+          "spacing_seconds": 0.0314
+        },
+        {
+          "pattern": 2,
+          "step": 9,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0027,
+          "onsets": 6,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0205,
+            0.0409,
+            0.0614,
+            0.0833,
+            0.1038
+          ],
+          "spacing_seconds": 0.0205
+        },
+        {
+          "pattern": 2,
+          "step": 14,
+          "sound": 9,
+          "key": 1,
+          "nibble": 6,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0647,
+          "onsets": 3,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0205,
+            0.0419
+          ],
+          "spacing_seconds": 0.021
+        },
+        {
+          "pattern": 3,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.002,
+          "onsets": 8,
+          "onset_offsets_seconds": [
+            0.0,
+            0.0155,
+            0.0314,
+            0.0464,
+            0.0629,
+            0.0778,
+            0.0943,
+            0.1093
+          ],
+          "spacing_seconds": 0.0155
+        },
+        {
+          "pattern": 3,
+          "step": 6,
+          "sound": 9,
+          "key": 1,
+          "nibble": 8,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0654,
+          "onsets": 4,
+          "onset_offsets_seconds": [
+            0.0,
+            0.015,
+            0.0299,
+            0.0464
+          ],
+          "spacing_seconds": 0.015
+        }
+      ],
+      "melodic": [
+        {
+          "pattern": 4,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0004,
+          "duration_seconds": 0.1297
+        },
+        {
+          "pattern": 4,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 1,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.065,
+          "duration_seconds": 0.0649
+        },
+        {
+          "pattern": 5,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0009,
+          "duration_seconds": 0.2544
+        },
+        {
+          "pattern": 5,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 2,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0654,
+          "duration_seconds": 0.1896
+        },
+        {
+          "pattern": 6,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0013,
+          "duration_seconds": 0.3791
+        },
+        {
+          "pattern": 6,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 3,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0659,
+          "duration_seconds": 0.3143
+        },
+        {
+          "pattern": 7,
+          "step": 1,
+          "sound": 1,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "odd",
+          "offset_from_grid_seconds": 0.0018,
+          "duration_seconds": 0.5039
+        },
+        {
+          "pattern": 7,
+          "step": 2,
+          "sound": 2,
+          "key": 5,
+          "nibble": 4,
+          "found": true,
+          "parity": "even",
+          "offset_from_grid_seconds": 0.0663,
+          "duration_seconds": 0.439
+        }
+      ]
+    }
+  ]
+}

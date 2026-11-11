@@ -23,7 +23,8 @@ import { zipSync } from 'fflate';
 
 import { packKit } from '../src/core/archive';
 import { KITS, buildKit } from './kit-tools';
-import { cornerStore, dustyCrates, motorCity, warehouseJack } from './make-genre-packs';
+import { cornerStore, motorCity, warehouseJack } from './make-genre-packs';
+import { afterglow } from './make-italo-pack';
 import { nightWalk, rainyRhodes } from './make-lofi-packs';
 import { concrete, echoChamber, lateShift, rinseOut } from './make-more-packs';
 import { type SongSpec, slugOf, writePack } from './pack-tools';
@@ -33,7 +34,7 @@ const PRESETS: { spec: () => SongSpec; style: string }[] = [
   { spec: rainyRhodes, style: 'lofi' },
   { spec: nightWalk, style: 'lofi' },
   { spec: cornerStore, style: 'soul boom bap' },
-  { spec: dustyCrates, style: 'soul boom bap' },
+  { spec: afterglow, style: 'italo disco' },
   { spec: warehouseJack, style: 'Chicago house' },
   { spec: motorCity, style: 'Detroit house' },
   { spec: lateShift, style: 'trap' },

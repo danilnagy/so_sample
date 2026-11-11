@@ -25,6 +25,8 @@ Edits take effect at the next bar; switching projects stops the preview.
 | Volume from the measured gain table, 0 dB at code 36 | [volume law](volume-law-results.md) |
 | Filter: codes 1 to 31 low-pass and 44 to 62 high-pass at the fitted edges, flat at 0, 32 to 43 and 63; resonance sets the peak at the edge from the eight measured levels | [filter law](filter-law-results.md), [resonance law](resonance-law-results.md) |
 | Four voices, taken in the measured sound priority; a sounding note is never cut; a voice takes a new note when free or within 100 ms of its end, and the rest of the step's notes are dropped | [priority](priority-map-results.md), [stealing](voice-steal-results.md), [release](voice-release-results.md) |
+| A melodic note's length: cut after n steps, F plays the whole sample; a drum note's retriggers: n hits a step/n apart on the note's one voice, each restarting the sample | [aux nibble](aux-nibble-results.md), [aux nibble 2](aux-nibble-2-results.md) |
+| Under swing, a note's time ends on the unswung grid: a delayed melodic note loses the delay, a delayed drum step plays only the repeats before the next step's grid line (exploratory, one session) | [aux nibble 3](aux-nibble-3-results.md) |
 
 ## Narrow screens
 
@@ -97,6 +99,10 @@ the device has no such state.
   of four. The device's absolute level was not measured.
 - A drum key with no sample is silent and takes no voice; whether the device reserves a
   voice for it was not measured.
+- Note length and retrigger under swing follow a rule fitted to one session at 120 BPM and
+  swing 12 ([aux nibble 3](aux-nibble-3-results.md)); other tempos and swing values, and
+  their interplay with the effects, are not yet measured. A cut note or repeat fades over
+  4 ms; the device's own cut was not measured.
 
 ## Code
 

@@ -12,6 +12,7 @@ rebuilding, tuning or reusing them.
 | [`kit-tools.ts`](../web/scripts/kit-tools.ts) | The seven kits' key layouts and length caps, and the kit builder |
 | [`pack-tools.ts`](../web/scripts/pack-tools.ts) | The shared building blocks and most melodic instruments |
 | [`make-more-packs.ts`](../web/scripts/make-more-packs.ts) | Bell, reese bass, melodica, techno stab, dark pad |
+| [`make-italo-pack.ts`](../web/scripts/make-italo-pack.ts) | Saw bass and square lead, the sustained instruments of Afterglow |
 | [`make-lofi-packs.ts`](../web/scripts/make-lofi-packs.ts), [`make-genre-packs.ts`](../web/scripts/make-genre-packs.ts) | The songs that use them |
 | [`build-presets.ts`](../web/scripts/build-presets.ts) | Builds and checks everything into `web/src/presets` |
 
@@ -146,7 +147,7 @@ summed voices of the same instrument.
 | `rhodesLead` | One `epNote`, low-passed at 6 kHz, light vinyl | Lofi melodies |
 | `organChord` | Drawbar sines (ratios 1, 2, 3, 4, 6, 8 at 1, 0.7, 0.45, 0.3, 0.12, 0.08), a 5.8 Hz tremolo of 10%, decay 1.6 s, low-passed at 4.2 kHz, vinyl | Soul and dub chords, dub skanks |
 | `pianoStab` | Up to 12 harmonics with slight inharmonic stretch (1 + 0.0004 h²), each decaying faster the higher it is, a 6 ms noise hammer; band 120 Hz to 9 kHz | House chords |
-| `stringPad` | Three sawtooths per voice detuned by ±0.6%, two low-passes at 2.6 kHz, 30 ms swell, decay 2.5 s | Detroit pads |
+| `stringPad` | Three sawtooths per voice detuned by ±0.6%, two low-passes at 2.6 kHz, 30 ms swell, decay 2.5 s | Detroit pads; Afterglow's pad, gated by note lengths |
 | `darkPad` | `stringPad` low-passed again at 1.4 kHz | Trap pads |
 | `brassStab` | Sawtooths detuned 0.3%, crossfading from a 4.2 kHz low-pass to a 1.2 kHz one over 150 ms, decay 0.5 s | Soul brass, the techno stab (`technoStab`) |
 | `subBass` | A sine with a plucked second harmonic (decay 0.15 s), decay 0.5 s, low-passed at 1.8 kHz | Lofi, soul, dub bass |
@@ -155,6 +156,8 @@ summed voices of the same instrument.
 | `bleep` | A sine with 20% second harmonic, decay 0.3 s | Detroit and techno hooks |
 | `bell` | A sine (decay 0.9 s), an inharmonic partial at 2.76 × (decay 0.25 s) and the octave (decay 0.5 s) | Trap melodies |
 | `melodica` | Odd harmonics 1, 3, 5, 7 at 1/h (a soft square), a 5.5 Hz vibrato of 0.4% fading in over 300 ms, low-passed at 3.2 kHz | Dub lines |
+| `synthBass` | A sawtooth and its octave below (70/30), 4 ms attack, a slow decay (2 s), two low-passes at 900 Hz and 1.8 kHz; it sustains, so note lengths set its rhythm | Italo octave bass |
+| `synthLead` | Odd harmonics 1 to 9 at 1/h (a square), a 5 Hz vibrato of 0.3% fading in over 400 ms, a slow decay (3 s), low-passed at 3 kHz; it sustains | Italo arpeggio |
 
 ### Chords and keys
 

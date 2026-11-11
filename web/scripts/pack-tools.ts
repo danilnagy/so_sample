@@ -315,6 +315,8 @@ export interface Note {
   volume?: number;
   filter?: number;
   resonance?: number;
+  /** A melodic note's length in steps (1..14), or a drum note's retrigger count (2, 3, 4, 6, 8); the default plays full and once. */
+  timing?: number;
 }
 
 export interface Colour {
@@ -361,7 +363,7 @@ export function pattern(notes: Note[], colour: Record<number, Colour>): Uint8Arr
   for (const n of notes) {
     const c = colour[n.sound];
     if (!c) throw new Error(`No colour for sound ${n.sound}`);
-    const cell: Cell = { key: n.key, pitch: n.pitch ?? 13, volume: n.volume ?? c.volume, filter: n.filter ?? c.filter, resonance: n.resonance ?? c.resonance ?? 1 };
+    const cell: Cell = { key: n.key, pitch: n.pitch ?? 13, volume: n.volume ?? c.volume, filter: n.filter ?? c.filter, resonance: n.resonance ?? c.resonance ?? 1, timing: n.timing };
     writeCell(data, n.step, n.sound, cell);
   }
   return data;

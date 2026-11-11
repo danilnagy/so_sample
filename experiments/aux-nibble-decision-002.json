@@ -1,0 +1,229 @@
+{
+  "analysis_version": "aux-nibble-2-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "112e620571cd4e9efc2e4dfbc327bf7ab2871039845b56caf78f2cb8b8ad5059",
+  "native_results_sha256": "3edd97c41d9de2894051285873eb9e3e136bfbd24c04de81ad9b2c680e83ae70",
+  "measurements_sha256": "4d2739c1467f4318b1e6586b4a9f321d5e9d30f850f7d5002fb587c2829da4e7",
+  "passes_measured": 2,
+  "own_step_onsets_by_voices_held": {
+    "0": 4,
+    "1": 4,
+    "2": 4,
+    "3": 4
+  },
+  "choke_ratio_db": 0.82,
+  "overlap_predicted_db": 4.07,
+  "holder_seconds": {
+    "2:1": 2.01,
+    "3:1": 2.0149999999999997,
+    "3:2": 2.01,
+    "4:1": 2.0149999999999997,
+    "4:2": 2.01,
+    "4:3": 2.01
+  },
+  "length_seconds_by_nibble": {
+    "3": 0.76,
+    "5": 1.26,
+    "6": 1.51,
+    "7": 1.76,
+    "9": 2.26,
+    "A": 2.51,
+    "B": 2.76,
+    "C": 3.01,
+    "D": 3.26,
+    "E": 3.51,
+    "F": 5.01
+  },
+  "predictions": {
+    "H1_one_voice": {
+      "holds": true,
+      "mismatches": []
+    },
+    "H2_voice_per_repeat": {
+      "holds": false,
+      "mismatches": [
+        [
+          "1",
+          3,
+          4
+        ],
+        [
+          "2",
+          2,
+          4
+        ],
+        [
+          "3",
+          1,
+          4
+        ]
+      ]
+    },
+    "H1_restart": {
+      "holds": true,
+      "mismatches": []
+    },
+    "H2_overlap": {
+      "holds": false,
+      "mismatches": [
+        [
+          "overlap",
+          4.07,
+          0.82
+        ]
+      ]
+    },
+    "H_holders_continue": {
+      "holds": true,
+      "mismatches": []
+    },
+    "H_length_steps": {
+      "holds": true,
+      "mismatches": []
+    },
+    "H_F_15_steps": {
+      "holds": false,
+      "mismatches": [
+        [
+          "F",
+          3.75,
+          5.01
+        ]
+      ]
+    },
+    "H_F_whole_sample": {
+      "holds": true,
+      "mismatches": []
+    }
+  },
+  "exploratory": {
+    "voice_onset_offsets_first_pass": {
+      "0": [
+        0.0,
+        0.0629,
+        0.1247,
+        0.1876
+      ],
+      "1": [
+        0.0,
+        0.0629,
+        0.1257,
+        0.1866
+      ],
+      "2": [
+        0.0,
+        0.0619,
+        0.1237,
+        0.1866
+      ],
+      "3": [
+        0.0,
+        0.0609,
+        0.1237,
+        0.1866
+      ]
+    },
+    "fx_patterns_first_pass": [
+      {
+        "pattern": 5,
+        "fx": 13,
+        "held_steps": [
+          1,
+          8
+        ],
+        "probe": {
+          "pattern": 5,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        },
+        "click_onsets_seconds_in_pattern": [
+          -0.0004,
+          0.0625,
+          0.1244,
+          0.1872
+        ]
+      },
+      {
+        "pattern": 6,
+        "fx": 14,
+        "held_steps": [
+          5,
+          12
+        ],
+        "probe": {
+          "pattern": 6,
+          "step": 1,
+          "sound": 9,
+          "key": 1,
+          "nibble": 4
+        },
+        "click_onsets_seconds_in_pattern": [
+          0.0005,
+          0.0614,
+          0.1243,
+          0.1871,
+          0.9993,
+          1.0621,
+          1.125,
+          1.1868,
+          1.999,
+          2.0619,
+          2.1247,
+          2.1876
+        ]
+      },
+      {
+        "pattern": 7,
+        "fx": 13,
+        "held_steps": [
+          1,
+          8
+        ],
+        "probe": {
+          "pattern": 7,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 2
+        },
+        "tone_intervals_seconds_in_pattern": [
+          [
+            0.0,
+            0.67
+          ]
+        ]
+      },
+      {
+        "pattern": 8,
+        "fx": 14,
+        "held_steps": [
+          5,
+          12
+        ],
+        "probe": {
+          "pattern": 8,
+          "step": 1,
+          "sound": 5,
+          "key": 5,
+          "nibble": 2
+        },
+        "tone_intervals_seconds_in_pattern": [
+          [
+            0.0,
+            0.51
+          ],
+          [
+            1.0,
+            1.51
+          ],
+          [
+            2.0,
+            2.51
+          ]
+        ]
+      }
+    ]
+  }
+}

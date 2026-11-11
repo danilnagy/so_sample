@@ -1,7 +1,7 @@
 import { memo, useEffect, useRef, useState } from 'react';
 
 import { DEFAULT_PARAMETERS, PARAMETER_NAMES, type ParameterName, changedParameters, effectiveParameter, patternIsEmpty, readCell } from '../../core/pattern';
-import { PARAMETER_LABELS, PARAMETER_RANGES, RESONANCE_CODES, keySemitones, parameterMeaning, semitoneLabel } from '../laws';
+import { type LaneParameter, timingBadge, PARAMETER_LABELS, PARAMETER_RANGES, RESONANCE_CODES, keySemitones, parameterMeaning, semitoneLabel, timingChoices, timingIndex, timingLabel, timingMeaning, timingTitle } from '../laws';
 import { isMuted, soundSilent } from '../playback';
 import { playCodes } from '../samples';
 import { type MobileView as View, dropText, kitDisplayName, mixOf, store, useAppFields, type useAppState, voiceDrops } from '../store';
@@ -160,9 +160,73 @@ const PARAMETER_TITLES: Record<ParameterName, string> = { pitch: 'Pitch', volume
  * four, as a double-click on a desktop lane handle does, so the step holds the values before
  * it. With no step selected the row stays in place, disabled, so the pads do not move.
  */
+/** The row's choice: the four parameters, then the note's timing (Length on a melodic sound, Repeat on a drum). */
+function LaneSelect({ sound, value }: { sound: number; value: LaneParameter }) {
+  const title = value === 'timing' ? timingTitle(sound) : PARAMETER_TITLES[value];
+  return (
+    <select className="param-select" value={value} aria-label="Step parameter" title={title} onChange={(e) => store.setLaneParameter(sound, e.target.value as LaneParameter)}>
+      {PARAMETER_NAMES.map((name) => (
+        <option key={name} value={name} title={PARAMETER_TITLES[name]}>
+          {PARAMETER_LABELS[name]}
+        </option>
+      ))}
+      <option value="timing" title={timingTitle(sound)}>
+        {timingLabel(sound)}
+      </option>
+    </select>
+  );
+}
+
+/**
+ * The parameter row on the note's timing: a slider through the sound's values (1 to 14
+ * steps or full for a melodic note, 1 to 8 hits for a drum), the value, and Clear back to
+ * the default. Timing belongs to the note alone, so a step without a note has none.
+ */
+function TimingRow({ sound, data, step }: { sound: number; data: Uint8Array; step: number | null }) {
+  const cell = step === null ? null : readCell(data, step, sound);
+  const note = !!cell?.key;
+  const choices = timingChoices(sound);
+  const index = timingIndex(sound, cell?.timing);
+  const title = timingTitle(sound);
+  return (
+    <div className={`param-row ${step === null ? 'disabled' : ''}`}>
+      <LaneSelect sound={sound} value="timing" />
+      <input
+        type="range"
+        className="param-slider"
+        min={0}
+        max={choices.length - 1}
+        step={1}
+        value={index}
+        disabled={!note}
+        aria-label={step === null ? `${title} of the selected note` : `${title} of the note on step ${step}`}
+        title={!note ? 'Tap a step with a note to set its timing' : `${title} of step ${step}: ${timingMeaning(sound, cell?.timing)}`}
+        onChange={(e) => step !== null && store.setStepTiming(step, sound, choices[Number(e.target.value)])}
+      />
+      <span className={`param-value ${cell?.timing !== undefined ? 'locked' : step === null ? 'none' : 'default'}`}>
+        {step === null ? 'no step' : note ? timingMeaning(sound, cell?.timing) : 'no note'}
+      </span>
+      <button
+        className="param-clear"
+        disabled={cell?.timing === undefined}
+        title={sound <= 8 ? 'Back to the full length' : 'Back to a single hit'}
+        aria-label={`Clear ${title} of step ${step ?? ''}`}
+        onClick={() => step !== null && store.setStepTiming(step, sound, sound <= 8 ? 15 : 1)}
+      >
+        Clear
+      </button>
+    </div>
+  );
+}
+
 function ParameterRow({ sound, data, step }: { sound: number; data: Uint8Array; step: number | null }) {
   const { laneParameter } = useAppFields('laneParameter');
-  const parameter = laneParameter[sound] ?? 'volume';
+  const choice = laneParameter[sound] ?? 'volume';
+  if (choice === 'timing') return <TimingRow sound={sound} data={data} step={step} />;
+  return <LockRow sound={sound} data={data} step={step} parameter={choice} />;
+}
+
+function LockRow({ sound, data, step, parameter }: { sound: number; data: Uint8Array; step: number | null; parameter: ParameterName }) {
   const cell = step === null ? null : readCell(data, step, sound);
   const effective = step === null ? null : effectiveParameter(data, step, sound, parameter);
   const code = effective?.code ?? DEFAULT_PARAMETERS[parameter];
@@ -175,13 +239,7 @@ function ParameterRow({ sound, data, step }: { sound: number; data: Uint8Array; 
   const state = step === null ? 'none' : effective ? (effective.own ? 'locked' : 'inherited') : 'default';
   return (
     <div className={`param-row ${step === null ? 'disabled' : ''}`}>
-      <select className="param-select" value={parameter} aria-label="Step parameter" title={PARAMETER_TITLES[parameter]} onChange={(e) => store.setLaneParameter(sound, e.target.value as ParameterName)}>
-        {PARAMETER_NAMES.map((name) => (
-          <option key={name} value={name} title={PARAMETER_TITLES[name]}>
-            {PARAMETER_LABELS[name]}
-          </option>
-        ))}
-      </select>
+      <LaneSelect sound={sound} value={parameter} />
       <input
         type="range"
         className="param-slider"
@@ -358,6 +416,7 @@ function SequencePadsView() {
               onClick={() => store.tapStep(step, sound)}
             >
               {cell?.key ?? ''}
+              {cell?.key && cell.timing !== undefined && <span className="timing-badge">{timingBadge(sound, cell.timing)}</span>}
               {dropped && <WarnGlyph text={dropText(step, sound)} />}
             </button>
           );

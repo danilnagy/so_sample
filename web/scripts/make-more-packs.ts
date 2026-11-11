@@ -89,7 +89,7 @@ const TRAP_COLOUR: Record<number, Colour> = {
 /**
  * Trap drums: half time, the snare on 3. The pad and the 808 hold two of the four voices
  * for most of the bar, so the hats take the offbeat eighths, skipping the kick and snare
- * steps, and roll in sixteenths of rising volume into the bar's end.
+ * steps, and roll into the bar's end: a sixteenth, then retriggered twice and three times.
  */
 const trap = {
   main: (): Note[] => [
@@ -97,7 +97,10 @@ const trap = {
     { step: 8, sound: 11, key: D.kick, volume: 42 },
     { step: 9, sound: 12, key: D.snare },
     ...[3, 5, 7, 11, 13].map((step) => ({ step, sound: 13, key: D.ch, volume: step % 4 === 1 ? 26 : 20 })),
-    ...[14, 15, 16].map((step, i) => ({ step, sound: 13, key: D.ch, volume: 22 + i * 4 })),
+    // The roll into the next bar, as trap hats roll: a sixteenth, then the hat retriggered twice and three times (a triplet) within its step.
+    { step: 14, sound: 13, key: D.ch, volume: 22 },
+    { step: 15, sound: 13, key: D.ch, volume: 26, timing: 2 },
+    { step: 16, sound: 13, key: D.ch, volume: 30, timing: 3 },
   ],
   /** The variation: the clap takes the snare's place, a kick lands on the "and" of 3, an open hat on the "and" of 4. */
   turn: (): Note[] => [
@@ -199,7 +202,8 @@ const jungle = {
     { step: 3, sound: 11, key: D.kick, volume: 40 },
     { step: 11, sound: 11, key: D.kick },
     { step: 5, sound: 12, key: D.snare },
-    { step: 12, sound: 12, key: D.snare },
+    // The moved snare dragged: two hits within its step, as a jungle snare rolls into a fill.
+    { step: 12, sound: 12, key: D.snare, timing: 2 },
     { step: 14, sound: 14, key: D.ht, volume: 34 },
     { step: 15, sound: 14, key: D.ht, volume: 38 },
     { step: 16, sound: 14, key: D.crash, volume: 40 },

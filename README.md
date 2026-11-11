@@ -37,9 +37,13 @@ The web app is complete for a first, local-only release: projects, kits and a sa
 library in the browser's storage, ten bundled projects and seven drum kits, undo, a
 phone layout, an in-app guide (the **?** button), and offline use after the first visit.
 
-Open questions are listed where they apply; the main one is whether a step's auxiliary
-nibble holds note length and drum retrigger
-([prior art](docs/prior-art.md#open-question-note-length-and-drum-retrigger)).
+The app's own Send and Import are verified on the device: a project sent from the browser
+is received exactly, and the browser's import of the device's backup is equivalent
+([browser transfer](docs/browser-transfer-results.md)). The latest format finding: a step's
+auxiliary nibble holds a drum's retrigger count and a melodic note's length in steps
+([aux nibble](docs/aux-nibble-results.md), [2](docs/aux-nibble-2-results.md),
+[3](docs/aux-nibble-3-results.md)); the app writes and previews both. Remaining open
+questions are listed where they apply.
 
 ## Quick start: the web app
 

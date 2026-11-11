@@ -75,8 +75,12 @@ exact 23437.5 Hz, the code count and a SHA-256 of the codes, and import verifies
   fitted one. A chain holds at most 128 entries, as the device's does.
 - `patterns` lists all sixteen. A note's `key` is 1..16, or null for a parameter lock on
   a step without a note. The four parameters are given only when locked (the device's 0
-  means "no lock"). `bit5` and `aux` appear only when a device-written pattern carries
-  bits the app itself would not write, so every pattern round-trips to its 1032 bytes.
+  means "no lock"). A melodic note's `length` (1..14 steps) and a drum note's `repeat`
+  (its retrigger count: 1, 2, 3, 4, 6 or 8 on the device) are given only when not the
+  default (the full sample, one hit) ([aux nibble](aux-nibble-results.md)); the same
+  note then also carries its raw `aux` byte, for readers older than these fields, and on
+  reading `length` or `repeat` wins. `bit5` appears only when a device-written pattern
+  carries it, so every pattern round-trips to its 1032 bytes.
 - The preview's mute and solo flags, per sound and per drum key, and the saved kits are
   not part of a project on the device and are not exported.
 

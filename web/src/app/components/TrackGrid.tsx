@@ -5,7 +5,7 @@ import type { Clip, DrumTrack } from '../../core/project';
 import { playCodes } from '../samples';
 import { dropText, kitDisplayName, mixOf, store, useAppFields, voiceDrops } from '../store';
 import { isMuted, soundSilent } from '../playback';
-import { BASE_KEY, PARAMETER_LABELS, PARAMETER_RANGES, RESONANCE_CODES, keySemitones, parameterMeaning, rollKeys, semitoneLabel } from '../laws';
+import { BASE_KEY, type LaneParameter, timingBadge, PARAMETER_LABELS, PARAMETER_RANGES, RESONANCE_CODES, keySemitones, parameterMeaning, rollKeys, semitoneLabel, timingChoices, timingIndex, timingLabel, timingMeaning, timingTitle } from '../laws';
 import { WarnGlyph } from './Hint';
 import { ChevronIcon, KeysIcon, PlayIcon, SlicesIcon } from './Icons';
 import { MiniWave } from './MiniWave';
@@ -48,6 +48,7 @@ const StepCells = memo(function StepCells({ sound, data, row, unrolled, empty, s
           (differ && cell ? ` ${differ.map((n) => `${n[0].toUpperCase()}${n.slice(1)} ${cell[n]}`).join(', ')} ${differ.length === 1 ? 'changes' : 'change'} the value held before this step.` : '') +
           (dropped ? ` ${dropText(step, sound)}` : '') +
           (cell && !cell.key ? ' Parameter lock without a note.' : '') +
+          (cell?.timing !== undefined ? ` ${sound <= 8 ? 'Length' : 'Repeat'}: ${timingMeaning(sound, cell.timing)}.` : '') +
           (cell?.key ? ' Click removes the note.' : unrolled ? ` Click adds a note on key ${currentKey}.` : ` Click opens the roll; with the roll open, a click adds a note on key ${currentKey}.`) +
           ' Space toggles a note; Delete clears the step.'
         }
@@ -71,6 +72,7 @@ const StepCells = memo(function StepCells({ sound, data, row, unrolled, empty, s
         }}
       >
         {cell?.key ?? ''}
+        {cell?.key && cell.timing !== undefined && <span className="timing-badge">{timingBadge(sound, cell.timing)}</span>}
         {dropped && <WarnGlyph text={dropText(step, sound)} />}
       </button>,
     );
@@ -94,6 +96,33 @@ function yToCode(parameter: ParameterName, y: number): number {
   const code = Math.round(lo + t * (hi - lo));
   if (parameter !== 'resonance') return code;
   return RESONANCE_CODES.reduce((best, c) => (Math.abs(c - code) < Math.abs(best - code) ? c : best), RESONANCE_CODES[0]);
+}
+
+/** A note's timing as a y position in the lane: its value's place among the sound's choices, top = most. */
+function timingToY(sound: number, timing: number | undefined): number {
+  const choices = timingChoices(sound);
+  return HANDLE + (1 - timingIndex(sound, timing) / (choices.length - 1)) * (LANE_HEIGHT - 2 * HANDLE);
+}
+
+/** The notes' timing under another lane, pale: a stem from the baseline to each note's value and a tick on it. */
+function TimingUnderlay({ sound, data }: { sound: number; data: Uint8Array }) {
+  return (
+    <g>
+      <title>{timingTitle(sound)}</title>
+      {Array.from({ length: 16 }, (_, s) => {
+        const cell = readCell(data, s + 1, sound);
+        if (!cell?.key) return null;
+        const x = s * COLUMN + 14;
+        const y = timingToY(sound, cell.timing);
+        return (
+          <g key={s}>
+            <line className="stem under" x1={x} x2={x} y1={LANE_HEIGHT} y2={y} />
+            <rect className="tick under" x={x - 3} y={y - 1} width={6} height={2} />
+          </g>
+        );
+      })}
+    </g>
+  );
 }
 
 /** The curve of one parameter across the steps, as polyline points, in the lane's own scale. */
@@ -131,13 +160,7 @@ function ParameterLane({ sound, data, parameter }: { sound: number; data: Uint8A
   const underlays = PARAMETER_NAMES.filter((name) => name !== parameter).map((name) => ({ name, points: curvePoints(data, sound, name) }));
   return (
     <div className="param-lane">
-      <div className="selector" role="radiogroup" aria-label={`Sound ${sound} lane parameter`}>
-        {PARAMETER_NAMES.map((name) => (
-          <button key={name} className={name === parameter ? 'on' : ''} role="radio" aria-checked={name === parameter} onClick={() => store.setLaneParameter(sound, name)}>
-            {PARAMETER_LABELS[name]}
-          </button>
-        ))}
-      </div>
+      <LaneSelector sound={sound} value={parameter} />
       <svg
         ref={svg}
         viewBox={`0 0 ${16 * COLUMN - 3} ${LANE_HEIGHT}`}
@@ -171,6 +194,7 @@ function ParameterLane({ sound, data, parameter }: { sound: number; data: Uint8A
         {[1, 5, 9, 13].map((step) => (
           <line key={step} className="baseline" x1={(step - 1) * COLUMN - 2} x2={(step - 1) * COLUMN - 2} y1={0} y2={LANE_HEIGHT} />
         ))}
+        <TimingUnderlay sound={sound} data={data} />
         {underlays.map(
           (u) =>
             u.points && (
@@ -202,6 +226,106 @@ function ParameterLane({ sound, data, parameter }: { sound: number; data: Uint8A
   );
 }
 
+/** The lane's choice: the four parameters, then the note's timing (Len on a melodic sound, Rpt on a drum). */
+function LaneSelector({ sound, value }: { sound: number; value: LaneParameter }) {
+  return (
+    <div className="selector" role="radiogroup" aria-label={`Sound ${sound} lane parameter`}>
+      {PARAMETER_NAMES.map((name) => (
+        <button key={name} className={name === value ? 'on' : ''} role="radio" aria-checked={name === value} onClick={() => store.setLaneParameter(sound, name)}>
+          {PARAMETER_LABELS[name]}
+        </button>
+      ))}
+      <button className={value === 'timing' ? 'on' : ''} role="radio" aria-checked={value === 'timing'} title={timingTitle(sound)} onClick={() => store.setLaneParameter(sound, 'timing')}>
+        {timingLabel(sound)}
+      </button>
+    </div>
+  );
+}
+
+/**
+ * The timing lane: one handle per note at its length (a melodic sound: 1 to 14 steps, then
+ * full at the top) or retrigger count (a drum: 1, 2, 3, 4, 6, 8 hits), on a stem from the
+ * baseline, since timing belongs to the note and carries to no later step. Dragging snaps
+ * to those values and paints across notes; double-click returns a note to the default.
+ */
+function TimingLane({ sound, data }: { sound: number; data: Uint8Array }) {
+  const [dragging, setDragging] = useState<number | null>(null);
+  const svg = useRef<SVGSVGElement>(null);
+  const choices = timingChoices(sound);
+  const span = LANE_HEIGHT - 2 * HANDLE;
+  const place = (e: React.PointerEvent | React.MouseEvent): { step: number; value: number } => {
+    const rect = svg.current!.getBoundingClientRect();
+    const step = Math.max(1, Math.min(16, Math.floor((e.clientX - rect.left) / COLUMN) + 1));
+    const t = Math.max(0, Math.min(1, (LANE_HEIGHT - HANDLE - (e.clientY - rect.top)) / span));
+    return { step, value: choices[Math.round(t * (choices.length - 1))] };
+  };
+  const title = timingTitle(sound);
+  return (
+    <div className="param-lane">
+      <LaneSelector sound={sound} value="timing" />
+      <svg
+        ref={svg}
+        viewBox={`0 0 ${16 * COLUMN - 3} ${LANE_HEIGHT}`}
+        preserveAspectRatio="none"
+        aria-label={`${title} per note for Sound ${sound}`}
+        onPointerDown={(e) => {
+          const { step, value } = place(e);
+          if (!readCell(data, step, sound)?.key) return;
+          e.currentTarget.setPointerCapture(e.pointerId);
+          setDragging(step);
+          store.setStepTiming(step, sound, value);
+        }}
+        onPointerMove={(e) => {
+          if (dragging === null) return;
+          const { step, value } = place(e);
+          if (!readCell(data, step, sound)?.key) return;
+          if (step !== dragging) setDragging(step);
+          store.setStepTiming(step, sound, value);
+        }}
+        onPointerUp={() => setDragging(null)}
+        onPointerCancel={() => setDragging(null)}
+        onDoubleClick={(e) => store.setStepTiming(place(e).step, sound, sound <= 8 ? 15 : 1)}
+      >
+        {[1, 5, 9, 13].map((step) => (
+          <line key={step} className="baseline" x1={(step - 1) * COLUMN - 2} x2={(step - 1) * COLUMN - 2} y1={0} y2={LANE_HEIGHT} />
+        ))}
+        {/* The four parameters' curves, pale behind the timing, as each lane shows the others. */}
+        {PARAMETER_NAMES.map((name) => {
+          const points = curvePoints(data, sound, name);
+          return (
+            points && (
+              <polyline key={name} className="curve under" points={points}>
+                <title>{PARAMETER_LABELS[name]}</title>
+              </polyline>
+            )
+          );
+        })}
+        {Array.from({ length: 16 }, (_, s) => {
+          const step = s + 1;
+          const cell = readCell(data, step, sound);
+          if (!cell?.key) return null;
+          const x = s * COLUMN + 14;
+          const y = timingToY(sound, cell.timing);
+          const meaning = timingMeaning(sound, cell.timing);
+          return (
+            <g key={step}>
+              <line className="stem" x1={x} x2={x} y1={LANE_HEIGHT} y2={y} />
+              <circle className={`handle ${cell.timing === undefined ? 'held' : ''}`} cx={x} cy={y} r={HANDLE}>
+                <title>{`Step ${step}: ${meaning}${cell.timing === undefined ? ', the default' : ''}`}</title>
+              </circle>
+              {dragging === step && (
+                <text className="value" x={x + 8} y={y < 20 ? y + 14 : y - 8}>
+                  {meaning}
+                </text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
+
 interface RollProps {
   sound: number;
   data: Uint8Array;
@@ -211,7 +335,7 @@ interface RollProps {
   /** The whole sound is silenced by the preview's mix. */
   silent: boolean;
   /** The parameter the lane shows. */
-  parameter: ParameterName;
+  parameter: LaneParameter;
   track: DrumTrack | null;
   melodicClip: Clip | null;
   /** Per key 1..16: the resolved codes of the key's sample and its name, or null for an empty key. */
@@ -338,7 +462,7 @@ const Roll = memo(function Roll({ sound, data, parameter, track, melodicClip, la
   return (
     <div className="roll" style={{ gridRow: row, gridColumn: '1 / -1' }}>
       {lanes}
-      <ParameterLane sound={sound} data={data} parameter={parameter} />
+      {parameter === 'timing' ? <TimingLane sound={sound} data={data} /> : <ParameterLane sound={sound} data={data} parameter={parameter} />}
     </div>
   );
 }, sameRoll);

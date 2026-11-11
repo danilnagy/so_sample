@@ -33,10 +33,16 @@ established it.
 - 1032 bytes: 16 steps x 16 sounds x 3 primary bytes, then 256 auxiliary bytes, then an
   8-byte effects footer.
 - Auxiliary byte: 0xF0 | (key-1) for a melodic note, 0x10 | (key-1) for a drum note, 0 for
-  no note. Other high nibbles are stored and play as notes; write only F and 1
-  ([stray bits](stray-bits-results.md)). Open: the nibble may hold a melodic note's
-  length and a drum step's retrigger count, which that test could not hear
-  ([prior art](prior-art.md#open-question-note-length-and-drum-retrigger)).
+  no note. The high nibble is a drum note's retrigger count and a melodic note's length
+  ([aux nibble](aux-nibble-results.md), [2](aux-nibble-2-results.md), [3](aux-nibble-3-results.md)):
+  - Drum: 1, 2, 3, 4, 6 or 8 hits, one every step/n (5 and 7 play as 6 and 8). The
+    repeats re-strike the note's one voice, each restarting the sample, and never cut
+    other sounds.
+  - Melodic: n steps for 1 to E; F plays the sample to its end (the default).
+  - Under swing (exploratory, one session): a delayed step's note still ends on the
+    unswung grid, so it loses the delay; a delayed drum step plays only the repeats
+    that fall before the next step's grid line.
+  F and 1, a full-length note and a single hit, are the defaults ([stray bits](stray-bits-results.md)).
 - Primary bytes, 24 bits little-endian: pitch bits 0-4, bit 5 inert, volume 6-11, filter
   12-17, resonance 18-23 ([note bits](note-bits-results.md), [bit 5](bit5-glide-results.md)).
 - Code 0 in any parameter means no lock: the step keeps the last locked value; a cell with

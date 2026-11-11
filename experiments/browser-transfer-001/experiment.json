@@ -1,6 +1,6 @@
 {
   "experiment_id": "browser-transfer-001",
-  "capture_status": "awaiting_hardware_session",
+  "capture_status": "browser_send_exact_import_held",
   "restore_file": "sent-by-the-browser.wav",
   "expected_artifact": "edited.symbols.npz",
   "registration": "../browser-transfer-registration-001.json",
@@ -11,6 +11,10 @@
     "Anything else you noticed (Enter to skip)"
   ],
   "hardware_restore": {
-    "status": "not_run"
-  }
+    "status": "browser_send_verified_exact"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "import_results": "browser-import-results-001.json",
+  "hardware_observation": "hardware-observation-001.json"
 }

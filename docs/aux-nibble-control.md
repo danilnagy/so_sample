@@ -7,7 +7,7 @@ other high nibbles still play as notes, but it put no other nibble on a drum and
 tone may have ended within the step. The device's interface sets a melodic note's length
 (hold a step, turn knob B) and a drum step's retrigger count (hold a step, press BPM: 1, 2,
 3, 4, 6, 8), and other work associates both with this nibble
-([prior art](prior-art.md#open-question-note-length-and-drum-retrigger)). This session asks
+([prior art](prior-art.md#settled-note-length-and-drum-retrigger)). This session asks
 the device directly, with sounds chosen so both effects are measurable.
 
 ## Build

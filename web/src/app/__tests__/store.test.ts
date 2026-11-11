@@ -609,6 +609,21 @@ describe('store', () => {
     expect(store.canUndo()).toBe(false);
   });
 
+  it('editing a note keeps its timing (length or retrigger); a new note does not copy a neighbour\'s', async () => {
+    await store.newProject();
+    store.selectPattern(1);
+    store.setCell(1, 9, { key: 1, ...DEFAULT_PARAMETERS, timing: 4 });
+    // A parameter lock and a move to another key are edits of the same note.
+    store.setStepParameter(1, 9, 'volume', 50);
+    store.setRollNote(1, 9, 3);
+    expect(readCell(store.state.project!.patterns[0], 1, 9)).toMatchObject({ key: 3, volume: 50, timing: 4 });
+    // A new note takes the neighbour's parameters but the default timing.
+    store.toggleNote(2, 9);
+    const fresh = readCell(store.state.project!.patterns[0], 2, 9)!;
+    expect(fresh.volume).toBe(50);
+    expect(fresh.timing).toBeUndefined();
+  });
+
   it('the guide shows editors and dialogs in place: none counts as a modal, and leaving the guide closes them all', () => {
     store.setGuide(true);
     store.openClipEditor({ kind: 'melodic', slot: 1 });

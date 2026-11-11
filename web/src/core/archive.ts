@@ -88,7 +88,14 @@ interface NoteJson {
   filter?: number;
   resonance?: number;
   bit5?: number;
-  /** The note's auxiliary byte, only when the device wrote one the app would not. */
+  /** A melodic note's length in steps, 1..14; absent for the default, the full sample. */
+  length?: number;
+  /** A drum note's retrigger count (1, 2, 3, 4, 6 or 8 on the device); absent for the default, one hit. */
+  repeat?: number;
+  /**
+   * The note's raw auxiliary byte, when its high nibble is not the default. Written beside
+   * `length` or `repeat` for readers that predate them; on reading, those fields win.
+   */
   aux?: number;
 }
 
@@ -137,6 +144,10 @@ export function patternToJson(data: Uint8Array): PatternJson {
       const note: NoteJson = { step, sound, key: cell.key };
       for (const p of ['pitch', 'volume', 'filter', 'resonance'] as const) if (cell[p]) note[p] = cell[p];
       if (cell.bit5) note.bit5 = cell.bit5;
+      if (cell.timing !== undefined) {
+        if (sound <= 8) note.length = cell.timing;
+        else note.repeat = cell.timing;
+      }
       const aux = data[cellOffsets(step, sound).aux];
       if (aux !== (cell.key === null ? 0 : auxByte(sound, cell.key))) note.aux = aux;
       notes.push(note);
@@ -160,8 +171,12 @@ export function patternFromJson(json: PatternJson, where: string): Uint8Array {
       resonance: optional(n.resonance, `${where} resonance`),
       bit5: optional(n.bit5, `${where} bit5`),
     };
-    writeCell(data, integer(n.step, `${where} step`), integer(n.sound, `${where} sound`), cell);
-    if (n.aux !== undefined) data[cellOffsets(n.step, n.sound).aux] = integer(n.aux, `${where} aux`) & 0xff;
+    const sound = integer(n.sound, `${where} sound`);
+    const timing = sound <= 8 ? n.length : n.repeat;
+    if (timing !== undefined && timing !== null) cell.timing = ranged(timing, 1, 15, `${where} ${sound <= 8 ? 'length' : 'repeat'}`);
+    writeCell(data, integer(n.step, `${where} step`), sound, cell);
+    // The raw byte, from a file written before length and repeat existed (or by hand).
+    if (n.aux !== undefined && timing === undefined) data[cellOffsets(n.step, sound).aux] = integer(n.aux, `${where} aux`) & 0xff;
   }
   return data;
 }

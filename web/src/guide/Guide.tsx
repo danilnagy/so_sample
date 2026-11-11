@@ -125,6 +125,11 @@ export function Guide() {
               Under an open roll, choose Pitch, Vol, Filt or Res and drag a handle; dragging across steps paints them. Double-click removes a step's lock, so it keeps the value before it. A dot on a
               note means it changes a parameter.
             </Step>
+            <Step title="Length and repeat">
+              The fifth lane button is Len on a melodic sound and Rpt on a drum. Len cuts a note after 1 to 14 steps (full plays the whole sample); Rpt plays a drum note 1, 2, 3, 4, 6 or 8 times
+              within its step. They belong to the note, not later steps; double-click returns one to the default. A note with either shows it in its corner. On a phone, choose Len or Rpt in the
+              parameter row.
+            </Step>
             <Step title="Mute and solo">M and S silence or isolate a sound in the preview; double-click either to clear all.</Step>
             <Step title="Four voices">The PO-33 plays four notes at once. Notes a busy step drops carry a triangle; hover or click it for why.</Step>
           </ol>

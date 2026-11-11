@@ -24,6 +24,8 @@ po33 = "po33_re.cli:main"
 where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# The tests import the research scripts as `scripts.<name>`: the root on the path for `pytest` as for `python -m pytest`.
+pythonpath = ["."]
 addopts = "-ra"
 markers = ["capture: requires a genuine PO-33 recording fixture"]
 [tool.ruff]

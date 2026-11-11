@@ -20,6 +20,9 @@ test.describe('modals at phone width', () => {
   const check = async (page: Page, name: string) => {
     await page.mouse.move(0, 0);
     await expectFitsWidth(page);
+    // The library's storage line reports the browser's estimate, which differs run to run: it is
+    // checked for fitting the width above, and left out of the picture.
+    await page.addStyleTag({ content: '.storage-note { display: none; }' });
     await expect(page).toHaveScreenshot(`${name}.png`);
   };
 

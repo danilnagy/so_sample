@@ -1,0 +1,71 @@
+{
+  "analysis_version": "browser-transfer-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_captures": true,
+  "experiment_id": "browser-transfer-001",
+  "expected_artifact_source": "Python decode of reference-restore.wav, the TypeScript compile of send-project.sosample.zip as the app's Send compiles it",
+  "send_project_sha256": "9e8c1a4d8ffc15cc058d7dfeecb61a7d2c8725ad1cf4873e1a319bec18b1c956",
+  "packets_json_sha256": "e49a686a0347281dc4dcd583368bc48ed011bec639427c9bbacf4b06c413b073",
+  "project_json_sha256": "d427998fa7db706becfc35a23483c719e801201361b70c896e607caac4f8060b",
+  "reference_restore_wav_sha256": "58a52215e129310cfaeaf3a57224bddf4202e9fdc460d7acde88086327401703",
+  "expected_body_sha256": "a37b63c886499fb11ca17b56810d900c507d079d757bf04dd2da071560e9620e",
+  "edited_artifact_sha256": "b4e725ed81213edf5a1ea18a22672ab1eeaf91d4dc416e1354fd78c2ab13e542",
+  "decoded_reference_carries_typescript_packets": true,
+  "project": {
+    "name": "Concrete",
+    "source": "web/src/presets/concrete.sosample.zip",
+    "pages": 41,
+    "packets": 995,
+    "body_bytes": 190688,
+    "transfer_seconds": 50.08136054421769
+  },
+  "tempo": 130,
+  "swing": 0,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    9,
+    10,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "import_check_script": "web/scripts/check-browser-import.ts",
+  "import_check_tools_sha256": "0c6a4e06bf72ab972385f46df9504b1b23e5c61177de127892dca9d0192ba810",
+  "imported_archive": "imported.sosample.zip",
+  "predictions": {
+    "send": "The backup the device makes after the browser's Send equals the compiled target exactly (every packet and the whole body)",
+    "import": "The project the app makes from its own recording of that backup (Device, Import from PO-33), exported as a project archive, compiles to a state that plays the same as the target: every sound the same codes from the same owner, every pattern byte for byte, the same chain, tempo and swing, and no more pages"
+  },
+  "decision": [
+    "The send prediction is decided by the native check of the harness's backup against the target",
+    "The import prediction is decided by web/scripts/check-browser-import.ts on the exported archive",
+    "Each is recorded as held or failed independently; a failure is kept with its evidence",
+    "The level that succeeded, retries and ERR are exploratory, from the session answers"
+  ],
+  "limits": [
+    "One session on one device, with this computer's audio interface and Chrome",
+    "The import is judged after the app's own export, which fits clip windows to their samples as Send does; the browser's decode itself is not compared packet by packet"
+  ]
+}

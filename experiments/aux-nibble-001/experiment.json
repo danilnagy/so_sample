@@ -1,0 +1,19 @@
+{
+  "experiment_id": "aux-nibble-001",
+  "capture_status": "awaiting_hardware_session",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../aux-nibble-registration-001.json",
+  "builder": "web/scripts/build-aux-nibble-test.ts",
+  "playback_seconds": 90,
+  "playback_instructions": "# Aux-nibble test\n\nAfter the restore, press PLAY and let the chain run: ten one-bar patterns at 60 BPM (four\nseconds each, 40 s a pass). Keep the volume where you set it, and do not touch any knob or\nbutton while it plays; the recording should hold two full passes.\n\n- Patterns 1 to 4: a short click on steps 1 and 9 of each bar. Some steps may play a burst\n  of repeated clicks instead of one; that is what this test measures.\n- Patterns 5 to 10: a steady 500 Hz tone starting on step 1 of each bar. Some may stop\n  early; that is what this test measures.\n",
+  "observation_questions": [
+    "Patterns 1 to 4 (clicks): did some steps play a quick burst of repeated clicks rather than one? Roughly how many? (notes)",
+    "Patterns 5 to 10 (a steady tone, one per bar): did some tones stop short of the others? (notes)",
+    "Did the device show ERR, or anything unusual on its screen? (yes/no/notes)",
+    "Anything else you noticed (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "not_run"
+  }
+}

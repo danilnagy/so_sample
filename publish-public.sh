@@ -43,7 +43,31 @@ if ! git rev-parse --verify --quiet public >/dev/null; then
   exit 1
 fi
 
+# Commits made on GitHub (a merged pull request, an edit in the browser) must reach master
+# first: a snapshot of master would otherwise undo them, and the push would be rejected.
+git fetch -q public
+if git rev-parse --verify --quiet public/main >/dev/null && [ "$(git rev-parse public/main)" != "$(git rev-parse public)" ]; then
+  if git merge-base --is-ancestor public/main public; then
+    # A snapshot made by an earlier run whose push failed: send it now, then carry on.
+    echo "Pushing an earlier snapshot that was not pushed:"
+    git log --oneline public/main..public
+    git push public public:main
+  elif git merge-base --is-ancestor public public/main; then
+    echo "The public repository has commits this folder has not published:" >&2
+    git log --oneline public..public/main >&2
+    echo "Bring them into master, then mark them as seen, and run this again:" >&2
+    echo "  git cherry-pick $(git rev-list --reverse public..public/main | tr '\n' ' ')" >&2
+    echo "  git branch -f public public/main" >&2
+    exit 1
+  else
+    echo "The local public branch and the public repository have diverged; compare git log public and git log public/main." >&2
+    exit 1
+  fi
+fi
+
 source_commit="$(git rev-parse --short master)"
+# Whatever happens from here (a failed push included), end on master.
+trap 'git checkout -q master 2>/dev/null || true' EXIT
 git checkout -q public
 # Mirror master's tracked files exactly: clear the branch's tracked files, then take master's.
 git rm -rq --ignore-unmatch .

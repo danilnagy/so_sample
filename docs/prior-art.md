@@ -59,9 +59,9 @@ This project's [stray bits](stray-bits-results.md) test found that the high nibb
 not select a note type and that the app should write F (melodic) and 1 (drum). That test
 did not put other nibbles on a drum sound, and its melodic tone may have ended within the
 step, so it neither shows nor excludes a length or retrigger meaning. The app therefore
-cannot yet write note lengths or retriggers, and its preview ignores them. A registered
-experiment (drum steps with nibbles 1 to 8, melodic steps with a long sample and nibbles 1
-to F) would settle it.
+cannot yet write note lengths or retriggers, and its preview ignores them. The registered
+experiment [aux-nibble-001](aux-nibble-control.md) (drum steps with nibbles 1 to 8,
+melodic steps with a long sample and nibbles 1 to F) is prepared to settle it.
 
 ## Adjacent tools
 

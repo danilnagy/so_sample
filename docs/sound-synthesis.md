@@ -196,11 +196,12 @@ a chord played an octave down lasts twice as long.
 - For a different memory budget, change the caps in `kit-tools.ts`; the trim keeps short
   hits short whatever the cap.
 - For a device with more voices or one that cuts notes, the length caps can be relaxed.
-- The drum settings come from the classic designs and have not yet been tuned by ear: they
-  were checked by measurement only (length, peak, loudness and dominant frequency of every
-  hit), and the build checks numbers (voices, pages), not taste. Audition before relying on
-  a sound; `make-kits.ts` writes the kits alone for that, and tuning a machine is a matter
-  of editing its row in `CHARACTERS`.
+- The drum settings come from the classic designs. They were checked by measurement
+  (length, peak, loudness and dominant frequency of every hit), then auditioned in the app
+  and accepted for the first release on 2026-11-11; they have not been matched against the
+  original machines in a controlled comparison. The build checks numbers (voices, pages),
+  not taste, so audition any change: `make-kits.ts` writes the kits alone for that, and
+  tuning a machine is a matter of editing its row in `CHARACTERS`.
 
 ## What is approximate
 

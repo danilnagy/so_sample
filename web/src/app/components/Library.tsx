@@ -9,6 +9,34 @@ import { useNarrow } from '../useNarrow';
 import { FolderPicker } from './FolderPicker';
 import { PencilIcon, PlayIcon, TrashIcon } from './Icons';
 import { MiniWave } from './MiniWave';
+
+const megabytes = (bytes: number): string => (bytes >= 1e9 ? `${(bytes / 1e9).toFixed(1)} GB` : `${(bytes / 1e6).toFixed(1)} MB`);
+
+/**
+ * How much of the browser's storage the site uses, as the browser estimates it, read again
+ * when the library changes. The memory meter counts device pages; this counts the browser.
+ */
+function StorageNote({ samples }: { samples: SampleRecord[] }) {
+  const [estimate, setEstimate] = useState<{ usage: number; quota: number } | null>(null);
+  useEffect(() => {
+    let live = true;
+    navigator.storage
+      ?.estimate?.()
+      .then(({ usage, quota }) => {
+        if (live && usage !== undefined && quota) setEstimate({ usage, quota });
+      })
+      .catch(() => {});
+    return () => {
+      live = false;
+    };
+  }, [samples]);
+  if (!estimate) return null;
+  return (
+    <p className="muted storage-note">
+      This browser holds {megabytes(estimate.usage)} for SoSample, of {megabytes(estimate.quota)} it allows the site. Export projects to keep copies elsewhere.
+    </p>
+  );
+}
 import { SampleEditor } from './SampleEditor';
 
 const ALL = '__all__';
@@ -353,6 +381,7 @@ function LibraryView() {
                 </tbody>
               </table>
             )}
+            <StorageNote samples={samples} />
           </div>
         </div>
       </div>

@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/127e3ad5-ade1-4d9f-9103-4d29c1033b31/deploy-status)](https://app.netlify.com/projects/sosample/deploys)
 
+**Try it: [sosample.com](https://sosample.com).** Source: [github.com/danilnagy/so_sample](https://github.com/danilnagy/so_sample).
+
 The Teenage Engineering PO-33 K.O! has no USB data port. Its whole state (samples, kits,
 patterns, parameter locks, effects, song chain, tempo and swing) travels as a stereo
 audio signal through the 3.5 mm jack: the device plays a *backup* and listens for a
@@ -33,7 +35,7 @@ from a description are accepted exactly ([project build](docs/project-build-resu
 
 The web app is complete for a first, local-only release: projects, kits and a sample
 library in the browser's storage, ten bundled projects and seven drum kits, undo, a
-phone layout, and an in-app guide (the **?** button).
+phone layout, an in-app guide (the **?** button), and offline use after the first visit.
 
 Open questions are listed where they apply; the main one is whether a step's auxiliary
 nibble holds note length and drum retrigger

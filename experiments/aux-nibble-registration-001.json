@@ -1,0 +1,296 @@
+{
+  "analysis_version": "aux-nibble-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "aux-nibble-001",
+  "expected_artifact_source": "Python decode of the TypeScript restore.wav",
+  "packets_json_sha256": "a5c247b2832770f9e168e2ead372a13e07e7d3c9abbd36547d195d3447b4e314",
+  "project_json_sha256": "4ff54dd3e210c47358fbb841578985f2a63340b0a95f29de5eed9add61f2411f",
+  "expected_body_sha256": "89a96a9a646a7ec06579814fed805ba5a2ad5296660448ae35a2dddc92982ebb",
+  "edited_artifact_sha256": "1d05313e3b7f02bf64c38c6cf14c5267a2ceb3a12f6d9c30a16d8cbb9feedaa5",
+  "restore_wav_sha256": "6c2fe4da37a3bda92183b959eff4e90234b707b23fcf660d6e04c55c39a150d6",
+  "decoded_restore_carries_typescript_packets": true,
+  "tempo": 60,
+  "swing": 0,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "drum_probes": [
+    {
+      "pattern": 1,
+      "step": 1,
+      "nibble": 1
+    },
+    {
+      "pattern": 1,
+      "step": 9,
+      "nibble": 2
+    },
+    {
+      "pattern": 2,
+      "step": 1,
+      "nibble": 3
+    },
+    {
+      "pattern": 2,
+      "step": 9,
+      "nibble": 4
+    },
+    {
+      "pattern": 3,
+      "step": 1,
+      "nibble": 6
+    },
+    {
+      "pattern": 3,
+      "step": 9,
+      "nibble": 8
+    },
+    {
+      "pattern": 4,
+      "step": 1,
+      "nibble": 5
+    },
+    {
+      "pattern": 4,
+      "step": 9,
+      "nibble": 7
+    }
+  ],
+  "melodic_probes": [
+    {
+      "pattern": 5,
+      "step": 1,
+      "nibble": 15
+    },
+    {
+      "pattern": 6,
+      "step": 1,
+      "nibble": 1
+    },
+    {
+      "pattern": 7,
+      "step": 1,
+      "nibble": 2
+    },
+    {
+      "pattern": 8,
+      "step": 1,
+      "nibble": 4
+    },
+    {
+      "pattern": 9,
+      "step": 1,
+      "nibble": 8
+    },
+    {
+      "pattern": 10,
+      "step": 1,
+      "nibble": 14
+    }
+  ],
+  "aux_bytes": [
+    {
+      "pattern": 1,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 16
+    },
+    {
+      "pattern": 1,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 32
+    },
+    {
+      "pattern": 2,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 48
+    },
+    {
+      "pattern": 2,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 64
+    },
+    {
+      "pattern": 3,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 96
+    },
+    {
+      "pattern": 3,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 128
+    },
+    {
+      "pattern": 4,
+      "step": 1,
+      "sound": 9,
+      "offset": 776,
+      "byte": 80
+    },
+    {
+      "pattern": 4,
+      "step": 9,
+      "sound": 9,
+      "offset": 904,
+      "byte": 112
+    },
+    {
+      "pattern": 5,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 244
+    },
+    {
+      "pattern": 6,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 20
+    },
+    {
+      "pattern": 7,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 36
+    },
+    {
+      "pattern": 8,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 68
+    },
+    {
+      "pattern": 9,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 132
+    },
+    {
+      "pattern": 10,
+      "step": 1,
+      "sound": 1,
+      "offset": 768,
+      "byte": 228
+    }
+  ],
+  "tone_seconds": 3.0,
+  "method_script": "scripts/aux_nibble_method.py",
+  "method_script_sha256": "4a5f4780a3fa94c4742c69529bad6096cdc7bc2cb5c6d2b0ac709611a2636b40",
+  "method_settings": {
+    "step_seconds": 0.25,
+    "steps_per_pattern": 16,
+    "chain_patterns": 10,
+    "click_band_hz": [
+      2000.0,
+      4500.0
+    ],
+    "tone_band_hz": [
+      380.0,
+      650.0
+    ],
+    "click_hop_seconds": 0.002,
+    "tone_hop_seconds": 0.01,
+    "onset_on_fraction": 0.3,
+    "onset_off_fraction": 0.1,
+    "onset_min_gap_seconds": 0.012,
+    "search_seconds": 0.12,
+    "own_step_tolerance_seconds": 0.03,
+    "drum_window_steps": 8,
+    "tone_floor_fraction": 0.1,
+    "tone_window_steps": 16,
+    "min_click_level": 0.001
+  },
+  "playback_seconds": 90,
+  "predictions": {
+    "reception": "The backup equals the compiled target exactly (every packet and the whole body), raw auxiliary bytes included",
+    "H1_drum_retrigger": {
+      "kind": "drum_onsets",
+      "statement": "A drum step with high nibble n in 1, 2, 3, 4, 6, 8 plays n onsets within its own step (the retrigger counts the device's interface cycles through)",
+      "expected": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "6": 6,
+        "8": 8
+      }
+    },
+    "H0_drum_no_effect": {
+      "kind": "drum_onsets",
+      "statement": "The nibble has no audible effect on a drum step: every probe plays one onset in its step, as stray-bits-results.md would suggest",
+      "expected": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "5": 1,
+        "7": 1
+      }
+    },
+    "H1_melodic_length": {
+      "kind": "melodic_duration",
+      "statement": "A melodic note with high nibble n in 1, 2, 4, 8 sounds for n steps (250 ms each, within 60 ms); F and E sound the whole 3 s tone, being longer than it",
+      "expected_seconds": {
+        "1": 0.25,
+        "2": 0.5,
+        "4": 1.0,
+        "8": 2.0,
+        "F": 3.0,
+        "E": 3.0
+      },
+      "tolerance_seconds": 0.06
+    },
+    "H0_melodic_no_effect": {
+      "kind": "melodic_duration",
+      "statement": "The nibble has no audible effect on a melodic note: every probe sounds the whole 3 s tone (within 100 ms), as stray-bits-results.md found for nibbles 2 and E",
+      "expected_seconds": {
+        "F": 3.0,
+        "1": 3.0,
+        "2": 3.0,
+        "4": 3.0,
+        "8": 3.0,
+        "E": 3.0
+      },
+      "tolerance_seconds": 0.1
+    }
+  },
+  "decision": [
+    "Exact reception is decided by the native check of the backup against the target",
+    "Each audible prediction is decided by the frozen method on playback.wav, by majority over the full passes recorded",
+    "H1 and H0 exclude each other per sound; if neither holds for a sound, the result is recorded as neither, with the measurements, and no rule is adopted",
+    "Drum nibbles 5 and 7 are outside the interface's cycle: their counts are reported as exploratory and decide nothing except under H0",
+    "Window onset counts (all eight steps after a drum probe) and the user's answers are exploratory"
+  ],
+  "limits": [
+    "One session on one device",
+    "Onset counting assumes repeats are separated by at least 12 ms; a retrigger faster than that would be undercounted",
+    "A length unit other than one step would fail H1 and show in the measured durations"
+  ]
+}

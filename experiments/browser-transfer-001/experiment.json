@@ -1,0 +1,16 @@
+{
+  "experiment_id": "browser-transfer-001",
+  "capture_status": "awaiting_hardware_session",
+  "restore_file": "sent-by-the-browser.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../browser-transfer-registration-001.json",
+  "builder": "web/scripts/build-browser-transfer-test.ts",
+  "observation_questions": [
+    "Send: at what level did the transfer succeed, and how many tries did it take? Did the PO-33 ever show ERR? (notes)",
+    "Send: after the transfer, did PLAY on the PO-33 play Concrete (a techno beat with a filtered stab)? (yes/no/notes)",
+    "Anything else you noticed (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "not_run"
+  }
+}

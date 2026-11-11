@@ -2,6 +2,14 @@
   "name": "sosample",
   "private": true,
   "license": "MIT",
+  "description": "SoSample: a browser editor for the Teenage Engineering PO-33 K.O!, with a decoder and encoder for its backup format",
+  "homepage": "https://sosample.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danilnagy/so_sample.git",
+    "directory": "web"
+  },
+  "bugs": "https://github.com/danilnagy/so_sample/issues",
   "version": "0.0.0",
   "type": "module",
   "engines": {

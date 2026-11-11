@@ -10,6 +10,11 @@ license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.12,<3.13"
 dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2", "soundfile>=0.12,<1"]
+[project.urls]
+Homepage = "https://sosample.com"
+Source = "https://github.com/danilnagy/so_sample"
+Documentation = "https://github.com/danilnagy/so_sample/blob/main/docs/format-reference.md"
+Issues = "https://github.com/danilnagy/so_sample/issues"
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.6,<1"]
 hardware = ["sounddevice>=0.5,<1"]

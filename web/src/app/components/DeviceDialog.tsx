@@ -8,6 +8,14 @@ import { store, useAppFields } from '../store';
 
 export type DeviceMode = 'send' | 'import';
 
+/**
+ * iPhone and iPad: their browsers give a page one microphone channel whatever is plugged in,
+ * and a backup needs both, so importing works from a computer only. iPadOS reports itself as
+ * a Mac, told apart by its touch screen.
+ */
+const MONO_ONLY_DEVICE =
+  typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
+
 /** `inPlace`: shown in the guide's page rather than opened by the user, so it does nothing on its own (no input check). */
 function DeviceDialogView({ mode, inPlace = false }: { mode: DeviceMode; inPlace?: boolean }) {
   return (
@@ -207,6 +215,12 @@ function Import({ inPlace }: { inPlace: boolean }) {
   const mono = probe?.channelCount === 1;
   return (
     <>
+      {MONO_ONLY_DEVICE && (
+        <p className="warn">
+          On an iPhone or iPad the browser receives only one channel of audio, and a backup needs both. Import on a computer with a stereo line input, export the project there
+          (Projects, the download icon), and open the file here with Projects, Import project. Sending to the PO-33 works from here.
+        </p>
+      )}
       <ol>
         <li>Connect the PO-33's output to a stereo line input on the computer. Unplug the cable from the PO-33's input.</li>
         <li>Choose that input below and allow the browser to use it. A built-in microphone is mono and cannot carry a backup.</li>

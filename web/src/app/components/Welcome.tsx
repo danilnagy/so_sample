@@ -14,7 +14,13 @@ export function Welcome() {
             to play: press <b>Play</b> at the bottom.
           </p>
           <p className="muted">Everything you make is kept on this device. Nothing is uploaded.</p>
-          <p className="muted">An independent, open-source project, not affiliated with Teenage Engineering.</p>
+          <p className="muted">
+            An independent,{' '}
+            <a href="https://github.com/danilnagy/so_sample" target="_blank" rel="noreferrer">
+              open-source
+            </a>{' '}
+            project, not affiliated with Teenage Engineering.
+          </p>
           <div className="welcome-actions">
             <button
               className="primary"

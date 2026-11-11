@@ -3,5 +3,8 @@
   Cache-Control: public, max-age=31536000, immutable
 /manifest.webmanifest
   Cache-Control: no-cache
+# The service worker is checked for updates on every visit; a stale one would pin an old build.
+/sw.js
+  Cache-Control: no-cache
 /*
   X-Content-Type-Options: nosniff

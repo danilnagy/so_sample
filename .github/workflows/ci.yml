@@ -1,0 +1,45 @@
+# Checks every push and pull request: the web app's unit tests, lint, type check and build,
+# and the Python toolkit's tests and lint. The browser screenshot tests (npm run test:visual)
+# are not run here: their baselines were made on macOS with the system Chrome, and fonts
+# render differently on Linux. Run them locally before publishing.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      # soundfile needs libsndfile; the hardware extra (sounddevice) is not needed for the tests.
+      - run: sudo apt-get update && sudo apt-get install -y libsndfile1
+      - run: pip install -e ".[dev]"
+      - run: ruff check src tests
+      - run: pytest -q

@@ -68,7 +68,7 @@ export function Guide() {
         <Section id="start" title="Projects, playback and the bars">
           <p>
             SoSample builds samples, kits, patterns and songs for the Teenage Engineering PO-33 K.O!, plays them in the browser, and sends them to the device through its audio input. Everything is
-            kept on this device; nothing is uploaded. Ten projects and seven drum kits come with the app and are added to your library when it loads; a deleted one comes back.
+            kept on this device; nothing is uploaded. After one visit it also opens without a network; install it to your home screen or dock for an app of its own. Ten projects and seven drum kits come with the app and are added to your library when it loads; a deleted one comes back.
           </p>
           <h3>The top bar, at the top of this page</h3>
           <ol>
@@ -259,8 +259,12 @@ export function Guide() {
         </Section>
         <footer className="guide-end muted">
           <p>
-            SoSample is open source under the MIT licence. Its kits and projects are synthesized and free to use. It is an independent project, not affiliated with or endorsed by Teenage
-            Engineering; PO-33 and K.O! are their trademarks.
+            SoSample is open source under the MIT licence: the code, the format research and its documentation are on{' '}
+            <a href="https://github.com/danilnagy/so_sample" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            . Its kits and projects are synthesized and free to use. It is an independent project, not affiliated with or endorsed by Teenage Engineering; PO-33 and K.O! are their
+            trademarks.
           </p>
         </footer>
       </main>

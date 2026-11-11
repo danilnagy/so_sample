@@ -3047,8 +3047,9 @@ a.button.primary {
   columns: 2 220px;
 }
 
-.guide-body a:not(.button) {
-  color: var(--fg);
+.guide-body a:not(.button),
+.modal.welcome a:not(.button) {
+  color: inherit;
 }
 
 .guide-end {
@@ -3283,4 +3284,19 @@ a.button.primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Under the library's list: the browser storage the site uses. */
+.storage-note {
+  margin: 12px 0 0;
+  font-size: var(--text-small);
+}
+
+/* Shown above the app in a browser without container queries or :has(). */
+.browser-note {
+  margin: 0;
+  padding: 8px 16px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: var(--text-small);
 }

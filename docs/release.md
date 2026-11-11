@@ -100,25 +100,34 @@ deliberate action, not an automatic overwrite.
 - **Research fixtures: resolved.** Two golden fixtures derived from the research device's
   starting state, which may have held factory audio, are local only
   (`web/src/core/__fixtures__/local/`, ignored); their tests skip without them.
-- **Offline use.** There is no service worker, so the app needs the network to load; once
-  loaded it works offline until the tab closes. A service worker that caches the build
-  and the packs is the natural next step for a tool used away from a desk.
+- **Offline use: resolved.** The build carries a service worker (`web/src/offline/sw.js`,
+  written into `dist/sw.js` with the build's file list by the plugin in `vite.config.ts`).
+  After one online visit every file of the build, the bundled kits and projects included,
+  is cached: the app, the guide and even a first launch work without a network. Pages are
+  fetched from the network first when online; a new deploy installs beside the old version
+  and takes over once its tabs are closed. `sw.js` is served `no-cache` (`_headers`) so
+  updates are found on every visit. The `offline` Playwright project tests it against the
+  production build.
 - **Silent switch on iPhones and iPads: handled.** Web Audio is muted while the ring/silent
   switch is on silent unless the page is playing an HTML media element, so the first tap
   starts a looped silent clip through one, and the preview sounds with the switch in either
   position. Verify on a device after each iOS release; Apple changes this behaviour.
-- **Microphone import on iOS.** Safari on iOS delivers a mono microphone stream, and the
-  backup decoder needs the stereo signal; importing from the device is a desktop feature
-  for now and the dialog should say so on phones.
-- **Storage headroom.** The bundled kits and projects take about 150 samples and a few megabytes; a user
-  importing long samples can reach tens of megabytes, far under browser quotas (hundreds
-  of megabytes at least). The memory meter counts device pages, not browser storage; a
-  storage estimate in the Library header would help heavy users.
+- **Microphone import on iOS: handled.** Safari on iOS delivers a mono microphone stream,
+  and the backup decoder needs the stereo signal. On an iPhone or iPad the Import dialog
+  says so and explains the way round: import on a computer, export the project, open the
+  file on the phone.
+- **Storage headroom: shown.** The bundled kits and projects take about 150 samples and a
+  few megabytes; a user importing long samples can reach tens of megabytes, far under
+  browser quotas. The Library shows the browser's estimate of the storage the site uses and
+  its quota, under the sample list.
 - **No telemetry, no crash reports.** By design for a local release; the error boundary
   prints the error for the user to copy into a report.
-- **Browser support.** Chrome, Edge, Firefox and Safari 16 or later (container queries and
-  `:has()` are used). Older Safari gets a broken layout; a one-line notice for unsupported
-  browsers would be kind.
+- **Browser support: noticed.** Chrome, Edge, Firefox and Safari 16 or later (container
+  queries and `:has()` are used). A browser without them gets a line above the app saying
+  so (`main.tsx`).
+- **Continuous integration.** `.github/workflows/ci.yml` runs the web app's lint, unit
+  tests and build and the Python tests and ruff on every push and pull request. The
+  browser screenshot tests stay local (macOS baselines).
 
 ## Open-source checklist
 
@@ -154,6 +163,7 @@ the public `main`. It refuses to run off `master`, with uncommitted changes, or 
 `public` remote points at the private repository. Never push `master` to `public`, and
 never edit the `public` branch by hand: changes made there are not carried back.
 
-Contributions to the public repository arrive as pull requests against its `main`. Apply
-them to `master` (for example `git fetch public && git cherry-pick <commit>` from `master`,
-or by hand), then publish as usual.
+Changes made on GitHub (a merged pull request, an edit in the browser, such as the README's
+Netlify badge) must reach `master` before the next snapshot, or it would undo them. The
+script fetches the public repository first and, if it holds commits it has not published,
+stops and prints the commands to cherry-pick them onto `master` and mark them as seen.

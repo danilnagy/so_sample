@@ -1,0 +1,13 @@
+{
+  "analysis_version": "imported-shared-deletion-prediction-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "all_target_core_controls": true,
+    "all_full_transfer_hypotheses": true,
+    "only_sound6_and7_change": true,
+    "retained_owner_and_reference_alternatives_fail": true,
+    "stale_baseline_rejected": true
+  },
+  "registration_sha256": "7185edabd2746f19de9c744137ae8f35ec552fef4fad3f8b2f4ee9c852d5659a"
+}

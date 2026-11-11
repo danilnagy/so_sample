@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-018-b-copy-sound1-to-drum10-retry",
+  "registered_before_capture": true,
+  "expected_file": "capture-retry.wav",
+  "original_preregistration": "../drum10-copy-predictions-001.json",
+  "original_preregistration_sha256": "0176beeca193ba8fc23a7b687d8e6562c32b37aa29306dddb6da3044b09e960c",
+  "prior_failed_capture_sha256": "9f13e1cb22d5bad338db09218a0d860ac8d010c1cbeb8770013d9c8381fb2765",
+  "prior_failed_capture_archive": "capture-attempt-001.wav",
+  "planned_actions": [
+    "Keep the current Sound1-to-Sound10 copied state; do not repeat the copy or restore",
+    "With Sound8/TONE, write off, playback stopped and both knobs untouched, begin a new stereo recording before transmitting the backup",
+    "Record the entire transfer and leave a second of silence after it finishes before stopping",
+    "Use the successful input/settings and export stereo PCM16/44100Hz without effects as capture-retry.wav here"
+  ],
+  "limits": [
+    "The original copy hypotheses remain registered and unchanged; no missing bytes or expected references are substituted",
+    "Any state deviation will be reported explicitly after successful decoding"
+  ]
+}

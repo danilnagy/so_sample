@@ -1,0 +1,21 @@
+{
+  "analysis_version": "swing-law-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "ef08c6b54639bc1817ce24e614f9998a8db8c38b3e1c933ccc7d5aa2adf3efbc",
+  "native_results_sha256": "6f0e8c4b5bc36d72338e21b8f703152eb3ce88b811b89979cc99ebadad4634e6",
+  "measurements_sha256": "b06d08417492abd46a35a16d04108a198c133f92ebad359e4191a97a4d32485a",
+  "swing": 18,
+  "median_position": 0.8743505387895452,
+  "delay_in_steps": 0.7487010775790903,
+  "model_support": {
+    "linear_in_code": true,
+    "triplet_at_max": false,
+    "three_quarters_at_max": false
+  },
+  "classification": "linear_in_code",
+  "position_spread": 0.0027680718791130987,
+  "median_step_seconds": 0.25003117913832207,
+  "limits": [
+    "One swing value at 60 BPM; the law between 6 and 18 is interpolated, not measured"
+  ]
+}

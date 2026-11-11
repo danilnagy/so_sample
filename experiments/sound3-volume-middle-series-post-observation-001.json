@@ -1,0 +1,50 @@
+{
+  "analysis_version": "volume-interior-post-observation-encoding-diagnostic-0.1",
+  "hardware_verified": false,
+  "registered_before_interior_data": false,
+  "native_results_sha256": "97e61b40cd3f6273ddaa5fec754cbfc4bdfc008d45f739b1cd8926d844cd6c2f",
+  "uniform_middle_condition_satisfied": false,
+  "contiguous_values_all_exceed_uniform_quarter": true,
+  "alternative_order_values_all_exceed_uniform_quarter": false,
+  "contiguous_middle_values_by_step": [
+    37,
+    41,
+    44,
+    47,
+    47,
+    47,
+    47,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46,
+    46
+  ],
+  "alternative_middle_values_by_step": [
+    25,
+    26,
+    11,
+    59,
+    59,
+    59,
+    59,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43,
+    43
+  ],
+  "limits": [
+    "This is a new diagnostic, not a rewritten passing preregistered middle result",
+    "Snapshot step order is not guaranteed to be acquisition order; no monotonic ramp fit or gain curve inferred",
+    "An independent generated gain comparison is required to distinguish the proposed orderings"
+  ]
+}

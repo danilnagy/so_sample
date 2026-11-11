@@ -1,0 +1,83 @@
+{
+  "analysis_version": "audition-lock-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_playback": true,
+  "experiment_id": "observe-audition-locks-001",
+  "restore_wav_sha256": "1787482d3b70ada9fc872ec7d009c69c0b53b9c2032d4550da15f3d9b68aeb39",
+  "edited_artifact_sha256": "ba3f2508cc637bc3e0ac47702a5b5c9133189711c17dea0195251c4a6b42e6b9",
+  "build": {
+    "restore_wav_sha256": "1787482d3b70ada9fc872ec7d009c69c0b53b9c2032d4550da15f3d9b68aeb39",
+    "hit_wav_sha256": "2109c2b69fd9c6e71bcc08e557d4e554f49778786d4b208f6a43d8c8a95d3154",
+    "hit_codes": 6328,
+    "hit_codes_sha256": "9a5a2672351ed5371f76b2008f1701005d72458071cdc3aaf78e3da8485ad9bb",
+    "sound": 16,
+    "note_steps": [
+      1,
+      5,
+      9,
+      13
+    ],
+    "locks": {
+      "pitch": 13,
+      "volume": 36,
+      "filter": 63,
+      "resonance": 1
+    },
+    "tempo": 120,
+    "restore_bytes": 1430088
+  },
+  "build_script": "web/scripts/build-audition-lock-restore.ts",
+  "build_script_sha256": "2eeb0d216e4aec3509055400839a0a0fdd627c2ed0c1a5ae9089d4d54ca45fbf",
+  "method_script": "scripts/audition_lock_method.py",
+  "method_script_sha256": "db207a9a5bc522c872c94bd25b316cad036b49eb9a418d8af9e794331430f2e8",
+  "method_settings": {
+    "band_hz": [
+      100.0,
+      11000.0
+    ],
+    "onset_fraction_of_peak": 0.1,
+    "envelope_window_seconds": 0.003,
+    "refractory_seconds": 0.3,
+    "group_gap_seconds": 2.0,
+    "window_ms": [
+      60.0,
+      220.0
+    ],
+    "fft_size": 65536,
+    "fundamental_hz": 200.0,
+    "harmonics": 50,
+    "peak_search_hz": 3.0,
+    "bottom_band": [
+      1,
+      3
+    ],
+    "top_band": [
+      40,
+      50
+    ],
+    "type_margin_db": 3.0,
+    "same_margin_db": 3.0,
+    "silent_db": -40.0,
+    "expected_groups": [
+      "before",
+      "pattern",
+      "after"
+    ],
+    "min_hits_per_group": 3
+  },
+  "playback_seconds": 32,
+  "instructions": "One 32-second playback recording, in three parts. Before pressing Enter:\n\n- Keep WRITE off and playback stopped. Do not touch knobs A or B at any point.\n- Select Sound 16: hold SOUND and press key 16. Keep every volume unchanged.\n\nPress Enter, then within a second:\n\n1. Press key 1 four times, about one second apart. These are the auditions before.\n2. Wait about three seconds of silence. Press PLAY and let Pattern 1 play twice through\n   (eight seconds; four hits per pass). Press PLAY to stop it.\n3. Wait about three seconds of silence. Press key 1 four times, about one second apart.\n   These are the auditions after.\n\nThe harness may warn that the level changed between parts; that is expected here, so\ndecline to record again unless a part was missed.",
+  "outcomes": [
+    "audition_follows_last_lock",
+    "audition_keeps_live_state",
+    "indistinguishable",
+    "other"
+  ],
+  "prediction": "audition_keeps_live_state",
+  "prediction_basis": "The person reported on 2026-11-07 that after a restore the auditions sounded as if the filter were closed, and that playing the pattern did not change that. Exploratory, not measured.",
+  "limits": [
+    "One device, one sound, one key; the live knob setting is whatever the device holds and is not controlled",
+    "If the live setting already is the bypass, the groups cannot be told apart; a rerun with the filter knob turned fully counterclockwise before the auditions is then planned",
+    "Hand-pressed auditions are timed by the person; the method needs three groups separated by over two seconds"
+  ]
+}

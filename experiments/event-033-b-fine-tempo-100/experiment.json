@@ -1,0 +1,21 @@
+{
+  "experiment_id": "event-033-b-fine-tempo-100",
+  "capture_status": "validated_single_byte_fine_tempo100",
+  "baseline_id": "edited-tempo80-001",
+  "expected_file": "capture.wav",
+  "registration": "tempo-registration.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off; note initial displayed80 BPM",
+    "Hold BPM continuously while turning knob B to displayed100; stop moving B before releasing BPM; do not move knob A",
+    "Before playback capture a complete stereo backup at established reduced levels with one second trailing silence",
+    "Report actual displayed BPM before/after and leave the fine tempo in place; do not touch either knob further"
+  ],
+  "source_sha256": "a296fe64000e078997becbc2b9acba5a2a986b6172168658e0cfbe874859ea1b",
+  "analysis": "derived/analysis-001",
+  "native_results": "native-tempo-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_bpm": 100,
+  "project": "../exported-fine-tempo100-001/project.json",
+  "fine_tempo_writer_enabled": false
+}

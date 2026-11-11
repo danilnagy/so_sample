@@ -1,0 +1,13 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "42abc578dd9829432de80f03f8c2ac9dd9bb5725cca964ba928b7e337c69ae44",
+  "source_body_sha256": "5b557a2586907b90705bed847b63e33745d0cef85bc27e06f80e6f0601f29b7c",
+  "operations": [
+    {
+      "operation": "copy_melodic_reference",
+      "source_sound": 6,
+      "destination_sound": 7
+    }
+  ]
+}

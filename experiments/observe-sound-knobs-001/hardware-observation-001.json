@@ -1,0 +1,21 @@
+{
+  "analysis_version": "sound-knobs-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Where turning a sound's knobs without WRITE is stored",
+  "outcome": "nothing_stored",
+  "checks": {
+    "backup_decoded": true,
+    "capture_pin_matches": true,
+    "export_checks_pass": true
+  },
+  "session_answers": [
+    {
+      "question": "Which parameter names did the screen show for knobs A and B, and which way did you turn each? (Enter to skip)",
+      "answer": "pitch and vol, as instructed"
+    }
+  ],
+  "reading": "Knobs A and B showed pitch and volume. With WRITE off, turning them changed no byte of the backup: the sound-level setting that unlocked steps use is live device state, not saved data",
+  "result_sha256": "d43c9e07361db20a8ba18e3570c613dde7f7475b22aed202149ec438585ae61f",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "68403dbb203a195263bb2e96f28871bb95b4346e8a1cdc1d93637651eee7f4c6"
+}

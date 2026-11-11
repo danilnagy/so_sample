@@ -1,0 +1,26 @@
+{
+  "validation_id": "key16-control-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-key16-control-001 -p no:cacheprovider",
+    "passed": 234,
+    "failed": 0,
+    "duration_seconds": 55.19,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 88
+  },
+  "registered_endpoint_results": "melodic-key16-results-001.json",
+  "control_invariants_passed": true,
+  "registered_hypotheses_fit": true,
+  "physical_keyboard_keys_observed": [1, 2, 16],
+  "writer_keyboard_keys_supported": [1, 2],
+  "generated_key16_hardware_test_completed": false,
+  "initial_crossing_failure_preserved": "event-009-b-melodic-key16/initial-decode-failure.json",
+  "validated_artifact": "event-009-b-melodic-key16/derived/analysis-002/capture.symbols.npz",
+  "next_independent_control": "event-010-b-melodic-key7/experiment.json",
+  "next_registered_predictions": "melodic-key7-predictions-001.json"
+}

@@ -1,0 +1,34 @@
+{
+  "experiment_id": "empty-001-a-repeat",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "reference": "../empty-001-a/capture.wav",
+  "planned_action": "Record a second consecutive complete stereo backup without changing the empty baseline state or recording settings",
+  "actual_actions": [
+    "User uploaded the requested new minimal-state baseline pair; exact reset/deletion button log and recovery-backup ID were not separately supplied."
+  ],
+  "source_sha256": "65d8145f519c71bec0162fb38c6fe134008a096cf46183be233980ff34259a57",
+  "purpose": "Check strict transport repeatability and account for endpoints before sampling a calibration sound",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "comparison": "../empty-001-comparison.json",
+    "independent_waveform": "../waveform-probes-009.json",
+    "structure": "../empty-structure-001.json"
+  },
+  "comparison_result": {
+    "complete_labels_and_counts_match": true,
+    "symbols_per_channel": 45033,
+    "partial_endpoints_match_at_threshold_0_0063": true,
+    "incomplete_final_sign_intervals": {
+      "left": [
+        0
+      ],
+      "right": [
+        0,
+        0
+      ]
+    }
+  }
+}

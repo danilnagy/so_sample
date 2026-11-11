@@ -1,0 +1,69 @@
+{
+  "analysis_version": "FX-position-map-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and registered per-note pitch decision",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_pitch_result": true,
+    "decision_binds_results": true,
+    "export_hashes_and_native_body_exact": true,
+    "session_target_exact": true
+  },
+  "footer": "ffff6fffffff6fff",
+  "steps": {
+    "1": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "5": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "9": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "13": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    }
+  },
+  "classification": "sequential_high_nibble_first",
+  "decision_sha256": "8d4a7dca88e6dff7fd66cc76f7c440a0fddcdace3ad934b858193db7c2ba357e",
+  "native_results_sha256": "fc1639e2eaa83c866c7cb7e049c458feba77ca37287cb3aa480f26fddaff963d",
+  "pitch_results_sha256": "98c714e89d536f79c30a665dff24f053dce5a1bcdcfdd55da852c0bb7de09a98",
+  "manual_observation_sha256": "9338b3289457284a3d09f6fbc5043c3f23a006304959cb9a5d06aa5687224d9c",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "184b4cde476c73fb0f174bb48ef367d7bc7d9b047a886fc4065d881afb75abd0",
+  "general_per_step_FX_writer_enabled": false,
+  "limits": [
+    "Tests footer bytes 0, 2, 4 and 6 high nibbles through four notes; low nibbles of bytes 1..7 are inferred, not observed",
+    "Pattern 1 and effect code 6 only; no general per-step effect writer is enabled"
+  ]
+}

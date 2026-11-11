@@ -1,0 +1,55 @@
+{
+  "analysis_version": "recorded-FX8-footer7-global1-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Octave-down footer7 prediction passes, with global byte131=1 and every other state byte preserved; user confirms lower octave; clear remains unverified due duplicate input",
+  "checks": {
+    "source_actual_native_and_registered_narrow_scope_pass": true,
+    "preregistered_footer7_prediction_passes": true,
+    "literal_footer7_global1_reproduces_entire_body": true,
+    "capture_artifact_registration_pins_match": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_full_native_body_exact": true
+  },
+  "footer_nibble_values": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "global_byte_after": 1,
+  "capture_sha256": "2ab2ebcf08a1f130e274cd05700ef7d6020963e23fc8bd72dca0c5bbfc3c99d1",
+  "artifact_sha256": "2f59946a92a2256099f53f52313e2ce05e236e7fc59168a56ef97874fded5477",
+  "artifact_path": "experiments/event-066-b-pattern1-FX8-recorded/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "e3a3dfbb517181d48b7356726dbf34097171e775a34c1a1e73b2ac570915d096",
+  "native_results_sha256": "e1f1b3a060f5508c1566ae9a9295699c17f9815186e6c5d8a2f0059d73d98ace",
+  "manual_observation_sha256": "735b685e5e8935a8bc123f385d36000577a9131150b432f4c4c0bbaeb5b34757",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.129974365234375,
+      0.127532958984375
+    ]
+  },
+  "clear_hardware_verified": false,
+  "global_role_or_nibble_order_confirmed": false,
+  "FX_writer_enabled": false,
+  "limits": [
+    "Original footer-only FX7 prediction failed due to global byte131 0-to9; original report remains immutable; footer-plus-global masks are new hypotheses registered before these captures",
+    "Global byte131 meaning and both new values are unknown; low-four and whole-byte scopes remain separate, with all other fields exact",
+    "FX8 raw7 and clear raw15 are new footer hypotheses, not pre-existing full effect-map facts; failures/mixed values remain literal without averaging",
+    "Clear should match the independent no-FX state except the explicitly unknown global byte131; full original-body equality is an additional diagnostic, not a guessed global-byte target",
+    "Nibble order remains unresolved for uniform vectors; no exact whole FX8 body, public FX writer or full map is predicted"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "7626a958c17a3d8914f5b90bc9a17fccad263e3ce5a5e2ef40449c5108b68ad0",
+  "source_body_sha256": "edd7c74f1817ee7bf0afb6b3c7cb9340beed04f8a2da813e4b662b2ba5ff02c7",
+  "operations": [
+    {
+      "operation": "clone_drum_cell",
+      "pattern": 1,
+      "sound": 10,
+      "source_step": 1,
+      "target_steps": [
+        9
+      ]
+    }
+  ]
+}

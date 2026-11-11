@@ -1,0 +1,312 @@
+{
+  "analysis_version": "project-build-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "project-build-001/compiled",
+  "source_artifact": "experiments/compiled-priority-map-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "d8a914b2c9a2bdce9d11115064fc947e7fceb0c10356930f9fafa8fe18129c61",
+  "source_capture_sha256": "08deba3749bbbb2a50c5e59580301cfe5aa61c9c082aa5c8eab87bdacd442717",
+  "spec": {
+    "tempo": 100,
+    "swing": 4,
+    "chain": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "melodic": {
+      "8": "experiments/project-build-source-001/melody-c5.wav"
+    },
+    "drums": {
+      "9": [
+        "experiments/project-build-source-001/kit-key01.wav",
+        "experiments/project-build-source-001/kit-key02.wav",
+        "experiments/project-build-source-001/kit-key03.wav",
+        "experiments/project-build-source-001/kit-key04.wav",
+        "experiments/project-build-source-001/kit-key05.wav",
+        "experiments/project-build-source-001/kit-key06.wav",
+        "experiments/project-build-source-001/kit-key07.wav",
+        "experiments/project-build-source-001/kit-key08.wav",
+        "experiments/project-build-source-001/kit-key09.wav",
+        "experiments/project-build-source-001/kit-key10.wav",
+        "experiments/project-build-source-001/kit-key11.wav",
+        "experiments/project-build-source-001/kit-key12.wav",
+        "experiments/project-build-source-001/kit-key13.wav",
+        "experiments/project-build-source-001/kit-key14.wav",
+        "experiments/project-build-source-001/kit-key15.wav",
+        "experiments/project-build-source-001/kit-key16.wav"
+      ]
+    },
+    "patterns": {
+      "1": {
+        "notes": {
+          "8": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "14": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "9": [
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null
+          ]
+        }
+      },
+      "2": {
+        "notes": {
+          "8": [
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "14": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "9": [
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null
+          ]
+        },
+        "parameters": {
+          "8": {
+            "filter": 24,
+            "resonance": 40
+          }
+        },
+        "locks": {
+          "8": {
+            "filter": [
+              null,
+              40,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          7
+        ]
+      }
+    }
+  },
+  "spec_sha256": "13afe9eec7295cba0be2f6e7867409d6abe82988f09bbef4378b5edcadb6b217",
+  "build_report_sha256": "c125f14545799bf6c0629ef37de4187be49f5841d4b64c66f97e8d103f0d25a4",
+  "expected_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+  "edited_artifact_sha256": "df40e0269dbf9182174e74ff07f738222df387fbaaa6229bccd1f0c3549e7625",
+  "restore_wav_sha256": "4447aa89b9d2d1a420a45e0168b17ddec2ae5e82c63c7e503a9cb1b600357daa",
+  "onset_settings": {
+    "kick": {
+      "band_hz": [
+        250.0,
+        350.0
+      ],
+      "envelope_window_seconds": 0.003,
+      "skip_seconds": 0.02,
+      "threshold_fraction": 0.15,
+      "refractory_seconds": 0.04,
+      "steps_per_loop": 4,
+      "loops": 10
+    },
+    "hat": {
+      "band_hz": [
+        450.0,
+        550.0
+      ],
+      "envelope_window_seconds": 0.003,
+      "skip_seconds": 0.02,
+      "threshold_fraction": 0.15,
+      "refractory_seconds": 0.04,
+      "steps_per_loop": 4,
+      "loops": 10
+    }
+  },
+  "onset_method_script_sha256": "ecab19649dd5681266b10c74714011d89dd578dbd0918ff0d33ee9b2a13890f5",
+  "level_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.15,
+    "window_ms": [
+      100.0,
+      190.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "level_method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "expected": {
+    "kick_interval_s": 0.6,
+    "hat_offset_s": 0.17500000000000002
+  },
+  "melody_key1_hz": 783.9891779757236,
+  "tolerances": {
+    "seconds": 0.005,
+    "melody_db": 20.0
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "tempo_100: median Sound13 onset interval within 5 ms of 0.600 s",
+    "swing_4: median Sound9 onset offset from the preceding Sound13 onset within 5 ms of 0.175 s",
+    "melody_first_note: 784 Hz level in step 1 exceeds step 2 by at least 20 dB"
+  ],
+  "limits": [
+    "One small project; the builder's software checks, not this test, cover other specs"
+  ]
+}

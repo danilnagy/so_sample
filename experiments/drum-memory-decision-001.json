@@ -1,0 +1,38 @@
+{
+  "analysis_version": "drum-memory-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "463b90ce39602882cba192edeef5f7691d27d2944124be65c88f85f303b796c2",
+  "native_results_sha256": "8c7ac04d06854a5c2fc1716c344bc6723285d99ed6c31b646192d03070987dd4",
+  "frequency_results_sha256": "97de0e23ecaadbe6f69a1425af6d5d4d31100216d24317532a20da7cafc528df",
+  "step1_hz": 799.9899458408931,
+  "measured_cents": {
+    "1": 0.0,
+    "2": 100.03440805703534,
+    "3": 200.0303843912736,
+    "4": 299.97118816879635,
+    "5": 399.98838608610123,
+    "6": 499.96122309712433,
+    "7": 599.9967632853429,
+    "8": 699.9817120468317,
+    "9": 799.9807551883907,
+    "10": 899.9807036373876,
+    "11": 1000.0222050742861,
+    "12": 1100.0464772485698,
+    "13": 1200.003001144047,
+    "14": 1300.0265390356242,
+    "15": 1399.9912961138562,
+    "16": 1499.999194538868
+  },
+  "model_support": {
+    "sound16_key_k": true
+  },
+  "classification": "sound16_key_k",
+  "absolute": {
+    "step1_cents_vs_hit1": -0.021757764948479197,
+    "stored_rate": true
+  },
+  "limits": [
+    "One total, 675840 codes; the device limit itself is not located by this test",
+    "Only Sound16's kit is played; Sound13..15 are checked by exact reception"
+  ]
+}

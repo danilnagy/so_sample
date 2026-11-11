@@ -1,0 +1,104 @@
+{
+  "analysis_version": "drum-pitch-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-drum-pitch-001",
+  "source_artifact": "experiments/compiled-chain-writer-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "a422886202a5cf20e47512d618f1b2252492350f3397c02ab37de355c70146fa",
+  "source_capture_sha256": "8109508c6fb55e42f25e34a6a209309f90cc0b6e8b792afedea890d934c779c9",
+  "pitch_codes": [
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    11,
+    9,
+    7,
+    5,
+    3,
+    1,
+    14,
+    12,
+    13
+  ],
+  "plan_sha256": "4dbcbc94cb516d4551d66366ac997a88a104c808ed5d9632e3ccf96de3238042",
+  "expected_body_sha256": "4a46b5f8f4190dbd9cea419e8e967c8c1183834adcd44f7f85f2169801e6afdb",
+  "edited_artifact_sha256": "5012b8340f0b201a95d9b3a16f2b737b1ffe687d27d0ee53c875d92381b46d4a",
+  "restore_wav_sha256": "3b3ab99b452426f561ae64974ef0cc4209c6bb0aaa254226c7004432ea710d3c",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      50.0,
+      60.0,
+      70.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "semitone_per_code": [
+      0.0,
+      200.0,
+      400.0,
+      600.0,
+      800.0,
+      1000.0,
+      1200.0,
+      -200.0,
+      -400.0,
+      -600.0,
+      -800.0,
+      -1000.0,
+      -1200.0,
+      100.0,
+      -100.0,
+      0.0
+    ],
+    "no_transposition": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "absolute_hz": 800.0,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of 800 Hz"
+  ],
+  "limits": [
+    "One drum sound, key 1, volume 36; pitch codes 1..25 sampled at 13 values"
+  ]
+}

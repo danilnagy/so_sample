@@ -1,0 +1,39 @@
+{
+  "analysis_version": "native-trim-hardware-validation-0.1",
+  "capture_sha256": "e039a7ce9392e44827424134bee6f08439fd66cd45b2b7712759b4c89794bc0c",
+  "recapture_artifact_sha256": "64750e249c7ee913c4097ba586786db1e3bf317b58ad835576ad4c8239a0dbc2",
+  "generated_artifact_sha256": "02b0e1fcb9f0933108d9521bbe4c44bc2bb66cbf8326f8b4cd0d2648e9939b53",
+  "encoded_body_sha256": "0191ad7ee47710d5bcb117d8b3d1c9774c972ff06df829f9cb302d2f2046c4d7",
+  "packet_count": 511,
+  "frame_end_byte": 89396,
+  "sound_counters": {
+    "1": 64704,
+    "2": 64704,
+    "3": 8000,
+    "8": 64704
+  },
+  "changed_plain_packet_indices": [
+    375
+  ],
+  "backing_sample_sha256": "169ee14d28e9c5de29885d8bf9f42c940c67fcf6f348bcb5241dec661fa722d4",
+  "checks": {
+    "registered_body_sha256_matches": true,
+    "generated_body_matches_recapture": true,
+    "generated_plain_packets_match_recapture": true,
+    "exact_body_reencode": true,
+    "all_packet_checksums_valid": true,
+    "packet_count_unchanged": true,
+    "only_registered_trim_packet_changed": true,
+    "expected_counters": true,
+    "backing_sample_bytes_unchanged": true
+  },
+  "passed": true,
+  "user_report": "Everything worked with upload and the tone test; recapture supplied.",
+  "hardware_verified": true,
+  "limits": [
+    "Restore and audible behavior are user reported; buttons and playback were not observed independently.",
+    "The complete checksum-validated body is compared; acquisition and post-frame carrier are separate.",
+    "This validates this candidate and local device path, not arbitrary sample or pattern edits.",
+    "The unedited generated control was not separately tested on hardware."
+  ]
+}

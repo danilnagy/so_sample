@@ -1,0 +1,23 @@
+{
+  "experiment_id": "edited-sound3-pitch13-reference-001",
+  "capture_status": "validated_exact_generated13_reference_and_usable_frequency_audio",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-pitch13-14-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_exact_native_reception"
+  },
+  "planned_actions": [
+    "For14 wait until13 reception and usable audio are verified",
+    "Restore with established stereo path/playback level; keep both knobs and audio settings unchanged",
+    "Pattern1/Sound3/TONE stopped/write off; before playback save full capture.wav at reduced level with one second tail",
+    "Separately record12 to15 seconds of ordinary Pattern1 playback as playback.wav, then stop/write off",
+    "Confirm successful restore and recognizable phrase; no numeric display or remembered pitch comparison required"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "native_results": "hardware-recapture-results-001.json",
+  "frequency_results": "pitch-frequency-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-pitch13-reference-001/project.json",
+  "pitch_field_writer_enabled": false
+}

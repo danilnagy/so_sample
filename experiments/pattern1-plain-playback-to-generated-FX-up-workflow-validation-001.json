@@ -1,0 +1,24 @@
+{
+  "analysis_version": "plain-playback-to-fixed-footer6-global7-handoff-audit-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "both_plain_control_native_and_exact_repeat_predictions_pass": true,
+    "two_distinct_raw_inputs_preserve_global7": true,
+    "battery_change_report_bound_and_interpretation_limited": true,
+    "accepted_source_hardware_observation_and_pins": true,
+    "generated_native_and_actual_waveform_roundtrip_pass": true,
+    "generated_immutable_output_pins_match": true,
+    "hardware_results_not_inferred_from_software": true,
+    "next_capture_pending_before_data": true
+  },
+  "source_observation_sha256": "1a1f0410e101bb26fddf869959a0c6fe471d0b8a73b359643a18fc80371ba0f8",
+  "next_registration_sha256": "cf5b9bcefa626579ba2523eec0c57e0d233a3dd2e351f8fffedad03cad58dcbf",
+  "software_validation_sha256": "65842fd0efebbdc5491d6453174d822efba665c6cb0fd19e829fabe7fc818766",
+  "validation": {
+    "focused_tests_passed": 58,
+    "focused_tests_seconds": 4.36,
+    "last_full_production_tests_passed": 1137,
+    "production_changed_since_full_suite": false,
+    "ruff_new_research_files_passed": true
+  }
+}

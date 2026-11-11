@@ -1,0 +1,34 @@
+{
+  "analysis_version": "verified-B-minimum-to-unknown-maximum-and-exact-return-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "minimum_hardware_scope_and_identity_pins_match": true,
+    "narrow_mask_failure_and_bit7_change_retained": true,
+    "no_audible_change_and_post_observation_model_bound": true,
+    "all_export_hashes_and_full_body_reconstruction_pass": true,
+    "unknown_maximum_and_entire_minimum_return_preregistered": true,
+    "both_new_captures_pending": true,
+    "public_guard_rejects_new_B_context_and_no_resonance_writer": true
+  },
+  "minimum_hardware_observation_sha256": "18858d6adb799c64b9a6ca9153f763d2c99770e5405b1ee7bc36a207ec558f02",
+  "range_registration_sha256": "ff18447c7231e58b28ba7c2ee0868568d9c4cc497959b44732a4c8b6a10f9aeb",
+  "post_observation_model_sha256": "fed382e475e565ecdd8486c7c8364eafd1fb05213c12e521c5077ed9bd6a693e",
+  "range_code_sha256": {
+    "scripts/prepare_sound3_filter_B_range.py": "f048f591c089b282764186e9bca5b9587f7bc2e8a3ab962e058e6c4eb40268c6",
+    "scripts/check_sound3_filter_B_range.py": "0f20053ee58eeb5f2d124e96111eed001a74b2f41f58d0b7e544cf442501f47d",
+    "tests/test_sound3_filter_B_range.py": "64bd76f7dad12dd5b61a967d3a653e4f38a7fc43a66719a82781c7e814030bdc"
+  },
+  "focused_tests_passed": 82,
+  "last_full_regression_tests_passed": 1025,
+  "production_writer_changed_since_full_run": false,
+  "resonance_writer_enabled": false,
+  "limits": [
+    "Maximum endpoint and body are unknown; no63, range, uniformity or audible change is predicted",
+    "Exact return to entire independent minimum body and every packet is registered before both captures",
+    "Narrow mask0x7c failed at the first minimum because bit7 changed; original failed report remains immutable; both masks and projections stay separate",
+    "All stored A63, pitch14, volume36 and noncandidate state must be preserved under the six-bit mask; wider snapshots are retained without rescue",
+    "No audible change is acceptable at neutral cutoff; no resonance law or bit7 role is inferred from endpoints alone",
+    "Public filter guards remain unchanged and reject this new third-byte context; no resonance writer is enabled"
+  ]
+}

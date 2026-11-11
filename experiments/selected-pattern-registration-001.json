@@ -1,0 +1,90 @@
+{
+  "analysis_version": "selected-pattern-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-selected-pattern-001",
+  "source_artifact": "experiments/compiled-all-melodic-slots-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "389ab7211e16c260ca4cf82a61f521611d938d3e4b0cfa6aa8de9eaa34825150",
+  "source_capture_sha256": "3eab3c002afce1f460c16b11f48d6e0b12d11d8186eaf8ff633f5df03636b7f8",
+  "plan_sha256": "a439ee70c8b25cd9b67ab40e6e645172a732755ff5901f675ee9846e7793bb9e",
+  "expected_body_sha256": "c2bdb50dfb72666745d3427214028a28f07771a17498e8d90764f024fd5313a6",
+  "edited_artifact_sha256": "6e7b81153b209ace7ec57a510702f072c5a97d060ee5988c372b9a8a29186e16",
+  "restore_wav_sha256": "e65abdefd773eded4c71932cdf2464eedeaf615ad9836ace51e69626e78e77ca",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "pattern5_selected": [
+      -0.0,
+      -0.0,
+      -150.0,
+      -150.0,
+      -300.0,
+      -300.0,
+      -450.0,
+      -450.0,
+      -600.0,
+      -600.0,
+      -750.0,
+      -750.0,
+      -900.0,
+      -900.0,
+      -1050.0,
+      -1050.0
+    ],
+    "pattern1_plays": [
+      0.0,
+      0.0,
+      150.0,
+      150.0,
+      300.0,
+      300.0,
+      450.0,
+      450.0,
+      600.0,
+      600.0,
+      750.0,
+      750.0,
+      900.0,
+      900.0,
+      1050.0,
+      1050.0
+    ]
+  },
+  "step1_hz": {
+    "pattern5_selected": 1099.162566517964,
+    "pattern1_plays": 599.3228307506727
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly, Pattern5 and global byte 0 included",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of the model's step-1 frequency"
+  ],
+  "limits": [
+    "One pattern (5) selected by byte 0; other patterns and pattern chains are not tested",
+    "Playback starts with the play button only, right after the backup"
+  ]
+}

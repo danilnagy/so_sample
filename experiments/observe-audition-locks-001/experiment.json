@@ -1,0 +1,23 @@
+{
+  "experiment_id": "observe-audition-locks-001",
+  "kind": "playback_observation_after_restore",
+  "capture_status": "validated_audition_lock_observation_other",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../audition-lock-registration-001.json",
+  "playback_seconds": 32,
+  "observation_questions": [
+    "Did the four auditions before the pattern sound duller or quieter than the pattern's hits? (Enter to skip)",
+    "Did the four auditions after the pattern sound like the ones before, or like the pattern? (Enter to skip)",
+    "Anything else you noticed? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "playback_instructions": "One 32-second recording in three parts; do not press PLAY first. Before pressing Enter:\n\n- Keep WRITE off and playback stopped. Do not touch knobs A or B at any point.\n- Select Sound 16: hold SOUND and press key 16. Keep every volume unchanged.\n\nPress Enter, then within a second:\n\n1. Press key 1 four times, about one second apart. These are the auditions before.\n2. Wait about three seconds of silence. Press PLAY and let Pattern 1 play twice through\n   (eight seconds; four hits per pass). Press PLAY to stop it.\n3. Wait about three seconds of silence. Press key 1 four times, about one second apart.\n   These are the auditions after.\n\nThe harness may warn that the level changed between parts; that is expected here, so\ndecline to record again unless a part was missed.",
+  "first_session_note": "hardware-session-001: backup-02 is exact by the web decoder; playback.wav holds the pattern alone, as the procedure was shown at the restore step",
+  "analysis": "derived/analysis-001",
+  "measurements": "audition-measurements-001.json",
+  "result": "../audition-lock-result-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

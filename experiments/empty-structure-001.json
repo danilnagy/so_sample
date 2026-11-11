@@ -1,0 +1,954 @@
+{
+  "analysis_version": "empty-state-structure-0.1",
+  "artifact_sha256": "e5b57f9d2667fab1bba08d24d63ca3da691434f37ecb9b217e090aa0909b1527",
+  "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "window_start": 8500,
+  "phase_views": {
+    "left_raw_labels": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 255,
+          "holdout_errors": 251,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 249,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45033
+      ],
+      "best_lags": [
+        {
+          "lag": 18,
+          "equal_fraction": 0.2585786663015199
+        },
+        {
+          "lag": 242,
+          "equal_fraction": 0.258356066242319
+        },
+        {
+          "lag": 94,
+          "equal_fraction": 0.25738906117072374
+        },
+        {
+          "lag": 1574,
+          "equal_fraction": 0.2572155954117681
+        },
+        {
+          "lag": 378,
+          "equal_fraction": 0.25711519845111314
+        },
+        {
+          "lag": 1032,
+          "equal_fraction": 0.25703501309822263
+        },
+        {
+          "lag": 1015,
+          "equal_fraction": 0.2567712145954164
+        },
+        {
+          "lag": 1712,
+          "equal_fraction": 0.25674162143534074
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            35726,
+            35732
+          ],
+          "covered_value_span": [
+            35726,
+            36252
+          ],
+          "matching_lag_pairs": 6
+        },
+        {
+          "equal_comparison_span": [
+            33165,
+            33171
+          ],
+          "covered_value_span": [
+            33165,
+            33691
+          ],
+          "matching_lag_pairs": 6
+        },
+        {
+          "equal_comparison_span": [
+            32857,
+            32863
+          ],
+          "covered_value_span": [
+            32857,
+            33383
+          ],
+          "matching_lag_pairs": 6
+        }
+      ]
+    },
+    "left_staggered_phase": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 254,
+          "holdout_errors": 252,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 255,
+          "holdout_errors": 260,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45032
+      ],
+      "best_lags": [
+        {
+          "lag": 5,
+          "equal_fraction": 0.26041010759164457
+        },
+        {
+          "lag": 18,
+          "equal_fraction": 0.25894177575724386
+        },
+        {
+          "lag": 1574,
+          "equal_fraction": 0.25851021225470555
+        },
+        {
+          "lag": 141,
+          "equal_fraction": 0.2581682284081228
+        },
+        {
+          "lag": 94,
+          "equal_fraction": 0.25775289532905216
+        },
+        {
+          "lag": 1350,
+          "equal_fraction": 0.2574612017508954
+        },
+        {
+          "lag": 54,
+          "equal_fraction": 0.25711387685728376
+        },
+        {
+          "lag": 411,
+          "equal_fraction": 0.2569419451288724
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            29650,
+            29656
+          ],
+          "covered_value_span": [
+            29650,
+            30176
+          ],
+          "matching_lag_pairs": 6
+        },
+        {
+          "equal_comparison_span": [
+            25790,
+            25796
+          ],
+          "covered_value_span": [
+            25790,
+            26316
+          ],
+          "matching_lag_pairs": 6
+        },
+        {
+          "equal_comparison_span": [
+            9325,
+            9330
+          ],
+          "covered_value_span": [
+            9325,
+            9850
+          ],
+          "matching_lag_pairs": 5
+        }
+      ]
+    },
+    "left_staggered_increments": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 263,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 270,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45031
+      ],
+      "best_lags": [
+        {
+          "lag": 566,
+          "equal_fraction": 0.2641735020158487
+        },
+        {
+          "lag": 39,
+          "equal_fraction": 0.2577551244108297
+        },
+        {
+          "lag": 1885,
+          "equal_fraction": 0.2567973214801132
+        },
+        {
+          "lag": 11,
+          "equal_fraction": 0.2567086527929902
+        },
+        {
+          "lag": 2026,
+          "equal_fraction": 0.2565135487610491
+        },
+        {
+          "lag": 1472,
+          "equal_fraction": 0.2565104538064405
+        },
+        {
+          "lag": 1869,
+          "equal_fraction": 0.2565056834573885
+        },
+        {
+          "lag": 9,
+          "equal_fraction": 0.25631126444334923
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            34120,
+            34129
+          ],
+          "covered_value_span": [
+            34120,
+            34649
+          ],
+          "matching_lag_pairs": 9
+        },
+        {
+          "equal_comparison_span": [
+            11802,
+            11811
+          ],
+          "covered_value_span": [
+            11802,
+            12331
+          ],
+          "matching_lag_pairs": 9
+        },
+        {
+          "equal_comparison_span": [
+            17741,
+            17748
+          ],
+          "covered_value_span": [
+            17741,
+            18268
+          ],
+          "matching_lag_pairs": 7
+        }
+      ]
+    },
+    "left_staggered_coordinate_xor": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 253,
+          "holdout_errors": 253,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 270,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45031
+      ],
+      "best_lags": [
+        {
+          "lag": 601,
+          "equal_fraction": 0.2576676871694962
+        },
+        {
+          "lag": 802,
+          "equal_fraction": 0.2572700047580396
+        },
+        {
+          "lag": 1114,
+          "equal_fraction": 0.25724934353559015
+        },
+        {
+          "lag": 1891,
+          "equal_fraction": 0.2571593533487298
+        },
+        {
+          "lag": 70,
+          "equal_fraction": 0.25693206439757543
+        },
+        {
+          "lag": 585,
+          "equal_fraction": 0.25669059144271966
+        },
+        {
+          "lag": 66,
+          "equal_fraction": 0.25668449197860965
+        },
+        {
+          "lag": 1792,
+          "equal_fraction": 0.25645528080831326
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            22994,
+            23001
+          ],
+          "covered_value_span": [
+            22994,
+            23521
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            8501,
+            8506
+          ],
+          "covered_value_span": [
+            8501,
+            9026
+          ],
+          "matching_lag_pairs": 5
+        },
+        {
+          "equal_comparison_span": [
+            24445,
+            24450
+          ],
+          "covered_value_span": [
+            24445,
+            24970
+          ],
+          "matching_lag_pairs": 5
+        }
+      ]
+    },
+    "right_raw_labels": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 272,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 264,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45033
+      ],
+      "best_lags": [
+        {
+          "lag": 566,
+          "equal_fraction": 0.2601273389495927
+        },
+        {
+          "lag": 73,
+          "equal_fraction": 0.2579813494240264
+        },
+        {
+          "lag": 1989,
+          "equal_fraction": 0.25793191292264944
+        },
+        {
+          "lag": 94,
+          "equal_fraction": 0.2573341749224732
+        },
+        {
+          "lag": 19,
+          "equal_fraction": 0.25729857041134907
+        },
+        {
+          "lag": 88,
+          "equal_fraction": 0.25723693236383594
+        },
+        {
+          "lag": 53,
+          "equal_fraction": 0.2572094298245615
+        },
+        {
+          "lag": 1338,
+          "equal_fraction": 0.25691149310981676
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            15453,
+            15461
+          ],
+          "covered_value_span": [
+            15453,
+            15981
+          ],
+          "matching_lag_pairs": 8
+        },
+        {
+          "equal_comparison_span": [
+            39142,
+            39148
+          ],
+          "covered_value_span": [
+            39142,
+            39668
+          ],
+          "matching_lag_pairs": 6
+        },
+        {
+          "equal_comparison_span": [
+            42465,
+            42471
+          ],
+          "covered_value_span": [
+            42465,
+            42991
+          ],
+          "matching_lag_pairs": 6
+        }
+      ]
+    },
+    "right_staggered_phase": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 233,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 247,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45032
+      ],
+      "best_lags": [
+        {
+          "lag": 566,
+          "equal_fraction": 0.2610799088027581
+        },
+        {
+          "lag": 19,
+          "equal_fraction": 0.2593870676197518
+        },
+        {
+          "lag": 2004,
+          "equal_fraction": 0.2586306765523632
+        },
+        {
+          "lag": 31,
+          "equal_fraction": 0.2585682584038793
+        },
+        {
+          "lag": 71,
+          "equal_fraction": 0.2583582457968789
+        },
+        {
+          "lag": 109,
+          "equal_fraction": 0.2581335969030558
+        },
+        {
+          "lag": 625,
+          "equal_fraction": 0.25760993678112903
+        },
+        {
+          "lag": 1871,
+          "equal_fraction": 0.25729205735552935
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            15453,
+            15460
+          ],
+          "covered_value_span": [
+            15453,
+            15980
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            13366,
+            13373
+          ],
+          "covered_value_span": [
+            13366,
+            13893
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            39141,
+            39147
+          ],
+          "covered_value_span": [
+            39141,
+            39667
+          ],
+          "matching_lag_pairs": 6
+        }
+      ]
+    },
+    "right_staggered_increments": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 242,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 241,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45031
+      ],
+      "best_lags": [
+        {
+          "lag": 4,
+          "equal_fraction": 0.2596435513455799
+        },
+        {
+          "lag": 956,
+          "equal_fraction": 0.25776528460997894
+        },
+        {
+          "lag": 1130,
+          "equal_fraction": 0.2577610801954747
+        },
+        {
+          "lag": 1688,
+          "equal_fraction": 0.25755531957638556
+        },
+        {
+          "lag": 208,
+          "equal_fraction": 0.2573851278804064
+        },
+        {
+          "lag": 122,
+          "equal_fraction": 0.25727155373671345
+        },
+        {
+          "lag": 1239,
+          "equal_fraction": 0.25708375835883474
+        },
+        {
+          "lag": 468,
+          "equal_fraction": 0.2568283282034218
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            28118,
+            28125
+          ],
+          "covered_value_span": [
+            28118,
+            28645
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            14621,
+            14628
+          ],
+          "covered_value_span": [
+            14621,
+            15148
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            18399,
+            18406
+          ],
+          "covered_value_span": [
+            18399,
+            18926
+          ],
+          "matching_lag_pairs": 7
+        }
+      ]
+    },
+    "right_staggered_coordinate_xor": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 255,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 241,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": [],
+      "lag_similarity_span": [
+        8500,
+        45031
+      ],
+      "best_lags": [
+        {
+          "lag": 566,
+          "equal_fraction": 0.2577505908522174
+        },
+        {
+          "lag": 389,
+          "equal_fraction": 0.25762271042001
+        },
+        {
+          "lag": 1534,
+          "equal_fraction": 0.2572506214818413
+        },
+        {
+          "lag": 4,
+          "equal_fraction": 0.25723437457223425
+        },
+        {
+          "lag": 1061,
+          "equal_fraction": 0.25723146320834506
+        },
+        {
+          "lag": 208,
+          "equal_fraction": 0.2571924125209922
+        },
+        {
+          "lag": 63,
+          "equal_fraction": 0.2569924317209608
+        },
+        {
+          "lag": 1688,
+          "equal_fraction": 0.2569813161897655
+        }
+      ],
+      "longest_lag520_runs": [
+        {
+          "equal_comparison_span": [
+            17515,
+            17522
+          ],
+          "covered_value_span": [
+            17515,
+            18042
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            14621,
+            14628
+          ],
+          "covered_value_span": [
+            14621,
+            15148
+          ],
+          "matching_lag_pairs": 7
+        },
+        {
+          "equal_comparison_span": [
+            13366,
+            13372
+          ],
+          "covered_value_span": [
+            13366,
+            13892
+          ],
+          "matching_lag_pairs": 6
+        }
+      ]
+    }
+  },
+  "prefix": {
+    "left": {
+      "search_window": [
+        100,
+        8000
+      ],
+      "max_period": 1024,
+      "smallest_exact_period_symbols": 512,
+      "first_period_break_symbol": 8185,
+      "interpretation": "Repetition evidence; not a verified pilot/payload boundary"
+    },
+    "right": {
+      "search_window": [
+        100,
+        8000
+      ],
+      "max_period": 1024,
+      "smallest_exact_period_symbols": 128,
+      "first_period_break_symbol": 8185,
+      "interpretation": "Repetition evidence; not a verified pilot/payload boundary"
+    }
+  },
+  "threshold_probes": [
+    {
+      "capture": "experiments\\empty-001-a\\capture.wav",
+      "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+      "profiles": [
+        {
+          "threshold": 0.0025,
+          "status": "decoded",
+          "channels": {
+            "left": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0
+              ]
+            },
+            "right": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "threshold": 0.004,
+          "status": "decoded",
+          "channels": {
+            "left": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0
+              ]
+            },
+            "right": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "threshold": 0.0063,
+          "status": "decoded",
+          "channels": {
+            "left": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0
+              ]
+            },
+            "right": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "capture": "experiments\\empty-001-a-repeat\\capture.wav",
+      "source_sha256": "65d8145f519c71bec0162fb38c6fe134008a096cf46183be233980ff34259a57",
+      "profiles": [
+        {
+          "threshold": 0.0025,
+          "status": "decoded",
+          "channels": {
+            "left": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0
+              ]
+            },
+            "right": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0,
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "threshold": 0.004,
+          "status": "decode_failed",
+          "reason": "left: Crossing gap exceeds one second; refusing to invent a long sign run"
+        },
+        {
+          "threshold": 0.0063,
+          "status": "decoded",
+          "channels": {
+            "left": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0
+              ]
+            },
+            "right": {
+              "symbols": 45033,
+              "matches_reference_labels_and_counts": true,
+              "incomplete_final_sign_intervals": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "payload_decoded": false,
+  "limits": [
+    "UI-cleared slots do not establish all-zero plaintext or fully erased flash.",
+    "Finite single-stream recurrences cannot exclude every coding model.",
+    "Threshold changes can alter noise acquisition and partial endpoints even when complete labels match.",
+    "No alternate profile is selected to force matching captures; canonical0.0063 remains explicit."
+  ]
+}

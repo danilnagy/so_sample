@@ -1,0 +1,85 @@
+{
+  "analysis_version": "single-tone-FX-order-pitch-track-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "method_developed_on": [
+    "edited-pattern1-single-tone-FX-F6-001",
+    "edited-pattern1-single-tone-FX-6F-001"
+  ],
+  "first_registration_sha256": "57b474247e347196d7705857cca05a08d6ef2264de00d4c2fcd0f709d1d2a5f0",
+  "source_artifact": "experiments/edited-pattern1-single-tone-no-FX-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "36e560598b3a006c2c668a3c3c83edb7bce3d101de3f2fbe1a243e41ddf8961e",
+  "source_capture_sha256": "7f19bbb61714693a0d88c198232e6c420b5e25f2fc3b50601133ffcc1b22e6b6",
+  "reference_frequency_hz": 1190.4169592315686,
+  "legs": {
+    "a": {
+      "directory": "edited-pattern1-single-tone-FX-F6-002",
+      "footer_byte0": "F6",
+      "expected_body_sha256": "57c3d50265f49a68677cc463182a1c2799c975f2f10f9e370e319b7c9a504131",
+      "edited_artifact_sha256": "ddc6a91ee068937dd81d65cfa02a5e5786402dff025370100a5bd2c402ccb826",
+      "restore_wav_sha256": "cdc782a46405156aa312b7fd14b99158e48562608e6cdb7af2a784e345c00724",
+      "software_validation_sha256": "94d41aa56dda94a77fabb9796b65328a43aaff075d991f5b2bd824909de2346e",
+      "restore_copied_from": "edited-pattern1-single-tone-FX-F6-001"
+    },
+    "b": {
+      "directory": "edited-pattern1-single-tone-FX-6F-002",
+      "footer_byte0": "6F",
+      "expected_body_sha256": "e6f77d9c53b6024b321300bc53b32ccdaf7522cb7c1235fa39fb9f09b50b3119",
+      "edited_artifact_sha256": "0e78db72db0ee33d072b0bcb51109b331e2ce4e93ec206a656f7225d4f3fa9e0",
+      "restore_wav_sha256": "88633077b34dd4a2ae88741eb31d077d2093c7bfac6114ff4f5dae0cd40b6e18",
+      "software_validation_sha256": "b3419c84d366c1a74a89a9234a80bc4e44a6a24ba8cb4fb636193338b94f0fbb",
+      "restore_copied_from": "edited-pattern1-single-tone-FX-6F-001"
+    }
+  },
+  "capture_order": [
+    "a",
+    "b"
+  ],
+  "method_settings": {
+    "band_hz": [
+      600.0,
+      3500.0
+    ],
+    "search_hz": [
+      900.0,
+      2700.0
+    ],
+    "window_seconds": 0.02,
+    "hop_seconds": 0.01,
+    "track_seconds": 0.4,
+    "onset_fraction_of_peak": 0.15,
+    "min_loop_gap_seconds": 1.0,
+    "loops": 5,
+    "fft_size": 32768,
+    "step1_window_ms": [
+      20.0,
+      130.0
+    ],
+    "min_relative_amplitude": 0.2,
+    "effect_min_rise": 0.1,
+    "none_max_deviation": 0.01,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "94e277367ad5f9f7d30ff1d178906654865ce9b7bd0157ceeeaa1722cc8b7e13",
+  "predictions": {
+    "high_nibble_first": {
+      "a_step1": "none",
+      "b_step1": "effect"
+    },
+    "low_nibble_first": {
+      "a_step1": "effect",
+      "b_step1": "none"
+    }
+  },
+  "decision": [
+    "Both legs must be received exactly; only footer byte 0 may differ from the single-tone source",
+    "Step 1 (20-130 ms after onset, audible windows only) is 'effect' if the pitch reaches 10% above the 1190.417 Hz reference, 'none' if it stays within 1%, else indeterminate",
+    "A model is supported only if both legs' five-loop medians and at least 4 of 5 individual loops match its prediction",
+    "Anything else is inconclusive; no retuning after data"
+  ],
+  "limits": [
+    "Local to footer byte 0 of Pattern 1 with one Sound3 note on step 1",
+    "Characterizes where the rising effect sits, not its exact pitch law",
+    "No general per-step effect writer is enabled"
+  ]
+}

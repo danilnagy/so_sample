@@ -1,0 +1,52 @@
+{
+  "analysis_version": "long-melodic-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a 4.0 s page-rounded Sound6 import, with registered note length and quarter pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "whole_sample_plays_in_order",
+  "median_duration_ms": 2671.8820861678005,
+  "duration_holds": true,
+  "quarters": [
+    {
+      "expected_hz": 599.3228307506727,
+      "median_cents_off": 0.35763821821851083,
+      "holds": true
+    },
+    {
+      "expected_hz": 749.1535384383408,
+      "median_cents_off": 0.3876078674023074,
+      "holds": true
+    },
+    {
+      "expected_hz": 898.9842461260089,
+      "median_cents_off": 0.36873510711694274,
+      "holds": true
+    },
+    {
+      "expected_hz": 1048.814953813677,
+      "median_cents_off": 0.3947938089018394,
+      "holds": true
+    }
+  ],
+  "total_capacity_codes": 872448,
+  "decision_sha256": "5020a05c0b5c4374516084e5aad56fd39b8c29556dab57dbe2b2e724b60b1371",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "350fb58c1d682cea8ba11fec09464fa0628adafab3834b430a293dd8b4ee0145",
+  "session_answers": [
+    {
+      "question": "Did each loop play one long note that steps up four times? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One 4.0 s sample in Sound6 at key 1 and pitch code 13; other lengths and slots follow by the same rule but are not played"
+  ]
+}

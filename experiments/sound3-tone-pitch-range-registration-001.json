@@ -1,0 +1,66 @@
+{
+  "analysis_version": "recorded-TONE-A-upper-and-exact-minimum-return-preregistration-0.1",
+  "registered_before_both_captures": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/event-051-b-sound3-tone-pitch-lock-down/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "6fe87026f009133696c3e4f035b9571ed439550fa6219b4f3125e04ac66c5fd4",
+  "source_capture": "experiments/event-051-b-sound3-tone-pitch-lock-down/capture.wav",
+  "source_capture_sha256": "c7e2d93e7805e6d8b44ad16edb8b6966ffe610df274b9bf392b2bbdee34e93b2",
+  "source_body_sha256": "227d4d25e644c83f2d8e89d2a4135125f8cb926082983a81b4842de21e654fc2",
+  "source_observation_sha256": "807c4e914b8fb108a5d8eadfc31a71b96d9c3df2db799fa4bb8ff50d8eb9ca69",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-052-c-sound3-tone-pitch-lock-up",
+      "knob_action": "recorded_A_clockwise_to_physical_maximum",
+      "expected_endpoint_code": null
+    },
+    {
+      "experiment_id": "event-053-d-return-sound3-tone-pitch-lock-minimum",
+      "knob_action": "recorded_A_counterclockwise_to_physical_minimum",
+      "expected_endpoint_code": 1,
+      "expected_complete_body_sha256": "227d4d25e644c83f2d8e89d2a4135125f8cb926082983a81b4842de21e654fc2"
+    }
+  ],
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "first_low6_mask": 63,
+    "narrower_first_low5_mask": 31,
+    "all16_cells": true
+  },
+  "expected_volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "expected_audition_sequence": [
+    "higher_during_upward_pass",
+    "lower_during_return_pass"
+  ],
+  "display_numeric_values_assumed": null,
+  "limits": [
+    "Upper endpoint code is unknown and not guessed from the lower result or a presumed semitone scale",
+    "Exact return to uniform1 and the whole independent minimum body is a new prediction registered before both data captures",
+    "First-low6 and narrower first-low5 mask alternatives are tested separately; unused bit5 does not prove field width",
+    "Broader TONE/auxiliary changes remain visible; no widening of the strict mask to claim success",
+    "Movement can retain ramps; maximum uniformity is diagnostic, not a required endpoint or a fitted average",
+    "No pitch-field writer, numeric UI reading, frequency ratio or semitone law is confirmed"
+  ]
+}

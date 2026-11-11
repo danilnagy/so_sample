@@ -1,0 +1,50 @@
+{
+  "analysis_version": "drum-notes-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of drum notes keys 1..16 written to Sound11 and registered per-step pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "key_k_plays_slice_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 150.18657385234803,
+    "3": 299.9582525168844,
+    "4": 449.99173450174175,
+    "5": 600.0286259665714,
+    "6": 750.0142966042943,
+    "7": 900.041870469733,
+    "8": 1050.0741824102172,
+    "9": 1199.9977416906504,
+    "10": 1350.0620982626442,
+    "11": 1499.9947622850611,
+    "12": 1650.066872116164,
+    "13": 1800.1312769547897,
+    "14": 1950.2117743937313,
+    "15": 2100.1277609901676,
+    "16": 2250.055367451957
+  },
+  "absolute": {
+    "step1_cents_vs_burst1": -0.22509376569473197,
+    "classification": "stored_rate"
+  },
+  "decision_sha256": "3f79527d3c9e21b7fb9af012c1040bad578f72e0d7e2d9c34b0316f2aad8a811",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "d9acd02dc2c6a3b6006611167da1c1e41f18d237153a23af683a3e0c7e599f61",
+  "session_answers": [
+    {
+      "question": "Did the pattern play a rising run of 16 short beeps? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One drum sound (Sound11) holding one device recording; other drum slots follow by the same layout but are not played here",
+    "All notes share one parameter set at pitch code 13; drum pitch and other parameters are not varied"
+  ]
+}

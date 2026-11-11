@@ -1,0 +1,41 @@
+{
+  "analysis_version": "mono-import-acceptance-to-reference-copy-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "previous_acceptance_all_checks": true,
+    "accepted_source_artifact_hash_pinned": true,
+    "accepted_capture_hash_pinned": true,
+    "accepted_source_body_hash_pinned": true,
+    "source_acceptance_hash_pinned": true,
+    "accepted_input_PCM_reimport_matches_actual_body": true,
+    "original_import_report_remains_software_only": true,
+    "all_copy_software_checks_pass": true,
+    "copy_target_body_hash_pinned": true,
+    "copy_artifact_hash_pinned": true,
+    "copy_restore_wav_hash_pinned": true,
+    "copy_software_report_hash_pinned": true,
+    "all_independent_copy_checks_pass": true,
+    "stale_source_rejected": true,
+    "public_copy_scope_unchanged": true,
+    "registered_before_capture_and_pending": true
+  },
+  "passed": true,
+  "decode_attempts": {
+    "retained_failed_default_threshold_artifact_sha256": "5285cfb950c6e8b4483091619dc0e7c74de156124082894ec135d887192ddb67",
+    "retained_failed_default_threshold_error": "Packet checksum differs at wire byte4095, tag0x72fa",
+    "accepted_established_threshold": 0.0063,
+    "accepted_artifact_sha256": "42abc578dd9829432de80f03f8c2ac9dd9bb5725cca964ba928b7e337c69ae44",
+    "payload_repair_or_expected_data_guidance": false
+  },
+  "validation": {
+    "affected_pytest": "50 passed in 4.43s",
+    "ruff": "all checks passed; 177 Python files formatted",
+    "prior_full_suite": "637 passed in 82.34s before this turn"
+  },
+  "next_required_user_action": "Restore copy candidate, capture before audition, confirm matching Sound6/Sound7 rising sweeps and unchanged other sounds/pattern",
+  "limits": [
+    "Only this unchanged imported Sound6 owner and empty Sound7 are tested",
+    "One nine-byte reference is inserted; no backing codes or allocation are added",
+    "Public copy/deletion guards are unchanged pending appropriate evidence"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "analysis_version": "physical-fine100-to-endpoints-and-exact-return-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "fine100_observation_all_native_checks": true,
+    "independent_reported100_display_preserved": true,
+    "source_artifact_and_capture_hashes_pinned": true,
+    "source_body_hash_pinned": true,
+    "source_observation_hash_pinned": true,
+    "all_three_predicted_body_hashes_pinned": true,
+    "return_prediction_equals_entire_independent100_body": true,
+    "series_checker_accepts_complete_synthetic_models": true,
+    "display_readings_are_not_inferred_from_bytes": true,
+    "stale_first_capture_rejected_even_with_exact_return": true,
+    "all_captures_preregistered_and_still_pending": true,
+    "prediction_report_all_checks_and_software_only": true,
+    "fine_tempo_not_promoted_to_public_writer": true
+  },
+  "passed": true,
+  "validation": {
+    "affected_pytest": "43 passed in 2.86s",
+    "ruff": "all checks passed; 197 Python files formatted",
+    "prior_full_suite": "705 passed in 85.55s before this turn's research-only additions"
+  },
+  "next_required_user_action": "Hold BPM while adjusting only knob B to60,240,100 in order; capture each before proceeding and report actual displayed values",
+  "limits": [
+    "Expected display readings must be independently observed; never inferred from candidate bytes",
+    "No public fine-tempo range is enabled and no generated fine-tempo restore is claimed",
+    "Each leg is compared with the actual preceding capture; predicted body equality remains separate",
+    "Only the fixed byte model is tested; extra global/slot-parameter changes and incomplete return remain visible"
+  ]
+}

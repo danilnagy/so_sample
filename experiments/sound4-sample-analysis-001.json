@@ -1,0 +1,65 @@
+{
+  "analysis_version": "second-owned-buffer-sample-analysis-0.1",
+  "allocation_evidence_sha256": "95e05f968966c0255995011f07eb29a457ec6e39de7ef2ed7467056e2c3380cc",
+  "capture_sha256": "06ba6534872d05e434485b031f458b1289d6acaa37dc59ac2482b3a8eb1c25a0",
+  "artifact_sha256": "f30c99ed814fea1223983d0c5279e74d272d42c2464ea958b69276f62b604312",
+  "sound_slot": 4,
+  "owner_id": 3,
+  "header_hex": "00000000c06f000003",
+  "payload_sha256": "6e2600053f9d90ae26dc764f5155d31422503bb26a13d7d44b860c700109aa84",
+  "backing_code_count": 32768,
+  "stored_endpoint": 28608,
+  "codes_after_endpoint": 4160,
+  "nonzero_codes_after_endpoint": 3974,
+  "packet_payload_length_histogram": {
+    "255": 128,
+    "25": 1,
+    "16": 7
+  },
+  "preview": {
+    "sound_slot": 4,
+    "backing_sound_id": 3,
+    "backing_bytes": 32768,
+    "B_controlled_counter": 28608,
+    "sample_rate_hz_nominal": 23437.5,
+    "codec": "signed-complement G711 mu-law hypothesis",
+    "counter_policy": "Use counter samples at zero start; inclusive-end distinction remains unverified",
+    "export_sample_rate_hz": 48000,
+    "export_frames": 58590
+  },
+  "independently_fitted_tone": {
+    "envelope_window_frames": 480,
+    "activity_threshold_rms": 0.0028344010736294344,
+    "low_quantile_rms": 1.564817902221526e-05,
+    "audible_span_frames": [
+      0,
+      18720
+    ],
+    "audible_span_seconds": [
+      0.0,
+      0.39
+    ],
+    "audible_duration_seconds": 0.39,
+    "frequency_fit_span_frames": [
+      2340,
+      16380
+    ],
+    "dominant_frequency_hz": 1000.0330292652527,
+    "fundamental_amplitude": 0.04005591045943412,
+    "single_sine_explained_variance": 0.999788353860264,
+    "single_sine_residual_rms": 0.0004120947605340564,
+    "activity_regions": 1,
+    "duration_resolution_seconds": 0.01
+  },
+  "comparison_to_registered_input": {
+    "input_frequency_hz": 1000,
+    "measured_frequency_ratio": 1.0000330292652526
+  },
+  "hardware_verified": false,
+  "limits": [
+    "Frequency is fitted across the observed spectrum without restricting it to the registered1000Hz target",
+    "The preview uses the existing nominal23437.5Hz codec and zero-start endpoint policy; no new device-rate or inclusivity rule is inferred",
+    "Sample-buffer size and stored endpoint are distinct; one32768-code allocation does not establish a rounding or resizing formula",
+    "Envelope timing includes manual record gating and silence; no exact native sample length is predicted from the half-second input"
+  ]
+}

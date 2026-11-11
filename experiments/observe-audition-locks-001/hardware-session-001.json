@@ -1,0 +1,257 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "observe-audition-locks-001",
+  "started_at": "2026-11-08T03:51:48+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "inputs": {
+    "restore": {
+      "path": "restore.wav",
+      "sha256": "1787482d3b70ada9fc872ec7d009c69c0b53b9c2032d4550da15f3d9b68aeb39"
+    },
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "ba3f2508cc637bc3e0ac47702a5b5c9133189711c17dea0195251c4a6b42e6b9"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": {
+    "started_at": "2026-11-08T03:52:07+00:00",
+    "gain": 0.3,
+    "peak_after_gain": 0.15000000596046448,
+    "sample_rate_hz": 44100,
+    "frames": 357511,
+    "duration_seconds": 8.106825396825396,
+    "padding_seconds": [
+      0.25,
+      1.0
+    ],
+    "wall_seconds": 9.730305176984984,
+    "stream_status_flags": []
+  },
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "b3da116a18450fd1e11a0ed3137f6e8931e72c6c19d5eb111f40bf85c436e79f",
+      "recorded_at": "2026-11-08T03:53:48+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 725445,
+        "duration_seconds": 16.45,
+        "signal_start_seconds": 7.0,
+        "signal_end_seconds": 14.95,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.0006103515625,
+        "signal_peaks_per_channel": [
+          0.0135498046875,
+          0.021026611328125
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.022115419505111016,
+          "lag_ms": 1.1111111111111112,
+          "channels": "right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "At least one channel is very quiet; check the stereo cable and level"
+          }
+        ]
+      },
+      "analysis_dir": "backup-01-analysis",
+      "analysis": {
+        "capture_sha256": "b3da116a18450fd1e11a0ed3137f6e8931e72c6c19d5eb111f40bf85c436e79f",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 16.45,
+          "peaks_per_channel": [
+            0.0135498046875,
+            0.021026611328125
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x7482"
+          },
+          {
+            "method": "realigned",
+            "passed": false,
+            "error": "No leading-label realignment decoded"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured clock requires one exact pre-frame quarter alignment"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    },
+    {
+      "file": "backup-02.wav",
+      "sha256": "7744b6a57de308a615c03bdd7324bc3d819113309b27b4863f94eb868d88f4d4",
+      "recorded_at": "2026-11-08T03:55:20+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 498330,
+        "duration_seconds": 11.3,
+        "signal_start_seconds": 1.85,
+        "signal_end_seconds": 9.8,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.000518798828125,
+        "signal_peaks_per_channel": [
+          0.532318115234375,
+          0.834808349609375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.0222872308209522,
+          "lag_ms": 1.1111111111111112,
+          "channels": "right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-02-analysis",
+      "analysis": {
+        "capture_sha256": "7744b6a57de308a615c03bdd7324bc3d819113309b27b4863f94eb868d88f4d4",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 11.3,
+          "peaks_per_channel": [
+            0.532318115234375,
+            0.834808349609375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x59e7"
+          },
+          {
+            "method": "realigned",
+            "passed": false,
+            "error": "No leading-label realignment decoded"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured quarter signs disagree with the observed quadrature model"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    }
+  ],
+  "accepted": null,
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "80a8747836452ee7559962cb6f67f8ab0bab947e7519f9120e5fa14b710fb18c",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1464120,
+        "duration_seconds": 33.2,
+        "signal_onset_seconds": 1.2,
+        "seconds_after_onset": 32.0,
+        "peaks_per_channel": [
+          0.5281982421875,
+          0.932342529296875
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-01.wav",
+    "accepted_with_findings": false,
+    "sha256": "80a8747836452ee7559962cb6f67f8ab0bab947e7519f9120e5fa14b710fb18c"
+  },
+  "observations": [
+    {
+      "question": "Did the four auditions before the pattern sound duller or quieter than the pattern's hits? (Enter to skip)",
+      "answer": ""
+    },
+    {
+      "question": "Did the four auditions after the pattern sound like the ones before, or like the pattern? (Enter to skip)",
+      "answer": ""
+    },
+    {
+      "question": "Anything else you noticed? (Enter to skip)",
+      "answer": ""
+    }
+  ],
+  "interrupted": false,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-11-08T03:56:21+00:00",
+  "result": {
+    "backup_decoded": false,
+    "native_target_exact": null,
+    "capture": null,
+    "analysis": null,
+    "playback": "playback.wav"
+  }
+}

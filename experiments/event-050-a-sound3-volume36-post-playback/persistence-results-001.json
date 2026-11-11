@@ -1,0 +1,25 @@
+{
+  "analysis_version": "volume36-post-playback-persistence-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "registered_source_files_and_observation_match": true,
+    "source_observation_checks_pass": true,
+    "independent_recapture_identity_matches": true,
+    "source_body_matches_registration": true,
+    "native_checksum_geometry_and_reencoding_pass": true,
+    "entire_post_playback_body_matches_prediction": true,
+    "entire_native_body_and_packets_unchanged": true,
+    "prior_ordinary_playback_file_matches": true,
+    "capture_not_clipped": true
+  },
+  "registration_sha256": "4eea2721cd02115cdac8ee53ca3cb6e3f2ec049c08dd08a574bced68b73f1c11",
+  "capture_sha256": "8ecd94cad6185a42b42e2db3b3ecced19f72dd9884316848d08e15b079e9922c",
+  "artifact_sha256": "019211d5ec793c0e75513010c734b5800cdf7a2d750cfb2ba27a6fb88e49c1a4",
+  "actual_body_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+  "limits": [
+    "No new restore or knob movement requested",
+    "A changed complete body is retained as a failed persistence prediction, without fitting it into later pitch data",
+    "No TONE pitch field or pitch endpoint value is assumed; the recorded A probe is a later control"
+  ]
+}

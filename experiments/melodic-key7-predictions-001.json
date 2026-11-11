@@ -1,0 +1,49 @@
+{
+  "analysis_version": "native-melodic-key7-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_source_sha256": "a0c0bea848c7c1bf56349e695edaae8740cd465d6df044512972d6c45ed5c0f1",
+  "baseline_body_sha256": "55311018711e4b4b798609ce7c40bedb613d6dbb246ea2423aea8b8049db9fe9",
+  "target_capture": "event-010-b-melodic-key7/capture.wav",
+  "expected_change": {
+    "pattern": 1,
+    "step": 5,
+    "sound_slot": 3,
+    "old_keyboard_key": 16,
+    "new_keyboard_key": 7
+  },
+  "control_checks": {
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "sample_packets": "All sample selector/data packets identical",
+    "other_patterns": "Patterns2..16 identical",
+    "all_other_plain_packets": "Outside Pattern1 data chunks, identical after reselecting Sound8",
+    "populated_steps": [
+      1,
+      5,
+      9,
+      13
+    ],
+    "changed_cell": "At least one change in primary[198,201) or auxiliary834",
+    "locality": "All other Pattern1 bytes remain unchanged"
+  },
+  "separately_evaluated_hypotheses": {
+    "primary_stays_unchanged": {
+      "span": [
+        198,
+        201
+      ],
+      "expected_hex": "0df883"
+    },
+    "auxiliary_key_index": {
+      "offset": 834,
+      "old_value": 255,
+      "expected_new_value": 246,
+      "interpretation": "Hypothesis: key7 is index6, changing FF to F6 while the upper nibble remains opaque"
+    }
+  },
+  "limits": [
+    "F6 is registered before observing the middle-key capture; it is not an enabled writer value",
+    "Control invariants and hypothesis outcomes remain separate",
+    "Measured-clock recovery must not use these expected bytes or perform packet repairs"
+  ]
+}

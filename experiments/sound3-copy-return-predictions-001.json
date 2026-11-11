@@ -1,0 +1,135 @@
+{
+  "status": "registered_before_sound3_copy_return_capture",
+  "analysis_version": "sound3-copy-return-predictions-0.1",
+  "prior_failed_return_registration_sha256": "ab3d3c1758e1c265de7b270a4235b27f13e965412312876ded38c79371849d44",
+  "reference_artifact": "experiments/empty-001-g-sound3-trim-return/derived/analysis-001/capture.symbols.npz",
+  "reference_artifact_sha256": "33577c79aaa4a23191f2763be402474a6f478e0595f4c826a886998794ba02fd",
+  "expected_before_artifact": "experiments/empty-001-g-sound3-trim-return/derived/analysis-001/capture.symbols.npz",
+  "expected_after_artifact": "experiments/empty-001-h-sound3-copy-return/derived/analysis-001/capture.symbols.npz",
+  "return_reference_artifact": "experiments/empty-001-e-copy-to-3/derived/analysis-001/capture.symbols.npz",
+  "return_reference_artifact_sha256": "faf898606ae701061de005962cf4abf8f60af3338531fc720bcabfe3d03c3ccb",
+  "primary_hypothesis": "Copy retained Sound8 over Sound3 to reproduce original copied defaults, rather than equating knob maximum with original trim endpoint.",
+  "first_change_models": {
+    "inline_slots": {
+      "first_raw_change_window": [
+        177148,
+        177149
+      ],
+      "reason": "Current maximum differs from original first at177148 on both channels; exact return reverses this difference."
+    }
+  },
+  "growth_symbols_per_channel_range_inclusive": [
+    -12,
+    12
+  ],
+  "reference_prefix_span": [
+    0,
+    177148
+  ],
+  "reference_prefix_sha256": {
+    "left": "d54945848d1a24e6e40e3d71d925a1610107bed191fb01cb5289ee4714969d05",
+    "right": "0bf886e32d8fb4d07bf0b63b1caf30bce7d81262fceea8773b4555824de59f7e"
+  },
+  "expected_return_prefix_span": [
+    0,
+    178795
+  ],
+  "expected_return_prefix_sha256": {
+    "left": "a68cba7246b61f96908c87c00643aabaff5b1d7658fb726132926dc8e066e994",
+    "right": "fa3a0286e56bdda3f2e61d77bad986b0225b60bc379b1b19e8a08f1d7f31c1e8"
+  },
+  "anchor_predictions": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6"
+    }
+  ],
+  "last_nonzero_increment_predictions": {
+    "left": {
+      "before_index": 178791,
+      "expected_after_index": 178792,
+      "expected_displacement": 1
+    },
+    "right": {
+      "before_index": 178792,
+      "expected_after_index": 178792,
+      "expected_displacement": 0
+    }
+  },
+  "applicability": "Before is the pinned maximum-length capture. Copy8 over3 and retain Tone/Sound8 selection, empty Pattern1, write off, stopped playback and all other controls.",
+  "limits": [
+    "Original prefix must match independently of location, count and anchors.",
+    "Copy may preserve destination settings or retained source may have changed; prediction can fail.",
+    "Earlier maximum-knob return remains failed regardless of this outcome.",
+    "Last nonzero increment index is not a parsed payload length.",
+    "No shift, phase rotation, padding or artifact trimming to force agreement."
+  ]
+}

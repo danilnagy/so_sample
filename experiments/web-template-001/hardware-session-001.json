@@ -1,0 +1,529 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "web-template-001",
+  "started_at": "2026-10-11T22:42:34+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 1,
+      "name": "Microphone (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    },
+    "output": {
+      "index": 5,
+      "name": "Headphones (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    }
+  },
+  "config": {
+    "input_device": "HD USB Audio",
+    "output_device": "HD USB Audio",
+    "hostapi": "MME",
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 1.0
+  },
+  "inputs": {
+    "restore": {
+      "path": "restore.wav",
+      "sha256": "56500f13f16796fa555e7bfd235f94ab23665e1fa89b617192d3aeffeab4404c"
+    },
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "10fb3d87c6a9868b8e76a8520debfaf255989f3e82714c60a51060156b0d6623"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": {
+    "started_at": "2026-10-11T22:42:45+00:00",
+    "gain": 1.0,
+    "peak_after_gain": 0.5,
+    "sample_rate_hz": 44100,
+    "frames": 551421,
+    "duration_seconds": 12.503877551020409,
+    "padding_seconds": [
+      0.25,
+      1.0
+    ],
+    "wall_seconds": 14.125,
+    "stream_status_flags": []
+  },
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "78f595cd234d396c4e8e95dbff28e85b0682256361bb48748cad9d7cce825685",
+      "recorded_at": "2026-10-11T22:45:45+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 2844450,
+        "duration_seconds": 64.5,
+        "signal_start_seconds": 0.1,
+        "signal_end_seconds": 63.0,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.015869140625,
+        "signal_peaks_per_channel": [
+          0.0648193359375,
+          0.060516357421875
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.6029480649105701,
+          "lag_ms": 6.099773242630386,
+          "channels": "right_from_left",
+          "detected": true,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": [
+          {
+            "severity": "error",
+            "message": "A delayed copy of the backup (6.1 ms, strength 0.60) is mixed into the recording. Check that the computer output is unplugged from the PO-33 input"
+          }
+        ]
+      },
+      "analysis_dir": "backup-01-analysis",
+      "analysis": {
+        "capture_sha256": "78f595cd234d396c4e8e95dbff28e85b0682256361bb48748cad9d7cce825685",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 64.5,
+          "peaks_per_channel": [
+            0.0648193359375,
+            0.060516357421875
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0xe1fc"
+          },
+          {
+            "method": "realigned",
+            "passed": false,
+            "error": "No leading-label realignment decoded"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured clock requires one exact pre-frame quarter alignment"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    },
+    {
+      "file": "backup-02.wav",
+      "sha256": "f1ee584cb0c0c4d9ea56508d2e4e5edded379fd941f9314c72cea27266e2dbd8",
+      "recorded_at": "2026-10-11T22:46:18+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 679140,
+        "duration_seconds": 15.4,
+        "signal_start_seconds": 1.55,
+        "signal_end_seconds": 13.9,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.0015869140625,
+        "signal_peaks_per_channel": [
+          0.04193115234375,
+          0.03912353515625
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": -0.015311295662454094,
+          "lag_ms": 61.8140589569161,
+          "channels": "right_from_left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-02-analysis",
+      "analysis": {
+        "capture_sha256": "f1ee584cb0c0c4d9ea56508d2e4e5edded379fd941f9314c72cea27266e2dbd8",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 15.4,
+          "peaks_per_channel": [
+            0.04193115234375,
+            0.03912353515625
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": true,
+            "error": null
+          }
+        ],
+        "method": "crossing",
+        "native": {
+          "codec_version": "po33-crc-additive-0.1",
+          "frame_start_byte": 4095,
+          "frame_end_byte": 47996,
+          "required_complete_label_span": [
+            0,
+            95995
+          ],
+          "packet_count": 369,
+          "all_packet_checksums_valid": true,
+          "encoded_body_sha256": "af55da25d85dcf0cd48833fbfef67f63594b00fd57e2655d09b6534411b52021",
+          "tags": {
+            "0x985b": 1,
+            "0x7d5c": 2,
+            "0xa041": 16,
+            "0xc498": 80,
+            "0x68b5": 136,
+            "0xef78": 133,
+            "0x826f": 1
+          },
+          "sounds": [
+            {
+              "sound_id": 0,
+              "packet_count": 51,
+              "payload_bytes": 12297,
+              "header_hex": "00000000c72d000000",
+              "payload_sha256": "56de527e64272918edcb5ecdbb385be841fdf6eea0e78a083d232766493e5ef5"
+            },
+            {
+              "sound_id": 1,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "000000008813000000",
+              "payload_sha256": "12209fec281cb9a63be19fe99e95168cc28432406d6d49169dbe94a6a3dc71c7"
+            },
+            {
+              "sound_id": 2,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "b80b00002823000000",
+              "payload_sha256": "fdfa8c4c68e234cceb1d857bb3addbe76edebffd73127c5e4141506982fa6afb"
+            },
+            {
+              "sound_id": 8,
+              "packet_count": 17,
+              "payload_bytes": 4105,
+              "header_hex": "000000005307000008",
+              "payload_sha256": "11d5d97b25ad0246f25a9e8d2b2b19778d1b26d6ac63ef5dd929409865ca42a2"
+            },
+            {
+              "sound_id": 9,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 10,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "900100005307000008",
+              "payload_sha256": "d0d374aa02228a24291bcd6b52e908938146f5cb1db78404e33b8240e5f9f4fb"
+            },
+            {
+              "sound_id": 12,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "00000000a00f000000",
+              "payload_sha256": "883887f83d237021e31285e7f7fe3bb66809d7591cdd52b3b3acf2f97771d6ed"
+            },
+            {
+              "sound_id": 13,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 14,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 15,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 16,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 17,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 18,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 19,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 20,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 21,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 22,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 23,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "53070000e70b000008",
+              "payload_sha256": "742e5d8975197d4d3dbb389aae07dffc52ebd223d980a6d6c3eb544d024ace81"
+            },
+            {
+              "sound_id": 24,
+              "packet_count": 34,
+              "payload_bytes": 8201,
+              "header_hex": "000000000002000018",
+              "payload_sha256": "552e883d8c6c3940ca7a2b80a865cc0ba883cfc6aef61d3d9754ae000b5c97b1"
+            },
+            {
+              "sound_id": 25,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "00010000d007000018",
+              "payload_sha256": "67c99cec5fd3b3623230a46eea6b62979ec9b70cfbd4fd0e02e27ad6febd08b1"
+            },
+            {
+              "sound_id": 26,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "000400000006000018",
+              "payload_sha256": "47ed8c53fdf97733fac05b80ecd8eda8feb4e63ffc25ca1a9e7d17f91f418a16"
+            },
+            {
+              "sound_id": 27,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "000600000008000018",
+              "payload_sha256": "a8eb2c9bbbbcae43513ec5af9ed603a4f95723103c9fcbfe8bbecea3ee88839f"
+            },
+            {
+              "sound_id": 28,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "00080000000a000018",
+              "payload_sha256": "ef5991e0798f9063de6c382ecdc5a4fe6589a7ca9d8a01fec24dfe859a69f819"
+            },
+            {
+              "sound_id": 29,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "000a0000000c000018",
+              "payload_sha256": "1758a228dcf9291745a9d6a0d2ee5023f1710c828bc16da1cc294f6764b07781"
+            },
+            {
+              "sound_id": 30,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "000c0000000e000018",
+              "payload_sha256": "bb42c31986a6ce6a6f5dca67f1304a4c251bf49d1f894965516977d79228296b"
+            },
+            {
+              "sound_id": 31,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "000e00000010000018",
+              "payload_sha256": "58d5cb49e3aefa9e9e9fff683dccbcf1c4e8dc63122163fb13db793cac023e0f"
+            },
+            {
+              "sound_id": 32,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001000000012000018",
+              "payload_sha256": "30cf626f0f03e8575db4b77828f7526443f8780798136393a2c77e1782a93368"
+            },
+            {
+              "sound_id": 33,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001200000014000018",
+              "payload_sha256": "0606a7b56b444ab24bac0d8bb3738c468e0b29ddceb0cde0df24a75ef5e7e969"
+            },
+            {
+              "sound_id": 34,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001400000016000018",
+              "payload_sha256": "d14af9b0e9b71af07005f6467d8f4da6e086c36ebfe26f52e88464253cb2bd16"
+            },
+            {
+              "sound_id": 35,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001600000018000018",
+              "payload_sha256": "59747889f1c01d42555214e920a8378647f96b5ad46272f5dadb0f5fd4f7bb2b"
+            },
+            {
+              "sound_id": 36,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "00180000001a000018",
+              "payload_sha256": "9a931fafe8850ddd0f3fbea572fcfabc7959b3f1c68ba6af0a60214180afad5a"
+            },
+            {
+              "sound_id": 37,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001a0000001c000018",
+              "payload_sha256": "8b1e177b4086f2c3822f0d303d0165f14fdd377299cff631abcd14fcdf64208f"
+            },
+            {
+              "sound_id": 38,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001c0000001e000018",
+              "payload_sha256": "e76325b6722976d559d58f3aab906e5703c51c1e83fb9fd1d5c9e4c6c51a8d2a"
+            },
+            {
+              "sound_id": 39,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "001e00000020000018",
+              "payload_sha256": "3d3f4b8740101384c2488e51ab153a620cd2076a2d88529f48b580f6796bd57a"
+            }
+          ]
+        },
+        "hardware_verified": false
+      },
+      "target": {
+        "exact_target_body": true,
+        "target_body_sha256": "af55da25d85dcf0cd48833fbfef67f63594b00fd57e2655d09b6534411b52021",
+        "captured_body_sha256": "af55da25d85dcf0cd48833fbfef67f63594b00fd57e2655d09b6534411b52021",
+        "differences_from_target": {
+          "identical_body": true,
+          "packet_counts": [
+            369,
+            369
+          ],
+          "change_count": 0,
+          "changes": []
+        }
+      }
+    }
+  ],
+  "accepted": {
+    "attempt": "backup-02.wav",
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001"
+  },
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "d92e096c1ba83202c71df102bb783a15de2419979787b5f00c730ab708add1e1",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1020915,
+        "duration_seconds": 23.15,
+        "signal_onset_seconds": 1.15,
+        "seconds_after_onset": 22.0,
+        "peaks_per_channel": [
+          0.064453125,
+          0.060089111328125
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-01.wav",
+    "accepted_with_findings": false,
+    "sha256": "d92e096c1ba83202c71df102bb783a15de2419979787b5f00c730ab708add1e1"
+  },
+  "observations": [
+    {
+      "question": "Pattern 1: did Sound 2 (steps 3, 11) play the Sound 1 tone but shorter, and Sound 3 (step 7) start part-way into it? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 1 drums (Sound 9): was key 4 (step 7) silent, and did key 5 (step 11) play the Sound 1 tone? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 2: did Sound 10 play rising chirp fragments on every step, with FX 1 looping steps 9-12? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Anything else you noticed (Enter to skip)",
+      "answer": ""
+    }
+  ],
+  "interrupted": false,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-10-11T22:48:25+00:00",
+  "result": {
+    "backup_decoded": true,
+    "native_target_exact": true,
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001",
+    "playback": "playback.wav"
+  }
+}

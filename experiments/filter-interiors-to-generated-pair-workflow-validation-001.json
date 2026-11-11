@@ -1,0 +1,35 @@
+{
+  "analysis_version": "verified-recorded-FILTER-interiors-to-generated-reception-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "recorded_native_scope_and_entire_center_return_pass": true,
+    "contiguous_branch_support_and_alternative_failures_retained": true,
+    "current_hardware_scope_and_source_identity_pins_pass": true,
+    "all_export_hashes_and_complete_body_reconstruction_pass": true,
+    "new_reception_preregistered_with_prior_targets_explicitly_observed": true,
+    "fixed16_waveform_target_independent_body_and_pins_match": true,
+    "fixed16_hardware_reception_still_pending": true,
+    "fixed52_waveform_target_independent_body_and_pins_match": true,
+    "fixed52_hardware_reception_still_pending": true
+  },
+  "interior_results_sha256": "bf88756194045d7da2948a38a8e05195a64a0ee9e9298bce67f34d25173cb0ec",
+  "generated_registration_sha256": "4ae4ff2cd2a09191061f53b003399121b0b5e9ac8f23ef13fe5b47ea4c1bbf3e",
+  "script_sha256": {
+    "scripts/prepare_generated_sound3_filter_pair.py": "fb06f77159d47d0377e060a22842805ba50cf0ddada4b0e1592ab46cc932e40d",
+    "scripts/check_generated_sound3_filter_restore.py": "2a913a9f74642373952062336081a5544fed5cc1e987bd45593ce6d866bc10da",
+    "tests/test_generated_sound3_filter_pair.py": "4979fbc3f2e62abf88dc63410d8b80d95e0abffcc4d630f020ac97d6af0a29ba"
+  },
+  "focused_tests_passed": 88,
+  "last_full_regression_tests_passed": 917,
+  "production_writer_changed": false,
+  "filter_writer_enabled": false,
+  "next_action": "Restore16 only; verify complete native reception and user listening before requesting52",
+  "limits": [
+    "Targets reproduce known physical bodies; this new test concerns generated reception and saved-pattern audible behavior",
+    "Both generated targets and their hashes are frozen before recapture; no new general cutoff law or amplitude measurement is predicted",
+    "Restore16 and verify native plus user listening before requesting52; retain mismatches without changing targets",
+    "Only fixed16/52 from exact center are allowed by research constructor; public pitch/volume guards stay unchanged",
+    "Contiguous branch ordering has support but full field width, all-code law, numeric UI and resonance remain unknown"
+  ]
+}

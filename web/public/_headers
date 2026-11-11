@@ -1,0 +1,7 @@
+# Hashed bundles and bundled assets (the projects the app comes with among them) never change: cache them for a year.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/manifest.webmanifest
+  Cache-Control: no-cache
+/*
+  X-Content-Type-Options: nosniff

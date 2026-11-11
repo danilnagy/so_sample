@@ -1,0 +1,25 @@
+{
+  "analysis_version": "key-scale-map-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "1d93c673ff1aeca4ec4da676d3a676c581df4c964bc4df54774520293f4f5c43",
+  "native_results_sha256": "1ad5b724ab679792fa52c8287189c2f749ef1d1ab44f951c146a10dee5c3f5e9",
+  "frequency_results_sha256": "b08fc883058ac4fa47e5664656cfd211c765f371d4f26eb37918877e9faaf5ac",
+  "step1_hz": 1190.5859352296784,
+  "measured_cents": {
+    "1": 0.0,
+    "4": -459.73686210595844,
+    "8": -459.6911358516865,
+    "12": -459.7183490365705,
+    "16": -459.6587992825265
+  },
+  "model_support": {
+    "chromatic": false,
+    "major": false,
+    "natural_minor": false
+  },
+  "classification": "other_or_inconclusive",
+  "limits": [
+    "Sound3 with its recorded parameters only; other sounds may differ",
+    "Measures pitch only, not note length or level"
+  ]
+}

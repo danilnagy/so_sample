@@ -1,0 +1,16 @@
+{
+  "validation_id": "pattern-recapture-validator-checks-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest tests/test_pattern_restore.py -q -p no:cacheprovider",
+    "passed": 3,
+    "failed": 0,
+    "duration_seconds": 0.22,
+    "scope": "Focused comparison-validator checks using known source and software target; no hardware recapture supplied"
+  },
+  "last_full_suite": "step-clone-tools-validation-001.json",
+  "user_hardware_observation": "edited-pattern-001/hardware-observation.json",
+  "restore_and_playback_reported_success": true,
+  "native_recapture_verified": false,
+  "expected_capture": "edited-pattern-001/capture.wav"
+}

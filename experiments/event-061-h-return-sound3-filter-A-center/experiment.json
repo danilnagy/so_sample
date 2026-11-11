@@ -1,0 +1,17 @@
+{
+  "experiment_id": "event-061-h-return-sound3-filter-A-center",
+  "capture_status": "validated_exact_entire_center_return",
+  "registration": "../sound3-filter-A-interior-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/FILTER, B and all audio settings unchanged",
+    "Start playback and hold WRITE; Move only A back to the single middle tick where the whole sample sounds unfiltered over about5 seconds",
+    "Hold WRITE3 more seconds stationary, release WRITE, stop playback and ensure write off",
+    "Save complete capture.wav here at established reduced level with one second trailing silence before the next action",
+    "Report actual audibility/display without guessing numeric codes; no separate playback.wav or restore is required"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-filter-A-interior-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-sound3-filter-A-interior-center-return-001/project.json"
+}

@@ -1,0 +1,14 @@
+{
+  "analysis_version": "imported-last-owner-removal-prediction-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "all_target_core_controls": true,
+    "all_removal_hypotheses": true,
+    "retained_full_owner_alternative_fails": true,
+    "only_sound7_changes": true,
+    "stale_source_rejected": true,
+    "whole_model_equals_earlier_independent_state": true
+  },
+  "registration_sha256": "fe4b0e57188df79e802fd969ad8bbb95225fcbf4a6e66a41a06339efd144b939"
+}

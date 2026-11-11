@@ -1,0 +1,10 @@
+{
+  "analysis_version": "recorded-pitch-minimum-post-observation-literal-model-0.1",
+  "hardware_verified": false,
+  "registered_before_minimum_data": false,
+  "whole_body_reproduced": true,
+  "rule": "Replace first-primary low6 bits by1 in all16 Sound3/P1 cells; preserve all other bits",
+  "native_results_sha256": "4d4dabf178985e9ef0b6cf768ad6af94b9fc7521441550e73d847b268ce50329",
+  "source_registration_sha256": "d21927d75ee5c645a1d2260dc7628b5c6820983cad0bafa5ec479dbdf510c6b1",
+  "pitch_field_width_or_scale_confirmed": false
+}

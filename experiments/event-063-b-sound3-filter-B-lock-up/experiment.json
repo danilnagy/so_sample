@@ -1,0 +1,15 @@
+{
+  "experiment_id": "event-063-b-sound3-filter-B-lock-up",
+  "capture_status": "validated_uniform_B63_maximum",
+  "registration": "../sound3-filter-B-range-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/FILTER, A and audio settings unchanged",
+    "Start playback, hold WRITE and move only B fully clockwise over5 seconds; hold WRITE3 more seconds stationary",
+    "Release WRITE, stop and ensure write off; save full capture.wav here at established reduced level with one second trailing silence before the next action",
+    "Report actual audible/display changes or no change; no restore or separate playback recording required"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-filter-B-range-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json"
+}

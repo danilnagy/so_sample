@@ -1,0 +1,63 @@
+{
+  "experiment_id": "edited-drum9-slice-end-001",
+  "capture_status": "received_and_validated_exact_first_drum_slice_restore",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-016-b-drum9-key1-trim-min",
+  "source_backup_sha256": "bb5cbcd9cee52cd390dcc9f5e33f1fec719891d951d4d92ae21d3dae1a924046",
+  "source_artifact": "../event-016-b-drum9-key1-trim-min/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3495d30f8003b614a828d94d6fba85a3c8fdef3e52a70f4b201c40a3c3153daf",
+  "source_body_sha256": "ce8c3712bf6557ab0ea5a97363a7f9dbb35fba2293c670873a474f3e357cabc9",
+  "source_reference_hex": "000000007f00000000",
+  "restore_wav": "../generated-drum9-slice-end-001/restore.wav",
+  "restore_wav_sha256": "76c74a4a3b10cbc8324b606adf7af4b901c29b333e2c4fcfe31fc9380e382c41",
+  "generated_artifact": "../generated-drum9-slice-end-001/edited.symbols.npz",
+  "plan": "../drum9-slice-end-plan-001/plan.json",
+  "expected_encoded_body_sha256": "4eca78dcdf5521941bb07c0d16e4cad71115512021670c203d87256ce142e667",
+  "expected_reference_hex": "00000000d007000000",
+  "expected_sound_slot": 9,
+  "expected_slice_key": 1,
+  "expected_selector_id": 8,
+  "expected_start_field": 0,
+  "expected_endpoint_field": 2000,
+  "expected_owner_id": 0,
+  "expected_changed_plain_packet_indices": [
+    383
+  ],
+  "expected_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 127,
+      "new": 208
+    },
+    {
+      "offset": 5,
+      "old": 0,
+      "new": 7
+    }
+  ],
+  "expected_packet_count": 527,
+  "expected_frame_end_byte": 89620,
+  "planned_actions": [
+    "Restore the entire generated-drum9-slice-end-001/restore.wav through the proven stereo playback path and levels",
+    "Keep both knobs untouched; with Sound8/TONE, playback stopped and write off, record a full backup as capture.wav here before audition or pattern playback",
+    "After saving, select Sound9/TONE and tap keyboard key1; confirm a clearly audible short tone",
+    "Select Sound8/TONE and tap keyboard key1; confirm its longer tone remains unchanged",
+    "Leave Sound8 selected with write off and playback stopped, and report restore and both tone checks"
+  ],
+  "actual_actions": [
+    "User reports done and pass for restore, full recapture and both requested tone checks; no deviation reported"
+  ],
+  "source_sha256": "0ddaf2dd97497f4046ccf69a346b03284e5701296a91686f6880a3cf88770c3e",
+  "hardware_verified": true,
+  "purpose": "Independently test generated editing of a single calibrated drum slice with all other state preserved",
+  "limits": [
+    "Only this local Sound9/key1 zero-start endpoint edit is independently hardware accepted",
+    "Audible checks are user reported; exact device duration, pitch and endpoint inclusivity remain unmeasured",
+    "Other keys, starts, drum slots and general minimum rules remain unverified; the original79 prediction stays failed"
+  ],
+  "user_report": "done and pass",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "validation_report": "hardware-validation.json",
+  "current_project_export": "../exported-verified-drum9-slice-001/project.json",
+  "workflow_validation": "../drum-slice-hardware-workflow-validation-001.json"
+}

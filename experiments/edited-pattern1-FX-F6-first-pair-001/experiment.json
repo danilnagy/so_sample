@@ -1,0 +1,23 @@
+{
+  "experiment_id": "edited-pattern1-FX-F6-first-pair-001",
+  "leg": "a",
+  "capture_status": "validated_exact_native_audio_pair_inconclusive",
+  "restore_file": "restore.wav",
+  "registration": "../pattern1-generated-FX-first-pair-order-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "planned_actions": [
+    "Restore restore.wav with established stereo settings; keep write off and both knobs untouched",
+    "Before playing, record complete backup capture.wav at the established reduced level with one second trailing silence",
+    "For separate ordinary pattern audio playback.wav, start recording while stopped, leave about one second silence, then press PLAY",
+    "Record12 to15 seconds of Pattern1, then press PLAY to stop; do not press FX or enable write; preserve recording settings",
+    "Do not trim the leading silence or first note; report any uncertainty or deviations"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "audio_results": "first-tone-results-001.json",
+  "project": "../exported-pattern1-FX-F6-first-pair-001/project.json"
+}

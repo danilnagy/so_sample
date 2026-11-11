@@ -1,0 +1,20 @@
+{
+  "experiment_id": "edited-pattern1-FX6-7-halves-global7-001",
+  "capture_status": "validated_exact_mixed_footer_and_high_then_low_report",
+  "restore_file": "restore.wav",
+  "registration": "../pattern1-generated-mixed-FX-halves-global7-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "planned_actions": [
+    "Restore restore.wav using established stereo settings; leave both knobs untouched",
+    "Stopped and write off: record complete capture.wav BEFORE playing",
+    "With write off, play Pattern1 for several loops; report whether it switches between higher and lower sections, then stop",
+    "Do not press FX or move knobs; use the same reduced recording level and one second trailing silence"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-FX6-7-halves-global7-001/project.json"
+}

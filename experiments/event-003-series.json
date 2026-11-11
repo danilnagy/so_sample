@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "event-003",
+  "status": "analyzed",
+  "purpose": "Add and remove one complete pattern event, then examine reproducible transport differences",
+  "proposed_event": {
+    "pattern": 1,
+    "step": 3,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "captures": [
+    "event-003-a",
+    "event-003-b",
+    "event-003-a-return"
+  ],
+  "prerequisites": {
+    "target_step_empty": "Expected from exact returned empty baseline; verify before A",
+    "target_slice_recognizable": "User-confirmed kick Sound 9 slice 1"
+  },
+  "comparison_order": [
+    "A vs returned A before attributing B changes",
+    "A vs B and B vs returned A per channel",
+    "Explicit count/tail checks and waveform diagnostics before protocol offset inference"
+  ],
+  "claims": {
+    "field_offset_known": false,
+    "payload_coding_verified": false,
+    "editable_field_verified": false
+  },
+  "pre_registered_prediction": {
+    "first_changed_symbol_per_channel": 9501,
+    "units": "zero-based absolute phase-label index",
+    "basis": "9309 + (3 - 1) * 96",
+    "verified": false,
+    "test_status": "failed",
+    "observed_first_changed_symbol": {
+      "left": 9502,
+      "right": 9500
+    }
+  },
+  "baseline_reuse": {
+    "fresh_a_skipped": true,
+    "evidence_source": "user_instruction",
+    "reused_baseline_id": "event-002-a",
+    "return_validation": "matched_exactly"
+  },
+  "b_result": {
+    "left": {
+      "baseline_symbols": 1970367,
+      "b_symbols": 1970367,
+      "overlap_symbols": 1970367,
+      "changed_symbols": 1471877,
+      "first_change": 9502,
+      "last_change": 1970366,
+      "tail_symbols": 0,
+      "prediction_matches": false,
+      "alignment_shift": 0
+    },
+    "right": {
+      "baseline_symbols": 1970367,
+      "b_symbols": 1970366,
+      "overlap_symbols": 1970366,
+      "changed_symbols": 1471744,
+      "first_change": 9500,
+      "last_change": 1970365,
+      "tail_symbols": 1,
+      "prediction_matches": false,
+      "alignment_shift": 0
+    }
+  },
+  "return_result": {
+    "left": {
+      "baseline_symbols": 1970367,
+      "return_symbols": 1970367,
+      "changed_overlap_symbols": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail_symbols": 0,
+      "tail_values_baseline": [],
+      "tail_values_return": [],
+      "identical": true,
+      "alignment_shift": 0
+    },
+    "right": {
+      "baseline_symbols": 1970367,
+      "return_symbols": 1970367,
+      "changed_overlap_symbols": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail_symbols": 0,
+      "tail_values_baseline": [],
+      "tail_values_return": [],
+      "identical": true,
+      "alignment_shift": 0
+    }
+  },
+  "post_observation_hypothesis": {
+    "description": "First changed packed-label byte advances 24 bytes per channel per tested step",
+    "observed_bytes_by_step": {
+      "1": 2327,
+      "2": 2351,
+      "3": 2375
+    },
+    "units": "four phase labels per packed byte; not decoded state bytes",
+    "confirmed_state_field": false
+  }
+}

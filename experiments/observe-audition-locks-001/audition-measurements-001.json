@@ -1,0 +1,241 @@
+{
+  "analysis_version": "audition-lock-measurements-0.1",
+  "hardware_verified": false,
+  "playback_file": "retake-002/attempts/playback-01.wav",
+  "playback_sha256": "a64a621bdf50fa313bcdb38fae6a8a6a914effb7439c026cf5632609bef5826a",
+  "settings": {
+    "band_hz": [
+      100.0,
+      11000.0
+    ],
+    "onset_fraction_of_peak": 0.1,
+    "envelope_window_seconds": 0.003,
+    "refractory_seconds": 0.3,
+    "group_gap_seconds": 2.0,
+    "window_ms": [
+      60.0,
+      220.0
+    ],
+    "fft_size": 65536,
+    "fundamental_hz": 200.0,
+    "harmonics": 50,
+    "peak_search_hz": 3.0,
+    "bottom_band": [
+      1,
+      3
+    ],
+    "top_band": [
+      40,
+      50
+    ],
+    "type_margin_db": 3.0,
+    "same_margin_db": 3.0,
+    "silent_db": -40.0,
+    "expected_groups": [
+      "before",
+      "pattern",
+      "after"
+    ],
+    "min_hits_per_group": 3
+  },
+  "hit_times_seconds": [
+    3.0817233560090704,
+    3.685124716553288,
+    4.3526757369614515,
+    5.039342403628118,
+    7.540566893424036,
+    8.040204081632654,
+    8.541224489795919,
+    9.040839002267573,
+    9.540476190476191,
+    10.040090702947845,
+    10.539727891156463,
+    11.040725623582766,
+    14.27843537414966,
+    14.933696145124717,
+    15.642222222222221,
+    16.382108843537416,
+    17.142471655328798,
+    24.163696145124717,
+    24.663333333333334,
+    25.16297052154195,
+    25.663968253968253,
+    26.16358276643991,
+    26.663197278911564,
+    27.16283446712018,
+    27.663809523809523,
+    28.163424036281178,
+    28.663038548752834,
+    29.16265306122449,
+    29.662290249433106,
+    30.163265306122447,
+    30.662902494331068,
+    31.16251700680272,
+    31.662131519274375,
+    32.16310657596372,
+    32.66274376417233,
+    33.16238095238095,
+    33.661972789115644,
+    34.16160997732426,
+    34.6625850340136
+  ],
+  "groups": [
+    [
+      3.0817233560090704,
+      3.685124716553288,
+      4.3526757369614515,
+      5.039342403628118
+    ],
+    [
+      7.540566893424036,
+      8.040204081632654,
+      8.541224489795919,
+      9.040839002267573,
+      9.540476190476191,
+      10.040090702947845,
+      10.539727891156463,
+      11.040725623582766
+    ],
+    [
+      14.27843537414966,
+      14.933696145124717,
+      15.642222222222221,
+      16.382108843537416,
+      17.142471655328798
+    ],
+    [
+      24.163696145124717,
+      24.663333333333334,
+      25.16297052154195,
+      25.663968253968253,
+      26.16358276643991,
+      26.663197278911564,
+      27.16283446712018,
+      27.663809523809523,
+      28.163424036281178,
+      28.663038548752834,
+      29.16265306122449,
+      29.662290249433106,
+      30.163265306122447,
+      30.662902494331068,
+      31.16251700680272,
+      31.662131519274375,
+      32.16310657596372,
+      32.66274376417233,
+      33.16238095238095,
+      33.661972789115644,
+      34.16160997732426,
+      34.6625850340136
+    ]
+  ],
+  "group_sizes": [
+    4,
+    8,
+    5,
+    22
+  ],
+  "outcome": "other",
+  "reason": "4 groups of hits, 3 expected",
+  "measured_playback_reason": "The accepted attempt holds the pattern alone. The first attempt followed the procedure (four presses, two passes, five presses) and then PLAY was pressed again until the end; the recorder flagged its peak as near full scale and the person recorded again. The first attempt is the one that followed the procedure.",
+  "exploratory": {
+    "label": "exploratory, not part of the registered method",
+    "noise_floor_rms": 6.749633168948465e-05,
+    "hit_rms_median": 0.25258702512873643,
+    "stretches": [
+      {
+        "what": "before the first hit",
+        "from": 0.3,
+        "to": 2.7817233560090706,
+        "rms": 6.820214551805488e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 5.639342403628118,
+        "to": 7.240566893424036,
+        "rms": 7.04088022906235e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 11.640725623582766,
+        "to": 13.97843537414966,
+        "rms": 6.964268470285809e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 17.7424716553288,
+        "to": 23.863696145124717,
+        "rms": 6.93719609837958e-05
+      }
+    ],
+    "first_three_groups": {
+      "file": "retake-002/attempts/playback-01-first-three-groups.wav",
+      "group_sizes": [
+        4,
+        8,
+        5
+      ],
+      "outcome": "audition_keeps_live_state",
+      "comparisons": {
+        "before_matches_pattern": false,
+        "after_matches_pattern": false,
+        "before_matches_after": true
+      },
+      "band_means_db": {
+        "before": [
+          -0.16738097688068454,
+          3.195086508669236
+        ],
+        "pattern": [
+          -3.114519352110604e-09,
+          -1.642847494001967e-07
+        ],
+        "after": [
+          -0.16992716193252513,
+          3.186220991401383
+        ]
+      },
+      "hit_rms_by_group": [
+        [
+          0.3671,
+          0.367,
+          0.367,
+          0.367
+        ],
+        [
+          0.2528,
+          0.2527,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526
+        ],
+        [
+          0.367,
+          0.3669,
+          0.3668,
+          0.3669,
+          0.3669
+        ]
+      ]
+    },
+    "reading": "every stretch where auditions by hand were due sits at the noise floor: the presses produced no output"
+  },
+  "earlier_playbacks": [
+    {
+      "file": "playback.wav",
+      "sha256": "80a8747836452ee7559962cb6f67f8ab0bab947e7519f9120e5fa14b710fb18c",
+      "group_sizes": [
+        64
+      ]
+    },
+    {
+      "file": "retake-001/playback.wav",
+      "sha256": "232d1f12ec074d3cb06c529102746b291fac15ee33267844fce205289454f6ce",
+      "group_sizes": [
+        64
+      ]
+    }
+  ]
+}

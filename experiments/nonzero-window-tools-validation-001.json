@@ -1,0 +1,22 @@
+{
+  "analysis_version": "nonzero-window-tools-validation-0.1",
+  "pytest": {
+    "passed": 327,
+    "failed": 0,
+    "duration_seconds": 58.37,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --basetemp .tools/pytest-nonzero-window-full-001 -p no:cacheprovider",
+    "windows_execution": "Normal filesystem access, automatically approved for temporary test fixtures"
+  },
+  "ruff": {"lint": "passed", "format": "passed", "formatted_file_count": 104, "scope": ["src", "tests", "scripts"]},
+  "genuine_capture_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+  "native_body_sha256": "002346273de5b027d53b593e8183b3695ba680bcd01543286def0bc68d24f696",
+  "control_preservation_passed": true,
+  "both_exact_minimum_predictions_fit": false,
+  "audition_user_report": "Very short click or burst",
+  "experimental_writer_scope": {"sound_slot": 3, "fixed_start_field": 31393, "endpoint_interval": [31504, 65535]},
+  "candidate_software_validation": "generated-nonzero-trim-001/software-validation.json",
+  "candidate_wav_sha256": "06b311337489a1176c80bc27172b343dc649ec2bd4c6880ad0d967470527949f",
+  "candidate_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+  "candidate_hardware_verified": false,
+  "next_capture": "edited-nonzero-trim-001/capture.wav"
+}

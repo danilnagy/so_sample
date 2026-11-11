@@ -1,0 +1,55 @@
+{
+  "analysis_version": "bounded-public-volume-and-post-playback-handoff-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "accepted_upper_interior_hardware_and_audio_checks_pass": true,
+    "physical_capture_and_artifact_pins_match": true,
+    "current_uniform_volume_readback_and_noop": true,
+    "all_current_export_hashes_and_full_body_match": true,
+    "fresh_post_playback_registration_pins_current_body_and_source": true,
+    "post_playback_capture_pending_without_pitch_action": true,
+    "public_volume18_exact_physical_body_and_wav": true,
+    "public_volume18_compiler_checks_and_source_pins": true,
+    "public_volume36_exact_physical_body_and_wav": true,
+    "public_volume36_compiler_checks_and_source_pins": true
+  },
+  "volume_public_policy": {
+    "operation": "set_sound3_volume",
+    "target_integer_range": [
+      0,
+      63
+    ],
+    "uniform_all16_sound3_pattern1_only": true,
+    "known_sample_window_and_note_layout_required": true,
+    "individual_per_step_or_other_sound_supported": false,
+    "gain_curve_ui_scale_or_zero_as_mute_claimed": false
+  },
+  "current_hardware_observation_sha256": "f23a108d81b700d86a4d2dbe3ee7b7bbc8920a78441810df21652d66ea51f008",
+  "post_playback_registration_sha256": "4eea2721cd02115cdac8ee53ca3cb6e3f2ec049c08dd08a574bced68b73f1c11",
+  "public_replays": [
+    {
+      "value": 18,
+      "plan": "experiments/replay-sound3-volume18-plan-001/plan.json",
+      "compile_report_sha256": "608d24ba9acf5d0e07b324757791b1ce1cb07d86723bc9c1b7181fa087939f79",
+      "accepted_observation_sha256": "a36dad39cc4d5b66b81f44f9f2fd9c2097768fa138d8aec0045aa6fb4c565d3f"
+    },
+    {
+      "value": 36,
+      "plan": "experiments/replay-sound3-volume36-plan-001/plan.json",
+      "compile_report_sha256": "863b0e3bb4dfd55c974be5ae6083349f6afa8b1b51686c2082fd7afb551b66ab",
+      "accepted_observation_sha256": "f23a108d81b700d86a4d2dbe3ee7b7bbc8920a78441810df21652d66ea51f008"
+    }
+  ],
+  "validation": {
+    "focused_tests_passed": 52,
+    "full_regression_tests_passed": 853,
+    "full_regression_seconds": 100.89,
+    "failures": 0
+  },
+  "limits": [
+    "Software replays accepted bodies and WAVs without becoming hardware observations",
+    "Every integer is tested for literal preservation in software; hardware calibration uses measured endpoints and interior controls, not all64 individual values",
+    "Fresh post-playback persistence and TONE pitch are pending physical data"
+  ]
+}

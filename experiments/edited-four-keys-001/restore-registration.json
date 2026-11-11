@@ -1,0 +1,58 @@
+{
+  "experiment_id": "edited-four-keys-001",
+  "capture_status": "awaiting_extended_key_phrase_restore_and_recapture",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-010-b-melodic-key7",
+  "source_backup_sha256": "19d2e80e347e229081a8363668807a5ca269f8645820d59224a3f6d974cb245c",
+  "restore_wav": "../generated-four-keys-001/restore-four-calibrated-keys.wav",
+  "restore_wav_sha256": "4536ddb4ed196c1d7afb451ccc6e06f787068d93a134c7c6caa21533eaa694e5",
+  "expected_encoded_body_sha256": "9b87309f572b188cd1e1a2651b1ca4feec5cfa8fb669068631042ca8f49465f0",
+  "expected_pattern": 1,
+  "expected_sound_slot": 3,
+  "expected_populated_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "expected_keyboard_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "expected_pattern_byte_changes": [
+    {
+      "offset": 834,
+      "old": 246,
+      "new": 241
+    },
+    {
+      "offset": 898,
+      "old": 240,
+      "new": 246
+    },
+    {
+      "offset": 962,
+      "old": 241,
+      "new": 255
+    }
+  ],
+  "expected_changed_plain_packet_indices": [
+    7
+  ],
+  "planned_actions": [
+    "Restore the generated four-calibrated-key backup using the previously validated stereo playback path",
+    "Before playing, retain Pattern1, Sound8 selected, TONE, write off and stopped playback; record full stereo backup",
+    "After saving, select Sound3 with write off and audition keyboard keys1/2/7/16 in that order; play Pattern1 for one or two loops and report whether its four pitches match that order; stop playback"
+  ],
+  "actual_actions": null,
+  "source_sha256": null,
+  "purpose": "Hardware validation of generated edits using the four independently calibrated keyboard values",
+  "hardware_verified": false,
+  "limits": [
+    "Only Sound3 keys1/2/7/16 with known primary and auxiliary values are written; no complete keyboard-range or other-sound support is claimed"
+  ]
+}

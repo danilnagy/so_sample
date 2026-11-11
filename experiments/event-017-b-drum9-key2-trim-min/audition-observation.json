@@ -1,0 +1,11 @@
+{
+  "evidence_type": "user_reported_post_capture_audition",
+  "capture_sha256": "78f321ce42b7cfca70013487b70c62db4bd3dac57c27f7cb9f9a4c2de35692b6",
+  "sound_slot": 9,
+  "slice_key": 2,
+  "classification": "very_short_click_or_burst",
+  "user_report": "done and confirmed I hear a click",
+  "capture_requested_before_audition": true,
+  "no_exact_duration_measurement": true,
+  "interpretation": "Supports a short endpoint window near start4045; not a generated edit acceptance or a general minimum rule"
+}

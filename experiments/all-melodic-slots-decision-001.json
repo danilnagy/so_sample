@@ -1,0 +1,37 @@
+{
+  "analysis_version": "all-melodic-slots-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "376efa384637fd978bc05ff783aba62b492539a86607691bc43824a00309dc63",
+  "native_results_sha256": "ce543f51e892783e3aa76fe89f8ef0e8c0fa7dce0dd743c996c898fb82a0c32c",
+  "frequency_results_sha256": "a76b56c2b9e6983f5787ccb64120dcf3f5b70f9d261d225ae815288b289fd547",
+  "step1_hz": 599.2527367395353,
+  "measured_cents": {
+    "1": 0.0,
+    "2": 0.06380956879594835,
+    "3": 150.03896110511192,
+    "4": 150.07916384100253,
+    "5": 299.9882662938922,
+    "6": 300.03956328006456,
+    "7": 450.05727404636787,
+    "8": 450.05130179746754,
+    "9": 600.0415187692397,
+    "10": 600.1034660426245,
+    "11": 750.0200919009444,
+    "12": 750.1639697385324,
+    "13": 900.0181942608746,
+    "14": 900.0417198113518,
+    "15": 1050.0508553612444,
+    "16": 1050.1004131948307
+  },
+  "model_support": {
+    "slot_s_plays_its_tone": true
+  },
+  "classification": "slot_s_plays_its_tone",
+  "absolute": {
+    "step1_cents_vs_expected": -0.2024889245973327,
+    "holds": true
+  },
+  "limits": [
+    "One short tone per melodic slot at key 1 and pitch code 13; Sound9 and Sound10 kits are checked by exact reception only"
+  ]
+}

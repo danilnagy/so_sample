@@ -1,0 +1,9 @@
+{
+  "user_report": "done, yes the pattern still plays",
+  "restore_completion_confirmed_in_requested_context": true,
+  "pattern_playback_confirmed": true,
+  "relative_loudness_confirmed": false,
+  "interpretation": "Completion of requested restore and explicit pattern playback confirmation; no subjective gain direction, numeric UI value or independent pitch claim supplied",
+  "capture_sha256": "476cb53192991b06b453929bfd5549cc9eb64715fb29f86c2226949336250c86",
+  "playback_sha256": "e41260c6a054c27b714ed203dc92aaab57299d3abbd2da853b1d98709c6f22ea"
+}

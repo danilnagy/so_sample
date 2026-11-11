@@ -1,0 +1,24 @@
+{
+  "analysis_version": "start-control-tools-validation-0.1",
+  "pytest": {
+    "passed": 305,
+    "failed": 0,
+    "duration_seconds": 97.87,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --basetemp .tools/pytest-start-control-full-001 -p no:cacheprovider",
+    "windows_execution": "Normal filesystem access, automatically approved for temporary test fixtures"
+  },
+  "ruff": {"lint": "passed", "format": "passed", "formatted_file_count": 101, "scope": ["src", "tests", "scripts"]},
+  "genuine_capture_sha256": "24502f734e1d9170a1c5a4ac89d104fafeec3514478f39749919521336f68673",
+  "native_body_sha256": "4b697a34bea74f34654107463a9586afe31e9db1b55bf11f4f057f6e7f72ddc2",
+  "control_report": "sound3-start-results-001.json",
+  "control_preservation_passed": true,
+  "first_field_hypothesis_fit": true,
+  "second_field_unchanged_hypothesis_fit": false,
+  "second_field_moves_with_start_hypothesis_fit": false,
+  "project_export": "exported-start-project-001/export-report.json",
+  "project_content_files_hash_checked": 25,
+  "project_preview_sound_slots": [1, 2, 8],
+  "sound3_preview_status": "unsupported_layout_preserved_raw",
+  "next_control": "event-013-b-sound3-start-min",
+  "nonzero_start_writer_enabled": false
+}

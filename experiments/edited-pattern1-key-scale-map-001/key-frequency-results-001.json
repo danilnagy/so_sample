@@ -1,0 +1,179 @@
+{
+  "analysis_version": "key-scale-map-frequencies-0.1",
+  "hardware_verified": false,
+  "playback_sha256": "fd76597b9ae094e47044ce1959cfa1d862fd1200f115b453b3eb43d391fdd667",
+  "settings": {
+    "band_hz": [
+      600.0,
+      8000.0
+    ],
+    "search_hz": [
+      900.0,
+      7500.0
+    ],
+    "window_seconds": 0.02,
+    "hop_seconds": 0.01,
+    "track_seconds": 0.4,
+    "onset_fraction_of_peak": 0.15,
+    "min_loop_gap_seconds": 1.0,
+    "loops": 5,
+    "fft_size": 32768,
+    "step1_window_ms": [
+      20.0,
+      130.0
+    ],
+    "min_relative_amplitude": 0.2,
+    "effect_min_rise": 0.1,
+    "none_max_deviation": 0.01,
+    "min_agreeing_loops": 4,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "step_tolerance_seconds": 0.03,
+    "envelope_window_seconds": 0.003,
+    "note_track_seconds": 0.1,
+    "amplitude_gate_reference": "each_note_peak",
+    "measure_window_ms": [
+      5.0,
+      40.0
+    ],
+    "min_measure_windows": 2,
+    "cents_tolerance": 20.0
+  },
+  "missing_grid_positions": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    76,
+    77,
+    78,
+    79
+  ],
+  "step_frequencies_hz": {
+    "1": [
+      1190.5859352296784
+    ],
+    "4": [
+      912.9261243369882,
+      912.9105327876273
+    ],
+    "16": [
+      912.949466660164,
+      912.9695208565237
+    ],
+    "12": [
+      912.9222159335507,
+      912.9339660042897
+    ],
+    "8": [
+      912.9424413545298
+    ]
+  },
+  "intervals": {
+    "step1_hz": 1190.5859352296784,
+    "steps": {
+      "1": {
+        "median_hz": 1190.5859352296784,
+        "median_cents": 0.0,
+        "loop_cents": [
+          0.0
+        ]
+      },
+      "4": {
+        "median_hz": 912.9183285623078,
+        "median_cents": -459.73686210595844,
+        "loop_cents": [
+          -459.72207846922066,
+          -459.7516458689402
+        ]
+      },
+      "8": {
+        "median_hz": 912.9424413545298,
+        "median_cents": -459.6911358516865,
+        "loop_cents": [
+          -459.6911358516865
+        ]
+      },
+      "12": {
+        "median_hz": 912.9280909689202,
+        "median_cents": -459.7183490365705,
+        "loop_cents": [
+          -459.72949021417156,
+          -459.7072079306665
+        ]
+      },
+      "16": {
+        "median_hz": 912.9594937583438,
+        "median_cents": -459.6587992825265,
+        "loop_cents": [
+          -459.6778136519815,
+          -459.6397851219063
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "ordinary_mono_PCM_for_direct_import",
+  "frequency_start_hz": 300,
+  "frequency_end_hz": 1800,
+  "duration_seconds": 0.75,
+  "sample_rate_hz": 44100,
+  "channels": 1,
+  "pcm_subtype": "PCM_16",
+  "frames": 33075,
+  "peak_requested": 0.2,
+  "fade_frames": 441,
+  "wav_sha256": "c93ad0fb225611002db5fe74822602a8b66432394b3262af0a01fed9cdf79e4d",
+  "purpose": "Exercise public import-sample with mono44.1k and a longer non-tone waveform; no analogue recording step is required"
+}

@@ -1,0 +1,32 @@
+{
+  "experiment_id": "compiled-all-melodic-slots-001",
+  "capture_status": "validated_exact_native_all_melodic_slots_slot_s_plays_its_tone",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../all-melodic-slots-registration-001.json",
+  "plan": "../all-melodic-slots-plan-001/plan.json",
+  "import_stages": [
+    "../import-drum9-all-melodic-stage-001",
+    "../import-drum10-all-melodic-stage-001",
+    "../import-sound2-all-melodic-stage-001",
+    "../import-sound3-all-melodic-stage-001",
+    "../import-sound8-all-melodic-stage-001",
+    "../import-sound1-all-melodic-stage-001",
+    "../import-sound4-all-melodic-stage-001",
+    "../import-sound5-all-melodic-stage-001",
+    "../import-sound6-all-melodic-stage-001",
+    "../import-sound7-all-melodic-stage-001"
+  ],
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the pattern play eight rising notes, one on every other step? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "pitch_results": "key-frequency-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-all-melodic-slots-001/project.json"
+}

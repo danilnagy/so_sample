@@ -1,0 +1,8 @@
+{
+  "user_report": "done, no sound changes but display shows resonance adjustment",
+  "audible_change": "none_reported",
+  "display_observation": "resonance_adjustment_shown",
+  "numeric_display_value": null,
+  "interpretation": "Shared report confirms no sound change and qualitative resonance display during requested maximum/return sequence; no separate numerical endpoint readings inferred",
+  "capture_sha256": "749f8190b6bfe8b2f6a23af471ed15b6015cae9d4fcd85136f14a213446110d8"
+}

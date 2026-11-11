@@ -1,0 +1,10 @@
+{
+  "analysis_version": "FILTER-B-minimum-literal-zero-post-observation-model-0.1",
+  "hardware_verified": false,
+  "registered_before_B_minimum_data": false,
+  "rule": "Clear third-primary bits2..7 in all16 Sound3/P1 cells; all other bits preserved",
+  "complete_body_reproduced": true,
+  "native_results_sha256": "1e8beaf29e3ab78f6abc718f7a4856a5a7677fe3096d9964ccdc1fb38ac9ea87",
+  "narrow_mask_failure_retained": true,
+  "resonance_width_law_or_bit7_role_confirmed": false
+}

@@ -1,0 +1,161 @@
+{
+  "analysis_version": "first-cross-drum-slice-copy-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "event-018-b-copy-sound1-to-drum10",
+  "baseline_capture": "../event-018-b-copy-sound1-to-drum10/capture-retry.wav",
+  "baseline_source_sha256": "073011e3cdd30f3bb376396385a154ec581d24412c0f93362d189e2e8126e804",
+  "baseline_artifact": "../event-018-b-copy-sound1-to-drum10/derived/analysis-004/capture.symbols.npz",
+  "baseline_artifact_sha256": "4ad498dd37a011e7dc30890d18b8416b412651b8aa3eecb7958fccf32252d1d4",
+  "baseline_body_sha256": "9e2801c1d2e76144a88ea71c05cc69e0be58476d077305abb4997c2fb9d64323",
+  "target_capture": "event-019-b-copy-drum9-key1-to-drum10-key1/capture.wav",
+  "expected_change": {
+    "source_sound_slot": 9,
+    "source_slice_key": 1,
+    "destination_sound_slot": 10,
+    "destination_slice_key": 1,
+    "action": "Copy last-triggered drum slice using write+sound, destination10 then key1"
+  },
+  "control_checks": {
+    "packet_count": 543,
+    "frame_end_byte": 89844,
+    "destination_selector_ids": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "reference_packet_indices": {
+      "24": [
+        415
+      ],
+      "25": [
+        417
+      ],
+      "26": [
+        419
+      ],
+      "27": [
+        421
+      ],
+      "28": [
+        423
+      ],
+      "29": [
+        425
+      ],
+      "30": [
+        427
+      ],
+      "31": [
+        429
+      ],
+      "32": [
+        431
+      ],
+      "33": [
+        433
+      ],
+      "34": [
+        435
+      ],
+      "35": [
+        437
+      ],
+      "36": [
+        439
+      ],
+      "37": [
+        441
+      ],
+      "38": [
+        443
+      ],
+      "39": [
+        445
+      ]
+    },
+    "reference_before_hex": {
+      "24": "00000000cc0f000000",
+      "25": "cd0f0000981f000000",
+      "26": "991f0000642f000000",
+      "27": "652f0000303f000000",
+      "28": "313f0000fc4e000000",
+      "29": "fd4e0000c85e000000",
+      "30": "c95e0000946e000000",
+      "31": "956e0000607e000000",
+      "32": "617e00002c8e000000",
+      "33": "2d8e0000f89d000000",
+      "34": "f99d0000c4ad000000",
+      "35": "c5ad000090bd000000",
+      "36": "91bd00005ccd000000",
+      "37": "5dcd000028dd000000",
+      "38": "29dd0000f4ec000000",
+      "39": "f5ec0000c0fc000000"
+    },
+    "reference_record_bytes": 9,
+    "owner_id": 0,
+    "only_allowed_payload_offsets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "changed_records": "Exactly one existing Sound10 reference",
+    "other15_destination_references": "Identical",
+    "source_and_other_sounds": "All bytes unchanged, including both accepted Sound9 windows",
+    "backing_codes": "All65536 codes and owner header identical",
+    "patterns": "All16 identical",
+    "every_other_plain_packet": "Identical",
+    "allocation_policy": "No new or resized packets permitted by this control; deviations reported"
+  },
+  "separately_evaluated_hypotheses": {
+    "destination_key1_maps_to_selector24": {
+      "expected_changed_selector_ids": [
+        24
+      ]
+    },
+    "reference_copied_verbatim_from_source_key1": {
+      "source_selector_id": 8,
+      "expected_after_hex": "00000000d007000000"
+    },
+    "only_expected_endpoint_bytes_change": {
+      "expected_changed_plain_packet_indices": [
+        415
+      ],
+      "expected_byte_changes": [
+        {
+          "offset": 4,
+          "old": 204,
+          "new": 208
+        },
+        {
+          "offset": 5,
+          "old": 15,
+          "new": 7
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Sound10 key1 mapping is independent of its already observed block mapping; a different changed selector is reported",
+    "Source Sound9/key1 and destination Sound10/key1 are existing references; no arbitrary slice numbering or sample allocation is inferred",
+    "The exact raw-copy hypothesis tests the retained start/end/owner record, not Tone/filter rendering parameters",
+    "No Sound10 writer or preview is enabled before this independent single-slice control passes"
+  ]
+}

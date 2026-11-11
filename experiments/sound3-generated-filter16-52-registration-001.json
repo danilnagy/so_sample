@@ -1,0 +1,59 @@
+{
+  "analysis_version": "generated-filter16-52-exact-target-and-listening-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_both_generated_recaptures": true,
+  "independent_physical_target_data_already_observed": true,
+  "source_artifact": "experiments/event-061-h-return-sound3-filter-A-center/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "4f61d7c7dfdfbd322f0649522b76dd3c33466c6c6c0451d1f00ae102394aa09b",
+  "source_capture": "experiments/event-061-h-return-sound3-filter-A-center/capture.wav",
+  "source_capture_sha256": "46e9753ed031a6c6127f83ff472ea3ee110951cfd86c21bcc72cc420e62719d9",
+  "source_body_sha256": "8f80a398ac7130f1802ba865985cb3f7174f9f0129af1182eb6d5da450d6a341",
+  "source_observation_sha256": "901c40112488643fb0d347a86981eaa25f40b04d3bf6a2d6d748ad3162f60352",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "edited-sound3-filter16-lowpass-001",
+      "raw_filter_value": 16,
+      "expected_body_sha256": "b5e315b3f0703190ad42652eb57616385e52b2c92df04e3aa2bc1b936c005c37",
+      "expected_audible_filter": "low_pass",
+      "restore_wav_sha256": "02e8c8031de87341172207fa436a440a9660d8395142529da04bd21b12c84a16",
+      "edited_artifact_sha256": "90bf684d4cf56b11c68a4f59a48b804aba80a3f6d3533891ad34dfac6cc3bfc4",
+      "software_validation_sha256": "d30441c0d87f4c7f7d575d6e14b4c5ba614485aff4fa0bc443f44f1f5ec31eb9",
+      "independent_physical_artifact": "experiments/event-059-f-sound3-filter-A-lowpass-interior/derived/analysis-001/capture.symbols.npz",
+      "independent_physical_artifact_sha256": "65da4be9b2ee2aea74def115d846f792f3da2f7408e6f086812f7a7873746913",
+      "independent_physical_observation": "experiments/event-059-f-sound3-filter-A-lowpass-interior/hardware-observation-001.json",
+      "independent_physical_observation_sha256": "62cd0f8d8ba791875df75a2347d28a8106d0a6bd4fa94d51719efb01171daea4"
+    },
+    {
+      "experiment_id": "edited-sound3-filter52-highpass-001",
+      "raw_filter_value": 52,
+      "expected_body_sha256": "fd5c085eae8bcea16f167c240d014f770e588c0a205c1117c732021afa0102af",
+      "expected_audible_filter": "high_pass",
+      "restore_wav_sha256": "5b310899d7ce1ea9e92e062ac77fc8a24df1267c07b924db7041fce258c0ee31",
+      "edited_artifact_sha256": "44b6144832d63059ff643fdd5edceb804ff5eb7841abbe3efb45397647eff0dd",
+      "software_validation_sha256": "2e2c36dbea664d5f411f34a049ca18a1619e4aa0603ad29a097e31efac9de903",
+      "independent_physical_artifact": "experiments/event-060-g-sound3-filter-A-highpass-interior/derived/analysis-001/capture.symbols.npz",
+      "independent_physical_artifact_sha256": "012180a7600c555e11906dfee20c196d74a49bbec4b0084ff72d3c3c175cb6b8",
+      "independent_physical_observation": "experiments/event-060-g-sound3-filter-A-highpass-interior/hardware-observation-001.json",
+      "independent_physical_observation_sha256": "fa7bd7252b856278eb8a9aa2035a81b2c47620fc77b174ae10ef04d62858cda4"
+    }
+  ],
+  "limits": [
+    "Targets reproduce known physical bodies; this new test concerns generated reception and saved-pattern audible behavior",
+    "Both generated targets and their hashes are frozen before recapture; no new general cutoff law or amplitude measurement is predicted",
+    "Restore16 and verify native plus user listening before requesting52; retain mismatches without changing targets",
+    "Only fixed16/52 from exact center are allowed by research constructor; public pitch/volume guards stay unchanged",
+    "Contiguous branch ordering has support but full field width, all-code law, numeric UI and resonance remain unknown"
+  ]
+}

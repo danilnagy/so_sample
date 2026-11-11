@@ -1,0 +1,40 @@
+{
+  "analysis_version": "volume36-ordinary-playback-persistence-preregistration-0.1",
+  "registered_before_capture": true,
+  "hardware_verified": false,
+  "experiment_id": "event-050-a-sound3-volume36-post-playback",
+  "source_artifact": "experiments/edited-sound3-volume36-002/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "1ee4a7cc78fb7e39c5e236772d2d2f14f865b64377a39a3f2387588ea96ac751",
+  "source_capture": "experiments/edited-sound3-volume36-002/capture.wav",
+  "source_capture_sha256": "476cb53192991b06b453929bfd5549cc9eb64715fb29f86c2226949336250c86",
+  "source_body_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+  "source_hardware_observation_sha256": "f23a108d81b700d86a4d2dbe3ee7b7bbc8920a78441810df21652d66ea51f008",
+  "prior_ordinary_playback_sha256": "e41260c6a054c27b714ed203dc92aaab57299d3abbd2da853b1d98709c6f22ea",
+  "expected_complete_body_after_ordinary_playback_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+  "expected_sound3_pattern1_raw_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "purpose": "Verify persistence after the ordinary playback already recorded, before any new TONE pitch knob action",
+  "limits": [
+    "No new restore or knob movement requested",
+    "A changed complete body is retained as a failed persistence prediction, without fitting it into later pitch data",
+    "No TONE pitch field or pitch endpoint value is assumed; the recorded A probe is a later control"
+  ]
+}

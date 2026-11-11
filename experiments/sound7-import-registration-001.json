@@ -1,0 +1,88 @@
+{
+  "analysis_version": "sound7-import-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-sound7-import-001",
+  "source_artifact": "experiments/compiled-volume-zero-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "24e8365d194a6cc935e05fd46924474ef175d46dbc05bdfe569285e02deb96a5",
+  "source_capture_sha256": "6ff50f9a471d035cac0814bb2a858816378574341d14424ed1b6904475122645",
+  "tone": {
+    "path": "experiments/sound7-import-tone-001/tone-600hz-0.3s.wav",
+    "sha256": "8389d8672069cb2b3b460aaf69da92c11cee937a376698460e7575b16b0042fe",
+    "hz": 600.0,
+    "seconds": 0.3
+  },
+  "import_report_sha256": "3e8ad109fa47e089ec385587007008ed136b3e4f005e98aff58df6bfa680c6ca",
+  "import_allocation": {
+    "sound_slot": 7,
+    "source_record_was_empty": true,
+    "source_capacity_codes": 0,
+    "source_header_hex": "",
+    "capacity_codes": 32768,
+    "endpoint": 7032,
+    "zero_tail_codes": 25736,
+    "total_backing_capacity_codes": 163840
+  },
+  "stage_artifact_sha256": "bc10514dc067038d212ef9a41537e236ca0dd1639964dcb36585e4bfc45f7c16",
+  "plan_sha256": "16786a4ae4115d3511c7d7f91da87c30c712c45963defc0fc9712c715579ca79",
+  "compile_report_sha256": "5e619ce42d332801fd662176d4d6e1cc3ae09d5ff9dc886e6f6f8d9c417b9829",
+  "expected_body_sha256": "21604058143bc07089c007dd8a35a933c61bf6a9135ef30d77812e6d6cdbf946",
+  "edited_artifact_sha256": "3a92df12ad886da6d42b96955cac57dc4c58ba4ecd23f32a5eb9d111342d6bb3",
+  "restore_wav_sha256": "011df43a350953bab4ae61089a35e7896c66775358ff54834051b5e04b55280f",
+  "sound3_tone_hz": 750.0,
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      50.0,
+      60.0,
+      70.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "imported_tone_on_even_steps": [
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477,
+      0.0,
+      -386.31371386483477
+    ]
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly, including every imported Sound7 code",
+    "Pitches are measured with the frozen grid method 50-90 ms after each grid onset; cents relative to step 1",
+    "The model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops"
+  ],
+  "limits": [
+    "One import into empty Sound7 with a 32768-code capacity; other slots and capacities are not tested here",
+    "Total serialized sample capacity stays inside the 172032-code calibration budget"
+  ]
+}

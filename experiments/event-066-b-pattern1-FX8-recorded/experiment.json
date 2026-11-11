@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-066-b-pattern1-FX8-recorded",
+  "capture_status": "validated_FX8_footer7_global1",
+  "registration": "../pattern1-FX8-clear-return-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1 selected, both knobs and recording settings unchanged; stop playback",
+    "Press WRITE once to enable write mode and confirm its indicator; leave WRITE released",
+    "Start playback and hold FX plus key8 together for about8 seconds",
+    "Release FX/key, immediately stop playback, then switch write mode off",
+    "Save full capture.wav here at established reduced level with one second trailing silence before proceeding; report actual audible changes",
+    "No restore, knob adjustment or separate playback.wav is needed"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../pattern1-FX8-clear-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "input_identity_observation": "../pattern1-FX8-clear-input-identity-observation-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-FX8-recorded-001/project.json"
+}

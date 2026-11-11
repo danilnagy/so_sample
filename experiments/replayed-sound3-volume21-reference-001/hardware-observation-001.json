@@ -1,0 +1,39 @@
+{
+  "analysis_version": "uniform-volume21-reference-replay-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Genuine uniform21 body accepted by physical restore and recaptured exactly; user confirms lower-level sound; separate ordinary playback passes frozen reference gain method",
+  "checks": {
+    "reference_entire_body_and_native_preservation_pass": true,
+    "reference_capture_and_artifact_hashes_match": true,
+    "reference_audio_all_frozen_checks_pass": true,
+    "audio_identity_and_frozen_method_match": true,
+    "pair_registration_matches_native_and_method": true,
+    "all_export_content_hashes_match": true,
+    "entire_export_body_exact": true,
+    "reference_capture_not_clipped": true,
+    "both_prepared_waveforms_and_artifacts_remain_registered": true
+  },
+  "capture_sha256": "631cc2937a553685d71e76ca7334d60536e23a6e050d1bfa202da769fc71181b",
+  "artifact_sha256": "3207663bfaeb3f26a07a4dc5096634124163bc1990dbcf1ed8038ec8e36fee87",
+  "artifact_path": "experiments/replayed-sound3-volume21-reference-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "937b33f0c2be408e8f2321e3dabb146b2ae74976ed9ded6ddec3a3214cdd13e4",
+  "playback_sha256": "1756980622b9dbb2a4441b55fc20a8a12ee4fc7418cb523796ca64122c4ee339",
+  "native_results_sha256": "517b3c82ce7e70d2aa8972a7f43ebbe4f109f0cf89b0ba90824f19a1edd94663",
+  "audio_results_sha256": "7a2b440fd5a180b825f13bc374e7785bbba408c66af9e2bc454bac70cd69c540",
+  "manual_observation_sha256": "a3a165aef27a681a3b6943dcb6855b4374c0c4736548632a406da610ced4963a",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.16064453125,
+      0.15496826171875
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "packed_order_definitively_confirmed": false,
+  "volume_writer_verified": false,
+  "limits": [
+    "Reference21 is common to both proposed orderings; candidate audio is needed to distinguish them",
+    "No gain law, numerical UI reading, candidate acceptance or public volume writer claimed",
+    "Raw sample previews preserve sample codes and do not render pattern gain"
+  ]
+}

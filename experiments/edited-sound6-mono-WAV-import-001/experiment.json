@@ -1,0 +1,29 @@
+{
+  "experiment_id": "edited-sound6-mono-WAV-import-001",
+  "capture_status": "hardware_verified_exact_public_mono_WAV_import",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sound6-one-page-import-001",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "import_report": "import-report.json",
+  "input_sample": "input-sample.wav",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "done and confirmed"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "recapture_results": "hardware-recapture-results-001.json",
+    "manual_observation": "manual-observation.json"
+  },
+  "planned_actions": [
+    "Restore complete restore.wav through proven stereo receive path at established playback level",
+    "Return to Pattern1/Sound8/TONE stopped/write off with both knobs/settings unchanged",
+    "Before audition/playback save complete backup here as capture.wav at established reduced levels with one second trailing silence",
+    "After saving check Sound6/key1 rising sweep about0.75seconds, Sound7/key1 silent and Sound4/Sound5/Pattern1 unchanged; return to Sound8/TONE and report receive acceptance and checks"
+  ],
+  "source_sha256": "ea299978cae355585815d8677d4835f514209a41c2cc36b3f2976b7a5dc1287c",
+  "analysis": "derived/analysis-002",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-mono-WAV-sound6-import-001/project.json"
+}

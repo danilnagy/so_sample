@@ -1,0 +1,82 @@
+{
+  "analysis_version": "FX-position-map-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "edited-pattern1-FX-position-map-001",
+  "source_artifact": "experiments/edited-pattern1-single-tone-no-FX-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "36e560598b3a006c2c668a3c3c83edb7bce3d101de3f2fbe1a243e41ddf8961e",
+  "source_capture_sha256": "7f19bbb61714693a0d88c198232e6c420b5e25f2fc3b50601133ffcc1b22e6b6",
+  "source_body_sha256": "a97e89da4ebdc2bb236209d0ef295a1473e6a58757cca0165c466c4c667602a6",
+  "expected_body_sha256": "36cef7116a3e9bc6c50e1e770e4b0de52d36887f415f8e8729222694144d3ccf",
+  "edited_artifact_sha256": "b546df80d4fb79d87227ecf7f3a1f0e34f920b109026e37ac8e6516c79c5c3e8",
+  "restore_wav_sha256": "a48fd9e86aa47f7d5b112756995bf53b7fcd937f8c790741358627b2e980a44b",
+  "software_validation_sha256": "ea5a6dd7a44fd1a9a6182550d0b6e04376e61405a5ca359b35ec732e803683cf",
+  "note_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "footer": "ffff6fffffff6fff",
+  "reference_frequency_hz": 1190.4169592315686,
+  "method_settings": {
+    "band_hz": [
+      600.0,
+      3500.0
+    ],
+    "search_hz": [
+      900.0,
+      2700.0
+    ],
+    "window_seconds": 0.02,
+    "hop_seconds": 0.01,
+    "track_seconds": 0.4,
+    "onset_fraction_of_peak": 0.15,
+    "min_loop_gap_seconds": 1.0,
+    "loops": 5,
+    "fft_size": 32768,
+    "step1_window_ms": [
+      20.0,
+      130.0
+    ],
+    "min_relative_amplitude": 0.2,
+    "effect_min_rise": 0.1,
+    "none_max_deviation": 0.01,
+    "min_agreeing_loops": 4,
+    "min_note_gap_seconds": 0.3,
+    "step_seconds": 0.15,
+    "steps_per_loop": 16,
+    "step_tolerance_seconds": 0.03,
+    "note_track_seconds": 0.2
+  },
+  "method_script_sha256": "d70384f93b9113ac811ebb185c1dfd7e9c393887c002dbded17cf55c672a2f00",
+  "step1_method_script_sha256": "94e277367ad5f9f7d30ff1d178906654865ce9b7bd0157ceeeaa1722cc8b7e13",
+  "predictions": {
+    "sequential_high_nibble_first": {
+      "1": "none",
+      "5": "effect",
+      "9": "none",
+      "13": "effect"
+    },
+    "effect_on_no_note_step": {
+      "1": "none",
+      "5": "none",
+      "9": "none",
+      "13": "none"
+    }
+  },
+  "decision": [
+    "The backup must equal the target exactly; only Pattern 1 may differ from the single-tone source",
+    "Each note is classified 20-130 ms after its onset with the frozen step-1 thresholds",
+    "A prediction holds only if exactly steps 1, 5, 9 and 13 are found and each matches in its five-loop median and at least 4 of 5 loops",
+    "Anything else is inconclusive; no retuning after data"
+  ],
+  "builds_on": [
+    "experiments/pattern1-single-tone-FX-order-pitch-track-decision-001.json",
+    "docs/generated-pattern1-FX-mixed-results.md"
+  ],
+  "limits": [
+    "Tests footer bytes 0, 2, 4 and 6 high nibbles through four notes; low nibbles of bytes 1..7 are inferred, not observed",
+    "Pattern 1 and effect code 6 only; no general per-step effect writer is enabled"
+  ]
+}

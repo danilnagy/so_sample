@@ -1,0 +1,226 @@
+{
+  "analysis_version": "voice-release-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of four overflow scenarios with 417, 222, 84 and -14 ms left on the short notes, and whether the fifth note plays",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "model_support": {
+    "never_steal": {
+      "holds": false,
+      "mismatches": [
+        [
+          11,
+          "5"
+        ]
+      ]
+    },
+    "steal_nearest_end": {
+      "holds": false,
+      "mismatches": [
+        [
+          3,
+          "5"
+        ],
+        [
+          3,
+          "4k1p1"
+        ],
+        [
+          7,
+          "5"
+        ],
+        [
+          7,
+          "4k1p7"
+        ]
+      ]
+    },
+    "release_under_100ms": {
+      "holds": true,
+      "mismatches": []
+    },
+    "steal_oldest": {
+      "holds": false,
+      "mismatches": [
+        [
+          3,
+          "1k13p13"
+        ],
+        [
+          3,
+          "5"
+        ],
+        [
+          7,
+          "1k13p13"
+        ],
+        [
+          7,
+          "5"
+        ],
+        [
+          11,
+          "1k13p13"
+        ],
+        [
+          15,
+          "1k13p13"
+        ]
+      ]
+    }
+  },
+  "classification": "release_under_100ms",
+  "steps": {
+    "3": {
+      "present": {
+        "1k13p13": true,
+        "5": false,
+        "2k1p1": true,
+        "3k1p1": true,
+        "4k1p1": true,
+        "2k1p7": false,
+        "3k1p7": false,
+        "4k1p7": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      },
+      "median_db_vs_solo": {
+        "1k13p13": -0.47570866854714555,
+        "5": -31.22913581757207,
+        "2k1p1": -0.5040156084486145,
+        "3k1p1": -0.5174167627406132,
+        "4k1p1": -0.4705176363629685,
+        "2k1p7": -27.922090948707208,
+        "3k1p7": -28.174553307942944,
+        "4k1p7": -29.635674495966974,
+        "2": -39.57774761808133,
+        "3": -34.97165323938381,
+        "4": -32.54910134794191,
+        "2k1p19": -28.336432153792078,
+        "3k1p19": -30.921890124971586,
+        "4k1p19": -30.94449487668144
+      }
+    },
+    "7": {
+      "present": {
+        "1k13p13": true,
+        "5": false,
+        "2k1p1": false,
+        "3k1p1": false,
+        "4k1p1": false,
+        "2k1p7": true,
+        "3k1p7": true,
+        "4k1p7": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      },
+      "median_db_vs_solo": {
+        "1k13p13": -0.23624990706215157,
+        "5": -35.37259937188476,
+        "2k1p1": -48.893921695464485,
+        "3k1p1": -44.14072842595304,
+        "4k1p1": -41.509593431359235,
+        "2k1p7": -0.25071559977112756,
+        "3k1p7": -0.3109281282858548,
+        "4k1p7": -0.22543417403518712,
+        "2": -47.988648915321804,
+        "3": -40.57952303109205,
+        "4": -33.65149356998654,
+        "2k1p19": -41.97422517834135,
+        "3k1p19": -46.11784965583762,
+        "4k1p19": -50.56392762657942
+      }
+    },
+    "11": {
+      "present": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p1": false,
+        "3k1p1": false,
+        "4k1p1": false,
+        "2k1p7": false,
+        "3k1p7": false,
+        "4k1p7": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      },
+      "median_db_vs_solo": {
+        "1k13p13": 0.001591630055018774,
+        "5": 0.0016015912912899543,
+        "2k1p1": -58.25663111757358,
+        "3k1p1": -57.104527157360664,
+        "4k1p1": -66.23140451663195,
+        "2k1p7": -68.95519027963712,
+        "3k1p7": -74.31778413322252,
+        "4k1p7": -67.22774769503985,
+        "2": -64.04596122644944,
+        "3": -55.304062770815946,
+        "4": -62.33852287746872,
+        "2k1p19": -62.42664584444839,
+        "3k1p19": -54.92006953866253,
+        "4k1p19": -62.189507178540694
+      }
+    },
+    "15": {
+      "present": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p1": false,
+        "3k1p1": false,
+        "4k1p1": false,
+        "2k1p7": false,
+        "3k1p7": false,
+        "4k1p7": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      },
+      "median_db_vs_solo": {
+        "1k13p13": 0.0019054169424323288,
+        "5": 0.0015764245330248709,
+        "2k1p1": -58.66958495232402,
+        "3k1p1": -57.422243757830344,
+        "4k1p1": -68.50169353935676,
+        "2k1p7": -66.98879875663212,
+        "3k1p7": -69.42892745971331,
+        "4k1p7": -66.20752478067504,
+        "2": -65.80469683461665,
+        "3": -55.02150353881688,
+        "4": -62.27090036952557,
+        "2k1p19": -62.660208556177125,
+        "3k1p19": -54.859388551229344,
+        "4k1p19": -62.05871209968517
+      }
+    }
+  },
+  "decision_sha256": "a0f2dd193b01f7d1473575bba922ee43d095466a83dc3290de5c1c15eba68362",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "5b756ac7b4d0b9a76a1ecbd6e75be5cd07fd3d7d24f06db2720088e31f0d2f19",
+  "session_answers": [],
+  "limits": [
+    "Four remaining times, 417, 222, 84 and -14 ms; the threshold is bracketed, not located",
+    "The fifth note is always Sound5, a higher number than the short notes"
+  ]
+}

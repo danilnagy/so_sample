@@ -1,0 +1,42 @@
+{
+  "analysis_version": "swing-range-to-generated-timing-pair-workflow-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "physical_range_all_controls_and_returns": true,
+    "three_independent_numeric_readings_preserved": true,
+    "source_hash_and_body_pin_match": true,
+    "physical_series_hash_matches": true,
+    "registered_pair_isolates_swing": true,
+    "registration_remains_hardware_unverified": true,
+    "immutable_hardware_observations_match_all_input_files": true,
+    "swing0_registered_software_and_files_match": true,
+    "swing0_hardware_actions_still_pending": true,
+    "swing6_registered_software_and_files_match": true,
+    "swing6_hardware_actions_still_pending": true,
+    "literal_pair_differs_only_at_second_global130": true,
+    "tempo_guard_still_rejects_unknown_swing_context": true
+  },
+  "series_results_sha256": "06077df5b30b4f817e65aee42335b1a19436d2393b0446e5427f4cf443abcf2c",
+  "pair_registration_sha256": "3319cead85f5fe48bafa5b0b78b6b598af1c37481d321ef0993b358cbde91437",
+  "validation": {
+    "affected_tests_passed": 40,
+    "affected_test_seconds": 3.06,
+    "ruff_check_passed": true,
+    "formatted_python_files": 209,
+    "prior_full_suite_before_research_changes": {
+      "passed": 740,
+      "seconds": 87.72
+    },
+    "scope": "Research scripts, documentation and immutable data only; public writers unchanged"
+  },
+  "implementation_sha256": {
+    "scripts/prepare_swing_timing_pair.py": "674495976060347c480729739b424900b249bd436ed74018712fcc75e5f67140",
+    "scripts/check_swing_timing_recapture.py": "f1e24c2a12089ed70be37b60f70b058e79e408f07ca59027c59be1401b9b5c5f",
+    "tests/test_swing_timing_pair.py": "75634d28373b4c5a20df86112edaf910a637e6094826117b2a749234726e4bb2"
+  },
+  "limits": [
+    "Device restore and ordinary playback pending; software validation does not prove audible timing",
+    "No public swing writer enabled and no timing units assumed"
+  ]
+}

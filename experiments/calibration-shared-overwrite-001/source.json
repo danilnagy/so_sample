@@ -1,0 +1,13 @@
+{
+  "kind": "ordinary_line_input_calibration_audio",
+  "frequency_hz": 1250,
+  "duration_seconds": 2,
+  "sample_rate_hz": 44100,
+  "channels": 2,
+  "identical_channels": true,
+  "pcm_subtype": "PCM_16",
+  "peak_requested": 0.25,
+  "fade_frames": 221,
+  "wav_sha256": "94853f1452fbef12fe4f8e99e33458d7f9f8b63fec65a308f5ddae8c5d438e08",
+  "purpose": "Longer distinct sample for re-recording the owner of a retained shared copy"
+}

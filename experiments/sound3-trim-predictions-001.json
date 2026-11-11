@@ -1,0 +1,124 @@
+{
+  "status": "registered_before_sound3_trim_capture",
+  "analysis_version": "sound3-trim-predictions-0.1",
+  "reference_artifact": "experiments/empty-001-e-copy-to-3/derived/analysis-001/capture.symbols.npz",
+  "reference_artifact_sha256": "faf898606ae701061de005962cf4abf8f60af3338531fc720bcabfe3d03c3ccb",
+  "expected_before_artifact": "experiments/empty-001-e-copy-to-3/derived/analysis-001/capture.symbols.npz",
+  "expected_after_artifact": "experiments/empty-001-f-sound3-trim-min/derived/analysis-001/capture.symbols.npz",
+  "primary_hypothesis": "Sound3 length is serialized in its existing inline reference record; shared content and record length remain unchanged.",
+  "first_change_models": {
+    "inline_slots": {
+      "first_raw_change_window": [
+        177131,
+        177172
+      ],
+      "reason": "Candidate Sound3 reference region begins near177132 and spans40 positions; one preceding coordinate included for staggered lookahead. A nonempty difference is required."
+    }
+  },
+  "growth_symbols_per_channel_range_inclusive": [
+    -12,
+    12
+  ],
+  "growth_allowance_reason": "No changing-region growth expected; complete-count allowance covers observed variable terminal constant-carrier lengths. Test empirical terminal boundary separately.",
+  "reference_prefix_span": [
+    0,
+    177131
+  ],
+  "reference_prefix_sha256": {
+    "left": "5ab08bbf978b27b2965eeb618a17832a07d243d0dd6be23ba4aab9eda617009c",
+    "right": "4ab161150981984e5e096a8708af5fb075aa6674b8cb34eccd27cd0dbdc9cfe4"
+  },
+  "anchor_predictions": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6"
+    }
+  ],
+  "last_nonzero_increment_predictions": {
+    "left": {
+      "before_index": 178792,
+      "expected_after_index": 178792,
+      "expected_displacement": 0
+    },
+    "right": {
+      "before_index": 178792,
+      "expected_after_index": 178792,
+      "expected_displacement": 0
+    }
+  },
+  "applicability": "Before is the pinned Sound3-copy capture. User must retain sounds1/2/3/8 and unchanged controls except Sound3 length; expected starting FX mode TONE is inferred from prior protocol, not independently observed. Return to TONE/Sound8 before capture.",
+  "limits": [
+    "Transport positions are not native byte offsets or verified sound fields.",
+    "No difference would fail the predicted serialized parameter change, not prove that trim has no effect.",
+    "Changes elsewhere may reflect parameter serialization or UI-state differences; do not attribute them automatically to waveform sample bytes.",
+    "No shift, tail trimming or revised windows to rescue failure."
+  ]
+}

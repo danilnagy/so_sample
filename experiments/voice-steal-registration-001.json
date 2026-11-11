@@ -1,0 +1,245 @@
+{
+  "analysis_version": "voice-steal-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-voice-steal-001",
+  "source_artifact": "experiments/compiled-voice-priority-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "23fa9343b05acc3521260871a187cd7f10e0e8c19ffed732c38a4645be3b6ce3",
+  "source_capture_sha256": "d06c4a391562b8a9c4d78d2baa4b11553aa3e074de7e21e9f38c737a906b0aa4",
+  "voice_hz": {
+    "1k13": 299.66141537533633,
+    "8k13": 549.581283258982,
+    "1": 599.3228307506727,
+    "2": 653.5660418548391,
+    "3": 712.7192052499305,
+    "4": 777.2258198307022,
+    "5": 847.5698387829855,
+    "11": 1500.0,
+    "12": 500.0,
+    "14": 400.0
+  },
+  "solo_steps": {
+    "1k13": 1,
+    "8k13": 5,
+    "1": 9,
+    "2": 10,
+    "3": 11,
+    "4": 12,
+    "5": 13,
+    "11": 14,
+    "12": 15,
+    "14": 16
+  },
+  "scenario_notes": {
+    "1": {
+      "1": 13
+    },
+    "2": {
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "3": {
+      "5": 1
+    },
+    "5": {
+      "1": 13
+    },
+    "6": {
+      "2": 1,
+      "3": 1
+    },
+    "7": {
+      "5": 1
+    },
+    "9": {
+      "8": 13
+    },
+    "10": {
+      "11": 1,
+      "12": 1,
+      "14": 1
+    },
+    "11": {
+      "1": 1
+    },
+    "13": {
+      "8": 13
+    },
+    "15": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  "predictions": {
+    "drop_new": {
+      "2": {
+        "1k13": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "3": {
+        "1k13": true,
+        "5": false
+      },
+      "4": {
+        "1k13": true
+      },
+      "7": {
+        "1k13": true,
+        "5": true
+      },
+      "8": {
+        "1k13": true
+      },
+      "10": {
+        "8k13": true,
+        "11": true,
+        "12": true,
+        "14": true
+      },
+      "11": {
+        "8k13": true,
+        "1": false
+      },
+      "12": {
+        "8k13": true
+      },
+      "15": {
+        "8k13": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": false
+      },
+      "16": {
+        "8k13": true
+      }
+    },
+    "steal_oldest": {
+      "2": {
+        "1k13": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "3": {
+        "1k13": false,
+        "5": true
+      },
+      "4": {
+        "1k13": false
+      },
+      "7": {
+        "1k13": true,
+        "5": true
+      },
+      "8": {
+        "1k13": true
+      },
+      "10": {
+        "8k13": true,
+        "11": true,
+        "12": true,
+        "14": true
+      },
+      "11": {
+        "8k13": false,
+        "1": true
+      },
+      "12": {
+        "8k13": false
+      },
+      "15": {
+        "8k13": false,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "16": {
+        "8k13": false
+      }
+    },
+    "lowest_sound_wins": {
+      "2": {
+        "1k13": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "3": {
+        "1k13": true,
+        "5": false
+      },
+      "4": {
+        "1k13": true
+      },
+      "7": {
+        "1k13": true,
+        "5": true
+      },
+      "8": {
+        "1k13": true
+      },
+      "10": {
+        "8k13": true,
+        "11": true,
+        "12": true,
+        "14": true
+      },
+      "11": {
+        "8k13": true,
+        "1": true
+      },
+      "12": {
+        "8k13": true
+      },
+      "15": {
+        "8k13": false,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      },
+      "16": {
+        "8k13": false
+      }
+    }
+  },
+  "plan_sha256": "03978228871cae5fcf8724fee1a2eced10bff0e5a65c42d742a4ab37d8993914",
+  "expected_body_sha256": "dcd00ae49b82953538fd2e7a1619bdba3b0139256b22f58ade6a865e1aa7e365",
+  "edited_artifact_sha256": "a4029875f7e201f28ecc1a30811cdbf599f684c7addca9754a7d5601f97ae60a",
+  "restore_wav_sha256": "86a3c1417ffd35c9d1596e6e31c57a3f372e7ed85386afa7d652af8d245eb6ec",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "cycles_measured": 3,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "A model holds when every listed voice's majority presence over three cycles matches its prediction"
+  ],
+  "limits": [
+    "Overflow by one or four notes at 60 BPM; other timings and same-sound retriggers are not tested"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "analysis_version": "polyphony-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-polyphony-001",
+  "source_artifact": "experiments/compiled-param-only-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "cfcfcb325a75126f4335c3a077c79665efb99b7fe46b21558045bec2e4aeef75",
+  "source_capture_sha256": "b4eb26a8f42352bf2bff1d15f604ffcc6681cffeeee96157bc5a446e8ee75cec",
+  "voices_hz": {
+    "1": 599.3228307506727,
+    "2": 653.5660418548391,
+    "3": 712.7192052499305,
+    "4": 777.2258198307022,
+    "5": 847.5698387829855,
+    "6": 924.2816628119948,
+    "7": 1007.9366418352505,
+    "8": 1099.162566517964,
+    "13": 300.0,
+    "14": 400.0,
+    "11": 1500.0,
+    "12": 500.0,
+    "15": 1200.0,
+    "16": 1350.0
+  },
+  "solo_steps": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "13": 9,
+    "14": 10,
+    "11": 11,
+    "12": 12,
+    "15": 13,
+    "16": 14
+  },
+  "stacks": {
+    "1": [
+      1,
+      2
+    ],
+    "3": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "5": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "9": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14
+    ],
+    "11": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      11,
+      12,
+      15,
+      16
+    ],
+    "13": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      11,
+      12,
+      15,
+      16
+    ],
+    "15": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "reimported_hits": {
+    "11": {
+      "path": "experiments/polyphony-hits-001/sound11-1500hz.wav",
+      "sha256": "6be374bc7871be8e9170b3e0f82c25e0807ab2e615a8572ca195c915f3dd7d9e"
+    },
+    "12": {
+      "path": "experiments/polyphony-hits-001/sound12-500hz.wav",
+      "sha256": "031ac08c8b5b4213d88318cc5500d2785a7c3e4d6b66e3d8a819636f0338d423"
+    },
+    "15": {
+      "path": "experiments/polyphony-hits-001/sound15-1200hz.wav",
+      "sha256": "6d59c6e4c3f6f47252f90149033bb1e39931e2894bd477a224369a2dae738d28"
+    },
+    "16": {
+      "path": "experiments/polyphony-hits-001/sound16-1350hz.wav",
+      "sha256": "f75d2d593453027f5bf3db68b7d94bfb3ac59c8b25c07cb8ecd2e2221479bd92"
+    }
+  },
+  "plan_sha256": "4aa936bef5ae7aef97c478354f501a710810908a1a4f244b21ed79a16a8d2532",
+  "expected_body_sha256": "ea0501984c490f3258951057e9844b1094148002cc06454753a653f18b1d0d72",
+  "edited_artifact_sha256": "2b18dd64da18a78bf9ab2287a9d1d29df4a5eee2a7ff4b8efde1355123ead899",
+  "restore_wav_sha256": "ecf6280de31a9abf09e009f4d1a973a006c815571a0bfdcb1541010bdf575a4d",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "method_script_sha256": "f5cd79bde7d2a1563f1ba518e4d9d32a44ef274691d25e4b5e014d3571f88de1",
+  "models": {
+    "voice_limit_2": 2,
+    "voice_limit_4": 4,
+    "voice_limit_6": 6,
+    "voice_limit_8": 8,
+    "voice_limit_10": 10,
+    "voice_limit_12": 12,
+    "voice_limit_14": 14
+  },
+  "cycles_measured": 3,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "A voice is present when its level is within 10 dB of its solo level in the same cycle",
+    "voice_limit_L holds when every stack's majority count over three cycles equals min(requested, L)"
+  ],
+  "limits": [
+    "Fourteen distinct sounds; Sound9 and Sound10, whose hits are 43 ms, are not stacked",
+    "Presence is judged 100 to 240 ms after the step, so voices that cut out later are not seen"
+  ]
+}

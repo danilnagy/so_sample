@@ -1,0 +1,83 @@
+{
+  "analysis_version": "fx-onsets-120-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-fx-onsets-120-001",
+  "source_artifact": "experiments/compiled-fx-period-120-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "c49f3f5affbc18ae47147387169e73c1f479254a115b93162d7af439fb75c7c3",
+  "source_capture_sha256": "2cf99d55f9fd150725bf74fa07eca8bf159ccdccef63e128243840fc2565cc15",
+  "held_effects": {
+    "1": 9,
+    "2": 10,
+    "3": 12,
+    "4": 13
+  },
+  "hold_steps": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "control_pattern": 5,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "tempo": 120,
+  "key_hz": [
+    783.9891779757236,
+    830.6076004423604,
+    932.325508533865,
+    987.7644682213922,
+    523.25,
+    587.3282667778794,
+    622.2526229251738,
+    698.4549536944704,
+    391.9945889878618,
+    415.3038002211802,
+    466.1627542669325,
+    493.8822341106961,
+    261.625,
+    293.6641333889397,
+    311.1263114625869,
+    349.2274768472352
+  ],
+  "plan_sha256": "f621dc01a93213f833fb1a808e5d2e17546e62e8392a4cfcb2da1450c2e993ac",
+  "expected_body_sha256": "3b69e18e2fc831f1903da5d2dcfc41fa08aef94e252ddb43c0a189c04c7fc611",
+  "edited_artifact_sha256": "b9412262da03af3d83fe08d80397c140b64e8eaf75360d48efc1829a06770a39",
+  "restore_wav_sha256": "152aa58e4c5cfa77f4139bf8298820e9d9bfe19b17384b366447cef1ca998cda",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      6000.0
+    ],
+    "envelope_window_seconds": 0.003,
+    "skip_seconds": 0.02,
+    "onset_fraction": 0.15,
+    "refractory_seconds": 0.025,
+    "fft_size": 32768,
+    "window_starts_ms": [
+      50.0,
+      90.0
+    ],
+    "window_ms": 40.0,
+    "step_seconds": 0.125
+  },
+  "method_script_sha256": "809f937dbb21a505e996fb2c686ac6f695c65dc3b4cb421b77f80b1951e0a648",
+  "descriptor_method_script_sha256": "701039b3217f48c0c8dec7ad4ede0be844a043ce9217a7197eb37c3d273bcb06",
+  "cycles_measured": 2,
+  "hypotheses": {
+    "exact_reception": "the backup equals the target exactly",
+    "control_run": "the control pattern plays key k on step k within 20 cents at 50 ms, one onset per step"
+  },
+  "limits": [
+    "One tempo, 120 BPM, compared with the 60 BPM run; one melodic tone"
+  ]
+}

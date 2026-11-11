@@ -1,0 +1,20 @@
+{
+  "analysis_version": "sound-knobs-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_backup": true,
+  "experiment_id": "observe-sound-knobs-001",
+  "restore_wav_sha256": "e316b867043e86ec29ce989980fcee746aff129cfdbe4a934d1eeff21451d4e3",
+  "baseline_artifact": "experiments/compiled-no-lock-001/edited.symbols.npz",
+  "baseline_artifact_sha256": "2e1c7341f17f10d673f07e148e16be938b7dffe8bbab38727630c379328bb506",
+  "instructions": "Change Sound 16's knob settings without recording them into the pattern:\n\n1. Keep playback stopped and WRITE off.\n2. Select Sound 16 (hold SOUND and press key 16).\n3. Turn knob A fully counterclockwise, then knob B fully clockwise.\n4. Note the parameter names the screen shows while you turn them.\n\nDo not press WRITE, play or any pattern key before the backup.",
+  "outcomes": [
+    "nothing_stored",
+    "global_records_only",
+    "sound16_cells_only",
+    "sound_records_only",
+    "mixed"
+  ],
+  "limits": [
+    "One sound and one knob movement each way; the knob pages and value scales are reported, not controlled"
+  ]
+}

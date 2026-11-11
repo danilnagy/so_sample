@@ -1,0 +1,418 @@
+{
+  "analysis_version": "bounded-clock-window-diagnostic-0.1",
+  "source_sha256": "9f13e1cb22d5bad338db09218a0d860ac8d010c1cbeb8770013d9c8381fb2765",
+  "policy": "Three fixed waveform clock windows; pre-frame reference alignment and quarter-model checks only. No target data or native CRC inputs.",
+  "models": [
+    {
+      "clock_window_frames": 250,
+      "channels": {
+        "left": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 250,
+            "windows": 4060,
+            "fourth_tone_to_std_min": 0.6572974873649227,
+            "fourth_tone_to_std_median": 0.8207880675305025,
+            "clock_drift_cycles": -5.897181593760356,
+            "mean_square_min": 0.008237285256385804,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "aligned_candidates": [
+            {
+              "quarter_offset": 3,
+              "training_matches": [
+                22
+              ],
+              "error_cells": 5033,
+              "first_errors": [
+                169589,
+                169590,
+                169591,
+                169592,
+                169593,
+                169598,
+                169599,
+                169600,
+                169601,
+                169602,
+                169606,
+                169607,
+                169609,
+                169611,
+                169612,
+                169614,
+                169615,
+                169616,
+                169619,
+                169623
+              ],
+              "last_errors": [
+                179622,
+                179623,
+                179625,
+                179627,
+                179631,
+                179633,
+                179635,
+                179637,
+                179640,
+                179642,
+                179644,
+                179646,
+                179647,
+                179650,
+                179652,
+                179654,
+                179655,
+                179664,
+                179665,
+                179666
+              ]
+            }
+          ]
+        },
+        "right": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 250,
+            "windows": 4060,
+            "fourth_tone_to_std_min": 0.6183123112540517,
+            "fourth_tone_to_std_median": 0.8215355458625144,
+            "clock_drift_cycles": -5.90344992886911,
+            "mean_square_min": 0.007562838263809681,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "aligned_candidates": [
+            {
+              "quarter_offset": 3,
+              "training_matches": [
+                22
+              ],
+              "error_cells": 5115,
+              "first_errors": [
+                169590,
+                169591,
+                169592,
+                169593,
+                169594,
+                169596,
+                169598,
+                169600,
+                169601,
+                169604,
+                169606,
+                169607,
+                169609,
+                169611,
+                169612,
+                169613,
+                169614,
+                169616,
+                169617,
+                169620
+              ],
+              "last_errors": [
+                179632,
+                179635,
+                179637,
+                179638,
+                179639,
+                179640,
+                179641,
+                179642,
+                179643,
+                179647,
+                179648,
+                179649,
+                179650,
+                179651,
+                179652,
+                179653,
+                179654,
+                179656,
+                179661,
+                179667
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "clock_window_frames": 500,
+      "channels": {
+        "left": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 500,
+            "windows": 2030,
+            "fourth_tone_to_std_min": 0.692295748900525,
+            "fourth_tone_to_std_median": 0.8169328127350834,
+            "clock_drift_cycles": -5.897220114491473,
+            "mean_square_min": 0.008381258072331548,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "aligned_candidates": [
+            {
+              "quarter_offset": 2,
+              "training_matches": [
+                44
+              ],
+              "error_cells": 5033,
+              "first_errors": [
+                169567,
+                169568,
+                169569,
+                169570,
+                169571,
+                169576,
+                169577,
+                169578,
+                169579,
+                169580,
+                169584,
+                169585,
+                169587,
+                169589,
+                169590,
+                169592,
+                169593,
+                169594,
+                169597,
+                169601
+              ],
+              "last_errors": [
+                179600,
+                179601,
+                179603,
+                179605,
+                179609,
+                179611,
+                179613,
+                179615,
+                179618,
+                179620,
+                179622,
+                179624,
+                179625,
+                179628,
+                179630,
+                179632,
+                179633,
+                179642,
+                179643,
+                179644
+              ]
+            }
+          ]
+        },
+        "right": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 500,
+            "windows": 2030,
+            "fourth_tone_to_std_min": 0.6986822596619815,
+            "fourth_tone_to_std_median": 0.8158725979385479,
+            "clock_drift_cycles": -5.897500543183501,
+            "mean_square_min": 0.007670280519872904,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "aligned_candidates": [
+            {
+              "quarter_offset": 3,
+              "training_matches": [
+                44
+              ],
+              "error_cells": 5115,
+              "first_errors": [
+                169568,
+                169569,
+                169570,
+                169571,
+                169572,
+                169574,
+                169576,
+                169578,
+                169579,
+                169582,
+                169584,
+                169585,
+                169587,
+                169589,
+                169590,
+                169591,
+                169592,
+                169594,
+                169595,
+                169598
+              ],
+              "last_errors": [
+                179610,
+                179613,
+                179615,
+                179616,
+                179617,
+                179618,
+                179619,
+                179620,
+                179621,
+                179625,
+                179626,
+                179627,
+                179628,
+                179629,
+                179630,
+                179631,
+                179632,
+                179634,
+                179639,
+                179645
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "clock_window_frames": 1000,
+      "channels": {
+        "left": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 1000,
+            "windows": 1015,
+            "fourth_tone_to_std_min": 0.7288392592487618,
+            "fourth_tone_to_std_median": 0.8139393487196037,
+            "clock_drift_cycles": -5.89725385875818,
+            "mean_square_min": 0.008442335828207434,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "aligned_candidates": [
+            {
+              "quarter_offset": 1,
+              "training_matches": [
+                88
+              ],
+              "error_cells": 5033,
+              "first_errors": [
+                169523,
+                169524,
+                169525,
+                169526,
+                169527,
+                169532,
+                169533,
+                169534,
+                169535,
+                169536,
+                169540,
+                169541,
+                169543,
+                169545,
+                169546,
+                169548,
+                169549,
+                169550,
+                169553,
+                169557
+              ],
+              "last_errors": [
+                179556,
+                179557,
+                179559,
+                179561,
+                179565,
+                179567,
+                179569,
+                179571,
+                179574,
+                179576,
+                179578,
+                179580,
+                179581,
+                179584,
+                179586,
+                179588,
+                179589,
+                179598,
+                179599,
+                179600
+              ]
+            }
+          ]
+        },
+        "right": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 1000,
+            "windows": 1015,
+            "fourth_tone_to_std_min": 0.7429551037068026,
+            "fourth_tone_to_std_median": 0.8126154319952195,
+            "clock_drift_cycles": -5.894943150228915,
+            "mean_square_min": 0.007722584900446236,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "aligned_candidates": [
+            {
+              "quarter_offset": 1,
+              "training_matches": [
+                88
+              ],
+              "error_cells": 5115,
+              "first_errors": [
+                169524,
+                169525,
+                169526,
+                169527,
+                169528,
+                169530,
+                169532,
+                169534,
+                169535,
+                169538,
+                169540,
+                169541,
+                169543,
+                169545,
+                169546,
+                169547,
+                169548,
+                169550,
+                169551,
+                169554
+              ],
+              "last_errors": [
+                179566,
+                179569,
+                179571,
+                179572,
+                179573,
+                179574,
+                179575,
+                179576,
+                179577,
+                179581,
+                179582,
+                179583,
+                179584,
+                179585,
+                179586,
+                179587,
+                179588,
+                179590,
+                179595,
+                179601
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

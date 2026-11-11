@@ -1,0 +1,29 @@
+{
+  "analysis_version": "second-start-recapture-status-0.1",
+  "restore_registration_sha256": "7061c8eed42124a2ef88d5918d987edb2891a40b77a8ec5927013a1add76b636",
+  "capture_sha256": "fb9f53873505501de9152f0af7dea9af44656e08e2b4e599f2701cfac26db54a",
+  "user_report": "done and passed",
+  "restore_and_both_tone_checks_user_confirmed": true,
+  "native_frame_valid": false,
+  "target_body_comparison_performed": false,
+  "hardware_verified": false,
+  "verification_status": "user_checks_passed_but_exact_native_recapture_unverified",
+  "initial_failure": "initial-decode-failure.json",
+  "clock_failure": "clock-decode-failure.json",
+  "threshold_diagnostics": "threshold-diagnostics-001.json",
+  "waveform_diagnostics": "waveform-diagnostics-001.json",
+  "waveform_observations": {
+    "new_left_minimum_quarter_relation_errors": 100121,
+    "new_right_minimum_quarter_relation_errors": 97916,
+    "previous_clean_left_and_right_errors": 0,
+    "peak_left": 0.526214599609375,
+    "peak_right": 0.424713134765625,
+    "near_full_scale_samples": 0
+  },
+  "limits": [
+    "The user reported a successful restore and both auditions; this record does not claim a failed device restore",
+    "Widespread measured quarter-relation errors prevent reliable native comparison; signal-processing or input changes are possible causes, not established diagnoses",
+    "The higher peaks alone do not establish clipping or explain the corruption",
+    "No public writer calibration is broadened based on this unverified recapture"
+  ]
+}

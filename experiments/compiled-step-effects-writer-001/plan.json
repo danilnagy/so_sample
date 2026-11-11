@@ -1,0 +1,30 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "56981a0e7028b0f1a853ed58e4877c76aecefad2cfd3d5fd5a4814a5aa1b7345",
+  "source_body_sha256": "42962ebc5e552d3b5365e2794f2683c56bb0c65eaeeebeaf3c87c96d845459cb",
+  "operations": [
+    {
+      "operation": "set_step_effects",
+      "pattern": 1,
+      "effects": [
+        7,
+        null,
+        null,
+        7,
+        null,
+        null,
+        7,
+        7,
+        7,
+        null,
+        null,
+        7,
+        null,
+        null,
+        7,
+        7
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "analysis_version": "volume21-reference-to-candidate-handoff-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "reference_entire_body_and_native_preservation_pass": true,
+    "reference_capture_and_artifact_hashes_match": true,
+    "reference_audio_all_frozen_checks_pass": true,
+    "audio_identity_and_frozen_method_match": true,
+    "pair_registration_matches_native_and_method": true,
+    "all_export_content_hashes_match": true,
+    "entire_export_body_exact": true,
+    "reference_capture_not_clipped": true,
+    "both_prepared_waveforms_and_artifacts_remain_registered": true,
+    "candidate_reception_and_audio_still_pending": true
+  },
+  "pair_registration_sha256": "5379853f556bc31d982a7197893b7a0104899d32d351f259f3bcb97a202988f8",
+  "method_registration_sha256": "f33793227ce402ada428cd40415cbf1225e5cf5f930940aaa844a8ff4e4f50e7",
+  "reference_native_results_sha256": "517b3c82ce7e70d2aa8972a7f43ebbe4f109f0cf89b0ba90824f19a1edd94663",
+  "reference_audio_results_sha256": "7a2b440fd5a180b825f13bc374e7785bbba408c66af9e2bc454bac70cd69c540",
+  "reference_hardware_observation_sha256": "a78566aada204c4d77d758f0cfc020cbb6c690f60a6f12a553b5b45e60dd5158",
+  "candidate_hardware_verified": false,
+  "volume_writer_enabled": false
+}

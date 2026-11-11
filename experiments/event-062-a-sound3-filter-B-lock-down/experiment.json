@@ -1,0 +1,16 @@
+{
+  "experiment_id": "event-062-a-sound3-filter-B-lock-down",
+  "capture_status": "validated_literal_B0_six_bit_scope_narrow_mask_failed_no_audible_change",
+  "registration": "../sound3-filter-B-minimum-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/FILTER, A and audio settings unchanged",
+    "Start playback, hold WRITE and slowly turn only B fully counterclockwise over5 seconds; hold WRITE3 more seconds stationary",
+    "Release WRITE, stop playback and ensure write off; save complete capture.wav at established reduced level with one second trailing silence",
+    "Report actual audible/display changes or no change; leave B at minimum and A untouched; no restore or separate playback recording needed"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "B-probe-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-filter-B-minimum-001/project.json"
+}

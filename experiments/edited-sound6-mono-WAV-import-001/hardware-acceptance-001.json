@@ -1,0 +1,40 @@
+{
+  "analysis_version": "public-mono44100-Sound6-WAV-import-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "This mono 44.1 kHz PCM16 chirp imported into unshared Sound6, preserving all 17579 imported codes, all 32768 backing codes, endpoint and complete generated native body",
+  "recapture_results_sha256": "b2a17e2beb00ad33e7785d5aebccb3def4102abef1138fa1f29a6f5138eb269d",
+  "manual_observation_sha256": "3f21d33cdbd4a1da0503219e3852d60c156fea77c2d118ce3dd4126cc9d4019c",
+  "import_report_sha256": "fae5511f1df6569006a81d346f5a5312ca5b1f86616c526cf852da576f034f50",
+  "capture_sha256": "ea299978cae355585815d8677d4835f514209a41c2cc36b3f2976b7a5dc1287c",
+  "artifact_sha256": "42abc578dd9829432de80f03f8c2ac9dd9bb5725cca964ba928b7e337c69ae44",
+  "artifact_path": "experiments/edited-sound6-mono-WAV-import-001/derived/analysis-002/capture.symbols.npz",
+  "body_sha256": "5b557a2586907b90705bed847b63e33745d0cef85bc27e06f80e6f0601f29b7c",
+  "input_wav_sha256": "c93ad0fb225611002db5fe74822602a8b66432394b3262af0a01fed9cdf79e4d",
+  "checks": {
+    "all_recapture_controls_pass": true,
+    "all_import_hypotheses_pass": true,
+    "user_restore_and_auditions_confirmed": true,
+    "capture_and_artifact_hashes_match": true,
+    "export_all_content_hashes_match": true,
+    "export_full_native_body_matches": true,
+    "original_import_report_remains_software_only": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 32,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.165313720703125,
+      0.158782958984375
+    ]
+  },
+  "decode_provenance": {
+    "accepted": "derived/analysis-002 at established threshold 0.0063",
+    "retained_failed_attempt": "derived/analysis-001 at CLI default threshold 0.00030517578125; invalid checksum at first packet",
+    "payload_repair_or_expected_data_guidance": false
+  },
+  "limits": [
+    "This saved source and current device state are hardware verified; other rates, lengths, slots, shared owners and allocation policies are not established by this test"
+  ]
+}

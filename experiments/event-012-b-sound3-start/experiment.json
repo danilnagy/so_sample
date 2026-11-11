@@ -1,0 +1,40 @@
+{
+  "experiment_id": "event-012-b-sound3-start",
+  "capture_status": "received_and_validated_start_locality_with_both_second_field_hypotheses_rejected",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sound2-remove-001",
+  "baseline_source_sha256": "aa8c083704bb92aa44893bafc3abd35e2bc05182fbb01ca7511f04752dafeb7d",
+  "baseline_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+  "baseline_artifact_sha256": "0a79c633e5d383ce066c4ce8ecc4f76275f41543e3744dd6ee6895db9b9b1fed",
+  "baseline_artifact": "../edited-sound2-remove-001/derived/analysis-001/capture.symbols.npz",
+  "proposed_change": {
+    "sound_slot": 3,
+    "parameter": "TRIM knob A start point",
+    "knob_B": "Untouched; baseline B-controlled counter8000",
+    "target_knob_A_position": "approximately halfway through its travel"
+  },
+  "planned_actions": [
+    "Keep Pattern1, playback stopped and write off; select Sound3",
+    "Press FX until TRIM/tri; turn only knob A fully counterclockwise, then approximately halfway through its travel, leave knob B untouched",
+    "Return to TONE and reselect Sound8; retain all other settings and record the complete stereo backup before audition or pattern playback",
+    "After saving, select Sound3 with write off, tap keyboard key1 and report whether a short tone is still audible; return to Sound8/TONE"
+  ],
+  "actual_actions": [
+    "User reports still hear the tone and done after the requested knob A control and capture; no deviation reported"
+  ],
+  "source_sha256": "24502f734e1d9170a1c5a4ac89d104fafeec3514478f39749919521336f68673",
+  "preregistration": "../sound3-start-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Locate nonzero sample start metadata and distinguish alternatives for the second trim field",
+  "nonzero_start_writer_enabled": false,
+  "user_report": "still hear the tone and done",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "decoder_version": "sign-crossings-0.2",
+  "validation_report": "../sound3-start-results-001.json",
+  "observed_sound3_header_values": {
+    "first_u32le": 31393,
+    "second_u32le": 65535,
+    "owner_id": 0
+  },
+  "any_registered_second_field_hypothesis_fits": false
+}

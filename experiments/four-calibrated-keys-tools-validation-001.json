@@ -1,0 +1,26 @@
+{
+  "validation_id": "four-calibrated-keys-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-four-calibrated-keys-001 -p no:cacheprovider",
+    "passed": 244,
+    "failed": 0,
+    "duration_seconds": 69.17,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 89
+  },
+  "middle_control_results": "melodic-key7-results-001.json",
+  "middle_control_invariants_passed": true,
+  "middle_registered_hypotheses_fit": true,
+  "supported_sound_slot": 3,
+  "physically_calibrated_keyboard_keys": [1, 2, 7, 16],
+  "other_keyboard_values_supported": false,
+  "genuine_middle_and_endpoint_bodies_and_inverses_reproduced": true,
+  "candidate_software_validation": "generated-four-keys-001/software-validation.json",
+  "candidate_hardware_verified": false,
+  "next_hardware_test": "edited-four-keys-001/experiment.json"
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "kind": "playback_only",
+  "experiment": "retake-001",
+  "started_at": "2026-11-08T04:01:21+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "f584107f0a585215e956d3dbcccf025101792cb4ad7f7affc81353272b8d2f05",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1788255,
+        "duration_seconds": 40.55,
+        "signal_onset_seconds": 8.55,
+        "seconds_after_onset": 32.0,
+        "peaks_per_channel": [
+          0.527008056640625,
+          0.930023193359375
+        ],
+        "stream_status_flags": [],
+        "findings": [
+          {
+            "severity": "error",
+            "message": "First sound came 8.6 s after recording started; press PLAY about one second after Enter"
+          }
+        ]
+      },
+      {
+        "file": "playback-02.wav",
+        "sha256": "232d1f12ec074d3cb06c529102746b291fac15ee33267844fce205289454f6ce",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1481760,
+        "duration_seconds": 33.6,
+        "signal_onset_seconds": 1.6,
+        "seconds_after_onset": 32.0,
+        "peaks_per_channel": [
+          0.52593994140625,
+          0.928131103515625
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-02.wav",
+    "accepted_with_findings": false,
+    "sha256": "232d1f12ec074d3cb06c529102746b291fac15ee33267844fce205289454f6ce"
+  },
+  "interrupted": false,
+  "hardware_verified": false,
+  "finished_at": "2026-11-08T04:02:57+00:00"
+}

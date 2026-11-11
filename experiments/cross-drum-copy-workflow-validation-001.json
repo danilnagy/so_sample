@@ -1,0 +1,32 @@
+{
+  "analysis_version": "cross-drum-copy-workflow-audit-0.1",
+  "evidence_sha256": "bc09691f76d4e8dea55378f2a0231120ef33a411e1fe79a2b0abdc889786dcb0",
+  "restore_registration_sha256": "138c8db907d4279865d356a3ab86ce194c1a4929a04a1399ad6a68e2015d0377",
+  "project": "exported-cross-drum-copy-002/project.json",
+  "exported_content_files_checked": 28,
+  "checks": {
+    "physical_control_and_saved_hypotheses_pass": true,
+    "export_checks_pass": true,
+    "all_exported_content_hashes_match": true,
+    "source_capture_copy_matches": true,
+    "source_artifact_copy_matches": true,
+    "whole_raw_packet_view_matches": true,
+    "only_sound10_key1_mapping_promoted": true,
+    "existing_preview_scope_preserved": true,
+    "candidate_all_software_checks_pass": true,
+    "registered_restore_hash_matches": true,
+    "registered_target_artifact_hash_matches": true,
+    "registered_body_and_waveform_redecode_match": true,
+    "software_and_registration_still_hardware_unverified": true,
+    "awaiting_capture_folder_ready": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "validation": {
+    "targeted_tests": "38 passed in 2.66s",
+    "full_regression_tests": "447 passed in 70.39s",
+    "ruff_check": "passed",
+    "ruff_format": "131 files formatted"
+  },
+  "next_required_user_action": "Restore candidate, save recapture before audition, then compare Sound10/key1 and preserved Sound9/keys1/2"
+}

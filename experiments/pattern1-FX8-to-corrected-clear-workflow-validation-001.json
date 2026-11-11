@@ -1,0 +1,32 @@
+{
+  "analysis_version": "verified-FX8-and-duplicate-input-to-corrected-clear-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "accepted_FX8_source_and_registration_pins_match": true,
+    "duplicate_RAW_inputs_bound_and_clear_not_verified": true,
+    "unchanged_original_clear_prediction_and_action_timing_explicit": true,
+    "independent_original_baseline_pinned": true,
+    "all_current_export_hashes_and_full_native_reconstruction_pass": true,
+    "fresh_corrected_capture_pending_and_no_FX_writer": true
+  },
+  "FX8_hardware_observation_sha256": "5eb6630c1ce0968b558e6c448fb5ac75563eafaefef6c5d4cb168cbfe102b689",
+  "corrected_registration_sha256": "7d036a506c3bffa96ec74a3a39cf9a7bf71ed588c4dfae3a3a206d1990ffb0fc",
+  "input_identity_observation_sha256": "8fcd02af75428974e2917a6aa4b5cd6bdb82c26cf7b0c57ad29420e3ab98f67e",
+  "corrected_code_sha256": {
+    "scripts/check_pattern1_fx_corrected_clear.py": "76ec6ba3ca4a5d32c745d13a31f8a73ea9721eebe241f18f87a3debc7aa60388",
+    "tests/test_pattern1_fx_corrected_clear.py": "a6ab235f667c1f72c8fc87be4606024d34da8e21bb784ab0dc4dce5fb95718ef"
+  },
+  "focused_tests_passed": 34,
+  "last_full_regression_tests_passed": 1137,
+  "production_writer_changed": false,
+  "FX_writer_enabled": false,
+  "clear_hardware_verified": false,
+  "limits": [
+    "Original two raw WAVs are identical; their clear comparison cannot adjudicate the clearing model; original raw files and reports remain unchanged",
+    "This binds the unchanged prior clear prediction to the actual FX8 source before corrected data becomes available, after the user already reported the physical clear action",
+    "Corrected data may be the existing actual clear recording or a fresh backup of the already-cleared device; no additional FX action is required",
+    "Global131 value remains unknown; low-four/whole-byte scopes remain separate and every other state byte must return to the independent original no-FX state",
+    "Do not treat duplicated input as a valid clear recapture, infer global role or enable a public FX writer"
+  ]
+}

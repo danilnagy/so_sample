@@ -1,0 +1,17 @@
+{
+  "experiment_id": "edited-pattern1-FX-full-step-map-002",
+  "capture_status": "registered_precondition_failed_byte131_exploratory_sequential",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../pattern1-FX-full-step-map-confirm-registration-001.json",
+  "device_state_from": "../edited-pattern1-FX-full-step-map-001",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Roughly which notes bent upward, if you could tell? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "not_applicable_state_already_on_device"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

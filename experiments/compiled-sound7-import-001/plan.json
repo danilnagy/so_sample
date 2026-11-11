@@ -1,0 +1,79 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "bc10514dc067038d212ef9a41537e236ca0dd1639964dcb36585e4bfc45f7c16",
+  "source_body_sha256": "6d2fe554f47d3e37ae11120ee0a644cc309d76f748d74d749f687e57ad04c907",
+  "operations": [
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 3,
+      "parameter": "volume",
+      "values": [
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 1,
+      "sound": 3,
+      "keys": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes_from",
+      "pattern": 1,
+      "sound": 7,
+      "keys": [
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1
+      ],
+      "template_sound": 3
+    }
+  ]
+}

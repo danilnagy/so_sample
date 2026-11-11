@@ -1,0 +1,33 @@
+{
+  "analysis_version": "joint-tempo100-swing9-preregistration-0.1",
+  "registered_before_capture": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/edited-swing-timing6-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "214765949d94331ab6ebaa48a6f7ba14009e52fbd0c32eb08406baee4dd34c66",
+  "source_capture": "experiments/edited-swing-timing6-001/capture.wav",
+  "source_capture_sha256": "8e6599398978bb303f34502aff6bd2cb3de841feed3b663f1c7085f9ac3afec1",
+  "source_observation_sha256": "ebb6695b394f3251c29370649903d4c49bcc64e1b31420d71d721704da77563a",
+  "source_body_sha256": "fc595d91e0eff23869c4236bc9c602745c8e6de63c9d5257b9ba3152e9678175",
+  "expected_body_sha256": "1dab085d95629db191991a089c9e4e67f56fc2a7dd571b1674fa8dbce144e551",
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "restore_wav_sha256": "46ec1c35a8f080547eb2a38a81f8b83524ec18452dac9606a699b1340e8a9d3f",
+  "edited_artifact_sha256": "d529dcc433cdb01564960f99b772b62c4cef2df406989b0fb67293c1e3e755d6",
+  "compile_report_sha256": "4520119b605947cc644f6bb2a67652aec4877cedb8fdd7ec307fd9f2a364b61e",
+  "plan_sha256": "7c1d4971ff7d63b9d70867c86ee359c20771fe2088a6ccccb7d241b2dfc1fdfe",
+  "software_checks": {
+    "only_two_calibrated_global_bytes_changed": true,
+    "target_tempo100_and_swing9": true,
+    "all_other_plain_packets_exact": true,
+    "native_geometry_exact": true,
+    "waveform_compile_checks_pass": true,
+    "source_file_unchanged": true
+  },
+  "limits": [
+    "This new joint setting needs physical restore and exact recapture",
+    "Swing display is not read by turning a knob; independently confirm ordinary BPM display100",
+    "No percent/clock timing units or hardware test of every interior value claimed"
+  ]
+}

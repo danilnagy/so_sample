@@ -1,0 +1,28 @@
+{
+  "experiment_id": "empty-001-copy2-clean-a",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "starting_state": "After reported deletion of8, copy1-to8 and copy8-to2; slots1/2/8 populated",
+  "planned_actions": [
+    "Select Sound2, release selection buttons, hold record and press sound to delete onlySound2",
+    "Select Sound8, retain empty Pattern1, write off, sequencer stopped",
+    "Record full stereo backup of remaining sounds1/8 at unchanged settings"
+  ],
+  "actual_actions": [
+    "User replied done to the requested clean before/after protocol and supplied both captures; no deviation reported"
+  ],
+  "source_sha256": "d6c521f933a005ae4eb1a6eda8317a809fd9d0ebdc66d7f1f315a3936cffdf66",
+  "purpose": "Fresh before-state after the reported recovery history; do not assume byte equality with original copy1 state",
+  "planned_after_capture": "Copy8 to2 and record clean-b",
+  "preregistration": "../clean-copy2-predictions-001.json",
+  "decoder_version": "sign-crossings-0.2",
+  "action_evidence": "User completion report; exact button sequence not independently observed",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "waveform": "../waveform-probes-014.json",
+    "registered_predictions": "../clean-copy2-results-001.json",
+    "tail_structure": "../copy-tail-structure-001.json"
+  }
+}

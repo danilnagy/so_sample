@@ -1,0 +1,17 @@
+{
+  "experiment_id": "event-045-c-sound3-tone-volume-lock-minimum",
+  "capture_status": "validated_minimum_with_four_bit_prediction_falsified",
+  "expected_file": "capture.wav",
+  "registration": "../sound3-volume-lock-range-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/TONE,tempo100,swing9 and knobA unchanged",
+    "Play Pattern1/Sound3/TONE; hold WRITE, move only B fully counterclockwise over about5 seconds, hold WRITE3 more seconds stationary, release,stop,ensure write off,capture",
+    "Save complete stereo backup at established reduced levels with one second trailing silence before next action",
+    "Report quieter/louder behavior and any display labels at both endpoints; leave maximum recorded and stopped/write off"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-volume-lock-range-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "volume_writer_enabled": false
+}

@@ -1,0 +1,36 @@
+{
+  "analysis_version": "pitch-law-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of per-step pitch codes; registered early-window pitch decision inconclusive because each note glides from the previous pitch for about 25-35 ms",
+  "native_check_passed": true,
+  "registered_classification": "other_or_inconclusive",
+  "decision_sha256": "49f2ba0ef9822af6cd3412511ef398c9d90c2e1f86a46e593845754a0bb0e0b6",
+  "native_results_sha256": "3347e294bd1a10f6c252121abaee0be167fd60a6b713e80cf59e8b33e8a4e22e",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "ec0d78b4c24d4841aba8f3a31caf5f8b49644cc6819e6a69346eb04e412f8caf",
+  "session_answers": [
+    {
+      "question": "Did the notes jump around in pitch? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "exploratory_settled_cents_at_50ms": {
+    "1": 0.0,
+    "2": -1198.3,
+    "3": 1201.0,
+    "4": -597.8,
+    "5": 600.7,
+    "6": -897.6,
+    "7": 900.9,
+    "8": -298.2,
+    "9": 300.0,
+    "10": -1098.5,
+    "11": 1101.0,
+    "12": -797.9,
+    "13": 800.6,
+    "14": -497.8,
+    "15": 500.4,
+    "16": -98.2
+  },
+  "exploratory_sha256": "1de8251b21f6eb166a98d44c07e1cecc1a34974655c0ba8c3256058bc4299a84"
+}

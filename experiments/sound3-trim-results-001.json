@@ -1,0 +1,230 @@
+{
+  "analysis_version": "clean-copy-check-0.2",
+  "registration_sha256": "9542aa3701c4cb4cc060c64a1725a06dc8877872290d5432eac963e8c6f417a0",
+  "inputs": [
+    {
+      "path": "experiments\\empty-001-e-copy-to-3\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "faf898606ae701061de005962cf4abf8f60af3338531fc720bcabfe3d03c3ccb",
+      "source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+      "decoder_version": "sign-crossings-0.2"
+    },
+    {
+      "path": "experiments\\empty-001-e-copy-to-3\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "faf898606ae701061de005962cf4abf8f60af3338531fc720bcabfe3d03c3ccb",
+      "source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+      "decoder_version": "sign-crossings-0.2"
+    },
+    {
+      "path": "experiments\\empty-001-f-sound3-trim-min\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "821d6e2c741ea23432da47ec6cf87fc50125cd35f3a7dfc54165200a4f4bd0c7",
+      "source_sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70",
+      "decoder_version": "sign-crossings-0.2"
+    }
+  ],
+  "protocol_status": "no_deviation_reported",
+  "reported_deviation": null,
+  "channels": {
+    "left": {
+      "complete_counts": [
+        178922,
+        178922
+      ],
+      "count_increase": 0,
+      "changed_shared_labels": 1212,
+      "strict_first_change": 177147,
+      "strict_last_change": 178793,
+      "complete_arrays_equal": false,
+      "before_reference_prefix_matches": true,
+      "growth_range_matches": true,
+      "observed_window_matches": {
+        "inline_slots": true
+      },
+      "reference_to_before": {
+        "complete_counts": [
+          178922,
+          178922
+        ],
+        "count_increase": 0,
+        "changed_shared_labels": 0,
+        "strict_first_change": null,
+        "strict_last_change": null,
+        "complete_arrays_equal": true
+      },
+      "incomplete_final_sign_intervals": {
+        "reference": [
+          0
+        ],
+        "before": [
+          0
+        ],
+        "after": [
+          0,
+          1
+        ]
+      }
+    },
+    "right": {
+      "complete_counts": [
+        178921,
+        178922
+      ],
+      "count_increase": 1,
+      "changed_shared_labels": 1362,
+      "strict_first_change": 177147,
+      "strict_last_change": 178920,
+      "complete_arrays_equal": false,
+      "before_reference_prefix_matches": true,
+      "growth_range_matches": true,
+      "observed_window_matches": {
+        "inline_slots": true
+      },
+      "reference_to_before": {
+        "complete_counts": [
+          178921,
+          178921
+        ],
+        "count_increase": 0,
+        "changed_shared_labels": 0,
+        "strict_first_change": null,
+        "strict_last_change": null,
+        "complete_arrays_equal": true
+      },
+      "incomplete_final_sign_intervals": {
+        "reference": [
+          1
+        ],
+        "before": [
+          1
+        ],
+        "after": [
+          1,
+          0
+        ]
+      }
+    }
+  },
+  "anchors": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    }
+  ],
+  "payload_decoded": false,
+  "absolute_position_models_applicable": true,
+  "single_action_interpretation_eligible": true,
+  "model_results": {
+    "inline_slots": "window_prediction_passed"
+  },
+  "terminal_predictions": {
+    "left": {
+      "before_index": 178792,
+      "expected_after_index": 178792,
+      "expected_displacement": 0,
+      "actual_before_index": 178792,
+      "actual_after_index": 178792,
+      "before_boundary_matches": true,
+      "after_boundary_matches": true,
+      "actual_displacement": 0
+    },
+    "right": {
+      "before_index": 178792,
+      "expected_after_index": 178792,
+      "expected_displacement": 0,
+      "actual_before_index": 178792,
+      "actual_after_index": 178792,
+      "before_boundary_matches": true,
+      "after_boundary_matches": true,
+      "actual_displacement": 0
+    }
+  },
+  "registered_prediction_set_result": "predictions_passed",
+  "limits": [
+    "Protocol eligibility relies on user report; this script cannot observe hardware actions.",
+    "Fresh before-state applicability is checked before interpreting absolute position models.",
+    "No shifts, phase rotations, rewritten arrays or adjusted prediction windows are used.",
+    "Complete arrays and partial terminal intervals are reported separately.",
+    "Earlier deviated capture remains observational even if its complete arrays equal clean after.",
+    "A successful location prediction does not decode native fields, storage pointers or checksums.",
+    "Last nonzero increments are empirical transport boundaries, not parsed payload terminators."
+  ]
+}

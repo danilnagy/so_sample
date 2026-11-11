@@ -1,0 +1,325 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "be18be33c1eed4fd70c67362320b19ca59a197e771a0f235299c7d09f90e801f",
+  "source_body_sha256": "14e0d150ae4d42944836d2742023d9f27aa0ad7791e1a2c9d1da02f2f78c20e8",
+  "operations": [
+    {
+      "operation": "set_notes",
+      "pattern": 1,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parameters": {
+        "pitch": 13,
+        "volume": 36,
+        "filter": 63,
+        "resonance": 1
+      }
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 1,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": "set_notes",
+      "pattern": 2,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parameters": {
+        "pitch": 13,
+        "volume": 36,
+        "filter": 63,
+        "resonance": 1
+      }
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 2,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "operation": "set_notes",
+      "pattern": 3,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parameters": {
+        "pitch": 13,
+        "volume": 36,
+        "filter": 63,
+        "resonance": 1
+      }
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 3,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "operation": "set_notes",
+      "pattern": 4,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parameters": {
+        "pitch": 13,
+        "volume": 36,
+        "filter": 63,
+        "resonance": 1
+      }
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 4,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "operation": "set_notes",
+      "pattern": 5,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parameters": {
+        "pitch": 13,
+        "volume": 36,
+        "filter": 63,
+        "resonance": 1
+      }
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 5,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "operation": "set_notes",
+      "pattern": 6,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "parameters": {
+        "pitch": 13,
+        "volume": 36,
+        "filter": 63,
+        "resonance": 1
+      }
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 6,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_pattern_chain",
+      "patterns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

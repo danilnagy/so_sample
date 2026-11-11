@@ -1,0 +1,26 @@
+{
+  "analysis_version": "verified-post-playback-to-recorded-pitch-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "full_persistence_prediction_and_hardware_checks_pass": true,
+    "native_results_pinned_by_hardware_observation": true,
+    "fresh_pitch_registration_pins_capture_artifact_and_observation": true,
+    "exact_source_body_and_uniform36_match": true,
+    "pitch_data_pending_before_knob_action": true,
+    "only_A_movement_requested_with_B_untouched": true,
+    "coupled_volume_and_auxiliary_alternatives_remain_explicit": true,
+    "endpoint_code_and_display_not_inferred": true
+  },
+  "hardware_observation_sha256": "157e70514536f4f0e0b011b48bc4e590b9e783e2774a7e1406eae37e69732256",
+  "pitch_registration_sha256": "d21927d75ee5c645a1d2260dc7628b5c6820983cad0bafa5ec479dbdf510c6b1",
+  "focused_tests_passed": 40,
+  "last_full_regression_tests_passed": 853,
+  "production_writer_changed_this_control": false,
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "New pitch-location masks are preregistered alternatives, not accepted semantics",
+    "Stationary hold does not require uniform data; ramps and wider changes remain visible",
+    "This software handoff check is separate from physical evidence"
+  ]
+}

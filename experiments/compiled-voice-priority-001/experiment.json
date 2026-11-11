@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-voice-priority-001",
+  "capture_status": "validated_exact_native_voice_priority_measured",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../voice-priority-registration-001.json",
+  "plan": "../voice-priority-plan-001/plan.json",
+  "playback_seconds": 26,
+  "observation_questions": [
+    "Did every chord sound like four notes, and which ones seemed missing? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "voice_priority_measurements": "voice-priority-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-voice-priority-001/project.json"
+}

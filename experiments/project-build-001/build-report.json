@@ -1,0 +1,111 @@
+{
+  "analysis_version": "project-build-0.1",
+  "source_artifact_sha256": "d8a914b2c9a2bdce9d11115064fc947e7fceb0c10356930f9fafa8fe18129c61",
+  "spec_sha256": "13afe9eec7295cba0be2f6e7867409d6abe82988f09bbef4378b5edcadb6b217",
+  "imports": [
+    {
+      "slot": 8,
+      "kind": "melodic",
+      "stage": "import-sound8",
+      "allocation": {
+        "sound_slot": 8,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 12288,
+        "source_header_hex": "00000000c72d000007",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 233472
+      }
+    },
+    {
+      "slot": 9,
+      "kind": "drum",
+      "stage": "import-sound9",
+      "allocation": {
+        "drum_slot": 9,
+        "owner_sound_id": 8,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 8192,
+        "capacity_codes": 32768,
+        "kit_codes": 32000,
+        "windows": [
+          [
+            0,
+            2000
+          ],
+          [
+            2000,
+            4000
+          ],
+          [
+            4000,
+            6000
+          ],
+          [
+            6000,
+            8000
+          ],
+          [
+            8000,
+            10000
+          ],
+          [
+            10000,
+            12000
+          ],
+          [
+            12000,
+            14000
+          ],
+          [
+            14000,
+            16000
+          ],
+          [
+            16000,
+            18000
+          ],
+          [
+            18000,
+            20000
+          ],
+          [
+            20000,
+            22000
+          ],
+          [
+            22000,
+            24000
+          ],
+          [
+            24000,
+            26000
+          ],
+          [
+            26000,
+            28000
+          ],
+          [
+            28000,
+            30000
+          ],
+          [
+            30000,
+            32000
+          ]
+        ],
+        "total_backing_capacity_codes": 258048
+      }
+    }
+  ],
+  "plan_sha256": "11e52794c8cff5cbc5eabb799914c6f7df6613e2bb3a2dc9984fb5de8cf10c39",
+  "compiled": "compiled",
+  "target_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+  "restore_wav": "C:\\Users\\danil\\OneDrive\\Documents\\Github\\danilnagy\\po_33\\experiments\\project-build-001\\compiled\\restore.wav",
+  "restore_wav_sha256": "4447aa89b9d2d1a420a45e0168b17ddec2ae5e82c63c7e503a9cb1b600357daa",
+  "passed": true,
+  "hardware_verified": false
+}

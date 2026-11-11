@@ -1,0 +1,503 @@
+{
+  "analysis_version": "all-melodic-slots-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-all-melodic-slots-001",
+  "source_artifact": "experiments/compiled-long-melodic-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "798d5b7afb3263d15c40907e4ad8d3b6738413b6f8e87166c95b3564fa168be3",
+  "source_capture_sha256": "55966b9b65946a1607faaf2b45d52bc532df5a24f95929fea19f488c4d08e1ae",
+  "tone_hz": {
+    "1": 400.0,
+    "2": 436.203,
+    "3": 475.683,
+    "4": 518.736,
+    "5": 565.685,
+    "6": 616.884,
+    "7": 672.717,
+    "8": 733.603
+  },
+  "inputs": {
+    "9": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key01.wav",
+        "sha256": "64b93b577da89905fa0267908a8cc4f387a27af55f47f1b39b6e7bf42cdffb8c"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key02.wav",
+        "sha256": "a814e37ff20013d4dada690c022eae3252c069889ce27192ac524bfc50ebef90"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key03.wav",
+        "sha256": "86bcc759772163839e636abd4c4170e793a9e7a014f3502c0d68224ccf111646"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key04.wav",
+        "sha256": "365ce9e01956487405d63f5e3c03c1b8837222c6cb661705810124793fea2de4"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key05.wav",
+        "sha256": "63bc0b783adf718cc9b78415cac930734e05a35a638383ca8e45ba3221d7d8b1"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key06.wav",
+        "sha256": "377d27d1a19680fee652ceb21dd195e5d944e7a440757e5c10e8f58912e8725f"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key07.wav",
+        "sha256": "7037f6202f323f2cb238c6fbcfa1a83c945667c1d516d60bf51032f1a8680230"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key08.wav",
+        "sha256": "6d8c17561fba1f7d1325e6f6bef24fd94c925356255c70d8fe3a8a0f61464662"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key09.wav",
+        "sha256": "36ba2bbc6773ccd0295f512f1e4582d35d1dc1ed5d77752703c1e8bb81805218"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key10.wav",
+        "sha256": "0661a71fd8db1a64b1b217d3813620dbe5d0d3dee7f6d0dc119e3dd00995bc43"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key11.wav",
+        "sha256": "397b95558742f6ea043ca3aac5dc0b45697a48e7da2a6f6482834096b7a69cb4"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key12.wav",
+        "sha256": "55cb3307db32c272c9ed372f076417262ac823fb533e85bc9b2383a151d38260"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key13.wav",
+        "sha256": "d02dbc20aa3a4a830ae2c6794ecf0e15a6b726507e7333c826491a06f09f76a5"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key14.wav",
+        "sha256": "e423b883572254799f1559b53fbb4649a05d266cac36405d758dc79a7af6658e"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key15.wav",
+        "sha256": "479731859d17bc4da3e513fb0882f49b54a7858e6bc053d65a1278c8f7f1550f"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound9-key16.wav",
+        "sha256": "50d18b0b3044a2fdee884b4329f9b561b1344b7d4908f1132cf6ae32ce9b1b2a"
+      }
+    ],
+    "10": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key01.wav",
+        "sha256": "64b93b577da89905fa0267908a8cc4f387a27af55f47f1b39b6e7bf42cdffb8c"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key02.wav",
+        "sha256": "a814e37ff20013d4dada690c022eae3252c069889ce27192ac524bfc50ebef90"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key03.wav",
+        "sha256": "86bcc759772163839e636abd4c4170e793a9e7a014f3502c0d68224ccf111646"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key04.wav",
+        "sha256": "365ce9e01956487405d63f5e3c03c1b8837222c6cb661705810124793fea2de4"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key05.wav",
+        "sha256": "63bc0b783adf718cc9b78415cac930734e05a35a638383ca8e45ba3221d7d8b1"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key06.wav",
+        "sha256": "377d27d1a19680fee652ceb21dd195e5d944e7a440757e5c10e8f58912e8725f"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key07.wav",
+        "sha256": "7037f6202f323f2cb238c6fbcfa1a83c945667c1d516d60bf51032f1a8680230"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key08.wav",
+        "sha256": "6d8c17561fba1f7d1325e6f6bef24fd94c925356255c70d8fe3a8a0f61464662"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key09.wav",
+        "sha256": "36ba2bbc6773ccd0295f512f1e4582d35d1dc1ed5d77752703c1e8bb81805218"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key10.wav",
+        "sha256": "0661a71fd8db1a64b1b217d3813620dbe5d0d3dee7f6d0dc119e3dd00995bc43"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key11.wav",
+        "sha256": "397b95558742f6ea043ca3aac5dc0b45697a48e7da2a6f6482834096b7a69cb4"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key12.wav",
+        "sha256": "55cb3307db32c272c9ed372f076417262ac823fb533e85bc9b2383a151d38260"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key13.wav",
+        "sha256": "d02dbc20aa3a4a830ae2c6794ecf0e15a6b726507e7333c826491a06f09f76a5"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key14.wav",
+        "sha256": "e423b883572254799f1559b53fbb4649a05d266cac36405d758dc79a7af6658e"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key15.wav",
+        "sha256": "479731859d17bc4da3e513fb0882f49b54a7858e6bc053d65a1278c8f7f1550f"
+      },
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound10-key16.wav",
+        "sha256": "50d18b0b3044a2fdee884b4329f9b561b1344b7d4908f1132cf6ae32ce9b1b2a"
+      }
+    ],
+    "2": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound2-436hz.wav",
+        "sha256": "c54a219c4e7852c538b387e06d6ee99c6891c5211f67bbec03c3620b031098bd"
+      }
+    ],
+    "3": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound3-476hz.wav",
+        "sha256": "0bce0d1ee957b0702d9db4dad515235602afb80f080eed426136288132335c5f"
+      }
+    ],
+    "8": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound8-734hz.wav",
+        "sha256": "035cf30b1c61d30a0cc567acb0bf8f26f07339ee43becacf3c76275d43c536db"
+      }
+    ],
+    "1": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound1-400hz.wav",
+        "sha256": "b29c2b4b0903b07feecedacba9aa00242927b15aa1b792dd12f2b31e1f0a3baf"
+      }
+    ],
+    "4": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound4-519hz.wav",
+        "sha256": "b3e8a1eef06201bdd89b3a37623a9d7a9bfc86ad4bf30bdca33e8f3c5506fae2"
+      }
+    ],
+    "5": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound5-566hz.wav",
+        "sha256": "994317cde6d9e3811356c2ef0f759c3ea015a9ad3b2147374fe171973ed74267"
+      }
+    ],
+    "6": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound6-617hz.wav",
+        "sha256": "62627bcb6dc5b60ecb7d4da54819b78c56ad2ee57feb89229f66980bd7dd8bf4"
+      }
+    ],
+    "7": [
+      {
+        "path": "experiments/all-melodic-slots-files-001/sound7-673hz.wav",
+        "sha256": "a0ccb70e858add439532317a831f668dfbc3ca53d6be2cc59e744b5a46bbb8a0"
+      }
+    ]
+  },
+  "allocations": {
+    "9": {
+      "drum_slot": 9,
+      "owner_sound_id": 8,
+      "source_kit_was_empty": false,
+      "source_layout": "references_to_sound_id_0",
+      "source_capacity_codes": 0,
+      "capacity_codes": 16384,
+      "kit_codes": 16000,
+      "windows": [
+        [
+          0,
+          1000
+        ],
+        [
+          1000,
+          2000
+        ],
+        [
+          2000,
+          3000
+        ],
+        [
+          3000,
+          4000
+        ],
+        [
+          4000,
+          5000
+        ],
+        [
+          5000,
+          6000
+        ],
+        [
+          6000,
+          7000
+        ],
+        [
+          7000,
+          8000
+        ],
+        [
+          8000,
+          9000
+        ],
+        [
+          9000,
+          10000
+        ],
+        [
+          10000,
+          11000
+        ],
+        [
+          11000,
+          12000
+        ],
+        [
+          12000,
+          13000
+        ],
+        [
+          13000,
+          14000
+        ],
+        [
+          14000,
+          15000
+        ],
+        [
+          15000,
+          16000
+        ]
+      ],
+      "total_backing_capacity_codes": 888832
+    },
+    "10": {
+      "drum_slot": 10,
+      "owner_sound_id": 24,
+      "source_kit_was_empty": false,
+      "source_layout": "references_to_sound_id_0",
+      "source_capacity_codes": 0,
+      "capacity_codes": 16384,
+      "kit_codes": 16000,
+      "windows": [
+        [
+          0,
+          1000
+        ],
+        [
+          1000,
+          2000
+        ],
+        [
+          2000,
+          3000
+        ],
+        [
+          3000,
+          4000
+        ],
+        [
+          4000,
+          5000
+        ],
+        [
+          5000,
+          6000
+        ],
+        [
+          6000,
+          7000
+        ],
+        [
+          7000,
+          8000
+        ],
+        [
+          8000,
+          9000
+        ],
+        [
+          9000,
+          10000
+        ],
+        [
+          10000,
+          11000
+        ],
+        [
+          11000,
+          12000
+        ],
+        [
+          12000,
+          13000
+        ],
+        [
+          13000,
+          14000
+        ],
+        [
+          14000,
+          15000
+        ],
+        [
+          15000,
+          16000
+        ]
+      ],
+      "total_backing_capacity_codes": 905216
+    },
+    "2": {
+      "sound_slot": 2,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": true,
+      "source_capacity_codes": 0,
+      "source_header_hex": "00000000c0fc000000",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 917504
+    },
+    "3": {
+      "sound_slot": 3,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": true,
+      "source_capacity_codes": 0,
+      "source_header_hex": "c42d0000044d000000",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 929792
+    },
+    "8": {
+      "sound_slot": 8,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": true,
+      "source_capacity_codes": 0,
+      "source_header_hex": "00000000c0fc000000",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 942080
+    },
+    "1": {
+      "sound_slot": 1,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": false,
+      "source_capacity_codes": 65536,
+      "source_header_hex": "00000000c0fc000000",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 888832
+    },
+    "4": {
+      "sound_slot": 4,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": false,
+      "source_capacity_codes": 32768,
+      "source_header_hex": "00000000c078000003",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 868352
+    },
+    "5": {
+      "sound_slot": 5,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": false,
+      "source_capacity_codes": 32768,
+      "source_header_hex": "00000000c06f000004",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 847872
+    },
+    "6": {
+      "sound_slot": 6,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": false,
+      "source_capacity_codes": 94208,
+      "source_header_hex": "00000000366e010005",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 765952
+    },
+    "7": {
+      "sound_slot": 7,
+      "source_record_was_empty": false,
+      "source_record_was_borrowed": false,
+      "source_capacity_codes": 32768,
+      "source_header_hex": "00000000781b000006",
+      "capacity_codes": 12288,
+      "endpoint": 11719,
+      "zero_tail_codes": 569,
+      "total_backing_capacity_codes": 745472
+    }
+  },
+  "total_capacity_codes": 745472,
+  "plan_sha256": "06340b74b2265b321cadd8e73ecf24e197ee42efa09e414a62886f732f75450f",
+  "expected_body_sha256": "2ec710fbbbe1c7c376190607bad1b08d00614ff80c4f022ab4fdba3f3df705ea",
+  "edited_artifact_sha256": "22d49c743b09759770b6084af0fd0622c6715daeddb67623fbf5f2a0d6ec5a76",
+  "restore_wav_sha256": "c5e3ba06936e94690e067883c3afd1ed9bc7104e42b10bfe191306464847bd88",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "slot_s_plays_its_tone": [
+      0.0,
+      0.0,
+      150.0,
+      150.0,
+      300.0,
+      300.0,
+      450.0,
+      450.0,
+      600.0,
+      600.0,
+      750.0,
+      750.0,
+      900.0,
+      900.0,
+      1050.0,
+      1050.0
+    ]
+  },
+  "absolute_expected_hz": 599.3228307506727,
+  "decision": [
+    "The backup must equal the compiled target exactly, every buffer and reference included",
+    "slot_s_plays_its_tone holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of 599.3 Hz"
+  ],
+  "limits": [
+    "One short tone per melodic slot at key 1 and pitch code 13; Sound9 and Sound10 kits are checked by exact reception only"
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "analysis_version": "voice-release-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-voice-release-001",
+  "source_artifact": "experiments/compiled-voice-steal-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "023005428f91e9f3e7e7631b5c0795a095a7f4a1792ab3c4e15616792a0a4b2e",
+  "source_capture_sha256": "0e5ab4446f120cad0d8cb6a858b30875c3c199900ef6da46721be76e2df479ed",
+  "slim_kits": {
+    "9": {
+      "capacity_codes": 8192,
+      "import_report_sha256": "ac257d00df1b219ce5ac03c2871e112e3f5cca439f8ab71661e4a26e989d7b12"
+    },
+    "10": {
+      "capacity_codes": 8192,
+      "import_report_sha256": "9f96cacb38f8a96f61d0fa79058a78380ad9094b6a29201396084ce224696089"
+    },
+    "11": {
+      "capacity_codes": 16384,
+      "import_report_sha256": "d973d39cd06d7fa45a9fe4c8c9dc1dbca07de4bf754734c02c88373f7eb9a308"
+    },
+    "12": {
+      "capacity_codes": 16384,
+      "import_report_sha256": "a08bed424009bb0442a055ebf320fd0eb052c00b8348cde0c7124f433cbcde49"
+    },
+    "13": {
+      "capacity_codes": 16384,
+      "import_report_sha256": "fda0b4beead9823bebdeace36b4075ebf7792725969e854db90fafbba8f69abf"
+    },
+    "14": {
+      "capacity_codes": 16384,
+      "import_report_sha256": "ac2e44662ac82ba6af4ba6a44528ea35ca5966c825b42c18ca89dc7893ce8f3e"
+    },
+    "15": {
+      "capacity_codes": 16384,
+      "import_report_sha256": "184d240a9dfd3dfd01874b76cff04c845c9355a6b5cb097d61f7a1eef9289ee0"
+    },
+    "16": {
+      "capacity_codes": 16384,
+      "import_report_sha256": "c97bd6a8d141e1d7717ed572e547cf70c88e5856ab24b0d9b81c4e2d37dd2b61"
+    }
+  },
+  "total_sample_codes": 212992,
+  "pitches": [
+    1,
+    7,
+    13,
+    19
+  ],
+  "remaining_ms_at_fifth_note": [
+    417.4,
+    221.9,
+    83.7,
+    -14.0
+  ],
+  "voice_hz": {
+    "1k13p13": 200.00000000000003,
+    "5": 847.5698387829855,
+    "2k1p1": 326.78302092741956,
+    "3k1p1": 356.35960262496525,
+    "4k1p1": 388.6129099153511,
+    "2k1p7": 462.1409801488077,
+    "3k1p7": 503.9685831141127,
+    "4k1p7": 549.5816477155633,
+    "2": 653.5660418548391,
+    "3": 712.7192052499305,
+    "4": 777.2258198307022,
+    "2k1p19": 924.2819602976155,
+    "3k1p19": 1007.9371662282254,
+    "4k1p19": 1099.1632954311267
+  },
+  "solo_steps": {
+    "1k13p13": 1,
+    "5": 4,
+    "2k1p1": 5,
+    "3k1p1": 6,
+    "4k1p1": 7,
+    "2k1p7": 8,
+    "3k1p7": 9,
+    "4k1p7": 10,
+    "2": 11,
+    "3": 12,
+    "4": 13,
+    "2k1p19": 14,
+    "3k1p19": 15,
+    "4k1p19": 16
+  },
+  "scenario_notes": {
+    "1": {
+      "1": [
+        13,
+        13
+      ]
+    },
+    "2": {
+      "2": [
+        1,
+        1
+      ],
+      "3": [
+        1,
+        1
+      ],
+      "4": [
+        1,
+        1
+      ]
+    },
+    "3": {
+      "5": [
+        1,
+        13
+      ]
+    },
+    "5": {
+      "1": [
+        13,
+        13
+      ]
+    },
+    "6": {
+      "2": [
+        1,
+        7
+      ],
+      "3": [
+        1,
+        7
+      ],
+      "4": [
+        1,
+        7
+      ]
+    },
+    "7": {
+      "5": [
+        1,
+        13
+      ]
+    },
+    "9": {
+      "1": [
+        13,
+        13
+      ]
+    },
+    "10": {
+      "2": [
+        1,
+        13
+      ],
+      "3": [
+        1,
+        13
+      ],
+      "4": [
+        1,
+        13
+      ]
+    },
+    "11": {
+      "5": [
+        1,
+        13
+      ]
+    },
+    "13": {
+      "1": [
+        13,
+        13
+      ]
+    },
+    "14": {
+      "2": [
+        1,
+        19
+      ],
+      "3": [
+        1,
+        19
+      ],
+      "4": [
+        1,
+        19
+      ]
+    },
+    "15": {
+      "5": [
+        1,
+        13
+      ]
+    }
+  },
+  "predictions": {
+    "never_steal": {
+      "3": {
+        "1k13p13": true,
+        "5": false,
+        "2k1p1": true,
+        "3k1p1": true,
+        "4k1p1": true
+      },
+      "7": {
+        "1k13p13": true,
+        "5": false,
+        "2k1p7": true,
+        "3k1p7": true,
+        "4k1p7": true
+      },
+      "11": {
+        "1k13p13": true,
+        "5": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "15": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      }
+    },
+    "steal_nearest_end": {
+      "3": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p1": true,
+        "3k1p1": true,
+        "4k1p1": false
+      },
+      "7": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p7": true,
+        "3k1p7": true,
+        "4k1p7": false
+      },
+      "11": {
+        "1k13p13": true,
+        "5": true,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "15": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      }
+    },
+    "release_under_100ms": {
+      "3": {
+        "1k13p13": true,
+        "5": false,
+        "2k1p1": true,
+        "3k1p1": true,
+        "4k1p1": true
+      },
+      "7": {
+        "1k13p13": true,
+        "5": false,
+        "2k1p7": true,
+        "3k1p7": true,
+        "4k1p7": true
+      },
+      "11": {
+        "1k13p13": true,
+        "5": true,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "15": {
+        "1k13p13": true,
+        "5": true,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      }
+    },
+    "steal_oldest": {
+      "3": {
+        "1k13p13": false,
+        "5": true,
+        "2k1p1": true,
+        "3k1p1": true,
+        "4k1p1": true
+      },
+      "7": {
+        "1k13p13": false,
+        "5": true,
+        "2k1p7": true,
+        "3k1p7": true,
+        "4k1p7": true
+      },
+      "11": {
+        "1k13p13": false,
+        "5": true,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "15": {
+        "1k13p13": false,
+        "5": true,
+        "2k1p19": false,
+        "3k1p19": false,
+        "4k1p19": false
+      }
+    }
+  },
+  "plan_sha256": "74e1e4434e42e2231ce2b26c8dcc26f4d4c09a9fe073500fd443497014cd7187",
+  "expected_body_sha256": "60f6f6320861606c4a9f6b2faaee72630194803e0bcf596870cd76ee435815fe",
+  "edited_artifact_sha256": "1a21e1943ca47616173f88bc5b4a6efc984928bcdf3f500e66f41a64043f095b",
+  "restore_wav_sha256": "2da2153434080db42a08a5c88961bf8a5e1d7263895504c5aa39ecdb041e00a3",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "cycles_measured": 3,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "A model holds when every listed voice's majority presence over three cycles matches its prediction"
+  ],
+  "limits": [
+    "Four remaining times, 417, 222, 84 and -14 ms; the threshold is bracketed, not located",
+    "The fifth note is always Sound5, a higher number than the short notes"
+  ]
+}

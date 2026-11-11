@@ -1,0 +1,9 @@
+{
+  "analysis_version": "polyphony-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "50bc0d4f35cc5d5d0ad16875393707890e4bf293eeac0e95225607b306cb6966",
+  "native_results_sha256": "67faf987f9743786fe9250eeae84cdec0f0a7ac22dd4269e1beff682ca5307ac",
+  "classification": "method_failed_to_run",
+  "frozen_method_error": "The recording must start in silence before the first note",
+  "exploratory_analysis": "polyphony-exploratory-001.json"
+}

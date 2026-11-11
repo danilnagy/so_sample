@@ -1,0 +1,40 @@
+{
+  "analysis_version": "generated-FX-return-global7-native-and-listening-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact generated down target received and user confirms octave-down",
+  "checks": {
+    "source_is_exact_fixed_leg_body": true,
+    "source_and_actual_native_valid": true,
+    "all16_footer_nibbles_match_fixed_leg": true,
+    "only_eight_Pattern1_footer_bytes_changed": true,
+    "global131_stays7": true,
+    "entire_fixed_leg_target_body_exact": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_artifact_registration_pins_match": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_native_body_exact": true
+  },
+  "capture_sha256": "1382d307f4d6a9c40454f8c7faa92d5bd67e84c006f96412c63ee7f2278ef9ed",
+  "artifact_sha256": "ee292c878804b20ebc0d18554968f4efa1be645a6c406f4e7a9ada48010aea6c",
+  "artifact_path": "experiments/edited-pattern1-FX7-global7-down-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "01cb7130546dd862c8b9ef290785dd9e6c3094e64e6b9279dae4730edea7cd68",
+  "registration_sha256": "7bce866aeb341b02a90201fe58274238a817d2db0402957e6734ced6d760737c",
+  "native_results_sha256": "14676f05301741b498e1de9fc8367b579a932b15fa5034f8c5c0cb95e0f959a1",
+  "manual_observation_sha256": "10ae0f48869281bcf00ef4a3b6ae6f95e9454069c2af0fec6661c834fdcd5400",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.15533447265625,
+      0.1505126953125
+    ]
+  },
+  "reported_effect_for_leg": "octave_down",
+  "global_byte_after": 7,
+  "measured_frequency_ratio_confirmed": false,
+  "global_role_or_nibble_order_confirmed": false,
+  "FX_writer_enabled": false,
+  "limits": [
+    "Uniform fixed targets only; no full enum, per-step order or global semantics established",
+    "Software reports and registrations remain unchanged; this observation records scope at creation"
+  ]
+}

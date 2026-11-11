@@ -1,0 +1,32 @@
+{
+  "analysis_version": "generated-sound4-growth-to-shrink-workflow-audit-0.1",
+  "checks": {
+    "verified_growth_source": true,
+    "source_entire_body_registered": true,
+    "all_candidate_software_checks_pass": true,
+    "target_entire_body_and_files_registered": true,
+    "source_and_target_capacities": true,
+    "recapture_checker_accepts_target_and_rejects_stale_source": true,
+    "candidate_remains_software_only": true,
+    "registered_before_recapture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "growth_acceptance_sha256": "44c9df679d010256df705ef501793d996a2aaf49f7732bc20a68fad05b3d0e87",
+  "next_restore_registration_sha256": "4439e3b1a4336b4c3cfa4c19142088e0940b1fab000fe4979945550e9a6a8ba5",
+  "validation": {
+    "targeted_tests": "28 passed in3.44s",
+    "ruff_check": "passed",
+    "ruff_format": "153 files formatted"
+  },
+  "growth_capture_sample_rate_hz": 44100,
+  "growth_capture_peak_per_channel": [
+    0.16864013671875,
+    0.161376953125
+  ],
+  "growth_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Restore edited-sound4-shrink-001/restore.wav, capture before audition, then confirm shorter higher Sound4 tone with Sound5 and Pattern1 preserved"
+}

@@ -1,0 +1,3286 @@
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  /* The only three stroke colours: light, mid (group dividers), strong. */
+  --stroke: #d9d9d9;
+  --stroke-mid: #8a8a8a;
+  --stroke-strong: #111111;
+  --muted: #6b6b6b;
+  --soft: #f3f3f3;
+  --cell: 28px;
+  /* Half of three cells and their gaps, less the gap between the pair: Copy and Clear each take this. */
+  --pair: calc((3 * var(--cell) + 3px) / 2);
+  /* The two text sizes: everything, and the roll rows. */
+  --text: 13px;
+  --text-small: 11px;
+  color-scheme: light;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: var(--text);
+  line-height: 1.4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #141414;
+    --fg: #ececec;
+    --stroke: #3a3a3a;
+    --stroke-mid: #808080;
+    --stroke-strong: #ececec;
+    --muted: #9a9a9a;
+    --soft: #1f1f1f;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #141414;
+  --fg: #ececec;
+  --stroke: #3a3a3a;
+  --stroke-mid: #808080;
+  --stroke-strong: #ececec;
+  --muted: #9a9a9a;
+  --soft: #1f1f1f;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+  padding: 2px 6px;
+}
+
+button {
+  cursor: pointer;
+  /* Every button is as tall as a sequencer cell. */
+  height: var(--cell);
+  padding: 0 8px;
+}
+
+/* One font, one size, regular and bold only, everywhere. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+small,
+sub,
+sup,
+code,
+kbd,
+pre {
+  font: inherit;
+}
+
+/*
+ * Tables, everywhere: the small text size; rows one --row (set from tokens.ts) plus the
+ * 1px rule under them, like a roll lane; muted bold headers; .num columns right-aligned;
+ * row buttons one row tall; .play an unbordered icon button; .sort a header button.
+ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-small);
+}
+
+table td,
+table th {
+  height: var(--row);
+  padding: 0 6px;
+  line-height: var(--row);
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid var(--stroke);
+}
+
+table th {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+table .num {
+  text-align: right;
+}
+
+table .nowrap {
+  white-space: nowrap;
+}
+
+table button {
+  height: var(--row);
+  padding: 0 6px;
+  font-size: inherit;
+  /* On the line's top edge, so a button adds no descender space under the row. */
+  vertical-align: top;
+}
+
+table td .play {
+  width: var(--row);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: transparent;
+}
+
+table td .play:hover {
+  background: var(--soft);
+}
+
+table td .trash {
+  width: var(--row);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+
+table td .trash:hover {
+  background: var(--soft);
+  color: var(--fg);
+}
+
+table th .sort {
+  border-color: transparent;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+table th .sort:hover {
+  color: var(--fg);
+}
+
+table col.select {
+  width: calc(13px + 12px);
+}
+
+table .select {
+  text-align: center;
+}
+
+table tr.ticked td {
+  background: var(--soft);
+}
+
+table col.play {
+  /* The row button plus the cell's padding, so nothing overflows into an ellipsis. */
+  width: calc(var(--row) + 12px);
+}
+
+table col.shape {
+  width: 172px;
+}
+
+:focus-visible {
+  outline: 1px solid var(--stroke-strong);
+  outline-offset: 1px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  /* As tall as a button, with the same side padding; the arrow takes the rest. */
+  height: var(--cell);
+  padding: 0 18px 0 8px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--fg) 50%), linear-gradient(135deg, var(--fg) 50%, transparent 50%);
+  background-position: calc(100% - 10px) 55%, calc(100% - 6px) 55%;
+  background-size: 4px 4px;
+  background-repeat: no-repeat;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin: 0;
+  vertical-align: -2px;
+  border: 1px solid var(--stroke-strong);
+  background: var(--bg);
+}
+
+input[type='checkbox']:checked {
+  background: var(--fg);
+}
+
+input[type='range'] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  height: 16px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 1px;
+  background: var(--stroke-strong);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 14px;
+  margin-top: -6.5px;
+  background: var(--fg);
+  border: 0;
+}
+
+input[type='range']::-moz-range-track {
+  height: 1px;
+  background: var(--stroke-strong);
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 8px;
+  height: 14px;
+  background: var(--fg);
+  border: 0;
+  border-radius: 0;
+}
+
+input[type='range']:disabled::-webkit-slider-thumb {
+  background: var(--stroke);
+}
+
+input[type='range']:disabled::-moz-range-thumb {
+  background: var(--stroke);
+}
+
+
+button:hover {
+  background: var(--soft);
+}
+
+button.on,
+button.on:hover {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+button:disabled {
+  color: var(--muted);
+  cursor: default;
+  background: var(--bg);
+}
+
+input[type='range'] {
+  padding: 0;
+  border: 0;
+  accent-color: var(--fg);
+  width: 100%;
+}
+
+.app {
+  display: grid;
+  /* Top bar, pattern row, FX row, the scrolling grid, song strip, status bar. */
+  grid-template-rows: auto auto auto 1fr auto auto;
+  /* One column that never grows past the viewport: a long status line is cut short, not the page widened. */
+  grid-template-columns: minmax(0, 1fr);
+  height: 100%;
+  min-width: 320px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-bottom: 1px solid var(--stroke);
+  flex-wrap: wrap;
+}
+
+/* Wide modals: the Library and Project memory. */
+.modal.wide {
+  width: min(1000px, 100%);
+}
+
+/* Project memory: fixed columns so the table fills the modal, wrapping names and uses. */
+table.memory {
+  table-layout: fixed;
+}
+
+table.memory td,
+table.memory th {
+  overflow-wrap: anywhere;
+}
+
+table.memory col.sample {
+  width: 22%;
+}
+
+table.memory col.stored {
+  width: 14%;
+}
+
+table.memory col.length,
+table.memory col.pages {
+  width: 9%;
+}
+
+/* Sample shape: envelope in the text colour over the windows that play from it. */
+.miniwave {
+  display: block;
+  flex: none;
+}
+
+.grid .label .miniwave,
+.lane-label .miniwave {
+  margin-right: 4px;
+}
+
+.miniwave .window {
+  fill: var(--stroke);
+}
+
+.miniwave .wave {
+  fill: var(--fg);
+}
+
+table.memory col.stored {
+  width: 14%;
+}
+
+table.memory col.length,
+table.memory col.pages {
+  width: 9%;
+}
+
+table.memory .nowrap {
+  white-space: nowrap;
+}
+
+table.memory th {
+  color: var(--muted);
+}
+
+table.memory .num {
+  text-align: right;
+}
+
+table.memory th .sort {
+  border-color: transparent;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+table.memory th .sort:hover {
+  color: var(--fg);
+}
+
+.topbar .name,
+.modal header input.name,
+.sample-editor header input.name {
+  font-weight: 700;
+  border: 0;
+  background: transparent;
+  padding: 2px 4px;
+  min-width: 120px;
+}
+
+/* App name: the SOS in bold, the rest regular. */
+.topbar .brand {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* The project name fills the bar between the menus, with the save state as an icon at its left. */
+.topbar .name {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar .save-state {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: auto;
+  padding: 8px 16px;
+}
+
+.grid {
+  display: grid;
+  /* Sound header, sixteen steps, the chevron column, then mute and solo. */
+  grid-template-columns: 200px repeat(16, var(--cell)) var(--cell) var(--cell) var(--cell);
+  grid-auto-rows: var(--cell);
+  gap: 3px;
+  align-content: start;
+  width: max-content;
+}
+
+/* Sound headers: one target for the sound's editor, with number, icon, name and shape; the play button is its own. */
+.grid .label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.grid .label:hover {
+  background: var(--soft);
+}
+
+.grid .label .badge {
+  width: 16px;
+  text-align: center;
+  color: var(--muted);
+  flex: none;
+}
+
+.icon {
+  flex: none;
+  color: var(--stroke-strong);
+  shape-rendering: crispEdges;
+}
+
+.icon.empty {
+  color: var(--stroke);
+}
+
+.grid .label .name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Where the name button's border and padding used to start the text. */
+  padding: 0 5px;
+}
+
+.grid .label .name.empty {
+  color: var(--muted);
+}
+
+
+/* The icon's place, 16px wide; on hover a play button covers the icon. */
+.icon-slot {
+  position: relative;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-slot .play {
+  position: absolute;
+  inset: 0;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: var(--bg);
+  visibility: hidden;
+}
+
+.grid .label:hover .icon-slot .play,
+.grid .label:focus-within .icon-slot .play,
+.lane:hover .icon-slot .play,
+.lane:focus-within .icon-slot .play {
+  visibility: visible;
+}
+
+.icon-slot .play:hover {
+  background: var(--soft);
+}
+
+.grid > .chevron {
+  width: var(--cell);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: transparent;
+  color: var(--stroke-strong);
+}
+
+.grid > .chevron:hover {
+  background: var(--soft);
+}
+
+/* An unassigned row offers its action only on hover, at full strength, so the grid stays quiet otherwise. */
+.grid > .label.empty .name {
+  visibility: hidden;
+}
+
+.grid > .label.empty:hover .name,
+.grid > .label.empty:focus-visible .name {
+  visibility: visible;
+}
+
+.grid > .label.empty:hover,
+.grid > .label.empty:focus-visible {
+  opacity: 1;
+}
+
+/* A sound or key the preview silences, muted or outside the solo set, fades; the M and S buttons do not. */
+.grid > .label.silent,
+.grid > .cell.silent,
+.grid > .chevron.silent,
+.lane.silent > :not(.mix) {
+  opacity: 0.35;
+}
+
+/* Mute and solo: a letter in a cell-sized button; lit like a note cell when on. In a lane, lane-step sized. */
+.mix {
+  width: var(--cell);
+  padding: 0;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+.mix.on {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.lane > .mix {
+  height: calc(var(--row) - 2px);
+  margin: 1px 0;
+  border: 1px solid var(--stroke);
+  background: var(--bg);
+}
+
+.lane > .mix.on {
+  background: var(--fg);
+  border-color: var(--stroke-strong);
+}
+
+/* Nothing to mute or solo: the buttons fade with their row. */
+.mix:disabled {
+  color: var(--stroke);
+  background: transparent;
+  cursor: default;
+}
+
+.lane > .mix:disabled {
+  border-color: var(--stroke);
+}
+
+/* No sample or kit: the chevron fades to the light stroke, like an unassigned icon, and takes no hover. */
+.grid > .chevron:disabled {
+  color: var(--stroke);
+  background: transparent;
+}
+
+.grid > .chevron.open svg {
+  transform: rotate(180deg);
+}
+
+/*
+ * The roll: a panel under an unrolled sound, on the soft fill. Lanes use the grid's own
+ * columns and 3px gaps, so each note is exactly as wide as the step cell above it. The
+ * odd gap holds a 1px line in its middle pixel: beat lines sit there, 2px left of a step.
+ * Lane and beat lines are the light stroke; every fourth lane has the mid one.
+ */
+.grid {
+  grid-auto-rows: auto;
+}
+
+.grid > .label,
+.grid > .cell,
+.grid > .chevron {
+  height: var(--cell);
+}
+
+/* Only the roll has the fill; the darkest line closes the unrolled row above it and the roll below. */
+.roll {
+  background: var(--soft);
+  margin: 0 -3px;
+  padding: 0 3px;
+  border-top: 1px solid var(--stroke-strong);
+  border-bottom: 1px solid var(--stroke-strong);
+}
+
+/* The roll's top line stands in for the first lane's own line. */
+.roll > .lane:first-child {
+  border-top: 0;
+  height: var(--row);
+}
+
+.lane {
+  display: grid;
+  grid-template-columns: 200px repeat(16, var(--cell)) var(--cell) var(--cell) var(--cell);
+  column-gap: 3px;
+  height: calc(var(--row) + 1px);
+  /* The lane line runs the full width, through the gaps. */
+  border-top: 1px solid var(--stroke);
+}
+
+/* Every fourth lane: the mid stroke, a step darker than the lane lines. */
+.lane.group {
+  border-top-color: var(--stroke-mid);
+}
+
+.lane > button {
+  height: var(--row);
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* A lane's label repeats the sound header's columns: number 16px, gap 5, icon 16px, gap 5, name inset 5. It opens the key's editor. */
+.lane > .lane-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: var(--row);
+  font-size: var(--text-small);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Only a drum lane's label is a target: it opens the key's editor. */
+.lane > .lane-label.drum {
+  cursor: pointer;
+}
+
+.lane > .lane-label.drum:hover {
+  background: var(--bg);
+}
+
+.lane-key {
+  flex: none;
+  width: 16px;
+  text-align: center;
+}
+
+.lane .icon-slot .play {
+  background: var(--soft);
+}
+
+.lane-name {
+  flex: 1;
+  min-width: 0;
+  padding-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lane.base .lane-label {
+  font-weight: 700;
+}
+
+.lane.base .lane-name {
+  color: inherit;
+}
+
+/*
+ * A step is the row less 1px clear above and below, so stacked notes have the same 3px
+ * gap as side-by-side ones, with the lane line in its middle pixel.
+ */
+.lane > .lane-step {
+  position: relative;
+  overflow: visible;
+  height: calc(var(--row) - 2px);
+  margin: 1px 0;
+}
+
+.lane-step.on {
+  background: var(--fg);
+}
+
+/* Beat line: the middle pixel of the gap before steps 1, 5, 9 and 13, in the lane line's colour. */
+.lane-step.beat::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  /* Up through the clear pixel and the lane line, down through the clear pixel below. */
+  top: -2px;
+  bottom: -1px;
+  width: 1px;
+  background: var(--stroke);
+}
+
+/* Leave the darker divider unbroken where a beat line meets it. */
+.lane.group .lane-step.beat::before,
+.roll > .lane:first-child .lane-step.beat::before {
+  top: -1px;
+}
+
+.lane-step.on.changed::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 2px;
+  top: 2px;
+  background: var(--bg);
+  /* Dots are the one round shape. */
+  border-radius: 50%;
+}
+
+.lane-step:not(.on):hover {
+  background: var(--bg);
+}
+
+/*
+ * The parameter lane at the foot of a roll: a selector in the label column and a chart over
+ * the sixteen step columns, one handle per step joined by the curve.
+ */
+.param-lane {
+  display: grid;
+  grid-template-columns: 200px repeat(16, var(--cell)) var(--cell);
+  column-gap: 3px;
+  height: 80px;
+  border-top: 1px solid var(--stroke-mid);
+}
+
+.param-lane .selector {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding-left: 47px;
+}
+
+.param-lane .selector button {
+  height: var(--row);
+  padding: 0 5px;
+  font-size: var(--text-small);
+}
+
+.param-lane svg {
+  grid-column: 2 / span 16;
+  display: block;
+  width: 100%;
+  height: 80px;
+  overflow: visible;
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+.param-lane .curve {
+  fill: none;
+  stroke: var(--stroke-mid);
+  stroke-width: 1;
+}
+
+/* The other three parameters, behind the chosen one; they never take the pointer. */
+.param-lane .curve.under {
+  stroke: var(--stroke);
+  pointer-events: none;
+}
+
+.param-lane .handle {
+  fill: var(--fg);
+  stroke: var(--fg);
+  stroke-width: 1;
+}
+
+.param-lane .handle.held {
+  fill: var(--soft);
+  stroke: var(--stroke-mid);
+}
+
+.param-lane .handle.lock {
+  fill: var(--bg);
+  stroke: var(--fg);
+}
+
+.param-lane .value {
+  font-size: var(--text-small);
+  fill: var(--fg);
+}
+
+.param-lane .baseline {
+  stroke: var(--stroke);
+  stroke-width: 1;
+}
+
+/* A drum kit's keys, filled where a slice is assigned (display only). */
+.slices {
+  display: grid;
+  grid-template-columns: repeat(4, 3px);
+  grid-auto-rows: 3px;
+  gap: 1px;
+}
+
+.slices span {
+  /* Unassigned keys: filled in the light stroke colour, no stroke. */
+  background: var(--stroke);
+}
+
+.slices span.on {
+  background: var(--stroke-strong);
+}
+
+/* Kit editor: 4x4 pads in the editor modal, keys 1-4 on the top row. */
+.kit {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 88px;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+.pad {
+  position: relative;
+  border: 1px solid var(--stroke);
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+}
+
+.pad:hover {
+  background: var(--soft);
+}
+
+.pad.empty {
+  border-style: dashed;
+  color: var(--muted);
+}
+
+/* The current key is the filled pad; a key the current pattern plays carries a dot in the top right corner. */
+.pad.current {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.pad.current .pad-length,
+.pad.current .pad-key {
+  color: inherit;
+  opacity: 0.75;
+}
+
+.kit .pad.used::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 6px;
+  bottom: 6px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.pad.selected {
+  outline: 1px solid var(--stroke-strong);
+  outline-offset: 1px;
+}
+
+.pad.over {
+  outline: 1px dashed var(--stroke-strong);
+  outline-offset: -4px;
+}
+
+.pad-key {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: var(--muted);
+}
+
+.pad-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pad-length {
+  color: var(--muted);
+}
+
+.pad-more {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 0 8px;
+  color: var(--fg);
+  background: var(--bg);
+  visibility: hidden;
+}
+
+.pad:hover .pad-more,
+.pad:focus-within .pad-more {
+  visibility: visible;
+}
+
+.modal header .kit-name {
+  width: 180px;
+}
+
+/* The Kits menu floats from its button, fixed, so the modal's edge does not clip it. Entries keep to one line. */
+.menu .items.kits-menu {
+  position: fixed;
+  left: auto;
+  z-index: 100;
+  min-width: min(280px, calc(100vw - 16px));
+  max-width: min(420px, calc(100vw - 16px));
+}
+
+.kits-menu > button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kits-menu .kit-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.kits-menu .kit-row span {
+  flex: 1;
+  /* The entries above are buttons: their border and padding put the text 9px in. */
+  padding-left: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kits-menu p {
+  margin: 4px 6px;
+}
+
+.cell {
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  position: relative;
+}
+
+/* The pattern and the song entry now sounding: a thick segment under the button, on the row's lower edge, like the step playhead. */
+.patterns .pattern.playing::before,
+.chain .chip.playing::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--stroke-strong);
+}
+
+.patterns .pattern.playing::before {
+  bottom: -7px;
+}
+
+.chain .chip.playing::before {
+  bottom: -10px;
+}
+
+/* Steps 1, 5, 9 and 13: the mid stroke, like the every-fourth-lane dividers in a roll. */
+.cell.beat {
+  border-color: var(--stroke-mid);
+}
+
+.cell.note {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.cell.lock::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--fg);
+  /* Dots are the one round shape. */
+  border-radius: 50%;
+}
+
+/* A note whose lock changes a parameter from the value held before it. */
+.cell.note.changed::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 2px;
+  top: 2px;
+  background: var(--bg);
+  /* Dots are the one round shape. */
+  border-radius: 50%;
+}
+
+/* Pattern bar, FX row or kit bar, and the grid: one gap between all blocks. */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Pattern and FX rows: fixed above the grid, in the top bar's style; their cells line up with the grid's. */
+.patterns {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  padding: 6px 16px;
+  border-bottom: 1px solid var(--stroke);
+  overflow: hidden;
+}
+
+/* The bar's items keep their size, as the FX row's grid cells below them do, so the two stay in columns in any width. */
+.patterns:not(.compact) > * {
+  flex-shrink: 0;
+}
+
+.patterns .pattern {
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  position: relative;
+}
+
+/* Copy and Clear, in the pattern bar and the FX row: the pair spans exactly the three end columns below. */
+.patterns > button:not(.pattern),
+.fxrow > button {
+  width: var(--pair);
+  padding: 0 2px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* "Cancel" is the one label too wide for the pair at the text size; it takes the small one. */
+.patterns > button.cancel,
+.fxrow > button.cancel {
+  font-size: var(--text-small);
+}
+
+.patterns .pattern.filled::after,
+.pattern-picker .pattern.filled::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  right: 3px;
+  top: 3px;
+  background: currentColor;
+  /* Dots are the one round shape. */
+  border-radius: 50%;
+}
+
+.fxrow {
+  display: grid;
+  /* Label, sixteen effect cells, then Copy and Clear over the sequencer's three end columns (chevron, mute, solo). */
+  grid-template-columns: 200px repeat(16, var(--cell)) repeat(2, var(--pair));
+  gap: 3px;
+  padding: 6px 16px;
+  border-bottom: 1px solid var(--stroke);
+  overflow: hidden;
+}
+
+.fxrow-wrap {
+  position: relative;
+}
+
+/* The playhead: sixteen segments on the edge between the FX row and the sequencer, the sounding step's drawn thick. */
+.playhead {
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 200px repeat(16, var(--cell));
+  gap: 3px;
+  height: 3px;
+  pointer-events: none;
+}
+
+.playhead span:first-child {
+  grid-column: 2;
+}
+
+.playhead span.on {
+  background: var(--stroke-strong);
+}
+
+/* An effect cell: the number on top of a transparent native select that holds the names. */
+.fxrow .fx,
+.pad-grid .fx {
+  position: relative;
+  width: var(--cell);
+  height: var(--cell);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--stroke);
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.fxrow .fx:hover,
+.pad-grid .fx:hover {
+  background: var(--soft);
+}
+
+.fxrow .fx.on,
+.pad-grid .fx.on {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.fxrow .fx:focus-within,
+.pad-grid .fx:focus-within {
+  outline: 1px solid var(--stroke-strong);
+  outline-offset: 1px;
+}
+
+.fxrow .fx select,
+.pad-grid .fx select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fxrow .label {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+
+.chain {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 6px 16px;
+  border-top: 1px solid var(--stroke);
+  /* Room under the chips for the strip's scrollbar and the playing marker on the lower edge. */
+  padding-bottom: 9px;
+  /* As a grid row it must not grow with its chips: the strip inside scrolls instead. */
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* The chips in their own scrolling strip; the count keeps its place at the right. */
+.chain .chips-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.chain .chips {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  /* The scroll box reaches the row's lower edge, so a chip's marker below it is not clipped and scrolls with it. */
+  padding-bottom: 9px;
+  margin-bottom: -9px;
+}
+
+.chain .chips::-webkit-scrollbar {
+  display: none;
+}
+
+/* The strip's own scrollbar, drawn just under the chips whenever they overflow, so it shows on every system. */
+.chain .scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: var(--stroke);
+  cursor: pointer;
+}
+
+.chain .scrollbar .thumb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--stroke-mid);
+}
+
+.chain .count {
+  flex: none;
+  margin-left: 12px;
+}
+
+/* Song chips: squares like the pattern buttons; a click selects one. */
+.chain .chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--cell);
+  height: var(--cell);
+  flex: none;
+  border: 1px solid var(--stroke);
+  cursor: grab;
+  user-select: none;
+}
+
+/* The selected entry, lit like a selected pattern; the buttons for it sit beside Clear. */
+.chain .chip.on {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.chain .entry-actions {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: 8px;
+}
+
+.chain .entry-actions button {
+  white-space: nowrap;
+}
+
+.chain .count {
+  color: var(--muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.warn {
+  color: var(--fg);
+  font-weight: 700;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal {
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+  width: min(900px, 100%);
+  max-height: 90vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* The column never grows past the modal's width: a long header or table wraps or scrolls inside instead. */
+  grid-template-columns: minmax(0, 1fr);
+  overflow: hidden;
+}
+
+/* Headers wrap onto more lines when their buttons no longer fit on one. */
+.modal header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.library {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.library .folders {
+  border-right: 1px solid var(--stroke);
+  padding: 8px;
+  overflow: auto;
+}
+
+/* A folder row: the name button fills it; when selected, rename and delete appear on hover at its right. */
+.library .folder-row {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.library .folder-row button {
+  margin-bottom: 0;
+}
+
+/* Two 24px icon buttons in a 28px row: 2px around each, 2px between, and the name keeps clear of them. */
+.library .folder-actions {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: none;
+  gap: 2px;
+}
+
+.library .folder-row:hover > button,
+.library .folder-row:focus-within > button {
+  padding-right: 56px;
+}
+
+.library .folder-row:hover .folder-actions,
+.library .folder-row:focus-within .folder-actions {
+  display: inline-flex;
+}
+
+.library .folder-actions .icon-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.library .folder-actions .icon-button:hover {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Renaming in place: a field where the name was, the same size as the button. */
+.library .folder-edit {
+  display: block;
+  width: 100%;
+  height: var(--cell);
+  margin-bottom: 2px;
+  font-size: var(--text-small);
+}
+
+/* Folder names: the small size, one line each, cut with an ellipsis when long (the tooltip has the full name). */
+.library .folders button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-color: transparent;
+  margin-bottom: 2px;
+  font-size: var(--text-small);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library .list {
+  overflow: auto;
+  padding: 8px;
+}
+
+/* A row opens the sample editor in its place; the play, folder and action cells are their own targets. */
+.library tr.sample {
+  cursor: pointer;
+}
+
+.library tr.sample:hover td {
+  background: var(--soft);
+}
+
+/* The editor, in the row's place: a full-width cell, free of the one-line cell rules. */
+.library tr.editor-row td {
+  height: auto;
+  padding: 0;
+  line-height: 1.4;
+  white-space: normal;
+  overflow: visible;
+  font-size: var(--text);
+  border-top: 1px solid var(--stroke-strong);
+  border-bottom: 1px solid var(--stroke-strong);
+}
+
+/* Header: play, name, state, Delete and Done; toolbar: length and pages, folder, picker actions, edit actions. */
+.sample-editor header,
+.sample-editor .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  padding: 6px 12px;
+}
+
+.sample-editor header {
+  padding-left: 6px;
+  background: var(--soft);
+}
+
+.sample-editor .toolbar {
+  border-top: 1px solid var(--stroke);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.sample-editor header .play {
+  width: var(--cell);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: transparent;
+}
+
+.sample-editor header .play:hover {
+  background: var(--bg);
+}
+
+.sample-editor header input.name {
+  /* Takes the line's room and keeps a readable minimum, wrapping the header's buttons instead of shrinking. */
+  flex: 1 1 160px;
+  min-width: 120px;
+}
+
+.sample-editor .toolbar .folder {
+  position: relative;
+}
+
+.sample-editor .toolbar .folder-cell {
+  width: 160px;
+  text-align: left;
+  border-color: var(--stroke);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sample-editor .toolbar .folder-cell.empty {
+  color: var(--muted);
+}
+
+/* Every cell keeps to one line: fixed columns, long text cut with an ellipsis and given in full by the tooltip. */
+.library table {
+  table-layout: fixed;
+}
+
+.library td,
+.library th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library col.length {
+  width: 64px;
+}
+
+.library col.pages {
+  width: 56px;
+}
+
+.library col.folder {
+  width: 150px;
+}
+
+.library col.actions {
+  width: 70px;
+}
+
+.library col.actions.picking {
+  width: 180px;
+}
+
+.library td.folder {
+  position: relative;
+}
+
+.library .folder-cell {
+  width: 100%;
+  text-align: left;
+  border-color: transparent;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.library .folder-cell.empty {
+  color: var(--muted);
+}
+
+.library .folder-cell:hover {
+  background: var(--bg);
+}
+
+/* The folder combobox: fixed to the viewport at its cell's position, above every modal and scroll container. */
+/* The add chip: a button the size of a chip; its picker floats above it with the device's 4x4 keys. */
+.chain .chip.add {
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  flex: none;
+  color: var(--muted);
+}
+
+.chain .chip.add.on {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.pattern-picker {
+  position: fixed;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell));
+  gap: 3px;
+  padding: 4px;
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+}
+
+.pattern-picker .pattern {
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  position: relative;
+}
+
+.folder-picker {
+  position: fixed;
+  z-index: 100;
+  width: 240px;
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  /* Its own text, not the cell's: a table cell would hand down nowrap, ellipsis, muted colour and a short line. */
+  color: var(--fg);
+  font-size: var(--text-small);
+  line-height: normal;
+  text-align: left;
+  white-space: normal;
+}
+
+.folder-picker input {
+  width: 100%;
+  font-size: var(--text-small);
+  height: var(--cell);
+}
+
+.folder-picker .choices button {
+  font-size: var(--text-small);
+}
+
+.folder-picker .choices {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.folder-picker .choices button {
+  flex: none;
+  height: var(--cell);
+  padding: 0 8px;
+  text-align: left;
+  border-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.folder-picker .choices button.active {
+  background: var(--soft);
+}
+
+.folder-picker .choices p {
+  margin: 4px 6px;
+}
+
+.library td.actions {
+  text-align: right;
+  overflow: visible;
+}
+
+.library td.folder {
+  overflow: visible;
+}
+
+.library .drop.over {
+  border-color: var(--stroke-strong);
+}
+
+.library .drop {
+  border: 1px dashed var(--stroke);
+  padding: 12px;
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu .items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+  min-width: 180px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.menu .items button {
+  text-align: left;
+  border-color: transparent;
+}
+
+/* A menu near the right edge opens leftwards, so its items stay on screen. */
+.menu.right .items {
+  left: auto;
+  right: 0;
+}
+
+/* A row in a menu with hover actions floating over its right end; the name is not moved or cut for them. */
+.menu .items .project-row {
+  position: relative;
+}
+
+.menu .items .project-row > button {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu .items .row-actions {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: none;
+  gap: 2px;
+  /* Opaque, so the icons read over the name; the current row's dark fill carries through. */
+  background: var(--bg);
+}
+
+.menu .items .project-row > button.on ~ .row-actions {
+  background: var(--fg);
+}
+
+.menu .items .project-row:hover .row-actions,
+.menu .items .project-row:focus-within .row-actions {
+  display: inline-flex;
+}
+
+.menu .items .row-actions .icon-button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+}
+
+.menu .items .project-row > button.on ~ .row-actions .icon-button {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.menu .items .row-actions .icon-button:hover {
+  background: var(--soft);
+  color: var(--fg);
+}
+
+.notice {
+  padding: 4px 16px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.modal.editor {
+  width: min(760px, 100%);
+}
+
+.editor-body {
+  padding: 12px;
+  overflow: auto;
+}
+
+.waveform {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--stroke);
+  touch-action: none;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 8px 16px;
+  margin: 12px 0;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* A dependent group of controls, such as the compressor's, set off by a rule above it. */
+.controls.section {
+  margin-top: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--stroke);
+}
+
+/* A checkbox and its label on one line, level with the other controls' inputs. */
+.controls label.check {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  align-self: end;
+  height: var(--cell);
+  cursor: pointer;
+}
+
+.controls input[type='number'] {
+  width: 100px;
+}
+
+/*
+ * The pad layout, below the width the sequencer needs: a view bar, a context row and one
+ * 4x4 pad grid in place of the pattern bar, FX row, sequencer and song strip. Pads keep the
+ * cell styling, scaled to the width.
+ */
+.app.narrow {
+  grid-template-rows: auto 1fr auto;
+}
+
+.app.narrow .topbar .brand,
+.app.narrow .topbar select {
+  display: none;
+}
+
+/* The theme button stands in for the list on a phone. */
+.topbar .theme-button {
+  display: none;
+  width: var(--cell);
+  padding: 0;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.app.narrow .topbar .theme-button {
+  display: inline-flex;
+}
+
+/* The smallest screens: tighter gaps and button padding in the top bar, so the name keeps some room beside the theme button. */
+@media (max-width: 369px) {
+  .app.narrow .topbar {
+    gap: 6px;
+  }
+
+  .app.narrow .topbar > button,
+  .app.narrow .topbar .menu > button {
+    padding: 0 6px;
+  }
+}
+
+.app.narrow .topbar {
+  padding: 6px 8px;
+}
+
+.app.narrow .main {
+  padding: 8px;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-height: 0;
+  /* Measured, so the pattern strip can choose one row of sixteen or two of eight. */
+  container-type: inline-size;
+}
+
+/* The pattern strip on a phone: the bar's buttons alone, centred, two rows of eight unless sixteen fit. */
+.patterns.compact {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px 3px;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+}
+
+/* Like the view bar, the buttons stretch to the width, in one row of sixteen or two of eight. */
+.patterns.compact .pattern {
+  width: auto;
+}
+
+@container (min-width: 509px) {
+  .patterns.compact {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+  }
+}
+
+/* No dividing line under the compact strip: the marker's top edge sits on the button's bottom edge, as under the pads. */
+.patterns.compact .pattern.playing::before {
+  bottom: -3px;
+}
+
+.app.narrow .stack {
+  min-height: 100%;
+}
+
+@container (min-width: 480px) {
+}
+
+/*
+ * On a phone the tempo settings share the transport's line, at its right, when the row is
+ * wide enough for the words; otherwise they take their own line below, from the left.
+ */
+@container (min-width: 480px) {
+}
+
+.mobile .viewbar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+
+.mobile .viewbar button {
+  padding: 0 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile .context {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: var(--cell);
+}
+
+/* The FX bar's two groups, pattern and effects actions, wrap as whole groups when the row is short; the first stays at the left. */
+.mobile .context.wrap {
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
+
+.mobile .context .group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile .context .hint {
+  flex: none;
+  margin-right: 4px;
+}
+
+.mobile .context .sound-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile .context button.sound-name {
+  border-color: transparent;
+  padding: 0 4px;
+}
+
+.mobile .context .icon-button {
+  width: var(--cell);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile .context button.cancel {
+  font-size: var(--text-small);
+}
+
+.mobile .context .count {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* The key for new notes: sixteen small buttons in two rows of eight. */
+/* The key strip lays out like the pattern strip: two rows of eight until sixteen fit on one. */
+.mobile .keys {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px 3px;
+}
+
+@container (min-width: 509px) {
+  .mobile .keys {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+  }
+}
+
+.mobile .keys .key {
+  height: var(--cell);
+  padding: 0;
+  color: var(--muted);
+}
+
+.mobile .keys .key.on {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.mobile .keys .key.silent {
+  opacity: 0.35;
+}
+
+/*
+ * The pads fill what is left of the screen: the wrap takes the remaining height and is
+ * measured as a container, and the grid is the largest 4-wide block that fits both its
+ * width and height, centred. A long song grid takes the width and scrolls instead.
+ */
+.pad-wrap {
+  flex: 1;
+  min-height: 0;
+  container-type: size;
+  display: flex;
+}
+
+.pad-grid {
+  --rows: 4;
+  position: relative;
+  display: grid;
+  /* Equal columns whatever the pads' own sizes, so the marks layer lines up with them. */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  margin: auto;
+  width: min(100%, calc(100cqh * 4 / var(--rows)));
+  aspect-ratio: 4 / var(--rows);
+}
+
+
+.pad-grid .pad,
+.pad-grid .fx {
+  position: relative;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1;
+  padding: 0;
+  /* The playing marker hangs just below the pad, in the gap. */
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pad-grid .pad.on,
+.pad-grid .pad.note {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.pad-grid .pad.beat:not(.note):not(.on) {
+  border-color: var(--stroke-mid);
+}
+
+.pad-grid .pad.silent {
+  opacity: 0.35;
+}
+
+.pad-grid .pad.lock::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  right: 4px;
+  top: 4px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.pad-grid .pad.lock::after {
+  background: var(--stroke-mid);
+}
+
+/* A note whose lock changes a parameter: the sequencer's dot, in the pad's background colour. */
+.pad-grid .pad.note.changed::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 4px;
+  top: 4px;
+  background: var(--bg);
+  border-radius: 50%;
+}
+
+/* The step the parameter row edits. */
+.pad-grid .pad.step.selected {
+  outline: 1px solid var(--stroke-strong);
+  outline-offset: 1px;
+}
+
+/* The parameter row: the list at the left; the slider takes the room; the value and its clear button at the right. */
+.mobile .param-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mobile .param-row .param-select {
+  flex: none;
+}
+
+.mobile .param-row .param-slider {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.mobile .param-row .param-value {
+  flex: none;
+  min-width: 56px;
+  text-align: right;
+  font-size: var(--text-small);
+  font-variant-numeric: tabular-nums;
+}
+
+.mobile .param-row .param-value.inherited,
+.mobile .param-row .param-value.default,
+.mobile .param-row .param-value.none {
+  color: var(--muted);
+}
+
+/* No step selected: the row stays, faded, so the pads do not jump. */
+.mobile .param-row.disabled .param-slider,
+.mobile .param-row.disabled .param-value {
+  opacity: 0.35;
+}
+
+.mobile .param-row .param-clear,
+.mobile .param-row .param-clear-all {
+  flex: none;
+  padding: 0 6px;
+  white-space: nowrap;
+}
+
+
+/*
+ * The Sound view: the sequencer's label column with a play button that the monitor covers
+ * while the sound plays, and the mute and solo buttons, one row per sound, scrolling under
+ * the view bar. The label rules are the desktop's (its hover play stays hidden here; the
+ * cell has its own), and an empty sound shows its "Add sample…" name without hovering.
+ */
+.mobile .grid.sounds {
+  /* Label, play (with the monitor over it), mute, solo. */
+  grid-template-columns: minmax(0, 1fr) var(--cell) var(--cell) var(--cell);
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 2px;
+}
+
+/* The play cell: the button, and over it the monitor, hidden until the sound sounds, then a note-like tile with the key that lets taps through to the button. */
+.mobile .grid.sounds > .play-cell {
+  position: relative;
+  width: var(--cell);
+  height: var(--cell);
+}
+
+.mobile .grid.sounds .play-column {
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile .grid.sounds .play-column:disabled {
+  color: var(--stroke);
+}
+
+.mobile .grid.sounds > .label.empty .name {
+  visibility: visible;
+}
+
+.mobile .grid.sounds .monitor {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-small);
+  pointer-events: none;
+}
+
+.mobile .grid.sounds .monitor.on {
+  display: inline-flex;
+  background: var(--fg);
+  color: var(--bg);
+  border: 1px solid var(--stroke-strong);
+}
+
+.mobile .grid.sounds .monitor.silent {
+  opacity: 0.35;
+}
+
+/* The Sequence bar's sound list takes the room the buttons leave. */
+.mobile .context .sound-select {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Over the pads, the marker layer: the grid's own box and columns, each cell drawing the 3px marker under its pad. */
+.pad-marks {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  pointer-events: none;
+}
+
+.pad-marks span {
+  position: relative;
+}
+
+.pad-marks span.on::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  /* Its top edge on the pad's bottom edge. */
+  bottom: -3px;
+  height: 3px;
+  background: var(--stroke-strong);
+}
+
+/*
+ * The Song view: the entries as rows, like the sounds. A handle at the left drags a row to
+ * a new place; the entry's number and pattern fill the row and select it on a tap; move up,
+ * move down and remove sit at the right. The sounding entry carries a marker at its left edge.
+ */
+.mobile .song-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-bottom: 2px;
+}
+
+/* A row reads like a sound's: no frame of its own, the cell-high controls in a line. */
+.mobile .song-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+  height: var(--cell);
+}
+
+.mobile .song-row.playing::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  width: 3px;
+  background: var(--stroke-strong);
+}
+
+.mobile .song-row.dragging {
+  background: var(--soft);
+}
+
+.mobile .song-row .handle {
+  flex: none;
+  width: var(--cell);
+  height: var(--cell);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.mobile .song-row .entry {
+  flex: 1;
+  min-width: 0;
+  height: var(--cell);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 6px;
+  text-align: left;
+  border-color: transparent;
+  background: transparent;
+}
+
+.mobile .song-row .entry:hover {
+  background: var(--soft);
+}
+
+.mobile .song-row.on .entry {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+.mobile .song-row .entry .badge {
+  width: 20px;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.mobile .song-row.on .entry .badge {
+  color: var(--bg);
+  opacity: 0.75;
+}
+
+.mobile .song-row .entry.filled::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  margin-left: auto;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.mobile .song-row .row-actions {
+  flex: none;
+  display: inline-flex;
+  gap: 3px;
+}
+
+.mobile .song-row .icon-button {
+  width: var(--cell);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile .song-row .icon-button:disabled {
+  color: var(--stroke);
+}
+
+.mobile .song-add {
+  flex: none;
+  color: var(--muted);
+}
+
+/*
+ * The bottom bar. Three zones: the transport at the left, tempo and swing beside it, and
+ * at the right the status slot, which takes whatever width is left, then the memory
+ * meter. On a phone the two rows stack.
+ */
+/*
+ * The bottom bar, one row at every width. The controls at the left keep their size; the
+ * memory meter at the right; the space between gives. On the narrowest screens the words
+ * on the transport buttons give way to glyphs. Notices are a toast over the bar, and the
+ * four-voice warning sits on the pattern buttons and steps it concerns.
+ */
+.statusbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-top: 1px solid var(--stroke);
+  color: var(--muted);
+}
+
+.statusbar .transport-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+
+.statusbar .transport {
+  min-width: 56px;
+}
+
+.statusbar .mode {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.statusbar .tempo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+
+.statusbar label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.statusbar input[type='number'] {
+  width: 56px;
+}
+
+/* Words by default; the glyphs (a stop square, the letters P, S and F) wait for the narrowest screens. */
+.statusbar .glyph {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.statusbar .glyph-inline {
+  display: inline-flex;
+  align-items: center;
+  color: var(--fg);
+}
+
+/* The memory meter: a bordered button, so it reads as a door to the breakdown, with the fill of the device's pages. */
+.statusbar .memory {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.statusbar .memory .meter {
+  position: relative;
+  width: 40px;
+  height: 8px;
+  border: 1px solid var(--stroke-mid);
+}
+
+.statusbar .memory .meter span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--stroke-mid);
+}
+
+/* Over the device's memory: the meter turns to the text colour, with the warning glyph. */
+.statusbar .memory.over {
+  color: var(--fg);
+  border-color: var(--stroke-strong);
+}
+
+.statusbar .memory.over .meter {
+  border-color: var(--stroke-strong);
+}
+
+.statusbar .memory.over .meter span {
+  background: var(--fg);
+}
+
+/* Tempo and swing on a phone: one button, and a popover of steppers above it. */
+.statusbar .tempo-button {
+  white-space: nowrap;
+}
+
+.statusbar .tempo-button .short {
+  display: none;
+}
+
+.tempo-popover {
+  position: fixed;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 6px 8px;
+  align-items: center;
+  padding: 8px;
+  background: var(--bg);
+  border: 1px solid var(--stroke);
+  color: var(--muted);
+}
+
+.tempo-popover .value {
+  min-width: 36px;
+  text-align: center;
+  color: var(--fg);
+}
+
+.tempo-popover button {
+  width: var(--cell);
+  padding: 0;
+}
+
+/* On a phone: tighter, the meter's words gone. */
+.app.narrow .statusbar {
+  gap: 6px;
+  padding: 6px 8px;
+}
+
+.app.narrow .statusbar .transport-group {
+  gap: 6px;
+}
+
+.app.narrow .statusbar .memory .label-text {
+  display: none;
+}
+
+/* The narrowest screens: glyphs for the words, the tempo button reading "75 / 4". */
+@media (max-width: 479px) {
+  .app.narrow .statusbar .word {
+    display: none;
+  }
+
+  .app.narrow .statusbar .glyph {
+    display: inline-flex;
+  }
+
+  .app.narrow .statusbar .transport,
+  .app.narrow .statusbar .mode button,
+  .app.narrow .statusbar [aria-pressed] {
+    min-width: var(--cell);
+    padding: 0 6px;
+  }
+
+  .app.narrow .statusbar .tempo-button .long {
+    display: none;
+  }
+
+  .app.narrow .statusbar .tempo-button .short {
+    display: inline;
+  }
+}
+
+/* The narrowest screens: a shorter meter and tighter padding, so "241 / 241" still fits on the row. */
+@media (max-width: 369px) {
+  .app.narrow .statusbar {
+    gap: 3px;
+  }
+
+  .app.narrow .statusbar .tempo-button {
+    padding: 0 5px;
+  }
+
+  .app.narrow .statusbar .memory {
+    gap: 4px;
+    padding: 0 5px;
+  }
+
+  /* Room for undo and redo: the meter shows its bar alone (the numbers are in its title and its dialog), and the two buttons narrow. */
+  .app.narrow .statusbar .memory .count {
+    display: none;
+  }
+
+  .app.narrow .statusbar .undo-buttons button {
+    width: 26px;
+  }
+
+  /* Over the device's memory, the warning glyph stands in for the full bar. */
+  .app.narrow .statusbar .memory.over .meter {
+    display: none;
+  }
+}
+
+/* A notice: a toast over the bottom bar, in the text colour, gone on a tap or after a few seconds. */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 52px;
+  transform: translateX(-50%);
+  z-index: 90;
+  max-width: min(92vw, 520px);
+  padding: 8px 12px;
+  background: var(--fg);
+  color: var(--bg);
+  border: 1px solid var(--stroke-strong);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+/* The warning glyph: in a corner of the pattern button, cell or pad it concerns; a tap opens its words. */
+.warn-glyph {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  width: 12px;
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fg);
+  cursor: help;
+}
+
+.pattern.on .warn-glyph,
+.cell.note .warn-glyph,
+.pad.note .warn-glyph {
+  color: var(--bg);
+}
+
+.hint-popover {
+  position: fixed;
+  z-index: 110;
+  padding: 6px 8px;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--stroke-strong);
+  font-size: var(--text-small);
+  line-height: 1.4;
+}
+
+/*
+ * Modals on a phone. Each keeps to the width: the Library's folders become a row of chips
+ * above the list and each sample a two-line card; the kit editor's name field shrinks and
+ * its pads' window buttons show without hover; the memory table drops its shape column.
+ */
+.app.narrow .modal header .kit-name {
+  flex: 1 1 120px;
+  min-width: 0;
+  width: auto;
+}
+
+.app.narrow .pad-more {
+  visibility: visible;
+}
+
+.app.narrow .library {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto minmax(0, 1fr);
+  min-height: 0;
+}
+
+/* Under the chips: the selected folder's name and count, with Rename and Delete for a real folder. */
+.library .folder-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--stroke);
+  font-size: var(--text-small);
+}
+
+.library .folder-bar strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.library .folder-bar .folder-edit {
+  flex: 1 1 120px;
+  margin: 0;
+}
+
+.app.narrow .library .folder-row:hover > button,
+.app.narrow .library .folder-row:focus-within > button {
+  padding-right: 8px;
+}
+
+.app.narrow .library .folders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  border-right: 0;
+  border-bottom: 1px solid var(--stroke);
+  max-height: 35vh;
+}
+
+.app.narrow .library .folders button,
+.app.narrow .library .folder-edit {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 0;
+  border-color: var(--stroke);
+}
+
+.app.narrow .library .folder-row {
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.app.narrow .library .folder-edit {
+  width: 140px;
+}
+
+.app.narrow .library table,
+.app.narrow .library tbody,
+.app.narrow .library tr.editor-row,
+.app.narrow .library tr.editor-row td {
+  display: block;
+  width: 100%;
+}
+
+.app.narrow .library colgroup {
+  display: none;
+}
+
+/* The heading keeps the select-all box, over the rows' boxes, and the Name label; the rule runs across. */
+.app.narrow .library thead {
+  display: block;
+}
+
+.app.narrow .library thead tr,
+.app.narrow .library tr.sample {
+  display: grid;
+  /* Select, play, then four columns: name over length, pages and folder; the shape over the actions. */
+  grid-template-columns: auto auto auto auto minmax(0, 1fr) auto;
+  column-gap: 6px;
+  align-items: center;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.app.narrow .library thead th {
+  display: none;
+  height: auto;
+  padding: 0;
+  border: 0;
+}
+
+.app.narrow .library thead th.select,
+.app.narrow .library thead th:nth-child(2),
+.app.narrow .library thead th:nth-child(3) {
+  display: block;
+  height: var(--row);
+}
+
+.app.narrow .library thead th:nth-child(3) {
+  grid-column: 3 / 7;
+}
+
+/* A sample as a card: select and play at the left over two lines; the name and shape above, length, pages, folder and the actions below. */
+.app.narrow .library tr.sample {
+  grid-template-rows: auto auto;
+  padding: 3px 0;
+}
+
+.app.narrow .library tr.sample td {
+  height: auto;
+  padding: 0;
+  border: 0;
+}
+
+.app.narrow .library tr.sample td:nth-child(1) {
+  grid-row: 1 / 3;
+  grid-column: 1;
+}
+
+.app.narrow .library tr.sample td:nth-child(2) {
+  grid-row: 1 / 3;
+  grid-column: 2;
+}
+
+.app.narrow .library tr.sample td.name {
+  grid-row: 1;
+  grid-column: 3 / 6;
+}
+
+/* The shape at the first line's right, drawn narrower at the same height. */
+.app.narrow .library tr.sample td:nth-child(4) {
+  grid-row: 1;
+  grid-column: 6;
+  justify-self: end;
+  line-height: 0;
+}
+
+.app.narrow .library tr.sample td:nth-child(5),
+.app.narrow .library tr.sample td:nth-child(6),
+.app.narrow .library tr.sample td.folder {
+  grid-row: 2;
+  font-size: var(--text-small);
+  color: var(--muted);
+  text-align: left;
+}
+
+.app.narrow .library tr.sample td:nth-child(5) {
+  grid-column: 3;
+}
+
+.app.narrow .library tr.sample td:nth-child(6) {
+  grid-column: 4;
+}
+
+.app.narrow .library tr.sample td:nth-child(6)::after {
+  content: ' ' attr(data-unit);
+}
+
+.app.narrow .library tr.sample td.folder {
+  grid-column: 5;
+}
+
+.app.narrow .library .folder-cell {
+  width: auto;
+  max-width: 100%;
+  font-size: inherit;
+  height: auto;
+  line-height: inherit;
+}
+
+.app.narrow .library tr.sample td.actions {
+  grid-row: 2;
+  grid-column: 6;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.app.narrow .sample-editor .toolbar .folder-cell {
+  max-width: 100%;
+}
+
+/*
+ * The memory table as cards: play at the left; the name and the shape on the first line,
+ * where it is stored, who uses it, length and pages on the second. The heading keeps the
+ * sort buttons, on the same grid, so Sample sits over the names and Length and Pages over
+ * their numbers.
+ */
+.app.narrow table.memory,
+.app.narrow table.memory tbody,
+.app.narrow table.memory thead {
+  display: block;
+  width: 100%;
+}
+
+.app.narrow table.memory colgroup {
+  display: none;
+}
+
+.app.narrow table.memory thead tr,
+.app.narrow table.memory tbody tr {
+  display: grid;
+  /* Play, stored-in, used-by (the room), length, pages. */
+  grid-template-columns: auto auto minmax(0, 1fr) auto auto;
+  column-gap: 8px;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.app.narrow table.memory thead th,
+.app.narrow table.memory tbody td {
+  height: auto;
+  padding: 0;
+  border: 0;
+}
+
+.app.narrow table.memory thead th {
+  display: none;
+  line-height: var(--row);
+}
+
+.app.narrow table.memory thead th:nth-child(1),
+.app.narrow table.memory thead th:nth-child(2),
+.app.narrow table.memory thead th:nth-child(6),
+.app.narrow table.memory thead th:nth-child(7) {
+  display: block;
+}
+
+.app.narrow table.memory thead th:nth-child(1) {
+  width: var(--row);
+}
+
+.app.narrow table.memory thead th:nth-child(2) {
+  grid-column: 2 / 4;
+}
+
+.app.narrow table.memory tbody tr {
+  grid-template-rows: auto auto;
+  align-items: baseline;
+  padding: 4px 0;
+}
+
+.app.narrow table.memory tbody td {
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.app.narrow table.memory tbody td:nth-child(1) {
+  grid-row: 1 / 3;
+  grid-column: 1;
+  align-self: start;
+}
+
+.app.narrow table.memory tbody td:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2 / 4;
+}
+
+.app.narrow table.memory tbody td:nth-child(3) {
+  grid-row: 1;
+  grid-column: 4 / 6;
+  justify-self: end;
+  align-self: center;
+  line-height: 0;
+}
+
+.app.narrow table.memory tbody td:nth-child(4),
+.app.narrow table.memory tbody td:nth-child(5),
+.app.narrow table.memory tbody td:nth-child(6),
+.app.narrow table.memory tbody td:nth-child(7) {
+  grid-row: 2;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.app.narrow table.memory tbody td:nth-child(4) {
+  grid-column: 2;
+  white-space: nowrap;
+}
+
+.app.narrow table.memory tbody td:nth-child(4)::after {
+  content: ' ·';
+}
+
+.app.narrow table.memory tbody td:nth-child(5) {
+  grid-column: 3;
+}
+
+.app.narrow table.memory tbody td:nth-child(6) {
+  grid-column: 4;
+  white-space: nowrap;
+}
+
+.app.narrow table.memory tbody td:nth-child(7) {
+  grid-column: 5;
+  white-space: nowrap;
+}
+
+.app.narrow table.memory tbody td:nth-child(7)::after {
+  content: ' ' attr(data-unit);
+}
+
+/* The crash screen: plain text, centred, with the error for a report. */
+.crash {
+  max-width: 480px;
+  margin: 15vh auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+.crash pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+/* A link that looks like a button: the help button, the welcome's guide link, the guide's way back. */
+a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--cell);
+  padding: 0 8px;
+  border: 1px solid var(--stroke);
+  background: var(--bg);
+  color: var(--fg);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.button:hover {
+  background: var(--soft);
+}
+
+a.button.primary {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--stroke-strong);
+}
+
+/* The help button: square, at the very right of the top bar. */
+.topbar .help-button {
+  flex: none;
+  width: var(--cell);
+  padding: 0;
+  font-weight: 700;
+}
+
+/* The first visit's welcome: a small dialog. */
+.modal.welcome {
+  width: min(440px, 100%);
+}
+
+.modal.welcome p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.welcome-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/*
+ * The guide: a scrolling page of text with the app's own components framed as live
+ * examples. The page scrolls (the app's root is a fixed-height grid).
+ */
+/* The guide layout: the top bar, the scrolling guide, the bottom bar. */
+.app.guide-mode {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+.guide {
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--bg);
+}
+
+.guide-body h1 {
+  margin: 8px 0 4px;
+}
+
+.guide-empty {
+  margin: 16px;
+}
+
+.guide-top {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.guide-body {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px 16px 64px;
+  line-height: 1.55;
+}
+
+.guide-body .lead {
+  margin-top: 8px;
+}
+
+.guide-body h2 {
+  margin: 40px 0 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--stroke);
+}
+
+.guide-body h3 {
+  margin: 24px 0 4px;
+  color: var(--muted);
+}
+
+.guide-body ol {
+  padding-left: 22px;
+}
+
+.guide-body li {
+  margin: 6px 0;
+}
+
+.guide-body .toc {
+  columns: 2 220px;
+}
+
+.guide-body a:not(.button) {
+  color: var(--fg);
+}
+
+.guide-end {
+  margin-top: 40px;
+}
+
+/* A live example: the component in a bordered frame, scrolled sideways if it is wider than the page, and a caption. */
+.guide-example {
+  margin: 16px 0 24px;
+  overflow-x: auto;
+}
+
+/*
+ * A frame is as wide as the interface it holds, no wider than the page; a wider one scrolls
+ * inside it. Each kind keeps a floor so a narrow window does not squeeze it out of shape:
+ * the desktop parts 760px, the dialogs 360px, the phones 320px (the narrowest phone the
+ * app lays out for, or the page if narrower). A floor wider than the page scrolls sideways inside its example.
+ */
+.guide-frame {
+  width: fit-content;
+  max-width: 100%;
+  min-width: var(--frame-min, 0);
+  border: 1px solid var(--stroke-mid);
+  overflow: auto;
+  background: var(--bg);
+}
+
+.guide-example figcaption {
+  margin-top: 6px;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+
+.guide-example .live {
+  display: inline-block;
+  padding: 0 4px;
+  margin-right: 4px;
+  background: var(--fg);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.guide-example.wide {
+  --frame-min: 760px;
+}
+
+.guide-example.dialog {
+  --frame-min: 360px;
+}
+
+.guide-example.tall .guide-frame {
+  max-height: 560px;
+}
+
+/* The bars keep their own borders; inside a frame the outer ones double up with it. */
+.guide-frame > .topbar,
+.guide-frame > .patterns {
+  border-bottom: 0;
+}
+
+.guide-frame > .fxrow-wrap .fxrow {
+  border-bottom: 0;
+}
+
+.guide-frame > .chain,
+.guide-frame > .statusbar {
+  border-top: 0;
+}
+
+/* The pattern bar and FX row at their full width in a frame narrower than them: the frame scrolls, rather than clip them. */
+.guide-frame > .patterns,
+.guide-frame > .fxrow-wrap {
+  min-width: max-content;
+}
+
+/* The sequencer grid gets the app's page margin; the pattern bar and FX row keep their own padding, so their cells line up as in the app. */
+.guide-frame > .grid {
+  margin: 8px 16px;
+}
+
+/* A dialog shown inline: its backdrop becomes a plain block and the dialog fills the frame. */
+.guide-example.dialog .modal-backdrop {
+  position: static;
+  inset: auto;
+  padding: 0;
+  background: none;
+  display: block;
+}
+
+/* An inline dialog keeps the width it has in the app: 760px for the editors and device dialogs, 1000px for the library and memory, never wider than the page. */
+.guide-example.dialog .modal {
+  width: 760px;
+  max-width: 100%;
+  max-height: 640px;
+  border: 0;
+}
+
+.guide-example.dialog .modal.wide {
+  width: 1000px;
+}
+
+/*
+ * The pattern strip at a phone's width (two rows of eight, as on a phone), and under it the
+ * four phone views side by side in phone-sized frames, wrapping onto more rows on narrower
+ * pages. The wrapper is not the app's root, so the .app grid is undone here.
+ */
+.guide-phones.app.narrow {
+  display: block;
+  height: auto;
+  min-width: 0;
+}
+
+.guide-phones .guide-strip {
+  max-width: 390px;
+  margin-bottom: 16px;
+}
+
+.guide-phone-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.guide-example.phone {
+  /* A common phone's width, 390px; two to a row on the guide's page, one on a narrow screen. */
+  flex: 0 1 390px;
+  /* A phone's floor gives way to the page itself on the narrowest screens, so the guide never scrolls sideways. */
+  min-width: min(320px, 100%);
+  margin: 0;
+  overflow-x: visible;
+}
+
+/* A phone view has no width of its own to shrink to: its frame is a phone's. */
+.guide-example.phone .guide-frame {
+  width: 100%;
+  overflow: hidden;
+}
+
+.guide-phone.mobile {
+  height: 640px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.guide-example.phone figcaption {
+  font-weight: 700;
+  color: var(--fg);
+}
+
+/* The buttons in the steps that show a phone view. */
+.guide .show-view {
+  height: auto;
+  padding: 0 6px;
+  margin-right: 4px;
+  font-size: var(--text-small);
+}
+
+/* The guide's phone frame is narrow whatever the window: the bottom bar takes its compact form there too. */
+.guide-phone .statusbar .word {
+  display: none;
+}
+
+.guide-phone .statusbar .glyph {
+  display: inline-flex;
+}
+
+.guide-phone .statusbar .transport,
+.guide-phone .statusbar .mode button,
+.guide-phone .statusbar [aria-pressed] {
+  min-width: var(--cell);
+  padding: 0 6px;
+}
+
+.guide-phone .statusbar .tempo-button .long {
+  display: none;
+}
+
+.guide-phone .statusbar .tempo-button .short {
+  display: inline;
+}
+
+/* The import dialog's input row: the label, the list (taking the room) and the check button on one line. */
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.input-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.input-row select {
+  flex: 1;
+  min-width: 0;
+  height: var(--cell);
+}
+
+.input-row button {
+  flex: none;
+}
+
+/* The Send dialog's level: wide enough for "Level 100%", so the slider beside it does not shift as the number changes. */
+.input-row .level {
+  flex: none;
+  min-width: 10ch;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.input-row input[type='range'] {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Undo and redo: two square buttons, in the top bar on a desktop and the bottom bar on a phone. */
+.undo-buttons {
+  display: inline-flex;
+  gap: 3px;
+  flex: none;
+}
+
+.undo-buttons button {
+  width: var(--cell);
+  min-width: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

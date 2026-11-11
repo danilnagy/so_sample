@@ -1,0 +1,34 @@
+{
+  "experiment_id": "empty-001-e-copy-to-3",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-copy2-clean-b",
+  "baseline_source_sha256": "bb3991eba30c5c99234144b0f53a83ea505afd29d802c690b10502cad1b0905d",
+  "planned_actions": [
+    "Select Sound8; hold write+sound and press3 to copy into empty Sound3",
+    "Reselect Sound8; retain empty Pattern1, write off, playback stopped, unchanged settings",
+    "Record full stereo backup"
+  ],
+  "actual_actions": [
+    "User replied done to the requested Sound8-to-Sound3 copy protocol and supplied this capture; no deviation reported"
+  ],
+  "source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+  "preregistration": "../third-copy-predictions-001.json",
+  "purpose": "Independently test12-empty/40-populated transport-record spacing and28 transition-boundary growth",
+  "leave_populated_slots_afterward": [
+    1,
+    2,
+    3,
+    8
+  ],
+  "decoder_version": "sign-crossings-0.2",
+  "action_evidence": "User completion report; exact button sequence not independently observed",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "registered_predictions": "../third-copy-results-001.json",
+    "waveform": "../waveform-probes-016.json",
+    "record_template_probe": "../copy-record-structure-001.json"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "analysis_version": "sample-memory-decision-0.3",
+  "hardware_verified": false,
+  "registration_sha256": "635a0d1a4632ab697d8c024b18c7f884d0f40272d18378a1fc93f2a91ff51918",
+  "native_results_sha256": "73ae711a8c475bb9a0f7b9de0a025e9f73965a311bd69303fc9b5212f6f60b32",
+  "frequency_results_sha256": "99baaefba440165ef0092de4335bf8b097e9643672296c653d044f47d903e469",
+  "step1_hz": 450.00647862053813,
+  "measured_cents": {
+    "1": 0.0,
+    "2": 100.0115222002283,
+    "3": 200.0240942476553,
+    "4": 300.06619145841444,
+    "5": 400.03183865111606,
+    "6": 500.0934933902099,
+    "7": 600.056843075143,
+    "8": 700.0044379957443,
+    "9": 799.9941829714663,
+    "10": 899.962143158958,
+    "11": 999.974766442794,
+    "12": 1099.9470468573725,
+    "13": 1199.993444711644,
+    "14": 1300.0265998663585,
+    "15": 1400.0283065883364,
+    "16": 1499.9996355386097
+  },
+  "model_support": {
+    "sound9_key_k": true
+  },
+  "classification": "sound9_key_k",
+  "absolute": {
+    "step1_cents_vs_hit1": 0.024924283842931782,
+    "stored_rate": true
+  },
+  "limits": [
+    "One total, 917504 codes, below the advertised 937500; larger totals are not tested",
+    "Only Sound9 is played; the other buffers are checked by exact reception"
+  ]
+}

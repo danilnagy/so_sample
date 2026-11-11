@@ -1,0 +1,20 @@
+{
+  "experiment_id": "event-040-a-return-swing18",
+  "capture_status": "validated_physical_swing_range",
+  "expected_file": "capture.wav",
+  "series_registration": "../swing-range-series-registration-001.json",
+  "requested_display_value": 18,
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off, tempo137 and knob B unchanged",
+    "Hold BPM and return to displayed maximum18; stop moving A before releasing BPM",
+    "Before playback save complete stereo capture.wav at established reduced levels with one second trailing silence",
+    "Report the actual display text/value, including any minus sign, before proceeding if a requested value is unavailable"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_text": "S18",
+  "serialized_tempo_bpm": 137,
+  "source_sha256": "05eda85f4c5a678653fd782dbe56e13e635d1932b863fc7bb085152e28ddbec8",
+  "project": "../exported-swing-range-return18-001/project.json"
+}

@@ -1,0 +1,38 @@
+{
+  "analysis_version": "unshared-shrink-to-generated-growth-workflow-audit-0.1",
+  "checks": {
+    "all_shrink_controls_pass": true,
+    "only_sound4_record_changed": true,
+    "capacity_shrinks_not_reused": true,
+    "all_other_records_and_patterns_preserved": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "all_owned_buffers_keep_observed_page_layout": true,
+    "captured1500_and_retained1000_tones_fit_independently": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_raw_body_matches": true,
+    "candidate_software_checks_pass": true,
+    "registration_exact_target_and_file_hashes_match": true,
+    "next_registered_before_recapture": true,
+    "software_reports_do_not_claim_hardware": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "sample_analysis_sha256": "b140afb2a33f19039f0b9f8221dc61e4f885823f2096e694f7c9c23c843ba633",
+  "restore_registration_sha256": "492e3d1513a583da0e1f6f4e1d7d4472827c7d4f7769a3dd48d57346016e0e8b",
+  "exported_content_files_checked": 31,
+  "capture_sample_rate_hz": 44100,
+  "capture_peak_per_channel": [
+    0.1685791015625,
+    0.16143798828125
+  ],
+  "capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "validation": {
+    "targeted_tests": "24 passed in3.03s",
+    "ruff_check": "passed",
+    "ruff_format": "152 files unchanged"
+  },
+  "next_required_user_action": "Restore edited-sound4-growth-001/restore.wav, capture before audition, then report new long Sound4 tone and retained Sound5/Pattern1"
+}

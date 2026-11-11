@@ -1,0 +1,46 @@
+{
+  "analysis_version": "sample-memory-limit-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of 241 pages (987136 codes) of samples, with registered Sound16 pitch and duration",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "sound16_key_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 99.97504385113537,
+    "3": 200.00023689741556,
+    "4": 300.0227704121805,
+    "5": 400.0411162087999,
+    "6": 499.9921654060153,
+    "7": 600.0019910564594,
+    "8": 700.0215556886557,
+    "9": 800.0005380832476,
+    "10": 899.9879395104673,
+    "11": 999.9700996842946,
+    "12": 1099.9722433382667,
+    "13": 1200.0025524350524,
+    "14": 1300.0236424250838,
+    "15": 1400.0122067288814,
+    "16": 1500.0005906970957
+  },
+  "absolute": {
+    "step1_cents_vs_hit1": -0.4397468385047314,
+    "stored_rate": true
+  },
+  "total_capacity_codes": 987136,
+  "stops_at_window_end": true,
+  "decision_sha256": "047271134b8f82a2af9e5938efb2dc19ec7bd8fd1a3ea239d721f39836e82176",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "ed3156437c80ad51e8a2dc299fd45b9991ee1a49ad19700b73e38be80cc1e874",
+  "session_answers": [],
+  "limits": [
+    "The limit is measured with this pattern and settings content; whether pattern or other data shares the same memory is not tested"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "experiment_id": "compiled-sample-memory-limit-001",
+  "capture_status": "validated_exact_native_sample_memory_241_pages_sound16_key_k",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../sample-memory-limit-registration-001.json",
+  "plan": "../sample-memory-limit-plan-001/plan.json",
+  "import_stages": [
+    "../import-drum16-limit-stage-001",
+    "../import-drum10-limit-stage-001"
+  ],
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the PO-33 show ERR or anything unusual during or after the restore? Describe it (Enter for no)",
+    "Did the pattern play a rising run of 16 beeps? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "playback_measurements": "playback-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-sample-memory-limit-001/project.json"
+}

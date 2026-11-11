@@ -1,0 +1,141 @@
+{
+  "analysis_version": "sample-memory-registration-0.2",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-sample-memory-002",
+  "source_artifact": "experiments/compiled-drum-memory-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "403ece9e6d3bdf373937ba39ba97a58f888cba075845f893c7f37c7a1a0761a5",
+  "source_capture_sha256": "efe4e5289d17800bfbaad796b14df320937c3bb42aa0668c44a924a88a35f5ce",
+  "total_capacity_codes": 815104,
+  "capacities": {
+    "11": 102400,
+    "12": 102400,
+    "6": 36864
+  },
+  "sound6_tone": {
+    "path": "experiments/sound6-memory-tone-001/tone-700hz-1.2s.wav",
+    "sha256": "03fe3dfbbbc0d4300918efac8e3d65536c970e62643b17a4ef03045c76972da4",
+    "hz": 700.0,
+    "seconds": 1.2
+  },
+  "stage_reports_sha256": {
+    "11": "1a5efb1ad317a1ed1e01a2af02dc7712c788f65f2337145a6d60388a940ca001",
+    "12": "f624d70f6c0922b9cf9257f5f4e5dd3af005a9f1a6a9fef62565f5d80b4ac549",
+    "6": "8cbf85560373cc6015742f227c30ed7aed392270fd155cae086c457446f47392"
+  },
+  "plan_sha256": "6b7bb1f3f81db7b42650565bc2c578ba9aaf37a3ae53b48deca8e53c3651a9ce",
+  "expected_body_sha256": "e45c59f1bd7fc887380f0196f243b9af8840de38da0176eff7042d7b508a7622",
+  "edited_artifact_sha256": "24539325b9b10b7fd35c65232967b830530592709a0b344fadbcb033d1146119",
+  "restore_wav_sha256": "1cd83bc756afa35177eb59d309fb1f4224aa28a7c1745f9c0dd69303c8d2915d",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "new_kit_key_k": [
+      -0.0,
+      -100.0,
+      -200.0,
+      -300.0,
+      -400.0,
+      -500.0,
+      -600.0,
+      -700.0,
+      -800.0,
+      -900.0,
+      -1000.0,
+      -1100.0,
+      -1200.0,
+      -1300.0,
+      -1400.0,
+      -1500.0
+    ],
+    "old_kit_still_playing": [
+      0.0,
+      150.0,
+      300.0,
+      450.0,
+      600.0,
+      750.0,
+      900.0,
+      1050.0,
+      1200.0,
+      1350.0,
+      1500.0,
+      1650.0,
+      1800.0,
+      1950.0,
+      2100.0,
+      2250.0
+    ]
+  },
+  "absolute_models_cents_vs_hit1": {
+    "stored_rate": 0.0
+  },
+  "duration_method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.001,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "margin_seconds": 0.01,
+    "threshold_fraction_of_step_peak": 0.1,
+    "tolerance_ms": 5.0,
+    "min_agreeing_loops": 4
+  },
+  "duration_method_script_sha256": "c28a7cf59bc4fd70777a93647d2a84a27761d06aac54d8eaf2c37d01a03d05cc",
+  "duration_model_ms": [
+    74.66666666666667,
+    85.33333333333333,
+    96.0,
+    106.66666666666667,
+    117.33333333333333,
+    128.0,
+    138.66666666666666,
+    149.33333333333334,
+    160.0,
+    170.66666666666666,
+    181.33333333333334,
+    192.0,
+    202.66666666666666,
+    213.33333333333334,
+    224.0,
+    234.66666666666666
+  ],
+  "decision": [
+    "The backup must equal the compiled target exactly, every sample buffer included",
+    "Pitch: new_kit_key_k holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of 1500 Hz",
+    "Duration: every step within 5 ms of its window length in the median and in at least 4 of 5 loops"
+  ],
+  "limits": [
+    "One total, 815104 codes; totals between it and the advertised 937500 are not tested",
+    "Only Sound11 is played; the other buffers are checked by exact reception"
+  ]
+}

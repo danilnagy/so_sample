@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "event-004",
+  "status": "analyzed",
+  "captures": [
+    "event-004-b-repeat"
+  ],
+  "fresh_a_required": false,
+  "fresh_a_return_required": false,
+  "baseline_reused": "event-003-a-return",
+  "comparison_reference": "event-001-b",
+  "pre_registered_control": "Same populated state should reproduce substantive symbol content if serialization is deterministic under the recorded controls. Report all endpoints and mismatches.",
+  "result": {
+    "populated_state_repeated_identically": true,
+    "symbols_per_channel": 1970367,
+    "changed_symbols": 0,
+    "tail_symbols": 0,
+    "alignment_shift": 0
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "analysis_version": "fx-period-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of five looping effects held over long notes, and the measured repetition period of each",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "hypotheses": {
+    "exact_reception": true,
+    "control_has_no_period": true
+  },
+  "effects": {
+    "1": {
+      "pattern": 1,
+      "period_ms": null,
+      "mean_cents": 105.569727257235,
+      "classification": "unresolved"
+    },
+    "2": {
+      "pattern": 2,
+      "period_ms": null,
+      "mean_cents": 87.99352096921852,
+      "classification": "unresolved"
+    },
+    "3": {
+      "pattern": 3,
+      "period_ms": null,
+      "mean_cents": 72.35219124678308,
+      "classification": "unresolved"
+    },
+    "4": {
+      "pattern": 4,
+      "period_ms": 80.0,
+      "mean_cents": 3.2223748747699394,
+      "classification": "1/48"
+    },
+    "12": {
+      "pattern": 5,
+      "period_ms": 250.0,
+      "mean_cents": 2.7056986034431785,
+      "classification": "1/16"
+    }
+  },
+  "decision_sha256": "3823a2e70a539aa52cebd4fcfce54ffe2dbef3be8bf4a850baf02b4d4f49adcc",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "11d52d7ef9bf0245198722d8c5c00df1d8e61186f0fd7dd304d495440e9218bc",
+  "session_answers": [
+    {
+      "question": "Did the looping effects sound faster from one pattern to the next? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One tempo; whether the periods scale with tempo is not tested"
+  ]
+}

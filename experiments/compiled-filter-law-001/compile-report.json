@@ -1,0 +1,337 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "379cb6d087daba16079a2858aa3787686736cea869d307e4a2bab33ffb578d4d",
+  "plan_sha256": "776e45a7a755ca0ef8a0e7020d090c31d0a8fc0bd0140671b2df2d52036e54ef",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "pitch",
+        "values": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ]
+      },
+      "before_body_sha256": "8a9824a131e5bd7090d2f5107f5e8f66b5a23e324d683a042291640ccdf90836",
+      "after_body_sha256": "10356dc839a13d27afd3dabd8335547e58ae846b9b2b6d55b2caf45b90550308"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "resonance",
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "before_body_sha256": "10356dc839a13d27afd3dabd8335547e58ae846b9b2b6d55b2caf45b90550308",
+      "after_body_sha256": "09fdf4f4a66e1d95fc19e040589b6fe2b9c315514530842bf2789dc35b675811"
+    },
+    {
+      "operation": {
+        "operation": "copy_pattern",
+        "source_pattern": 1,
+        "destination_pattern": 2
+      },
+      "before_body_sha256": "09fdf4f4a66e1d95fc19e040589b6fe2b9c315514530842bf2789dc35b675811",
+      "after_body_sha256": "dd33fb9d6698e5c1e0d9488fedcb828ca145d09f43e3bf5e980ce4e176b44749"
+    },
+    {
+      "operation": {
+        "operation": "copy_pattern",
+        "source_pattern": 1,
+        "destination_pattern": 3
+      },
+      "before_body_sha256": "dd33fb9d6698e5c1e0d9488fedcb828ca145d09f43e3bf5e980ce4e176b44749",
+      "after_body_sha256": "19e7d14488cfb4d6f3ea7ff7482ffa1fcc8d6022aaff0e5bf041ed135400a4c9"
+    },
+    {
+      "operation": {
+        "operation": "copy_pattern",
+        "source_pattern": 1,
+        "destination_pattern": 4
+      },
+      "before_body_sha256": "19e7d14488cfb4d6f3ea7ff7482ffa1fcc8d6022aaff0e5bf041ed135400a4c9",
+      "after_body_sha256": "b7c55927819141be1ec58bf3be620b50fd9e52a15a24e22601d9bbb2f1de96f7"
+    },
+    {
+      "operation": {
+        "operation": "copy_pattern",
+        "source_pattern": 1,
+        "destination_pattern": 5
+      },
+      "before_body_sha256": "b7c55927819141be1ec58bf3be620b50fd9e52a15a24e22601d9bbb2f1de96f7",
+      "after_body_sha256": "f41563e437214653856c0a71d2fc13aecbff757d853b3799b3591019d3b27685"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "before_body_sha256": "f41563e437214653856c0a71d2fc13aecbff757d853b3799b3591019d3b27685",
+      "after_body_sha256": "21a76be0bd1f034e63273ee1c81fdd26cfad0bd2453af829a821139b089cd290"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 2,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "before_body_sha256": "21a76be0bd1f034e63273ee1c81fdd26cfad0bd2453af829a821139b089cd290",
+      "after_body_sha256": "8d3fbec7b6481575839ddbc0d6bc2c83a84865e03a9517deb09842734c4f5b4c"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 3,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ]
+      },
+      "before_body_sha256": "8d3fbec7b6481575839ddbc0d6bc2c83a84865e03a9517deb09842734c4f5b4c",
+      "after_body_sha256": "785254e86e10ce5b2b3ac5c48036c96e49afc5076504b18d0c6fd556db1df54e"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 4,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ]
+      },
+      "before_body_sha256": "785254e86e10ce5b2b3ac5c48036c96e49afc5076504b18d0c6fd556db1df54e",
+      "after_body_sha256": "74a89ec0efbdc84f73109d4e7638751b72f021d651e33b164671d2e1f56f7c4f"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 5,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          60,
+          61,
+          62,
+          16,
+          52,
+          31,
+          32,
+          33,
+          30,
+          8,
+          24,
+          40,
+          56,
+          63,
+          63
+        ]
+      },
+      "before_body_sha256": "74a89ec0efbdc84f73109d4e7638751b72f021d651e33b164671d2e1f56f7c4f",
+      "after_body_sha256": "19bbe096db5f342265f1b934a2198ea4091725e05a5b4684c0ae735dcebb2f7f"
+    },
+    {
+      "operation": {
+        "operation": "set_pattern_chain",
+        "patterns": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "before_body_sha256": "19bbe096db5f342265f1b934a2198ea4091725e05a5b4684c0ae735dcebb2f7f",
+      "after_body_sha256": "fb1f8b4c4fffa0bfa1052da8e14c289448783dd062f77029ed2dc555b52d17d1"
+    }
+  ],
+  "target_body_sha256": "fb1f8b4c4fffa0bfa1052da8e14c289448783dd062f77029ed2dc555b52d17d1",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "fc36094ebe038fe130b5c03ac2238a0207acdab2e237e6bba5d3c96894786a23",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "d02632004d12d109d81c5df3bb5f6f39ad7d32abc13d0a1e0ed18976de0711b1",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 1570561,
+    "active_frames": 8865509,
+    "silence_frames_each_end": 4410,
+    "frames": 8874329,
+    "duration_seconds": 201.23195011337867,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 1570561,
+        "reconstructed_symbols": 1570561,
+        "overlap_symbols": 1570561,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 1570561,
+        "reconstructed_symbols": 1570561,
+        "overlap_symbols": 1570561,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

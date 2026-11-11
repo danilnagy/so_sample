@@ -1,0 +1,15 @@
+{
+  "experiment_id": "event-070-b-pattern1-plain-playback",
+  "capture_status": "validated_entire_clear_body_unchanged_after_battery_replacement",
+  "registration": "../pattern1-playback-global-registration-001.json",
+  "planned_actions": [
+    "After the first backup, ensure playback stopped and write off",
+    "Press PLAY, let Pattern1 run for approximately five seconds, then press PLAY to stop",
+    "Do not press FX or turn knobs; record a NEW complete backup as capture.wav"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../pattern1-playback-global-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-plain-playback-001/project.json"
+}

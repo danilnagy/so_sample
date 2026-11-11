@@ -1,0 +1,127 @@
+{
+  "analysis_version": "second-start-control-check-0.1",
+  "registration_sha256": "41a911143db16cfa2b78a2fccb8dd7636fca06963a2df16ecf74bed2f6a913bb",
+  "capture_sha256": "77ff3658428a7de39ebaca89005c2d88977cee24c7b841cab6fe8f6d344b7d24",
+  "artifact_sha256": "e0563dce21423d54daf1535e98afeeff72e75cf8415fac1ae37315b52e713417",
+  "decoder_version": "sign-crossings-0.2",
+  "control_checks": {
+    "packet_count": true,
+    "frame_end_byte": true,
+    "all_packet_checksums": true,
+    "exact_body_reencode": true,
+    "baseline_reference": true,
+    "reference_location": true,
+    "reference_size": true,
+    "owner_id_unchanged": true,
+    "only_reference_packet_changed": true,
+    "only_allowed_reference_bytes_changed": true,
+    "all_patterns_unchanged": true,
+    "backing_owner_unchanged": true,
+    "packet_tags_and_lengths": true
+  },
+  "control_passed": true,
+  "hypothesis_checks": {
+    "first_field_moves_lower": true,
+    "second_field_unchanged": false,
+    "second_field_resets_maximum": false
+  },
+  "any_registered_second_field_hypothesis_fits": false,
+  "changed_plain_packet_indices": [
+    375
+  ],
+  "sound3_reference_byte_changes": [
+    {
+      "offset": 0,
+      "old": 161,
+      "new": 196
+    },
+    {
+      "offset": 1,
+      "old": 122,
+      "new": 45
+    },
+    {
+      "offset": 4,
+      "old": 225,
+      "new": 51
+    },
+    {
+      "offset": 5,
+      "old": 153,
+      "new": 46
+    }
+  ],
+  "sound3_header_values": {
+    "before": {
+      "first_u32le": 31393,
+      "second_u32le": 39393,
+      "owner_id": 0
+    },
+    "after": {
+      "first_u32le": 11716,
+      "second_u32le": 11827,
+      "owner_id": 0
+    }
+  },
+  "observed_second_minus_first": 111,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "bdd3c2d38d525c2a098994939b22816db959a2555b292740b7e816b4ee7b62e6",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c42d0000332e000000",
+        "payload_sha256": "8601b602fd7612d736ef3b4417f36f2653fa66529412dabb84a90be41cdfabed"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "user_report": "done",
+  "audition_performed": false,
+  "limits": [
+    "The first-field range prediction passes; both exact second-field predictions fail",
+    "The observed111 difference matches the earlier physical minimum, but was not predicted here",
+    "Knob B was left at minimum; automatic endpoint coupling is an inference, not an isolated B experiment",
+    "No general minimum-width, knob-angle mapping or endpoint inclusivity rule is established",
+    "The public writer remains fixed to start31393; this second start needs a generated-edit hardware test"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "experiment_id": "event-069-a-pattern1-stopped-repeat",
+  "capture_status": "validated_entire_clear_body_unchanged_after_battery_replacement",
+  "registration": "../pattern1-playback-global-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1 selected, playback stopped, write off; leave both knobs and settings untouched",
+    "Without playing first, record a NEW complete backup as capture.wav"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../pattern1-playback-global-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

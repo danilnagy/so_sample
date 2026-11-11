@@ -1,0 +1,24 @@
+{
+  "validation_id": "note-key-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-note-key-001 -p no:cacheprovider",
+    "passed": 227,
+    "failed": 0,
+    "duration_seconds": 48.41,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 83
+  },
+  "key2_control_results": "melodic-key2-results-001.json",
+  "control_invariants_passed": true,
+  "registered_key_hypotheses_fit": true,
+  "genuine_key2_body_reproduced": true,
+  "genuine_key1_body_reproduced_by_inverse": true,
+  "candidate_software_validation": "generated-note-key-001/software-validation.json",
+  "candidate_hardware_verified": false,
+  "next_hardware_test": "edited-note-key-001/experiment.json"
+}

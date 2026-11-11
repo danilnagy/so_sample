@@ -1,0 +1,37 @@
+{
+  "analysis_version": "nonzero-start-drum-hardware-workflow-audit-0.1",
+  "checks": {
+    "registered_key2_hardware_target_exact": true,
+    "accepted_key1_preserved": true,
+    "all_exported_content_hashes": true,
+    "entire_native_packet_view_exact": true,
+    "source_capture_preserved": true,
+    "source_artifact_preserved": true,
+    "failed_first_wav_preserved": true,
+    "two_drum_previews_only": true,
+    "melodic_previews_retained": true,
+    "historical_candidate_software_status_unchanged": true,
+    "export_report_remains_software_only": true
+  },
+  "passed": true,
+  "hardware_report_sha256": "73aa136110de21b709870b961a89317932151367a8f36b76008c552118dad0cd",
+  "source_capture_sha256": "447b8e92224fd5db41f53bb283bff66317da14a32bf9b0004669aed057cfec91",
+  "source_artifact_sha256": "0d8a5a3d61b1ec84848ad9fe45bf315c9aac7b9774420356ed455b9aefb0dd5b",
+  "native_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "exported_content_file_count": 28,
+  "suite": {
+    "passed": 409,
+    "failed": 0,
+    "elapsed_seconds": 90.01,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-key2-hardware-001"
+  },
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 125,
+  "new_device_operation_claimed_by_export": false,
+  "limits": [
+    "This registered key2 edit and adjacent key1 preservation are hardware accepted, not every possible interval combination",
+    "Previews retain an explicit unpitched half-open convention; exact hardware rendering and inclusivity are not measured",
+    "The Sound10 block and exact fresh-copy records remain separate preregistered hypotheses"
+  ]
+}

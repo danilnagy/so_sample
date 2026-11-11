@@ -1,0 +1,9 @@
+{
+  "source_sha256": "9f13e1cb22d5bad338db09218a0d860ac8d010c1cbeb8770013d9c8381fb2765",
+  "decoder_version": "amplitude-clock-0.1",
+  "acquisition_artifact": "derived/analysis-001/capture.symbols.npz",
+  "native_frame_valid": false,
+  "error": "Measured quarter signs disagree with the observed quadrature model",
+  "output_artifact_created": false,
+  "target_data_used": false
+}

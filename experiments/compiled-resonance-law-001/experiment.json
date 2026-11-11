@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-resonance-law-001",
+  "capture_status": "validated_exact_native_resonance_law_measured",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../resonance-law-registration-001.json",
+  "plan": "../resonance-law-plan-001/plan.json",
+  "playback_seconds": 44,
+  "observation_questions": [
+    "Did the tone get more ringing or whistling across the five patterns? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "resonance_measurements": "resonance-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-resonance-law-001/project.json"
+}

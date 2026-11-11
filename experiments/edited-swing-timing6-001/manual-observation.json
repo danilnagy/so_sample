@@ -1,0 +1,8 @@
+{
+  "user_report": "done, confirmed pattern does sound like it has more swing",
+  "restore_acceptance_confirmed": true,
+  "increased_swing_audible_confirmed": true,
+  "independent_swing_display_reported": false,
+  "capture_sha256": "8e6599398978bb303f34502aff6bd2cb3de841feed3b663f1c7085f9ac3afec1",
+  "playback_sha256": "5e5cd2eda43e6bc1376bd73170546c3973d5b3802de3d8e127ab2dc1dd7c9ee1"
+}

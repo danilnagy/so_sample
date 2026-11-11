@@ -1,0 +1,17 @@
+{
+  "purpose": "Ordinary calibration sound for sampling into a confirmed empty melodic slot; not backup/restore data",
+  "sample_rate_hz": 48000,
+  "pcm_subtype": "PCM_16",
+  "channels": 2,
+  "identical_stereo_channels": true,
+  "frames": 96000,
+  "duration_seconds": 2,
+  "frequency_hz": 375,
+  "peak_amplitude": 0.25,
+  "fade_seconds_each_end": 0.05,
+  "source_sha256": "e82e7e07cd0138fd56d801092392cba3252e45c1d4a89e0833f86b15cb395103",
+  "hardware_slot": 8,
+  "hardware_actions_status": "capture_requested_event-006-b-tone",
+  "hypothesis": "Periodic input may reveal repeated body structure; internal codec and sampling rate remain unverified",
+  "slot_status": "user_confirmed_empty"
+}

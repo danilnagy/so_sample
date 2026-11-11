@@ -1,0 +1,398 @@
+{
+  "analysis_version": "physical-imported-shared-deletion-recapture-check-0.1",
+  "registration_sha256": "7185edabd2746f19de9c744137ae8f35ec552fef4fad3f8b2f4ee9c852d5659a",
+  "capture_sha256": "69f7911f772ea76e3ff8a9b8d7ee45e819aaea239ebea982a92484208fd0a429",
+  "artifact_sha256": "11e0decd4bfe263dc674498d94345f42e3c229f5013e4d42aaa4a6fc48d4a0cd",
+  "artifact_path": "C:\\Users\\danil\\OneDrive\\Documents\\Github\\danilnagy\\po_33\\experiments\\event-028-b-delete-imported-shared-sound6\\derived\\analysis-001\\capture.symbols.npz",
+  "control_checks": {
+    "baseline_packet_count": true,
+    "baseline_sound6_payload_header_and_capacity": true,
+    "baseline_sound7_exact_reference": true,
+    "baseline_owner5_referrers": true,
+    "baseline_sound7_window_resolved": true,
+    "baseline_pattern_identities": true,
+    "state_changed_from_baseline": true,
+    "selector_order_unchanged": true,
+    "all_patterns_unchanged": true,
+    "all_native_checksums": true,
+    "exact_body_reencode": true
+  },
+  "control_passed": true,
+  "hypothesis_checks": {
+    "sound6_record_is_empty": true,
+    "sound7_is_self_owned_full_buffer_with_all_codes_preserved": true,
+    "sound7_logical_window_preserved": true,
+    "sound7_reference_still_points_to_old_owner5": false,
+    "full_codes_remain_under_sound6_owner5": false,
+    "all_other_sound_records_unchanged": true,
+    "all_non_sound6_and7_plain_packets_unchanged": true,
+    "full_transfer_geometry_matches": true,
+    "full_transfer_entire_body_matches": true
+  },
+  "changed_selector_ids": [
+    5,
+    6
+  ],
+  "changed_sound_records": [
+    {
+      "selector_id": 5,
+      "before": {
+        "payload_bytes": 32777,
+        "packet_count": 136,
+        "payload_sha256": "7fa1522cf7cf5bbb592ef71ff4e0934ff6b3878b62f5537405c5bb61f7843e40",
+        "header_hex": "00000000ab44000005",
+        "first_u32le": 0,
+        "second_u32le": 17579,
+        "owner_id": 5,
+        "bytes_after_header": 32768
+      },
+      "after": {
+        "payload_bytes": 0,
+        "packet_count": 0,
+        "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "selector_id": 6,
+      "before": {
+        "payload_bytes": 9,
+        "packet_count": 1,
+        "payload_sha256": "d56a95a3bfb63797e102fa6e9967f05ec5ef85065ce39cb3081ffa7762a2189d",
+        "header_hex": "00000000ab44000005",
+        "first_u32le": 0,
+        "second_u32le": 17579,
+        "owner_id": 5,
+        "bytes_after_header": 0
+      },
+      "after": {
+        "payload_bytes": 32777,
+        "packet_count": 136,
+        "payload_sha256": "e8bdef57cc3be4914c2e70c57eeea8d2c40cc3e441bfcc6fc68c03819524c88f",
+        "header_hex": "00000000ab44000006",
+        "first_u32le": 0,
+        "second_u32le": 17579,
+        "owner_id": 6,
+        "bytes_after_header": 32768
+      }
+    }
+  ],
+  "observed_ownership": {
+    "sound7_before_window": {
+      "resolved": true,
+      "owner_id": 5,
+      "endpoint": 17579,
+      "backing_code_count": 32768,
+      "logical_codes_sha256": "5eaa94f610f8fe5345c250fc82312f2529c43c09fc2458f0984ea7bae25a58db"
+    },
+    "sound7_after_window": {
+      "resolved": true,
+      "owner_id": 6,
+      "endpoint": 17579,
+      "backing_code_count": 32768,
+      "logical_codes_sha256": "5eaa94f610f8fe5345c250fc82312f2529c43c09fc2458f0984ea7bae25a58db"
+    },
+    "packet_count_delta": -1,
+    "native_body_byte_delta": -14
+  },
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 190215,
+    "required_complete_label_span": [
+      0,
+      380433
+    ],
+    "packet_count": 951,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "684437bc68251bb2cf3400e64be024d677baeb0e5389106c0122ea30b30724f1",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 715,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c42d0000044d000000",
+        "payload_sha256": "5dd6ad121e7521609c7d9afdd8f3b586e07df4ca7c0bfbdbee5c08748ae604ff"
+      },
+      {
+        "sound_id": 3,
+        "packet_count": 136,
+        "payload_bytes": 32777,
+        "header_hex": "00000000c078000003",
+        "payload_sha256": "89414862fe9dfba4e0ae4393d075cd4504130c3f9e59d0b46979f711cc874699"
+      },
+      {
+        "sound_id": 4,
+        "packet_count": 136,
+        "payload_bytes": 32777,
+        "header_hex": "00000000c06f000004",
+        "payload_sha256": "f4a712aee09a92b26040b2b31d760c6fb35eef7c250ba4d83d06da6c13f3d9ce"
+      },
+      {
+        "sound_id": 6,
+        "packet_count": 136,
+        "payload_bytes": 32777,
+        "header_hex": "00000000ab44000006",
+        "payload_sha256": "e8bdef57cc3be4914c2e70c57eeea8d2c40cc3e441bfcc6fc68c03819524c88f"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 8,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000d007000000",
+        "payload_sha256": "dcaeff9fbad1acd06e3a2533416a27fb538129480d49a60802380cf0bd19d0d3"
+      },
+      {
+        "sound_id": 9,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "cd0f00009d17000000",
+        "payload_sha256": "c64450ff46116566a3e222d72df76716f6d8211d3a4bb14f35e02c1e4a5a8630"
+      },
+      {
+        "sound_id": 10,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "991f0000642f000000",
+        "payload_sha256": "db489cfbdbee7c104dbe5994137e578ce0a50660dc064b264a165bd520cb47df"
+      },
+      {
+        "sound_id": 11,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "652f0000303f000000",
+        "payload_sha256": "539b511c0be5a54c31a86b1eea133c3be6dfa358806165940c6fbb28c5efb0c2"
+      },
+      {
+        "sound_id": 12,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "313f0000fc4e000000",
+        "payload_sha256": "bad1da8cffedbaeca37901f6fafb494695d020ad3d850ebae8c278e75dd34762"
+      },
+      {
+        "sound_id": 13,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "fd4e0000c85e000000",
+        "payload_sha256": "3f2aeed28971cb20e20ff6bbf4fdf80309115eab4f0281323286850938157154"
+      },
+      {
+        "sound_id": 14,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c95e0000946e000000",
+        "payload_sha256": "3d6d4b96277ed5508ed4ba105e3a3474e61d6de98be88d7065b7049d56bbd4dc"
+      },
+      {
+        "sound_id": 15,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "956e0000607e000000",
+        "payload_sha256": "9f616f72643577583a48e439e6793c8e1b8f602791036093bce1651ca165bb9b"
+      },
+      {
+        "sound_id": 16,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "617e00002c8e000000",
+        "payload_sha256": "c02ca855d4ec86624205c0d470b80a13538d43205a795eefc216c7c3fa85ac73"
+      },
+      {
+        "sound_id": 17,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "2d8e0000f89d000000",
+        "payload_sha256": "0d8ba237829962625c9209dbb19abcaa2c9c87f97b9c5a058e999f38d17d1736"
+      },
+      {
+        "sound_id": 18,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "f99d0000c4ad000000",
+        "payload_sha256": "382e3c187fc22494ab380743cfc6087055b7941841f5b3de4a3ccf0e0a6b0d0b"
+      },
+      {
+        "sound_id": 19,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c5ad000090bd000000",
+        "payload_sha256": "9bcbd05dc8a84db1bac6a4189bb77764991969c265e8008ac3711263f0364e76"
+      },
+      {
+        "sound_id": 20,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "91bd00005ccd000000",
+        "payload_sha256": "0ccd5b30be6bcf5bd21caf1dec0a3e526f8d50dc36f0b01022d5a36122f3cd1d"
+      },
+      {
+        "sound_id": 21,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "5dcd000028dd000000",
+        "payload_sha256": "6e1b26febdc6d971a896acc8f5876dc8046bc4aa6b3e5f84cc5010fb8215f98b"
+      },
+      {
+        "sound_id": 22,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "29dd0000f4ec000000",
+        "payload_sha256": "ea3fa6bc412566f43095c824c6f71c567f9eb0ad490636d69134fd1d006b39f8"
+      },
+      {
+        "sound_id": 23,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "f5ec0000c0fc000000",
+        "payload_sha256": "bc6b283adfd66d8e966169dbba555e4d5e4ec459b4a2de6b62e4d3127999dd53"
+      },
+      {
+        "sound_id": 24,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "cd0f00009d17000000",
+        "payload_sha256": "c64450ff46116566a3e222d72df76716f6d8211d3a4bb14f35e02c1e4a5a8630"
+      },
+      {
+        "sound_id": 25,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "cd0f0000981f000000",
+        "payload_sha256": "821fb3eae15845f10525fd0a8607ab99713d548a83d10683ed2743dcbf44b115"
+      },
+      {
+        "sound_id": 26,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "991f0000642f000000",
+        "payload_sha256": "db489cfbdbee7c104dbe5994137e578ce0a50660dc064b264a165bd520cb47df"
+      },
+      {
+        "sound_id": 27,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "652f0000303f000000",
+        "payload_sha256": "539b511c0be5a54c31a86b1eea133c3be6dfa358806165940c6fbb28c5efb0c2"
+      },
+      {
+        "sound_id": 28,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "313f0000fc4e000000",
+        "payload_sha256": "bad1da8cffedbaeca37901f6fafb494695d020ad3d850ebae8c278e75dd34762"
+      },
+      {
+        "sound_id": 29,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "fd4e0000c85e000000",
+        "payload_sha256": "3f2aeed28971cb20e20ff6bbf4fdf80309115eab4f0281323286850938157154"
+      },
+      {
+        "sound_id": 30,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c95e0000946e000000",
+        "payload_sha256": "3d6d4b96277ed5508ed4ba105e3a3474e61d6de98be88d7065b7049d56bbd4dc"
+      },
+      {
+        "sound_id": 31,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "956e0000607e000000",
+        "payload_sha256": "9f616f72643577583a48e439e6793c8e1b8f602791036093bce1651ca165bb9b"
+      },
+      {
+        "sound_id": 32,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "617e00002c8e000000",
+        "payload_sha256": "c02ca855d4ec86624205c0d470b80a13538d43205a795eefc216c7c3fa85ac73"
+      },
+      {
+        "sound_id": 33,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "2d8e0000f89d000000",
+        "payload_sha256": "0d8ba237829962625c9209dbb19abcaa2c9c87f97b9c5a058e999f38d17d1736"
+      },
+      {
+        "sound_id": 34,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "f99d0000c4ad000000",
+        "payload_sha256": "382e3c187fc22494ab380743cfc6087055b7941841f5b3de4a3ccf0e0a6b0d0b"
+      },
+      {
+        "sound_id": 35,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c5ad000090bd000000",
+        "payload_sha256": "9bcbd05dc8a84db1bac6a4189bb77764991969c265e8008ac3711263f0364e76"
+      },
+      {
+        "sound_id": 36,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "91bd00005ccd000000",
+        "payload_sha256": "0ccd5b30be6bcf5bd21caf1dec0a3e526f8d50dc36f0b01022d5a36122f3cd1d"
+      },
+      {
+        "sound_id": 37,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "5dcd000028dd000000",
+        "payload_sha256": "6e1b26febdc6d971a896acc8f5876dc8046bc4aa6b3e5f84cc5010fb8215f98b"
+      },
+      {
+        "sound_id": 38,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "29dd0000f4ec000000",
+        "payload_sha256": "ea3fa6bc412566f43095c824c6f71c567f9eb0ad490636d69134fd1d006b39f8"
+      },
+      {
+        "sound_id": 39,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "f5ec0000c0fc000000",
+        "payload_sha256": "bc6b283adfd66d8e966169dbba555e4d5e4ec459b4a2de6b62e4d3127999dd53"
+      }
+    ]
+  },
+  "limits": [
+    "This is a preregistered prediction of physical deletion, not a new hardware result",
+    "No generated restore is needed; delete only Sound6 in the current verified copied state",
+    "Public deletion guards remain unchanged until this imported endpoint is observed"
+  ]
+}

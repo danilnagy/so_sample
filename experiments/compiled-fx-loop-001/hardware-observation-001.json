@@ -1,0 +1,232 @@
+{
+  "analysis_version": "fx-loop-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of FX 1, 2, 15, 14 and 11 held over fifteen steps of a key run, and the loop length each one shows",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "hypotheses": {
+    "exact_reception": true,
+    "control_run": true
+  },
+  "effects": {
+    "1": {
+      "pattern": 1,
+      "keys_at_100ms": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "onsets": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "classification": "loop_16"
+    },
+    "2": {
+      "pattern": 2,
+      "keys_at_100ms": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "onsets": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "classification": "loop_16"
+    },
+    "15": {
+      "pattern": 3,
+      "keys_at_100ms": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "onsets": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "classification": "loop_16"
+    },
+    "14": {
+      "pattern": 4,
+      "keys_at_100ms": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "onsets": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "classification": "loop_1"
+    },
+    "11": {
+      "pattern": 5,
+      "keys_at_100ms": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "onsets": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "classification": "unresolved"
+    }
+  },
+  "decision_sha256": "f6ab6a79f0066ab2865dca9b7a840e9b0ad522bbd1076743c7ab68f28f090b22",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "318a48271b179b2d2402d3090f8b6635326ddfc9b06bf97802eb0fcd90cf7312",
+  "session_answers": [
+    {
+      "question": "Did any pattern sound like it kept repeating its opening notes? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "Loop lengths 1, 4, 8, 12 and 16 only; other behaviours are reported as unresolved"
+  ]
+}

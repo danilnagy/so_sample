@@ -1,0 +1,26 @@
+{
+  "experiment_id": "edited-swing-timing6-001",
+  "capture_status": "validated_generated_swing6_and_audible_timing",
+  "hardware_restore": {
+    "status": "accepted",
+    "observation": "hardware-observation-001.json"
+  },
+  "registration": "../swing-timing-pair-registration-001.json",
+  "planned_actions": [
+    "For swing6 wait until straight-control capture and playback have been verified",
+    "Restore complete restore.wav with established stereo path and level",
+    "Keep both knobs untouched; select Pattern1/Sound8/TONE, stopped and write off",
+    "Before pattern playback record complete capture.wav at established backup levels and one second trailing silence",
+    "In a separate ordinary-audio recording play Pattern1 for8 to10 seconds; save playback.wav then stop",
+    "Report restore success and audible added high tone after first beat; do not read swing by moving A"
+  ],
+  "verified_straight_control": "../edited-swing-timing0-001/hardware-observation-001.json",
+  "verified_straight_observation_sha256": "4587d2c740e77cb1fae68f4cfaafcb0333514fc6cc63bbe93c9ac2c5b9cc35d0",
+  "timing_method": "../swing-timing-measurement-registration-001.json",
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "native_results": "hardware-recapture-results-001.json",
+  "playback_results": "playback-timing-results-001.json",
+  "project": "../exported-swing-timing6-001/project.json"
+}

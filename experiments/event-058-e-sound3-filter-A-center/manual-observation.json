@@ -1,0 +1,11 @@
+{
+  "user_report": "done, confirmed I could hear the whole sample as if neither filter was applied. the indicator at bottom fills up at the start for both filters, but in the middle it is single tick in middle",
+  "audible_center": "whole_sample_heard_as_if_neither_filter_applied",
+  "display_center": "single_tick_in_middle",
+  "display_user_correction": "indicator_fills_up_at_start_for_both_filters",
+  "prior_full_bar_center_instruction_supported": false,
+  "numeric_display_value": null,
+  "capture_sha256": "e537f40ed8fb7fb463040ff4af8413fcb0a71894336696e8fd205d425f71d59b",
+  "playback_sha256": "03598f453cd6ef9b2ac7943c6724c3198d2b03a2fad37a056a748b1bb1eeba0e",
+  "interpretation": "User located the audible center and corrected the predicted full-bar cue; original instructions and registration retained unchanged"
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_id": "observe-FX-code-map-001",
+  "kind": "device_side_observation",
+  "capture_status": "validated_FX_code_map_key_minus_one",
+  "source_artifact": "../edited-pattern1-FX-position-map-001/derived/analysis-001/capture.symbols.npz",
+  "registration": "../FX-code-map-registration-001.json",
+  "observation_questions": [
+    "Did any FX key seem to do nothing or behave oddly? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "not_applicable"
+  },
+  "analysis": "derived/analysis-001",
+  "result": "../FX-code-map-result-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-FX-code-map-001/project.json"
+}

@@ -1,0 +1,10 @@
+{
+  "analysis_version": "pattern-recapture-context-0.1",
+  "received_date_local": "2026-10-08",
+  "user_report": "done, recorded after playback",
+  "relative_to_pattern_playback": "after",
+  "capture_timing_evidence": "Explicit user report",
+  "source_sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+  "playback_induced_native_differences_observed": false,
+  "comparison": "Full native body matches the generated target exactly; no offsets, masks or state normalization applied"
+}

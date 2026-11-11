@@ -1,0 +1,58 @@
+{
+  "experiment_id": "event-057-d-return-sound3-filter-A-lock-up",
+  "capture_status": "validated_exact_clockwise_return_contiguous62",
+  "registration": "../sound3-filter-A-range-registration-001.json",
+  "registered_leg": {
+    "experiment_id": "event-057-d-return-sound3-filter-A-lock-up",
+    "action": "record_only_A_clockwise_to_physical_maximum",
+    "expected_contiguous_values": [
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62
+    ],
+    "expected_alternative_values": [
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59,
+      59
+    ],
+    "expected_complete_body_sha256": "95572be728c21f74a220664c26c19982cf0913adf52636ed1d9ef352d2f56f0f"
+  },
+  "planned_actions": [
+    "Keep Pattern1/Sound3/FILTER, B and all audio settings unchanged",
+    "During playback hold WRITE and move only A fully clockwise to maximum over5 seconds, then hold3 seconds stationary",
+    "Release WRITE, stop and ensure write off before full capture.wav at reduced level with one second tail",
+    "Save counterclockwise capture before starting clockwise return; no keyboard keys or BPM/FX during passes",
+    "Report sound and display changes actually observed, including whether sample becomes audible during movement; after return leave A maximum and B untouched"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-filter-A-range-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-filter-A-return-clockwise-001/project.json"
+}

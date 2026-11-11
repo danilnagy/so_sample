@@ -1,0 +1,272 @@
+{
+  "analysis_version": "waveform-quality-diagnostic-0.1",
+  "policy": "Waveform-only clock and sign-relation diagnostics; no target bytes, body hashes, CRC repair or label changes",
+  "records": {
+    "new_recapture": {
+      "source_sha256": "fb9f53873505501de9152f0af7dea9af44656e08e2b4e599f2701cfac26db54a",
+      "channels": {
+        "left": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 500,
+            "windows": 2024,
+            "fourth_tone_to_std_min": 0.001406511827776873,
+            "fourth_tone_to_std_median": 0.0668281686176676,
+            "clock_drift_cycles": -8.041346310757142,
+            "mean_square_min": 3.451556339859962e-05,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "quarter_offset_diagnostics": [
+            {
+              "quarter_offset": 0,
+              "checked_cells": 179182,
+              "relation_errors": [
+                0,
+                0,
+                54284,
+                53235
+              ],
+              "total_relation_errors": 107519
+            },
+            {
+              "quarter_offset": 1,
+              "checked_cells": 179182,
+              "relation_errors": [
+                0,
+                0,
+                50411,
+                54284
+              ],
+              "total_relation_errors": 104695
+            },
+            {
+              "quarter_offset": 2,
+              "checked_cells": 179182,
+              "relation_errors": [
+                0,
+                0,
+                49710,
+                50411
+              ],
+              "total_relation_errors": 100121
+            },
+            {
+              "quarter_offset": 3,
+              "checked_cells": 179181,
+              "relation_errors": [
+                0,
+                0,
+                53235,
+                49710
+              ],
+              "total_relation_errors": 102945
+            }
+          ],
+          "minimum_relation_errors_over_offsets": 100121,
+          "source_crop_frames": [
+            34111,
+            1046346
+          ]
+        },
+        "right": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 500,
+            "windows": 2023,
+            "fourth_tone_to_std_min": 0.0014544996572605784,
+            "fourth_tone_to_std_median": 0.07603856320530651,
+            "clock_drift_cycles": -7.5068637443248285,
+            "mean_square_min": 3.461484238505364e-05,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "quarter_offset_diagnostics": [
+            {
+              "quarter_offset": 0,
+              "checked_cells": 179094,
+              "relation_errors": [
+                0,
+                0,
+                47664,
+                52784
+              ],
+              "total_relation_errors": 100448
+            },
+            {
+              "quarter_offset": 1,
+              "checked_cells": 179094,
+              "relation_errors": [
+                0,
+                0,
+                50252,
+                47664
+              ],
+              "total_relation_errors": 97916
+            },
+            {
+              "quarter_offset": 2,
+              "checked_cells": 179094,
+              "relation_errors": [
+                0,
+                0,
+                52788,
+                50252
+              ],
+              "total_relation_errors": 103040
+            },
+            {
+              "quarter_offset": 3,
+              "checked_cells": 179093,
+              "relation_errors": [
+                0,
+                0,
+                52784,
+                52788
+              ],
+              "total_relation_errors": 105572
+            }
+          ],
+          "minimum_relation_errors_over_offsets": 97916,
+          "source_crop_frames": [
+            34111,
+            1045708
+          ]
+        }
+      }
+    },
+    "previous_clean_control": {
+      "source_sha256": "77ff3658428a7de39ebaca89005c2d88977cee24c7b841cab6fe8f6d344b7d24",
+      "channels": {
+        "left": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 500,
+            "windows": 2019,
+            "fourth_tone_to_std_min": 0.6911730236843818,
+            "fourth_tone_to_std_median": 0.8128459237776954,
+            "clock_drift_cycles": 30.384519855473062,
+            "mean_square_min": 0.008360659793019296,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "quarter_offset_diagnostics": [
+            {
+              "quarter_offset": 0,
+              "checked_cells": 178778,
+              "relation_errors": [
+                0,
+                0,
+                0,
+                89664
+              ],
+              "total_relation_errors": 89664
+            },
+            {
+              "quarter_offset": 1,
+              "checked_cells": 178777,
+              "relation_errors": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "total_relation_errors": 0
+            },
+            {
+              "quarter_offset": 2,
+              "checked_cells": 178777,
+              "relation_errors": [
+                0,
+                0,
+                89615,
+                0
+              ],
+              "total_relation_errors": 89615
+            },
+            {
+              "quarter_offset": 3,
+              "checked_cells": 178777,
+              "relation_errors": [
+                0,
+                0,
+                89664,
+                89615
+              ],
+              "total_relation_errors": 179279
+            }
+          ],
+          "minimum_relation_errors_over_offsets": 0,
+          "source_crop_frames": [
+            66779,
+            1076539
+          ]
+        },
+        "right": {
+          "clock": {
+            "clock_model": "amplitude fourth harmonic; no measured crossings",
+            "carrier_hz": 7812.5,
+            "block_frames": 500,
+            "windows": 2019,
+            "fourth_tone_to_std_min": 0.6744144610031585,
+            "fourth_tone_to_std_median": 0.812207149865484,
+            "clock_drift_cycles": 30.380657171656022,
+            "mean_square_min": 0.007618015509098768,
+            "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+          },
+          "quarter_offset_diagnostics": [
+            {
+              "quarter_offset": 0,
+              "checked_cells": 178778,
+              "relation_errors": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "total_relation_errors": 0
+            },
+            {
+              "quarter_offset": 1,
+              "checked_cells": 178777,
+              "relation_errors": [
+                0,
+                0,
+                89478,
+                0
+              ],
+              "total_relation_errors": 89478
+            },
+            {
+              "quarter_offset": 2,
+              "checked_cells": 178777,
+              "relation_errors": [
+                0,
+                0,
+                89294,
+                89478
+              ],
+              "total_relation_errors": 178772
+            },
+            {
+              "quarter_offset": 3,
+              "checked_cells": 178777,
+              "relation_errors": [
+                0,
+                0,
+                0,
+                89294
+              ],
+              "total_relation_errors": 89294
+            }
+          ],
+          "minimum_relation_errors_over_offsets": 0,
+          "source_crop_frames": [
+            66780,
+            1076539
+          ]
+        }
+      }
+    }
+  }
+}

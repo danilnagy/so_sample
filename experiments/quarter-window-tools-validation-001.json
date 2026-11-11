@@ -1,0 +1,24 @@
+{
+  "analysis_version": "second-start-workflow-validation-0.1",
+  "suite": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-quarter-window-001",
+    "passed": 346,
+    "failed": 0,
+    "elapsed_seconds": 57.98
+  },
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 110,
+  "second_start_control_report": "sound3-start-quarter-results-001.json",
+  "candidate_software_report": "generated-quarter-window-001/software-validation.json",
+  "hardware_registration": "edited-quarter-window-001/restore-registration.json",
+  "candidate_wav_sha256": "a81d6bb2e2eb9532155d00355933d0eabb9d2e8a1bb92c45a6b50f8249d7db2a",
+  "candidate_native_body_sha256": "933eca1c290f4fcde0718ddf87e342c3f5b059bbb96d070f98fd6145c342699a",
+  "hardware_verified": false,
+  "public_writer_scope_changed": false,
+  "limits": [
+    "Software validation and the genuine physical control do not establish acceptance of the new generated window",
+    "The second-start device restore, exact recapture and tone checks are pending",
+    "Both registered endpoint predictions remain failed; general minimum and inclusivity rules remain unresolved"
+  ]
+}

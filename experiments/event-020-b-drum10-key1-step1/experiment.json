@@ -1,0 +1,28 @@
+{
+  "experiment_id": "event-020-b-drum10-key1-step1",
+  "capture_status": "validated_drum_note_addition",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-drum-slice-copy-001",
+  "baseline_capture": "../edited-drum-slice-copy-001/capture.wav",
+  "baseline_source_sha256": "ac23213297cb3a1d0b56515bbb78bb5485b72cf5e420376ea591ae11f0d647cc",
+  "baseline_artifact": "../edited-drum-slice-copy-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "c349b9e04482c881db859ec99352382643ae1538cd51b120a708aab390f1ae9c",
+  "baseline_body_sha256": "846092c09285da128689493f2a332fef8e0c22ac93fb710f9e0b994661fe971e",
+  "preregistration": "../drum10-note-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "Retain Pattern1, stopped playback/write off; select Sound10/TONE and tap key1 once to select its slice",
+    "Enter write mode; Sound10 Step1 should be unlit; add only Step1 once and exit write, retaining every other sound/note",
+    "If unexpectedly lit, exit write without toggling and report; otherwise retain the new note",
+    "Select Sound8/TONE, stopped playback/write off, unchanged knobs and recording setup; before playback capture full stereo backup here with a second of trailing silence",
+    "Leave the new note present and report deviations"
+  ],
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "17cc220dfa4c97f06606ad3c131be8f2bc6080fe7a12fc8be27842ca5c118817",
+  "purpose": "Independently locate a drum pattern cell and compare raw note values while preserving the calibrated copied slice and melodic neighbor",
+  "results": "../drum10-note-results-001.json",
+  "analysis": "derived/analysis-001"
+}

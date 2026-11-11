@@ -1,0 +1,131 @@
+{
+  "analysis_version": "audition-lock-result-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "3915d42e96db83781f22aa01a829ddbdcd6a8864adb87c711d3a35920c91eeea",
+  "capture_sha256": "7744b6a57de308a615c03bdd7324bc3d819113309b27b4863f94eb868d88f4d4",
+  "playback_file": "retake-002/attempts/playback-01.wav",
+  "playback_sha256": "a64a621bdf50fa313bcdb38fae6a8a6a914effb7439c026cf5632609bef5826a",
+  "native": {
+    "decoder": "web",
+    "file": "backup-02.wav",
+    "capture_sha256": "7744b6a57de308a615c03bdd7324bc3d819113309b27b4863f94eb868d88f4d4",
+    "exact_target": true,
+    "attempts": [
+      {
+        "file": "backup-01.wav",
+        "sha256": "b3da116a18450fd1e11a0ed3137f6e8931e72c6c19d5eb111f40bf85c436e79f",
+        "decoded": false,
+        "peak": 0.021026611328125,
+        "error": "crossing: Packet checksum differs at wire byte 4095, tag 0x7482; realigned left -1: Packet checksum differs at wire byte 4095, tag 0x708a; realigned left -2: Packet checksum differs at wire byte 4095, tag 0xf4ca; realigned left -3: Packet checksum differs at wire byte 4095, tag 0x6cce; realigned right -1: Packet checksum differs at wire byte 4095, tag 0x9192; realigned right -2: Packet checksum differs at wire byte 4095, tag 0x7373; preamble search: Preamble not found in both channels"
+      },
+      {
+        "file": "backup-02.wav",
+        "sha256": "7744b6a57de308a615c03bdd7324bc3d819113309b27b4863f94eb868d88f4d4",
+        "decoded": true,
+        "method": "preamble found after 1 left and 1 right labels",
+        "packets": 270,
+        "peak": 0.834808349609375,
+        "exact_target": true,
+        "state_equal": true
+      }
+    ]
+  },
+  "outcome": "other",
+  "prediction": "audition_keeps_live_state",
+  "prediction_held": false,
+  "comparisons": null,
+  "live_filter_before_pattern": null,
+  "live_filter_after_pattern": null,
+  "group_sizes": [
+    4,
+    8,
+    5,
+    22
+  ],
+  "reason": "4 groups of hits, 3 expected",
+  "exploratory": {
+    "label": "exploratory, not part of the registered method",
+    "noise_floor_rms": 6.749633168948465e-05,
+    "hit_rms_median": 0.25258702512873643,
+    "stretches": [
+      {
+        "what": "before the first hit",
+        "from": 0.3,
+        "to": 2.7817233560090706,
+        "rms": 6.820214551805488e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 5.639342403628118,
+        "to": 7.240566893424036,
+        "rms": 7.04088022906235e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 11.640725623582766,
+        "to": 13.97843537414966,
+        "rms": 6.964268470285809e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 17.7424716553288,
+        "to": 23.863696145124717,
+        "rms": 6.93719609837958e-05
+      }
+    ],
+    "first_three_groups": {
+      "file": "retake-002/attempts/playback-01-first-three-groups.wav",
+      "group_sizes": [
+        4,
+        8,
+        5
+      ],
+      "outcome": "audition_keeps_live_state",
+      "comparisons": {
+        "before_matches_pattern": false,
+        "after_matches_pattern": false,
+        "before_matches_after": true
+      },
+      "band_means_db": {
+        "before": [
+          -0.16738097688068454,
+          3.195086508669236
+        ],
+        "pattern": [
+          -3.114519352110604e-09,
+          -1.642847494001967e-07
+        ],
+        "after": [
+          -0.16992716193252513,
+          3.186220991401383
+        ]
+      },
+      "hit_rms_by_group": [
+        [
+          0.3671,
+          0.367,
+          0.367,
+          0.367
+        ],
+        [
+          0.2528,
+          0.2527,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526
+        ],
+        [
+          0.367,
+          0.3669,
+          0.3668,
+          0.3669,
+          0.3669
+        ]
+      ]
+    },
+    "reading": "every stretch where auditions by hand were due sits at the noise floor: the presses produced no output"
+  }
+}

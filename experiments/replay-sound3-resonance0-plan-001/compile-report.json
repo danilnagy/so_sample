@@ -1,0 +1,98 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "ed15194d9cc7364aad1a0077daea5c2edb7e61d9020dcd4ec7e04c3495154b87",
+  "plan_sha256": "b664e7de42a582f9a86c6fe0c5997a2bafd34c22a9b8f2f35e12a3714ba8bda3",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_sound3_resonance",
+        "value": 0
+      },
+      "before_body_sha256": "ae37ebfdfd485e0e20313c4faeb26065132375c7f0194681fffeda837c6b6264",
+      "after_body_sha256": "ae37ebfdfd485e0e20313c4faeb26065132375c7f0194681fffeda837c6b6264"
+    }
+  ],
+  "target_body_sha256": "ae37ebfdfd485e0e20313c4faeb26065132375c7f0194681fffeda837c6b6264",
+  "restore_wav_sha256": "d717facb4d222b939e2c2f1224a18a8e0f48a27cd009d36a1cc23cc3f6c66cb5",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "d622eeb608f466392b4685dfc19036434665b5fca49c59b7ba2b06c8c1dda2b8",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 313647,
+    "active_frames": 1770481,
+    "silence_frames_each_end": 4410,
+    "frames": 1779301,
+    "duration_seconds": 40.34696145124717,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 313647,
+        "reconstructed_symbols": 313647,
+        "overlap_symbols": 313647,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 313647,
+        "reconstructed_symbols": 313647,
+        "overlap_symbols": 313647,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "experiment_id": "edited-sound3-volume36-001",
+  "capture_status": "retired_incorrect_alternative_code_metadata_before_hardware",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-volume36-registration-001.json",
+  "hardware_restore": {
+    "status": "not_run"
+  },
+  "planned_actions": [
+    "Restore complete waveform with established stereo path and playback level; keep both knobs and all audio settings unchanged",
+    "Pattern1/Sound3/TONE stopped/write off; before playback save complete capture.wav with established reduced recording level and one second tail",
+    "Separately record12 to15 seconds of ordinary Pattern1 playback as playback.wav, then stop/write off",
+    "Confirm restore success and recognizable phrase; relative loudness may be reported as uncertain without guessing; keep knobs untouched"
+  ],
+  "rejection": "preparation-rejection-001.json",
+  "restore_file_retired": true
+}

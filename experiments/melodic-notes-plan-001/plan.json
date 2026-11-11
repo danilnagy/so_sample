@@ -1,0 +1,31 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "f25cb7c4e4d5f03974ba6c1ee7af999b8e0525c56ec06e1457e200c031e2e38c",
+  "source_body_sha256": "cb75d7734eb39ed56f41fc810e8084102ab2b2f247c4b313244672f82e69dbf5",
+  "operations": [
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 1,
+      "sound": 3,
+      "keys": [
+        16,
+        1,
+        15,
+        2,
+        14,
+        3,
+        13,
+        4,
+        12,
+        5,
+        11,
+        6,
+        10,
+        7,
+        9,
+        8
+      ]
+    }
+  ]
+}

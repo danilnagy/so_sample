@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-044-b-sound3-tone-volume-lock-up",
+  "capture_status": "validated_sound3_tone_primary_lock_changes",
+  "expected_file": "capture.wav",
+  "registration": "../sound3-tone-lock-probe-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/TONE, tempo100 and swing9; knobA untouched",
+    "Play Pattern1; hold WRITE and turn only B clockwise to maximum over about5 seconds; hold WRITE another3 seconds with knobs stationary; release WRITE, stop, ensure write off, then capture",
+    "Save complete stereo backup at established reduced levels with one second trailing silence before the next action",
+    "After B report whether Sound3 became louder and any display value seen; leave Sound3/TONE stopped/write off"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "native_results": "../sound3-tone-lock-probe-results-001.json",
+  "volume_writer_enabled": false,
+  "audition_result": "louder",
+  "project": "../exported-sound3-tone-lock-maximum-001/project.json"
+}

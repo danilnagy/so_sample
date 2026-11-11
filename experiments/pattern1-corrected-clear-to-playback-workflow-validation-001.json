@@ -1,0 +1,24 @@
+{
+  "analysis_version": "corrected-clear-to-plain-playback-handoff-audit-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "accepted_corrected_clear_checks_and_original_prediction_pass": true,
+    "software_report_remains_hardware_unverified": true,
+    "full_original_equality_false_and_global7_preserved": true,
+    "source_and_new_registration_pins_match": true,
+    "new_control_source_native_and_zero_change_baseline_valid": true,
+    "fresh_capture_folders_pending_before_data": true,
+    "original_duplicate_evidence_preserved": true,
+    "no_global_role_nibble_order_or_FX_writer_claimed": true
+  },
+  "corrected_observation_sha256": "62d4f205d34e4e62f26b910dc6628cc2f253e59a66ebb9b16f2e993be694a44a",
+  "next_registration_sha256": "5d25da501f1db6ae35856d6546946f8b2f7a9e68aa85bbf243fe0320c7ac05dc",
+  "original_duplicate_identity_observation_sha256": "8fcd02af75428974e2917a6aa4b5cd6bdb82c26cf7b0c57ad29420e3ab98f67e",
+  "validation": {
+    "focused_tests_passed": 45,
+    "focused_tests_seconds": 3.81,
+    "last_full_production_tests_passed": 1137,
+    "production_changed_since_full_suite": false,
+    "ruff_new_research_files_passed": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "session_answers": [
+    {
+      "question": "Describe the pitch of the repeating tone, if you noticed it (Enter to skip)",
+      "answer": "bending but in a different way"
+    }
+  ],
+  "later_user_report": "The effect is a function of the machine: on the first step it fades in",
+  "capture_sha256": "e0417cc3adc4cbf22a70a0b5cd2fcf52c4a3f0194b7356adb7450ba5df25a85a",
+  "playback_sha256": "b19537f5a4d06ca615b36c3c86eef9b4700f55cee1c9d90b559b3d942e4c2deb"
+}

@@ -1,0 +1,137 @@
+{
+  "analysis_version": "shared-overwrite-sample-and-page-analysis-0.2",
+  "packet_page_model": "First header+4096-code page split into sixteen255-byte payloads and one25-byte remainder; subsequent4096-code pages split into sixteen255-byte payloads and one16-byte remainder",
+  "evidence_sha256": "2dfab04465ec425fa82cad5c927658c52a19068fce8d79b0f02fac28f210bfcc",
+  "capture_sha256": "5dca9a554b76bb538cf6a24deb5fdc707893730f6bea5519c76f5106342cb057",
+  "artifact_sha256": "b1f5f51d82f861c472f07763137c466c4da986ec244c986425d3af1279bd8f4d",
+  "buffers": [
+    {
+      "selector_id": 0,
+      "header_hex": "00000000c0fc000000",
+      "capacity_codes": 65536,
+      "endpoint": 64704,
+      "codes_after_endpoint": 832,
+      "nonzero_code_bytes_after_endpoint": 0,
+      "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25",
+      "packet_payload_length_histogram": {
+        "255": 256,
+        "25": 1,
+        "16": 15
+      },
+      "observed4096_page_packet_layout_matches": true,
+      "page_count4096": 16,
+      "capacity_is_power_of_two": true
+    },
+    {
+      "selector_id": 3,
+      "header_hex": "00000000c019010003",
+      "capacity_codes": 73728,
+      "endpoint": 72128,
+      "codes_after_endpoint": 1600,
+      "nonzero_code_bytes_after_endpoint": 1399,
+      "payload_sha256": "fa1da473378c5f40a0ba3e9b106de68fc880ed8391331cc7da07cf669777f25c",
+      "packet_payload_length_histogram": {
+        "255": 288,
+        "25": 1,
+        "16": 17
+      },
+      "observed4096_page_packet_layout_matches": true,
+      "page_count4096": 18,
+      "capacity_is_power_of_two": false,
+      "preview": {
+        "sound_slot": 4,
+        "backing_sound_id": 3,
+        "backing_bytes": 73728,
+        "B_controlled_counter": 72128,
+        "sample_rate_hz_nominal": 23437.5,
+        "codec": "signed-complement G711 mu-law hypothesis",
+        "counter_policy": "Use counter samples at zero start; inclusive-end distinction remains unverified",
+        "export_sample_rate_hz": 48000,
+        "export_frames": 147719
+      },
+      "independently_fitted_tone": {
+        "envelope_window_frames": 480,
+        "activity_threshold_rms": 0.0029766255996055233,
+        "low_quantile_rms": 2.7114550867406766e-05,
+        "audible_span_frames": [
+          0,
+          91680
+        ],
+        "audible_span_seconds": [
+          0.0,
+          1.91
+        ],
+        "audible_duration_seconds": 1.91,
+        "frequency_fit_span_frames": [
+          2400,
+          89280
+        ],
+        "dominant_frequency_hz": 1250.0434345422905,
+        "fundamental_amplitude": 0.04202514646008016,
+        "single_sine_explained_variance": 0.9994367211505601,
+        "single_sine_residual_rms": 0.0007054766747759477,
+        "activity_regions": 1,
+        "duration_resolution_seconds": 0.01
+      }
+    },
+    {
+      "selector_id": 4,
+      "header_hex": "00000000c06f000004",
+      "capacity_codes": 32768,
+      "endpoint": 28608,
+      "codes_after_endpoint": 4160,
+      "nonzero_code_bytes_after_endpoint": 3974,
+      "payload_sha256": "f4a712aee09a92b26040b2b31d760c6fb35eef7c250ba4d83d06da6c13f3d9ce",
+      "packet_payload_length_histogram": {
+        "255": 128,
+        "25": 1,
+        "16": 7
+      },
+      "observed4096_page_packet_layout_matches": true,
+      "page_count4096": 8,
+      "capacity_is_power_of_two": true,
+      "preview": {
+        "sound_slot": 5,
+        "backing_sound_id": 4,
+        "backing_bytes": 32768,
+        "B_controlled_counter": 28608,
+        "sample_rate_hz_nominal": 23437.5,
+        "codec": "signed-complement G711 mu-law hypothesis",
+        "counter_policy": "Use counter samples at zero start; inclusive-end distinction remains unverified",
+        "export_sample_rate_hz": 48000,
+        "export_frames": 58590
+      },
+      "independently_fitted_tone": {
+        "envelope_window_frames": 480,
+        "activity_threshold_rms": 0.0028344010736294344,
+        "low_quantile_rms": 1.564817902221526e-05,
+        "audible_span_frames": [
+          0,
+          18720
+        ],
+        "audible_span_seconds": [
+          0.0,
+          0.39
+        ],
+        "audible_duration_seconds": 0.39,
+        "frequency_fit_span_frames": [
+          2340,
+          16380
+        ],
+        "dominant_frequency_hz": 1000.0330292652527,
+        "fundamental_amplitude": 0.04005591045943412,
+        "single_sine_explained_variance": 0.999788353860264,
+        "single_sine_residual_rms": 0.0004120947605340564,
+        "activity_regions": 1,
+        "duration_resolution_seconds": 0.01
+      }
+    }
+  ],
+  "hardware_verified": false,
+  "limits": [
+    "Page/chunk observations describe these retained packet layouts; they do not establish how new allocation capacity is selected",
+    "The73728-code buffer is not a power of two, so a universal power-of-two allocation assumption is not supported",
+    "Tone fits use the existing nominal-rate codec and endpoint preview policy, without forcing the recorded frequency",
+    "Tail code bytes are preserved; they are not normalized or interpreted as a particular allocator state"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "9b2e77b68f683c399391971ed522a3e87e96ab5dfa841b8d75d2a2812f2ac111",
+  "source_body_sha256": "1147b3d4952aa4ade735b011047bcf22a469855bc3e1fff9c6f6cd4c462ca495",
+  "operations": [
+    {
+      "operation": "set_pattern1_effect",
+      "effect": "octave_down"
+    }
+  ]
+}

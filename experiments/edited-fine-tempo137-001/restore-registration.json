@@ -1,0 +1,46 @@
+{
+  "analysis_version": "first-generated-fine137-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_artifact": "experiments/event-036-a-return-fine-tempo-100/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "5eec8293bd2f061fad97dd7b4973ce5d918d2d5ab3b86932f4461276530a1a58",
+  "baseline_capture": "experiments/event-036-a-return-fine-tempo-100/capture.wav",
+  "baseline_capture_sha256": "17869856b4650d464eab327fc1b3d1eaf840d367f6511b9c2787d1f1cae017f1",
+  "baseline_body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633",
+  "baseline_observation_sha256": "d8531bd27d8a8175f6277ac0ae713d2c2f0dd8a0cb750f58c0c8355a051e4f1c",
+  "physical_range_series_results_sha256": "9d3c73871aa3dcb1c9ccb004608471c4c7b5d143909019488f8a8498719537b3",
+  "independent_endpoint_evidence": [
+    {
+      "bpm": 60,
+      "artifact": "experiments/event-034-b-fine-tempo-60/derived/analysis-001/capture.symbols.npz",
+      "artifact_sha256": "1c5ad34633d93054f003d8393aa9fe6fc0518c27af7e2cfbdf975c7de2b6d885",
+      "body_sha256": "8146205d12593b62c9b88c8ab9ad13603d10e409d84bef4a89e339ce96865f64",
+      "observation_sha256": "a1aa491d8eba243b927860b88ac8856232bdba841d122072d070cba0b6353fee"
+    },
+    {
+      "bpm": 240,
+      "artifact": "experiments/event-035-c-fine-tempo-240/derived/analysis-001/capture.symbols.npz",
+      "artifact_sha256": "67bc8b00bf1460fccda1f160accbf97a78774ba9354963633f2849b6028cddf2",
+      "body_sha256": "681d3d77d3e557e7e345dde3928dc41bb62bc3c80b5f958dfd0857d678c68869",
+      "observation_sha256": "b5eca5a8899a4f30353a32e3813ba78d05e40dcdb6bf9313548f5c52aea43135"
+    }
+  ],
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 129,
+    "baseline_encoded_value": 100
+  },
+  "expected_body_sha256": "5f25b5efd909c93b0aa0cdbb31d8aff170ea5edeb9ca6dd48eb2d7778ae696cb",
+  "expected_display_bpm": 137,
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "limits": [
+    "137 is not a previously captured physical target; this is an independent generated fine-tempo probe",
+    "Public tempo editing remains the three presets until suitable fine-restore evidence",
+    "Software reports remain hardware-unverified; independent display and complete recapture are required",
+    "Only the fixed byte changes; unknown global or sound parameters are preserved"
+  ],
+  "restore_wav_sha256": "8594f6930ee6ef709caba0620381de47999532ab86d0c7ed98d1f245d31816c7",
+  "edited_artifact_sha256": "49139a6d3ccef7406a0aea9dd2cc880ddd8fa95ed2025c87546d21f9f3c8c017",
+  "software_validation_sha256": "e89a093326848f5b1d325c9f78b967091b7f66431271de435413730b0f9e11d2"
+}

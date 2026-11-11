@@ -1,0 +1,9 @@
+{
+  "source_sha256": "fb9f53873505501de9152f0af7dea9af44656e08e2b4e599f2701cfac26db54a",
+  "decoder_version": "amplitude-clock-0.1",
+  "acquisition_artifact": "derived/analysis-001/capture.symbols.npz",
+  "native_frame_valid": false,
+  "error": "Measured clock requires one exact pre-frame quarter alignment",
+  "output_artifact_created": false,
+  "target_bytes_used_for_recovery": false
+}

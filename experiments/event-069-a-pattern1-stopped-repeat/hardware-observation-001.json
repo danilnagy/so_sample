@@ -1,0 +1,35 @@
+{
+  "analysis_version": "battery-replacement-and-plain-playback-native-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "This distinct capture preserves the entire pre-battery-change clear body; no serialized change in stopped repeat or described plain playback",
+  "checks": {
+    "native_and_registered_source_pass": true,
+    "entire_native_body_unchanged": true,
+    "footer_and_global_scopes_preserved": true,
+    "capture_artifact_and_registration_pins_match": true,
+    "capture_unclipped": true,
+    "independent_raw_capture_identity": true
+  },
+  "capture_sha256": "7a835c986b03ee45231664b83644ca8b6f9b075119f5bb068463d6dacf94a94b",
+  "artifact_sha256": "f44d4af6e3d6934b82a26720365dd3d015653cc133bedb17e6219bad5f92a6db",
+  "artifact_path": "experiments/event-069-a-pattern1-stopped-repeat/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+  "native_results_sha256": "6923ea9f8e5ce7fc02a42c575d46e61be44f515ce19197d84edd93cdab800888",
+  "manual_observation_sha256": "c96a9a548acec61461fb7d5d5d9bec0c70b99b6ccc6752d22157490dd0154a1e",
+  "global_byte_after": 7,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.159027099609375,
+      0.15313720703125
+    ]
+  },
+  "limits": [
+    "Battery replacement is an intervention; no intermediate capture isolates its timing or internal transient effects",
+    "Both full serialized states equal the pre-change state; this is not a general power-cycle persistence guarantee",
+    "A single playback stop with no change does not determine global131 semantics or rule out every transient role",
+    "No new listening or display report, nibble order or public FX writer inferred"
+  ],
+  "global_role_or_nibble_order_confirmed": false,
+  "FX_writer_enabled": false
+}

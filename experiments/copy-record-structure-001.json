@@ -1,0 +1,506 @@
+{
+  "analysis_version": "copy-record-template-0.1",
+  "artifact_sha256": "faf898606ae701061de005962cf4abf8f60af3338531fc720bcabfe3d03c3ccb",
+  "source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+  "selection": "Post-observation; candidate record boundaries are not parsed fields",
+  "candidate_starts": [
+    177090,
+    177091,
+    177092,
+    177093
+  ],
+  "candidate_record_length": 40,
+  "channels": {
+    "left": [
+      {
+        "view": "raw",
+        "source_span": [
+          177090,
+          177130
+        ],
+        "target_span": [
+          177130,
+          177170
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "best_matching_values": 14,
+        "exact_template_matches": false
+      },
+      {
+        "view": "raw",
+        "source_span": [
+          177091,
+          177131
+        ],
+        "target_span": [
+          177131,
+          177171
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "best_matching_values": 14,
+        "exact_template_matches": false
+      },
+      {
+        "view": "raw",
+        "source_span": [
+          177092,
+          177132
+        ],
+        "target_span": [
+          177132,
+          177172
+        ],
+        "literal_matching_values": 10,
+        "best_permutation": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "best_matching_values": 14,
+        "exact_template_matches": false
+      },
+      {
+        "view": "raw",
+        "source_span": [
+          177093,
+          177133
+        ],
+        "target_span": [
+          177133,
+          177173
+        ],
+        "literal_matching_values": 10,
+        "best_permutation": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177090,
+          177130
+        ],
+        "target_span": [
+          177130,
+          177170
+        ],
+        "literal_matching_values": 8,
+        "best_permutation": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "best_matching_values": 13,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177091,
+          177131
+        ],
+        "target_span": [
+          177131,
+          177171
+        ],
+        "literal_matching_values": 8,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 13,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177092,
+          177132
+        ],
+        "target_span": [
+          177132,
+          177172
+        ],
+        "literal_matching_values": 7,
+        "best_permutation": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "best_matching_values": 14,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177093,
+          177133
+        ],
+        "target_span": [
+          177133,
+          177173
+        ],
+        "literal_matching_values": 7,
+        "best_permutation": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177090,
+          177130
+        ],
+        "target_span": [
+          177130,
+          177170
+        ],
+        "literal_matching_values": 9,
+        "best_permutation": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177091,
+          177131
+        ],
+        "target_span": [
+          177131,
+          177171
+        ],
+        "literal_matching_values": 9,
+        "best_permutation": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177092,
+          177132
+        ],
+        "target_span": [
+          177132,
+          177172
+        ],
+        "literal_matching_values": 10,
+        "best_permutation": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177093,
+          177133
+        ],
+        "target_span": [
+          177133,
+          177173
+        ],
+        "literal_matching_values": 10,
+        "best_permutation": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      }
+    ],
+    "right": [
+      {
+        "view": "raw",
+        "source_span": [
+          177090,
+          177130
+        ],
+        "target_span": [
+          177130,
+          177170
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "raw",
+        "source_span": [
+          177091,
+          177131
+        ],
+        "target_span": [
+          177131,
+          177171
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "raw",
+        "source_span": [
+          177092,
+          177132
+        ],
+        "target_span": [
+          177132,
+          177172
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "raw",
+        "source_span": [
+          177093,
+          177133
+        ],
+        "target_span": [
+          177133,
+          177173
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 16,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177090,
+          177130
+        ],
+        "target_span": [
+          177130,
+          177170
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177091,
+          177131
+        ],
+        "target_span": [
+          177131,
+          177171
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177092,
+          177132
+        ],
+        "target_span": [
+          177132,
+          177172
+        ],
+        "literal_matching_values": 12,
+        "best_permutation": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "best_matching_values": 16,
+        "exact_template_matches": false
+      },
+      {
+        "view": "staggered_phase",
+        "source_span": [
+          177093,
+          177133
+        ],
+        "target_span": [
+          177133,
+          177173
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "best_matching_values": 17,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177090,
+          177130
+        ],
+        "target_span": [
+          177130,
+          177170
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177091,
+          177131
+        ],
+        "target_span": [
+          177131,
+          177171
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 16,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177092,
+          177132
+        ],
+        "target_span": [
+          177132,
+          177172
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 15,
+        "exact_template_matches": false
+      },
+      {
+        "view": "increment",
+        "source_span": [
+          177093,
+          177133
+        ],
+        "target_span": [
+          177133,
+          177173
+        ],
+        "literal_matching_values": 11,
+        "best_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "best_matching_values": 14,
+        "exact_template_matches": false
+      }
+    ]
+  },
+  "payload_decoded": false,
+  "limits": [
+    "Short candidate windows cannot identify a codec or establish statistical significance.",
+    "Failure rejects literal or fixed-permutation equality at these candidate boundaries only.",
+    "Distinct slot identity, stream context or unresolved coding may distinguish copied records.",
+    "No field offsets, payload bytes or editable restore are established."
+  ]
+}

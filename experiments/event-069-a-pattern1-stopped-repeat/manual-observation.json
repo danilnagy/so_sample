@@ -1,0 +1,7 @@
+{
+  "user_report": "the batteries died so I installed new ones. recorded the two captures as described",
+  "battery_replacement_reported_before_pair": true,
+  "exact_time_relative_to_first_recording": "reported before captures; not separately instrumented",
+  "audible_effect_or_display_confirmation": null,
+  "capture_sha256": "7a835c986b03ee45231664b83644ca8b6f9b075119f5bb068463d6dacf94a94b"
+}

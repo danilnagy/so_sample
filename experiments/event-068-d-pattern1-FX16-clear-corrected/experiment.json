@@ -1,0 +1,15 @@
+{
+  "experiment_id": "event-068-d-pattern1-FX16-clear-corrected",
+  "capture_status": "validated_corrected_clear_FF_global7",
+  "registration": "../pattern1-FX16-corrected-clear-registration-001.json",
+  "planned_actions": [
+    "Place the actual FX16-clear backup here as capture.wav; keep the prior duplicate files untouched",
+    "If the actual recording is unavailable, leave the already-cleared device stopped with write off and knobs/settings unchanged, then record a fresh complete backup here",
+    "No repeat FX pass, restore or separate playback recording required"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "corrected-clear-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-FX16-corrected-clear-001/project.json"
+}

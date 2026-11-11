@@ -1,0 +1,17 @@
+{
+  "experiment_id": "event-043-a-sound3-plain-playback",
+  "capture_status": "validated_plain_playback_no_serialized_change",
+  "expected_file": "capture.wav",
+  "registration": "../sound3-tone-lock-probe-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/TONE, tempo100 and swing9; knobA untouched",
+    "Pattern1/Sound3/TONE; plain playback for about3 seconds with write off and both knobs untouched, then stop and capture",
+    "Save complete stereo backup at established reduced levels with one second trailing silence before the next action",
+    "After B report whether Sound3 became louder and any display value seen; leave Sound3/TONE stopped/write off"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "native_results": "../sound3-tone-lock-probe-results-001.json",
+  "volume_writer_enabled": false
+}

@@ -1,0 +1,76 @@
+{
+  "analysis_version": "recorded-tone-pitch-range-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Recorded maximum has uniform raw25; return is exact independent raw1 minimum; only first-low5 bits change, volume36 and all other state preserved; user hears up/down",
+  "checks": {
+    "native_controls_and_all_preservation_checks_pass": true,
+    "both_registered_mask_checks_pass": true,
+    "all16_volume_values_remain36": true,
+    "capture_artifact_and_registration_fingerprints_match": true,
+    "entire_body_reproduced_by_literal_low5_value": true,
+    "capture_not_clipped": true,
+    "exact_preregistered_complete_minimum_return": true,
+    "all_export_checks_and_hashes_pass": true,
+    "entire_export_body_exact": true
+  },
+  "raw_pitch_candidate_values": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "volume_raw_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "upper_endpoint_code_known_before_capture": false,
+  "return_complete_body_predicted_before_capture": true,
+  "pitch_field_width_confirmed": false,
+  "pitch_scale_confirmed": false,
+  "numeric_UI_value_confirmed": false,
+  "capture_sha256": "57466dff79208f9b6fb1e9fb189262aeb9c628184c50cfb38ec179be9964569c",
+  "artifact_sha256": "59612ee7e270c94b686bb3fcc944d9fb411eb9cb6aff4a5daa1492fc92b26866",
+  "artifact_path": "experiments/event-053-d-return-sound3-tone-pitch-lock-minimum/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "227d4d25e644c83f2d8e89d2a4135125f8cb926082983a81b4842de21e654fc2",
+  "native_results_sha256": "a3eb875d93fac3ae9b7ce745316abfa991b9fea0ebb71cb4fbb994441106e768",
+  "manual_observation_sha256": "55883047b24eb8fd34f2f93161b27b4d78426dbb2d6f9157b3bbac3bef386203",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.152435302734375,
+      0.147735595703125
+    ]
+  },
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "Literal upper25 model is post-observation; upper code was not preregistered",
+    "Low5 and low6 masks both fit; unchanged bit5 does not establish full field width",
+    "No semitone scale, frequency law or UI numbers confirmed; generated interior/audio controls follow"
+  ]
+}

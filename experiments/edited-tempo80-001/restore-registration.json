@@ -1,0 +1,31 @@
+{
+  "analysis_version": "first-generated-tempo80-restore-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_artifact": "experiments/event-032-a-return-tempo-120/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "4c908075fba35546a88bbc01ec352616759419eaeff8da9b6d829cf05903a98f",
+  "baseline_capture": "experiments/event-032-a-return-tempo-120/capture.wav",
+  "baseline_capture_sha256": "80023150ef49d531f72b8b62aad151831a9353b328016751d2388e99fb22e890",
+  "baseline_body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "baseline_observation_sha256": "5f0290d7578be71ee73d9943cba7f1c80333649d17a675bef358f1b5d16f257f",
+  "genuine80_artifact": "experiments/event-031-b-tempo-80/derived/analysis-001/capture.symbols.npz",
+  "genuine80_artifact_sha256": "7f1b3ac76297a7e7f5fa7a12c392e21438f09532f7ffd939500b0d8e47e4df69",
+  "genuine80_observation_sha256": "9140c22f7b36ec0ffbde6c106b6224bbbccca0b30657600fef54236e0e5432ca",
+  "expected_body_sha256": "2a1a594b027dcd228f20e2b72961e995b27a3c8378643d74ad03a323ce3c17ce",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 129,
+    "baseline_encoded_value": 120
+  },
+  "expected_display_bpm": 80,
+  "limits": [
+    "Only this exact independently known120 state to the observed80 target is tested",
+    "Generated software reports remain unverified by hardware until separate restore/recapture evidence",
+    "No public tempo writer or arbitrary BPM range is enabled"
+  ],
+  "restore_wav_sha256": "ac450d4f900a16c02325787c4926a3a27a07554278b68ff552cfd670ed8f0832",
+  "edited_artifact_sha256": "aea70198c0e6b7bc870f002aa45dd28fdb4ea6f6c4a9262090d011c8ed92c422",
+  "software_validation_sha256": "722dd0800e6491b117c9c61d10291a72b3999328871b10f0ddd1208c8afb8ebb"
+}

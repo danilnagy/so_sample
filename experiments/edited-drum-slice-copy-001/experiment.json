@@ -1,0 +1,79 @@
+{
+  "experiment_id": "edited-drum-slice-copy-001",
+  "capture_status": "hardware_verified_exact_target_and_user_confirmed_tones",
+  "registered_before_restore": true,
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-019-b-copy-drum9-key1-to-drum10-key1",
+  "source_backup_sha256": "9b2e9d4400a521063629dcf73d1de74972b7deb1a8b956d67f76c0787cf4be1b",
+  "source_artifact": "../event-019-b-copy-drum9-key1-to-drum10-key1/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "ada11958edae1e16d526c23e52db943c560244cf753ca4f3dcdc91e469bf4ca5",
+  "source_body_sha256": "953e800ddd7d7e548515cec84b62491cb8cbae1d61579f9b643a08802c5b8f7d",
+  "source_reference_hex": "00000000d007000000",
+  "restore_wav": "../generated-drum-slice-copy-001/restore.wav",
+  "restore_wav_sha256": "c48df513fb8565296957b620361f1c09ce48724911bdfb70d0d459bec2415d1f",
+  "restore_duration_seconds": 23.216961451247165,
+  "generated_artifact": "../generated-drum-slice-copy-001/edited.symbols.npz",
+  "generated_artifact_sha256": "2a8c5c51434e51e74854b74da8907a86419b463f15d1cbc00f0f8fe754b407ef",
+  "plan": "../drum-slice-copy-plan-001/plan.json",
+  "expected_encoded_body_sha256": "846092c09285da128689493f2a332fef8e0c22ac93fb710f9e0b994661fe971e",
+  "expected_reference_hex": "cd0f00009d17000000",
+  "expected_sound_slot": 10,
+  "expected_slice_key": 1,
+  "expected_selector_id": 24,
+  "copied_from_sound_slot": 9,
+  "copied_from_slice_key": 2,
+  "copied_from_selector_id": 9,
+  "expected_start_field": 4045,
+  "expected_endpoint_field": 6045,
+  "expected_owner_id": 0,
+  "expected_changed_plain_packet_indices": [
+    415
+  ],
+  "expected_reference_byte_changes": [
+    {
+      "offset": 0,
+      "old": 0,
+      "new": 205
+    },
+    {
+      "offset": 1,
+      "old": 0,
+      "new": 15
+    },
+    {
+      "offset": 4,
+      "old": 208,
+      "new": 157
+    },
+    {
+      "offset": 5,
+      "old": 7,
+      "new": 23
+    }
+  ],
+  "expected_packet_count": 543,
+  "expected_frame_end_byte": 89844,
+  "preservation": "Every other plain packet, both Sound9 references, other15 Sound10 references, owner header/all65536 codes, melodic sounds and all16 patterns identical",
+  "planned_actions": [
+    "Restore generated-drum-slice-copy-001/restore.wav through the proven stereo path and levels using write+sound+record",
+    "Keep knobs untouched; with Sound8/TONE, playback stopped and write off, save a full stereo capture.wav here BEFORE audition/playback; retain a second of silence after dump finishes",
+    "After saving select Sound10/TONE and tap key1; confirm a clear short tone matching the source Sound9/key2 duration",
+    "Select Sound9/TONE and tap keys1 and2; confirm both previously accepted short tones remain; then return to Sound8/TONE, stopped/write off",
+    "Report restore and tone-check outcomes and any deviations"
+  ],
+  "actual_actions": {
+    "user_report": "done and confirmed",
+    "deviations_reported": false
+  },
+  "source_sha256": "ac23213297cb3a1d0b56515bbb78bb5485b72cf5e420376ea591ae11f0d647cc",
+  "hardware_verified": true,
+  "limits": [
+    "This exact generated nonzero-start cross-drum reference copy is accepted; other combinations need separate evidence",
+    "Only Sound9/keys1 or2 into existing Sound10/key1 are supported under local guards",
+    "No allocation, other key/slot mapping or Sound10 endpoint writer is enabled",
+    "Tone checks are user reported; exact rendering and inclusivity remain unmeasured"
+  ],
+  "hardware_validation": "hardware-validation.json",
+  "audition_observation": "audition-observation.json",
+  "analysis": "derived/analysis-001"
+}

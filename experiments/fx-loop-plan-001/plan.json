@@ -1,0 +1,151 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "bfcc92bd527ca974711f2b9ad93a65c630899e37cdf715d44f8c4866a7da6094",
+  "source_body_sha256": "b1ad5c718a93fa749bb434283930b808dffa57ac3a2e489b94964142d6d1e3aa",
+  "operations": [
+    {
+      "operation": "set_step_effects",
+      "pattern": 1,
+      "effects": [
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 2,
+      "effects": [
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 3,
+      "effects": [
+        null,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15,
+        15
+      ]
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 4,
+      "effects": [
+        null,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ]
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 5,
+      "effects": [
+        null,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "operation": "set_step_effects",
+      "pattern": 6,
+      "effects": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_pattern_chain",
+      "patterns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

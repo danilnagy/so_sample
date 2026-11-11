@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "channels": {
+    "left": {
+      "original_symbols": 178847,
+      "reconstructed_symbols": 178847,
+      "overlap_symbols": 178847,
+      "changed_overlap_symbols": 0,
+      "tail_symbols": 0,
+      "identical": true,
+      "changed_ranges": [],
+      "range_convention": "zero-based end-exclusive symbol indices",
+      "alignment_shift": 0,
+      "discarded_for_alignment": 0
+    },
+    "right": {
+      "original_symbols": 178847,
+      "reconstructed_symbols": 178847,
+      "overlap_symbols": 178847,
+      "changed_overlap_symbols": 0,
+      "tail_symbols": 0,
+      "identical": true,
+      "changed_ranges": [],
+      "range_convention": "zero-based end-exclusive symbol indices",
+      "alignment_shift": 0,
+      "discarded_for_alignment": 0
+    }
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "evidence": "Exact complete phase labels and counts; not verified protocol/state data",
+  "source_capture_hashes": [
+    "74d6be2ea498c4fcebed2963ef127b6a6addee07a87423148b7dae40f1d5c80c",
+    "284166f13a6e926d1fcf44cb213e82b0c52be6afaf331279836f8716d8cf9a23"
+  ],
+  "boundary_comparison": {
+    "left_incomplete_sign_intervals": [
+      0,
+      1,
+      0
+    ],
+    "right_incomplete_sign_intervals": [
+      0
+    ],
+    "partial_final_intervals_match": true,
+    "decoder_threshold": 0.0063
+  }
+}

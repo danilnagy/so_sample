@@ -1,0 +1,57 @@
+{
+  "analysis_version": "bounded-public-pitch-and-FILTER-handoff-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "accepted_generated14_hardware_and_frequency_checks_pass": true,
+    "current_source_and_fresh_filter_registration_pins_match": true,
+    "public_current_pitch_readback_and_noop": true,
+    "all_current_export_hashes_and_native_reconstruction_pass": true,
+    "filter_selection_and_recorded_captures_pending": true,
+    "filter_selection_prediction_and_unknown_recorded_endpoint_preserved": true,
+    "public_pitch13_accepted_wav_and_entire_body_exact": true,
+    "public_pitch13_software_checks_and_source_file_pins_pass": true,
+    "public_pitch14_accepted_wav_and_entire_body_exact": true,
+    "public_pitch14_software_checks_and_source_file_pins_pass": true
+  },
+  "current_hardware_observation_sha256": "1d6483ff69f10eee50c9d2be4b65352ef91e44754e3b4e36ebc3a7667762f7fa",
+  "filter_registration_sha256": "0d6072f99cf8a64a83bc12452063719815e8732ab0add07a16bd12220cc205cf",
+  "public_replays": [
+    {
+      "value": 13,
+      "plan_path": "experiments/replay-sound3-pitch13-plan-001/plan.json",
+      "compile_report_sha256": "160fec8b5a542917627fa238e87ecafa368b0c85f8830a1aa6b01b11e681352b",
+      "accepted_observation_sha256": "51b9648e68ca972699bdce27e5a9d60de8c518398f2b9a5ef88f2e6700b24579"
+    },
+    {
+      "value": 14,
+      "plan_path": "experiments/replay-sound3-pitch14-plan-001/plan.json",
+      "compile_report_sha256": "fe3e797c5a3b2bf39c4ae2f5badfa16f76c0d7b2474e1e78b2caf39c1441ae24",
+      "accepted_observation_sha256": "1d6483ff69f10eee50c9d2be4b65352ef91e44754e3b4e36ebc3a7667762f7fa"
+    }
+  ],
+  "public_pitch_policy": {
+    "operation": "set_sound3_pitch",
+    "target_integer_raw_range": [
+      1,
+      25
+    ],
+    "uniform_all16_Sound3_Pattern1_only": true,
+    "source_volume36_required": true,
+    "unknown_bit5_and_other_parameters_rejected": true,
+    "all_codes_semitone_law_or_field_width_claimed": false
+  },
+  "validation": {
+    "focused_pitch_volume_plan_tests_passed": 68,
+    "full_regression_tests_passed": 917,
+    "full_regression_seconds": 104.94,
+    "subsequent_FILTER_pitch_tests_passed": 37,
+    "failures": 0
+  },
+  "filter_writer_enabled": false,
+  "limits": [
+    "Public policy uses native endpoints and interior pitch evidence without claiming every integer's exact semitone law",
+    "Software replay reports remain hardware-unverified",
+    "Both FILTER controls await physical data; selection precedes the separately gated recorded pass"
+  ]
+}

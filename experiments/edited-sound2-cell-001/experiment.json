@@ -1,0 +1,83 @@
+{
+  "experiment_id": "edited-sound2-cell-001",
+  "capture_status": "received_and_validated_exact_sound2_cell_copy_restore",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-011-b-sound2-layer",
+  "source_backup_sha256": "34b9b78a92d62e76383ee2bd673ae1590793e10b2376ed2dd19974d8c1d16549",
+  "source_artifact": "../event-011-b-sound2-layer/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "8e47991a4d0fa96cd56e19f1ed40563b053392509c3b3b455fc8924462fb5798",
+  "restore_wav": "../generated-sound2-cell-001/restore-sound2-step9.wav",
+  "restore_wav_sha256": "fb3715a6951f9563a8778537433ccb30c015818494043d333728e6ad3251147e",
+  "generated_artifact": "../generated-sound2-cell-001/edited.symbols.npz",
+  "expected_encoded_body_sha256": "4362aa66f6c18e7351b39016eb1b801dfa4a6ce0f4935861d4aaf45c8737668b",
+  "expected_pattern": 1,
+  "expected_sound2_steps": [
+    1,
+    9
+  ],
+  "expected_sound2_primary_hex": "0d2831",
+  "expected_sound2_auxiliary_byte": 240,
+  "expected_sound3_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "expected_populated_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "expected_pattern_byte_changes": [
+    {
+      "offset": 387,
+      "old": 0,
+      "new": 13
+    },
+    {
+      "offset": 388,
+      "old": 0,
+      "new": 40
+    },
+    {
+      "offset": 389,
+      "old": 0,
+      "new": 49
+    },
+    {
+      "offset": 897,
+      "old": 0,
+      "new": 240
+    }
+  ],
+  "expected_changed_plain_packet_indices": [
+    5,
+    7
+  ],
+  "planned_actions": [
+    "Restore the generated Sound2 Step9 cell-copy backup with the proven stereo playback path and levels",
+    "Before playback or write-mode inspection, select Sound8/TONE, write off and stopped playback; save the full stereo backup",
+    "After saving, select Sound2, enter write and observe only Steps1/9 lit without tapping any steps; exit write",
+    "Select Sound3, enter write and observe Steps1/5/9/13 lit without tapping any steps; exit write",
+    "Play Pattern1 for one or two loops and report whether it plays normally; stop playback and return to Sound8/TONE with write off"
+  ],
+  "actual_actions": [
+    "User reports done and confirmed after requested restore, recapture, Sound2/Sound3 light checks and playback; no deviation reported"
+  ],
+  "source_sha256": "1adb6964a06f239adfcd599c2996b6d2d075e67576e63955e150ec8c5d84b56f",
+  "hardware_verified": true,
+  "purpose": "Validate copying one sound cell from a multi-sound step into another occupied step while preserving all existing cells",
+  "limits": [
+    "Sound2 primary0d2831 differs from Sound3 primary0df883; their note parameters remain opaque and are never substituted",
+    "Only the observed Sound2 key1 cell and optional calibrated Sound3 neighbours are supported",
+    "No general sound assignment, Sound2 pitch writing or removal is claimed"
+  ],
+  "user_report": "done and confirmed",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "decoder_version": "sign-crossings-0.2",
+  "validation_report": "hardware-validation.json",
+  "restore_registration_snapshot": "restore-registration.json"
+}

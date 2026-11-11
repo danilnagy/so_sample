@@ -1,0 +1,46 @@
+{
+  "analysis_version": "sound7-import-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a sample imported into Sound7 and registered per-step pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "imported_tone_on_even_steps",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": -386.326748970453,
+    "3": -0.011990767416356338,
+    "4": -386.3436913549092,
+    "5": -0.025857094393786265,
+    "6": -386.3398606360655,
+    "7": -0.0860289107620005,
+    "8": -386.3501556956892,
+    "9": -0.04650601773972144,
+    "10": -386.3461925595848,
+    "11": -0.06205880934669985,
+    "12": -386.3566206506374,
+    "13": -0.03937037493179376,
+    "14": -386.35907931111484,
+    "15": -0.052863516449530364,
+    "16": -386.3591907929329
+  },
+  "decision_sha256": "c94da2693c81acf72e94bfd936ef4163604f0a08b2fbfb5b9ceb4763e7bf5167",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "40522d8b60e6f1002aebe0bee9dfd098d454e16c928962b69d7505e70611d3e8",
+  "session_answers": [
+    {
+      "question": "Did every other note sound lower, like a second instrument? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One import into empty Sound7 with a 32768-code capacity; other slots and capacities are not tested here",
+    "Total serialized sample capacity stays inside the 172032-code calibration budget"
+  ]
+}

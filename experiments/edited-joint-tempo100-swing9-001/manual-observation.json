@@ -1,0 +1,10 @@
+{
+  "user_report": "done and confirmed",
+  "restore_acceptance_confirmed": true,
+  "requested_100_bpm_display_check_confirmed": true,
+  "actual_number_separately_typed": false,
+  "same_notes_slower_swung_playback_check_confirmed": true,
+  "interpretation": "User confirms the preceding requested restore,100 BPM display and playback checks; the number100 was not separately typed or inferred from bytes",
+  "independent_swing_display_reported": false,
+  "capture_sha256": "41ecbebbaa09b5055b1cf5b2c3c6035f012da17bfde9460aa96385ac5718275a"
+}

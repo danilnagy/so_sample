@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "experiments\\empty-001-f-sound3-trim-min\\capture.wav",
+  "source_sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 1096650,
+  "duration_seconds": 24.867346938775512,
+  "channel_count": 2,
+  "channels": {
+    "left": {
+      "peak_amplitude": 0.168121337890625,
+      "rms": 0.0888395276738552,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    },
+    "right": {
+      "peak_amplitude": 0.160858154296875,
+      "rms": 0.08495423312281623,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    }
+  },
+  "channel_similarity": {
+    "identical": false,
+    "correlation": -0.0009394431918016746,
+    "difference_rms": 0.12297911798720446
+  },
+  "clipping_note": "Near-full-scale samples indicate possible clipping, not proof."
+}

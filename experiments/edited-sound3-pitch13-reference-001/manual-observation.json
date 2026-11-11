@@ -1,0 +1,10 @@
+{
+  "user_report": "done, and confirmed I can hear the pattern",
+  "restore_completion_confirmed_in_requested_context": true,
+  "pattern_audible_confirmed": true,
+  "relative_pitch_comparison_confirmed": false,
+  "numeric_display_value": null,
+  "interpretation": "Completion of the requested reference restore and explicit audible-pattern confirmation; no subjective interval or numeric display value supplied",
+  "capture_sha256": "89b777b110bd7cc066f5c44237da1d2fd849c32041428158eca71e1200fe8acb",
+  "playback_sha256": "77f112f8ecf40be0dc1bf7e9c321ffbd93eeec3ef1a0edaf1677c8863a4119c1"
+}

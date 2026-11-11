@@ -1,0 +1,38 @@
+{
+  "experiment_id": "event-007-b-melodic",
+  "capture_status": "received_and_validated_registered_locality",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sample-001",
+  "baseline_source_sha256": "94b9b95f3468f4781d52542756cb858479a2a4cd3969826ad31658479919312d",
+  "baseline_body_sha256": "8f851166868fd99e7935a5942a2b82181f0268c3a05303f08852a0f06ebb30a0",
+  "baseline_pattern1_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+  "baseline_reused": "Fresh hardware-verified sample recapture has empty Pattern1; no new A requested",
+  "proposed_event": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 3,
+    "melodic_keyboard_key": 1
+  },
+  "planned_actions": [
+    "Retain Pattern1 and stopped playback; with write off, select Sound3 and tap key1 once",
+    "Press write to enter grid editing; tap Step1 once; exit write mode",
+    "Reselect Sound8; retain TONE, stopped playback and unchanged knobs, effects, tempo, chain and recording settings",
+    "Record complete stereo backup without playing the pattern"
+  ],
+  "actual_actions": [
+    "User replied done to the requested Sound3 key1, Pattern1 Step1 protocol and supplied this capture; no deviation reported."
+  ],
+  "source_sha256": "4b5a18904460369f01abd6dce3d621b8264ccc1aee9f5b8d273e3c1db79dcb5f",
+  "preregistration": "../melodic-step1-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Map a melodic event in the minimal hardware-verified state before generating pattern edits",
+  "hardware_pattern_edit_verified": false,
+  "action_evidence": "User completion report; key presses and sounding pitch were not independently observed.",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "registered_predictions": "../melodic-step1-results-001.json",
+    "packets": "derived/analysis-001/packet-report.json",
+    "patterns": "derived/analysis-001/pattern-report.json",
+    "waveform": "../waveform-probes-022.json"
+  }
+}

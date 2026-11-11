@@ -1,0 +1,29 @@
+{
+  "analysis_version": "generated-footer6-global7-octave-up-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_generated_restore_capture": true,
+  "experiment_id": "edited-pattern1-FX6-global7-up-001",
+  "source_artifact": "experiments/event-070-b-pattern1-plain-playback/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "f189d754bca67751df455bb0add12989781de604003ccc8dd103b661c9ad08ff",
+  "source_capture": "experiments/event-070-b-pattern1-plain-playback/capture.wav",
+  "source_capture_sha256": "9d07aa2c42d9779c0ca75ab780da818ddcc2b1a8fb714810b84ae847ff08ac10",
+  "source_body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+  "source_observation": "experiments/event-070-b-pattern1-plain-playback/hardware-observation-001.json",
+  "source_observation_sha256": "1a1f0410e101bb26fddf869959a0c6fe471d0b8a73b359643a18fc80371ba0f8",
+  "expected_footer_hex": "6666666666666666",
+  "expected_global131": 7,
+  "expected_body_sha256": "1147b3d4952aa4ade735b011047bcf22a469855bc3e1fff9c6f6cd4c462ca495",
+  "edited_artifact_sha256": "d62df6666647d0a4b917da856b36d492a54f15c1af63f946c7d6b56af6e15ea2",
+  "restore_wav_sha256": "79b022f542b06915f49face0c3428481a7e3541af463025bf150a3e89aeb9213",
+  "software_validation_sha256": "65842fd0efebbdc5491d6453174d822efba665c6cb0fd19e829fabe7fc818766",
+  "earlier_recorded_up_observation": "experiments/event-065-a-pattern1-FX7-recorded/hardware-observation-001.json",
+  "earlier_recorded_up_observation_sha256": "754c6b769b9e959a9834b1f1f2c4a60073d4f60d8da934e52a6e729bf1bc138b",
+  "hypothesis": "Uniform footer6 alone restores the user-recognized octave-up effect while global131 remains7 rather than recorded-up9",
+  "limits": [
+    "Fixed exact-source research constructor only; no public FX writer or complete enum",
+    "Uniform footer cannot determine nibble order",
+    "Native acceptance and audible octave-up are separate checks; do not infer listening from bytes",
+    "Receive backup must precede listening playback to test exact target without new playback intervention",
+    "Even a successful test would not identify the global byte's role or prove it irrelevant to all effects"
+  ]
+}

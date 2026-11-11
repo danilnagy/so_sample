@@ -1,0 +1,23 @@
+{
+  "experiment_id": "compiled-sample-memory-004",
+  "capture_status": "validated_over_limit_restore_other",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../sample-memory-registration-004.json",
+  "plan": "../sample-memory-plan-004/plan.json",
+  "import_stages": [
+    "../import-drum10-memory4-stage-001"
+  ],
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the PO-33 show ERR or anything unusual during or after the restore? Describe it (Enter for no)",
+    "Did the pattern play a rising run of 16 beeps? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "other"
+  },
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "analysis": "derived/analysis-001",
+  "project": "../exported-sample-memory-004/project.json"
+}

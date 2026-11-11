@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "reconstructed-001",
+  "created_at": null,
+  "baseline_id": "baseline-002",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "User reports restored musical behavior sounded correct; pattern sequence may have changed before this backup."
+  },
+  "changes": [
+    {
+      "property": "pattern_sequence",
+      "status": "possible",
+      "details": "User may have changed the pattern sequence before capture; exact actions unknown."
+    }
+  ],
+  "actions": [
+    "Restore corrected generated-restore-44100-002 WAV; user reports success",
+    "Record and supply post-restore backup"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "45d3ac95193c239e4cfadbae65e832a040506a81a200ff4472d7084255354c79",
+    "status": "received_and_inspected",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown",
+    "level_notes": "User confirms recording at a lower level than baselines; exact level not supplied."
+  },
+  "hardware_restore": {
+    "status": "accepted",
+    "evidence_source": "user_report",
+    "artifact_sha256": "778e05040b81ee451bb0692b9765181c4a7ad30fb49904495bccc048ef4232f7",
+    "observations": [
+      "User reports successful restoration and that everything sounded fine.",
+      "User confirms lower recording level and possible pattern-sequence changes before this backup.",
+      "Strict phase-symbol comparison differs; this is not a controlled unchanged-state re-capture."
+    ]
+  },
+  "generated_restore_record": "../baseline-002/generated-restore-44100-002.json",
+  "comparison_control": {
+    "status": "confounded",
+    "reason": "Possible serialized pattern-sequence changes; recording gain also changed."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "analysis_version": "second-owner-copy-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "event-022-b-record-independent-sound4",
+  "baseline_capture": "../event-022-b-record-independent-sound4/capture.wav",
+  "baseline_source_sha256": "06ba6534872d05e434485b031f458b1289d6acaa37dc59ac2482b3a8eb1c25a0",
+  "baseline_artifact": "../event-022-b-record-independent-sound4/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "f30c99ed814fea1223983d0c5279e74d272d42c2464ea958b69276f62b604312",
+  "baseline_body_sha256": "523f2dd9b29f1ffbfa94e453138aa72cc8a0ee8c75a6373c1d35b47b346fc803",
+  "expected_change": {
+    "source_sound_slot": 4,
+    "destination_sound_slot": 5
+  },
+  "control_checks": {
+    "baseline_packet_count": 679,
+    "baseline_source_sound1_header_hex": "00000000c0fc000000",
+    "baseline_source_sound1_payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25",
+    "candidate_destination_selector_ids": [
+      4
+    ],
+    "source_selector_id": 3,
+    "source_payload_sha256": "6e2600053f9d90ae26dc764f5155d31422503bb26a13d7d44b860c700109aa84",
+    "source_header_hex": "00000000c06f000003",
+    "source_code_count": 32768
+  },
+  "separately_evaluated_hypotheses": {
+    "destination_is_exact_owner3_reference": {
+      "expected_payload_hex": "00000000c06f000003"
+    },
+    "destination_is_duplicate_self_owned_buffer": {
+      "owner_id": 4,
+      "expected_buffer_code_count": 32768
+    },
+    "one_new_reference_packet_only": {
+      "packet_count_delta": 1,
+      "native_body_byte_delta": 14,
+      "frame_end_byte": 123315
+    }
+  },
+  "limits": [
+    "Reference and duplicated-buffer predictions are alternatives; no expected value repairs or shapes decoding",
+    "All existing owner0/owner3 codes and records, patterns and non-destination packets must remain intact",
+    "An exact reference copy would establish owner3 sharing in this context, not overwriting/deletion or general allocation behavior",
+    "Next planned study is re-recording Sound4 at a different length while Sound5 retains this reference",
+    "No Sound5 creation or allocator writer is enabled before physical evidence"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "experiment_id": "empty-001-b-tone-repeat",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "reference_id": "empty-001-b-tone",
+  "planned_action": "Record another complete stereo dump immediately after the one-tone backup, without changing device state or recording settings",
+  "actual_actions": [
+    "User supplied the requested pair of consecutive Sound8-only backups; actual sampling-button duration and setting changes were not separately reported."
+  ],
+  "source_sha256": "284166f13a6e926d1fcf44cb213e82b0c52be6afaf331279836f8716d8cf9a23",
+  "purpose": "Verify sample-containing state repeatability, including retained endpoint intervals",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "repeat": "../empty-tone-repeat-001.json",
+    "waveform": "../waveform-probes-011.json",
+    "structure": "../one-tone-structure-001.json"
+  },
+  "repeat_result": {
+    "complete_phase_streams_identical": true,
+    "symbols_per_channel": 178847,
+    "partial_endpoint_intervals_identical": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "experiment_id": "event-029-b-delete-imported-unshared-sound7",
+  "capture_status": "hardware_verified_exact_imported_last_owner_removal",
+  "baseline_id": "event-028-b-delete-imported-shared-sound6",
+  "expected_file": "capture.wav",
+  "registration": "deletion-registration.json",
+  "planned_actions": [
+    "Select Sound7 and release both buttons; hold record and press sound to delete selected Sound7 only",
+    "Return to Pattern1/Sound8/TONE stopped/write off, both knobs unchanged",
+    "Before audition record complete stereo capture.wav at the established reduced levels with one second trailing silence",
+    "Then confirm Sound6 and Sound7 silent, Sound4/Sound5/Pattern1 unchanged; return to Sound8/TONE"
+  ],
+  "source_sha256": "32c8fd9150f4884c45fce6e3bcd5679477b1a6bc75932f03f64071c63e84a5a3",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-imported-last-owner-deletion-001/project.json",
+  "hardware_deletion": {
+    "status": "confirmed",
+    "observations": [
+      "done and confirmed"
+    ],
+    "recapture_results": "hardware-recapture-results-001.json",
+    "manual_observation": "manual-observation.json"
+  }
+}

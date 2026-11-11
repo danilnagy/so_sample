@@ -1,0 +1,39 @@
+{
+  "analysis_version": "public-observed-resonance-plans-to-saved-FX-probe-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "accepted_middle_scope_audio_and_source_identity_pins_pass": true,
+    "public_resonance_policy_current_readback_and_noop_exact": true,
+    "all_export_hashes_and_full_current_body_reconstruction_pass": true,
+    "footer_hypothesis_unknown_code_and_FX7_preregistered": true,
+    "no_change_native_valid_without_false_FX_support": true,
+    "new_FX_capture_pending": true,
+    "public_resonance0_accepted_WAV_exact": true,
+    "public_resonance32_accepted_WAV_exact": true,
+    "public_resonance63_accepted_WAV_exact": true
+  },
+  "full_regression_tests_passed": 1137,
+  "post_full_FX_resonance_tests_passed": 42,
+  "current_hardware_observation_sha256": "843f23da5f7a91bca83b9153f6b07275644a0c365928be7bac2128ec15f25be1",
+  "FX_registration_sha256": "651a978135a8f2a2031323f0fa5f658a378841c7f4abee272fc999043de99888",
+  "code_sha256": {
+    "src/po33_re/formats/resonance.py": "2b2fa91a09a83db7ce64a85cb1a2a72895cc96dcd9de8f6d2a618f5f572156f1",
+    "src/po33_re/edits.py": "a4d8aa405df443ca07d2cb8e2da62b91e0402874d2e038d0c4fdf76a6cd4a1ab",
+    "tests/test_sound3_resonance_edits.py": "1c34f4391af8093514bb8b8302b03588a918fa6b9b81edde78c231578aabff8c",
+    "scripts/prepare_pattern1_fx_probe.py": "bf3af97ec5fdae419c49afb40eb5c11deb0df1b2badba3fcea2cdb5bbf5226f5",
+    "scripts/check_pattern1_fx_probe.py": "5750e141382f729aac4e986dea171d0cbc1c4db425340860dd0a5d7b8b50df02",
+    "tests/test_pattern1_fx_probe.py": "635b1cbbedb001553e15f0c63f0e29d9efd14fce9a1f4a237480c925ebc62aaa"
+  },
+  "public_observed_code_resonance_operation_enabled": true,
+  "FX_writer_enabled": false,
+  "next_capture": "event-065-a-pattern1-FX7-recorded/capture.wav",
+  "limits": [
+    "Footer bytes1024..1031 are a new location hypothesis; both high/low-first nibble projections remain literal and no raw FX7 code is guessed",
+    "FX7 is official octave-up and requires write mode enabled, distinct from holding WRITE during knob automation",
+    "Current source preceded already confirmed ordinary playback; probe includes that playback plus WRITE/FX pass, retaining unrelated changes without sole attribution",
+    "No uniformity or whole target body is predicted; release timing may leave mixed footer values; no averages rescue failures",
+    "Broader Pattern1 and nonpattern differences remain distinct; sample/parameter changes do not rescue footer-only support",
+    "No public FX writer or interpretation of the complete effect/footer encoding is enabled"
+  ]
+}

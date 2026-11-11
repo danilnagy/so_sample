@@ -1,0 +1,31 @@
+{
+  "analysis_version": "first-drum-note-copy-workflow-audit-0.1",
+  "control_results_sha256": "e95f23ca6e3cfb6d2b15b8c67f01c840677568499f0a25d8e67ba981cccdf1c9",
+  "restore_registration_sha256": "b0116d21dbba2e447456bdda91e4a51f48a5220becfd8ba002434b1f375810c4",
+  "project": "exported-drum10-note-001/project.json",
+  "exported_content_files_checked": 29,
+  "checks": {
+    "physical_control_preservation_and_mapping_pass": true,
+    "failed_auxiliary_prediction_preserved": true,
+    "source_capture_and_artifact_preserved": true,
+    "project_checks_and_all_content_hashes_pass": true,
+    "project_source_copies_match": true,
+    "raw_project_whole_body_matches": true,
+    "exact_observed_drum_pair_projected_separately": true,
+    "candidate_software_and_compiler_checks_pass": true,
+    "registered_restore_hash_matches": true,
+    "registered_target_artifact_hash_matches": true,
+    "whole_target_and_waveform_redecode_match": true,
+    "software_and_registration_remain_hardware_unverified": true,
+    "awaiting_capture_folder_ready": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "validation": {
+    "targeted_tests": "45 passed in 5.90s",
+    "full_regression_tests": "492 passed in 70.80s",
+    "ruff_check": "passed",
+    "ruff_format": "137 files formatted"
+  },
+  "next_required_user_action": "Restore generated drum-cell Step9 copy, recapture before inspection/playback, confirm drum and melodic grids/playback"
+}

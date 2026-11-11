@@ -1,0 +1,85 @@
+{
+  "analysis_version": "drum-copy-first-control-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-quarter-window-001",
+  "baseline_capture": "../edited-quarter-window-001/capture-retry.wav",
+  "baseline_source_sha256": "fa3c5f47983a46b1ce1a7f533eff7df94f6cdefed13efe7bafa6b5f190ff86cb",
+  "baseline_artifact": "../edited-quarter-window-001/derived/analysis-003/capture.symbols.npz",
+  "baseline_artifact_sha256": "80b41e0fc6db479df2e61bd40cfc4988f70a6a0ecfb39de6c68cc736cd3b3eb3",
+  "baseline_body_sha256": "933eca1c290f4fcde0718ddf87e342c3f5b059bbb96d070f98fd6145c342699a",
+  "target_capture": "event-015-b-copy-sound1-to-drum9/capture.wav",
+  "expected_change": {
+    "action": "Copy selected Sound1 to Sound9",
+    "source_sound_slot": 1,
+    "destination_sound_slot": 9
+  },
+  "control_checks": {
+    "baseline_packet_count": 511,
+    "baseline_source_sound1_header_hex": "00000000c0fc000000",
+    "baseline_source_sound1_payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25",
+    "candidate_destination_selector_ids": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "candidate_destination_empty_before": true,
+    "patterns": "All16 unchanged",
+    "existing_melodic_sounds": "All backing codes and Sound1/2/3/8 records unchanged",
+    "unrelated_packets": "All outside candidate destination data groups unchanged; selectors retained in order",
+    "native_validation": "All CRCs and exact body re-encode required",
+    "packet_count_policy": "No exact target count is assumed; new destination data may add packets"
+  },
+  "separately_evaluated_hypotheses": {
+    "sound9_uses_selector_block8_to23": {
+      "mapping_is_hypothesis": true
+    },
+    "only_first_destination_group_populated": {
+      "populated_ids": [
+        8
+      ]
+    },
+    "all16_destination_groups_populated": {
+      "populated_ids": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "populated_destination_records_are_owner0_references": {
+      "record_bytes": 9,
+      "owner_id": 0
+    }
+  },
+  "limits": [
+    "Selector8..23 mapping to drumSound9 is a hypothesis; changes elsewhere are reported and require reassessment",
+    "No slice boundaries, allocation behavior, equal spacing or exact destination packet count is assumed",
+    "New opaque metadata and any failed preservation or alternative hypotheses will remain visible",
+    "No drum editor or preview is enabled by this registration"
+  ]
+}

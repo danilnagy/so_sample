@@ -1,0 +1,44 @@
+{
+  "analysis_version": "straight-calibrated-swing-onset-method-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_swing6_capture": true,
+  "pair_registration_sha256": "3319cead85f5fe48bafa5b0b78b6b598af1c37481d321ef0993b358cbde91437",
+  "straight_backup_results_sha256": "e69ea069d3e3c6d6991cad5d968fa3dda3f700f0945e8916d66c0b59bd1d3a09",
+  "straight_playback_sha256": "66ccc83783a30af95101977284038cc4096eb9085381ea7bc5d19d5c0ffdbcc3",
+  "method_selection": "Exploratory straight-control spectrum and band inspection found the twice-per-loop repeated component near500.65 Hz, not a high-frequency component as originally described. Selection uses baseline only; no swing6 data exists.",
+  "parameters": {
+    "center_frequency_hz": 500.65,
+    "half_bandwidth_hz": 15.0,
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "minimum_region_seconds": 0.06,
+    "edge_margin_seconds": 0.03,
+    "minimum_band_rms": 0.001,
+    "maximum_gap_residual_seconds": 0.006,
+    "threshold_gap_spread_seconds": 0.004,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "nominal_loop_seconds": 1.7518248175182483,
+    "loop_tolerance_seconds": 0.005
+  },
+  "straight_reference_hypotheses": {
+    "short_gap_loop_fraction": 0.3125,
+    "long_gap_loop_fraction": 0.6875,
+    "gap_tolerance_seconds": 0.005
+  },
+  "comparison_hypotheses": {
+    "all_channels_and_thresholds_required": true,
+    "swing6_short_gap_increases_seconds_minimum": 0.003,
+    "swing6_long_gap_decreases_seconds_minimum": 0.003,
+    "loop_period_difference_seconds_maximum": 0.003,
+    "opposite_gap_changes_sum_seconds_maximum": 0.003
+  },
+  "limits": [
+    "Thresholds and tolerance are chosen using straight baseline and frozen before target data",
+    "No display reading inferred, no percentage or timer units assumed",
+    "Fewer than three full cycles or inconsistent tone onsets leave timing unevaluated"
+  ]
+}

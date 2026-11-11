@@ -1,0 +1,52 @@
+{
+  "analysis_version": "drum-kit-pages-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of page-rounded kits in Sound11 and empty Sound12, with registered Sound12 pitch and duration",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "sound12_key_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 100.00449962204713,
+    "3": 199.97942634813782,
+    "4": 299.99824532738,
+    "5": 399.911373445534,
+    "6": 499.92134543148956,
+    "7": 599.9253985239635,
+    "8": 699.995417558839,
+    "9": 800.014379045868,
+    "10": 900.0086658231213,
+    "11": 999.968457668698,
+    "12": 1100.0347819556255,
+    "13": 1200.00022513812,
+    "14": 1299.98069159536,
+    "15": 1399.9519933416539,
+    "16": 1500.0549329020214
+  },
+  "absolute": {
+    "step1_cents_vs_hit1": 0.08402455141352537,
+    "stored_rate": true
+  },
+  "stops_at_window_end": true,
+  "decision_sha256": "dfc556f456c7a1f74df63887d348b833e025fafe64325d14588203a4ef465b34",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "9751dd0e41c4d427afd6af75377792cfe2f025770cf35001f1e8132571979409",
+  "session_answers": [
+    {
+      "question": "Did the pattern play a rising run of 16 short beeps? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "Two page-rounded capacities (61440, 40960) and one empty slot (Sound12); others follow by the same rule but are not played",
+    "Total sample capacity equals the largest total already observed, 266240 codes; larger totals are not tested",
+    "Sound11 is checked by exact reception only; its notes are cleared in this pattern"
+  ]
+}

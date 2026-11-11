@@ -1,0 +1,19 @@
+{
+  "validation_id": "native-sample-tools-validation-001",
+  "date_local": "2026-10-07",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-native-sample-002 -p no:cacheprovider",
+    "passed": 181,
+    "failed": 0,
+    "duration_seconds": 45.48,
+    "filesystem_profile": "Normal filesystem access; sandbox-only attempt encountered Windows error5 creating pytest fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 72
+  },
+  "trim_hardware_validation": "edited-trim-001/hardware-validation.json",
+  "sample_candidate_software_validation": "generated-sample-750-001/software-validation.json",
+  "sample_candidate_hardware_verified": false
+}

@@ -1,0 +1,26 @@
+{
+  "analysis_version": "verified-FILTER-clockwise-to-opposite-and-return-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "current_hardware_scope_and_identity_checks_pass": true,
+    "source_capture_artifact_and_observation_pins_match": true,
+    "both_raw_projections_and_pitch_volume_values_read_back": true,
+    "qualitative_inaudibility_preserved_without_digital_zero_or_UI_number": true,
+    "clockwise_literal_model_explicitly_post_observation": true,
+    "all_export_hashes_and_full_body_reconstruction_pass": true,
+    "counterclockwise_unknown_and_entire_clockwise_return_preregistered": true,
+    "both_new_captures_pending": true
+  },
+  "clockwise_hardware_observation_sha256": "feb4c35abb8a84f84304649964909c00858fefcc3a3785f785b099f64c56eda0",
+  "range_registration_sha256": "4b521c4241ad0634f4c85b1a774ec97371685e19505d8cbdb66e7fa1b19c79fc",
+  "focused_tests_passed": 50,
+  "last_full_regression_tests_passed": 917,
+  "production_writer_changed": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Filter candidate bit grouping, scalar/mode interpretation and frequency law remain unknown",
+    "Opposite endpoint and whole return are new physical controls; no derived target is fabricated for the unknown endpoint",
+    "Software handoff evidence is separate from hardware observations"
+  ]
+}

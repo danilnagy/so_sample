@@ -1,0 +1,10 @@
+{
+  "experiment_id": "observe-audition-locks-001/retake-001",
+  "kind": "playback_only_retake",
+  "parent": "..",
+  "reason": "The first playback held the pattern alone; the procedure is repeated without a new restore",
+  "playback_seconds": 32,
+  "playback_instructions": "One 32-second recording in three parts; do not press PLAY first. Before pressing Enter:\n\n- Keep WRITE off and playback stopped. Do not touch knobs A or B at any point.\n- Select Sound 16: hold SOUND and press key 16. Keep every volume unchanged.\n\nPress Enter, then within a second:\n\n1. Press key 1 four times, about one second apart. These are the auditions before.\n2. Wait about three seconds of silence. Press PLAY and let Pattern 1 play twice through\n   (eight seconds; four hits per pass). Press PLAY to stop it.\n3. Wait about three seconds of silence. Press key 1 four times, about one second apart.\n   These are the auditions after.\n\nThe harness may warn that the level changed between parts; that is expected here, so\ndecline to record again unless a part was missed.",
+  "measured_playback": "attempts/playback-01.wav",
+  "measured_reason": "The accepted attempt holds the pattern alone: the recorder rejected the attempt that followed the procedure because its first sound came 8.6 s in, the auditions by hand having produced no output, and the person pressed PLAY at once in the next attempt. The rejected attempt is the one that followed the procedure."
+}

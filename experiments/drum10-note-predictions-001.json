@@ -1,0 +1,85 @@
+{
+  "analysis_version": "first-drum10-note-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-drum-slice-copy-001",
+  "baseline_capture": "../edited-drum-slice-copy-001/capture.wav",
+  "baseline_source_sha256": "ac23213297cb3a1d0b56515bbb78bb5485b72cf5e420376ea591ae11f0d647cc",
+  "baseline_artifact": "../edited-drum-slice-copy-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "c349b9e04482c881db859ec99352382643ae1538cd51b120a708aab390f1ae9c",
+  "baseline_body_sha256": "846092c09285da128689493f2a332fef8e0c22ac93fb710f9e0b994661fe971e",
+  "expected_change": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 10,
+    "slice_key": 1
+  },
+  "control_checks": {
+    "packet_count": 543,
+    "frame_end_byte": 89844,
+    "baseline_pattern1_sha256": "c849150f708c1b7a0d596d4de902878fda56f7eca5d09e43abe50dc0580ba022",
+    "target_pattern_packet_indices": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "allowed_step_primary_span": [
+      0,
+      48
+    ],
+    "allowed_step_auxiliary_span": [
+      768,
+      784
+    ],
+    "existing_neighbor_primary_span": [
+      6,
+      9
+    ],
+    "existing_neighbor_auxiliary_offset": 770,
+    "candidate_primary_span": [
+      27,
+      30
+    ],
+    "candidate_auxiliary_offset": 777,
+    "all_other_state": "Every sample/reference packet, all other plain packets, other15 patterns, other15 steps and footer identical",
+    "one_changed_raw_cell": "One previously empty primary/auxiliary cell within Step1; exact sound-index mapping evaluated separately"
+  },
+  "separately_evaluated_hypotheses": {
+    "sound10_maps_to_cell10": {
+      "expected_changed_sound_cells": [
+        10
+      ]
+    },
+    "auxiliary_key1_matches_melodic_F0": {
+      "offset": 777,
+      "old_value": 0,
+      "expected_value": 240
+    },
+    "primary_matches_sound3_key1": {
+      "span": [
+        27,
+        30
+      ],
+      "expected_hex": "0df883"
+    },
+    "primary_matches_sound2_key1": {
+      "span": [
+        27,
+        30
+      ],
+      "expected_hex": "0d2831"
+    },
+    "changed_plain_packet_indices": [
+      4,
+      7
+    ]
+  },
+  "limits": [
+    "Sound10 drum note data has not yet been observed; raw primary/auxiliary values are hypotheses, not repair targets",
+    "The two different melodic primary predictions are mutually exclusive comparisons and may both fail",
+    "Row preservation and one new raw cell are checked independently of cell10 location and auxiliaryF0",
+    "No drum pattern writer, keyboard-key projection or general drum note semantics are enabled before independent controls",
+    "No pattern playback is needed; keep all knobs, tempo, effects and chain unchanged"
+  ]
+}

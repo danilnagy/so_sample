@@ -1,0 +1,37 @@
+{
+  "analysis_version": "verified-nine-page-to-one-page-WAV-import-workflow-audit-0.1",
+  "checks": {
+    "nine_page_source_hardware_accepted": true,
+    "source_capture_artifact_and_acceptance_hashes_registered": true,
+    "source_and_target_entire_bodies_registered": true,
+    "input_original_and_copy_byte_exact_and_registered": true,
+    "actual_PCM_frames_and_resampling_count_match": true,
+    "target_codes_match_actual_saved_PCM_conversion": true,
+    "software_and_waveform_checks_pass": true,
+    "all_candidate_file_hashes_registered": true,
+    "recapture_checker_accepts_exact_candidate": true,
+    "tone_fit_matches_independent_source_frequency": true,
+    "candidate_report_remains_software_only": true,
+    "registered_before_device_recapture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "nine_page_acceptance_sha256": "0ad72f4e68edd96e13d983dfc9ae5edbaad5ad21ea462307994eb3cc07848b15",
+  "one_page_registration_sha256": "8e50d4f3b9a6e98336be545f0c7d463e07b3f0356d53153714eba2566876a3da",
+  "validation": {
+    "targeted_tests": "24 passed in1.84s",
+    "ruff_check": "passed",
+    "ruff_format": "171 Python files formatted",
+    "last_full_suite_before_research_scripts": "604 passed in81.56s; no package implementation changed in this step"
+  },
+  "nine_page_capture_sample_rate_hz": 44100,
+  "nine_page_capture_peak_per_channel": [
+    0.16656494140625,
+    0.1595458984375
+  ],
+  "nine_page_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Restore one-page Sound6 import, capture before audition, report receive acceptance and the new short higher beep with all other sounds/Pattern1 unchanged"
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_id": "compiled-pitch-law-001",
+  "capture_status": "validated_exact_native_pitch_glide_inconclusive",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../pitch-law-registration-001.json",
+  "plan": "../pitch-law-plan-001/plan.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the notes jump around in pitch? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

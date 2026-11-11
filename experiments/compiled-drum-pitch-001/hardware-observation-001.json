@@ -1,0 +1,49 @@
+{
+  "analysis_version": "drum-pitch-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of drum notes with per-step pitch codes, and the pitch of each step",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "semitone_per_code",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 197.11192983155206,
+    "3": 397.10755227139157,
+    "4": 597.3797045602,
+    "5": 797.8040498191087,
+    "6": 997.9881470996901,
+    "7": 1198.3038384915594,
+    "8": -199.6159082682616,
+    "9": -400.577062914248,
+    "10": -600.2219255500953,
+    "11": -800.2235357703935,
+    "12": -1000.6034418168562,
+    "13": -1200.0886224746469,
+    "14": 96.9062994114412,
+    "15": -100.1142759739285,
+    "16": -3.4111561247042403
+  },
+  "absolute": {
+    "step1_cents_vs_stored": -0.17820237464858613,
+    "stored_rate": true
+  },
+  "decision_sha256": "0d2e2e69acd398e4caf875651155034a19a5a277b5ff4fcd4c24c3f57cff6c36",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "68a6a15e4d45c56f7c01a0180c5581bc4da0a768d50319ede1124dd7bafdde16",
+  "session_answers": [
+    {
+      "question": "Did one drum sound play at changing pitches? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One drum sound, key 1, volume 36; pitch codes 1..25 sampled at 13 values"
+  ]
+}

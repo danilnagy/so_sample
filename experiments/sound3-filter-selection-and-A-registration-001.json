@@ -1,0 +1,55 @@
+{
+  "analysis_version": "sound3-FILTER-selection-and-recorded-A-preregistration-0.1",
+  "registered_before_both_captures": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/edited-sound3-pitch14-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "8aa132cae313529ae51ab990ea856b513680e13f2e20aa6b292efa052d323ab5",
+  "source_capture": "experiments/edited-sound3-pitch14-001/capture.wav",
+  "source_capture_sha256": "4d4f9c20f1ef89d33e427a040bcb63a519df2bf9865a340845219a28000c3c22",
+  "source_body_sha256": "05e1d379603f4457fd1496e516460e0a8de50cadf0fc810e9c2f3ca1da1b4637",
+  "source_observation_sha256": "1d6483ff69f10eee50c9d2be4b65352ef91e44754e3b4e36ebc3a7667762f7fa",
+  "prior_ordinary_playback_sha256": "b4bb2beb0c08a9213af164dba4274ead1421d91d94b9b7e488ccf662f5266193",
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-054-a-sound3-filter-selection",
+      "action": "select_FILTER_stopped_write_off_both_knobs_untouched_after_existing_playback",
+      "expected_complete_body_sha256": "05e1d379603f4457fd1496e516460e0a8de50cadf0fc810e9c2f3ca1da1b4637"
+    },
+    {
+      "experiment_id": "event-055-b-sound3-filter-A-lock-up",
+      "action": "later_record_only_A_clockwise_to_maximum_after_verifying_A",
+      "expected_endpoint_code": null
+    }
+  ],
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "location_hypotheses": [
+    "no_serialized_change",
+    "strict_candidate_mask_only",
+    "candidate_plus_other_third_byte_bits",
+    "other_Sound3_primary_changes",
+    "Sound3_primary_and_auxiliary_changes"
+  ],
+  "official_control_source": "https://teenage.engineering/guides/po-33/en",
+  "limits": [
+    "SelectionA controls the combined already performed ordinary playback and FILTER selection without knob movement; any difference cannot be attributed to selection alone",
+    "First verify actual A before asking for recorded B; B is compared with actual A even if selection prediction fails",
+    "Second-primary high0xf0 and third-primary low0x03 form a new location hypothesis, not a decoded cutoff field or width",
+    "A-only recording may snapshot other FILTER data despite B staying untouched; coupled third-byte and broader primary/auxiliary alternatives remain separate",
+    "A is physically at minimum after prior tests, so only the later clockwise pass requests movement; no minimum cutoff is assumed from knob position",
+    "No endpoint code, exact target body for B, Hz curve, resonance scale, UI reading or uniformity is predicted",
+    "No public filter writer or extension of pitch/volume context; changes outside existing guards remain unsupported"
+  ]
+}

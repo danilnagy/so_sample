@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "event-003-a",
+  "series_id": "event-003",
+  "stage": "baseline",
+  "created_at": null,
+  "baseline_id": null,
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Planned controlled single-event experiment; actual observations pending",
+    "selected_pattern": null,
+    "selected_sound": null,
+    "selected_slice_key": null,
+    "playing": null,
+    "write_mode": null,
+    "tempo_bpm": null,
+    "swing": null,
+    "pattern_sequence": null
+  },
+  "proposed_event": {
+    "pattern": 1,
+    "step": 3,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "target_status": "kick_confirmed_step3_empty_expected_verify_before_capture",
+  "planned_capture_state": {
+    "selected_pattern": 1,
+    "selected_sound": 9,
+    "selected_slice_key": 1,
+    "playing": false,
+    "write_mode": false
+  },
+  "changes": [],
+  "planned_actions": [
+    "Verify proposed event location is empty and slice plays a recognizable sound",
+    "Stop playback; select the single target pattern and sound, and audition the target slice before capture",
+    "Leave write mode off; record untouched A transfer"
+  ],
+  "actions": [],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": null,
+    "status": "skipped_by_user",
+    "interface": null,
+    "sample_rate_hz": null,
+    "channels": null,
+    "pcm_subtype": null,
+    "processing": "unknown"
+  },
+  "planned_recording": {
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "level": "same reduced level as reconstructed-002",
+    "decoder_threshold": 0.0063
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "baseline_reused_from": "event-002-a"
+}

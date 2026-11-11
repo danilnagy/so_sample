@@ -1,0 +1,30 @@
+{
+  "analysis_version": "native-melodic-step1-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_source_sha256": "94b9b95f3468f4781d52542756cb858479a2a4cd3969826ad31658479919312d",
+  "baseline_body_sha256": "8f851166868fd99e7935a5942a2b82181f0268c3a05303f08852a0f06ebb30a0",
+  "target_capture": "event-007-b-melodic/capture.wav",
+  "expected_event": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 3,
+    "melodic_keyboard_key": 1
+  },
+  "checks": {
+    "native_packets_and_crc": "Fixed reviewed profile must parse all packets and final marker",
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "sound_data": "All sound selector and data packets identical to baseline",
+    "other_patterns": "Patterns2..16 identical to baseline",
+    "all_other_plain_packets": "Outside Pattern1 data chunks, identical to baseline after reselecting Sound8",
+    "pattern1_change": "At least one primary byte changes within Step1 span[0,48)",
+    "primary_locality": "No primary bytes outside Step1 span[0,48) change",
+    "auxiliary_locality": "No auxiliary bytes outside Step1 span[768,784) change",
+    "footer": "Opaque footer[1024,1032) unchanged"
+  },
+  "limits": [
+    "Unknown melodic note bitfields and12-byte region allocation are not assigned expected values.",
+    "The old Step2 auxiliary16/17 discrepancy remains unresolved and may prevent generalized pattern writing.",
+    "Any failed locality or preservation check must be investigated, not normalized away."
+  ]
+}

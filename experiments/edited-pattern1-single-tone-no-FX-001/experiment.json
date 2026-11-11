@@ -1,0 +1,21 @@
+{
+  "experiment_id": "edited-pattern1-single-tone-no-FX-001",
+  "capture_status": "validated_exact_native_and_usable_single_tone",
+  "restore_file": "restore.wav",
+  "registration": "../pattern1-single-tone-FX-order-baseline-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "planned_actions": [
+    "Restore restore.wav with usual stereo settings; keep write off and both knobs untouched",
+    "Before playing, record full capture.wav at the same reduced level with one second trailing silence",
+    "Start a separate playback.wav recording, leave about one second silence, then press PLAY; record12 to15 seconds of Pattern1 and stop",
+    "Confirm whether you hear one tone repeating per loop; do not trim leading silence or the first note, press FX, or move knobs"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "audio_results": "first-tone-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-single-tone-no-FX-001/project.json"
+}

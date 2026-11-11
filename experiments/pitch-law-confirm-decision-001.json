@@ -1,0 +1,33 @@
+{
+  "analysis_version": "pitch-law-confirm-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "d0a76b0b4dcbb135071c4555cc1550647bcd8d6a22784d1cecd15613811b587c",
+  "native_results_sha256": "213c9a0b05cf1352bf4004af623829c67db46005536c66cafd7d92bc49ef7af7",
+  "frequency_results_sha256": "4d72ad87c8b6d49402653ed58edae44e48ddc6a2eac503403a3fb4ce790c9375",
+  "measured_cents": {
+    "1": 0.0,
+    "2": 1198.9882616626485,
+    "3": -1200.1402816568068,
+    "4": 598.6896443803846,
+    "5": -599.6932681579361,
+    "6": 898.8803824062466,
+    "7": -899.4482661322716,
+    "8": 298.188807413001,
+    "9": -300.09497085204083,
+    "10": 1099.017840402525,
+    "11": -1100.7543364503158,
+    "12": 798.3580275675306,
+    "13": -800.2929131988845,
+    "14": 498.11372983993795,
+    "15": -500.1052653630123,
+    "16": 97.61034174073043
+  },
+  "model_support": {
+    "semitone_per_code": true,
+    "previous_order_kept": false
+  },
+  "classification": "semitone_per_code",
+  "limits": [
+    "Sound3 with key 1 on Pattern 1; codes outside 1..25 are not tested"
+  ]
+}

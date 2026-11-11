@@ -1,0 +1,2904 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "compiled-sample-memory-002",
+  "started_at": "2026-10-10T23:08:33+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 1,
+      "name": "Microphone (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    },
+    "output": {
+      "index": 5,
+      "name": "Headphones (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    }
+  },
+  "config": {
+    "input_device": "HD USB Audio",
+    "output_device": "HD USB Audio",
+    "hostapi": "MME",
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 1.0
+  },
+  "inputs": {
+    "restore": {
+      "path": "restore.wav",
+      "sha256": "1cd83bc756afa35177eb59d309fb1f4224aa28a7c1745f9c0dd69303c8d2915d"
+    },
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "24539325b9b10b7fd35c65232967b830530592709a0b344fadbcb033d1146119"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": {
+    "started_at": "2026-10-10T23:08:49+00:00",
+    "gain": 1.0,
+    "peak_after_gain": 0.500030517578125,
+    "sample_rate_hz": 44100,
+    "frames": 9677042,
+    "duration_seconds": 219.4340589569161,
+    "padding_seconds": [
+      0.25,
+      1.0
+    ],
+    "wall_seconds": 221.2029999999795,
+    "stream_status_flags": []
+  },
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "a94bd08a754c68594c61dc01c5616553d4360ce579273d3df7dc69d47f9ae4f6",
+      "recorded_at": "2026-10-10T23:14:23+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 4555530,
+        "duration_seconds": 103.3,
+        "signal_start_seconds": 95.95,
+        "signal_end_seconds": 101.8,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.01904296875,
+        "signal_peaks_per_channel": [
+          0.06646728515625,
+          0.062164306640625
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.030284551314308232,
+          "lag_ms": 4.104308390022676,
+          "channels": "left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-01-analysis",
+      "analysis": {
+        "capture_sha256": "a94bd08a754c68594c61dc01c5616553d4360ce579273d3df7dc69d47f9ae4f6",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 103.3,
+          "peaks_per_channel": [
+            0.06646728515625,
+            0.062164306640625
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "left: Crossing gap exceeds one second; refusing to invent a long sign run"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    },
+    {
+      "file": "backup-02.wav",
+      "sha256": "13cbc28bad99e36c03e3f6d32db1e65e388726ed648c85c4128c6bb409887bb2",
+      "recorded_at": "2026-10-10T23:17:27+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 388080,
+        "duration_seconds": 8.8,
+        "signal_start_seconds": 1.45,
+        "signal_end_seconds": 7.3,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.000457763671875,
+        "signal_peaks_per_channel": [
+          0.06646728515625,
+          0.062103271484375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.03291533927717076,
+          "lag_ms": 4.104308390022676,
+          "channels": "left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-02-analysis",
+      "analysis": {
+        "capture_sha256": "13cbc28bad99e36c03e3f6d32db1e65e388726ed648c85c4128c6bb409887bb2",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 8.8,
+          "peaks_per_channel": [
+            0.06646728515625,
+            0.062103271484375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": true,
+            "error": null
+          }
+        ],
+        "method": "crossing",
+        "native": {
+          "codec_version": "po33-crc-additive-0.1",
+          "frame_start_byte": 4095,
+          "frame_end_byte": 22449,
+          "required_complete_label_span": [
+            0,
+            44901
+          ],
+          "packet_count": 236,
+          "all_packet_checksums_valid": true,
+          "encoded_body_sha256": "e7ade831b0cdc489a01ba67d604b7e7f97e942778ae2c1ea129cd6e0eb0c7e9f",
+          "tags": {
+            "0x985b": 1,
+            "0x7d5c": 2,
+            "0xa041": 16,
+            "0xc498": 80,
+            "0x68b5": 136,
+            "0x826f": 1
+          },
+          "sounds": []
+        },
+        "hardware_verified": false
+      },
+      "target": {
+        "exact_target_body": false,
+        "target_body_sha256": "e45c59f1bd7fc887380f0196f243b9af8840de38da0176eff7042d7b508a7622",
+        "captured_body_sha256": "e7ade831b0cdc489a01ba67d604b7e7f97e942778ae2c1ea129cd6e0eb0c7e9f",
+        "differences_from_target": {
+          "identical_body": false,
+          "packet_counts": [
+            3744,
+            236
+          ],
+          "change_count": 153,
+          "changes": [
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 1,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "10",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 2,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "11",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 3,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "12",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 4,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "13",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 5,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "14",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 6,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "15",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 7,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "16",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 8,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "17",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 9,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "18",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 10,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "19",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 11,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "1a",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 12,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "1b",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 13,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "1c",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 14,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "1d",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 15,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "1e",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "pattern_cell",
+              "pattern": 1,
+              "step": 16,
+              "sound": 11,
+              "primary": [
+                "0d0981",
+                "000000"
+              ],
+              "auxiliary": [
+                "1f",
+                "00"
+              ],
+              "now_empty": true
+            },
+            {
+              "region": "record",
+              "tag": "0x7d5c",
+              "ordinal": 2,
+              "changed_byte_count": 1,
+              "lengths": [
+                255,
+                255
+              ],
+              "bytes": [
+                {
+                  "offset": 129,
+                  "old": 60,
+                  "new": 120,
+                  "name_hint": "tempo_bpm"
+                }
+              ],
+              "bytes_truncated": false
+            },
+            {
+              "region": "sound",
+              "sound_id": 0,
+              "slot_hint": {
+                "slot": 1,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 64704,
+                  "owner": 0
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  65536,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 1,
+              "slot_hint": {
+                "slot": 2,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 64704,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 2,
+              "slot_hint": {
+                "slot": 3,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 11716,
+                  "end": 19716,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 3,
+              "slot_hint": {
+                "slot": 4,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 30912,
+                  "owner": 3
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  32768,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 4,
+              "slot_hint": {
+                "slot": 5,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 28608,
+                  "owner": 4
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  32768,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 5,
+              "slot_hint": {
+                "slot": 6,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 28125,
+                  "owner": 5
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  36864,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 6,
+              "slot_hint": {
+                "slot": 7,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 7032,
+                  "owner": 6
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  32768,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 7,
+              "slot_hint": {
+                "slot": 8,
+                "key": null,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 64704,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 8,
+              "slot_hint": {
+                "slot": 9,
+                "key": 1,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 2000,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 9,
+              "slot_hint": {
+                "slot": 9,
+                "key": 2,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 4045,
+                  "end": 6045,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 10,
+              "slot_hint": {
+                "slot": 9,
+                "key": 3,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 8089,
+                  "end": 12132,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 11,
+              "slot_hint": {
+                "slot": 9,
+                "key": 4,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 12133,
+                  "end": 16176,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 12,
+              "slot_hint": {
+                "slot": 9,
+                "key": 5,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 16177,
+                  "end": 20220,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 13,
+              "slot_hint": {
+                "slot": 9,
+                "key": 6,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 20221,
+                  "end": 24264,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 14,
+              "slot_hint": {
+                "slot": 9,
+                "key": 7,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 24265,
+                  "end": 28308,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 15,
+              "slot_hint": {
+                "slot": 9,
+                "key": 8,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 28309,
+                  "end": 32352,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 16,
+              "slot_hint": {
+                "slot": 9,
+                "key": 9,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 32353,
+                  "end": 36396,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 17,
+              "slot_hint": {
+                "slot": 9,
+                "key": 10,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 36397,
+                  "end": 40440,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 18,
+              "slot_hint": {
+                "slot": 9,
+                "key": 11,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 40441,
+                  "end": 44484,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 19,
+              "slot_hint": {
+                "slot": 9,
+                "key": 12,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 44485,
+                  "end": 48528,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 20,
+              "slot_hint": {
+                "slot": 9,
+                "key": 13,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 48529,
+                  "end": 52572,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 21,
+              "slot_hint": {
+                "slot": 9,
+                "key": 14,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 52573,
+                  "end": 56616,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 22,
+              "slot_hint": {
+                "slot": 9,
+                "key": 15,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 56617,
+                  "end": 60660,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 23,
+              "slot_hint": {
+                "slot": 9,
+                "key": 16,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 60661,
+                  "end": 64704,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 24,
+              "slot_hint": {
+                "slot": 10,
+                "key": 1,
+                "verified": true
+              },
+              "header": {
+                "old": {
+                  "start": 4045,
+                  "end": 6045,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 25,
+              "slot_hint": {
+                "slot": 10,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 4045,
+                  "end": 8088,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 26,
+              "slot_hint": {
+                "slot": 10,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 8089,
+                  "end": 12132,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 27,
+              "slot_hint": {
+                "slot": 10,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 12133,
+                  "end": 16176,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 28,
+              "slot_hint": {
+                "slot": 10,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 16177,
+                  "end": 20220,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 29,
+              "slot_hint": {
+                "slot": 10,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 20221,
+                  "end": 24264,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 30,
+              "slot_hint": {
+                "slot": 10,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 24265,
+                  "end": 28308,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 31,
+              "slot_hint": {
+                "slot": 10,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 28309,
+                  "end": 32352,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 32,
+              "slot_hint": {
+                "slot": 10,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 32353,
+                  "end": 36396,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 33,
+              "slot_hint": {
+                "slot": 10,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 36397,
+                  "end": 40440,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 34,
+              "slot_hint": {
+                "slot": 10,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 40441,
+                  "end": 44484,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 35,
+              "slot_hint": {
+                "slot": 10,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 44485,
+                  "end": 48528,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 36,
+              "slot_hint": {
+                "slot": 10,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 48529,
+                  "end": 52572,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 37,
+              "slot_hint": {
+                "slot": 10,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 52573,
+                  "end": 56616,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 38,
+              "slot_hint": {
+                "slot": 10,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 56617,
+                  "end": 60660,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 39,
+              "slot_hint": {
+                "slot": 10,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 60661,
+                  "end": 64704,
+                  "owner": 0
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 40,
+              "slot_hint": {
+                "slot": 11,
+                "key": 1,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 1750,
+                  "owner": 40
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  102400,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 41,
+              "slot_hint": {
+                "slot": 11,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 1750,
+                  "end": 3750,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 42,
+              "slot_hint": {
+                "slot": 11,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 3750,
+                  "end": 6000,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 43,
+              "slot_hint": {
+                "slot": 11,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 6000,
+                  "end": 8500,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 44,
+              "slot_hint": {
+                "slot": 11,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 8500,
+                  "end": 11250,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 45,
+              "slot_hint": {
+                "slot": 11,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 11250,
+                  "end": 14250,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 46,
+              "slot_hint": {
+                "slot": 11,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 14250,
+                  "end": 17500,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 47,
+              "slot_hint": {
+                "slot": 11,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 17500,
+                  "end": 21000,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 48,
+              "slot_hint": {
+                "slot": 11,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 21000,
+                  "end": 24750,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 49,
+              "slot_hint": {
+                "slot": 11,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 24750,
+                  "end": 28750,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 50,
+              "slot_hint": {
+                "slot": 11,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 28750,
+                  "end": 33000,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 51,
+              "slot_hint": {
+                "slot": 11,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 33000,
+                  "end": 37500,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 52,
+              "slot_hint": {
+                "slot": 11,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 37500,
+                  "end": 42250,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 53,
+              "slot_hint": {
+                "slot": 11,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 42250,
+                  "end": 47250,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 54,
+              "slot_hint": {
+                "slot": 11,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 47250,
+                  "end": 52500,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 55,
+              "slot_hint": {
+                "slot": 11,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 52500,
+                  "end": 58000,
+                  "owner": 40
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 56,
+              "slot_hint": {
+                "slot": 12,
+                "key": 1,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 2375,
+                  "owner": 56
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  102400,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 57,
+              "slot_hint": {
+                "slot": 12,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 2375,
+                  "end": 4750,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 58,
+              "slot_hint": {
+                "slot": 12,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 4750,
+                  "end": 7125,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 59,
+              "slot_hint": {
+                "slot": 12,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 7125,
+                  "end": 9500,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 60,
+              "slot_hint": {
+                "slot": 12,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 9500,
+                  "end": 11875,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 61,
+              "slot_hint": {
+                "slot": 12,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 11875,
+                  "end": 14250,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 62,
+              "slot_hint": {
+                "slot": 12,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 14250,
+                  "end": 16625,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 63,
+              "slot_hint": {
+                "slot": 12,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 16625,
+                  "end": 19000,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 64,
+              "slot_hint": {
+                "slot": 12,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 19000,
+                  "end": 21375,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 65,
+              "slot_hint": {
+                "slot": 12,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 21375,
+                  "end": 23750,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 66,
+              "slot_hint": {
+                "slot": 12,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 23750,
+                  "end": 26125,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 67,
+              "slot_hint": {
+                "slot": 12,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 26125,
+                  "end": 28500,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 68,
+              "slot_hint": {
+                "slot": 12,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 28500,
+                  "end": 30875,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 69,
+              "slot_hint": {
+                "slot": 12,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 30875,
+                  "end": 33250,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 70,
+              "slot_hint": {
+                "slot": 12,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 33250,
+                  "end": 35625,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 71,
+              "slot_hint": {
+                "slot": 12,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 35625,
+                  "end": 38000,
+                  "owner": 56
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 72,
+              "slot_hint": {
+                "slot": 13,
+                "key": 1,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 6375,
+                  "owner": 72
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  102400,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 73,
+              "slot_hint": {
+                "slot": 13,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 6375,
+                  "end": 12750,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 74,
+              "slot_hint": {
+                "slot": 13,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 12750,
+                  "end": 19125,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 75,
+              "slot_hint": {
+                "slot": 13,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 19125,
+                  "end": 25500,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 76,
+              "slot_hint": {
+                "slot": 13,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 25500,
+                  "end": 31875,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 77,
+              "slot_hint": {
+                "slot": 13,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 31875,
+                  "end": 38250,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 78,
+              "slot_hint": {
+                "slot": 13,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 38250,
+                  "end": 44625,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 79,
+              "slot_hint": {
+                "slot": 13,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 44625,
+                  "end": 51000,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 80,
+              "slot_hint": {
+                "slot": 13,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 51000,
+                  "end": 57375,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 81,
+              "slot_hint": {
+                "slot": 13,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 57375,
+                  "end": 63750,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 82,
+              "slot_hint": {
+                "slot": 13,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 63750,
+                  "end": 70125,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 83,
+              "slot_hint": {
+                "slot": 13,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 70125,
+                  "end": 76500,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 84,
+              "slot_hint": {
+                "slot": 13,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 76500,
+                  "end": 82875,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 85,
+              "slot_hint": {
+                "slot": 13,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 82875,
+                  "end": 89250,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 86,
+              "slot_hint": {
+                "slot": 13,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 89250,
+                  "end": 95625,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 87,
+              "slot_hint": {
+                "slot": 13,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 95625,
+                  "end": 102000,
+                  "owner": 72
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 88,
+              "slot_hint": {
+                "slot": 14,
+                "key": 1,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 6375,
+                  "owner": 88
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  102400,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 89,
+              "slot_hint": {
+                "slot": 14,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 6375,
+                  "end": 12750,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 90,
+              "slot_hint": {
+                "slot": 14,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 12750,
+                  "end": 19125,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 91,
+              "slot_hint": {
+                "slot": 14,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 19125,
+                  "end": 25500,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 92,
+              "slot_hint": {
+                "slot": 14,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 25500,
+                  "end": 31875,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 93,
+              "slot_hint": {
+                "slot": 14,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 31875,
+                  "end": 38250,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 94,
+              "slot_hint": {
+                "slot": 14,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 38250,
+                  "end": 44625,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 95,
+              "slot_hint": {
+                "slot": 14,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 44625,
+                  "end": 51000,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 96,
+              "slot_hint": {
+                "slot": 14,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 51000,
+                  "end": 57375,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 97,
+              "slot_hint": {
+                "slot": 14,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 57375,
+                  "end": 63750,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 98,
+              "slot_hint": {
+                "slot": 14,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 63750,
+                  "end": 70125,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 99,
+              "slot_hint": {
+                "slot": 14,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 70125,
+                  "end": 76500,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 100,
+              "slot_hint": {
+                "slot": 14,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 76500,
+                  "end": 82875,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 101,
+              "slot_hint": {
+                "slot": 14,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 82875,
+                  "end": 89250,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 102,
+              "slot_hint": {
+                "slot": 14,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 89250,
+                  "end": 95625,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 103,
+              "slot_hint": {
+                "slot": 14,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 95625,
+                  "end": 102000,
+                  "owner": 88
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 104,
+              "slot_hint": {
+                "slot": 15,
+                "key": 1,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 6375,
+                  "owner": 104
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  102400,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 105,
+              "slot_hint": {
+                "slot": 15,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 6375,
+                  "end": 12750,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 106,
+              "slot_hint": {
+                "slot": 15,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 12750,
+                  "end": 19125,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 107,
+              "slot_hint": {
+                "slot": 15,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 19125,
+                  "end": 25500,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 108,
+              "slot_hint": {
+                "slot": 15,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 25500,
+                  "end": 31875,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 109,
+              "slot_hint": {
+                "slot": 15,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 31875,
+                  "end": 38250,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 110,
+              "slot_hint": {
+                "slot": 15,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 38250,
+                  "end": 44625,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 111,
+              "slot_hint": {
+                "slot": 15,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 44625,
+                  "end": 51000,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 112,
+              "slot_hint": {
+                "slot": 15,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 51000,
+                  "end": 57375,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 113,
+              "slot_hint": {
+                "slot": 15,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 57375,
+                  "end": 63750,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 114,
+              "slot_hint": {
+                "slot": 15,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 63750,
+                  "end": 70125,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 115,
+              "slot_hint": {
+                "slot": 15,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 70125,
+                  "end": 76500,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 116,
+              "slot_hint": {
+                "slot": 15,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 76500,
+                  "end": 82875,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 117,
+              "slot_hint": {
+                "slot": 15,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 82875,
+                  "end": 89250,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 118,
+              "slot_hint": {
+                "slot": 15,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 89250,
+                  "end": 95625,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 119,
+              "slot_hint": {
+                "slot": 15,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 95625,
+                  "end": 102000,
+                  "owner": 104
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 120,
+              "slot_hint": {
+                "slot": 16,
+                "key": 1,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 0,
+                  "end": 6375,
+                  "owner": 120
+                },
+                "new": null
+              },
+              "sample_codes": {
+                "lengths": [
+                  102400,
+                  0
+                ],
+                "changed_in_overlap": 0,
+                "first_changed_offset": null,
+                "last_changed_offset": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 121,
+              "slot_hint": {
+                "slot": 16,
+                "key": 2,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 6375,
+                  "end": 12750,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 122,
+              "slot_hint": {
+                "slot": 16,
+                "key": 3,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 12750,
+                  "end": 19125,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 123,
+              "slot_hint": {
+                "slot": 16,
+                "key": 4,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 19125,
+                  "end": 25500,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 124,
+              "slot_hint": {
+                "slot": 16,
+                "key": 5,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 25500,
+                  "end": 31875,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 125,
+              "slot_hint": {
+                "slot": 16,
+                "key": 6,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 31875,
+                  "end": 38250,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 126,
+              "slot_hint": {
+                "slot": 16,
+                "key": 7,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 38250,
+                  "end": 44625,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 127,
+              "slot_hint": {
+                "slot": 16,
+                "key": 8,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 44625,
+                  "end": 51000,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 128,
+              "slot_hint": {
+                "slot": 16,
+                "key": 9,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 51000,
+                  "end": 57375,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 129,
+              "slot_hint": {
+                "slot": 16,
+                "key": 10,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 57375,
+                  "end": 63750,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 130,
+              "slot_hint": {
+                "slot": 16,
+                "key": 11,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 63750,
+                  "end": 70125,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 131,
+              "slot_hint": {
+                "slot": 16,
+                "key": 12,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 70125,
+                  "end": 76500,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 132,
+              "slot_hint": {
+                "slot": 16,
+                "key": 13,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 76500,
+                  "end": 82875,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 133,
+              "slot_hint": {
+                "slot": 16,
+                "key": 14,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 82875,
+                  "end": 89250,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 134,
+              "slot_hint": {
+                "slot": 16,
+                "key": 15,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 89250,
+                  "end": 95625,
+                  "owner": 120
+                },
+                "new": null
+              }
+            },
+            {
+              "region": "sound",
+              "sound_id": 135,
+              "slot_hint": {
+                "slot": 16,
+                "key": 16,
+                "verified": false
+              },
+              "header": {
+                "old": {
+                  "start": 95625,
+                  "end": 102000,
+                  "owner": 120
+                },
+                "new": null
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "accepted": {
+    "attempt": "backup-02.wav",
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001"
+  },
+  "playback": null,
+  "observations": [],
+  "interrupted": true,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-10-10T23:20:10+00:00",
+  "result": {
+    "backup_decoded": true,
+    "native_target_exact": false,
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001",
+    "playback": null
+  }
+}

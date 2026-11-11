@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-055-b-sound3-filter-A-lock-up",
+  "capture_status": "validated_strict_FILTER_candidate_clockwise_contiguous62",
+  "registration": "../sound3-filter-selection-and-A-registration-001.json",
+  "planned_actions": [
+    "Wait for selectionA verification and further handoff before changing a knob",
+    "Later use Pattern1/Sound3/FILTER, hold WRITE during playback and move only A clockwise to maximum over5 seconds; hold3 seconds stationary",
+    "Keep B and audio settings untouched; release WRITE, stop and ensure write off before full capture.wav"
+  ],
+  "verified_selection": "../event-054-a-sound3-filter-selection/hardware-observation-001.json",
+  "workflow_validation": "../filter-selection-to-recorded-A-workflow-validation-001.json",
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-filter-probe-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "post_observation_model": "clockwise-post-observation-model-001.json",
+  "project": "../exported-sound3-filter-A-clockwise-001/project.json",
+  "filter_writer_enabled": false
+}

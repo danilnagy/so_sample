@@ -1,0 +1,111 @@
+{
+  "analysis_version": "step-effects-writer-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-step-effects-writer-001",
+  "plan": "experiments/step-effects-plan-001/plan.json",
+  "plan_sha256": "6a180ca9ae698b530925d958c5439cceaaea93040260e9f12425fdb35c121bc1",
+  "compile_report_sha256": "d90f67a72cb07db069541e19c30d1fdc24def0c0f74a38e08683b7e18b62908c",
+  "source_artifact": "experiments/edited-pattern1-FX-full-step-map-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "56981a0e7028b0f1a853ed58e4877c76aecefad2cfd3d5fd5a4814a5aa1b7345",
+  "source_capture_sha256": "2bb0dfd448a6b250459f0f4fb71f2392c8ef5fe0409a70bbdc8700a2094e5234",
+  "expected_body_sha256": "2f43083b1f2dafaf6cdb1d16a6b77b2b5a25a3137c430291496f06f020f594eb",
+  "edited_artifact_sha256": "18954a7b6af9633b1ae50607d9e5ccec99f3f9706fc9654a0e29fd03a9683bf9",
+  "restore_wav_sha256": "767559ad82bf19bcd1ab6fdcab7a7c1377f08714f3fa0ca6e8f321295311da3d",
+  "footer": "6ff6ff666ff6ff66",
+  "effect_steps": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    12,
+    15,
+    16
+  ],
+  "fx_key": 7,
+  "reference_frequency_hz": 1190.4169592315686,
+  "method_settings": {
+    "band_hz": [
+      600.0,
+      3500.0
+    ],
+    "search_hz": [
+      900.0,
+      2700.0
+    ],
+    "window_seconds": 0.02,
+    "hop_seconds": 0.01,
+    "track_seconds": 0.4,
+    "onset_fraction_of_peak": 0.15,
+    "min_loop_gap_seconds": 1.0,
+    "loops": 5,
+    "fft_size": 32768,
+    "step1_window_ms": [
+      20.0,
+      130.0
+    ],
+    "min_relative_amplitude": 0.2,
+    "effect_min_rise": 0.1,
+    "none_max_deviation": 0.01,
+    "min_agreeing_loops": 4,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "step_tolerance_seconds": 0.03,
+    "envelope_window_seconds": 0.003,
+    "note_track_seconds": 0.2,
+    "amplitude_gate_reference": "each_note_peak"
+  },
+  "note_gate_script_sha256": "b212276205de7a5ca0a00ba4baa58790abcf1cbf134fac45395f179b1d947536",
+  "grid_script_sha256": "1d8815bf4802081784f2866eed5dc453e76d0b5ccef2fc9fca3de0bbaa0231ce",
+  "grouping_script_sha256": "d70384f93b9113ac811ebb185c1dfd7e9c393887c002dbded17cf55c672a2f00",
+  "step1_script_sha256": "94e277367ad5f9f7d30ff1d178906654865ce9b7bd0157ceeeaa1722cc8b7e13",
+  "predictions": {
+    "sequential_high_nibble_first": {
+      "1": "effect",
+      "2": "none",
+      "3": "none",
+      "4": "effect",
+      "5": "none",
+      "6": "none",
+      "7": "effect",
+      "8": "effect",
+      "9": "effect",
+      "10": "none",
+      "11": "none",
+      "12": "effect",
+      "13": "none",
+      "14": "none",
+      "15": "effect",
+      "16": "effect"
+    },
+    "sequential_low_nibble_first": {
+      "1": "none",
+      "2": "effect",
+      "3": "effect",
+      "4": "none",
+      "5": "none",
+      "6": "none",
+      "7": "effect",
+      "8": "effect",
+      "9": "none",
+      "10": "effect",
+      "11": "effect",
+      "12": "none",
+      "13": "none",
+      "14": "none",
+      "15": "effect",
+      "16": "effect"
+    }
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "Only Pattern 1's footer may differ from the 16-note source state",
+    "Each of the 16 notes is classified with the frozen per-note-gate method",
+    "A model holds only if all 16 steps match in their five-loop median and at least 4 of 5 loops"
+  ],
+  "limits": [
+    "Tests the writer with FX key 7 on Pattern 1; other keys rely on the device code map",
+    "The stored effect codes of other keys are verified; their sound is not measured"
+  ]
+}

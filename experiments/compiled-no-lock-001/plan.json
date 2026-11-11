@@ -1,0 +1,111 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "5f22f43b86a4853d9c8ed84e339775788c6bb453d831dbdf03768e99d2889560",
+  "source_body_sha256": "70e60b1ea090ed6faf0fb8deb1b5e6f9b5c4b7f84dbccf114355c44ca1705824",
+  "operations": [
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        63,
+        10,
+        0,
+        0,
+        50,
+        0,
+        0,
+        63,
+        0,
+        20,
+        0,
+        56,
+        0,
+        0,
+        0,
+        63
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 16,
+      "parameter": "resonance",
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 2,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 2,
+      "sound": 16,
+      "parameter": "resonance",
+      "values": [
+        1,
+        56,
+        0,
+        0,
+        8,
+        0,
+        0,
+        40,
+        0,
+        24,
+        0,
+        63,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "operation": "set_pattern_chain",
+      "patterns": [
+        1,
+        2
+      ]
+    }
+  ]
+}

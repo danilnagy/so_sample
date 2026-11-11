@@ -1,0 +1,111 @@
+{
+  "analysis_version": "amplitude-clock-probes-0.1",
+  "source_sha256": "ff78fa4c5b29b4b1ec4df8fdfa89cec54020da7e9059b3b342c78672edd9d90d",
+  "artifact_sha256": "f8bdcdf27a45709fadd6395244a953c034642e9f85671c7dbbfcc8c98e6a4ba4",
+  "source": "experiments\\event-008-b-melodic-key2\\capture.wav",
+  "channels": {
+    "left": {
+      "clock": {
+        "clock_model": "amplitude fourth harmonic; no measured crossings",
+        "carrier_hz": 7812.5,
+        "block_frames": 500,
+        "windows": 2020,
+        "fourth_tone_to_std_min": 0.7166932834363231,
+        "fourth_tone_to_std_median": 0.8195328267597581,
+        "clock_drift_cycles": -5.938591802207118,
+        "mean_square_min": 0.008360669031739236,
+        "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+      },
+      "amplitude_crop_frames": [
+        36850,
+        1046872
+      ],
+      "quarter_index_first": 176,
+      "alignment_selection": {
+        "training_reference_span": [
+          43,
+          2091
+        ],
+        "candidate_count": 512,
+        "tied_best_candidates": 1,
+        "matching_training_labels": 2048,
+        "sign_offset": 1,
+        "reference_start": 43
+      },
+      "compared_reference_span": [
+        43,
+        178874
+      ],
+      "label_mismatches": 0,
+      "first_mismatched_reference_indices": [],
+      "all_four_quarter_check_symbols": 178830,
+      "quarter_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "absolute_sampled_amplitude_quantiles": [
+        0.04208559123684452,
+        0.04786047101965181,
+        0.0832809955921121,
+        0.10204610691010345
+      ]
+    },
+    "right": {
+      "clock": {
+        "clock_model": "amplitude fourth harmonic; no measured crossings",
+        "carrier_hz": 7812.5,
+        "block_frames": 500,
+        "windows": 2020,
+        "fourth_tone_to_std_min": 0.6758473808317351,
+        "fourth_tone_to_std_median": 0.817355991878713,
+        "clock_drift_cycles": -5.942083774435814,
+        "mean_square_min": 0.007642311392351985,
+        "phase_ambiguity": "one quarter cycle and whole-cycle acquisition"
+      },
+      "amplitude_crop_frames": [
+        36850,
+        1046870
+      ],
+      "quarter_index_first": 177,
+      "alignment_selection": {
+        "training_reference_span": [
+          43,
+          2091
+        ],
+        "candidate_count": 512,
+        "tied_best_candidates": 1,
+        "matching_training_labels": 2048,
+        "sign_offset": 0,
+        "reference_start": 43
+      },
+      "compared_reference_span": [
+        43,
+        178874
+      ],
+      "label_mismatches": 0,
+      "first_mismatched_reference_indices": [],
+      "all_four_quarter_check_symbols": 178830,
+      "quarter_mismatches": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "absolute_sampled_amplitude_quantiles": [
+        0.04014942657693865,
+        0.045675176995942056,
+        0.07964523923013633,
+        0.09763146272927965
+      ]
+    }
+  },
+  "payload_decoded": false,
+  "limits": [
+    "Amplitude bounds reused from artifact; clock uses no measured crossings.",
+    "Acquisition quarter offset and whole-cycle position selected only from repeated prefix.",
+    "Incomplete edge windows are excluded explicitly from this independent diagnostic.",
+    "Coordinate/sign agreement does not establish payload interpretation or framing."
+  ]
+}

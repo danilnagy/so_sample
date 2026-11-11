@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "event-004-b-repeat",
+  "series_id": "event-004",
+  "created_at": null,
+  "baseline_id": "event-003-a-return",
+  "reference_populated_id": "event-001-b",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Same Step 1 kick state repeats exactly in both decoded phase channels; exact button-level actions not separately supplied."
+  },
+  "planned_event": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "planned_capture_state": {
+    "playing": false,
+    "write_mode": false,
+    "selected_pattern": 1,
+    "selected_sound": 9,
+    "selected_slice_key": 1
+  },
+  "planned_actions": [
+    "Start from the verified empty Pattern 1 state",
+    "Add only the same kick at Step 1 using Sound 9 slice 1",
+    "Exit write mode; keep playback stopped and other controls unchanged",
+    "Record full stereo backup at the same reduced level"
+  ],
+  "actions": [
+    "User supplied repeat recording for the requested Step 1 kick state"
+  ],
+  "changes": [
+    {
+      "status": "reported_experiment_stage",
+      "action": "add_trigger",
+      "pattern": 1,
+      "step": 1,
+      "sound_slot": 9,
+      "drum_slice_key": 1
+    }
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "b36cd797d11e808b4481b32aef0808c978905d52466c8f2599018445a107490d",
+    "status": "received_and_validated",
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "interface": null,
+    "processing": "unknown"
+  },
+  "planned_recording": {
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "decoder_threshold": 0.0063,
+    "level": "same validated reduced level"
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "test_purpose": "Compare with existing Step 1 B to assess repeatability of the populated state before inferring coding.",
+  "comparison_control": {
+    "reference_id": "event-001-b",
+    "status": "identical_complete_phase_streams",
+    "symbols_per_channel": 1970367,
+    "changed_symbols": 0,
+    "tail_symbols": 0,
+    "alignment_shift": 0
+  }
+}

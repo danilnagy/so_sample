@@ -1,0 +1,60 @@
+{
+  "analysis_version": "first-drum-slice-candidate-0.1",
+  "minimum_control_evidence_sha256": "c279a90562723889006c00da7881153c705fca76aa253afcb6290167acd4253f",
+  "source_capture_sha256": "bb5cbcd9cee52cd390dcc9f5e33f1fec719891d951d4d92ae21d3dae1a924046",
+  "source_artifact_sha256": "3495d30f8003b614a828d94d6fba85a3c8fdef3e52a70f4b201c40a3c3153daf",
+  "restore_wav_sha256": "76c74a4a3b10cbc8324b606adf7af4b901c29b333e2c4fcfe31fc9380e382c41",
+  "expected_body_sha256": "4eca78dcdf5521941bb07c0d16e4cad71115512021670c203d87256ce142e667",
+  "expected_reference_hex": "00000000d007000000",
+  "sound_slot": 9,
+  "slice_key": 1,
+  "selector_id": 8,
+  "start_field": 0,
+  "endpoint_field": 2000,
+  "reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 127,
+      "new": 208
+    },
+    {
+      "offset": 5,
+      "old": 0,
+      "new": 7
+    }
+  ],
+  "changed_plain_packet_indices": [
+    383
+  ],
+  "checks": {
+    "genuine_minimum_forward_body_reproduced": true,
+    "genuine_copy_inverse_body_reproduced": true,
+    "only_reference_packet_changed": true,
+    "only_expected_endpoint_bytes_changed": true,
+    "start_and_owner_preserved": true,
+    "exact_candidate_reference": true,
+    "backing_codes_preserved": true,
+    "all_patterns_preserved": true,
+    "candidate_inverse_reproduces_source": true,
+    "all_compiler_roundtrip_checks": true,
+    "source_file_preserved": true,
+    "preview_frame_count": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "compiler_report": "compile-report.json",
+  "preview": {
+    "raw_code_count": 2000,
+    "sample_rate_hz_nominal": 23437.5,
+    "export_sample_rate_hz": 48000,
+    "export_frames": 4096,
+    "selection_policy": "Explicit half-open[start,end); exact device inclusivity unresolved",
+    "pitch_and_gain_applied": false
+  },
+  "limits": [
+    "Only Sound9/key1 at start0/owner0 with the exact observed other15 references is supported",
+    "The local endpoint guard127..4044 does not establish a general drum minimum or endpoint inclusivity",
+    "The exact79 prediction remains failed; this first generated drum edit needs its own restore, recapture and audition test",
+    "The preview is an unpitched raw-code selection; the project exporter still provides no drum audio previews"
+  ]
+}

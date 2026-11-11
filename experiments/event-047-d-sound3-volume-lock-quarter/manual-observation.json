@@ -1,0 +1,8 @@
+{
+  "user_report": "done, the first is the lowest, second is in between, then the last one is the highest and loudest",
+  "stage": "quarter",
+  "relative_loudness": "lowest_of_three",
+  "interpretation": "Relative loudness order from the volume-control context and explicit loudest description; no pitch stability,exact gain or numeric UI reading claimed",
+  "display_text": null,
+  "capture_sha256": "86882e8f6535972366fe18fdc15e65054f42f25acfb2a5b556c97d62834ef2d8"
+}

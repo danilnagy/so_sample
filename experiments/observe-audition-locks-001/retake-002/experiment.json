@@ -1,0 +1,17 @@
+{
+  "experiment_id": "observe-audition-locks-001/retake-002",
+  "kind": "playback_only_retake",
+  "parent": "..",
+  "reason": "Retake-001's auditions by hand produced no output; the live volume is raised with knob B before this recording so they can be measured",
+  "registered_before_playback": true,
+  "prediction": "audition_keeps_live_state",
+  "expected_sign": "auditions before and after both louder than the pattern's hits by the same amount; the pattern's notes carry volume 36 locks",
+  "playback_seconds": 32,
+  "playback_instructions": "One 32-second recording in three parts; do not press PLAY first. Before pressing Enter:\n\n- Keep WRITE off and playback stopped.\n- Select Sound 16: hold SOUND and press key 16.\n- Turn knob B fully clockwise. Note what the screen calls it (expected: vol).\n- Press key 1 once to confirm it is now audible. Keep every volume unchanged from here.\n\nPress Enter, then within a second:\n\n1. Press key 1 four times, about one second apart. These are the auditions before.\n2. Wait about three seconds of silence. Press PLAY and let Pattern 1 play twice through\n   (eight seconds; four hits per pass). Press PLAY to stop it.\n3. Wait about three seconds of silence. Press key 1 four times, about one second apart.\n   These are the auditions after.\n\nThe harness may warn that the level changed between parts; that is expected here, so\ndecline to record again unless a part was missed.",
+  "observation_questions": [
+    "What did the screen call knob B, and was key 1 audible after turning it? (Enter to skip)",
+    "Did the auditions after the pattern sound as loud as the ones before, or quieter like the pattern? (Enter to skip)"
+  ],
+  "measured_playback": "attempts/playback-01.wav",
+  "measured_reason": "The accepted attempt holds the pattern alone. The first attempt followed the procedure (four presses, two passes, five presses) and then PLAY was pressed again until the end; the recorder flagged its peak as near full scale and the person recorded again. The first attempt is the one that followed the procedure."
+}

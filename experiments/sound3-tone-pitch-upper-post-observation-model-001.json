@@ -1,0 +1,9 @@
+{
+  "analysis_version": "recorded-upper25-post-observation-literal-model-0.1",
+  "hardware_verified": false,
+  "registered_before_upper_data": false,
+  "rule": "Replace first-primary low5 by25 in all16 Sound3/P1 cells; preserve bit5 and all other bits",
+  "whole_body_reproduced": true,
+  "native_results_sha256": "a3eb875d93fac3ae9b7ce745316abfa991b9fea0ebb71cb4fbb994441106e768",
+  "pitch_field_width_or_scale_confirmed": false
+}

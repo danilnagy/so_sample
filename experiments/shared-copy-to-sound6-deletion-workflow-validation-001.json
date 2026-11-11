@@ -1,0 +1,33 @@
+{
+  "analysis_version": "verified-shared-copy-to-physical-sound6-deletion-workflow-audit-0.1",
+  "checks": {
+    "shared_copy_is_hardware_verified": true,
+    "registration_baseline_file_and_capture_hashes_match": true,
+    "registration_entire_baseline_body_matches": true,
+    "registration_acceptance_hash_matches": true,
+    "full_transfer_model_is_valid_and_matches_registered_body": true,
+    "transfer_and_retained_owner_alternatives_separate": true,
+    "stale_capture_rejected": true,
+    "next_control_registered_before_capture": true,
+    "control_requires_physical_deletion_not_generated_restore": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "copy_acceptance_sha256": "f55fcee6a80d788b130299cce5494f0fa2491ffa0e4f2c9b4c9aa1180dabf500",
+  "deletion_registration_sha256": "5d4a3f4e5f2dddc96807f64b862bf2045fc41139c9d0c755c5fdbe5ef7fded5c",
+  "validation": {
+    "targeted_tests": "26 passed in3.25s",
+    "ruff_check": "passed",
+    "ruff_format": "161 Python files formatted"
+  },
+  "copy_capture_sample_rate_hz": 44100,
+  "copy_capture_peak_per_channel": [
+    0.167877197265625,
+    0.16082763671875
+  ],
+  "copy_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Physically delete only selected Sound6, capture before audition, then check empty Sound6, retained Sound7 and unchanged other sounds/Pattern1"
+}

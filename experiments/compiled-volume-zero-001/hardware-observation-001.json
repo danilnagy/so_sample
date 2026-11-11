@@ -1,0 +1,47 @@
+{
+  "analysis_version": "volume-zero-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception; registered decision on volume code 0 and reproduction of the gain table",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "hold_previous",
+  "table_reproduced": true,
+  "model_support": {
+    "hold_previous": true,
+    "fixed_default": false
+  },
+  "measured_db_by_step": {
+    "1": 0.0,
+    "2": 0.0019974229117190176,
+    "3": -20.782680411118463,
+    "4": -20.781146537983467,
+    "5": -7.478136056976739,
+    "6": -7.478096313963415,
+    "7": -14.45231779749551,
+    "8": -14.450516324565516,
+    "9": -1.262698343431544,
+    "10": -1.263999186563326,
+    "11": -22.891639215692972,
+    "12": -22.88806037389985,
+    "13": -4.131221989778547,
+    "14": -4.132453267586344,
+    "15": -11.426258376837339,
+    "16": -11.428349272830738
+  },
+  "decision_sha256": "76dab21ef3d0d6b308483922dc0649cb3201e7e2767f147fc03ec76e255bbf66",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "c4472308d9ebdded9109220d2dc75023f8cbbb93b4869295e09da6071c02a047",
+  "session_answers": [
+    {
+      "question": "Did the notes alternate between changing and steady levels? (Enter to skip)",
+      "answer": "yes"
+    }
+  ]
+}

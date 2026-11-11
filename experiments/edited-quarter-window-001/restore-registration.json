@@ -1,0 +1,53 @@
+{
+  "experiment_id": "edited-quarter-window-001",
+  "capture_status": "awaiting_second_start_endpoint_restore_and_recapture",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-014-b-sound3-start-quarter",
+  "source_backup_sha256": "77ff3658428a7de39ebaca89005c2d88977cee24c7b841cab6fe8f6d344b7d24",
+  "source_artifact": "../event-014-b-sound3-start-quarter/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "e0563dce21423d54daf1535e98afeeff72e75cf8415fac1ae37315b52e713417",
+  "source_body_sha256": "bdd3c2d38d525c2a098994939b22816db959a2555b292740b7e816b4ee7b62e6",
+  "source_sound3_header_hex": "c42d0000332e000000",
+  "restore_wav": "../generated-quarter-window-001/restore-sound3-quarter-window.wav",
+  "restore_wav_sha256": "a81d6bb2e2eb9532155d00355933d0eabb9d2e8a1bb92c45a6b50f8249d7db2a",
+  "generated_artifact": "../generated-quarter-window-001/edited.symbols.npz",
+  "expected_encoded_body_sha256": "933eca1c290f4fcde0718ddf87e342c3f5b059bbb96d070f98fd6145c342699a",
+  "expected_sound3_header_hex": "c42d0000044d000000",
+  "expected_start_field": 11716,
+  "expected_endpoint_field": 19716,
+  "expected_changed_plain_packet_indices": [
+    375
+  ],
+  "expected_sound3_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 51,
+      "new": 4
+    },
+    {
+      "offset": 5,
+      "old": 46,
+      "new": 77
+    }
+  ],
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "planned_actions": [
+    "Restore restore-sound3-quarter-window.wav through the proven stereo playback path and levels",
+    "Before audition or pattern playback, select Sound8/TONE, write off and stopped playback; save a full stereo backup as capture.wav here",
+    "After saving, select Sound3/TONE with write off and tap keyboard key1; confirm a clearly audible brief tone",
+    "Select Sound8/TONE and tap keyboard key1; confirm its longer tone is unchanged, then leave Sound8 selected with playback stopped",
+    "Do not move either knob throughout the test"
+  ],
+  "actual_actions": null,
+  "source_sha256": null,
+  "hardware_verified": false,
+  "public_writer_scope_changed": false,
+  "purpose": "Independently verify an8000-code endpoint window at the second physically observed Sound3 start",
+  "limits": [
+    "This isolated candidate only changes11827 to19716 at the physically observed start11716",
+    "Public endpoint writers and project previews remain limited to the previously accepted start31393",
+    "The second-start endpoint interpretation needs this separate hardware restore and audition test",
+    "The repeated111 width does not establish general minimum-width quantization or inclusivity"
+  ]
+}

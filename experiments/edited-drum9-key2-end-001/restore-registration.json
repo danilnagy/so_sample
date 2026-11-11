@@ -1,0 +1,58 @@
+{
+  "experiment_id": "edited-drum9-key2-end-001",
+  "capture_status": "awaiting_first_nonzero_start_drum_restore_and_recapture",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-017-b-drum9-key2-trim-min",
+  "source_backup_sha256": "78f321ce42b7cfca70013487b70c62db4bd3dac57c27f7cb9f9a4c2de35692b6",
+  "source_artifact": "../event-017-b-drum9-key2-trim-min/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "707528090cb1e487232b9b9af2a7d3ea8925632fd17edae0c69507f26f3970f3",
+  "source_body_sha256": "09c5f71aad53947f1399cd3080a67a9c6f1ffb8a8fcc5df3dbd6102ac770450f",
+  "source_reference_hex": "cd0f00004c10000000",
+  "restore_wav": "../generated-drum9-key2-end-001/restore.wav",
+  "restore_wav_sha256": "28d4cdd4363c081ac94bf5b1447ccb70b9d0672cb5519139bddee60ca979f2ab",
+  "generated_artifact": "../generated-drum9-key2-end-001/edited.symbols.npz",
+  "plan": "../drum9-key2-end-plan-001/plan.json",
+  "expected_encoded_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "expected_reference_hex": "cd0f00009d17000000",
+  "expected_sound_slot": 9,
+  "expected_slice_key": 2,
+  "expected_selector_id": 9,
+  "expected_start_field": 4045,
+  "expected_endpoint_field": 6045,
+  "expected_owner_id": 0,
+  "expected_changed_plain_packet_indices": [
+    385
+  ],
+  "expected_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 76,
+      "new": 157
+    },
+    {
+      "offset": 5,
+      "old": 16,
+      "new": 23
+    }
+  ],
+  "expected_packet_count": 527,
+  "expected_frame_end_byte": 89620,
+  "expected_preserved_key1_reference_hex": "00000000d007000000",
+  "planned_actions": [
+    "Restore generated-drum9-key2-end-001/restore.wav through the proven stereo playback path and levels",
+    "Keep both knobs untouched; with Sound8/TONE, playback stopped and write off, record a full backup as capture.wav here before audition or pattern playback",
+    "After saving select Sound9/TONE and tap keyboard key2; confirm a clear short tone instead of the minimum click",
+    "Tap Sound9/key1 and confirm its previously accepted short tone is unchanged; the two2000-code windows should have similar duration",
+    "Return to Sound8/TONE with write off and playback stopped; report restore and both Sound9 tone checks"
+  ],
+  "actual_actions": null,
+  "source_sha256": null,
+  "hardware_verified": false,
+  "purpose": "Independently test nonzero-start drum endpoint editing while retaining the accepted adjacent key1 window and all other state",
+  "limits": [
+    "Only Sound9/keys1 and2 at their separate fixed-start intervals are supported, with the literal other14 references",
+    "The reported key2 click and exact endpoint prediction support a local interpretation; this new generated nonzero-start edit needs its own hardware test",
+    "General minima, arbitrary starts, other keys/drum slots and exact endpoint inclusivity remain unresolved",
+    "The standalone key2 preview is unpitched half-open raw-code extraction; project preview opt-in still exports accepted key1 only"
+  ]
+}

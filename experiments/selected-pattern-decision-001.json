@@ -1,0 +1,42 @@
+{
+  "analysis_version": "selected-pattern-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "6c831bf6055c33a84181eeb8ca791d56dc111dcdd3e71bf504f4ed8acc73b574",
+  "native_results_sha256": "bbc0e2868b683c0995e93cff463145ace9d0c8f69801daa448c3a8e64ff119be",
+  "frequency_results_sha256": "e4ece84669d9866d758ea75ec8e6d30e7ad8a6b4283fed67955eb12cdc43cac1",
+  "step1_hz": 1099.3389137657082,
+  "measured_cents": {
+    "1": 0.0,
+    "2": -0.004559958569159858,
+    "3": -150.01716923170363,
+    "4": -149.98056480985332,
+    "5": -299.9928335392381,
+    "6": -299.9929115893301,
+    "7": -450.05973891628884,
+    "8": -450.0529474881437,
+    "9": -600.0640290982545,
+    "10": -600.0729044524069,
+    "11": -750.0680424199102,
+    "12": -750.0632272687698,
+    "13": -900.0686165541244,
+    "14": -900.0525093564333,
+    "15": -1050.0677678408697,
+    "16": -1050.0626016806607
+  },
+  "model_support": {
+    "pattern5_selected": true,
+    "pattern1_plays": false
+  },
+  "classification": "pattern5_selected",
+  "absolute": {
+    "cents_vs_models": {
+      "pattern5_selected": 0.2777331406385011,
+      "pattern1_plays": 1050.277179592379
+    },
+    "classification": "pattern5_selected"
+  },
+  "limits": [
+    "One pattern (5) selected by byte 0; other patterns and pattern chains are not tested",
+    "Playback starts with the play button only, right after the backup"
+  ]
+}

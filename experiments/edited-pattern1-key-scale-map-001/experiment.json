@@ -1,0 +1,17 @@
+{
+  "experiment_id": "edited-pattern1-key-scale-map-001",
+  "capture_status": "validated_exact_native_playback_wrong_tempo_inconclusive",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../pattern1-key-scale-map-registration-001.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the 16 notes rise steadily, and did any sound wrong? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

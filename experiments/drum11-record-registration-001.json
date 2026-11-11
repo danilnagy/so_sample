@@ -1,0 +1,62 @@
+{
+  "analysis_version": "drum11-record-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_backup": true,
+  "experiment_id": "observe-drum11-record-001",
+  "baseline_artifact": "experiments/compiled-sound7-import-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "c81c0e0e0b4e76fc3f32689b876d2056cabe624bd4da59d0551310e04e020571",
+  "source_wav": "experiments/observe-drum11-record-001/burst-source.wav",
+  "source_wav_sha256": "67cf5f109f43955ed3ff5685e83bdf813cbc22967274f55145e736d4369c58e5",
+  "burst_frequencies_hz": [
+    400.0,
+    436.2,
+    475.68,
+    518.74,
+    565.69,
+    616.88,
+    672.72,
+    733.6,
+    800.0,
+    872.41,
+    951.37,
+    1037.47,
+    1131.37,
+    1233.77,
+    1345.43,
+    1467.21
+  ],
+  "burst_timing_seconds": {
+    "lead": 0.5,
+    "burst": 0.1,
+    "gap": 0.025,
+    "tail": 0.3
+  },
+  "sound11_ids": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "hypotheses": {
+    "new_self_owned_buffer": "exactly one new record longer than 9 bytes whose owner byte equals its own sound id",
+    "sixteen_references": "every Sound11 id 40..55 holds a 9-byte reference to that buffer's owner",
+    "equal_split": "the 16 windows are consecutive, equal within 1 code, and start at 0",
+    "everything_else_unchanged": "all other sound records and all pattern cells are unchanged"
+  },
+  "limits": [
+    "Observation of one device recording; button timing sets the recorded length",
+    "Which slice plays which burst is a later playback test"
+  ]
+}

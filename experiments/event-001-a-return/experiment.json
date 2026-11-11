@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "event-001-a-return",
+  "series_id": "event-001",
+  "stage": "remove_event",
+  "created_at": null,
+  "baseline_id": "event-001-a",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Planned controlled single-event experiment; actual observations pending",
+    "selected_pattern": null,
+    "selected_sound": null,
+    "selected_slice_key": null,
+    "playing": null,
+    "write_mode": null,
+    "tempo_bpm": null,
+    "swing": null,
+    "pattern_sequence": null
+  },
+  "proposed_event": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "target_status": "confirmed_by_user",
+  "planned_capture_state": {
+    "selected_pattern": 1,
+    "selected_sound": 9,
+    "selected_slice_key": 1,
+    "playing": false,
+    "write_mode": false
+  },
+  "changes": [
+    {
+      "status": "reported_experiment_stage",
+      "action": "remove_trigger",
+      "event": {
+        "pattern": 1,
+        "step": 1,
+        "sound_slot": 9,
+        "drum_slice_key": 1
+      }
+    }
+  ],
+  "planned_actions": [
+    "Enter write mode; remove only the event just added",
+    "Verify step returns to its prior empty state; exit write mode",
+    "Record untouched return-to-A transfer without other changes"
+  ],
+  "actions": [
+    "User supplied recording in the requested remove_event stage folder"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "001bd4615a7bb5716fe4078e76d36e3092769ab0be030282d46d2d5a6b92b225",
+    "status": "received_and_inspected",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown"
+  },
+  "planned_recording": {
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "level": "same reduced level as reconstructed-002",
+    "decoder_threshold": 0.0063
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "target_confirmation": {
+    "evidence_source": "user_report",
+    "pattern": 1,
+    "pattern_empty": true,
+    "sound_slot": 9,
+    "drum_slice_key": 1,
+    "sound_description": "recognizable kick"
+  },
+  "action_log_note": "Exact button sequence and full UI state not supplied; planned protocol is documented separately."
+}

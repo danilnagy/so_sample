@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "kits": [
+    {
+      "slug": "tr-505",
+      "name": "Synth 505",
+      "file": "tr-505.kit.zip",
+      "keys": 12,
+      "bytes": 89734
+    },
+    {
+      "slug": "tr-606",
+      "name": "Synth 606",
+      "file": "tr-606.kit.zip",
+      "keys": 14,
+      "bytes": 108536
+    },
+    {
+      "slug": "tr-626",
+      "name": "Synth 626",
+      "file": "tr-626.kit.zip",
+      "keys": 16,
+      "bytes": 116033
+    },
+    {
+      "slug": "tr-707",
+      "name": "Synth 707",
+      "file": "tr-707.kit.zip",
+      "keys": 16,
+      "bytes": 116912
+    },
+    {
+      "slug": "tr-808",
+      "name": "Synth 808",
+      "file": "tr-808.kit.zip",
+      "keys": 16,
+      "bytes": 115152
+    },
+    {
+      "slug": "tr-808-percussion",
+      "name": "Synth 808 Percussion",
+      "file": "tr-808-percussion.kit.zip",
+      "keys": 16,
+      "bytes": 77267
+    },
+    {
+      "slug": "tr-909",
+      "name": "Synth 909",
+      "file": "tr-909.kit.zip",
+      "keys": 16,
+      "bytes": 114633
+    }
+  ],
+  "packs": [
+    {
+      "slug": "rainy-rhodes",
+      "name": "Rainy Rhodes",
+      "file": "rainy-rhodes.sosample.zip",
+      "style": "lofi",
+      "tempo": 84,
+      "swing": 7,
+      "bars": 28,
+      "pages": 174,
+      "bytes": 512469
+    },
+    {
+      "slug": "night-walk",
+      "name": "Night Walk",
+      "file": "night-walk.sosample.zip",
+      "style": "lofi",
+      "tempo": 76,
+      "swing": 9,
+      "bars": 20,
+      "pages": 138,
+      "bytes": 371988
+    },
+    {
+      "slug": "corner-store",
+      "name": "Corner Store",
+      "file": "corner-store.sosample.zip",
+      "style": "soul boom bap",
+      "tempo": 92,
+      "swing": 9,
+      "bars": 20,
+      "pages": 158,
+      "bytes": 510412
+    },
+    {
+      "slug": "dusty-crates",
+      "name": "Dusty Crates",
+      "file": "dusty-crates.sosample.zip",
+      "style": "soul boom bap",
+      "tempo": 88,
+      "swing": 10,
+      "bars": 20,
+      "pages": 155,
+      "bytes": 503754
+    },
+    {
+      "slug": "warehouse-jack",
+      "name": "Warehouse Jack",
+      "file": "warehouse-jack.sosample.zip",
+      "style": "Chicago house",
+      "tempo": 122,
+      "swing": 2,
+      "bars": 28,
+      "pages": 83,
+      "bytes": 252883
+    },
+    {
+      "slug": "motor-city",
+      "name": "Motor City",
+      "file": "motor-city.sosample.zip",
+      "style": "Detroit house",
+      "tempo": 124,
+      "swing": 0,
+      "bars": 20,
+      "pages": 119,
+      "bytes": 345001
+    },
+    {
+      "slug": "late-shift",
+      "name": "Late Shift",
+      "file": "late-shift.sosample.zip",
+      "style": "trap",
+      "tempo": 140,
+      "swing": 0,
+      "bars": 24,
+      "pages": 61,
+      "bytes": 172615
+    },
+    {
+      "slug": "rinse-out",
+      "name": "Rinse Out",
+      "file": "rinse-out.sosample.zip",
+      "style": "jungle",
+      "tempo": 170,
+      "swing": 0,
+      "bars": 20,
+      "pages": 81,
+      "bytes": 248010
+    },
+    {
+      "slug": "echo-chamber",
+      "name": "Echo Chamber",
+      "file": "echo-chamber.sosample.zip",
+      "style": "dub",
+      "tempo": 75,
+      "swing": 4,
+      "bars": 24,
+      "pages": 84,
+      "bytes": 251272
+    },
+    {
+      "slug": "concrete",
+      "name": "Concrete",
+      "file": "concrete.sosample.zip",
+      "style": "techno",
+      "tempo": 130,
+      "swing": 0,
+      "bars": 28,
+      "pages": 41,
+      "bytes": 128720
+    }
+  ]
+}

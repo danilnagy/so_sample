@@ -1,0 +1,601 @@
+{
+  "schema_version": 1,
+  "analysis_version": "fixed-exploratory-probes-0.1",
+  "baseline_artifact_sha256": "7f703285c550c9352fa618d541d8d660fef1a3876dfaa69ebbede003a11460c0",
+  "variant_artifact_sha256": "9c5820088d255acff70e7c8c802da553a69ddacd920b301a5d8db9b6b4324c8b",
+  "source_sha256": "94acfd882f69ed003680c9068b9a57c484aa980b7162575398cabc036e588931",
+  "variant_source_sha256": "1a08cc0bb65f9d32104b79dd1a3be9c9a97c58c31ad3a47dd58644e256d504a1",
+  "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+  "payload_decoded": false,
+  "alignment_applied": false,
+  "word_feedback": [
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 1,
+      "endian": "little",
+      "words": 10000,
+      "modal_modular_difference": 97,
+      "modal_difference_fraction": 0.0189,
+      "eligible_odd_predecessors": 5059,
+      "most_common_multiplier": 40,
+      "multiplier_fraction": 0.010278711207748568
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 2,
+      "endian": "little",
+      "words": 5000,
+      "modal_modular_difference": 24369,
+      "modal_difference_fraction": 0.001,
+      "eligible_odd_predecessors": 2469,
+      "most_common_multiplier": 14433,
+      "multiplier_fraction": 0.0008100445524503848
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 2,
+      "endian": "big",
+      "words": 5000,
+      "modal_modular_difference": 61793,
+      "modal_difference_fraction": 0.0008,
+      "eligible_odd_predecessors": 2589,
+      "most_common_multiplier": 2241,
+      "multiplier_fraction": 0.0011587485515643105
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 4,
+      "endian": "little",
+      "words": 2500,
+      "modal_modular_difference": 865548899,
+      "modal_difference_fraction": 0.0004,
+      "eligible_odd_predecessors": 1266,
+      "most_common_multiplier": 3272148854,
+      "multiplier_fraction": 0.0007898894154818325
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 4,
+      "endian": "big",
+      "words": 2500,
+      "modal_modular_difference": 1648072755,
+      "modal_difference_fraction": 0.0004,
+      "eligible_odd_predecessors": 1277,
+      "most_common_multiplier": 4226046235,
+      "multiplier_fraction": 0.0007830853563038371
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 8,
+      "endian": "little",
+      "words": 1250,
+      "modal_modular_difference": 6973998442470652515,
+      "modal_difference_fraction": 0.0008,
+      "eligible_odd_predecessors": 633,
+      "most_common_multiplier": 15175260195554370015,
+      "multiplier_fraction": 0.001579778830963665
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": false,
+      "word_bytes": 8,
+      "endian": "big",
+      "words": 1250,
+      "modal_modular_difference": 7078418582586968161,
+      "modal_difference_fraction": 0.0008,
+      "eligible_odd_predecessors": 655,
+      "most_common_multiplier": 16204509238223433838,
+      "multiplier_fraction": 0.0015267175572519084
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 1,
+      "endian": "little",
+      "words": 10000,
+      "modal_modular_difference": 52,
+      "modal_difference_fraction": 0.0202,
+      "eligible_odd_predecessors": 5083,
+      "most_common_multiplier": 124,
+      "multiplier_fraction": 0.01278772378516624
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 2,
+      "endian": "little",
+      "words": 5000,
+      "modal_modular_difference": 44237,
+      "modal_difference_fraction": 0.001,
+      "eligible_odd_predecessors": 2519,
+      "most_common_multiplier": 38404,
+      "multiplier_fraction": 0.0011909487892020642
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 2,
+      "endian": "big",
+      "words": 5000,
+      "modal_modular_difference": 43980,
+      "modal_difference_fraction": 0.0014,
+      "eligible_odd_predecessors": 2563,
+      "most_common_multiplier": 49611,
+      "multiplier_fraction": 0.0011705033164260631
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 4,
+      "endian": "little",
+      "words": 2500,
+      "modal_modular_difference": 860567731,
+      "modal_difference_fraction": 0.0004,
+      "eligible_odd_predecessors": 1232,
+      "most_common_multiplier": 569166049,
+      "multiplier_fraction": 0.0008116883116883117
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 4,
+      "endian": "big",
+      "words": 2500,
+      "modal_modular_difference": 2990099507,
+      "modal_difference_fraction": 0.0004,
+      "eligible_odd_predecessors": 1278,
+      "most_common_multiplier": 73453830,
+      "multiplier_fraction": 0.000782472613458529
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 8,
+      "endian": "little",
+      "words": 1250,
+      "modal_modular_difference": 3561411978197678259,
+      "modal_difference_fraction": 0.0008,
+      "eligible_odd_predecessors": 606,
+      "most_common_multiplier": 5010024047813300461,
+      "multiplier_fraction": 0.0016501650165016502
+    },
+    {
+      "channel": "right",
+      "symbol_window": [
+        200000,
+        240000
+      ],
+      "coordinate_pair_swapped": true,
+      "word_bytes": 8,
+      "endian": "big",
+      "words": 1250,
+      "modal_modular_difference": 12842379591459630130,
+      "modal_difference_fraction": 0.0008,
+      "eligible_odd_predecessors": 662,
+      "most_common_multiplier": 13720930009940528226,
+      "multiplier_fraction": 0.0015105740181268882
+    }
+  ],
+  "word_alphabets": [
+    {
+      "mapping": "left",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 6,
+      "offsets_tested": 6,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 64,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "left",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 8,
+      "offsets_tested": 8,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 256,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "left",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 10,
+      "offsets_tested": 10,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 1024,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "left",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 12,
+      "offsets_tested": 12,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 4096,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "left",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 16,
+      "offsets_tested": 16,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 34400,
+      "offset_at_minimum": 1,
+      "rows_at_minimum": 49999,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "left",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 24,
+      "offsets_tested": 24,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 33266,
+      "offset_at_minimum": 9,
+      "rows_at_minimum": 33332,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "right",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 6,
+      "offsets_tested": 6,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 64,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "right",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 8,
+      "offsets_tested": 8,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 256,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "right",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 10,
+      "offsets_tested": 10,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 1024,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "right",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 12,
+      "offsets_tested": 12,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 4095,
+      "offset_at_minimum": 8,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "right",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 16,
+      "offsets_tested": 16,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 34769,
+      "offset_at_minimum": 4,
+      "rows_at_minimum": 49999,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "right",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 24,
+      "offsets_tested": 24,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 33276,
+      "offset_at_minimum": 14,
+      "rows_at_minimum": 33332,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "stereo",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 6,
+      "offsets_tested": 6,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 64,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "stereo",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 8,
+      "offsets_tested": 8,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 256,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "stereo",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 10,
+      "offsets_tested": 10,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 1024,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "stereo",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 12,
+      "offsets_tested": 12,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 4096,
+      "offset_at_minimum": 0,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "stereo",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 16,
+      "offsets_tested": 16,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 34881,
+      "offset_at_minimum": 14,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    },
+    {
+      "mapping": "stereo",
+      "symbol_window": [
+        200000,
+        600000
+      ],
+      "word_bits": 24,
+      "offsets_tested": 24,
+      "rows_limit": 50000,
+      "minimum_observed_unique_words": 49909,
+      "offset_at_minimum": 1,
+      "rows_at_minimum": 50000,
+      "limit": "Finite observed vocabulary in these mappings, not all codebooks"
+    }
+  ],
+  "anchor_probes": [
+    {
+      "channel": "left",
+      "anchor_start_coordinate": 20000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "unchanged_coordinates",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "left",
+      "anchor_start_coordinate": 20000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "both_signs_inverted",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "left",
+      "anchor_start_coordinate": 100000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "unchanged_coordinates",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "left",
+      "anchor_start_coordinate": 100000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "both_signs_inverted",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "left",
+      "anchor_start_coordinate": 200000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "unchanged_coordinates",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "left",
+      "anchor_start_coordinate": 200000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "both_signs_inverted",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "right",
+      "anchor_start_coordinate": 20000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "unchanged_coordinates",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "right",
+      "anchor_start_coordinate": 20000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "both_signs_inverted",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "right",
+      "anchor_start_coordinate": 100000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "unchanged_coordinates",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "right",
+      "anchor_start_coordinate": 100000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "both_signs_inverted",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "right",
+      "anchor_start_coordinate": 200000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "unchanged_coordinates",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    },
+    {
+      "channel": "right",
+      "anchor_start_coordinate": 200000,
+      "anchor_length_coordinates": 256,
+      "target_transform": "both_signs_inverted",
+      "first_match": null,
+      "multiple_matches": false,
+      "applied_shift": null
+    }
+  ]
+}

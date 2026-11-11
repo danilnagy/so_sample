@@ -1,0 +1,100 @@
+{
+  "analysis_version": "LPF16-generated-resonance-B0-B63-and-tone-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_both_native_captures_and_playback": true,
+  "source_artifact": "experiments/event-064-c-return-sound3-filter-B-lock-down/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3541fd8afe21c7a43552e9e28a082fa75ad935f83d834ae3ace766aac1de2d88",
+  "source_capture": "experiments/event-064-c-return-sound3-filter-B-lock-down/capture.wav",
+  "source_capture_sha256": "d622eeb608f466392b4685dfc19036434665b5fca49c59b7ba2b06c8c1dda2b8",
+  "source_body_sha256": "bee177abf44962fde6bee1279572df70c7f0b5cf87ffadc51ffaae4768d3d274",
+  "source_observation_sha256": "9a81195797e58e0da2f828a827557be6e354cd424d6793b5769f9a505c0bdf60",
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "edited-sound3-filter16-B0-reference-001",
+      "raw_B_value": 0,
+      "expected_body_sha256": "ae37ebfdfd485e0e20313c4faeb26065132375c7f0194681fffeda837c6b6264",
+      "restore_wav_sha256": "d717facb4d222b939e2c2f1224a18a8e0f48a27cd009d36a1cc23cc3f6c66cb5",
+      "edited_artifact_sha256": "ed15194d9cc7364aad1a0077daea5c2edb7e61d9020dcd4ec7e04c3495154b87",
+      "software_validation_sha256": "17a3cfdb3aa3ae85b2d613c2ee376071f276718247f515eb28a9656cf00cd665"
+    },
+    {
+      "experiment_id": "edited-sound3-filter16-B63-candidate-001",
+      "raw_B_value": 63,
+      "expected_body_sha256": "fd0817c1c7791225eab3fe2f2d91f459ddad0c00fd0aacbd87e8672232323039",
+      "restore_wav_sha256": "599933c6fece07a44a03c34e5ab1b8910b28a7aad7ee3af39d3010eda0bbd542",
+      "edited_artifact_sha256": "7045de7d8b3332f06e821a778396b0c3de667b37e69167c09922f878fc6d37a0",
+      "software_validation_sha256": "2ee147339db06c0ce17c52008fd312151b76a1580e22c3cab770ab921173d540"
+    }
+  ],
+  "original_frequency_registration": "experiments/sound3-generated-pitch13-14-registration-001.json",
+  "original_frequency_registration_sha256": "164a99c14a96e7e96f4ffea2b3e35e5f7ea7316647600075dd0291aa87f14110",
+  "frequency_method": {
+    "parameters": {
+      "center_frequency_hz": 525.0,
+      "half_bandwidth_hz": 75.0,
+      "envelope_seconds": 0.005,
+      "threshold_peak_fractions": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "minimum_region_seconds": 0.06,
+      "edge_margin_seconds": 0.03,
+      "minimum_band_rms": 0.001,
+      "maximum_gap_residual_seconds": 0.006,
+      "threshold_gap_spread_seconds": 0.004,
+      "stereo_onset_tolerance_seconds": 0.002,
+      "nominal_loop_seconds": 2.4,
+      "loop_tolerance_seconds": 0.005,
+      "steady_fit_window_after_onset_seconds": [
+        0.08,
+        0.18
+      ],
+      "frequency_search_hz": [
+        465.0,
+        585.0
+      ],
+      "fft_grid_max_spacing_hz": 0.25,
+      "fft_peak_refine_halfwidth_hz": 1.0,
+      "minimum_fit_explained_variance": 0.9,
+      "minimum_complete_cycles": 3,
+      "reference_frequency_lead_hz": 500.65,
+      "reference_frequency_relative_tolerance": 0.005,
+      "minimum_relative_frequency_increase": 0.005,
+      "hypothesized_ratio_for_one_semitone": 1.0594630943592953,
+      "semitone_ratio_relative_tolerance": 0.002,
+      "unchanged_loop_seconds_tolerance": 0.005
+    },
+    "algorithm": "Common450..600Hz third-order zero-phase band; frozen onset thresholds; fit80..180ms after each onset; Hann FFT with spacing<=0.25Hz selects global peak in465..585Hz, refine least-squares sine/cos/DC within1Hz; identical method for both legs"
+  },
+  "resonance_comparison_parameters": {
+    "reference_frequency_lead_hz": 530.26,
+    "frequency_relative_tolerance": 0.005,
+    "loop_seconds_tolerance": 0.005,
+    "minimum_amplitude_increase_fraction": 0.05
+  },
+  "hypotheses": {
+    "native": "Both full generated bodies recapture exactly; pair differs only in third-primary bits2..7",
+    "audio": "At fixed cutoff16 the B63 repeated-tone amplitude exceeds B0 by at least5% in all six frozen channel/threshold comparisons, with frequency and loop consistent"
+  },
+  "limits": [
+    "Both generated targets are new combined cutoff/resonance contexts, not independent recorded whole-body replays",
+    "Amplitude increase is a new hypothesis after endpoint data and before both audio captures; the original common measurement method stays unchanged",
+    "Too-quiet, distorted, insufficient or otherwise unusable audio is retained without changing thresholds, windows or frequency search",
+    "B0 reference must have exact reception and usable near530.26Hz audio before requesting B63",
+    "Only fixed0/63 B at LPF16 from exact minimum source are allowed by research constructor; public cutoff guards remain unchanged",
+    "No all-code resonance law, full bit7 semantics, broad spectral response or public resonance writer is inferred"
+  ]
+}

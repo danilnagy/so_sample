@@ -1,0 +1,36 @@
+{
+  "analysis_version": "verified-resonance-endpoint-effect-to-frozen-middle-control-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "accepted_endpoint_native_scope_and_frozen_amplitude_comparison_pass": true,
+    "current_source_and_middle_registration_pins_match": true,
+    "all_export_hashes_and_full_current_body_exact": true,
+    "middle_target_waveform_recovery_and_all_target_pins_pass": true,
+    "new_middle_preregistered_with_endpoint_observation_explicit": true,
+    "common_method_and_existing_comparison_limits_unchanged": true,
+    "new_middle_backup_and_audio_pending": true,
+    "endpoint0_native_audio_and_observation_hashes_pinned": true,
+    "endpoint1_native_audio_and_observation_hashes_pinned": true
+  },
+  "current_hardware_observation_sha256": "5c0e63d76980ea62dd16300fcb59584719b6760ea8f8dbfd771de761bd59d749",
+  "middle_registration_sha256": "b54dcad7399ec660cdb45e2e28b45ab63c52c4ac6b72b78d366526a44aa84b91",
+  "middle_code_sha256": {
+    "scripts/prepare_generated_sound3_resonance_middle.py": "2a05a6597c1e8fcd4c08a234cc151f6784e251b191f317ef2c335d84b4dda9de",
+    "scripts/check_generated_sound3_resonance_middle.py": "2b5679fecb12a5d5c1602b62f506e11f4035f26c9e890fbe74dbe817197c2eb6",
+    "tests/test_generated_sound3_resonance_middle.py": "c0bec5dda82bdd216a049939ecee8102e8375fbc05d0575b1c39b8d7f57223ba"
+  },
+  "focused_tests_passed": 110,
+  "last_full_regression_tests_passed": 1025,
+  "production_writer_changed": false,
+  "resonance_writer_enabled": false,
+  "middle_amplitude_hypothesis_evaluated": false,
+  "next_restore": "edited-sound3-filter16-B32-middle-001/restore.wav",
+  "limits": [
+    "B32 target is new and has no physical recapture yet; endpoints were already observed before this new interior registration",
+    "New hypothesis requires middle amplitude above minimum by at least5% and maximum above middle by at least5% in all six common measurements; failure remains retained",
+    "Original common audio method, windows, thresholds, band and search remain unchanged; missing/quiet/distorted audio is not refitted",
+    "Only fixed32 from exact accepted LPF16/B63 is allowed by constructor; no general resonance writer or cutoff guard extension",
+    "Literal32 tests an interior code and bit7 with lower candidate bits clear; no numeric UI midpoint, proportional Q scale or complete bit7 semantics inferred"
+  ]
+}

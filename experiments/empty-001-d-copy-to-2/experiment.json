@@ -1,0 +1,38 @@
+{
+  "experiment_id": "empty-001-d-copy-to-2",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated_protocol_deviation",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-c-copy-to-1",
+  "baseline_source_sha256": "b38ea70cc43b6ebbb2797a213c156bc396c59eb57648de1c4e9943a4544eaa74",
+  "planned_action": "Copy existing Sound8 into empty Sound2, retaining Sound1 and Sound8, then return to Sound8 and record one full backup",
+  "planned_source_slot": 8,
+  "planned_destination_slot": 2,
+  "planned_capture_selection": {
+    "pattern": 1,
+    "sound": 8,
+    "write_mode": false,
+    "playing": false
+  },
+  "actual_actions": [
+    "User reported accidentally deleting Sound8",
+    "User copied Sound1 back toSound8",
+    "User then copied Sound8 toSound2 and supplied this capture"
+  ],
+  "source_sha256": "7acb719c345ba68f142fe9872662bf603b108d5b3671e82c49fa61320c1c8d0e",
+  "preregistration": "../second-copy-predictions-001.json",
+  "purpose": "Test front-table versus inline slot placement while retaining the same first populated slot and stored sample",
+  "limits": [
+    "Predictions are transport hypotheses, not verified state offsets",
+    "No fresh recording, A or A-return requested"
+  ],
+  "preregistered_single_action_test_eligible": false,
+  "confound": "Deletion and recreation of the source slot can alter allocation/serialization beyond the planned copy2 action",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "waveform": "../waveform-probes-013.json",
+    "observational_predictions": "../second-copy-observations-002.json"
+  },
+  "decoder_version": "sign-crossings-0.2"
+}

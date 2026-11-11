@@ -1,0 +1,7 @@
+{
+  "user_report": "done and confirmed, tempo changed to 80",
+  "display_bpm": 80,
+  "requested_restore_and_audition_checks_confirmed": true,
+  "context": "Generated restore accepted, same Pattern1 phrase at slower tempo, existing samples unchanged",
+  "capture_sha256": "7512efa7fa484824a6e68a2747bb3d4a4a44f031ca02259728248e47e59465f6"
+}

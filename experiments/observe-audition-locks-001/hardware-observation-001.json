@@ -1,0 +1,108 @@
+{
+  "analysis_version": "audition-lock-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Whether auditioning a sound by hand follows the locks of a pattern that just played",
+  "outcome": "other",
+  "prediction": "audition_keeps_live_state",
+  "prediction_held": false,
+  "live_filter_before_pattern": null,
+  "live_filter_after_pattern": null,
+  "checks": {
+    "backup_decoded": true,
+    "native_target_exact": true,
+    "capture_pin_matches": true,
+    "playback_pin_matches": true
+  },
+  "native_decoder": "web",
+  "exploratory": {
+    "label": "exploratory, not part of the registered method",
+    "noise_floor_rms": 6.749633168948465e-05,
+    "hit_rms_median": 0.25258702512873643,
+    "stretches": [
+      {
+        "what": "before the first hit",
+        "from": 0.3,
+        "to": 2.7817233560090706,
+        "rms": 6.820214551805488e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 5.639342403628118,
+        "to": 7.240566893424036,
+        "rms": 7.04088022906235e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 11.640725623582766,
+        "to": 13.97843537414966,
+        "rms": 6.964268470285809e-05
+      },
+      {
+        "what": "between hit groups",
+        "from": 17.7424716553288,
+        "to": 23.863696145124717,
+        "rms": 6.93719609837958e-05
+      }
+    ],
+    "first_three_groups": {
+      "file": "retake-002/attempts/playback-01-first-three-groups.wav",
+      "group_sizes": [
+        4,
+        8,
+        5
+      ],
+      "outcome": "audition_keeps_live_state",
+      "comparisons": {
+        "before_matches_pattern": false,
+        "after_matches_pattern": false,
+        "before_matches_after": true
+      },
+      "band_means_db": {
+        "before": [
+          -0.16738097688068454,
+          3.195086508669236
+        ],
+        "pattern": [
+          -3.114519352110604e-09,
+          -1.642847494001967e-07
+        ],
+        "after": [
+          -0.16992716193252513,
+          3.186220991401383
+        ]
+      },
+      "hit_rms_by_group": [
+        [
+          0.3671,
+          0.367,
+          0.367,
+          0.367
+        ],
+        [
+          0.2528,
+          0.2527,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526,
+          0.2526
+        ],
+        [
+          0.367,
+          0.3669,
+          0.3668,
+          0.3669,
+          0.3669
+        ]
+      ]
+    },
+    "reading": "every stretch where auditions by hand were due sits at the noise floor: the presses produced no output"
+  },
+  "playback_file": "retake-002/attempts/playback-01.wav",
+  "session_answers": [],
+  "reading": "The groups fit none of the registered outcomes; see the measurements",
+  "result_sha256": "3680505460515b7b5dbf1a2d01d202d1cb5db14de3fc985f02e024764bb624cd",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "a6fc56f3db8018622f34d05566b5f7b554fe53e2176b430f9fc7db9b4ede0a38"
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "po33-re"
+version = "0.0.1"
+description = "Decoder, encoder and research tools for the Teenage Engineering PO-33 K.O! backup format"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2", "soundfile>=0.12,<1"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.6,<1"]
+hardware = ["sounddevice>=0.5,<1"]
+[project.scripts]
+po33 = "po33_re.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["capture: requires a genuine PO-33 recording fixture"]
+[tool.ruff]
+target-version = "py312"
+line-length = 100

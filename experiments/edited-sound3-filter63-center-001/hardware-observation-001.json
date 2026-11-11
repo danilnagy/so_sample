@@ -1,0 +1,89 @@
+{
+  "analysis_version": "public-FILTER63-exact-reception-and-unfiltered-listening-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Public-plan63 recaptures as the complete independent center body and every packet; user confirms unfiltered sound; pitch14/volume36 and all unrelated state preserved",
+  "checks": {
+    "entire_native_target_and_preservation_checks_pass": true,
+    "capture_artifact_registration_and_generated_wav_pins_match": true,
+    "user_explicitly_confirms_unfiltered_sound": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_full_native_reconstruction_pass": true
+  },
+  "registration_sha256": "8ef829f1a69dadd69d3fe38723bac2c641881baf19909dc9ee77202a1fcea826",
+  "capture_sha256": "6710446b4c514e05e60063376adf14c00a0d69a22b478bfd740bc46a1da368c1",
+  "artifact_sha256": "f1a4c8f9d6cced7ef422c1daff8ff32128931cd3fa89497145854e8e14c1227c",
+  "artifact_path": "experiments/edited-sound3-filter63-center-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "8f80a398ac7130f1802ba865985cb3f7174f9f0129af1182eb6d5da450d6a341",
+  "restore_wav_sha256": "e0fe68be4e895f7cc552227627ac18f55518876715d10259f87ae10dc1f1cf87",
+  "native_results_sha256": "ab666f11bc18dce2f51b73b884867b809588377381c0bbd056332f354a1770fd",
+  "manual_observation_sha256": "e241390c1100b752177cd8e840b846d13f68ebf77995a26d40de295a20759045",
+  "contiguous_candidate_values": [
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63
+  ],
+  "pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.1422119140625,
+      0.1376953125
+    ]
+  },
+  "public_observed_code_filter_operation_available": true,
+  "broadband_bypass_or_general_filter_law_confirmed": false,
+  "limits": [
+    "Public observed-code plan returns the accepted generated52 source to the independent recorded center63 body",
+    "Entire native body and every packet are predicted before this recapture; generated63 acceptance remains pending",
+    "Listening asks for no audible filtering without moving knobs; no broadband bypass, Hz curve or quantitative response is asserted",
+    "Only observed raw codes1/16/52/62/63 and tested pitch14/volume36 layout are supported; other codes and third-byte bits remain guarded"
+  ]
+}

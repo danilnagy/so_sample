@@ -1,0 +1,30 @@
+{
+  "analysis_version": "second-independent-owner-workflow-audit-0.1",
+  "allocation_results_sha256": "95e05f968966c0255995011f07eb29a457ec6e39de7ef2ed7467056e2c3380cc",
+  "sample_analysis_sha256": "943fc535a02fca74327d5a5a9dc5c53190ee4016926e251e7dd0b971cbea55f3",
+  "next_registration_sha256": "c59934c2cd35c4449084d0b9ba3a678b2133d0d45bda88e652ba95a3e329f04d",
+  "project": "exported-second-owner-001/project.json",
+  "exported_content_files_checked": 30,
+  "checks": {
+    "all_allocation_controls_and_hypotheses_pass": true,
+    "genuine_source_files_preserved": true,
+    "sample_analysis_matches_evidence": true,
+    "independent_tone_fit_matches_registered_input": true,
+    "raw_tail_measured_and_retained": true,
+    "all_project_files_and_source_copies_match": true,
+    "entire_raw_native_body_matches": true,
+    "new_melodic_preview_added_without_drum_scope_change": true,
+    "next_copy_baseline_identity_matches": true,
+    "source_owner3_and_empty_sound5_registered": true,
+    "next_copy_registered_before_capture": true,
+    "analysis_and_export_remain_software_only": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "validation": {
+    "targeted_tests": "51 passed in 6.35s",
+    "ruff_check": "passed",
+    "ruff_format": "144 files formatted"
+  },
+  "next_required_user_action": "Copy existing Sound4 into empty Sound5 and save full backup before audition/playback"
+}

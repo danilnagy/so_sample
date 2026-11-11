@@ -1,0 +1,20 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "aa90e8f444bff76700b2f78b27a857a432f552f3c69d472ff40eb6b10e729ff7",
+  "source_body_sha256": "51b9358a087173aa4ebd4e49eda47e698ba34c7dd077237ccb7d353291b6eea8",
+  "operations": [
+    {
+      "operation": "clone_step",
+      "pattern": 1,
+      "source_step": 13,
+      "target_steps": [
+        2
+      ]
+    },
+    {
+      "operation": "set_swing",
+      "value": 6
+    }
+  ]
+}

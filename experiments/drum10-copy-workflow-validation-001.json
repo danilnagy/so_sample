@@ -1,0 +1,46 @@
+{
+  "analysis_version": "second-drum-block-copy-workflow-audit-0.1",
+  "checks": {
+    "physical_sound10_copy_preservation": true,
+    "all_registered_hypotheses_pass": true,
+    "all_exported_content_hashes": true,
+    "entire_native_packet_view_exact": true,
+    "sound10_block_observed_and_all_records_retained": true,
+    "sound10_keyboard_order_still_unverified": true,
+    "preview_scope_sound9_only": true,
+    "alias_preview_bytes_reused": true,
+    "source_capture_preserved": true,
+    "source_artifact_preserved": true,
+    "failed_first_wav_preserved": true,
+    "export_report_still_software_only": true
+  },
+  "passed": true,
+  "control_report_sha256": "bccc56c9a36aa4940e4102c49dc07524798e5eb5d53cb996ba99e0121c87f716",
+  "source_capture_sha256": "073011e3cdd30f3bb376396385a154ec581d24412c0f93362d189e2e8126e804",
+  "source_artifact_sha256": "4ad498dd37a011e7dc30890d18b8416b412651b8aa3eecb7958fccf32252d1d4",
+  "native_body_sha256": "9e2801c1d2e76144a88ea71c05cc69e0be58476d077305abb4997c2fb9d64323",
+  "exported_content_file_count": 28,
+  "initial_suite": {
+    "passed": 415,
+    "failed": 1,
+    "elapsed_seconds": 66.06,
+    "failure": "Identical shared-audio previews had differing libsndfile PEAK timestamps"
+  },
+  "suite_after_fix": {
+    "passed": 416,
+    "failed": 0,
+    "elapsed_seconds": 67.04,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-drum10-copy-002"
+  },
+  "fix": "Reuse encoded bytes for identical mono preview arrays within one export; regression crosses timestamp boundaries",
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 127,
+  "sound10_writer_enabled": false,
+  "sound10_preview_enabled": false,
+  "limits": [
+    "The Sound10 block is observed; individual keyboard-key mapping needs the next slice-copy control",
+    "Preview reuse guarantees equal alias files within an export, not timestamp-independent hashes across separate runs",
+    "No general autoslice, allocation or Sound10 editing behavior is promoted by this copy"
+  ]
+}

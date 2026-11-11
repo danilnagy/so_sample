@@ -1,0 +1,6 @@
+{
+  "user_report": "done and confirmed",
+  "requested_restore_and_audition_checks_confirmed": true,
+  "context": "Mono WAV import restored; Sound6 rising sweep about 0.75 seconds, Sound7 silent, Sound4/Sound5/Pattern1 unchanged",
+  "capture_sha256": "ea299978cae355585815d8677d4835f514209a41c2cc36b3f2976b7a5dc1287c"
+}

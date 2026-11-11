@@ -1,0 +1,21 @@
+{
+  "experiment_id": "compiled-step-effects-writer-001",
+  "capture_status": "validated_exact_native_pitch_track_sequential_high_nibble_first",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../step-effects-writer-registration-001.json",
+  "plan": "../step-effects-plan-001/plan.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Roughly which notes sounded higher, if you could tell? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "pitch_results": "pitch-track-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-step-effects-writer-001/project.json"
+}

@@ -1,0 +1,51 @@
+{
+  "analysis_version": "drum-kit-import-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of 16 WAV hits imported as the Sound11 kit, with registered per-step pitch and duration",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "new_kit_key_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": -100.02295992455903,
+    "3": -200.01366445440044,
+    "4": -299.9292172131017,
+    "5": -399.96572182549585,
+    "6": -500.0072963919353,
+    "7": -600.0085668966667,
+    "8": -699.9644876345205,
+    "9": -800.0003694270094,
+    "10": -899.979929128631,
+    "11": -999.9473250385873,
+    "12": -1099.9382175237877,
+    "13": -1199.9989487818734,
+    "14": -1299.9350256445734,
+    "15": -1399.992303578322,
+    "16": -1499.9613029802633
+  },
+  "absolute": {
+    "step1_cents_vs_hit1": -0.13149188371961334,
+    "classification": "stored_rate"
+  },
+  "stops_at_window_end": true,
+  "decision_sha256": "98939a64085cb13ba525cd178a7fc1cfef04f12a76aa68231e7fa81d2b0ef29c",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "cd03baf3eb3ce808d70baaace626f927c5964833be9aa62da11f565869b93da7",
+  "session_answers": [
+    {
+      "question": "Did the pattern now play a falling run of 16 beeps that get longer? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "Replaces the kit in Sound11 only, with the observed 102400-code capacity; empty drum slots and other capacities are not tested",
+    "Pure tones with 3 ms fades; real drum hits are not played here"
+  ]
+}

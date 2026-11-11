@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-058-e-sound3-filter-A-center",
+  "capture_status": "validated_uniform63_and_near_reference_component_both_scalar_orders_failed",
+  "registration": "../sound3-filter-A-center-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/FILTER, B and all audio settings unchanged",
+    "Start playback, hold WRITE and move only A toward midpoint over about5 seconds until display bottom bar full and sample clearest; hold3 seconds stationary",
+    "Release WRITE, stop and ensure write off; save complete capture.wav at established reduced level with one second tail",
+    "Separately record12 to15 seconds of ordinary Pattern1 playback as playback.wav; then stop/write off",
+    "Report whether sample audible and bar full; exact code unknown, no numeric display inferred; leave A at center and B untouched"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "center-native-results-001.json",
+  "audio_comparison": "center-audio-comparison-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-filter-A-center-001/project.json",
+  "display_correction": "Center is a single middle tick; full-bar cue in original instructions was incorrect"
+}

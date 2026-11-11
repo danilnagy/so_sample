@@ -1,0 +1,38 @@
+{
+  "analysis_version": "shared-deletion-copy-plan-to-final-owner-deletion-workflow-audit-0.1",
+  "checks": {
+    "physical_shared_deletion_native_evidence_passes": true,
+    "current_capture_and_artifact_hashes_match": true,
+    "current_entire_body_and_evidence_registered": true,
+    "compiled_copy_replays_accepted_wav_byte_exact": true,
+    "compiled_copy_replays_hardware_native_body": true,
+    "copy_plan_source_and_compiler_checks_match": true,
+    "copy_replay_reports_remain_software_only": true,
+    "unshared_removal_model_checks_pass": true,
+    "removal_model_equals_independent_prior_hardware_body": true,
+    "next_control_registered_before_capture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "physical_native_evidence_sha256": "0c569ac566c465413c6e13f45aed978f5b7c96e3ce73da736982bbe570bd989b",
+  "copy_plan_sha256": "1860f05894b01f3957fa84d129dae9b7883d8c4f4495ebe20039d68ad7a24538",
+  "copy_compile_report_sha256": "a6ad352d3187cf1015f9eeda5d54a6fdc101bda2e68b5773917e4bdd34766306",
+  "compiled_copy_restore_sha256": "63591a69d9a32b24e675b6af7fc2276b6fd572eff8c6c7ae79b61f0ef574a315",
+  "next_registration_sha256": "69337bcf1b91ba3bf2216363e1da2d493c144df9d20734a079d1468c0808115a",
+  "validation": {
+    "targeted_tests": "26 passed in3.73s",
+    "full_suite": "588 passed in77.35s",
+    "ruff_check": "passed",
+    "ruff_format": "164 Python files formatted"
+  },
+  "shared_deletion_capture_sample_rate_hz": 44100,
+  "shared_deletion_capture_peak_per_channel": [
+    0.167572021484375,
+    0.16143798828125
+  ],
+  "shared_deletion_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Physically delete only Sound7, capture before audition, check Sound6/Sound7 empty and other sounds/Pattern1 unchanged"
+}

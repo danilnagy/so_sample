@@ -1,0 +1,64 @@
+{
+  "analysis_version": "first-generated-cross-drum-slice-copy-0.1",
+  "control_evidence_sha256": "bc09691f76d4e8dea55378f2a0231120ef33a411e1fe79a2b0abdc889786dcb0",
+  "source_capture_sha256": "9b2e9d4400a521063629dcf73d1de74972b7deb1a8b956d67f76c0787cf4be1b",
+  "source_artifact_sha256": "ada11958edae1e16d526c23e52db943c560244cf753ca4f3dcdc91e469bf4ca5",
+  "restore_wav_sha256": "c48df513fb8565296957b620361f1c09ce48724911bdfb70d0d459bec2415d1f",
+  "expected_body_sha256": "846092c09285da128689493f2a332fef8e0c22ac93fb710f9e0b994661fe971e",
+  "source_reference_hex": "00000000d007000000",
+  "expected_reference_hex": "cd0f00009d17000000",
+  "source_sound_slot": 9,
+  "source_slice_key": 2,
+  "destination_sound_slot": 10,
+  "destination_slice_key": 1,
+  "selector_id": 24,
+  "start_field": 4045,
+  "endpoint_field": 6045,
+  "owner_id": 0,
+  "reference_byte_changes": [
+    {
+      "offset": 0,
+      "old": 0,
+      "new": 205
+    },
+    {
+      "offset": 1,
+      "old": 0,
+      "new": 15
+    },
+    {
+      "offset": 4,
+      "old": 208,
+      "new": 157
+    },
+    {
+      "offset": 5,
+      "old": 7,
+      "new": 23
+    }
+  ],
+  "changed_plain_packet_indices": [
+    415
+  ],
+  "checks": {
+    "genuine_physical_copy_body_reproduced": true,
+    "genuine_before_copy_body_reproduced_by_inverse": true,
+    "only_existing_destination_packet_changed": true,
+    "only_expected_reference_bytes_changed": true,
+    "exact_source_reference_copied": true,
+    "no_packet_or_body_resizing": true,
+    "candidate_inverse_reproduces_source": true,
+    "all_compiler_roundtrip_checks": true,
+    "source_artifact_preserved": true,
+    "source_capture_preserved": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "compiler_report": "compile-report.json",
+  "limits": [
+    "The physical key1 copy is observed; this generated nonzero-start key2 copy needs its own restore and recapture",
+    "Only existing Sound9/keys1 or2 to Sound10/key1 are supported under literal neighboring-reference guards",
+    "No sample allocation, arbitrary destination/key mapping, Sound10 endpoint editing or audio preview is enabled",
+    "Tone/filter rendering and endpoint inclusivity remain unmeasured"
+  ]
+}

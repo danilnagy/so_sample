@@ -1,0 +1,8 @@
+{
+  "uploaded_file": "po_33_61.wav",
+  "analysis_capture_file": "capture.wav",
+  "uploaded_sha256": "9cf4096737c90537a7dacbb0d4f4436c8730958468a7313eee97e73d5ed0c387",
+  "analysis_capture_sha256": "9cf4096737c90537a7dacbb0d4f4436c8730958468a7313eee97e73d5ed0c387",
+  "original_preserved": true,
+  "reason": "Sole WAV in the requested experiment folder; user reports done; preserve original name and supply identical canonical path"
+}

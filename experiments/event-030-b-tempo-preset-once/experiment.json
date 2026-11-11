@@ -1,0 +1,26 @@
+{
+  "experiment_id": "event-030-b-tempo-preset-once",
+  "capture_status": "validated_single_byte_tempo_120_to140_association",
+  "baseline_id": "event-029-b-delete-imported-unshared-sound7",
+  "expected_file": "capture.wav",
+  "registration": "tempo-registration.json",
+  "requested_observations": [
+    "BPM displayed before",
+    "BPM displayed after one short BPM button press"
+  ],
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off and both knobs unchanged",
+    "Note the displayed BPM, tap BPM once without holding or turning a knob, note the new displayed BPM",
+    "Before playback or audition save a complete stereo capture.wav at established reduced levels with one second trailing silence",
+    "Report the displayed BPM before and after with the capture"
+  ],
+  "source_sha256": "cedcdd9b97674b93b3ebb623e3ebd2744ddb4f188a9fd899eac9407903efc1ef",
+  "analysis": "derived/analysis-001",
+  "native_results": "native-tempo-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_before_bpm": 120,
+  "display_after_bpm": 140,
+  "project": "../exported-tempo-140-001/project.json",
+  "tempo_writer_enabled": false
+}

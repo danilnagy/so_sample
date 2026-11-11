@@ -1,0 +1,24 @@
+{
+  "experiment_id": "event-027-b-delete-unshared-sound7",
+  "capture_status": "validated_unshared_buffer_removal_and_full_prior_state_return",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-026-b-delete-shared-sound6",
+  "preregistration": "../unshared-sound7-deletion-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "29658f8c814a9babcfe859316a8e9313e4a6e1ef31f7d7ce2d4d4c2e56e55412",
+  "planned_actions": [
+    "Keep Pattern1 stopped/write off, both knobs and all other sounds/notes/settings unchanged",
+    "Select Sound7 with sound+key7, release both, then hold record and press sound to delete only Sound7",
+    "Return to Sound8/TONE stopped/write off, save a complete dump here as capture.wav before audition/playback at established reduced levels with one second trailing silence",
+    "After saving check Sound6/key1 and Sound7/key1 empty/silent, Sound4/Sound5 and Pattern1 unchanged, return to Sound8/TONE and report checks/deviations"
+  ],
+  "analysis": "derived/analysis-001",
+  "results": "../unshared-sound7-deletion-results-001.json",
+  "native_evidence": "native-evidence-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-unshared-sound7-deletion-001/project.json"
+}

@@ -1,0 +1,26 @@
+{
+  "validation_id": "clock-recovery-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-clock-recovery-001 -p no:cacheprovider",
+    "passed": 233,
+    "failed": 0,
+    "duration_seconds": 48.6,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 87
+  },
+  "clock_corpus": "amplitude-clock-corpus-001.json",
+  "existing_source_matched_frames_passed": 24,
+  "existing_validated_packet_checks": 56090,
+  "alternating_key_hardware_validation": "edited-note-key-001/hardware-validation.json",
+  "alternating_key_hardware_verified": true,
+  "new_recapture_packet_checks": 511,
+  "target_data_used_for_decoding": false,
+  "initial_crossing_failure_preserved": "edited-note-key-001/initial-decode-failure.json",
+  "clock_artifact_direct_encoding_rejected": true,
+  "next_control": "event-009-b-melodic-key16/experiment.json"
+}

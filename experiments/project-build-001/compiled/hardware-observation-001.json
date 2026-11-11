@@ -1,0 +1,39 @@
+{
+  "analysis_version": "project-build-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a project built from a spec (two imports, two patterns with locks and an effect, chain, tempo, swing) and its measured tempo, swing and melody",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "build_report_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "project_plays_as_built",
+  "hypotheses": {
+    "tempo_100": true,
+    "swing_4": true,
+    "melody_first_note": true
+  },
+  "kick_interval_s": 0.5997052154195011,
+  "hat_offset_s": 0.17653061224489974,
+  "melody_db": {
+    "step1": 28.600651531020095,
+    "step2": -4.2381634475390175
+  },
+  "decision_sha256": "e24792a362be26a7b1c1e8e899d8546d4dc8e2c2fea2f200f55653be3f768a85",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "ae5b452848d5361b56d7b008e95af48c1a2cb31398bcebf8cec3483543b04131",
+  "session_answers": [
+    {
+      "question": "Did it play like a small beat with a melody, and did the second half sound filtered? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One small project; the builder's software checks, not this test, cover other specs"
+  ]
+}

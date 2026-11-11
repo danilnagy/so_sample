@@ -1,0 +1,42 @@
+{
+  "analysis_version": "mixed-footer-global7-native-and-section-order-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact mixed footer6666666677777777 target received; user confirms first high then low; all other state preserved including global7",
+  "checks": {
+    "source_is_exact_clear_body": true,
+    "source_and_actual_native_valid": true,
+    "footer_is_fixed_6666666677777777": true,
+    "only_eight_Pattern1_footer_bytes_changed": true,
+    "global131_preserved_at7": true,
+    "target_body_matches_registration": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_and_artifact_pins_match": true,
+    "capture_not_clipped": true,
+    "export_hashes_and_native_body_exact": true
+  },
+  "capture_sha256": "c8e5e2058e33d76f1e887e44876925115bfb0e802f01b1c0955dc24d3ac3211d",
+  "artifact_sha256": "bcc05abe64584fdb240a465f013315444b8f0d9b9d46936f0ffadd3679809640",
+  "artifact_path": "experiments/edited-pattern1-FX6-7-halves-global7-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "301798098c33bd2d73186e673239467242f33116507acf5f4beb235e50e0c7b1",
+  "registration_sha256": "5d01607013e18ec11569e3c1e5f4ebcafff686ef58b2c284f6704055f3a9b608",
+  "native_results_sha256": "a934dbd19c33122b49f7db7d4a9cedc2f108e952bcccbfa45ef996d24fb9cc21",
+  "manual_observation_sha256": "086fe8344cc61dcae5d68fea1ed3409be3ae95eee128c53949331f81a05e20d7",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.1522216796875,
+      0.147491455078125
+    ]
+  },
+  "reported_section_order": [
+    "high",
+    "low"
+  ],
+  "per_step_nibble_order_confirmed": false,
+  "mixed_FX_writer_enabled": false,
+  "limits": [
+    "User confirms section order; no instrumented step boundary or measured octave ratio supplied",
+    "Both nibble orders project identical halves; adjacent-step order remains unresolved",
+    "Public effect plans remain uniform-only; this physical observation records research scope at creation"
+  ]
+}

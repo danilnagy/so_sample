@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "baseline-003",
+  "created_at": null,
+  "baseline_id": "baseline-001",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Additional recording requested for unchanged-state comparison; detailed state not documented"
+  },
+  "changes": [],
+  "actions": [
+    "User supplied additional recording after request for unchanged device state"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "0a785dd49b36ad4a415820d5deab46877ed493044a4e0fa5774f11e42ae2d6a5",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown",
+    "status": "received_and_inspected"
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "state_equivalence": {
+    "status": "requested_unchanged_state",
+    "notes": "No detailed action log or separate restore result supplied for this recording."
+  }
+}

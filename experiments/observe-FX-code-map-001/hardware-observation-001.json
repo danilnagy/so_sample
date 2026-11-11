@@ -1,0 +1,123 @@
+{
+  "analysis_version": "FX-code-map-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Device-recorded effect codes read from one backup",
+  "checks": {
+    "capture_pin_matches": true,
+    "artifact_pin_matches": true,
+    "export_checks_pass": true
+  },
+  "classification": "key_minus_one",
+  "map_key_to_code": {
+    "1": "0",
+    "2": "1",
+    "3": "2",
+    "4": "3",
+    "5": "4",
+    "6": "5",
+    "7": "6",
+    "8": "7",
+    "9": "8",
+    "10": "9",
+    "11": "A",
+    "12": "B",
+    "13": "C",
+    "14": "D",
+    "15": "E"
+  },
+  "all_patterns_uniform_16_steps": true,
+  "result_sha256": "43e4ff533ef27b6f2da864acdcf501088d3195aecfe89076e4737c72d2781eef",
+  "capture_sha256": "16a0e3f35a32aab64228a3d5b282a07040232efd76fb14e434e9ee15cda492c6",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "e04181c4c4e3f558a45224617e5b009039ad68ef86b7387af1d652225f710c91",
+  "other_record_changes": [
+    {
+      "offset": 0,
+      "old": 0,
+      "new": 15
+    },
+    {
+      "offset": 131,
+      "old": 7,
+      "new": 13,
+      "name_hint": "opaque_global131"
+    },
+    {
+      "offset": 132,
+      "old": 0,
+      "new": 4
+    },
+    {
+      "offset": 133,
+      "old": 0,
+      "new": 15
+    },
+    {
+      "offset": 134,
+      "old": 0,
+      "new": 11
+    },
+    {
+      "offset": 135,
+      "old": 0,
+      "new": 12
+    },
+    {
+      "offset": 136,
+      "old": 0,
+      "new": 6
+    },
+    {
+      "offset": 137,
+      "old": 0,
+      "new": 8
+    },
+    {
+      "offset": 138,
+      "old": 0,
+      "new": 6
+    },
+    {
+      "offset": 139,
+      "old": 0,
+      "new": 5
+    },
+    {
+      "offset": 140,
+      "old": 0,
+      "new": 5
+    },
+    {
+      "offset": 141,
+      "old": 0,
+      "new": 4
+    },
+    {
+      "offset": 142,
+      "old": 0,
+      "new": 5
+    },
+    {
+      "offset": 143,
+      "old": 0,
+      "new": 4
+    },
+    {
+      "offset": 144,
+      "old": 0,
+      "new": 5
+    },
+    {
+      "offset": 145,
+      "old": 0,
+      "new": 4
+    },
+    {
+      "offset": 146,
+      "old": 0,
+      "new": 4
+    }
+  ],
+  "hypothesis_not_tested": "Second 0x7d5c record: byte 0 = selected pattern (0-based); bytes 131..146 = one byte per pattern 1..16, possibly the step where playback last stopped",
+  "general_per_step_FX_writer_enabled": false
+}

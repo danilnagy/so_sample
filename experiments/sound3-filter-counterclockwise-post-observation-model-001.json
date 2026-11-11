@@ -1,0 +1,9 @@
+{
+  "analysis_version": "FILTER-counterclockwise-contiguous1-post-observation-literal-model-0.1",
+  "hardware_verified": false,
+  "registered_before_counterclockwise_data": false,
+  "rule": "Set second-primary high4 bits to1 and third-primary low2 bits to0 in all16 Sound3/P1 cells; retain all other bits",
+  "complete_body_reproduced": true,
+  "native_results_sha256": "c54a70f0b2754e4d0577e5f95fb2c5eb3917bbb78ebd7336710b6f73c95a9461",
+  "filter_bit_order_or_scale_confirmed": false
+}

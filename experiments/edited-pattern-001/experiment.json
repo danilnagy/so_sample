@@ -1,0 +1,54 @@
+{
+  "experiment_id": "edited-pattern-001",
+  "capture_status": "received_and_validated_full_native_body_after_playback",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-007-b-melodic",
+  "source_backup_sha256": "4b5a18904460369f01abd6dce3d621b8264ccc1aee9f5b8d273e3c1db79dcb5f",
+  "restore_wav": "../generated-pattern-four-001/restore-four-notes.wav",
+  "restore_wav_sha256": "222f4ff71d54fcda6175d64adef00d67c64f452eee43cc3041bb5f49e677ca26",
+  "expected_encoded_body_sha256": "8b39765df9a4caf71e509f54b0c49e2f0d95ad1a60f4effa46daa687259d0104",
+  "expected_pattern": 1,
+  "expected_populated_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "expected_note": {
+    "sound_slot": 3,
+    "melodic_keyboard_key": 1,
+    "encoding": "Unchanged opaque primary and auxiliary rows copied from the hardware-created Step1"
+  },
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "expected_changes_from_source": "Only Pattern1 data packets4/5/6/7; all samples and other patterns preserved",
+  "planned_actions": [
+    "Restore generated four-note backup using previously validated playback path and settings",
+    "Before playing the pattern, retain Pattern1, TONE, write off, stopped playback and Sound8 selected; record full stereo backup",
+    "After the backup is saved, play Pattern1 for one or two loops; report four evenly spaced short Sound3 tones per loop; stop playback"
+  ],
+  "actual_actions": [
+    "User explicitly confirms that generated restore and expected four-note playback worked",
+    "The expected recapture file was not present when this reply was reviewed; capture timing is not independently known",
+    "User supplied the requested backup and explicitly reports recording it after pattern playback"
+  ],
+  "source_sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+  "purpose": "First hardware test of opaque complete-step cloning with preserved source note fields and sample data",
+  "hardware_verified": true,
+  "restore_and_playback_reported_success": true,
+  "native_recapture_verified": true,
+  "verification_status": "Successful user-reported restore and playback, plus exact full native body recapture match; no playback differences observed",
+  "hardware_observation": "hardware-observation.json",
+  "limits": [
+    "No note pitch, gate, volume, sample selection or auxiliary bitfield is changed or decoded; only complete row copies are tested."
+  ],
+  "capture_timing": "after_pattern_playback_user_reported",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "hardware": "hardware-validation.json",
+    "capture_context": "capture-context.json",
+    "packets": "derived/analysis-001/packet-report.json",
+    "patterns": "derived/analysis-001/pattern-report.json",
+    "waveform": "../waveform-probes-023.json"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "experiment_id": "event-005-b-joint",
+  "capture_status": "received_and_validated_corrected_upload",
+  "expected_file": "capture.wav",
+  "hardware_intent": "Pattern 1 contains only two added kicks: Step 1 and Step 2, Sound 9, slice 1",
+  "starting_state": "Step 1 kick was last recorded in event-004-b-repeat; current hardware state must be checked by user",
+  "planned_action": "Keep existing Step 1 kick and add identical kick at Step 2; exit write mode; keep playback stopped; record full stereo dump",
+  "actions_observed": [
+    "User supplied recording for requested joint-state experiment, then corrected an initially mistaken file upload; exact button-level actions were not supplied."
+  ],
+  "actual_device_settings": null,
+  "source_sha256": "8ae9bae0ec743a18c0de55b482f8c7aecc9125f15c52b0c88a8b765a3cd78d2d",
+  "decoder_threshold_profile": 0.0063,
+  "recording_gain_profile": "same validated reduced recording level",
+  "controls": {
+    "empty": "../event-002-a",
+    "step1": "../event-001-b",
+    "step1_repeat": "../event-004-b-repeat",
+    "step2": "../event-002-b"
+  },
+  "preregistration": "../joint-predictions-001.json",
+  "no_fresh_A_or_A_return_requested": true,
+  "limits": [
+    "Transport hypotheses only; no state field is writable",
+    "A joint-state mismatch does not establish encryption"
+  ],
+  "inspection_report": "inspection-corrected.json",
+  "symbol_artifact": "derived/analysis-002/capture.symbols.npz",
+  "prediction_results": "../joint-results-002.json",
+  "waveform_validation": "../waveform-probes-006.json",
+  "hypothesis_result": "All twelve preregistered view/model/channel predictions disagree in the shared span; no model is promoted to a payload decoder.",
+  "upload_correction": {
+    "initial_source_sha256": "b36cd797d11e808b4481b32aef0808c978905d52466c8f2599018445a107490d",
+    "initial_source_identical_to": "event-004-b-repeat/capture.wav",
+    "initial_results": "../joint-results-001.json",
+    "initial_results_eligible": false,
+    "reason": "User confirmed wrong file and replaced it; original initial-upload waveform remains available in event-004-b-repeat."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "experiment_id": "event-015-b-copy-sound1-to-drum9",
+  "capture_status": "received_and_validated_first_drum_copy",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-quarter-window-001",
+  "baseline_capture": "../edited-quarter-window-001/capture-retry.wav",
+  "baseline_source_sha256": "fa3c5f47983a46b1ce1a7f533eff7df94f6cdefed13efe7bafa6b5f190ff86cb",
+  "baseline_artifact": "../edited-quarter-window-001/derived/analysis-003/capture.symbols.npz",
+  "baseline_artifact_sha256": "80b41e0fc6db479df2e61bd40cfc4988f70a6a0ecfb39de6c68cc736cd3b3eb3",
+  "baseline_body_sha256": "933eca1c290f4fcde0718ddf87e342c3f5b059bbb96d070f98fd6145c342699a",
+  "preregistration": "../drum9-copy-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "With Pattern1 selected, playback stopped and write off, select Sound1 with sound+1",
+    "Hold write+sound, press9, then release to copy Sound1 into empty drumSound9",
+    "Reselect Sound8/TONE without moving either knob or changing recording settings",
+    "Before audition or pattern playback, record a full stereo backup as capture.wav here",
+    "Leave the copied sound present; report deviations without further edits"
+  ],
+  "actual_actions": [
+    "User reports done after the requested Sound1-to-Sound9 copy and full backup; no deviation reported"
+  ],
+  "source_sha256": "9bafc45f6e12bae5cdcb1c80f60b57248cd3003144946dbf2b670cd20be7a34c",
+  "purpose": "Test melodic-to-drum copy and localize the first drum slice records with all existing state preserved",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "validation_report": "../drum9-copy-results-001.json",
+  "control_passed": true,
+  "hypothesis_checks": {
+    "sound9_uses_selector_block8_to23": true,
+    "only_first_destination_group_populated": false,
+    "all16_destination_groups_populated": true,
+    "populated_destination_records_are_owner0_references": true
+  },
+  "observed_packet_count": 527,
+  "observed_frame_end_byte": 89620,
+  "drum_writer_enabled": false,
+  "drum_preview_enabled": false,
+  "current_project_export": "../exported-drum9-copy-001/project.json",
+  "workflow_validation": "../drum-copy-workflow-validation-001.json"
+}

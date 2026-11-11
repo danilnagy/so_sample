@@ -1,0 +1,31 @@
+{
+  "experiment_id": "event-022-b-record-independent-sound4",
+  "capture_status": "validated_second_independent_owner_recording",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-021-b-drum10-step9-key2",
+  "baseline_capture": "../event-021-b-drum10-step9-key2/capture.wav",
+  "baseline_source_sha256": "853d6d6249a98538ab4200b1067d216636b6e796044dc01bf1993c2b80061114",
+  "baseline_artifact": "../event-021-b-drum10-step9-key2/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "d0f24bc36ccf232dd4c8e9fba5bc9afb8b46b9d997f5c81efd5c856d75cec9f9",
+  "baseline_body_sha256": "1ca3319167b14624b25a4bddf88abf4263040d2491269cb20ef188841d2955fb",
+  "preregistration": "../sound4-allocation-predictions-001.json",
+  "source_tone": "../calibration-second-owner-001/tone-1000hz-0p5s.wav",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "Keep Pattern1, stopped/write off and both knobs unchanged; use existing computer-output to PO33 line-input sampling path",
+    "Hold record+key4, play the complete half-second1000Hz calibration file, release after it ends to record into empty Sound4; do not copy any existing sound",
+    "Select Sound8/TONE stopped/write off; reconnect the proven stereo backup recording path",
+    "Before further audition or pattern playback record a complete stereo PCM16/44100Hz backup here; allow the entire longer dump and a second of trailing silence",
+    "After saving select Sound4/TONE write off and tap key1 to confirm a clear tone; return to Sound8/TONE and report outcome and deviations"
+  ],
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false,
+    "specific_tone_classification_not_separately_supplied": true
+  },
+  "source_sha256": "06ba6534872d05e434485b031f458b1289d6acaa37dc59ac2482b3a8eb1c25a0",
+  "purpose": "Observe independent sample allocation, ownership and possible bookkeeping without replacing the existing shared tone or changing patterns",
+  "results": "../sound4-allocation-results-001.json",
+  "sample_analysis": "../sound4-sample-analysis-001.json",
+  "analysis": "derived/analysis-001"
+}

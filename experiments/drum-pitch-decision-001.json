@@ -1,0 +1,38 @@
+{
+  "analysis_version": "drum-pitch-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "26f1541bce44fcf58777e7f5124652c26c5d1c63f204be7e0cf1f0adc0b48c7d",
+  "native_results_sha256": "34f590ec9ea4b7cd5813860a0f27948c05d03239fa5c06c9fbc30c15ac49a1fa",
+  "frequency_results_sha256": "235bdf8a4898e36027b8583c51da7ec68c65c525e51e5ccc4e9b14606e90bbd7",
+  "step1_hz": 799.9176572556244,
+  "measured_cents": {
+    "1": 0.0,
+    "2": 197.11192983155206,
+    "3": 397.10755227139157,
+    "4": 597.3797045602,
+    "5": 797.8040498191087,
+    "6": 997.9881470996901,
+    "7": 1198.3038384915594,
+    "8": -199.6159082682616,
+    "9": -400.577062914248,
+    "10": -600.2219255500953,
+    "11": -800.2235357703935,
+    "12": -1000.6034418168562,
+    "13": -1200.0886224746469,
+    "14": 96.9062994114412,
+    "15": -100.1142759739285,
+    "16": -3.4111561247042403
+  },
+  "model_support": {
+    "semitone_per_code": true,
+    "no_transposition": false
+  },
+  "classification": "semitone_per_code",
+  "absolute": {
+    "step1_cents_vs_stored": -0.17820237464858613,
+    "stored_rate": true
+  },
+  "limits": [
+    "One drum sound, key 1, volume 36; pitch codes 1..25 sampled at 13 values"
+  ]
+}

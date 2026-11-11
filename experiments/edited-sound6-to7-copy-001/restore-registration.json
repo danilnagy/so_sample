@@ -1,0 +1,36 @@
+{
+  "analysis_version": "first-generated-sound6-to7-reference-copy-registration-0.1",
+  "registered_before_capture": true,
+  "source_acceptance_sha256": "c15f44e41c3a57cb4bd60a7b996906145835086aeac6044ae75f18a636547bb2",
+  "software_validation_sha256": "5cb3cbde0a96b77c7a1f70cbc81c53b80e2522dd2b64a8f99d7292996e518b61",
+  "source_artifact": "experiments/edited-sound6-create-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "51c4a7acb42a604c825c1b4d3ccc581cf0c17d28c96470c0bbc58c2ecfea90ba",
+  "source_capture_sha256": "e21b04a85d73f1f53cb4cbefb1926c17c7f42ab4272c6cce09037a307a8cc776",
+  "source_body_sha256": "258bb81fdb8085ab24f7be4f841ed7ea577a69943ee34a4beccabffd5d9e44f6",
+  "edited_artifact_sha256": "407c9ea0154bac0d0cd20e7364ab10028053de6a8513a23a7c96bfa9a3a851d3",
+  "restore_wav_sha256": "63591a69d9a32b24e675b6af7fc2276b6fd572eff8c6c7ae79b61f0ef574a315",
+  "expected_body_sha256": "c90ffd7eb2a11d83ab0492ba6b4920d6b0c77342b6c09eb35e9b28a1f7b14a00",
+  "expected_sound7_reference_hex": "00000000c078000005",
+  "expected_sound6_payload_sha256": "97a6bf5e34e747bc61b8e78948de418affc7bb7cfc38c3011fb6a1110a728360",
+  "expected_packet_count": 952,
+  "expected_frame_end_byte": 190229,
+  "expected_change": {
+    "source_sound": 6,
+    "destination_sound": 7,
+    "selector_id": 6,
+    "destination_before": "empty",
+    "owner_id": 5,
+    "new_reference_bytes": 9
+  },
+  "expected_auditions": {
+    "sound6_and7_key1": "Both play the same lower500Hz tone lasting about1.32seconds at nominal key1 pitch",
+    "sound4_and5_key1": "Existing tones unchanged",
+    "pattern1": "Previous alternating pitches and drum notes unchanged"
+  },
+  "limits": [
+    "This isolated probe inserts only the observed source header as a reference in existing empty Sound7, retaining owner5 under Sound6",
+    "No full backing buffer is duplicated and all unrelated packets remain exact",
+    "Only the reconstruction pair Sound4-to5 and candidate Sound6-to7 are supported; source must be unshared and destination empty",
+    "Hardware acceptance is pending; shared-owner deletion, replacement, arbitrary copying and slot parameters remain unsupported"
+  ]
+}

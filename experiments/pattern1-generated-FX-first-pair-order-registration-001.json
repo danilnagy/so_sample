@@ -1,0 +1,77 @@
+{
+  "analysis_version": "first-pair-FX-nibble-order-and-first-tone-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_both_native_and_playback_captures": true,
+  "source_artifact": "experiments/edited-pattern1-FX6-7-halves-global7-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "bcc05abe64584fdb240a465f013315444b8f0d9b9d46936f0ffadd3679809640",
+  "source_capture": "experiments/edited-pattern1-FX6-7-halves-global7-001/capture.wav",
+  "source_capture_sha256": "c8e5e2058e33d76f1e887e44876925115bfb0e802f01b1c0955dc24d3ac3211d",
+  "source_observation": "experiments/edited-pattern1-FX6-7-halves-global7-001/hardware-observation-001.json",
+  "source_observation_sha256": "7fe4a80f6ab4b7c173ac0758e8cddda26f07e9d128d6b4a5709d7a909224fb21",
+  "expected_capture_sequence": [
+    {
+      "leg": "a",
+      "experiment_id": "edited-pattern1-FX-F6-first-pair-001",
+      "expected_footer_hex": "f6ffffffffffffff",
+      "expected_body_sha256": "93b7135678ba383f5c18c32d90c7d5c6f277d2872b4307f85321d41d64d15e6b",
+      "edited_artifact_sha256": "c7e1ee8c1a9fab5d9cfde328020f30c80f4d60eedbc1496a31313ee6d4259e45",
+      "restore_wav_sha256": "1373674df9df109ef6326ca3dd90f0cc67f2215d523e1a7ed254bb0c00fb1fa1",
+      "software_validation_sha256": "380a6a8ebab2fb5cb5405fdde71742dfc6e1f57f2a8533cd57d509924030d28d"
+    },
+    {
+      "leg": "b",
+      "experiment_id": "edited-pattern1-FX-6F-first-pair-001",
+      "expected_footer_hex": "6fffffffffffffff",
+      "expected_body_sha256": "a16872e153dd2fd3dfce98bc47a8aed085113b537658aabf92fc4719e385716b",
+      "edited_artifact_sha256": "ffe461ca4264d43cb0195ab9d2df42fcb3208a656e79431aca7219d84da31ec0",
+      "restore_wav_sha256": "f27e0ac46056433bda287165107a15f6ada580a90f3b6f493768efe59d0ca434",
+      "software_validation_sha256": "db10e0a03b8f0cdd5fa56d02a2d216668e9169af19ca484509bec18537948f62"
+    }
+  ],
+  "audio_parameters": {
+    "band_hz": [
+      150.0,
+      3500.0
+    ],
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "anchor_peak_fraction": 0.005,
+    "anchor_minimum_region_seconds": 0.02,
+    "maximum_first_onset_anchor_delay_seconds": 0.025,
+    "minimum_band_rms": 0.001,
+    "minimum_region_seconds": 0.06,
+    "minimum_leading_silence_seconds": 0.3,
+    "first_onset_search_end_seconds": 5.0,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.14
+    ],
+    "frequency_search_hz": [
+      400.0,
+      3000.0
+    ],
+    "fft_grid_max_spacing_hz": 0.25,
+    "fft_peak_refine_halfwidth_hz": 1.0,
+    "minimum_fit_explained_variance": 0.9,
+    "maximum_threshold_frequency_relative_spread": 0.005,
+    "stereo_frequency_relative_tolerance": 0.005,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "octave_ratio_relative_tolerance": 0.01
+  },
+  "audio_method_script_sha256": "36d401ca136ec592fcaeecf7af4d2c360b3b639c8dca4cdf5728750af16f0501",
+  "frequency_fit_helper_sha256": "7e0d3874ef537f7dc2a56103c0dbbfa85190f4e989882386dbcf6b25eba61d51",
+  "low_nibble_first_hypothesis": "A first pair is up/none, B none/up; first-tone frequency A/B near2",
+  "high_nibble_first_hypothesis": "A first pair is none/up, B up/none; first-tone frequency A/B near0.5",
+  "limits": [
+    "First PLAY must start from the restored stopped Pattern1 state; begin audio recording before PLAY so first tone is preserved",
+    "First audible tone must correspond to the same initial event in both restores; frequency fit quality alone cannot establish that association",
+    "One first byte differs; all remaining fourteen effect nibbles areF and every nonfooter byte including global7 is exact",
+    "Identical method for both recordings: broad fixed band/search, first qualifying tone only, three thresholds and both channels; never skip a failed first region to fit a later note",
+    "Both full native targets must pass before interpreting audio; six ratios near2 or0.5 support separate local hypotheses; other results stay inconclusive",
+    "No method retuning after new data, all-pattern generalization, full effect enum or general per-step writer"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "analysis_version": "nonuniform-interior-to-source-bound-generated-gain-pair-workflow-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "all_physical_interior_field_scope_and_return_checks_pass": true,
+    "uniform_middle_failure_retained": true,
+    "simple_enable_pair_alternative_refuted": true,
+    "uniform_quarter_reference_independently_verified": true,
+    "source_capture_artifact_and_observation_pins_match": true,
+    "manual_loudness_order_not_replaced_by_UI_number": true,
+    "opposite_gain_directions_declared_before_pair_data": true,
+    "fixed_gain_method_pins_pair_before_both_audio_captures": true,
+    "original_interior_report_pinned_and_not_refitted": true,
+    "no_public_volume_writer_or_proven_gain_curve": true,
+    "raw21_complete_waveform_and_preservation_checks_pass": true,
+    "raw21_files_match_frozen_registration": true,
+    "raw21_software_remains_unverified_and_physical_data_pending": true,
+    "raw18_complete_waveform_and_preservation_checks_pass": true,
+    "raw18_files_match_frozen_registration": true,
+    "raw18_software_remains_unverified_and_physical_data_pending": true
+  },
+  "interior_results_sha256": "97e61b40cd3f6273ddaa5fec754cbfc4bdfc008d45f739b1cd8926d844cd6c2f",
+  "pair_registration_sha256": "5379853f556bc31d982a7197893b7a0104899d32d351f259f3bcb97a202988f8",
+  "gain_method_sha256": "f33793227ce402ada428cd40415cbf1225e5cf5f930940aaa844a8ff4e4f50e7",
+  "validation": {
+    "affected_tests_passed": 15,
+    "affected_test_seconds": 2.01,
+    "ruff_check_passed": true,
+    "formatted_python_files": 232,
+    "prior_full_suite_before_research_changes": {
+      "passed": 790,
+      "seconds": 90.07
+    },
+    "production_writer_changes_this_turn": false
+  },
+  "implementation_sha256": {
+    "scripts/prepare_generated_sound3_volume18_pair.py": "3cb4c49cef6a3faf9b1ce0afdb8c3026733781f061f9c81d40371b4dd771c93c",
+    "scripts/check_generated_sound3_volume18_restore.py": "fee4e31f861bc581165a32f03c32dfa829920e88212f06259ed78224ee991d2a",
+    "scripts/sound3_volume_gain_analysis.py": "94718a5b28da0734e0e7ee8d2e39a4d1626867408b5e7e547f0940ff554ac23f",
+    "scripts/check_generated_sound3_volume18_gain.py": "d18c264413590cfbe574e76dea8ba2723d6277b8831309ccbd6df47348eed1f7",
+    "tests/test_generated_sound3_volume18.py": "0334e588545c565f334be2a3e906b08e033ab720f73a71db381dcd6e79fecbeb"
+  },
+  "limits": [
+    "Reference21 must be verified before dependent candidate18 physical work",
+    "Recorded middle remains nonuniform; no passing retest fabricated",
+    "No numeric UI scale,gain curve or public volume writer inferred from software"
+  ]
+}

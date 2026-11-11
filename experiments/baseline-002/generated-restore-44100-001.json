@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "generated-restore-44100-001",
+  "baseline_id": "baseline-002",
+  "artifact_path": "derived/roundtrip-44100-001/restore.wav",
+  "artifact_sha256": "99dc23b9ec3973b8f29cf093efa9eae791704f4de01f571cf03185f2164f2378",
+  "source_capture_sha256": "9edafa3485c9d621a588e54ae9939015c878986c294f1a41d6e2789cde2379df",
+  "software_roundtrip": {
+    "status": "passed",
+    "symbols_per_channel": 1970367,
+    "changed_symbols": 0,
+    "tail_symbols": 0
+  },
+  "hardware_restore": {
+    "status": "rejected",
+    "observations": [
+      "User reports generated WAV failed to restore using the same process as working original baselines.",
+      "User retried an original baseline immediately afterward and it restored successfully.",
+      "Receive display/error and playback level details were not supplied."
+    ],
+    "playback_device": null,
+    "os_volume": null,
+    "interface_level": null,
+    "sample_checks": null,
+    "drum_slice_checks": null,
+    "pattern_checks": null,
+    "settings_checks": null,
+    "actions_during_checks": [],
+    "recapture_path": "../reconstructed-001/capture.wav",
+    "recapture_sha256": null,
+    "evidence_source": "user_report"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "analysis_version": "native-melodic-step1-check-0.1",
+  "registration_sha256": "66bf8af9d6d9b67c4a978388cdd33fbc2c8f23225bc5efee811d77d4e92e88e9",
+  "baseline_source_sha256": "94b9b95f3468f4781d52542756cb858479a2a4cd3969826ad31658479919312d",
+  "capture_sha256": "4b5a18904460369f01abd6dce3d621b8264ccc1aee9f5b8d273e3c1db79dcb5f",
+  "artifact_sha256": "9540f2726708cf334abff0e7bdbe9dad95977bcfabc28588735b60413e1172df",
+  "checks": {
+    "native_packets_and_crc": true,
+    "exact_body_reencode": true,
+    "packet_count": true,
+    "frame_end_byte": true,
+    "sound_data": true,
+    "other_patterns": true,
+    "all_other_plain_packets": true,
+    "pattern1_change": true,
+    "primary_locality": true,
+    "auxiliary_locality": true,
+    "footer": true
+  },
+  "passed": true,
+  "changed_plain_packet_indices": [
+    4,
+    7
+  ],
+  "pattern1_byte_changes": [
+    {
+      "offset": 6,
+      "old": 0,
+      "new": 13
+    },
+    {
+      "offset": 7,
+      "old": 0,
+      "new": 248
+    },
+    {
+      "offset": 8,
+      "old": 0,
+      "new": 131
+    },
+    {
+      "offset": 770,
+      "old": 0,
+      "new": 240
+    }
+  ],
+  "step1_primary_hex": "0000000000000df883000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "step1_auxiliary_hex": "0000f000000000000000000000000000",
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "c5a4889ed680aa756c0a04f2df92bd194319f79a6de1603a20558976043e67a9",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "user_report": "User replied done to the requested single melodic note protocol and supplied this capture; no deviation reported.",
+  "hardware_pattern_edit_verified": false,
+  "limits": [
+    "This is a hardware-created note control, not a generated pattern restore.",
+    "Exact key presses were not independently observed; raw fields are not decoded into pitch, volume or duration."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "event-001-b",
+  "series_id": "event-001",
+  "stage": "add_event",
+  "created_at": null,
+  "baseline_id": "event-001-a",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Planned controlled single-event experiment; actual observations pending",
+    "selected_pattern": null,
+    "selected_sound": null,
+    "selected_slice_key": null,
+    "playing": null,
+    "write_mode": null,
+    "tempo_bpm": null,
+    "swing": null,
+    "pattern_sequence": null
+  },
+  "proposed_event": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "target_status": "confirmed_by_user",
+  "planned_capture_state": {
+    "selected_pattern": 1,
+    "selected_sound": 9,
+    "selected_slice_key": 1,
+    "playing": false,
+    "write_mode": false
+  },
+  "changes": [
+    {
+      "status": "reported_experiment_stage",
+      "action": "add_trigger",
+      "event": {
+        "pattern": 1,
+        "step": 1,
+        "sound_slot": 9,
+        "drum_slice_key": 1
+      }
+    }
+  ],
+  "planned_actions": [
+    "Enter write mode; add only the proposed event at the previously empty step",
+    "Exit write mode; keep selected pattern/sound/slice, tempo, chain and parameters unchanged",
+    "Record untouched B transfer without playing the pattern or making other edits"
+  ],
+  "actions": [
+    "User supplied recording in the requested add_event stage folder"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "1a08cc0bb65f9d32104b79dd1a3be9c9a97c58c31ad3a47dd58644e256d504a1",
+    "status": "received_and_inspected",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown"
+  },
+  "planned_recording": {
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "level": "same reduced level as reconstructed-002",
+    "decoder_threshold": 0.0063
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "target_confirmation": {
+    "evidence_source": "user_report",
+    "pattern": 1,
+    "pattern_empty": true,
+    "sound_slot": 9,
+    "drum_slice_key": 1,
+    "sound_description": "recognizable kick"
+  },
+  "action_log_note": "Exact button sequence and full UI state not supplied; planned protocol is documented separately."
+}

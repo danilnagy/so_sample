@@ -1,0 +1,9 @@
+{
+  "user_report": "done, i heard the high pass filter applied until I could no longer hear the sample. the display showed the bottom bar starting at full around the midpoint and then removing segements toward the right",
+  "user_described_filter_type": "high_pass",
+  "audible_endpoint": "sample_no_longer_audible_to_user",
+  "display_description": "bottom bar starting at full around the midpoint and then removing segements toward the right",
+  "numeric_display_value": null,
+  "interpretation": "User describes increasing high-pass effect to an inaudible sample and qualitative bar movement; no measured digital silence, cutoff frequency or numeric UI code inferred",
+  "capture_sha256": "4d9d2867e58d85608a013b73ca9c6218b1a945c3f7e55492680b6b58139676f7"
+}

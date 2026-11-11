@@ -1,0 +1,41 @@
+{
+  "policy": "Fixed exploratory thresholds; no target body or field inputs",
+  "attempts": [
+    {
+      "threshold": 0.015,
+      "status": "packet_failure",
+      "error": "Packet checksum differs at wire byte4095, tag0x81fd",
+      "symbol_counts": [
+        180376,
+        180225
+      ]
+    },
+    {
+      "threshold": 0.03,
+      "status": "packet_failure",
+      "error": "Packet checksum differs at wire byte4095, tag0x40fe",
+      "symbol_counts": [
+        180050,
+        179830
+      ]
+    },
+    {
+      "threshold": 0.06,
+      "status": "packet_failure",
+      "error": "Packet checksum differs at wire byte4095, tag0x89ed",
+      "symbol_counts": [
+        178908,
+        178535
+      ]
+    },
+    {
+      "threshold": 0.1,
+      "status": "packet_failure",
+      "error": "Packet checksum differs at wire byte4095, tag0x68e1",
+      "symbol_counts": [
+        178028,
+        177729
+      ]
+    }
+  ]
+}

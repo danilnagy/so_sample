@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed",
+  "context": "Response to generated shrink restore, Sound4/key1 shorter higher tone, retained Sound5/key1 and unchanged Pattern1 checks",
+  "requested_restore_and_audition_checks_confirmed": true,
+  "capture_sha256": "4a11f64a99e10c2a6d49bcd3a1e4c4c5a2cc43ab481d1b884e396921b34fb3c5",
+  "limits": [
+    "Audition confirmation is a user report; exact native recapture checks are separate"
+  ]
+}

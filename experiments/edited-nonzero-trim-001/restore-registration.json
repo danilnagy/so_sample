@@ -1,0 +1,48 @@
+{
+  "experiment_id": "edited-nonzero-trim-001",
+  "capture_status": "awaiting_generated_fixed_start_endpoint_restore_and_recapture",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-013-b-sound3-start-min",
+  "source_backup_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+  "source_artifact": "../event-013-b-sound3-start-min/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3b6eb02794d58a4a08094dd53ace16147a03e5f61696adbf72864d2dc2d79b90",
+  "restore_wav": "../generated-nonzero-trim-001/restore-sound3-window.wav",
+  "restore_wav_sha256": "06b311337489a1176c80bc27172b343dc649ec2bd4c6880ad0d967470527949f",
+  "generated_artifact": "../generated-nonzero-trim-001/edited.symbols.npz",
+  "expected_encoded_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+  "expected_sound3_header_hex": "a17a0000e199000000",
+  "expected_start_field": 31393,
+  "expected_endpoint_field": 39393,
+  "expected_changed_plain_packet_indices": [
+    375
+  ],
+  "expected_sound3_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 16,
+      "new": 225
+    },
+    {
+      "offset": 5,
+      "old": 123,
+      "new": 153
+    }
+  ],
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "planned_actions": [
+    "Restore the generated fixed-start Sound3 window using the proven stereo playback path and levels",
+    "Before audition or pattern playback, select Sound8/TONE, write off and stopped playback; record a full stereo backup",
+    "After saving, select Sound3 with write off, tap keyboard key1 and confirm a clearly audible brief tone instead of the previous minimum click",
+    "Select Sound8 and tap keyboard key1 to confirm the longer tone is retained; return to Sound8/TONE and leave playback stopped"
+  ],
+  "actual_actions": null,
+  "source_sha256": null,
+  "hardware_verified": false,
+  "purpose": "Test generated endpoint editing at the independently observed fixed nonzero start with samples and patterns preserved",
+  "limits": [
+    "Only the fixed Sound3 start31393 and observed endpoint interval31504..65535 are supported",
+    "The original exact minimum predictions remain failed; general minimum rules and endpoint inclusivity remain unresolved",
+    "The separate preview uses a declared half-open selection policy and does not apply keyboard pitch"
+  ]
+}

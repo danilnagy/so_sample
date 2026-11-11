@@ -1,0 +1,14 @@
+{
+  "analysis_version": "key16-initial-crossing-failure-0.1",
+  "source_sha256": "a0c0bea848c7c1bf56349e695edaae8740cd465d6df044512972d6c45ed5c0f1",
+  "decoder_version": "sign-crossings-0.2",
+  "threshold": 0.0063,
+  "artifact": "derived/analysis-001/capture.symbols.npz",
+  "artifact_sha256": "446aacb15ca3a4ade8c32381016af0a5ee52c433b3e4ae3048f0e83b65dedbb2",
+  "native_packet_decode_passed": false,
+  "failure": "Packet checksum differs at wire byte17902, tag0xc498",
+  "independent_waveform_report": "../waveform-probes-026.json",
+  "first_left_clock_disagreement": 35973,
+  "resolution": "Measured-clock analysis002 validates all511 packets without target data or checksum repair; analysis001 is preserved",
+  "recovery_report": "derived/analysis-002/clock-report.json"
+}

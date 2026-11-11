@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed I can still hear the pattern",
+  "audible_pattern": true,
+  "subjective_between_endpoint_comparison_confirmed": false,
+  "numeric_display_value": null,
+  "capture_sha256": "07fc245fbe6924aede97e49eaf6cd920014515cf8324e440d51435fc36b812d6",
+  "playback_sha256": "ded0b52bbba2d6686dde9488f985987fb8c1e0f625b70643971d9d080739ef3a",
+  "interpretation": "Explicit audible-pattern confirmation, without inventing a subjective resonance ranking; between-endpoint component measurements are separate evidence"
+}

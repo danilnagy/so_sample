@@ -1,0 +1,202 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "loop-test-backup-001",
+  "started_at": "2026-10-10T12:41:07+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 1,
+      "name": "Microphone (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    },
+    "output": {
+      "index": 5,
+      "name": "Headphones (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    }
+  },
+  "config": {
+    "input_device": "HD USB Audio",
+    "output_device": "HD USB Audio",
+    "hostapi": "MME",
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 1.0
+  },
+  "inputs": {
+    "restore": null,
+    "expected_artifact": null,
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": null,
+  "backups": [
+    {
+      "file": "backup-03.wav",
+      "sha256": "ef50c74bb361886ac67fb05d64711cd499be5d342eb82be72b1d8b33afbb9f9f",
+      "recorded_at": "2026-10-10T12:41:50+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1874250,
+        "duration_seconds": 42.5,
+        "signal_start_seconds": 0.8,
+        "signal_end_seconds": 41.0,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.00079345703125,
+        "signal_peaks_per_channel": [
+          0.103118896484375,
+          0.093841552734375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.013631325840967897,
+          "lag_ms": 8.707482993197278,
+          "channels": "left_from_right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-03-analysis",
+      "analysis": {
+        "capture_sha256": "ef50c74bb361886ac67fb05d64711cd499be5d342eb82be72b1d8b33afbb9f9f",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 42.5,
+          "peaks_per_channel": [
+            0.103118896484375,
+            0.093841552734375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x774b"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x774b"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false,
+        "feedback_echo": {
+          "coefficient": 0.015113588978495395,
+          "lag_ms": 8.707482993197278,
+          "channels": "left_from_right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        }
+      }
+    },
+    {
+      "file": "backup-04.wav",
+      "sha256": "101efdbd67d59abef9137968c8ad7946d72b9e0c8ff6da2c5a827b68068b9a03",
+      "recorded_at": "2026-10-10T12:42:18+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 685755,
+        "duration_seconds": 15.55,
+        "signal_start_seconds": 2.0,
+        "signal_end_seconds": 14.05,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.000762939453125,
+        "signal_peaks_per_channel": [
+          0.23895263671875,
+          0.218048095703125
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": -0.022870803072615294,
+          "lag_ms": 66.59863945578232,
+          "channels": "left_from_right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-04-analysis",
+      "analysis": {
+        "capture_sha256": "101efdbd67d59abef9137968c8ad7946d72b9e0c8ff6da2c5a827b68068b9a03",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 15.55,
+          "peaks_per_channel": [
+            0.23895263671875,
+            0.218048095703125
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x774b"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured quarter signs disagree with the observed quadrature model"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false,
+        "feedback_echo": {
+          "coefficient": 0.022159256382406456,
+          "lag_ms": 66.55328798185941,
+          "channels": "right_from_left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        }
+      }
+    }
+  ],
+  "accepted": null,
+  "playback": null,
+  "observations": [],
+  "interrupted": true,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-10-10T12:43:11+00:00",
+  "result": {
+    "backup_decoded": false,
+    "native_target_exact": null,
+    "capture": null,
+    "analysis": null,
+    "playback": null
+  }
+}

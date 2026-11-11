@@ -1,0 +1,93 @@
+{
+  "analysis_version": "FILTER-B-counterclockwise-location-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_B_minimum_capture": true,
+  "experiment_id": "event-062-a-sound3-filter-B-lock-down",
+  "source_artifact": "experiments/edited-sound3-filter63-center-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "f1a4c8f9d6cced7ef422c1daff8ff32128931cd3fa89497145854e8e14c1227c",
+  "source_capture": "experiments/edited-sound3-filter63-center-001/capture.wav",
+  "source_capture_sha256": "6710446b4c514e05e60063376adf14c00a0d69a22b478bfd740bc46a1da368c1",
+  "source_body_sha256": "8f80a398ac7130f1802ba865985cb3f7174f9f0129af1182eb6d5da450d6a341",
+  "source_observation_sha256": "43b4c4a1dd588e514c5abeb51672fa3ed383367b496a5a11f7a92a89e924ef4f",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "B_candidate_masks": {
+    "third_primary_bits2_to6": 124,
+    "third_primary_bits2_to7": 252
+  },
+  "expected_pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "expected_volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "expected_filter_A_values": [
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63
+  ],
+  "expected_B_endpoint_code": null,
+  "recorded_action": "Pattern1/Sound3/FILTER playback, hold WRITE and move only B fully counterclockwise over5 seconds; hold3 seconds stationary, release/stop/write off, capture full backup; A stays untouched",
+  "official_control_source": "https://teenage.engineering/guides/po-33/en",
+  "limits": [
+    "B resonance location is a new hypothesis; third-primary bits2..6 and bits2..7 remain separate masks; bit7 is not declared a resonance bit or event flag",
+    "Endpoint code and entire resulting body are unknown; no zero, uniformity, range, audible difference or numeric display reading is predicted",
+    "A remains physically at center and stored63; coupled A changes are retained as a broader FILTER snapshot, not rescued as strict B support",
+    "Current baseline precedes the already confirmed ordinary playback; any unrelated change is retained without attributing it solely to B",
+    "Raw5/6-bit projections, bit7 and ramps remain literal; neutral cutoff may have no audible response to B",
+    "Existing public filter guards remain unchanged and reject unfamiliar third-byte contexts; no resonance writer is enabled"
+  ]
+}

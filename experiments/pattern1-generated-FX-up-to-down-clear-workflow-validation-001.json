@@ -1,0 +1,25 @@
+{
+  "analysis_version": "accepted-generated-footer6-to-fixed7-F-return-handoff-audit-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "source_actual_native_and_hardware_observation_pass": true,
+    "source_identity_and_native_evidence_bound": true,
+    "literal_audible_report_scope_preserved": true,
+    "software_and_registration_remain_hardware_unverified": true,
+    "no_global_meaning_nibble_order_or_public_writer_claimed": true,
+    "down_native_waveform_and_source_exact": true,
+    "down_pins_and_before_data_registration": true,
+    "clear_native_waveform_and_source_exact": true,
+    "clear_pins_and_before_data_registration": true,
+    "whole_clear_target_equals_independent_baseline": true
+  },
+  "source_observation_sha256": "8077ff3b7c3865969255233f275cd0066e58320fa49f647517953b4d26ea35d1",
+  "next_registration_sha256": "7bce866aeb341b02a90201fe58274238a817d2db0402957e6734ced6d760737c",
+  "validation": {
+    "focused_tests_passed": 74,
+    "focused_tests_seconds": 5.08,
+    "last_full_production_tests_passed": 1137,
+    "production_changed_since_full_suite": false,
+    "ruff_new_research_files_passed": true
+  }
+}

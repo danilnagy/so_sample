@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-drum-kit-import-001",
+  "capture_status": "validated_exact_native_drum_kit_import_new_kit_key_k",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../drum-kit-import-registration-001.json",
+  "hits": "../drum-kit-hits-001",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the pattern now play a falling run of 16 beeps that get longer? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "playback_measurements": "playback-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-drum-kit-import-001/project.json"
+}

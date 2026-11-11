@@ -1,0 +1,41 @@
+{
+  "analysis_version": "generated-FX-return-global7-native-and-listening-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact generated clear target received and user confirms normal playback and entire independent clear baseline returns",
+  "checks": {
+    "source_is_exact_fixed_leg_body": true,
+    "source_and_actual_native_valid": true,
+    "all16_footer_nibbles_match_fixed_leg": true,
+    "only_eight_Pattern1_footer_bytes_changed": true,
+    "global131_stays7": true,
+    "entire_fixed_leg_target_body_exact": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "entire_independent_clear_body_and_packets_return": true,
+    "capture_artifact_registration_pins_match": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_native_body_exact": true
+  },
+  "capture_sha256": "777278b7b1bd35e4b57099c3e6067ee954a62cdd857333a3ccde6096e078c55a",
+  "artifact_sha256": "b39689d48976f14a4b9c7f1d83b465028462f576471db5e4ae8049702c52b062",
+  "artifact_path": "experiments/edited-pattern1-FX15-global7-clear-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+  "registration_sha256": "7bce866aeb341b02a90201fe58274238a817d2db0402957e6734ced6d760737c",
+  "native_results_sha256": "fda3b44d5817aeaf4b48079629486d0a140fd87613ee6bc52f1bd54d559c3049",
+  "manual_observation_sha256": "284d76beedbd107d6d3cbc978cf35ab9cd9539771a72a23e5b54c54ab0eaf76d",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.15472412109375,
+      0.14947509765625
+    ]
+  },
+  "reported_effect_for_leg": "normal",
+  "global_byte_after": 7,
+  "measured_frequency_ratio_confirmed": false,
+  "global_role_or_nibble_order_confirmed": false,
+  "FX_writer_enabled": false,
+  "limits": [
+    "Uniform fixed targets only; no full enum, per-step order or global semantics established",
+    "Software reports and registrations remain unchanged; this observation records scope at creation"
+  ]
+}

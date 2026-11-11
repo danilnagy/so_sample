@@ -1,0 +1,56 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "46db3731bb4dadb8a69fb69bf6e04d1b7f2fecf8ea8a7899cd6dbbb33c8a2114",
+  "source_body_sha256": "e2271a071ab930157b409e8091747c397ada135f11680fb8bc760db8842abdfc",
+  "operations": [
+    {
+      "operation": "set_drum_notes",
+      "pattern": 1,
+      "sound": 10,
+      "keys": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "template_sound": 9
+    },
+    {
+      "operation": "set_drum_notes",
+      "pattern": 1,
+      "sound": 9,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "template_sound": 10
+    }
+  ]
+}

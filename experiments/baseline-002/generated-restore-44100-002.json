@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "generated-restore-44100-002",
+  "baseline_id": "baseline-002",
+  "encoder_version": "staggered-quadrature-0.2",
+  "artifact_path": "derived/roundtrip-44100-002/restore.wav",
+  "artifact_sha256": "778e05040b81ee451bb0692b9765181c4a7ad30fb49904495bccc048ef4232f7",
+  "source_capture_sha256": "9edafa3485c9d621a588e54ae9939015c878986c294f1a41d6e2789cde2379df",
+  "supersedes": "generated-restore-44100-001.json",
+  "changes": [
+    "Measured nominal carrier changed from 7800 to 7812.5 Hz.",
+    "Whole-phase late-cycle crossfade replaced with staggered quadrature component sign updates."
+  ],
+  "software_roundtrip": {
+    "status": "passed",
+    "symbols_per_channel": 1970367,
+    "changed_symbols": 0,
+    "tail_symbols": 0
+  },
+  "waveform_evidence": "../reconstruction-waveform-audit.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "User reports the corrected candidate successfully restored to their PO-33.",
+      "Detailed sample, drum slice, pattern and settings checks have not yet been reported.",
+      "Post-restore recording is still pending."
+    ],
+    "playback_device": null,
+    "os_volume": null,
+    "interface_level": null,
+    "sample_checks": null,
+    "drum_slice_checks": null,
+    "pattern_checks": null,
+    "settings_checks": null,
+    "actions_during_checks": [
+      "Possible pattern-sequence change; exact actions unknown."
+    ],
+    "recapture_path": "../reconstructed-001/capture.wav",
+    "recapture_sha256": "45d3ac95193c239e4cfadbae65e832a040506a81a200ff4472d7084255354c79",
+    "evidence_source": "user_report",
+    "recapture_validation": {
+      "status": "different",
+      "report": "../reconstructed-001/comparison-summary.json",
+      "note": "Different symbols do not yet establish which musical state or transport transformation changed.",
+      "interpretation": "Confounded by possible pattern-sequence change and lower recording level. Does not isolate synthesis failure or unchanged-state preservation."
+    },
+    "behavioral_check": {
+      "status": "user_reported_match",
+      "observations": [
+        "User reports everything sounded fine; no exhaustive slot-by-slot checklist supplied."
+      ]
+    },
+    "controlled_recapture_validation": {
+      "status": "matched",
+      "recapture_path": "../reconstructed-002/capture.wav",
+      "recapture_sha256": "8f8107745ecd6473e1df17c7c5660b56352ca155de6631c98f70b4a623ba5c80",
+      "report": "../reconstructed-002/comparison-summary.json",
+      "threshold": 0.0063,
+      "symbols_per_channel": 1970367,
+      "changed_symbols": 0,
+      "tail_symbols": 0,
+      "alignment_shift": 0
+    }
+  }
+}

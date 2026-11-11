@@ -1,0 +1,183 @@
+{
+  "analysis_version": "calibrated-nonzero-trim-candidate-0.1",
+  "source_capture_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+  "source_artifact_sha256": "3b6eb02794d58a4a08094dd53ace16147a03e5f61696adbf72864d2dc2d79b90",
+  "restore_wav_sha256": "06b311337489a1176c80bc27172b343dc649ec2bd4c6880ad0d967470527949f",
+  "expected_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+  "expected_sound3_header_hex": "a17a0000e199000000",
+  "start_field": 31393,
+  "endpoint_field": 39393,
+  "sound3_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 16,
+      "new": 225
+    },
+    {
+      "offset": 5,
+      "old": 123,
+      "new": 153
+    }
+  ],
+  "changed_plain_packet_indices": [
+    375
+  ],
+  "checks": {
+    "genuine_forward_and_inverse_endpoint_bodies_reproduced": true,
+    "only_expected_endpoint_bytes_changed": true,
+    "only_sound3_reference_packet_changed": true,
+    "start_and_owner_preserved": true,
+    "backing_owner_preserved": true,
+    "all_patterns_preserved": true,
+    "source_artifact_preserved": true,
+    "packet_count": true,
+    "packet_tags_and_lengths": true,
+    "candidate_inverse_reproduces_source": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true,
+    "preview_code_count": true,
+    "preview_frame_count": true
+  },
+  "passed": true,
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 178923,
+    "active_frames": 1009991,
+    "silence_frames_each_end": 4410,
+    "frames": 1018811,
+    "duration_seconds": 23.102290249433107,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 178923,
+        "reconstructed_symbols": 178923,
+        "overlap_symbols": 178923,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 178923,
+        "reconstructed_symbols": 178923,
+        "overlap_symbols": 178923,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "packets_after_wav_decode": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "a17a0000e199000000",
+        "payload_sha256": "8a113acf85fcc02b1a4c2a4d2a430c00fa55b79f5f62359b8558d0f7bdc9d4dc"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "preview": {
+    "sound_slot": 3,
+    "backing_sound_id": 0,
+    "backing_bytes": 65536,
+    "start_field": 31393,
+    "endpoint_field": 39393,
+    "preview_code_count": 8000,
+    "sample_rate_hz_nominal": 23437.5,
+    "preview_selection_policy": "Explicit half-open[start,end); exact device endpoint inclusivity unresolved",
+    "interpretation": "Experimental local endpoint interpretation supported by physical reference changes and user-reported minimum click",
+    "export_sample_rate_hz": 48000,
+    "export_frames": 16384,
+    "nominal_duration_seconds": 0.3413333333333333
+  },
+  "hardware_verified": false,
+  "limits": [
+    "Only fixed Sound3 start31393 with owner0 and the observed31504..65535 endpoint interval is supported",
+    "The endpoint interpretation is locally supported by physical changes and the reported minimum burst; this generated edit needs its own hardware test",
+    "Preview uses explicit half-open[start,end); hardware endpoint inclusivity and a general minimum rule remain unresolved",
+    "The failed exact minimum predictions remain retained; no resizing, allocation, other starts or sound slots are enabled"
+  ]
+}

@@ -1,0 +1,1883 @@
+{
+  "analysis_version": "registered-volume-pair-tone-amplitude-measurement-0.1",
+  "hardware_verified": false,
+  "source_sha256": "25769e865ab9e2e5ef313f041ee932117b3cd2617639550e10d3a6225c9c9c93",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 1398957,
+  "duration_seconds": 31.722380952380952,
+  "peaks_per_channel": [
+    0.07708740234375,
+    0.07373046875
+  ],
+  "parameters": {
+    "center_frequency_hz": 500.65,
+    "half_bandwidth_hz": 15.0,
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "minimum_region_seconds": 0.06,
+    "edge_margin_seconds": 0.03,
+    "minimum_band_rms": 0.001,
+    "maximum_gap_residual_seconds": 0.006,
+    "threshold_gap_spread_seconds": 0.004,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "nominal_loop_seconds": 2.4,
+    "loop_tolerance_seconds": 0.005,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.18
+    ],
+    "frequency_search_relative_halfwidth": 0.005,
+    "minimum_fit_explained_variance": 0.9,
+    "minimum_complete_cycles": 3,
+    "minimum_relative_amplitude_difference": 0.03,
+    "unchanged_pitch_relative_tolerance": 0.005,
+    "unchanged_loop_seconds_tolerance": 0.005
+  },
+  "channels": {
+    "left": {
+      "band_peak_rms": 0.014829087580877543,
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "onsets_seconds": [
+            1.6537414965986394,
+            3.2467120181405895,
+            4.054399092970521,
+            5.64734693877551,
+            6.4536734693877555,
+            8.048027210884353,
+            8.854285714285714,
+            10.44859410430839,
+            11.254897959183673,
+            12.84780045351474,
+            13.655510204081633,
+            15.248503401360544,
+            16.0562358276644,
+            17.64925170068027,
+            18.456938775510203,
+            20.049931972789114,
+            20.85764172335601,
+            22.450657596371883,
+            23.256961451247165,
+            24.851337868480726,
+            25.657709750566895,
+            27.252086167800453,
+            28.05845804988662,
+            29.65281179138322
+          ],
+          "loop_median_seconds": 2.4006802721088434,
+          "short_gap_median_seconds": 0.8063718820861681,
+          "long_gap_median_seconds": 1.5930158730158723,
+          "steady_tone_fits": [
+            {
+              "onset_index": 0,
+              "fit_span_frames": [
+                76458,
+                80868
+              ],
+              "frequency_hz": 500.535795519051,
+              "fundamental_amplitude": 0.019827935091969204,
+              "explained_variance": 0.9999876445349093,
+              "fit_success": true
+            },
+            {
+              "onset_index": 1,
+              "fit_span_frames": [
+                146708,
+                151118
+              ],
+              "frequency_hz": 500.52297895951443,
+              "fundamental_amplitude": 0.01980386831994157,
+              "explained_variance": 0.9999889861049702,
+              "fit_success": true
+            },
+            {
+              "onset_index": 2,
+              "fit_span_frames": [
+                182327,
+                186737
+              ],
+              "frequency_hz": 500.55223525644453,
+              "fundamental_amplitude": 0.019790803528779332,
+              "explained_variance": 0.999986374100296,
+              "fit_success": true
+            },
+            {
+              "onset_index": 3,
+              "fit_span_frames": [
+                252576,
+                256986
+              ],
+              "frequency_hz": 500.516305533616,
+              "fundamental_amplitude": 0.019790338417269418,
+              "explained_variance": 0.9999862161355119,
+              "fit_success": true
+            },
+            {
+              "onset_index": 4,
+              "fit_span_frames": [
+                288135,
+                292545
+              ],
+              "frequency_hz": 500.50311055887875,
+              "fundamental_amplitude": 0.019784075250479174,
+              "explained_variance": 0.9999867446336146,
+              "fit_success": true
+            },
+            {
+              "onset_index": 5,
+              "fit_span_frames": [
+                358446,
+                362856
+              ],
+              "frequency_hz": 500.55873133593445,
+              "fundamental_amplitude": 0.019805206317556598,
+              "explained_variance": 0.9999827791570179,
+              "fit_success": true
+            },
+            {
+              "onset_index": 6,
+              "fit_span_frames": [
+                394002,
+                398412
+              ],
+              "frequency_hz": 500.53438546516946,
+              "fundamental_amplitude": 0.01978676922466594,
+              "explained_variance": 0.9999873244081551,
+              "fit_success": true
+            },
+            {
+              "onset_index": 7,
+              "fit_span_frames": [
+                464311,
+                468721
+              ],
+              "frequency_hz": 500.524269443886,
+              "fundamental_amplitude": 0.019791123865820208,
+              "explained_variance": 0.9999879200610973,
+              "fit_success": true
+            },
+            {
+              "onset_index": 8,
+              "fit_span_frames": [
+                499869,
+                504279
+              ],
+              "frequency_hz": 500.53845133247586,
+              "fundamental_amplitude": 0.01978671690747179,
+              "explained_variance": 0.9999856896722819,
+              "fit_success": true
+            },
+            {
+              "onset_index": 9,
+              "fit_span_frames": [
+                570116,
+                574526
+              ],
+              "frequency_hz": 500.53676648792737,
+              "fundamental_amplitude": 0.01979790873304958,
+              "explained_variance": 0.9999853577686012,
+              "fit_success": true
+            },
+            {
+              "onset_index": 10,
+              "fit_span_frames": [
+                605736,
+                610146
+              ],
+              "frequency_hz": 500.5089155634091,
+              "fundamental_amplitude": 0.019787228797012824,
+              "explained_variance": 0.9999873443068851,
+              "fit_success": true
+            },
+            {
+              "onset_index": 11,
+              "fit_span_frames": [
+                675987,
+                680397
+              ],
+              "frequency_hz": 500.51997850865115,
+              "fundamental_amplitude": 0.019788970721553112,
+              "explained_variance": 0.9999884604070379,
+              "fit_success": true
+            },
+            {
+              "onset_index": 12,
+              "fit_span_frames": [
+                711608,
+                716018
+              ],
+              "frequency_hz": 500.511102660519,
+              "fundamental_amplitude": 0.019785728143578138,
+              "explained_variance": 0.9999860131354362,
+              "fit_success": true
+            },
+            {
+              "onset_index": 13,
+              "fit_span_frames": [
+                781860,
+                786270
+              ],
+              "frequency_hz": 500.5160650782504,
+              "fundamental_amplitude": 0.019791727824479577,
+              "explained_variance": 0.9999859145407552,
+              "fit_success": true
+            },
+            {
+              "onset_index": 14,
+              "fit_span_frames": [
+                817479,
+                821889
+              ],
+              "frequency_hz": 500.5176445444688,
+              "fundamental_amplitude": 0.01978000170140187,
+              "explained_variance": 0.999987912266514,
+              "fit_success": true
+            },
+            {
+              "onset_index": 15,
+              "fit_span_frames": [
+                887730,
+                892140
+              ],
+              "frequency_hz": 500.51380992335834,
+              "fundamental_amplitude": 0.019796519743668566,
+              "explained_variance": 0.999987249246586,
+              "fit_success": true
+            },
+            {
+              "onset_index": 16,
+              "fit_span_frames": [
+                923350,
+                927760
+              ],
+              "frequency_hz": 500.5229586631527,
+              "fundamental_amplitude": 0.01978176666571031,
+              "explained_variance": 0.9999892295636941,
+              "fit_success": true
+            },
+            {
+              "onset_index": 17,
+              "fit_span_frames": [
+                993602,
+                998012
+              ],
+              "frequency_hz": 500.5140175333217,
+              "fundamental_amplitude": 0.019794886648400456,
+              "explained_variance": 0.9999857267404495,
+              "fit_success": true
+            },
+            {
+              "onset_index": 18,
+              "fit_span_frames": [
+                1029160,
+                1033570
+              ],
+              "frequency_hz": 500.49352761121054,
+              "fundamental_amplitude": 0.01977969801691747,
+              "explained_variance": 0.9999853764498406,
+              "fit_success": true
+            },
+            {
+              "onset_index": 19,
+              "fit_span_frames": [
+                1099472,
+                1103882
+              ],
+              "frequency_hz": 500.51366589301404,
+              "fundamental_amplitude": 0.019796115434771656,
+              "explained_variance": 0.9999864555793134,
+              "fit_success": true
+            },
+            {
+              "onset_index": 20,
+              "fit_span_frames": [
+                1135033,
+                1139443
+              ],
+              "frequency_hz": 500.50674627642957,
+              "fundamental_amplitude": 0.01977918646918319,
+              "explained_variance": 0.9999850423339661,
+              "fit_success": true
+            },
+            {
+              "onset_index": 21,
+              "fit_span_frames": [
+                1205345,
+                1209755
+              ],
+              "frequency_hz": 500.522243411148,
+              "fundamental_amplitude": 0.019787366755435742,
+              "explained_variance": 0.9999880115763152,
+              "fit_success": true
+            },
+            {
+              "onset_index": 22,
+              "fit_span_frames": [
+                1240906,
+                1245316
+              ],
+              "frequency_hz": 500.4936274328663,
+              "fundamental_amplitude": 0.019783953167291927,
+              "explained_variance": 0.9999852861663169,
+              "fit_success": true
+            },
+            {
+              "onset_index": 23,
+              "fit_span_frames": [
+                1311217,
+                1315627
+              ],
+              "frequency_hz": 500.49742487075366,
+              "fundamental_amplitude": 0.019788372344977715,
+              "explained_variance": 0.9999859760193057,
+              "fit_success": true
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_amplitude": 0.01978867153326541,
+          "median_frequency_hz": 500.5169750390424,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "onsets_seconds": [
+            1.6578684807256236,
+            3.251269841269841,
+            4.058526077097506,
+            5.6518820861678005,
+            6.457800453514739,
+            8.052562358276644,
+            8.858412698412698,
+            10.45312925170068,
+            11.259024943310658,
+            12.85235827664399,
+            13.659637188208617,
+            15.253038548752835,
+            16.060362811791382,
+            17.653786848072563,
+            18.46108843537415,
+            20.054467120181407,
+            20.861768707482995,
+            22.45517006802721,
+            23.26108843537415,
+            24.855895691609977,
+            25.66183673469388,
+            27.256643990929707,
+            28.062585034013605,
+            29.657369614512472
+          ],
+          "loop_median_seconds": 2.4006802721088434,
+          "short_gap_median_seconds": 0.8059410430839016,
+          "long_gap_median_seconds": 1.5934126984127,
+          "steady_tone_fits": [
+            {
+              "onset_index": 0,
+              "fit_span_frames": [
+                76640,
+                81050
+              ],
+              "frequency_hz": 500.5353729132988,
+              "fundamental_amplitude": 0.01983626184721378,
+              "explained_variance": 0.9999912666922329,
+              "fit_success": true
+            },
+            {
+              "onset_index": 1,
+              "fit_span_frames": [
+                146909,
+                151319
+              ],
+              "frequency_hz": 500.522953166959,
+              "fundamental_amplitude": 0.019812946710306003,
+              "explained_variance": 0.9999926370409077,
+              "fit_success": true
+            },
+            {
+              "onset_index": 2,
+              "fit_span_frames": [
+                182509,
+                186919
+              ],
+              "frequency_hz": 500.5518268804979,
+              "fundamental_amplitude": 0.019799342658899426,
+              "explained_variance": 0.9999899400541202,
+              "fit_success": true
+            },
+            {
+              "onset_index": 3,
+              "fit_span_frames": [
+                252776,
+                257186
+              ],
+              "frequency_hz": 500.5169002245915,
+              "fundamental_amplitude": 0.01980002970203803,
+              "explained_variance": 0.9999903739830378,
+              "fit_success": true
+            },
+            {
+              "onset_index": 4,
+              "fit_span_frames": [
+                288317,
+                292727
+              ],
+              "frequency_hz": 500.5033383862369,
+              "fundamental_amplitude": 0.019792802247591064,
+              "explained_variance": 0.9999903474067945,
+              "fit_success": true
+            },
+            {
+              "onset_index": 5,
+              "fit_span_frames": [
+                358646,
+                363056
+              ],
+              "frequency_hz": 500.5599970777586,
+              "fundamental_amplitude": 0.019815194097254553,
+              "explained_variance": 0.9999875674636762,
+              "fit_success": true
+            },
+            {
+              "onset_index": 6,
+              "fit_span_frames": [
+                394184,
+                398594
+              ],
+              "frequency_hz": 500.53372465818666,
+              "fundamental_amplitude": 0.0197953826140173,
+              "explained_variance": 0.9999910432237827,
+              "fit_success": true
+            },
+            {
+              "onset_index": 7,
+              "fit_span_frames": [
+                464511,
+                468921
+              ],
+              "frequency_hz": 500.52360562633135,
+              "fundamental_amplitude": 0.019800575616692996,
+              "explained_variance": 0.9999913498171542,
+              "fit_success": true
+            },
+            {
+              "onset_index": 8,
+              "fit_span_frames": [
+                500051,
+                504461
+              ],
+              "frequency_hz": 500.53718748572425,
+              "fundamental_amplitude": 0.019794903376920796,
+              "explained_variance": 0.999989400473683,
+              "fit_success": true
+            },
+            {
+              "onset_index": 9,
+              "fit_span_frames": [
+                570317,
+                574727
+              ],
+              "frequency_hz": 500.5371917366581,
+              "fundamental_amplitude": 0.01980759451309621,
+              "explained_variance": 0.9999899446718751,
+              "fit_success": true
+            },
+            {
+              "onset_index": 10,
+              "fit_span_frames": [
+                605918,
+                610328
+              ],
+              "frequency_hz": 500.50887207477086,
+              "fundamental_amplitude": 0.019795185569733937,
+              "explained_variance": 0.9999905686625233,
+              "fit_success": true
+            },
+            {
+              "onset_index": 11,
+              "fit_span_frames": [
+                676187,
+                680597
+              ],
+              "frequency_hz": 500.51928043619324,
+              "fundamental_amplitude": 0.019798088394966815,
+              "explained_variance": 0.9999920443528647,
+              "fit_success": true
+            },
+            {
+              "onset_index": 12,
+              "fit_span_frames": [
+                711790,
+                716200
+              ],
+              "frequency_hz": 500.5114871239998,
+              "fundamental_amplitude": 0.01979408991211681,
+              "explained_variance": 0.9999891806023319,
+              "fit_success": true
+            },
+            {
+              "onset_index": 13,
+              "fit_span_frames": [
+                782060,
+                786470
+              ],
+              "frequency_hz": 500.5154909177641,
+              "fundamental_amplitude": 0.01980123843518225,
+              "explained_variance": 0.9999899103943003,
+              "fit_success": true
+            },
+            {
+              "onset_index": 14,
+              "fit_span_frames": [
+                817662,
+                822072
+              ],
+              "frequency_hz": 500.51779293582854,
+              "fundamental_amplitude": 0.019788405255190197,
+              "explained_variance": 0.9999910615468222,
+              "fit_success": true
+            },
+            {
+              "onset_index": 15,
+              "fit_span_frames": [
+                887930,
+                892340
+              ],
+              "frequency_hz": 500.51328087490344,
+              "fundamental_amplitude": 0.019805344280645783,
+              "explained_variance": 0.9999908423533796,
+              "fit_success": true
+            },
+            {
+              "onset_index": 16,
+              "fit_span_frames": [
+                923532,
+                927942
+              ],
+              "frequency_hz": 500.52270400467336,
+              "fundamental_amplitude": 0.01979015986901946,
+              "explained_variance": 0.9999921745375975,
+              "fit_success": true
+            },
+            {
+              "onset_index": 17,
+              "fit_span_frames": [
+                993801,
+                998211
+              ],
+              "frequency_hz": 500.5145790171403,
+              "fundamental_amplitude": 0.019804910021856276,
+              "explained_variance": 0.9999897414624969,
+              "fit_success": true
+            },
+            {
+              "onset_index": 18,
+              "fit_span_frames": [
+                1029342,
+                1033752
+              ],
+              "frequency_hz": 500.4927741845964,
+              "fundamental_amplitude": 0.019788209485198775,
+              "explained_variance": 0.9999892328511997,
+              "fit_success": true
+            },
+            {
+              "onset_index": 19,
+              "fit_span_frames": [
+                1099673,
+                1104083
+              ],
+              "frequency_hz": 500.5141939155906,
+              "fundamental_amplitude": 0.01980579452783346,
+              "explained_variance": 0.999990631812886,
+              "fit_success": true
+            },
+            {
+              "onset_index": 20,
+              "fit_span_frames": [
+                1135215,
+                1139625
+              ],
+              "frequency_hz": 500.5065460848425,
+              "fundamental_amplitude": 0.019788210214986533,
+              "explained_variance": 0.9999886184713149,
+              "fit_success": true
+            },
+            {
+              "onset_index": 21,
+              "fit_span_frames": [
+                1205546,
+                1209956
+              ],
+              "frequency_hz": 500.5226873946343,
+              "fundamental_amplitude": 0.019797403848360404,
+              "explained_variance": 0.9999917074911274,
+              "fit_success": true
+            },
+            {
+              "onset_index": 22,
+              "fit_span_frames": [
+                1241088,
+                1245498
+              ],
+              "frequency_hz": 500.49284793085786,
+              "fundamental_amplitude": 0.019792304190837676,
+              "explained_variance": 0.9999890454600918,
+              "fit_success": true
+            },
+            {
+              "onset_index": 23,
+              "fit_span_frames": [
+                1311418,
+                1315828
+              ],
+              "frequency_hz": 500.49758216287347,
+              "fundamental_amplitude": 0.019798936921543463,
+              "explained_variance": 0.9999903413621148,
+              "fit_success": true
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_amplitude": 0.01979851265825514,
+          "median_frequency_hz": 500.51734658021,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "onsets_seconds": [
+            1.6617233560090703,
+            3.254671201814059,
+            4.062380952380952,
+            5.655283446712018,
+            6.461655328798186,
+            8.0559410430839,
+            8.862267573696146,
+            10.456530612244897,
+            11.262857142857143,
+            12.855736961451248,
+            13.663469387755102,
+            15.256439909297052,
+            16.06419501133787,
+            17.65718820861678,
+            18.464920634920635,
+            20.057868480725624,
+            20.86562358276644,
+            22.458571428571428,
+            23.264943310657596,
+            24.859297052154194,
+            25.665691609977323,
+            27.260045351473924,
+            28.06641723356009,
+            29.66077097505669
+          ],
+          "loop_median_seconds": 2.400691609977324,
+          "short_gap_median_seconds": 0.8063945578231291,
+          "long_gap_median_seconds": 1.5929818594104308,
+          "steady_tone_fits": [
+            {
+              "onset_index": 0,
+              "fit_span_frames": [
+                76810,
+                81220
+              ],
+              "frequency_hz": 500.53511579107715,
+              "fundamental_amplitude": 0.019844105819238286,
+              "explained_variance": 0.9999945974732809,
+              "fit_success": true
+            },
+            {
+              "onset_index": 1,
+              "fit_span_frames": [
+                147059,
+                151469
+              ],
+              "frequency_hz": 500.5227537987167,
+              "fundamental_amplitude": 0.019819027369253624,
+              "explained_variance": 0.9999950226168,
+              "fit_success": true
+            },
+            {
+              "onset_index": 2,
+              "fit_span_frames": [
+                182679,
+                187089
+              ],
+              "frequency_hz": 500.5515930676812,
+              "fundamental_amplitude": 0.019807537329513805,
+              "explained_variance": 0.9999934972512579,
+              "fit_success": true
+            },
+            {
+              "onset_index": 3,
+              "fit_span_frames": [
+                252926,
+                257336
+              ],
+              "frequency_hz": 500.5172120302485,
+              "fundamental_amplitude": 0.019806599790708722,
+              "explained_variance": 0.9999932614080683,
+              "fit_success": true
+            },
+            {
+              "onset_index": 4,
+              "fit_span_frames": [
+                288487,
+                292897
+              ],
+              "frequency_hz": 500.50380183412926,
+              "fundamental_amplitude": 0.019801013827440997,
+              "explained_variance": 0.9999937233671248,
+              "fit_success": true
+            },
+            {
+              "onset_index": 5,
+              "fit_span_frames": [
+                358795,
+                363205
+              ],
+              "frequency_hz": 500.5605936582954,
+              "fundamental_amplitude": 0.019821652474673206,
+              "explained_variance": 0.9999908440883871,
+              "fit_success": true
+            },
+            {
+              "onset_index": 6,
+              "fit_span_frames": [
+                394354,
+                398764
+              ],
+              "frequency_hz": 500.5334723075402,
+              "fundamental_amplitude": 0.01980356274355415,
+              "explained_variance": 0.9999945380049213,
+              "fit_success": true
+            },
+            {
+              "onset_index": 7,
+              "fit_span_frames": [
+                464661,
+                469071
+              ],
+              "frequency_hz": 500.5228467778968,
+              "fundamental_amplitude": 0.019806863765978254,
+              "explained_variance": 0.9999938503900345,
+              "fit_success": true
+            },
+            {
+              "onset_index": 8,
+              "fit_span_frames": [
+                500220,
+                504630
+              ],
+              "frequency_hz": 500.5362221232533,
+              "fundamental_amplitude": 0.019802689965604938,
+              "explained_variance": 0.999993034706787,
+              "fit_success": true
+            },
+            {
+              "onset_index": 9,
+              "fit_span_frames": [
+                570466,
+                574876
+              ],
+              "frequency_hz": 500.53734500909957,
+              "fundamental_amplitude": 0.01981384598978386,
+              "explained_variance": 0.9999929486170133,
+              "fit_success": true
+            },
+            {
+              "onset_index": 10,
+              "fit_span_frames": [
+                606087,
+                610497
+              ],
+              "frequency_hz": 500.50913505314855,
+              "fundamental_amplitude": 0.019802614668752563,
+              "explained_variance": 0.9999937467232091,
+              "fit_success": true
+            },
+            {
+              "onset_index": 11,
+              "fit_span_frames": [
+                676337,
+                680747
+              ],
+              "frequency_hz": 500.51851331121696,
+              "fundamental_amplitude": 0.01980417539057004,
+              "explained_variance": 0.9999945700926438,
+              "fit_success": true
+            },
+            {
+              "onset_index": 12,
+              "fit_span_frames": [
+                711959,
+                716369
+              ],
+              "frequency_hz": 500.5119889557647,
+              "fundamental_amplitude": 0.019801937507793813,
+              "explained_variance": 0.9999924970172795,
+              "fit_success": true
+            },
+            {
+              "onset_index": 13,
+              "fit_span_frames": [
+                782210,
+                786620
+              ],
+              "frequency_hz": 500.5148023960097,
+              "fundamental_amplitude": 0.01980750327570843,
+              "explained_variance": 0.999992883361811,
+              "fit_success": true
+            },
+            {
+              "onset_index": 14,
+              "fit_span_frames": [
+                817831,
+                822241
+              ],
+              "frequency_hz": 500.51803915419435,
+              "fundamental_amplitude": 0.019796201561220785,
+              "explained_variance": 0.9999941188793365,
+              "fit_success": true
+            },
+            {
+              "onset_index": 15,
+              "fit_span_frames": [
+                888080,
+                892490
+              ],
+              "frequency_hz": 500.5125270266974,
+              "fundamental_amplitude": 0.019811042970308074,
+              "explained_variance": 0.9999934095062715,
+              "fit_success": true
+            },
+            {
+              "onset_index": 16,
+              "fit_span_frames": [
+                923702,
+                928112
+              ],
+              "frequency_hz": 500.5225986259381,
+              "fundamental_amplitude": 0.0197980986575158,
+              "explained_variance": 0.9999950025560264,
+              "fit_success": true
+            },
+            {
+              "onset_index": 17,
+              "fit_span_frames": [
+                993951,
+                998361
+              ],
+              "frequency_hz": 500.5146836661854,
+              "fundamental_amplitude": 0.019811683675884907,
+              "explained_variance": 0.9999925850466916,
+              "fit_success": true
+            },
+            {
+              "onset_index": 18,
+              "fit_span_frames": [
+                1029512,
+                1033922
+              ],
+              "frequency_hz": 500.4923357418042,
+              "fundamental_amplitude": 0.019796333363647816,
+              "explained_variance": 0.9999930606507411,
+              "fit_success": true
+            },
+            {
+              "onset_index": 19,
+              "fit_span_frames": [
+                1099823,
+                1104233
+              ],
+              "frequency_hz": 500.51420789178025,
+              "fundamental_amplitude": 0.019811942752620527,
+              "explained_variance": 0.999993348984163,
+              "fit_success": true
+            },
+            {
+              "onset_index": 20,
+              "fit_span_frames": [
+                1135385,
+                1139795
+              ],
+              "frequency_hz": 500.5067125761835,
+              "fundamental_amplitude": 0.01979678090982852,
+              "explained_variance": 0.9999922448658785,
+              "fit_success": true
+            },
+            {
+              "onset_index": 21,
+              "fit_span_frames": [
+                1205696,
+                1210106
+              ],
+              "frequency_hz": 500.52279681605313,
+              "fundamental_amplitude": 0.019804064687104238,
+              "explained_variance": 0.999994184085116,
+              "fit_success": true
+            },
+            {
+              "onset_index": 22,
+              "fit_span_frames": [
+                1241257,
+                1245667
+              ],
+              "frequency_hz": 500.49231821547534,
+              "fundamental_amplitude": 0.01980012653171196,
+              "explained_variance": 0.9999927361992234,
+              "fit_success": true
+            },
+            {
+              "onset_index": 23,
+              "fit_span_frames": [
+                1311568,
+                1315978
+              ],
+              "frequency_hz": 500.49753725075857,
+              "fundamental_amplitude": 0.019805833933176965,
+              "explained_variance": 0.9999932503843828,
+              "fit_success": true
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_amplitude": 0.0198050046618735,
+          "median_frequency_hz": 500.5176255922214,
+          "usable": true
+        }
+      ],
+      "onset_consistency_passed": true,
+      "all_thresholds_usable": true,
+      "passed": true
+    },
+    "right": {
+      "band_peak_rms": 0.014192891485679449,
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "onsets_seconds": [
+            1.6537414965986394,
+            3.246689342403628,
+            4.054399092970521,
+            5.647369614512471,
+            6.453650793650794,
+            8.048027210884353,
+            8.854285714285714,
+            10.448616780045352,
+            11.254897959183673,
+            12.847823129251701,
+            13.655510204081633,
+            15.248503401360544,
+            16.0562358276644,
+            17.649274376417235,
+            18.456938775510203,
+            20.04995464852608,
+            20.85764172335601,
+            22.450634920634922,
+            23.256961451247165,
+            24.851337868480726,
+            25.657732426303856,
+            27.252086167800453,
+            28.05845804988662,
+            29.65281179138322
+          ],
+          "loop_median_seconds": 2.4006802721088434,
+          "short_gap_median_seconds": 0.8063945578231291,
+          "long_gap_median_seconds": 1.5930272108843564,
+          "steady_tone_fits": [
+            {
+              "onset_index": 0,
+              "fit_span_frames": [
+                76458,
+                80868
+              ],
+              "frequency_hz": 500.5361670794887,
+              "fundamental_amplitude": 0.0189720727119545,
+              "explained_variance": 0.9999870971191469,
+              "fit_success": true
+            },
+            {
+              "onset_index": 1,
+              "fit_span_frames": [
+                146707,
+                151117
+              ],
+              "frequency_hz": 500.5235989874858,
+              "fundamental_amplitude": 0.018948784746432454,
+              "explained_variance": 0.9999883236566252,
+              "fit_success": true
+            },
+            {
+              "onset_index": 2,
+              "fit_span_frames": [
+                182327,
+                186737
+              ],
+              "frequency_hz": 500.5520524544181,
+              "fundamental_amplitude": 0.01893793943088122,
+              "explained_variance": 0.9999875404011749,
+              "fit_success": true
+            },
+            {
+              "onset_index": 3,
+              "fit_span_frames": [
+                252577,
+                256987
+              ],
+              "frequency_hz": 500.5162728762946,
+              "fundamental_amplitude": 0.01894075130958496,
+              "explained_variance": 0.999987716499776,
+              "fit_success": true
+            },
+            {
+              "onset_index": 4,
+              "fit_span_frames": [
+                288134,
+                292544
+              ],
+              "frequency_hz": 500.5030805873024,
+              "fundamental_amplitude": 0.018936144043920716,
+              "explained_variance": 0.9999865285593108,
+              "fit_success": true
+            },
+            {
+              "onset_index": 5,
+              "fit_span_frames": [
+                358446,
+                362856
+              ],
+              "frequency_hz": 500.5595845216849,
+              "fundamental_amplitude": 0.018945623339975678,
+              "explained_variance": 0.9999829795629925,
+              "fit_success": true
+            },
+            {
+              "onset_index": 6,
+              "fit_span_frames": [
+                394002,
+                398412
+              ],
+              "frequency_hz": 500.5344932746893,
+              "fundamental_amplitude": 0.018933840734365062,
+              "explained_variance": 0.9999881197332819,
+              "fit_success": true
+            },
+            {
+              "onset_index": 7,
+              "fit_span_frames": [
+                464312,
+                468722
+              ],
+              "frequency_hz": 500.5249596480187,
+              "fundamental_amplitude": 0.01893805412512869,
+              "explained_variance": 0.9999886646223546,
+              "fit_success": true
+            },
+            {
+              "onset_index": 8,
+              "fit_span_frames": [
+                499869,
+                504279
+              ],
+              "frequency_hz": 500.538910113162,
+              "fundamental_amplitude": 0.01893957084965307,
+              "explained_variance": 0.9999839010060261,
+              "fit_success": true
+            },
+            {
+              "onset_index": 9,
+              "fit_span_frames": [
+                570117,
+                574527
+              ],
+              "frequency_hz": 500.53728292292647,
+              "fundamental_amplitude": 0.018940897285118996,
+              "explained_variance": 0.9999858975308074,
+              "fit_success": true
+            },
+            {
+              "onset_index": 10,
+              "fit_span_frames": [
+                605736,
+                610146
+              ],
+              "frequency_hz": 500.50886246777054,
+              "fundamental_amplitude": 0.01893834703034659,
+              "explained_variance": 0.999986409411556,
+              "fit_success": true
+            },
+            {
+              "onset_index": 11,
+              "fit_span_frames": [
+                675987,
+                680397
+              ],
+              "frequency_hz": 500.51898524685674,
+              "fundamental_amplitude": 0.018940840569032898,
+              "explained_variance": 0.9999877472769564,
+              "fit_success": true
+            },
+            {
+              "onset_index": 12,
+              "fit_span_frames": [
+                711608,
+                716018
+              ],
+              "frequency_hz": 500.51200740476617,
+              "fundamental_amplitude": 0.018938375623351895,
+              "explained_variance": 0.9999867108500909,
+              "fit_success": true
+            },
+            {
+              "onset_index": 13,
+              "fit_span_frames": [
+                781861,
+                786271
+              ],
+              "frequency_hz": 500.51485977159126,
+              "fundamental_amplitude": 0.01893919691989643,
+              "explained_variance": 0.9999848223266926,
+              "fit_success": true
+            },
+            {
+              "onset_index": 14,
+              "fit_span_frames": [
+                817479,
+                821889
+              ],
+              "frequency_hz": 500.51866534184023,
+              "fundamental_amplitude": 0.018931330729745083,
+              "explained_variance": 0.9999881761707972,
+              "fit_success": true
+            },
+            {
+              "onset_index": 15,
+              "fit_span_frames": [
+                887731,
+                892141
+              ],
+              "frequency_hz": 500.5121787368071,
+              "fundamental_amplitude": 0.01894664833570886,
+              "explained_variance": 0.9999882591752027,
+              "fit_success": true
+            },
+            {
+              "onset_index": 16,
+              "fit_span_frames": [
+                923350,
+                927760
+              ],
+              "frequency_hz": 500.52270224557344,
+              "fundamental_amplitude": 0.018928204236007558,
+              "explained_variance": 0.9999881422811223,
+              "fit_success": true
+            },
+            {
+              "onset_index": 17,
+              "fit_span_frames": [
+                993601,
+                998011
+              ],
+              "frequency_hz": 500.51354561216294,
+              "fundamental_amplitude": 0.018942505902987364,
+              "explained_variance": 0.9999859741110155,
+              "fit_success": true
+            },
+            {
+              "onset_index": 18,
+              "fit_span_frames": [
+                1029160,
+                1033570
+              ],
+              "frequency_hz": 500.49471446069344,
+              "fundamental_amplitude": 0.018931378791756298,
+              "explained_variance": 0.9999866067590151,
+              "fit_success": true
+            },
+            {
+              "onset_index": 19,
+              "fit_span_frames": [
+                1099472,
+                1103882
+              ],
+              "frequency_hz": 500.5144318870685,
+              "fundamental_amplitude": 0.018942656156364288,
+              "explained_variance": 0.999986311811536,
+              "fit_success": true
+            },
+            {
+              "onset_index": 20,
+              "fit_span_frames": [
+                1135034,
+                1139444
+              ],
+              "frequency_hz": 500.507522626002,
+              "fundamental_amplitude": 0.018928163368367293,
+              "explained_variance": 0.999986374677063,
+              "fit_success": true
+            },
+            {
+              "onset_index": 21,
+              "fit_span_frames": [
+                1205345,
+                1209755
+              ],
+              "frequency_hz": 500.5214523317765,
+              "fundamental_amplitude": 0.018934928639936212,
+              "explained_variance": 0.999988998223997,
+              "fit_success": true
+            },
+            {
+              "onset_index": 22,
+              "fit_span_frames": [
+                1240906,
+                1245316
+              ],
+              "frequency_hz": 500.4942031990984,
+              "fundamental_amplitude": 0.018936742211210476,
+              "explained_variance": 0.9999856329264913,
+              "fit_success": true
+            },
+            {
+              "onset_index": 23,
+              "fit_span_frames": [
+                1311217,
+                1315627
+              ],
+              "frequency_hz": 500.49655187983916,
+              "fundamental_amplitude": 0.018935226710304284,
+              "explained_variance": 0.9999867132212518,
+              "fit_success": true
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_amplitude": 0.018938361326849243,
+          "median_frequency_hz": 500.5174691090674,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "onsets_seconds": [
+            1.6578684807256236,
+            3.2512471655328796,
+            4.058526077097506,
+            5.6518820861678005,
+            6.457800453514739,
+            8.052562358276644,
+            8.85843537414966,
+            10.453151927437641,
+            11.259024943310658,
+            12.85235827664399,
+            13.659637188208617,
+            15.253038548752835,
+            16.060362811791382,
+            17.653786848072563,
+            18.461065759637187,
+            20.054489795918368,
+            20.861768707482995,
+            22.45517006802721,
+            23.26108843537415,
+            24.855895691609977,
+            25.66185941043084,
+            27.256643990929707,
+            28.062585034013605,
+            29.657392290249433
+          ],
+          "loop_median_seconds": 2.4006802721088443,
+          "short_gap_median_seconds": 0.8059637188208626,
+          "long_gap_median_seconds": 1.5934240362811813,
+          "steady_tone_fits": [
+            {
+              "onset_index": 0,
+              "fit_span_frames": [
+                76640,
+                81050
+              ],
+              "frequency_hz": 500.5358467228588,
+              "fundamental_amplitude": 0.018980216206845306,
+              "explained_variance": 0.9999907648939003,
+              "fit_success": true
+            },
+            {
+              "onset_index": 1,
+              "fit_span_frames": [
+                146908,
+                151318
+              ],
+              "frequency_hz": 500.5235048987053,
+              "fundamental_amplitude": 0.01895799939005383,
+              "explained_variance": 0.9999921142728854,
+              "fit_success": true
+            },
+            {
+              "onset_index": 2,
+              "fit_span_frames": [
+                182509,
+                186919
+              ],
+              "frequency_hz": 500.55136611932534,
+              "fundamental_amplitude": 0.01894612219425499,
+              "explained_variance": 0.9999907927315276,
+              "fit_success": true
+            },
+            {
+              "onset_index": 3,
+              "fit_span_frames": [
+                252776,
+                257186
+              ],
+              "frequency_hz": 500.5171074744508,
+              "fundamental_amplitude": 0.018949602647265418,
+              "explained_variance": 0.999991442903689,
+              "fit_success": true
+            },
+            {
+              "onset_index": 4,
+              "fit_span_frames": [
+                288317,
+                292727
+              ],
+              "frequency_hz": 500.50311570262335,
+              "fundamental_amplitude": 0.01894450793649332,
+              "explained_variance": 0.9999902848352896,
+              "fit_success": true
+            },
+            {
+              "onset_index": 5,
+              "fit_span_frames": [
+                358646,
+                363056
+              ],
+              "frequency_hz": 500.56057637275046,
+              "fundamental_amplitude": 0.018954961192482793,
+              "explained_variance": 0.9999875640555065,
+              "fit_success": true
+            },
+            {
+              "onset_index": 6,
+              "fit_span_frames": [
+                394185,
+                398595
+              ],
+              "frequency_hz": 500.5338212102534,
+              "fundamental_amplitude": 0.01894202218585927,
+              "explained_variance": 0.9999915710120149,
+              "fit_success": true
+            },
+            {
+              "onset_index": 7,
+              "fit_span_frames": [
+                464512,
+                468922
+              ],
+              "frequency_hz": 500.5242847358285,
+              "fundamental_amplitude": 0.018946920662492206,
+              "explained_variance": 0.9999917477613043,
+              "fit_success": true
+            },
+            {
+              "onset_index": 8,
+              "fit_span_frames": [
+                500051,
+                504461
+              ],
+              "frequency_hz": 500.5374416242276,
+              "fundamental_amplitude": 0.018947847322725583,
+              "explained_variance": 0.9999880803863451,
+              "fit_success": true
+            },
+            {
+              "onset_index": 9,
+              "fit_span_frames": [
+                570317,
+                574727
+              ],
+              "frequency_hz": 500.53779435987815,
+              "fundamental_amplitude": 0.01895025642977717,
+              "explained_variance": 0.9999903565714016,
+              "fit_success": true
+            },
+            {
+              "onset_index": 10,
+              "fit_span_frames": [
+                605918,
+                610328
+              ],
+              "frequency_hz": 500.5088506025052,
+              "fundamental_amplitude": 0.01894617036420158,
+              "explained_variance": 0.9999898780818959,
+              "fit_success": true
+            },
+            {
+              "onset_index": 11,
+              "fit_span_frames": [
+                676187,
+                680597
+              ],
+              "frequency_hz": 500.518145109798,
+              "fundamental_amplitude": 0.018949928057226024,
+              "explained_variance": 0.9999915534544135,
+              "fit_success": true
+            },
+            {
+              "onset_index": 12,
+              "fit_span_frames": [
+                711790,
+                716200
+              ],
+              "frequency_hz": 500.5123988207142,
+              "fundamental_amplitude": 0.018946700521448073,
+              "explained_variance": 0.999989795831617,
+              "fit_success": true
+            },
+            {
+              "onset_index": 13,
+              "fit_span_frames": [
+                782060,
+                786470
+              ],
+              "frequency_hz": 500.51428096993544,
+              "fundamental_amplitude": 0.018948158178160528,
+              "explained_variance": 0.9999890495593773,
+              "fit_success": true
+            },
+            {
+              "onset_index": 14,
+              "fit_span_frames": [
+                817661,
+                822071
+              ],
+              "frequency_hz": 500.5186859758573,
+              "fundamental_amplitude": 0.01893901957180433,
+              "explained_variance": 0.9999912551903027,
+              "fit_success": true
+            },
+            {
+              "onset_index": 15,
+              "fit_span_frames": [
+                887931,
+                892341
+              ],
+              "frequency_hz": 500.5116818983729,
+              "fundamental_amplitude": 0.018954731498744756,
+              "explained_variance": 0.9999916279275936,
+              "fit_success": true
+            },
+            {
+              "onset_index": 16,
+              "fit_span_frames": [
+                923532,
+                927942
+              ],
+              "frequency_hz": 500.5223079309019,
+              "fundamental_amplitude": 0.018936665396877314,
+              "explained_variance": 0.9999914125368363,
+              "fit_success": true
+            },
+            {
+              "onset_index": 17,
+              "fit_span_frames": [
+                993801,
+                998211
+              ],
+              "frequency_hz": 500.51442281852144,
+              "fundamental_amplitude": 0.018951698661208206,
+              "explained_variance": 0.9999898910729444,
+              "fit_success": true
+            },
+            {
+              "onset_index": 18,
+              "fit_span_frames": [
+                1029342,
+                1033752
+              ],
+              "frequency_hz": 500.4937849326797,
+              "fundamental_amplitude": 0.018939278635609545,
+              "explained_variance": 0.9999901379512641,
+              "fit_success": true
+            },
+            {
+              "onset_index": 19,
+              "fit_span_frames": [
+                1099673,
+                1104083
+              ],
+              "frequency_hz": 500.5150107036642,
+              "fundamental_amplitude": 0.018952572703409352,
+              "explained_variance": 0.9999905622514883,
+              "fit_success": true
+            },
+            {
+              "onset_index": 20,
+              "fit_span_frames": [
+                1135216,
+                1139626
+              ],
+              "frequency_hz": 500.50741927438617,
+              "fundamental_amplitude": 0.018936378974929047,
+              "explained_variance": 0.9999897036435644,
+              "fit_success": true
+            },
+            {
+              "onset_index": 21,
+              "fit_span_frames": [
+                1205546,
+                1209956
+              ],
+              "frequency_hz": 500.521874745144,
+              "fundamental_amplitude": 0.018944199210251877,
+              "explained_variance": 0.9999923888329916,
+              "fit_success": true
+            },
+            {
+              "onset_index": 22,
+              "fit_span_frames": [
+                1241088,
+                1245498
+              ],
+              "frequency_hz": 500.49327265553774,
+              "fundamental_amplitude": 0.018944697773641415,
+              "explained_variance": 0.9999893382079184,
+              "fit_success": true
+            },
+            {
+              "onset_index": 23,
+              "fit_span_frames": [
+                1311419,
+                1315829
+              ],
+              "frequency_hz": 500.4968161791157,
+              "fundamental_amplitude": 0.01894459460456363,
+              "explained_variance": 0.9999909757911752,
+              "fit_success": true
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_amplitude": 0.01894681059197014,
+          "median_frequency_hz": 500.5176262921244,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "onsets_seconds": [
+            1.6617233560090703,
+            3.2546485260770974,
+            4.062380952380952,
+            5.655283446712018,
+            6.461655328798186,
+            8.0559410430839,
+            8.862267573696146,
+            10.45655328798186,
+            11.262857142857143,
+            12.855759637188209,
+            13.663492063492063,
+            15.256439909297052,
+            16.06419501133787,
+            17.65718820861678,
+            18.464920634920635,
+            20.057891156462585,
+            20.86562358276644,
+            22.458571428571428,
+            23.264943310657596,
+            24.859297052154194,
+            25.665691609977323,
+            27.260045351473924,
+            28.066439909297053,
+            29.66077097505669
+          ],
+          "loop_median_seconds": 2.4006802721088434,
+          "short_gap_median_seconds": 0.8063945578231291,
+          "long_gap_median_seconds": 1.5929818594104308,
+          "steady_tone_fits": [
+            {
+              "onset_index": 0,
+              "fit_span_frames": [
+                76810,
+                81220
+              ],
+              "frequency_hz": 500.53565573267747,
+              "fundamental_amplitude": 0.018987950079598186,
+              "explained_variance": 0.9999942129330148,
+              "fit_success": true
+            },
+            {
+              "onset_index": 1,
+              "fit_span_frames": [
+                147058,
+                151468
+              ],
+              "frequency_hz": 500.5233171441689,
+              "fundamental_amplitude": 0.018964132127363968,
+              "explained_variance": 0.9999945689625811,
+              "fit_success": true
+            },
+            {
+              "onset_index": 2,
+              "fit_span_frames": [
+                182679,
+                187089
+              ],
+              "frequency_hz": 500.55087095996095,
+              "fundamental_amplitude": 0.018953977624881164,
+              "explained_variance": 0.9999940607313982,
+              "fit_success": true
+            },
+            {
+              "onset_index": 3,
+              "fit_span_frames": [
+                252926,
+                257336
+              ],
+              "frequency_hz": 500.5176104140066,
+              "fundamental_amplitude": 0.01895566608980962,
+              "explained_variance": 0.9999940038791358,
+              "fit_success": true
+            },
+            {
+              "onset_index": 4,
+              "fit_span_frames": [
+                288487,
+                292897
+              ],
+              "frequency_hz": 500.50340434358185,
+              "fundamental_amplitude": 0.018952306198152274,
+              "explained_variance": 0.9999937887442633,
+              "fit_success": true
+            },
+            {
+              "onset_index": 5,
+              "fit_span_frames": [
+                358795,
+                363205
+              ],
+              "frequency_hz": 500.56095377394223,
+              "fundamental_amplitude": 0.01896104824897328,
+              "explained_variance": 0.9999907905398114,
+              "fit_success": true
+            },
+            {
+              "onset_index": 6,
+              "fit_span_frames": [
+                394354,
+                398764
+              ],
+              "frequency_hz": 500.5335884547857,
+              "fundamental_amplitude": 0.01894980484227864,
+              "explained_variance": 0.9999948300994156,
+              "fit_success": true
+            },
+            {
+              "onset_index": 7,
+              "fit_span_frames": [
+                464662,
+                469072
+              ],
+              "frequency_hz": 500.52349150134603,
+              "fundamental_amplitude": 0.018953016884831475,
+              "explained_variance": 0.9999940986416618,
+              "fit_success": true
+            },
+            {
+              "onset_index": 8,
+              "fit_span_frames": [
+                500220,
+                504630
+              ],
+              "frequency_hz": 500.53631240998607,
+              "fundamental_amplitude": 0.018955663232099657,
+              "explained_variance": 0.999992153316637,
+              "fit_success": true
+            },
+            {
+              "onset_index": 9,
+              "fit_span_frames": [
+                570467,
+                574877
+              ],
+              "frequency_hz": 500.5380005575604,
+              "fundamental_amplitude": 0.018956443156024662,
+              "explained_variance": 0.9999933297502788,
+              "fit_success": true
+            },
+            {
+              "onset_index": 10,
+              "fit_span_frames": [
+                606088,
+                610498
+              ],
+              "frequency_hz": 500.5091080216518,
+              "fundamental_amplitude": 0.018953441810343898,
+              "explained_variance": 0.9999932715583892,
+              "fit_success": true
+            },
+            {
+              "onset_index": 11,
+              "fit_span_frames": [
+                676337,
+                680747
+              ],
+              "frequency_hz": 500.51729086296143,
+              "fundamental_amplitude": 0.018955897689563305,
+              "explained_variance": 0.9999942441836761,
+              "fit_success": true
+            },
+            {
+              "onset_index": 12,
+              "fit_span_frames": [
+                711959,
+                716369
+              ],
+              "frequency_hz": 500.5128725998769,
+              "fundamental_amplitude": 0.018954476659192126,
+              "explained_variance": 0.9999930122221763,
+              "fit_success": true
+            },
+            {
+              "onset_index": 13,
+              "fit_span_frames": [
+                782210,
+                786620
+              ],
+              "frequency_hz": 500.5135310833744,
+              "fundamental_amplitude": 0.01895410433326529,
+              "explained_variance": 0.9999921871132269,
+              "fit_success": true
+            },
+            {
+              "onset_index": 14,
+              "fit_span_frames": [
+                817831,
+                822241
+              ],
+              "frequency_hz": 500.51877789941454,
+              "fundamental_amplitude": 0.018946217508469698,
+              "explained_variance": 0.9999942173463126,
+              "fit_success": true
+            },
+            {
+              "onset_index": 15,
+              "fit_span_frames": [
+                888081,
+                892491
+              ],
+              "frequency_hz": 500.5109823823649,
+              "fundamental_amplitude": 0.018960047039721872,
+              "explained_variance": 0.9999940565004705,
+              "fit_success": true
+            },
+            {
+              "onset_index": 16,
+              "fit_span_frames": [
+                923702,
+                928112
+              ],
+              "frequency_hz": 500.52204824741534,
+              "fundamental_amplitude": 0.018944644502553915,
+              "explained_variance": 0.9999945458903978,
+              "fit_success": true
+            },
+            {
+              "onset_index": 17,
+              "fit_span_frames": [
+                993951,
+                998361
+              ],
+              "frequency_hz": 500.5147787123104,
+              "fundamental_amplitude": 0.018957817978410754,
+              "explained_variance": 0.9999925972506809,
+              "fit_success": true
+            },
+            {
+              "onset_index": 18,
+              "fit_span_frames": [
+                1029512,
+                1033922
+              ],
+              "frequency_hz": 500.4931456508317,
+              "fundamental_amplitude": 0.018946817455004702,
+              "explained_variance": 0.9999936367887247,
+              "fit_success": true
+            },
+            {
+              "onset_index": 19,
+              "fit_span_frames": [
+                1099823,
+                1104233
+              ],
+              "frequency_hz": 500.5150365976301,
+              "fundamental_amplitude": 0.01895888233070605,
+              "explained_variance": 0.9999933318237627,
+              "fit_success": true
+            },
+            {
+              "onset_index": 20,
+              "fit_span_frames": [
+                1135385,
+                1139795
+              ],
+              "frequency_hz": 500.50769050571756,
+              "fundamental_amplitude": 0.01894409900388909,
+              "explained_variance": 0.9999930517425836,
+              "fit_success": true
+            },
+            {
+              "onset_index": 21,
+              "fit_span_frames": [
+                1205696,
+                1210106
+              ],
+              "frequency_hz": 500.52198447027735,
+              "fundamental_amplitude": 0.01895040404865164,
+              "explained_variance": 0.9999946443779028,
+              "fit_success": true
+            },
+            {
+              "onset_index": 22,
+              "fit_span_frames": [
+                1241258,
+                1245668
+              ],
+              "frequency_hz": 500.49258900344273,
+              "fundamental_amplitude": 0.018952070137025986,
+              "explained_variance": 0.9999929794637848,
+              "fit_success": true
+            },
+            {
+              "onset_index": 23,
+              "fit_span_frames": [
+                1311568,
+                1315978
+              ],
+              "frequency_hz": 500.4968339421116,
+              "fundamental_amplitude": 0.018950665110240482,
+              "explained_variance": 0.9999937424882657,
+              "fit_success": true
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_amplitude": 0.018954040979073227,
+          "median_frequency_hz": 500.517450638484,
+          "usable": true
+        }
+      ],
+      "onset_consistency_passed": true,
+      "all_thresholds_usable": true,
+      "passed": true
+    }
+  },
+  "checks": {
+    "all_channel_measurements_usable": true,
+    "independent_stereo_onsets_agree": true,
+    "no_full_scale_samples": true
+  },
+  "passed": true,
+  "limits": [
+    "Steady sine amplitude is measured from the same repeated tone,not overall mix RMS",
+    "Fixed band,fit window and thresholds are registered before pair audio; missing/unclear tone remains unevaluated",
+    "No linear,dB or percent gain law assumed; pitch and loop consistency required"
+  ],
+  "registration_sha256": "f33793227ce402ada428cd40415cbf1225e5cf5f930940aaa844a8ff4e4f50e7"
+}

@@ -1,0 +1,12 @@
+{
+  "analysis_version": "minimum-trim-audition-observation-0.1",
+  "capture_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+  "question": "With playback stopped and write off, select Sound 3 in TONE and tap keyboard key 1. Do you hear a very short click/burst, or a sustained tone close to a second? Reselect Sound 8 afterward without moving either knob.",
+  "user_answer": "Very short click or burst",
+  "sound3_start_field": 31393,
+  "sound3_second_field": 31504,
+  "raw_difference": 111,
+  "interpretation": "Supports a local endpoint interpretation because the difference is a short window, while a literal31504-sample length would retain a substantial tone segment",
+  "evidence_kind": "User-reported acoustic discriminator; no independent audio waveform was recorded",
+  "limits": ["Does not rescue the failed exact minimum79 or31472 predictions", "Does not establish a general minimum-width formula or exact endpoint inclusivity", "A generated nonzero-start endpoint edit still needs its own hardware test"]
+}

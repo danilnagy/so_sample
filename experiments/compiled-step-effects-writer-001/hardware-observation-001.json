@@ -1,0 +1,205 @@
+{
+  "analysis_version": "step-effects-writer-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and registered per-note pitch decision",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_pitch_result": true,
+    "decision_binds_results": true,
+    "export_hashes_and_native_body_exact": true,
+    "session_target_exact": true
+  },
+  "footer": "6ff6ff666ff6ff66",
+  "steps": {
+    "1": {
+      "median": "effect",
+      "max_ratio": 1.9999702835179594,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "2": {
+      "median": "none",
+      "max_ratio": 1.0025131270273984,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "3": {
+      "median": "none",
+      "max_ratio": 1.0001504256090774,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "4": {
+      "median": "effect",
+      "max_ratio": 1.4306197328989747,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "5": {
+      "median": "none",
+      "max_ratio": 1.0025124297956802,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "6": {
+      "median": "none",
+      "max_ratio": 1.0001461147147572,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "7": {
+      "median": "effect",
+      "max_ratio": 1.4307030866535981,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "8": {
+      "median": "effect",
+      "max_ratio": 1.9987855933651968,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "9": {
+      "median": "effect",
+      "max_ratio": 1.9999798416139254,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "10": {
+      "median": "none",
+      "max_ratio": 1.002552519062009,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "11": {
+      "median": "none",
+      "max_ratio": 1.0001461574866162,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "12": {
+      "median": "effect",
+      "max_ratio": 1.4307088520520077,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "13": {
+      "median": "none",
+      "max_ratio": 1.0025143033210198,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "14": {
+      "median": "none",
+      "max_ratio": 1.0001667930276206,
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "15": {
+      "median": "effect",
+      "max_ratio": 1.4306837149839005,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "16": {
+      "median": "effect",
+      "max_ratio": 1.9987490688114211,
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    }
+  },
+  "classification": "sequential_high_nibble_first",
+  "decision_sha256": "34fdd48ef8673d5c7e26bbf6bcad79821bbca9080bedc158e731ff96a2517a44",
+  "native_results_sha256": "8c305fe699c22a40d70774b5710cbe0118c6c81bf3f8f8e4fb942babdfb40ef5",
+  "pitch_results_sha256": "799e985532556a0fcfc6804c5fc885b6db954cbec1147870214950c20209155f",
+  "manual_observation_sha256": "663656f067afbf08f1069e959cd84bda739f5bb3e46df51f15393c56e46b1cf7",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "4ce176236a9b6fe48a56fa5ea0bb88e87c58498967277cf09f80db3ceac091a5",
+  "general_per_step_FX_writer_enabled": true,
+  "limits": [
+    "Tests the writer with FX key 7 on Pattern 1; other keys rely on the device code map",
+    "The stored effect codes of other keys are verified; their sound is not measured"
+  ]
+}

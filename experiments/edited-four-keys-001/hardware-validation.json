@@ -1,0 +1,119 @@
+{
+  "analysis_version": "native-four-calibrated-keys-hardware-validation-0.1",
+  "registration_sha256": "b9f70b672dbcfd1b04eccf40ec5b274207ed4b9fb44779ca2a141d4db0d854b4",
+  "capture_sha256": "2cc8b8df219f49e9a0721d67ecf719c37575f9f9da7f264eac5b2c4736eb84bf",
+  "artifact_sha256": "853f5ea6670d5b4508190f79d5547453ea9119fa95c98dc06cd02f1e5861d0b0",
+  "initial_crossing_artifact_sha256": "f1b9d9bc556b5cfdaed6d4f6cc854e4aab89fd6b50daf4d3f94a33f49d2c7715",
+  "demodulation": {
+    "method": "amplitude-clock-0.1",
+    "clock_report": "derived/analysis-002/clock-report.json",
+    "initial_crossing_decode": "Checksum failure at wire byte9941, tag0xc498; original artifact retained",
+    "target_data_used_for_recovery": false
+  },
+  "checks": {
+    "registered_body_hash_matches": true,
+    "target_body_matches": true,
+    "target_plain_packets_match": true,
+    "all_packet_checksums_valid": true,
+    "exact_body_reencode": true,
+    "packet_count": true,
+    "frame_end_byte": true,
+    "only_expected_plain_packets_changed": true,
+    "only_expected_pattern_bytes_changed": true,
+    "sample_packets_unchanged": true,
+    "other_patterns_unchanged": true,
+    "primary_note_fields_unchanged": true,
+    "auxiliary_upper_nibbles_unchanged": true,
+    "expected_populated_steps": true,
+    "expected_keyboard_keys": true,
+    "one_expected_sound_cell_per_step": true
+  },
+  "passed": true,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "9b87309f572b188cd1e1a2651b1ca4feec5cfa8fb669068631042ca8f49465f0",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "changed_plain_packet_indices": [
+    7
+  ],
+  "pattern1_byte_changes": [
+    {
+      "offset": 834,
+      "old": 246,
+      "new": 241
+    },
+    {
+      "offset": 898,
+      "old": 240,
+      "new": 246
+    },
+    {
+      "offset": 962,
+      "old": 241,
+      "new": 255
+    }
+  ],
+  "keyboard_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "user_report": "done and confirmed matched",
+  "manual_pitch_reference": "User confirms Pattern1 matched the auditioned Sound3 keys1/2/7/16 in order",
+  "hardware_verified": true,
+  "capture_timing": "Requested before audition and playback; user reports protocol completion without deviation",
+  "limits": [
+    "Musical behavior is user reported; acoustic frequencies and intervals were not measured.",
+    "Only Sound3 keys1/2/7/16 with primary0df883 are validated; other keys, sounds and note parameters remain unsupported.",
+    "Measured-clock recovery uses waveform signs and pre-frame alignment, not target bytes or checksum repair.",
+    "The complete native frame matches exactly; unobserved waveform edges remain explicit in the recovered artifact."
+  ]
+}

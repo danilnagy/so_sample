@@ -1,0 +1,50 @@
+{
+  "analysis_version": "fx-period-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "86a15af48eaf4d6e2960d41f4d7e6d6f43b6b0b90b38a5221802043ed5aaad85",
+  "native_results_sha256": "8fb149a4e544053e6bceeb29f7100a965082292b346cd1566b42c244ac77ead0",
+  "measurements_sha256": "eb0519cd05f60401d2c3e29790698f8ab6480f5557b9a8cd5fe927eb0c9ae870",
+  "hypotheses": {
+    "exact_reception": true,
+    "control_has_no_period": true
+  },
+  "effects": {
+    "1": {
+      "pattern": 1,
+      "period_ms": null,
+      "mean_cents": 105.569727257235,
+      "classification": "unresolved"
+    },
+    "2": {
+      "pattern": 2,
+      "period_ms": null,
+      "mean_cents": 87.99352096921852,
+      "classification": "unresolved"
+    },
+    "3": {
+      "pattern": 3,
+      "period_ms": null,
+      "mean_cents": 72.35219124678308,
+      "classification": "unresolved"
+    },
+    "4": {
+      "pattern": 4,
+      "period_ms": 80.0,
+      "mean_cents": 3.2223748747699394,
+      "classification": "1/48"
+    },
+    "12": {
+      "pattern": 5,
+      "period_ms": 250.0,
+      "mean_cents": 2.7056986034431785,
+      "classification": "1/16"
+    }
+  },
+  "control": {
+    "period_ms": null,
+    "mean_cents": 793.6076870738618
+  },
+  "limits": [
+    "One tempo; whether the periods scale with tempo is not tested"
+  ]
+}

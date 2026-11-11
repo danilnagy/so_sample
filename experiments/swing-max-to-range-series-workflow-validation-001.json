@@ -1,0 +1,32 @@
+{
+  "analysis_version": "physical-swingS18-to-unknown-minimum-middle-and-exact-return-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "maximumS18_observation_all_checks": true,
+    "actual_S18_display_text_preserved": true,
+    "source_capture_and_artifact_hashes_pinned": true,
+    "source_observation_and_body_hashes_pinned": true,
+    "independent_zero_artifact_and_body_pinned": true,
+    "middle9_prediction_hash_pinned": true,
+    "return18_prediction_recovers_entire_independentS18_body": true,
+    "minimum_value_and_body_not_guessed": true,
+    "unsigned_zero_minimum_model_supported_in_synthetic_check": true,
+    "signed_negative_minimum_keeps_unsigned_alternative_distinct": true,
+    "missing_display_readings_are_not_inferred": true,
+    "all_captures_preregistered_and_still_pending": true,
+    "no_swing_writer_or_opaque_context_reset": true
+  },
+  "passed": true,
+  "validation": {
+    "affected_pytest": "26 passed in 2.66s",
+    "ruff": "all checks passed; 206 Python files formatted",
+    "prior_full_suite": "740 passed in 87.72s before this turn's research-only additions"
+  },
+  "next_required_user_action": "Hold BPM while adjusting only A to minimum, displayed9 and S18; save each capture before proceeding and report exact display labels including any minus sign",
+  "limits": [
+    "Unsigned and signed8 models are registered before minimum data; no after-the-fact scale or offset fitting",
+    "No minimum number, percentage or timing unit is assumed",
+    "Middle9 and return18 must match their complete body predictions; return must equal originalS18 state",
+    "Missing display readings remain unevaluated; no swing writer is enabled"
+  ]
+}

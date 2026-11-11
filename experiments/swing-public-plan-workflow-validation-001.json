@@ -1,0 +1,40 @@
+{
+  "analysis_version": "accepted-swing-public-replay-and-joint-edit-software-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "replays": [
+    {
+      "swing": 0,
+      "plan": "experiments/replay-swing0-plan-001/plan.json",
+      "plan_sha256": "fb9db0ed6a5a3dc33433f6dcc15a29ec4bdea03bbf16aa877176b97c5656ba01",
+      "compile_report_sha256": "56beaf8301c71ed18e7bcf13d70ee3297eb051a7b348ce8ae28034794efc4e0d",
+      "checks": {
+        "compile_checks_pass": true,
+        "accepted_wav_replayed_byte_for_byte": true,
+        "registered_complete_body_replayed": true,
+        "compiler_remains_hardware_unverified": true
+      }
+    },
+    {
+      "swing": 6,
+      "plan": "experiments/replay-swing6-plan-001/plan.json",
+      "plan_sha256": "1f70c148908ab822fa6d8436a25ffe6a00ad5e4c2ed150990c4678a50f47ac93",
+      "compile_report_sha256": "7dfff508bd5627b1ef3fd9cb97b72592db7f89dc60eb1bece59fbe10a5677430",
+      "checks": {
+        "compile_checks_pass": true,
+        "accepted_wav_replayed_byte_for_byte": true,
+        "registered_complete_body_replayed": true,
+        "compiler_remains_hardware_unverified": true
+      }
+    }
+  ],
+  "joint_checks": {
+    "only_two_calibrated_global_bytes_changed": true,
+    "target_tempo100_and_swing9": true,
+    "all_other_plain_packets_exact": true,
+    "native_geometry_exact": true,
+    "waveform_compile_checks_pass": true,
+    "source_file_unchanged": true
+  },
+  "joint_registration_sha256": "df2e096dc97274531a9a5400b84112868ac52b6dc586e2de597051fb66772882"
+}

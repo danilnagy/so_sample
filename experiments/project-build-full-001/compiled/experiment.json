@@ -1,0 +1,20 @@
+{
+  "experiment_id": "project-build-full-001/compiled",
+  "capture_status": "validated_exact_native_project_build_full_other",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../../project-build-full-registration-001.json",
+  "build_report": "../build-report.json",
+  "playback_seconds": 36,
+  "observation_questions": [
+    "Did it sound like a full beat that changed melody sound each pattern? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "measurements": "project-build-full-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../../exported-project-build-full-001/project.json"
+}

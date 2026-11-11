@@ -1,0 +1,11 @@
+{
+  "analysis_version": "preserved-crossing-decode-failure-0.1",
+  "capture_sha256": "2cc8b8df219f49e9a0721d67ecf719c37575f9f9da7f264eac5b2c4736eb84bf",
+  "artifact_sha256": "f1b9d9bc556b5cfdaed6d4f6cc854e4aab89fd6b50daf4d3f94a33f49d2c7715",
+  "decoder_version": "sign-crossings-0.2",
+  "threshold": 0.0063,
+  "error": "Packet checksum differs at wire byte9941, tag0xc498",
+  "original_artifact": "derived/analysis-001/capture.symbols.npz",
+  "preserved_unchanged": true,
+  "subsequent_recovery": "Separate amplitude-clock-0.1 artifact in analysis-002, with target_data_used false"
+}

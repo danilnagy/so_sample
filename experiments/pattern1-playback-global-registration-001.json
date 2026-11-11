@@ -1,0 +1,53 @@
+{
+  "analysis_version": "opaque-global131-repeat-and-plain-playback-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_data_available": true,
+  "source_artifact": "experiments/event-068-d-pattern1-FX16-clear-corrected/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "bb5b8d210c4b5105ca96c3802a23c21b800f579cdf11f0fee6b2cd5f77ac4764",
+  "source_capture": "experiments/event-068-d-pattern1-FX16-clear-corrected/capture.wav",
+  "source_capture_sha256": "1ca827fcb8106d870581f786d24a2e20054c90a6925ab5bcd506efcd3ea38be2",
+  "source_body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+  "source_observation": "experiments/event-068-d-pattern1-FX16-clear-corrected/hardware-observation-001.json",
+  "source_observation_sha256": "62d4f205d34e4e62f26b910dc6628cc2f253e59a66ebb9b16f2e993be694a44a",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "global_candidate": {
+    "packet_index": 2,
+    "tag": 32092,
+    "payload_offset": 131,
+    "narrow_mask": 15,
+    "broader_mask": 255
+  },
+  "expected_footer_hex": "ffffffffffffffff",
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-069-a-pattern1-stopped-repeat",
+      "planned_actions": [
+        "Keep Pattern1 selected, playback stopped, write off; leave both knobs and settings untouched",
+        "Without playing first, record a NEW complete backup as capture.wav"
+      ],
+      "expected_global_byte": 7
+    },
+    {
+      "experiment_id": "event-070-b-pattern1-plain-playback",
+      "planned_actions": [
+        "After the first backup, ensure playback stopped and write off",
+        "Press PLAY, let Pattern1 run for approximately five seconds, then press PLAY to stop",
+        "Do not press FX or turn knobs; record a NEW complete backup as capture.wav"
+      ],
+      "expected_global_byte": null
+    }
+  ],
+  "predictions": {
+    "stopped_repeat_entire_body_equal_source": true,
+    "plain_playback_preserves_every_byte_except_global131_low4": true,
+    "plain_playback_global_value_or_change": null
+  },
+  "limits": [
+    "No FX action or write pass; all sixteen Pattern1 footer nibbles must stay F",
+    "Stopped-repeat exact equality is a hypothesis; retain any independent counterexample",
+    "Keep low-four scope and broader whole-byte diagnostic separate; do not widen after data",
+    "Different WAVs may legitimately decode to identical native bodies; copied raw WAVs are not independent controls",
+    "A playback-associated change would not establish an effect selector, step index, nibble order, or public writer"
+  ]
+}

@@ -1,0 +1,1465 @@
+{
+  "analysis_version": "common-search-pitch13-14-frequency-measurement-0.1",
+  "hardware_verified": false,
+  "source_sha256": "3c7400cc8daa6c33ecb206ba7f00a4aad3d7d69e4cf3d493a50cf43ef26c3ece",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 979019,
+  "duration_seconds": 22.19997732426304,
+  "peaks_per_channel": [
+    0.173370361328125,
+    0.1658935546875
+  ],
+  "parameters": {
+    "center_frequency_hz": 525.0,
+    "half_bandwidth_hz": 75.0,
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "minimum_region_seconds": 0.06,
+    "edge_margin_seconds": 0.03,
+    "minimum_band_rms": 0.001,
+    "maximum_gap_residual_seconds": 0.006,
+    "threshold_gap_spread_seconds": 0.004,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "nominal_loop_seconds": 2.4,
+    "loop_tolerance_seconds": 0.005,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.18
+    ],
+    "frequency_search_hz": [
+      465.0,
+      585.0
+    ],
+    "fft_grid_max_spacing_hz": 0.25,
+    "fft_peak_refine_halfwidth_hz": 1.0,
+    "minimum_fit_explained_variance": 0.9,
+    "minimum_complete_cycles": 3,
+    "reference_frequency_lead_hz": 500.65,
+    "reference_frequency_relative_tolerance": 0.005,
+    "minimum_relative_frequency_increase": 0.005,
+    "hypothesized_ratio_for_one_semitone": 1.0594630943592953,
+    "semitone_ratio_relative_tolerance": 0.002,
+    "unchanged_loop_seconds_tolerance": 0.005
+  },
+  "channels": {
+    "left": {
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "onsets_seconds": [
+            1.0820634920634922,
+            2.6757142857142857,
+            3.482471655328798,
+            5.07609977324263,
+            5.882857142857143,
+            7.476485260770975,
+            8.283265306122448,
+            9.87687074829932,
+            10.682267573696144,
+            12.27718820861678,
+            13.082585034013606,
+            14.677551020408163,
+            15.482925170068027,
+            17.077868480725623,
+            17.883219954648528,
+            19.476825396825397,
+            20.28356009070295
+          ],
+          "loop_median_seconds": 2.400340136054421,
+          "fits": [
+            {
+              "frequency_hz": 530.2391899544107,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991095166437,
+              "fundamental_amplitude": 0.06348689302567136,
+              "fit_success": true,
+              "onset_index": 0,
+              "fit_span_frames": [
+                51247,
+                55657
+              ]
+            },
+            {
+              "frequency_hz": 530.237425098982,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979595803374,
+              "fundamental_amplitude": 0.06335266232146806,
+              "fit_success": true,
+              "onset_index": 1,
+              "fit_span_frames": [
+                121527,
+                125937
+              ]
+            },
+            {
+              "frequency_hz": 530.2425779957667,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989854548199,
+              "fundamental_amplitude": 0.06327546025535122,
+              "fit_success": true,
+              "onset_index": 2,
+              "fit_span_frames": [
+                157105,
+                161515
+              ]
+            },
+            {
+              "frequency_hz": 530.2477930502762,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983862835824,
+              "fundamental_amplitude": 0.06328356418290498,
+              "fit_success": true,
+              "onset_index": 3,
+              "fit_span_frames": [
+                227384,
+                231794
+              ]
+            },
+            {
+              "frequency_hz": 530.2329580804691,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999990239625205,
+              "fundamental_amplitude": 0.06322646183224817,
+              "fit_success": true,
+              "onset_index": 4,
+              "fit_span_frames": [
+                262962,
+                267372
+              ]
+            },
+            {
+              "frequency_hz": 530.2548820232357,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999973012864384,
+              "fundamental_amplitude": 0.0632671354931954,
+              "fit_success": true,
+              "onset_index": 5,
+              "fit_span_frames": [
+                333241,
+                337651
+              ]
+            },
+            {
+              "frequency_hz": 530.2517995900536,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983999543063,
+              "fundamental_amplitude": 0.0632240505694261,
+              "fit_success": true,
+              "onset_index": 6,
+              "fit_span_frames": [
+                368820,
+                373230
+              ]
+            },
+            {
+              "frequency_hz": 530.2553300896463,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985455644349,
+              "fundamental_amplitude": 0.06325681707490366,
+              "fit_success": true,
+              "onset_index": 7,
+              "fit_span_frames": [
+                439098,
+                443508
+              ]
+            },
+            {
+              "frequency_hz": 530.2493378970951,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988364546887,
+              "fundamental_amplitude": 0.06321351738239427,
+              "fit_success": true,
+              "onset_index": 8,
+              "fit_span_frames": [
+                474616,
+                479026
+              ]
+            },
+            {
+              "frequency_hz": 530.2568429359484,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999984776374792,
+              "fundamental_amplitude": 0.06325024203594852,
+              "fit_success": true,
+              "onset_index": 9,
+              "fit_span_frames": [
+                544952,
+                549362
+              ]
+            },
+            {
+              "frequency_hz": 530.2448955790268,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999990201653793,
+              "fundamental_amplitude": 0.06320770561546184,
+              "fit_success": true,
+              "onset_index": 10,
+              "fit_span_frames": [
+                580470,
+                584880
+              ]
+            },
+            {
+              "frequency_hz": 530.2640693715628,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978371907547,
+              "fundamental_amplitude": 0.06325496426491256,
+              "fit_success": true,
+              "onset_index": 11,
+              "fit_span_frames": [
+                650808,
+                655218
+              ]
+            },
+            {
+              "frequency_hz": 530.2720582489061,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985396068746,
+              "fundamental_amplitude": 0.0631920937710447,
+              "fit_success": true,
+              "onset_index": 12,
+              "fit_span_frames": [
+                686325,
+                690735
+              ]
+            },
+            {
+              "frequency_hz": 530.2661127664621,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999981895055168,
+              "fundamental_amplitude": 0.06325136516964777,
+              "fit_success": true,
+              "onset_index": 13,
+              "fit_span_frames": [
+                756662,
+                761072
+              ]
+            },
+            {
+              "frequency_hz": 530.2456712329526,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988839045489,
+              "fundamental_amplitude": 0.06320632831521701,
+              "fit_success": true,
+              "onset_index": 14,
+              "fit_span_frames": [
+                792178,
+                796588
+              ]
+            },
+            {
+              "frequency_hz": 530.2684988309918,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999997957353408,
+              "fundamental_amplitude": 0.063244504588802,
+              "fit_success": true,
+              "onset_index": 15,
+              "fit_span_frames": [
+                862456,
+                866866
+              ]
+            },
+            {
+              "frequency_hz": 530.2910592658492,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991928395198,
+              "fundamental_amplitude": 0.06319439291928843,
+              "fit_success": true,
+              "onset_index": 16,
+              "fit_span_frames": [
+                898033,
+                902443
+              ]
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_frequency_hz": 530.2517995900536,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "onsets_seconds": [
+            1.0831065759637188,
+            2.677097505668934,
+            3.483514739229025,
+            5.077482993197279,
+            5.88390022675737,
+            7.477868480725624,
+            8.284308390022677,
+            9.878253968253969,
+            10.683310657596373,
+            12.278571428571428,
+            13.083628117913833,
+            14.678911564625851,
+            15.483968253968253,
+            17.07925170068027,
+            17.884263038548752,
+            19.478208616780044,
+            20.284603174603173
+          ],
+          "loop_median_seconds": 2.400340136054421,
+          "fits": [
+            {
+              "frequency_hz": 530.2392407167647,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991133787692,
+              "fundamental_amplitude": 0.06348704775268521,
+              "fit_success": true,
+              "onset_index": 0,
+              "fit_span_frames": [
+                51293,
+                55703
+              ]
+            },
+            {
+              "frequency_hz": 530.2369867079719,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999980808854754,
+              "fundamental_amplitude": 0.06335303585843306,
+              "fit_success": true,
+              "onset_index": 1,
+              "fit_span_frames": [
+                121588,
+                125998
+              ]
+            },
+            {
+              "frequency_hz": 530.2426959635089,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989769092932,
+              "fundamental_amplitude": 0.06327533851240452,
+              "fit_success": true,
+              "onset_index": 2,
+              "fit_span_frames": [
+                157151,
+                161561
+              ]
+            },
+            {
+              "frequency_hz": 530.2476278419209,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983829615828,
+              "fundamental_amplitude": 0.06328369988203406,
+              "fit_success": true,
+              "onset_index": 3,
+              "fit_span_frames": [
+                227445,
+                231855
+              ]
+            },
+            {
+              "frequency_hz": 530.2329805281486,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999990172048004,
+              "fundamental_amplitude": 0.06322661268734447,
+              "fit_success": true,
+              "onset_index": 4,
+              "fit_span_frames": [
+                263008,
+                267418
+              ]
+            },
+            {
+              "frequency_hz": 530.2545795535511,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999973627146974,
+              "fundamental_amplitude": 0.06326756626037298,
+              "fit_success": true,
+              "onset_index": 5,
+              "fit_span_frames": [
+                333302,
+                337712
+              ]
+            },
+            {
+              "frequency_hz": 530.2517311738237,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983862817433,
+              "fundamental_amplitude": 0.06322430661936913,
+              "fit_success": true,
+              "onset_index": 6,
+              "fit_span_frames": [
+                368866,
+                373276
+              ]
+            },
+            {
+              "frequency_hz": 530.2552552137271,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985639203449,
+              "fundamental_amplitude": 0.06325748373514899,
+              "fit_success": true,
+              "onset_index": 7,
+              "fit_span_frames": [
+                439159,
+                443569
+              ]
+            },
+            {
+              "frequency_hz": 530.2495101840879,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988181119923,
+              "fundamental_amplitude": 0.063213392741488,
+              "fit_success": true,
+              "onset_index": 8,
+              "fit_span_frames": [
+                474662,
+                479072
+              ]
+            },
+            {
+              "frequency_hz": 530.2569472045566,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985053956776,
+              "fundamental_amplitude": 0.06324955028355865,
+              "fit_success": true,
+              "onset_index": 9,
+              "fit_span_frames": [
+                545013,
+                549423
+              ]
+            },
+            {
+              "frequency_hz": 530.2446558225062,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989584964363,
+              "fundamental_amplitude": 0.06320787176676429,
+              "fit_success": true,
+              "onset_index": 10,
+              "fit_span_frames": [
+                580516,
+                584926
+              ]
+            },
+            {
+              "frequency_hz": 530.2638466533251,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978259830253,
+              "fundamental_amplitude": 0.06325496086274535,
+              "fit_success": true,
+              "onset_index": 11,
+              "fit_span_frames": [
+                650868,
+                655278
+              ]
+            },
+            {
+              "frequency_hz": 530.2717143974868,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998569334152,
+              "fundamental_amplitude": 0.06319205800647162,
+              "fit_success": true,
+              "onset_index": 12,
+              "fit_span_frames": [
+                686371,
+                690781
+              ]
+            },
+            {
+              "frequency_hz": 530.2660543995868,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999981698116042,
+              "fundamental_amplitude": 0.06325071154862781,
+              "fit_success": true,
+              "onset_index": 13,
+              "fit_span_frames": [
+                756723,
+                761133
+              ]
+            },
+            {
+              "frequency_hz": 530.2457904426622,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988806101334,
+              "fundamental_amplitude": 0.06320631377187186,
+              "fit_success": true,
+              "onset_index": 14,
+              "fit_span_frames": [
+                792224,
+                796634
+              ]
+            },
+            {
+              "frequency_hz": 530.2683163793552,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979700984377,
+              "fundamental_amplitude": 0.06324445858015983,
+              "fit_success": true,
+              "onset_index": 15,
+              "fit_span_frames": [
+                862517,
+                866927
+              ]
+            },
+            {
+              "frequency_hz": 530.2907694286018,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991654663012,
+              "fundamental_amplitude": 0.06319437580183433,
+              "fit_success": true,
+              "onset_index": 16,
+              "fit_span_frames": [
+                898079,
+                902489
+              ]
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_frequency_hz": 530.2517311738237,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "onsets_seconds": [
+            1.084013605442177,
+            2.6777777777777776,
+            3.4844444444444442,
+            5.078140589569161,
+            5.8848299319727895,
+            7.478526077097506,
+            8.285238095238094,
+            9.878956916099773,
+            10.684240362811792,
+            12.279251700680271,
+            13.084557823129252,
+            14.679569160997733,
+            15.484897959183673,
+            17.080068027210885,
+            17.885192743764172,
+            19.478866213151928,
+            20.285532879818593
+          ],
+          "loop_median_seconds": 2.400340136054421,
+          "fits": [
+            {
+              "frequency_hz": 530.2392469024578,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991184397644,
+              "fundamental_amplitude": 0.06348719741019809,
+              "fit_success": true,
+              "onset_index": 0,
+              "fit_span_frames": [
+                51333,
+                55743
+              ]
+            },
+            {
+              "frequency_hz": 530.2368121371547,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999981346219764,
+              "fundamental_amplitude": 0.06335258126466019,
+              "fit_success": true,
+              "onset_index": 1,
+              "fit_span_frames": [
+                121618,
+                126028
+              ]
+            },
+            {
+              "frequency_hz": 530.2427705654802,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998973153676,
+              "fundamental_amplitude": 0.06327528220306208,
+              "fit_success": true,
+              "onset_index": 2,
+              "fit_span_frames": [
+                157192,
+                161602
+              ]
+            },
+            {
+              "frequency_hz": 530.2475231503531,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983779384454,
+              "fundamental_amplitude": 0.06328381709757222,
+              "fit_success": true,
+              "onset_index": 3,
+              "fit_span_frames": [
+                227474,
+                231884
+              ]
+            },
+            {
+              "frequency_hz": 530.2330679264572,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989993283999,
+              "fundamental_amplitude": 0.06322684790787349,
+              "fit_success": true,
+              "onset_index": 4,
+              "fit_span_frames": [
+                263049,
+                267459
+              ]
+            },
+            {
+              "frequency_hz": 530.2544669637009,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999973830260571,
+              "fundamental_amplitude": 0.06326734021181125,
+              "fit_success": true,
+              "onset_index": 5,
+              "fit_span_frames": [
+                333331,
+                337741
+              ]
+            },
+            {
+              "frequency_hz": 530.251653369185,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983715300762,
+              "fundamental_amplitude": 0.06322438856105894,
+              "fit_success": true,
+              "onset_index": 6,
+              "fit_span_frames": [
+                368907,
+                373317
+              ]
+            },
+            {
+              "frequency_hz": 530.2552621427981,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985630397383,
+              "fundamental_amplitude": 0.0632573942508901,
+              "fit_success": true,
+              "onset_index": 7,
+              "fit_span_frames": [
+                439190,
+                443600
+              ]
+            },
+            {
+              "frequency_hz": 530.2496841674687,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988028394159,
+              "fundamental_amplitude": 0.06321327777860722,
+              "fit_success": true,
+              "onset_index": 8,
+              "fit_span_frames": [
+                474703,
+                479113
+              ]
+            },
+            {
+              "frequency_hz": 530.2570065502118,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985231988813,
+              "fundamental_amplitude": 0.06324996271084905,
+              "fit_success": true,
+              "onset_index": 9,
+              "fit_span_frames": [
+                545043,
+                549453
+              ]
+            },
+            {
+              "frequency_hz": 530.244413693848,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988984717182,
+              "fundamental_amplitude": 0.0632078376343214,
+              "fit_success": true,
+              "onset_index": 10,
+              "fit_span_frames": [
+                580557,
+                584967
+              ]
+            },
+            {
+              "frequency_hz": 530.2637340794016,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978145652023,
+              "fundamental_amplitude": 0.06325520459628382,
+              "fit_success": true,
+              "onset_index": 11,
+              "fit_span_frames": [
+                650897,
+                655307
+              ]
+            },
+            {
+              "frequency_hz": 530.2713919468209,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985971758618,
+              "fundamental_amplitude": 0.06319212478030291,
+              "fit_success": true,
+              "onset_index": 12,
+              "fit_span_frames": [
+                686412,
+                690822
+              ]
+            },
+            {
+              "frequency_hz": 530.2660714090737,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999981715105871,
+              "fundamental_amplitude": 0.06325077196909558,
+              "fit_success": true,
+              "onset_index": 13,
+              "fit_span_frames": [
+                756759,
+                761169
+              ]
+            },
+            {
+              "frequency_hz": 530.245918779269,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988802116564,
+              "fundamental_amplitude": 0.06320635756961095,
+              "fit_success": true,
+              "onset_index": 14,
+              "fit_span_frames": [
+                792265,
+                796675
+              ]
+            },
+            {
+              "frequency_hz": 530.2681898078873,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979826641723,
+              "fundamental_amplitude": 0.06324421611476111,
+              "fit_success": true,
+              "onset_index": 15,
+              "fit_span_frames": [
+                862546,
+                866956
+              ]
+            },
+            {
+              "frequency_hz": 530.2904960377244,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991417301454,
+              "fundamental_amplitude": 0.06319429961581455,
+              "fit_success": true,
+              "onset_index": 16,
+              "fit_span_frames": [
+                898120,
+                902530
+              ]
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_frequency_hz": 530.251653369185,
+          "usable": true
+        }
+      ],
+      "band_peak_rms": 0.047766188803666704,
+      "onset_consistency_passed": true,
+      "passed": true
+    },
+    "right": {
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "onsets_seconds": [
+            1.0820634920634922,
+            2.6757142857142857,
+            3.482471655328798,
+            5.07609977324263,
+            5.882857142857143,
+            7.476485260770975,
+            8.283265306122448,
+            9.87687074829932,
+            10.682267573696144,
+            12.27718820861678,
+            13.082585034013606,
+            14.677528344671202,
+            15.482925170068027,
+            17.077868480725623,
+            17.883219954648528,
+            19.47684807256236,
+            20.28356009070295
+          ],
+          "loop_median_seconds": 2.400340136054421,
+          "fits": [
+            {
+              "frequency_hz": 530.2392174704854,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991886967013,
+              "fundamental_amplitude": 0.060813521110609635,
+              "fit_success": true,
+              "onset_index": 0,
+              "fit_span_frames": [
+                51247,
+                55657
+              ]
+            },
+            {
+              "frequency_hz": 530.2372732799055,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978120891526,
+              "fundamental_amplitude": 0.06067955461409148,
+              "fit_success": true,
+              "onset_index": 1,
+              "fit_span_frames": [
+                121527,
+                125937
+              ]
+            },
+            {
+              "frequency_hz": 530.243132249619,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991517351511,
+              "fundamental_amplitude": 0.06061426156613458,
+              "fit_success": true,
+              "onset_index": 2,
+              "fit_span_frames": [
+                157105,
+                161515
+              ]
+            },
+            {
+              "frequency_hz": 530.247676435692,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983992499519,
+              "fundamental_amplitude": 0.06061783231880655,
+              "fit_success": true,
+              "onset_index": 3,
+              "fit_span_frames": [
+                227384,
+                231794
+              ]
+            },
+            {
+              "frequency_hz": 530.2330123927326,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999999018634971,
+              "fundamental_amplitude": 0.0605610654277779,
+              "fit_success": true,
+              "onset_index": 4,
+              "fit_span_frames": [
+                262962,
+                267372
+              ]
+            },
+            {
+              "frequency_hz": 530.2552273131638,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999972941181444,
+              "fundamental_amplitude": 0.060604439288833786,
+              "fit_success": true,
+              "onset_index": 5,
+              "fit_span_frames": [
+                333241,
+                337651
+              ]
+            },
+            {
+              "frequency_hz": 530.2521388696689,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985854014762,
+              "fundamental_amplitude": 0.06056350920266094,
+              "fit_success": true,
+              "onset_index": 6,
+              "fit_span_frames": [
+                368820,
+                373230
+              ]
+            },
+            {
+              "frequency_hz": 530.2552161736523,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999986455456598,
+              "fundamental_amplitude": 0.060595238599075965,
+              "fit_success": true,
+              "onset_index": 7,
+              "fit_span_frames": [
+                439098,
+                443508
+              ]
+            },
+            {
+              "frequency_hz": 530.2494895751028,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989565202745,
+              "fundamental_amplitude": 0.06055256721524446,
+              "fit_success": true,
+              "onset_index": 8,
+              "fit_span_frames": [
+                474616,
+                479026
+              ]
+            },
+            {
+              "frequency_hz": 530.2569279008087,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999984458077485,
+              "fundamental_amplitude": 0.06058619062523773,
+              "fit_success": true,
+              "onset_index": 9,
+              "fit_span_frames": [
+                544952,
+                549362
+              ]
+            },
+            {
+              "frequency_hz": 530.2448802157982,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988599498649,
+              "fundamental_amplitude": 0.06054804214965349,
+              "fit_success": true,
+              "onset_index": 10,
+              "fit_span_frames": [
+                580470,
+                584880
+              ]
+            },
+            {
+              "frequency_hz": 530.2643522081403,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978262968348,
+              "fundamental_amplitude": 0.060593343739027306,
+              "fit_success": true,
+              "onset_index": 11,
+              "fit_span_frames": [
+                650807,
+                655217
+              ]
+            },
+            {
+              "frequency_hz": 530.271716358898,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998669882828,
+              "fundamental_amplitude": 0.06053166629092329,
+              "fit_success": true,
+              "onset_index": 12,
+              "fit_span_frames": [
+                686325,
+                690735
+              ]
+            },
+            {
+              "frequency_hz": 530.2665264692133,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999981024722122,
+              "fundamental_amplitude": 0.06058797647941161,
+              "fit_success": true,
+              "onset_index": 13,
+              "fit_span_frames": [
+                756662,
+                761072
+              ]
+            },
+            {
+              "frequency_hz": 530.2454148362098,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988295998316,
+              "fundamental_amplitude": 0.06054568314857784,
+              "fit_success": true,
+              "onset_index": 14,
+              "fit_span_frames": [
+                792178,
+                796588
+              ]
+            },
+            {
+              "frequency_hz": 530.2688631777693,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979817517801,
+              "fundamental_amplitude": 0.060584359175762804,
+              "fit_success": true,
+              "onset_index": 15,
+              "fit_span_frames": [
+                862457,
+                866867
+              ]
+            },
+            {
+              "frequency_hz": 530.2916626365567,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991892976379,
+              "fundamental_amplitude": 0.06054207635887668,
+              "fit_success": true,
+              "onset_index": 16,
+              "fit_span_frames": [
+                898033,
+                902443
+              ]
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_frequency_hz": 530.2521388696689,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "onsets_seconds": [
+            1.0830839002267574,
+            2.677097505668934,
+            3.483514739229025,
+            5.077482993197279,
+            5.88390022675737,
+            7.477868480725624,
+            8.284308390022677,
+            9.878253968253969,
+            10.683310657596373,
+            12.278571428571428,
+            13.083628117913833,
+            14.678911564625851,
+            15.483968253968253,
+            17.07925170068027,
+            17.884263038548752,
+            19.478208616780044,
+            20.284603174603173
+          ],
+          "loop_median_seconds": 2.400340136054421,
+          "fits": [
+            {
+              "frequency_hz": 530.2392384398704,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991866680066,
+              "fundamental_amplitude": 0.06081345300231344,
+              "fit_success": true,
+              "onset_index": 0,
+              "fit_span_frames": [
+                51292,
+                55702
+              ]
+            },
+            {
+              "frequency_hz": 530.2368299311036,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979466694748,
+              "fundamental_amplitude": 0.060679870606551056,
+              "fit_success": true,
+              "onset_index": 1,
+              "fit_span_frames": [
+                121588,
+                125998
+              ]
+            },
+            {
+              "frequency_hz": 530.2432603142491,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991466095208,
+              "fundamental_amplitude": 0.06061425674530532,
+              "fit_success": true,
+              "onset_index": 2,
+              "fit_span_frames": [
+                157151,
+                161561
+              ]
+            },
+            {
+              "frequency_hz": 530.247510507354,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983909968501,
+              "fundamental_amplitude": 0.0606177911050206,
+              "fit_success": true,
+              "onset_index": 3,
+              "fit_span_frames": [
+                227445,
+                231855
+              ]
+            },
+            {
+              "frequency_hz": 530.2330451389684,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999990081452828,
+              "fundamental_amplitude": 0.060561263092459926,
+              "fit_success": true,
+              "onset_index": 4,
+              "fit_span_frames": [
+                263008,
+                267418
+              ]
+            },
+            {
+              "frequency_hz": 530.2548956527135,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999973703766929,
+              "fundamental_amplitude": 0.060605052139453726,
+              "fit_success": true,
+              "onset_index": 5,
+              "fit_span_frames": [
+                333302,
+                337712
+              ]
+            },
+            {
+              "frequency_hz": 530.2520706539709,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998582635325,
+              "fundamental_amplitude": 0.06056398238854781,
+              "fit_success": true,
+              "onset_index": 6,
+              "fit_span_frames": [
+                368866,
+                373276
+              ]
+            },
+            {
+              "frequency_hz": 530.2552272154477,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999986423293471,
+              "fundamental_amplitude": 0.060596017998834864,
+              "fit_success": true,
+              "onset_index": 7,
+              "fit_span_frames": [
+                439159,
+                443569
+              ]
+            },
+            {
+              "frequency_hz": 530.2496667153777,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989393424523,
+              "fundamental_amplitude": 0.0605526477373355,
+              "fit_success": true,
+              "onset_index": 8,
+              "fit_span_frames": [
+                474662,
+                479072
+              ]
+            },
+            {
+              "frequency_hz": 530.2570442745046,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998472633554,
+              "fundamental_amplitude": 0.060585415074119714,
+              "fit_success": true,
+              "onset_index": 9,
+              "fit_span_frames": [
+                545013,
+                549423
+              ]
+            },
+            {
+              "frequency_hz": 530.2446254438743,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988046981394,
+              "fundamental_amplitude": 0.0605481526002889,
+              "fit_success": true,
+              "onset_index": 10,
+              "fit_span_frames": [
+                580516,
+                584926
+              ]
+            },
+            {
+              "frequency_hz": 530.2640610149762,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978121015727,
+              "fundamental_amplitude": 0.060593176122936736,
+              "fit_success": true,
+              "onset_index": 11,
+              "fit_span_frames": [
+                650868,
+                655278
+              ]
+            },
+            {
+              "frequency_hz": 530.2713726671751,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999986904142355,
+              "fundamental_amplitude": 0.060531774027832615,
+              "fit_success": true,
+              "onset_index": 12,
+              "fit_span_frames": [
+                686371,
+                690781
+              ]
+            },
+            {
+              "frequency_hz": 530.2664087808342,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998066277601,
+              "fundamental_amplitude": 0.06058725673236862,
+              "fit_success": true,
+              "onset_index": 13,
+              "fit_span_frames": [
+                756723,
+                761133
+              ]
+            },
+            {
+              "frequency_hz": 530.2455451623396,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999988278451555,
+              "fundamental_amplitude": 0.06054601445157844,
+              "fit_success": true,
+              "onset_index": 14,
+              "fit_span_frames": [
+                792224,
+                796634
+              ]
+            },
+            {
+              "frequency_hz": 530.2686345222356,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979853696739,
+              "fundamental_amplitude": 0.06058449233202483,
+              "fit_success": true,
+              "onset_index": 15,
+              "fit_span_frames": [
+                862517,
+                866927
+              ]
+            },
+            {
+              "frequency_hz": 530.2913939027292,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.99999915084507,
+              "fundamental_amplitude": 0.060542079731378005,
+              "fit_success": true,
+              "onset_index": 16,
+              "fit_span_frames": [
+                898079,
+                902489
+              ]
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_frequency_hz": 530.2520706539709,
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "onsets_seconds": [
+            1.084013605442177,
+            2.677755102040816,
+            3.4844444444444442,
+            5.078140589569161,
+            5.8848299319727895,
+            7.478526077097506,
+            8.285238095238094,
+            9.878934240362812,
+            10.684240362811792,
+            12.279251700680271,
+            13.084557823129252,
+            14.679569160997733,
+            15.484897959183673,
+            17.080045351473924,
+            17.885192743764172,
+            19.478866213151928,
+            20.285532879818593
+          ],
+          "loop_median_seconds": 2.400340136054421,
+          "fits": [
+            {
+              "frequency_hz": 530.2392289453634,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991846885841,
+              "fundamental_amplitude": 0.06081338641763842,
+              "fit_success": true,
+              "onset_index": 0,
+              "fit_span_frames": [
+                51333,
+                55743
+              ]
+            },
+            {
+              "frequency_hz": 530.236651045549,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999980066317096,
+              "fundamental_amplitude": 0.060679356480044994,
+              "fit_success": true,
+              "onset_index": 1,
+              "fit_span_frames": [
+                121617,
+                126027
+              ]
+            },
+            {
+              "frequency_hz": 530.2433428655202,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991439291813,
+              "fundamental_amplitude": 0.06061424741935661,
+              "fit_success": true,
+              "onset_index": 2,
+              "fit_span_frames": [
+                157192,
+                161602
+              ]
+            },
+            {
+              "frequency_hz": 530.2474022322668,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999983841905162,
+              "fundamental_amplitude": 0.060617883094364805,
+              "fit_success": true,
+              "onset_index": 3,
+              "fit_span_frames": [
+                227474,
+                231884
+              ]
+            },
+            {
+              "frequency_hz": 530.2331346328345,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989845431406,
+              "fundamental_amplitude": 0.06056158196347745,
+              "fit_success": true,
+              "onset_index": 4,
+              "fit_span_frames": [
+                263049,
+                267459
+              ]
+            },
+            {
+              "frequency_hz": 530.2547693786029,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999973965153207,
+              "fundamental_amplitude": 0.060604869191450146,
+              "fit_success": true,
+              "onset_index": 5,
+              "fit_span_frames": [
+                333331,
+                337741
+              ]
+            },
+            {
+              "frequency_hz": 530.2519984053043,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999985806289386,
+              "fundamental_amplitude": 0.06056426408203794,
+              "fit_success": true,
+              "onset_index": 6,
+              "fit_span_frames": [
+                368907,
+                373317
+              ]
+            },
+            {
+              "frequency_hz": 530.255249372247,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998636448948,
+              "fundamental_amplitude": 0.06059592386854564,
+              "fit_success": true,
+              "onset_index": 7,
+              "fit_span_frames": [
+                439189,
+                443599
+              ]
+            },
+            {
+              "frequency_hz": 530.2498556220031,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999989219677516,
+              "fundamental_amplitude": 0.06055276084634158,
+              "fit_success": true,
+              "onset_index": 8,
+              "fit_span_frames": [
+                474703,
+                479113
+              ]
+            },
+            {
+              "frequency_hz": 530.2571084985362,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999984905245556,
+              "fundamental_amplitude": 0.06058575723131284,
+              "fit_success": true,
+              "onset_index": 9,
+              "fit_span_frames": [
+                545043,
+                549453
+              ]
+            },
+            {
+              "frequency_hz": 530.2443784837931,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999987543372644,
+              "fundamental_amplitude": 0.06054816082199852,
+              "fit_success": true,
+              "onset_index": 10,
+              "fit_span_frames": [
+                580557,
+                584967
+              ]
+            },
+            {
+              "frequency_hz": 530.263934319874,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999978027066528,
+              "fundamental_amplitude": 0.060593268700180725,
+              "fit_success": true,
+              "onset_index": 11,
+              "fit_span_frames": [
+                650897,
+                655307
+              ]
+            },
+            {
+              "frequency_hz": 530.2710579284809,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999987121435703,
+              "fundamental_amplitude": 0.06053191404914116,
+              "fit_success": true,
+              "onset_index": 12,
+              "fit_span_frames": [
+                686412,
+                690822
+              ]
+            },
+            {
+              "frequency_hz": 530.2663751418822,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999980564576676,
+              "fundamental_amplitude": 0.06058735497966205,
+              "fit_success": true,
+              "onset_index": 13,
+              "fit_span_frames": [
+                756758,
+                761168
+              ]
+            },
+            {
+              "frequency_hz": 530.2456773230156,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.999998830193926,
+              "fundamental_amplitude": 0.060546386758960055,
+              "fit_success": true,
+              "onset_index": 14,
+              "fit_span_frames": [
+                792265,
+                796675
+              ]
+            },
+            {
+              "frequency_hz": 530.2685004357133,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999979883000968,
+              "fundamental_amplitude": 0.06058447876473218,
+              "fit_success": true,
+              "onset_index": 15,
+              "fit_span_frames": [
+                862546,
+                866956
+              ]
+            },
+            {
+              "frequency_hz": 530.2911250529999,
+              "fft_peak_hz": 530.25,
+              "explained_variance": 0.9999991150892332,
+              "fundamental_amplitude": 0.06054203998965634,
+              "fit_success": true,
+              "onset_index": 16,
+              "fit_span_frames": [
+                898120,
+                902530
+              ]
+            }
+          ],
+          "excluded_short_regions": [],
+          "median_frequency_hz": 530.2519984053043,
+          "usable": true
+        }
+      ],
+      "band_peak_rms": 0.04574634064337825,
+      "onset_consistency_passed": true,
+      "passed": true
+    }
+  },
+  "checks": {
+    "all_channel_measurements_usable": true,
+    "independent_stereo_onsets_agree": true,
+    "no_full_scale_samples": true
+  },
+  "passed": true,
+  "registration_sha256": "a980658919688e4bc6286a2b0710d903502ea56e16150255d405637acc216e9e",
+  "native_results_sha256": "e9cc8f0f6a8c0e4a30c192e712d8d7ab0cc9bae8cb4f97edc091d835c1db9e9c"
+}

@@ -1,0 +1,7 @@
+{
+  "user_report": "done",
+  "audible_direction_or_step_order_confirmation": null,
+  "interpretation": "User completed the requested two backups and separate playback recordings; no explicit listening comparison supplied",
+  "capture_sha256": "b6ed6ed76f19c07e01fe811d83a0e7f73a0bf14d98d03917db486a8c455e32d0",
+  "playback_sha256": "98037ff43fd510d712e78028c34e451496beedc3c1576c01907de939acbfddc7"
+}

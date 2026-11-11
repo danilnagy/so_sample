@@ -1,0 +1,81 @@
+{
+  "analysis_version": "sound3-recorded-volume-low-nibble-range-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "hardware_verified": false,
+  "baseline_artifact": "experiments/event-044-b-sound3-tone-volume-lock-up/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "d21b4e80bee384030d7dd4d7357b9eb193608de0dd4ac509e03ee9d69b273b03",
+  "baseline_capture": "experiments/event-044-b-sound3-tone-volume-lock-up/capture.wav",
+  "baseline_capture_sha256": "cb0ceb9bb4108001948e9dca584397a8d046ec4ca502d32e2a93a9457aa116e2",
+  "baseline_body_sha256": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7",
+  "baseline_observation_sha256": "f11f9e84a294422600b126c76f03f9d2829b28bc81af9048f05f92791819b111",
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "primary_byte_index_zero_based": 1,
+    "mask": 15,
+    "concatenated_pattern_payload_offsets_zero_based": [
+      7,
+      55,
+      103,
+      151,
+      199,
+      247,
+      295,
+      343,
+      391,
+      439,
+      487,
+      535,
+      583,
+      631,
+      679,
+      727
+    ],
+    "raw_maximum_nibble_observed": 15,
+    "raw_minimum_nibble_hypothesis": 0
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-045-c-sound3-tone-volume-lock-minimum",
+      "action": "Play Pattern1/Sound3/TONE; hold WRITE, move only B fully counterclockwise over about5 seconds, hold WRITE3 more seconds stationary, release,stop,ensure write off,capture",
+      "expected_body_sha256": "e84321400674817710d81dc3bf8d79b3b9c84b6b02b2d2b490c407c54db1a66b"
+    },
+    {
+      "experiment_id": "event-046-b-return-sound3-tone-volume-lock-maximum",
+      "action": "Repeat WRITE-held pass moving only B fully clockwise over about5 seconds; hold WRITE3 more seconds stationary,release,stop,ensure write off,capture",
+      "expected_body_sha256": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7"
+    }
+  ],
+  "hypotheses": {
+    "only_candidate_low_nibbles_change": "All other bits in the16 Sound3 tuples and all auxiliary/other-sound/other-pattern/sample/global bytes stay unchanged",
+    "recorded_minimum_raw_nibbles_all_zero": "A falsifiable encoding hypothesis, not an assumed display value or silence",
+    "recorded_maximum_return_raw_nibbles_all_f": "All16 raw nibbles match the independent original loud-state endpoint",
+    "complete_return_equals_independent_maximum_body": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7"
+  },
+  "limits": [
+    "Initial maximum literal model was found after observing that capture; minimum and exact-return predictions are registered before new data",
+    "High0xc0 bits remain opaque and must not change; no enable-flag or pitch interpretation is imposed",
+    "Do not fit another scale or move the candidate if minimum0 prediction fails; report actual bytes",
+    "No numeric display,percent gain,mute behavior or volume writer assumed; auditory observations remain separate"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "user_report": "done, and confirmed the sample sounds unfiltered",
+  "user_described_filter": "unfiltered",
+  "requested_restore_and_recapture_completed_in_context": true,
+  "numeric_display_value": null,
+  "capture_sha256": "6710446b4c514e05e60063376adf14c00a0d69a22b478bfd740bc46a1da368c1",
+  "restore_wav_sha256": "e0fe68be4e895f7cc552227627ac18f55518876715d10259f87ae10dc1f1cf87",
+  "interpretation": "Explicit neutral-like listening after the requested public-plan restore; complete native reception is separate evidence; no broadband response inferred"
+}

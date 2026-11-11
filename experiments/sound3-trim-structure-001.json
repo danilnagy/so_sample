@@ -1,0 +1,413 @@
+{
+  "analysis_version": "trim-structure-0.1",
+  "inputs": [
+    {
+      "path": "experiments\\empty-001-e-copy-to-3\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "faf898606ae701061de005962cf4abf8f60af3338531fc720bcabfe3d03c3ccb",
+      "source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f"
+    },
+    {
+      "path": "experiments\\empty-001-f-sound3-trim-min\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "821d6e2c741ea23432da47ec6cf87fc50125cd35f3a7dfc54165200a4f4bd0c7",
+      "source_sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70"
+    }
+  ],
+  "selection": "Post-observation windows; coding hypotheses, not native trim offsets",
+  "recurrence_training_span": [
+    177200,
+    178224
+  ],
+  "recurrence_holdout_span": [
+    178224,
+    178736
+  ],
+  "binary_recurrence_degree_bound": 256,
+  "channels": {
+    "left": {
+      "strict_differences": {
+        "raw": {
+          "comparison_span": [
+            0,
+            178922
+          ],
+          "changed_values": 1212,
+          "first_change": 177147,
+          "last_change": 178793
+        },
+        "staggered_phase": {
+          "comparison_span": [
+            0,
+            178921
+          ],
+          "changed_values": 1228,
+          "first_change": 177147,
+          "last_change": 178792,
+          "constant_relative_phase_runs": [
+            {
+              "span": [
+                0,
+                177147
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                178793,
+                178921
+              ],
+              "phase_offset_mod4": 0
+            }
+          ]
+        },
+        "increment": {
+          "comparison_span": [
+            0,
+            178920
+          ],
+          "changed_values": 1144,
+          "first_change": 177146,
+          "last_change": 178792
+        }
+      },
+      "recurrence_probes": [
+        {
+          "delta_view": "raw_xor",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 258,
+            "samples_consumed": 514,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "raw_xor",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 258,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_xor",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_xor",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 260,
+            "samples_consumed": 515,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_mod4_difference",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_mod4_difference",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 260,
+            "samples_consumed": 515,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_xor",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 260,
+            "samples_consumed": 516,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_xor",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 259,
+            "samples_consumed": 514,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_mod4_difference",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 507,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_mod4_difference",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 259,
+            "samples_consumed": 514,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        }
+      ]
+    },
+    "right": {
+      "strict_differences": {
+        "raw": {
+          "comparison_span": [
+            0,
+            178921
+          ],
+          "changed_values": 1362,
+          "first_change": 177147,
+          "last_change": 178920
+        },
+        "staggered_phase": {
+          "comparison_span": [
+            0,
+            178920
+          ],
+          "changed_values": 1336,
+          "first_change": 177146,
+          "last_change": 178919,
+          "constant_relative_phase_runs": [
+            {
+              "span": [
+                0,
+                177146
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                178793,
+                178920
+              ],
+              "phase_offset_mod4": 1
+            }
+          ]
+        },
+        "increment": {
+          "comparison_span": [
+            0,
+            178919
+          ],
+          "changed_values": 1184,
+          "first_change": 177145,
+          "last_change": 178792
+        }
+      },
+      "recurrence_probes": [
+        {
+          "delta_view": "raw_xor",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 263,
+            "samples_consumed": 518,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "raw_xor",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_xor",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 263,
+            "samples_consumed": 517,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_xor",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 511,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_mod4_difference",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 511,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "staggered_phase_mod4_difference",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 511,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_xor",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 258,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_xor",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_mod4_difference",
+          "coordinate": "high",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 259,
+            "samples_consumed": 515,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        },
+        {
+          "delta_view": "increment_mod4_difference",
+          "coordinate": "low",
+          "fit": {
+            "complete": false,
+            "degree_lower_bound": 257,
+            "samples_consumed": 513,
+            "samples_available": 1024,
+            "taps": null
+          },
+          "holdout_errors": null,
+          "nontrivial_training": true,
+          "supported": false
+        }
+      ]
+    }
+  },
+  "payload_decoded": false,
+  "limits": [
+    "Every comparison is zero shift; shared analysis spans do not truncate saved artifacts.",
+    "Phase-offset tails are coordinate relations, not decoded zero or native sample values.",
+    "Recurrence tests cover only the named binary differences and degree<=256.",
+    "Plaintext constancy inside the metadata tail is unverified; failure cannot exclude every scrambler.",
+    "No checksum, codec, encryption claim or safe writable field follows from these probes."
+  ]
+}

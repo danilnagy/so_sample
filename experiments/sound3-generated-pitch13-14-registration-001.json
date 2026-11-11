@@ -1,0 +1,81 @@
+{
+  "analysis_version": "generated-pitch13-14-pair-and-frequency-preregistration-0.1",
+  "registered_before_both_backups_and_audio": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/event-053-d-return-sound3-tone-pitch-lock-minimum/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "59612ee7e270c94b686bb3fcc944d9fb411eb9cb6aff4a5daa1492fc92b26866",
+  "source_capture": "experiments/event-053-d-return-sound3-tone-pitch-lock-minimum/capture.wav",
+  "source_capture_sha256": "57466dff79208f9b6fb1e9fb189262aeb9c628184c50cfb38ec179be9964569c",
+  "source_body_sha256": "227d4d25e644c83f2d8e89d2a4135125f8cb926082983a81b4842de21e654fc2",
+  "source_observation_sha256": "a9885840a745a224b5c50d1c439189cd071a2aa0acb10ad47436c43d65ddd573",
+  "range_results_sha256": "a3eb875d93fac3ae9b7ce745316abfa991b9fea0ebb71cb4fbb994441106e768",
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "edited-sound3-pitch13-reference-001",
+      "raw_pitch_value": 13,
+      "expected_body_sha256": "7f09d45808d5a9064139b43f717bbc8bd8e99a9248411bc534641ff343783fdd",
+      "restore_wav_sha256": "f57724e6c26ee2c6ff0cbdfb89abce8de58ac07950e7453b2f5101b862210962",
+      "edited_artifact_sha256": "9ddbe4f084b2ebe99e34bc809b26319980939694f4f9fd6845921fef7de2bbdf",
+      "software_validation_sha256": "614de6c4e3d6c3b037155177a49415c2cc217307122d9b784b55e0a02efb0080"
+    },
+    {
+      "experiment_id": "edited-sound3-pitch14-001",
+      "raw_pitch_value": 14,
+      "expected_body_sha256": "05e1d379603f4457fd1496e516460e0a8de50cadf0fc810e9c2f3ca1da1b4637",
+      "restore_wav_sha256": "3bc60ad70049618272a7d44b0998bef39ddeae63907f16598946e83b88691ad7",
+      "edited_artifact_sha256": "3f58f7d3d88fa8e84579b445f8e79cd49c014f7b7a48a62255d9bc0236d8a79d",
+      "software_validation_sha256": "e61a76b3e05e975ba0d7832dc08092e30f1ffedd78e47c023d858850c05022b6"
+    }
+  ],
+  "frequency_method": {
+    "parameters": {
+      "center_frequency_hz": 525.0,
+      "half_bandwidth_hz": 75.0,
+      "envelope_seconds": 0.005,
+      "threshold_peak_fractions": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "minimum_region_seconds": 0.06,
+      "edge_margin_seconds": 0.03,
+      "minimum_band_rms": 0.001,
+      "maximum_gap_residual_seconds": 0.006,
+      "threshold_gap_spread_seconds": 0.004,
+      "stereo_onset_tolerance_seconds": 0.002,
+      "nominal_loop_seconds": 2.4,
+      "loop_tolerance_seconds": 0.005,
+      "steady_fit_window_after_onset_seconds": [
+        0.08,
+        0.18
+      ],
+      "frequency_search_hz": [
+        465.0,
+        585.0
+      ],
+      "fft_grid_max_spacing_hz": 0.25,
+      "fft_peak_refine_halfwidth_hz": 1.0,
+      "minimum_fit_explained_variance": 0.9,
+      "minimum_complete_cycles": 3,
+      "reference_frequency_lead_hz": 500.65,
+      "reference_frequency_relative_tolerance": 0.005,
+      "minimum_relative_frequency_increase": 0.005,
+      "hypothesized_ratio_for_one_semitone": 1.0594630943592953,
+      "semitone_ratio_relative_tolerance": 0.002,
+      "unchanged_loop_seconds_tolerance": 0.005
+    },
+    "algorithm": "Common450..600Hz third-order zero-phase band; frozen onset thresholds; fit80..180ms after each onset; Hann FFT with spacing<=0.25Hz selects global peak in465..585Hz, refine least-squares sine/cos/DC within1Hz; identical method for both legs"
+  },
+  "hypotheses": {
+    "generated14_vs13": "Repeated Sound3 tone frequency increases with unchanged sample codes,keys,volume36 and pattern loop",
+    "one_semitone": "Candidate/reference frequency ratio equals2^(1/12) within0.2% in all six channel/threshold comparisons",
+    "reference": "Generated13 note parameters reproduce the prior measured reference near500.65Hz; parameter-only cells now also13, so this is a generated reference, not a complete genuine-body replay"
+  },
+  "limits": [
+    "Frequency law is a new hypothesis selected after native endpoint data, before either pair audio",
+    "Both data sets use the same wide band/FFT search without fitting around a presumed candidate frequency",
+    "First verify13 reception and usable audio before requesting14 restoration; failed methods remain retained without rescue",
+    "Only fixed13/14 and exact genuine minimum are accepted by research constructor; no public pitch setter",
+    "One interval does not establish every code's semitone law, full field width or a numeric UI scale"
+  ]
+}

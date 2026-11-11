@@ -1,0 +1,128 @@
+{
+  "analysis_version": "second-copy-observations-0.1",
+  "registration_sha256": "421f60f707566aa7783fdc08d9fd8960ddf4c6dad554c4c6cf4db0e0b241019e",
+  "source_artifact_sha256": "c03df4887c8386885fbd618588047d38a2bfaddd5c26626317254f5e1b9cdf6e",
+  "target_artifact_sha256": "7e09d71f9e0cbc8d2804de2c359d800a6225b2b54136153c26345b7090937ec9",
+  "target_capture_sha256": "7acb719c345ba68f142fe9872662bf603b108d5b3671e82c49fa61320c1c8d0e",
+  "protocol_status": "deviated_user_reported",
+  "causal_validation_eligible": false,
+  "reported_actions": [
+    "Deleted Sound8 by mistake",
+    "Copied Sound1 back toSound8",
+    "Copied recovered Sound8 intoSound2"
+  ],
+  "interpretation": "Observed comparisons only; not a clean test of a single source8-to2 copy. No original hypothesis is confirmed or causally falsified by this deviated sequence.",
+  "channels": {
+    "left": {
+      "source_count": 178868,
+      "actual_count": 178900,
+      "count_increase": 32,
+      "strict_first_change": 177093,
+      "changed_shared_labels": 1249,
+      "observed_window_matches": {
+        "front_table": false,
+        "inline_slots": true
+      },
+      "observed_small_count_range_matches": true
+    },
+    "right": {
+      "source_count": 178868,
+      "actual_count": 178900,
+      "count_increase": 32,
+      "strict_first_change": 177092,
+      "changed_shared_labels": 1350,
+      "observed_window_matches": {
+        "front_table": false,
+        "inline_slots": true
+      },
+      "observed_small_count_range_matches": true
+    }
+  },
+  "anchors": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643",
+      "observed_same_position_match": true
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b",
+      "observed_same_position_match": true
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081",
+      "observed_same_position_match": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2",
+      "observed_same_position_match": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8",
+      "observed_same_position_match": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6",
+      "observed_same_position_match": true
+    }
+  ],
+  "decoder_change": {
+    "from": "sign-crossings-0.1",
+    "to": "sign-crossings-0.2",
+    "reason": "Initial negative sign origin at file zero incorrectly counted long leading silence as a sign run. New virtual origin is the first thresholded sample; genuine long gaps still fail.",
+    "threshold": 0.0063,
+    "source_audio_modified": false
+  }
+}

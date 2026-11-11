@@ -1,0 +1,72 @@
+{
+  "analysis_version": "native-sound2-layer-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-four-keys-001",
+  "baseline_source_sha256": "2cc8b8df219f49e9a0721d67ecf719c37575f9f9da7f264eac5b2c4736eb84bf",
+  "baseline_body_sha256": "9b87309f572b188cd1e1a2651b1ca4feec5cfa8fb669068631042ca8f49465f0",
+  "baseline_artifact_sha256": "853f5ea6670d5b4508190f79d5547453ea9119fa95c98dc06cd02f1e5861d0b0",
+  "baseline_artifact": "../edited-four-keys-001/derived/analysis-002/capture.symbols.npz",
+  "target_capture": "event-011-b-sound2-layer/capture.wav",
+  "expected_change": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 2,
+    "keyboard_key": 1,
+    "operation": "Add one Sound2 note without removing the existing Sound3 note"
+  },
+  "control_checks": {
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "sample_packets": "All sample selector/data packets identical",
+    "other_patterns": "Patterns2..16 identical",
+    "all_other_plain_packets": "Only Pattern1 data chunks may change; reselect Sound8 before capture",
+    "populated_steps": [
+      1,
+      5,
+      9,
+      13
+    ],
+    "baseline_target_cell": {
+      "primary_span": [
+        3,
+        6
+      ],
+      "primary_hex": "000000",
+      "auxiliary_offset": 769,
+      "auxiliary_value": 0
+    },
+    "new_cell": "One matching nonzero three-byte primary and auxiliary cell at Sound2 index1 on Step1",
+    "preserved_cells": "All existing Sound3 notes and every other cell unchanged",
+    "locality": "Only primary bytes[3,6) and auxiliary byte769 may change; footer unchanged",
+    "step1_sound_slots": [
+      2,
+      3
+    ]
+  },
+  "separately_evaluated_hypotheses": {
+    "primary_matches_sound3_key1": {
+      "span": [
+        3,
+        6
+      ],
+      "expected_hex": "0df883",
+      "interpretation": "Unverified: Sound2's key1 note parameters may equal Sound3's; mismatches are recorded separately from locality checks"
+    },
+    "auxiliary_key_index": {
+      "offset": 769,
+      "old_value": 0,
+      "expected_new_value": 240,
+      "interpretation": "Unverified extension of key1 auxiliaryF0 from Sound3 to Sound2"
+    },
+    "changed_plain_packet_indices": [
+      4,
+      7
+    ]
+  },
+  "limits": [
+    "No Sound2 writer or multi-sound writer is enabled by this prediction",
+    "Preservation checks and raw-value hypotheses are evaluated separately",
+    "No audio playback is required; polyphony and audible layering are not claimed",
+    "Measured-clock decoding must not use expected note bytes or target bodies"
+  ]
+}

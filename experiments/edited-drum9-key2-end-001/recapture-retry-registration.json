@@ -1,0 +1,24 @@
+{
+  "experiment_id": "edited-drum9-key2-end-001-retry",
+  "registered_before_capture": true,
+  "expected_file": "capture-retry.wav",
+  "restore_target_registration": "restore-registration.json",
+  "restore_target_registration_sha256": "45c8254f79e4b917554e4f364159f1481feee9b60290da3822e9a057e293c8a5",
+  "expected_encoded_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "expected_reference_hex": "cd0f00009d17000000",
+  "expected_packet_count": 527,
+  "expected_frame_end_byte": 89620,
+  "expected_preserved_key1_reference_hex": "00000000d007000000",
+  "prior_failed_capture_sha256": "5cfdffdf3ed3e2f1a4b95ee64533fe0fea789345dfa7e42b1ef33c65a7c6d38f",
+  "prior_failed_capture_archive": "capture-attempt-001.wav",
+  "planned_actions": [
+    "Keep the current restored device state and both knobs untouched; do not restore or repeat tone checks",
+    "Use the previous successful stereo input path and recording settings without effects",
+    "With Sound8/TONE, write off and playback stopped, record a complete backup as capture-retry.wav here",
+    "Export stereo PCM16/44100Hz and preserve the archived first attempt"
+  ],
+  "limits": [
+    "Auditions already passed; the retry only supplies a reliable native frame",
+    "Any subsequent state differences will be reported explicitly rather than masked"
+  ]
+}

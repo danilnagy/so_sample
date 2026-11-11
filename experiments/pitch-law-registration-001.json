@@ -1,0 +1,107 @@
+{
+  "analysis_version": "pitch-law-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-pitch-law-001",
+  "plan": "experiments/pitch-law-plan-001/plan.json",
+  "plan_sha256": "ce46f73194009cb9adf668257bbaf1c7d16bceaf441f3b5e13021fed64b1dd20",
+  "compile_report_sha256": "3821268fb964d02b874186986586f640624437931a18ed1dca3e7fa8ceecc6dc",
+  "source_artifact": "experiments/compiled-melodic-notes-writer-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3f35d316b034432992cdf924a70e4bac56e27463dc483d745bfd530d0f4e46e4",
+  "source_capture_sha256": "e0aa2b22b4d2b1bf9c6ae7602156194ffa4bc999af1374a46c0ecb2fe40749a2",
+  "expected_body_sha256": "c2e5b07bd610655bacdf88b8beba83c04c354a8bb79831a4e96fbfee9fcb3e70",
+  "edited_artifact_sha256": "09c48ae377af7dd93271e862208823506c056394881a6d461a4dc39ec687e320",
+  "restore_wav_sha256": "8bcb1e76f61bb1d4760baccfda9f89f990c4e14366670554f4d2e58f334d264b",
+  "pitch_codes": [
+    13,
+    1,
+    25,
+    7,
+    19,
+    4,
+    22,
+    10,
+    16,
+    2,
+    24,
+    5,
+    21,
+    8,
+    18,
+    12
+  ],
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "semitone_per_code": [
+      0,
+      -1200,
+      1200,
+      -600,
+      600,
+      -900,
+      900,
+      -300,
+      300,
+      -1100,
+      1100,
+      -800,
+      800,
+      -500,
+      500,
+      -100
+    ],
+    "codes_ignored": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly; only Pattern 1's Sound3 cells may differ",
+    "Pitches are measured with the frozen grid-only method; cents are relative to step 1 (code 13)",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Otherwise inconclusive; the measured table is reported either way"
+  ],
+  "limits": [
+    "Sound3 with key 1 on Pattern 1; codes outside 1..25 are not tested"
+  ]
+}

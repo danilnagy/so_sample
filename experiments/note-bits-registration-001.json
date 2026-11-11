@@ -1,0 +1,252 @@
+{
+  "analysis_version": "note-bits-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-note-bits-001",
+  "source_artifact": "experiments/compiled-voice-release-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "ddda0c40aab176ca5ff684ee9ba70e4c6a282504533a08f54f801bb3b255513d",
+  "source_capture_sha256": "6a8b88998b2d699228e083345aa7c66a4b6591889f4deeb650c1485a4986f099",
+  "steps": {
+    "1": [
+      13,
+      0
+    ],
+    "2": [
+      19,
+      0
+    ],
+    "3": [
+      0,
+      0
+    ],
+    "4": [
+      7,
+      0
+    ],
+    "5": [
+      0,
+      0
+    ],
+    "6": [
+      25,
+      0
+    ],
+    "7": [
+      25,
+      1
+    ],
+    "8": [
+      13,
+      0
+    ],
+    "9": [
+      13,
+      1
+    ],
+    "10": [
+      1,
+      0
+    ],
+    "11": [
+      0,
+      0
+    ],
+    "12": [
+      25,
+      0
+    ],
+    "13": [
+      25,
+      1
+    ],
+    "14": [
+      13,
+      0
+    ],
+    "15": [
+      0,
+      0
+    ],
+    "16": [
+      13,
+      0
+    ]
+  },
+  "bit5_pairs": [
+    [
+      7,
+      6
+    ],
+    [
+      9,
+      8
+    ],
+    [
+      13,
+      12
+    ]
+  ],
+  "duration_pairs": [
+    [
+      7,
+      6
+    ],
+    [
+      13,
+      12
+    ]
+  ],
+  "expected_hz_under_hold": {
+    "1": 599.3228307506727,
+    "2": 847.5704754874364,
+    "3": 847.5704754874364,
+    "4": 423.7852377437182,
+    "5": 423.7852377437182,
+    "6": 1198.6456615013453,
+    "7": 1198.6456615013453,
+    "8": 599.3228307506727,
+    "9": 599.3228307506727,
+    "10": 299.66141537533633,
+    "11": 299.66141537533633,
+    "12": 1198.6456615013453,
+    "13": 1198.6456615013453,
+    "14": 599.3228307506727,
+    "15": 599.3228307506727,
+    "16": 599.3228307506727
+  },
+  "plan_sha256": "48014bcd0b608f73a78228d76f49cfe4e8be75003510070be3c32b82c2b82001",
+  "expected_body_sha256": "7568408b6ff3e13b8d25a689d91a2f5fa68865135e3acce21e9f47e4a8333999",
+  "edited_artifact_sha256": "9a1f9bd2d4db9bcd0ddecd5b1023d009c41999493f3fda42b8aad0a408543fb4",
+  "restore_wav_sha256": "bc07bab050b511e426069c8b90a3b3f530b9bc9e5eb7f326b466144f47dc8348",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      100.0,
+      110.0,
+      120.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "duration_method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.001,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "margin_seconds": 0.01,
+    "threshold_fraction_of_step_peak": 0.1,
+    "tolerance_ms": 5.0,
+    "min_agreeing_loops": 4
+  },
+  "duration_method_script_sha256": "c28a7cf59bc4fd70777a93647d2a84a27761d06aac54d8eaf2c37d01a03d05cc",
+  "level_method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "level_method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "models_cents": {
+    "zero_holds_last_pitch": [
+      0.0,
+      600.0,
+      600.0,
+      -600.0,
+      -600.0,
+      1200.0,
+      1200.0,
+      0.0,
+      0.0,
+      -1200.0,
+      -1200.0,
+      1200.0,
+      1200.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_is_pitch_13": [
+      0.0,
+      600.0,
+      0.0,
+      -600.0,
+      0.0,
+      1200.0,
+      1200.0,
+      0.0,
+      0.0,
+      -1200.0,
+      0.0,
+      1200.0,
+      1200.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "zero_is_below_code_1": [
+      0.0,
+      600.0,
+      -1300.0,
+      -600.0,
+      -1300.0,
+      1200.0,
+      1200.0,
+      0.0,
+      0.0,
+      -1200.0,
+      -1300.0,
+      1200.0,
+      1200.0,
+      0.0,
+      -1300.0,
+      0.0
+    ]
+  },
+  "bit5_tolerances": {
+    "cents": 20.0,
+    "db": 1.5,
+    "ms": 5.0
+  },
+  "decision": [
+    "Reception: the backup equals the target exactly, or differs only in bit 5 of the flagged cells (bit5_cleared_by_device)",
+    "Pitch: a model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "bit5_inert holds when each flagged note matches the note before it within 20 cents, 1.5 dB, and 5 ms on the pitch-25 pairs"
+  ],
+  "limits": [
+    "One melodic sound at key 1; bit 5 on drum notes is not tested"
+  ]
+}

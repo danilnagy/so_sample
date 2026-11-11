@@ -1,0 +1,133 @@
+{
+  "analysis_version": "FILTER-A-full-bar-center-and-prior-audio-preregistration-0.1",
+  "registered_before_center_backup_and_audio": true,
+  "reference_audio_already_observed": true,
+  "hardware_verified": false,
+  "experiment_id": "event-058-e-sound3-filter-A-center",
+  "source_artifact": "experiments/event-057-d-return-sound3-filter-A-lock-up/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "63307aab0c59adf4af52758a9f939a9a63c8b23bd409ea95e046b3a72aa77992",
+  "source_capture": "experiments/event-057-d-return-sound3-filter-A-lock-up/capture.wav",
+  "source_capture_sha256": "e0304521c1922de68c9216b1123d494f44b585e37f4d4eaccafecf20de6b2e71",
+  "source_body_sha256": "95572be728c21f74a220664c26c19982cf0913adf52636ed1d9ef352d2f56f0f",
+  "source_observation_sha256": "d3d4f2067dd67089ce08f3faa2687a4e8c7b266782b6c6f61627995e37f0cdad",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "contiguous_endpoint_values": [
+    1,
+    62
+  ],
+  "alternative_endpoint_values": [
+    4,
+    59
+  ],
+  "monotonic_scalar_hypotheses": {
+    "contiguous": "Interior projected values should lie strictly between1 and62",
+    "alternative": "Interior projected values should lie strictly between4 and59"
+  },
+  "expected_pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "expected_volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "expected_interior_raw_code": null,
+  "reference_audio": "experiments/edited-sound3-pitch14-001/playback.wav",
+  "reference_audio_sha256": "b4bb2beb0c08a9213af164dba4274ead1421d91d94b9b7e488ccf662f5266193",
+  "reference_audio_results": "experiments/edited-sound3-pitch14-001/pitch-frequency-results-001.json",
+  "reference_audio_results_sha256": "7dba176dfb8619da2e5d67b6b380c2b9aa26f1e41a2f89352dd28a14332e8585",
+  "original_frequency_registration": "experiments/sound3-generated-pitch13-14-registration-001.json",
+  "original_frequency_registration_sha256": "164a99c14a96e7e96f4ffea2b3e35e5f7ea7316647600075dd0291aa87f14110",
+  "frequency_method": {
+    "parameters": {
+      "center_frequency_hz": 525.0,
+      "half_bandwidth_hz": 75.0,
+      "envelope_seconds": 0.005,
+      "threshold_peak_fractions": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "minimum_region_seconds": 0.06,
+      "edge_margin_seconds": 0.03,
+      "minimum_band_rms": 0.001,
+      "maximum_gap_residual_seconds": 0.006,
+      "threshold_gap_spread_seconds": 0.004,
+      "stereo_onset_tolerance_seconds": 0.002,
+      "nominal_loop_seconds": 2.4,
+      "loop_tolerance_seconds": 0.005,
+      "steady_fit_window_after_onset_seconds": [
+        0.08,
+        0.18
+      ],
+      "frequency_search_hz": [
+        465.0,
+        585.0
+      ],
+      "fft_grid_max_spacing_hz": 0.25,
+      "fft_peak_refine_halfwidth_hz": 1.0,
+      "minimum_fit_explained_variance": 0.9,
+      "minimum_complete_cycles": 3,
+      "reference_frequency_lead_hz": 500.65,
+      "reference_frequency_relative_tolerance": 0.005,
+      "minimum_relative_frequency_increase": 0.005,
+      "hypothesized_ratio_for_one_semitone": 1.0594630943592953,
+      "semitone_ratio_relative_tolerance": 0.002,
+      "unchanged_loop_seconds_tolerance": 0.005
+    },
+    "algorithm": "Common450..600Hz third-order zero-phase band; frozen onset thresholds; fit80..180ms after each onset; Hann FFT with spacing<=0.25Hz selects global peak in465..585Hz, refine least-squares sine/cos/DC within1Hz; identical method for both legs"
+  },
+  "neutral_comparison_parameters": {
+    "amplitude_relative_tolerance": 0.05,
+    "frequency_relative_tolerance": 0.005,
+    "loop_seconds_tolerance": 0.005
+  },
+  "recorded_action": "While Pattern1/Sound3/FILTER plays hold WRITE and move only A from maximum toward midpoint until bottom bar is full and sample clearest, about5 seconds; hold3 seconds stationary then release/stop/write off",
+  "limits": [
+    "Interior raw value and whole target body are unknown;31/32 or uniformity are not predicted",
+    "Raw between-endpoint tests concern two monotonic scalar interpretations only; passing/failing them does not settle all mode/flag models",
+    "Reference audio already exists from before FILTER recording; new comparison is registered before center data, with the original common frequency method unchanged",
+    "Near-reference tone amplitude is a5% hypothesis at the repeated component, not proof of broadband bypass or a complete filter law",
+    "Tone frequency and loop must stay consistent; failures or ramps are retained without fitting new windows, thresholds or endpoint codes",
+    "No numeric UI, digital silence, resonance or filter writer is inferred; other third-byte bits stay opaque"
+  ]
+}

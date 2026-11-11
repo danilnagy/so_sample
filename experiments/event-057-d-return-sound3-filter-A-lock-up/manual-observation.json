@@ -1,0 +1,10 @@
+{
+  "user_report": "done, and confirmed it went from max low pass filter and not audible to max high pass filter and not audible",
+  "stage": "clockwise_return",
+  "user_described_filter_type": "high_pass",
+  "audible_endpoint": "sample_not_audible_to_user",
+  "numeric_display_value": null,
+  "midpoint_audibility_confirmed": false,
+  "interpretation": "Explicit opposite low-pass/high-pass and endpoint inaudibility confirmation; no numeric code, digital-zero measurement or midpoint audition inferred",
+  "capture_sha256": "e0304521c1922de68c9216b1123d494f44b585e37f4d4eaccafecf20de6b2e71"
+}

@@ -1,0 +1,790 @@
+{
+  "analysis_version": "project-build-0.1",
+  "source_artifact_sha256": "2aaadb5bb18736fb7e484a10710cf7a803943f240aebb7badf8b97b618f95485",
+  "spec_sha256": "11d49ea54ae1a9f71688001d11631270d0ebcf5f97bff2fadbb5611b0d04e590",
+  "imports": [
+    {
+      "slot": 1,
+      "kind": "melodic",
+      "stage": "import-sound1",
+      "allocation": {
+        "sound_slot": 1,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 12288,
+        "source_header_hex": "00000000c72d000000",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 253952
+      }
+    },
+    {
+      "slot": 2,
+      "kind": "melodic",
+      "stage": "import-sound2",
+      "allocation": {
+        "sound_slot": 2,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 12288,
+        "source_header_hex": "00000000c72d000001",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 249856
+      }
+    },
+    {
+      "slot": 3,
+      "kind": "melodic",
+      "stage": "import-sound3",
+      "allocation": {
+        "sound_slot": 3,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 12288,
+        "source_header_hex": "00000000c72d000002",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 245760
+      }
+    },
+    {
+      "slot": 4,
+      "kind": "melodic",
+      "stage": "import-sound4",
+      "allocation": {
+        "sound_slot": 4,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 12288,
+        "source_header_hex": "00000000c72d000003",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 241664
+      }
+    },
+    {
+      "slot": 5,
+      "kind": "melodic",
+      "stage": "import-sound5",
+      "allocation": {
+        "sound_slot": 5,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 12288,
+        "source_header_hex": "00000000c72d000004",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 237568
+      }
+    },
+    {
+      "slot": 6,
+      "kind": "melodic",
+      "stage": "import-sound6",
+      "allocation": {
+        "sound_slot": 6,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 24576,
+        "source_header_hex": "000000008e5b000005",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 221184
+      }
+    },
+    {
+      "slot": 7,
+      "kind": "melodic",
+      "stage": "import-sound7",
+      "allocation": {
+        "sound_slot": 7,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 24576,
+        "source_header_hex": "e3160000c72d000006",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 204800
+      }
+    },
+    {
+      "slot": 8,
+      "kind": "melodic",
+      "stage": "import-sound8",
+      "allocation": {
+        "sound_slot": 8,
+        "source_record_was_empty": false,
+        "source_record_was_borrowed": false,
+        "source_capacity_codes": 8192,
+        "source_header_hex": "00000000771b000007",
+        "capacity_codes": 8192,
+        "endpoint": 7031,
+        "zero_tail_codes": 1161,
+        "total_backing_capacity_codes": 204800
+      }
+    },
+    {
+      "slot": 9,
+      "kind": "drum",
+      "stage": "import-sound9",
+      "allocation": {
+        "drum_slot": 9,
+        "owner_sound_id": 8,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 32768,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 188416
+      }
+    },
+    {
+      "slot": 10,
+      "kind": "drum",
+      "stage": "import-sound10",
+      "allocation": {
+        "drum_slot": 10,
+        "owner_sound_id": 24,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 8192,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    },
+    {
+      "slot": 11,
+      "kind": "drum",
+      "stage": "import-sound11",
+      "allocation": {
+        "drum_slot": 11,
+        "owner_sound_id": 40,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 16384,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    },
+    {
+      "slot": 12,
+      "kind": "drum",
+      "stage": "import-sound12",
+      "allocation": {
+        "drum_slot": 12,
+        "owner_sound_id": 56,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 16384,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    },
+    {
+      "slot": 13,
+      "kind": "drum",
+      "stage": "import-sound13",
+      "allocation": {
+        "drum_slot": 13,
+        "owner_sound_id": 72,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 16384,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    },
+    {
+      "slot": 14,
+      "kind": "drum",
+      "stage": "import-sound14",
+      "allocation": {
+        "drum_slot": 14,
+        "owner_sound_id": 88,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 16384,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    },
+    {
+      "slot": 15,
+      "kind": "drum",
+      "stage": "import-sound15",
+      "allocation": {
+        "drum_slot": 15,
+        "owner_sound_id": 104,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 16384,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    },
+    {
+      "slot": 16,
+      "kind": "drum",
+      "stage": "import-sound16",
+      "allocation": {
+        "drum_slot": 16,
+        "owner_sound_id": 120,
+        "source_kit_was_empty": false,
+        "source_layout": "self_owned",
+        "source_capacity_codes": 16384,
+        "capacity_codes": 16384,
+        "kit_codes": 16000,
+        "windows": [
+          [
+            0,
+            1000
+          ],
+          [
+            1000,
+            2000
+          ],
+          [
+            2000,
+            3000
+          ],
+          [
+            3000,
+            4000
+          ],
+          [
+            4000,
+            5000
+          ],
+          [
+            5000,
+            6000
+          ],
+          [
+            6000,
+            7000
+          ],
+          [
+            7000,
+            8000
+          ],
+          [
+            8000,
+            9000
+          ],
+          [
+            9000,
+            10000
+          ],
+          [
+            10000,
+            11000
+          ],
+          [
+            11000,
+            12000
+          ],
+          [
+            12000,
+            13000
+          ],
+          [
+            13000,
+            14000
+          ],
+          [
+            14000,
+            15000
+          ],
+          [
+            15000,
+            16000
+          ]
+        ],
+        "total_backing_capacity_codes": 196608
+      }
+    }
+  ],
+  "plan_sha256": "f0771829c2e441fedde6ba57e11b2c8145159951ae809778a0a328cf1c3a2526",
+  "compiled": "compiled",
+  "target_body_sha256": "e641b02bd2f9f2e0fac7a52ba73b86b4d7cb5403e5e2af7d595defe2caa9638d",
+  "restore_wav": "C:\\Users\\danil\\OneDrive\\Documents\\Github\\danilnagy\\po_33\\experiments\\project-build-full-001\\compiled\\restore.wav",
+  "restore_wav_sha256": "845b08249bcd8000fcdbf013a7306db9f1ed182949e270f22a6d87fca9f2809e",
+  "passed": true,
+  "hardware_verified": false
+}

@@ -1,0 +1,84 @@
+{
+  "analysis_version": "sound3-quarter-middle-and-maximum-return-model-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "hardware_verified": false,
+  "baseline_artifact": "experiments/event-046-b-return-sound3-tone-volume-lock-maximum/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "e1f1b45da8180e19577ae10e69dcdabae322a81d6185577d4a6447c8e0ec648b",
+  "baseline_capture": "experiments/event-046-b-return-sound3-tone-volume-lock-maximum/capture.wav",
+  "baseline_capture_sha256": "12630614bdd5b3a1b3666b3b2abe4505752ddc5db99682ed43afbd454e4d496f",
+  "baseline_body_sha256": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7",
+  "baseline_observation_sha256": "53b2c65f780beebdbc88587de16a59620237797ae90153502c69496f797ac1cb",
+  "minimum_endpoint_artifact": "experiments/event-045-c-sound3-tone-volume-lock-minimum/derived/analysis-001/capture.symbols.npz",
+  "minimum_endpoint_artifact_sha256": "78d183439cf02b4645b8029f6260bc21537ea5cc5a55ef5c6be6fe85f95e6d75",
+  "minimum_endpoint_observation_sha256": "f46ed1ea62c503514e816933dec333db256f1dadc35152db01dd88c49f419521",
+  "failed_four_bit_results_sha256": "8043c7ecda2a25d949c57602093d109a47c0c94d5c4eb2f14984d82a5d6a3a5e",
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "steps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "first_primary_byte_mask": 192,
+    "second_primary_byte_mask": 15,
+    "little_endian_low16_mask": 4032
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-047-d-sound3-volume-lock-quarter",
+      "knobB_position": "approximately one-quarter of full travel clockwise from minimum",
+      "expected_body_sha256": null
+    },
+    {
+      "experiment_id": "event-048-e-sound3-volume-lock-middle",
+      "knobB_position": "approximately halfway between the two physical stops",
+      "expected_body_sha256": null
+    },
+    {
+      "experiment_id": "event-049-b-return-sound3-volume-lock-maximum",
+      "knobB_position": "fully clockwise maximum",
+      "expected_body_sha256": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7"
+    }
+  ],
+  "encoding_models": {
+    "contiguous_little_endian_six_bit_value": "((byte0>>6)&3)|((byte1&15)<<2)",
+    "two_first_byte_bits_are_most_significant": "((byte0>>6)<<4)|(byte1&15)",
+    "four_bit_value_with_zero_nonzero_enable_pair": "byte1&15 is value; byte0&0xc0 must equal0xc0 whenever value is nonzero and0 when value iszero"
+  },
+  "position_hypotheses": {
+    "quarter_raw_six_bit_band": [
+      10,
+      22
+    ],
+    "middle_raw_six_bit_band": [
+      26,
+      38
+    ],
+    "strict_relative_order": "0<quarter<middle<63",
+    "position_bands_are_auxiliary": true
+  },
+  "limits": [
+    "The six-bit mask is a new post-endpoint hypothesis; the old four-bit-only minimum prediction remains failed and immutable",
+    "Both value orderings and a four-bit-plus-enable alternative are registered before interior data",
+    "Quarter/middle positions are approximate mechanical positions, not UI numbers or calibrated gain; bands are auxiliary and no exact interior body is predicted",
+    "Each interior pass is expected to settle all16 Sound3 candidate fields uniformly, but deviations are reported rather than overwritten",
+    "Only the two masks may change; preserve every other primary bit,auxiliary cell,sample,global and other pattern",
+    "Final maximum must match the entire independent source body; no public volume writer enabled"
+  ]
+}

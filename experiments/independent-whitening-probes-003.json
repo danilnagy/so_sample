@@ -1,0 +1,375 @@
+{
+  "analysis_version": "independent-channel-whitening-0.1",
+  "artifact_sha256": "e5b57f9d2667fab1bba08d24d63ca3da691434f37ecb9b217e090aa0909b1527",
+  "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "view": "increment",
+  "window_in_phase_view": [
+    8500,
+    43000
+  ],
+  "lead_commit": "3b3a0a758ba452fc809027c5bafcc5e2d0931532",
+  "model": "coded=(raw+low8(state)) mod256; state=CRC-CCITT-1021(state,raw)",
+  "independent_channel_mappings": true,
+  "minimum_run_bytes": 8,
+  "candidate_streams": 18432,
+  "three_byte_candidates": 2547650,
+  "validated_runs": 31815,
+  "matches": [
+    {
+      "left_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "right_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "offset": 1,
+      "layout": "stereo_symbols",
+      "right_first": true,
+      "reversed_byte_bits": false,
+      "three_byte_candidates": 16250,
+      "validated_runs": 15892,
+      "runs": [
+        {
+          "byte_span": [
+            113,
+            241
+          ],
+          "initial_state": 47032,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            114,
+            241
+          ],
+          "initial_state": 28476,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            115,
+            241
+          ],
+          "initial_state": 41289,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            116,
+            241
+          ],
+          "initial_state": 60619,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            117,
+            241
+          ],
+          "initial_state": 63394,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            118,
+            241
+          ],
+          "initial_state": 15864,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            119,
+            241
+          ],
+          "initial_state": 8190,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            120,
+            241
+          ],
+          "initial_state": 7646,
+          "constant_raw_byte": 0
+        }
+      ],
+      "more_runs_than_report_limit": true
+    },
+    {
+      "left_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "right_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "offset": 1,
+      "layout": "stereo_symbols",
+      "right_first": true,
+      "reversed_byte_bits": false,
+      "three_byte_candidates": 98,
+      "validated_runs": 15,
+      "runs": [
+        {
+          "byte_span": [
+            1423,
+            1431
+          ],
+          "initial_state": 26106,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            2486,
+            2494
+          ],
+          "initial_state": 21512,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            3549,
+            3557
+          ],
+          "initial_state": 60708,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            4612,
+            4620
+          ],
+          "initial_state": 50340,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            5675,
+            5683
+          ],
+          "initial_state": 44089,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            6738,
+            6746
+          ],
+          "initial_state": 42816,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            7801,
+            7809
+          ],
+          "initial_state": 8478,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            8864,
+            8872
+          ],
+          "initial_state": 32003,
+          "constant_raw_byte": 255
+        }
+      ],
+      "more_runs_than_report_limit": true
+    },
+    {
+      "left_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "right_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "offset": 3,
+      "layout": "stereo_symbols",
+      "right_first": true,
+      "reversed_byte_bits": false,
+      "three_byte_candidates": 16251,
+      "validated_runs": 15893,
+      "runs": [
+        {
+          "byte_span": [
+            112,
+            240
+          ],
+          "initial_state": 47032,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            113,
+            240
+          ],
+          "initial_state": 28476,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            114,
+            240
+          ],
+          "initial_state": 41289,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            115,
+            240
+          ],
+          "initial_state": 60619,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            116,
+            240
+          ],
+          "initial_state": 63394,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            117,
+            240
+          ],
+          "initial_state": 15864,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            118,
+            240
+          ],
+          "initial_state": 8190,
+          "constant_raw_byte": 0
+        },
+        {
+          "byte_span": [
+            119,
+            240
+          ],
+          "initial_state": 7646,
+          "constant_raw_byte": 0
+        }
+      ],
+      "more_runs_than_report_limit": true
+    },
+    {
+      "left_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "right_mapping": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "offset": 3,
+      "layout": "stereo_symbols",
+      "right_first": true,
+      "reversed_byte_bits": false,
+      "three_byte_candidates": 98,
+      "validated_runs": 15,
+      "runs": [
+        {
+          "byte_span": [
+            1422,
+            1430
+          ],
+          "initial_state": 26106,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            2485,
+            2493
+          ],
+          "initial_state": 21512,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            3548,
+            3556
+          ],
+          "initial_state": 60708,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            4611,
+            4619
+          ],
+          "initial_state": 50340,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            5674,
+            5682
+          ],
+          "initial_state": 44089,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            6737,
+            6745
+          ],
+          "initial_state": 42816,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            7800,
+            7808
+          ],
+          "initial_state": 8478,
+          "constant_raw_byte": 255
+        },
+        {
+          "byte_span": [
+            8863,
+            8871
+          ],
+          "initial_state": 32003,
+          "constant_raw_byte": 255
+        }
+      ],
+      "more_runs_than_report_limit": true
+    }
+  ],
+  "payload_decoded": false,
+  "limits": [
+    "Constant plaintext0/255 and this16-bit update are finite related-device hypotheses.",
+    "All65536 seed states are considered; first3 bytes select candidates and>=5 additional bytes must match.",
+    "Same temporal channel offset; separate channel delays and other CRC/whitening rules untested.",
+    "Enumerated streams may overlap or be equivalent; counts are not independent statistical trials.",
+    "No artifact rewrite, native framing, checksum or editable field is inferred."
+  ]
+}

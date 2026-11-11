@@ -1,0 +1,467 @@
+{
+  "analysis_version": "fx-direction-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of eight effects held over long notes of a four-segment sample, and the segment order each one plays",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "hypotheses": {
+    "exact_reception": true,
+    "plain_notes_forward": true
+  },
+  "effects": {
+    "1": {
+      "pattern": 1,
+      "sequences": [
+        [
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "described"
+    },
+    "2": {
+      "pattern": 2,
+      "sequences": [
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "described"
+    },
+    "15": {
+      "pattern": 3,
+      "sequences": [
+        [
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          4,
+          3,
+          2,
+          1,
+          null
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          -50
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -50
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -50
+        ]
+      ],
+      "classification": "reverse"
+    },
+    "3": {
+      "pattern": 4,
+      "sequences": [
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "described"
+    },
+    "4": {
+      "pattern": 5,
+      "sequences": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "described"
+    },
+    "12": {
+      "pattern": 6,
+      "sequences": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "onsets": [
+        3,
+        4,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "hold_first"
+    },
+    "11": {
+      "pattern": 7,
+      "sequences": [
+        [
+          1,
+          2,
+          4,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          4
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "classification": "described"
+    },
+    "13": {
+      "pattern": 8,
+      "sequences": [
+        [
+          1,
+          2,
+          3,
+          4,
+          null
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          null
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          null
+        ]
+      ],
+      "onsets": [
+        1,
+        1,
+        1
+      ],
+      "levels_db": [
+        [
+          0,
+          0,
+          0,
+          0,
+          -49
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -50
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -50
+        ]
+      ],
+      "classification": "forward"
+    }
+  },
+  "decision_sha256": "2c5d6713e0df1b79ee5c70ecd675372faf62162757b58125d847c7ad098e18dc",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "944c0a2e82b2f689e36bfe02efbca1b0c30878b4f1c78962a486af86fe4a8a7c",
+  "session_answers": [],
+  "limits": [
+    "One sample and one key at tempo 60; effects that depend on content are described in this setting only"
+  ]
+}

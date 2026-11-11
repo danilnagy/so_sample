@@ -1,0 +1,53 @@
+{
+  "analysis_version": "note-bits-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Reception of pitch-code-0 notes and bit-5 flagged notes, and their measured pitch, level and duration",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true
+  },
+  "reception": "exact",
+  "bit5_stored": true,
+  "pitch": {
+    "model_support": {
+      "zero_holds_last_pitch": true,
+      "zero_is_pitch_13": false,
+      "zero_is_below_code_1": false
+    },
+    "classification": "zero_holds_last_pitch"
+  },
+  "bit5_inert": false,
+  "bit5_comparisons": [
+    {
+      "flagged_step": 7,
+      "plain_step": 6,
+      "cents_diff": 1.13673519493409,
+      "db_diff": -0.684396462125406,
+      "ms_diff": -12.358276643990934
+    },
+    {
+      "flagged_step": 9,
+      "plain_step": 8,
+      "cents_diff": 0.018321531361320413,
+      "db_diff": -0.0001239445339749068
+    },
+    {
+      "flagged_step": 13,
+      "plain_step": 12,
+      "cents_diff": 1.1819923073962855,
+      "db_diff": -0.7282151843342461,
+      "ms_diff": -12.902494331065753
+    }
+  ],
+  "decision_sha256": "d735af3617d2d5608c2ac0baa0619f898ed89f25ed12a8eafb97d4ffd1fab34f",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "4412d26101f6843ea34e930db325002ade4012ac676213985e6d4a721afe3396",
+  "session_answers": [],
+  "limits": [
+    "One melodic sound at key 1; bit 5 on drum notes is not tested"
+  ]
+}

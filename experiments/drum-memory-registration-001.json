@@ -1,0 +1,417 @@
+{
+  "analysis_version": "drum-memory-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-drum-memory-001",
+  "source_artifact": "experiments/compiled-drum-kit-pages-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "7b500cfa3a2edeeba490d542117de76a55e7010db3aa55accc6cfbea5b84fb37",
+  "source_capture_sha256": "cac03bc6f621a2896cdfc93122cb98e13cba764484a0a374d9f1e50f91142ed6",
+  "total_capacity_codes": 675840,
+  "hits": {
+    "13": [
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key01-300hz.wav",
+        "sha256": "0108f44e7b96aa7bbc81ab97f0cc92aab048aec58518852719cd88cac7a86343"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key02-318hz.wav",
+        "sha256": "15be85a6b155d3458c09eb416ee31db255bb0cf89349c05c3f6799ec10dd3b2c"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key03-337hz.wav",
+        "sha256": "1ec74483edcda82ee1d8c8b4532fcbc5144598f08274712fd72a7c48dc7cb2f5"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key04-357hz.wav",
+        "sha256": "93484732fd11501572f54962ef9d504793221d39853eaae6fdbdcc5e855e3068"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key05-378hz.wav",
+        "sha256": "46589bd75aa709b7226481a8cd88c33c539f16e30335306d0ca7a199f84d1e7e"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key06-400hz.wav",
+        "sha256": "68d2dc46d243386ef7496adb1c37ebf88f1ee92db3f60740337b8fddd6fb9e32"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key07-424hz.wav",
+        "sha256": "d7bed19b43fd197e6ecff10007029e1f71fdb2a24f7167d6266caad58293b465"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key08-449hz.wav",
+        "sha256": "adc73e149cc0005a1118d1e35dadc8a9d5fe2649bf31177adb2da65dbe6c6576"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key09-476hz.wav",
+        "sha256": "a7195d0b84a14abc4c823ca25d4d5ee7bd3166871d6dea608f7c87ffd2c84ef5"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key10-505hz.wav",
+        "sha256": "4b0b99c374e6c8bf7068e210d91b8763d656912b897daac6d42ee759fb067143"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key11-535hz.wav",
+        "sha256": "6215f990fb3583e3d65926bc2ff18ef9a224bf72c3c7025ac3395d745dfe7389"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key12-566hz.wav",
+        "sha256": "cc23ce8b546196282f524b0a4b4f04cc00f57ac21346c34929b780fc326b329d"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key13-600hz.wav",
+        "sha256": "c6ab59cfec5b56cf521bdc3d9c9b8457de4e2760fa973f6438254e0955147ecb"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key14-636hz.wav",
+        "sha256": "6c9247bc4b5e756269e6b2b2cd15378a4dabbf36bd9d173ce8f6d4538f7d6714"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key15-673hz.wav",
+        "sha256": "8c0ade87f60d4e43a7b23f7cd61b32f42b113cb5e16314b0aa1c37ea8d9b7fb0"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound13-key16-714hz.wav",
+        "sha256": "7aa99e64bddc73f2b14675aa89eda1a83b1e8bb989f5b27818b8c09861c614a8"
+      }
+    ],
+    "14": [
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key01-400hz.wav",
+        "sha256": "b5b646abfbc1955ae586587e8f52deacbb080b671780d6c0950ecc78c23a337c"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key02-424hz.wav",
+        "sha256": "f77840294b3e5c59c05545903c3a93d02f89800db69fe3b536829b6e0a37d450"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key03-449hz.wav",
+        "sha256": "5424cd60d780433f01e58f3ec837dff985886f25b5ae73b5a73eb2a364231f84"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key04-476hz.wav",
+        "sha256": "b827aa538926c4ece12e77d7e9ca55ed757ea8eb1fe21a748e78cc48ad0c831e"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key05-504hz.wav",
+        "sha256": "af31b674b828451bf27882139f7f8ed9a34a753a0983b00a07621a88bdfc3777"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key06-534hz.wav",
+        "sha256": "3856e60f07315ebb4066bbfbc38d9be0f39969e5dc464339c480039d1603ec8c"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key07-566hz.wav",
+        "sha256": "d64ecc73c2efc89ca4da472d5d634eb6950be254d7d52407db7b987b92a9fd7f"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key08-599hz.wav",
+        "sha256": "f4e855c4b5783ab6c4d6b48dd60c965a21bf6189d6f3d1fdfc30860301dca8f8"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key09-635hz.wav",
+        "sha256": "4d0bbc798859180771dee0d1e046148b69a228e7a5c9ab8b1866f7eea02cd615"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key10-673hz.wav",
+        "sha256": "15efefceb51b75d854f7a8ecdf9cfcff4701ca84c6461a3a38e6a2030ea0e37a"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key11-713hz.wav",
+        "sha256": "55332ee97dc66ab693e365c6277b55bbc17a5377d427e376f147580b4e8f4b73"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key12-755hz.wav",
+        "sha256": "688e4cbb0ed78a187c384c308103460b7d2692c5b91960c305d0c6e0dcb18f2c"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key13-800hz.wav",
+        "sha256": "1d7a33cb9b9487bfbe836ca02d3b8738a08987279de0d5eeb7dae58115bf2115"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key14-848hz.wav",
+        "sha256": "e484bf906b89d33e0306f7601de08487355b7efba6ca63ad4f3a2d6a314b4479"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key15-898hz.wav",
+        "sha256": "3aac4367e5859a1f5a7273574b97d3ac942e08d65f6430ebb6c0808334e76935"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound14-key16-951hz.wav",
+        "sha256": "5b17663735eefddcd886270a2ab0c63bcb5b834c5e5259f10e1840adfa7483b2"
+      }
+    ],
+    "15": [
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key01-600hz.wav",
+        "sha256": "c6ab59cfec5b56cf521bdc3d9c9b8457de4e2760fa973f6438254e0955147ecb"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key02-636hz.wav",
+        "sha256": "6c9247bc4b5e756269e6b2b2cd15378a4dabbf36bd9d173ce8f6d4538f7d6714"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key03-673hz.wav",
+        "sha256": "8c0ade87f60d4e43a7b23f7cd61b32f42b113cb5e16314b0aa1c37ea8d9b7fb0"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key04-714hz.wav",
+        "sha256": "7aa99e64bddc73f2b14675aa89eda1a83b1e8bb989f5b27818b8c09861c614a8"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key05-756hz.wav",
+        "sha256": "00e319ead6b2fc53d6aa9a6461e749a255f6023602a8175e8f7f6b6c8cbc7c8b"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key06-801hz.wav",
+        "sha256": "1c965d4c03f3e6f46b4540c0507f24547da1a5c867e7d629b68ebd08e139337b"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key07-849hz.wav",
+        "sha256": "3241e55378be7529c1b47aece00f69cde62e8d1617dc61e000a8bb509bcf1825"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key08-899hz.wav",
+        "sha256": "2a945812fa2b41b2c1325a4bfbd8c746c8f83de445b37094b2a715eb9ad673d5"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key09-952hz.wav",
+        "sha256": "2f39f58e446213240ef5c6db821e91aebebacf0e16a8f0569d8e0ab1c54451d6"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key10-1009hz.wav",
+        "sha256": "9897b3822c655f5b91b446a34c04807a4fe0855212e5d1ce3e9d76ac48c2d0fb"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key11-1069hz.wav",
+        "sha256": "6107b9258804fe9dfc24a70d845c3a36f625fedf2fe79f99cbb5141073f2957a"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key12-1133hz.wav",
+        "sha256": "a82f22623e92a948a21cd9d7157dec139f9d4b8ddfb3482f40bef055e2c78f3f"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key13-1200hz.wav",
+        "sha256": "6d59c6e4c3f6f47252f90149033bb1e39931e2894bd477a224369a2dae738d28"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key14-1271hz.wav",
+        "sha256": "63e45ff6ed8455eb1fcad9de22cf08b97a0337b7a6bb43f5e812c333af6651c8"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key15-1347hz.wav",
+        "sha256": "03ac31360cbc6dc53c0f89ed39c029b3ef5727bc22f36f64882bc7fb74a1efa2"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound15-key16-1427hz.wav",
+        "sha256": "39691fbb1b8f713ca3cbed940e521fcac7beb063bd387239eafbd6b7c343b16d"
+      }
+    ],
+    "16": [
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key01-800hz.wav",
+        "sha256": "1d7a33cb9b9487bfbe836ca02d3b8738a08987279de0d5eeb7dae58115bf2115"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key02-848hz.wav",
+        "sha256": "e484bf906b89d33e0306f7601de08487355b7efba6ca63ad4f3a2d6a314b4479"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key03-898hz.wav",
+        "sha256": "3aac4367e5859a1f5a7273574b97d3ac942e08d65f6430ebb6c0808334e76935"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key04-951hz.wav",
+        "sha256": "5b17663735eefddcd886270a2ab0c63bcb5b834c5e5259f10e1840adfa7483b2"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key05-1008hz.wav",
+        "sha256": "d114a0929107b7ed353c3a476ebe72dfd3aa97c0ccdf1da21164d441b1dda053"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key06-1068hz.wav",
+        "sha256": "bc27339a8803a694269edaab3b56d1691c78f768e8d932b61854ec39beff05d4"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key07-1131hz.wav",
+        "sha256": "c0d69af41b0d6feec377d538fc99f24c38bb798db41463f3988aa1a95cf7ab8b"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key08-1199hz.wav",
+        "sha256": "77f92117436c78b2fb2a44fa99f7da8d4df18486b98d78279a5ec33d78e553b0"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key09-1270hz.wav",
+        "sha256": "08163ec4d8358a8e42b6b108982a752f45396ab2619cb9067fc16b622f7870e4"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key10-1345hz.wav",
+        "sha256": "65ef74567991a4c81be24458811fa6465c6def4eeac7e273bb36631d518f2653"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key11-1425hz.wav",
+        "sha256": "c10cd9c90330c745182188aad7f3d338f39616e3e0787414df4cfda5677f4d9a"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key12-1510hz.wav",
+        "sha256": "e62c2d0bc178d5f3f8bc18629d1478ce2ebef6d8df4be7d4e1c5a3d91a1c2be5"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key13-1600hz.wav",
+        "sha256": "48be764ae40c389d69719bfe28020e98ee38d9033ce7206b24f49d90f0573d04"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key14-1695hz.wav",
+        "sha256": "bb97b1378365109b31feac2e32d917c5b0255a5980ccc4082289f26af40d8129"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key15-1796hz.wav",
+        "sha256": "2a3008e723a9ac340e4eb1d01e7fb65f87b81ca0a481f25abd563ae199fb21e0"
+      },
+      {
+        "path": "experiments/drum-memory-hits-001/sound16-key16-1903hz.wav",
+        "sha256": "9329021b1ab4a33c683f3d7640bfb136d56049ac5aba88c52d0d2d48ae3e8cfc"
+      }
+    ]
+  },
+  "hit_codes": 6375,
+  "frequencies_hz": {
+    "13": [
+      300.0,
+      317.839,
+      336.739,
+      356.762,
+      377.976,
+      400.452,
+      424.264,
+      449.492,
+      476.22,
+      504.538,
+      534.539,
+      566.325,
+      600.0,
+      635.678,
+      673.477,
+      713.524
+    ],
+    "14": [
+      400.0,
+      423.785,
+      448.985,
+      475.683,
+      503.968,
+      533.936,
+      565.685,
+      599.323,
+      634.96,
+      672.717,
+      712.719,
+      755.099,
+      800.0,
+      847.57,
+      897.97,
+      951.366
+    ],
+    "15": [
+      600.0,
+      635.678,
+      673.477,
+      713.524,
+      755.953,
+      800.904,
+      848.528,
+      898.984,
+      952.441,
+      1009.076,
+      1069.078,
+      1132.649,
+      1200.0,
+      1271.356,
+      1346.954,
+      1427.049
+    ],
+    "16": [
+      800.0,
+      847.57,
+      897.97,
+      951.366,
+      1007.937,
+      1067.872,
+      1131.371,
+      1198.646,
+      1269.921,
+      1345.434,
+      1425.438,
+      1510.199,
+      1600.0,
+      1695.141,
+      1795.939,
+      1902.731
+    ]
+  },
+  "stage_reports_sha256": {
+    "13": "6453e04a5819818a255699a79cd6d3da567015e246d7eec957e35197a64d65fc",
+    "14": "226ccd5dfa4f5d56c191f31edd9b6f96c7ea8a5e65e73bc2b2f27221a5bcc9a4",
+    "15": "032c429dd23c0c571b6f1bd65c9a633bcf9026ec20ec4281e3a34565e4fbb7eb",
+    "16": "76d5f865e5d3836e964576ee101f3cb91322845f594a05ce55c4f1349f21fba9"
+  },
+  "plan_sha256": "50e506d689b55fb5903c26b1b3db8c0264b5b96c7593ebb9e97cf143749b6946",
+  "expected_body_sha256": "2867b31136e127cf02b49439fe39c7c0d1d4033e77b3e11457e6d2650949420b",
+  "edited_artifact_sha256": "fbeadf6aba46b9b9507b2bd81253235c6645544e83cc47a75ce737a2d9a5cd2e",
+  "restore_wav_sha256": "804eba99c717bfa9c7f4f9fa352f5085cc8015cf90d1af89ff1c2136c3862260",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "sound16_key_k": [
+      0.0,
+      100.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      700.0,
+      800.0,
+      900.0,
+      1000.0,
+      1100.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0
+    ]
+  },
+  "absolute_hz": 800.0,
+  "decision": [
+    "The backup must equal the compiled target exactly, all six kits and capacities included",
+    "Pitch: sound16_key_k holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of 800 Hz"
+  ],
+  "limits": [
+    "One total, 675840 codes; the device limit itself is not located by this test",
+    "Only Sound16's kit is played; Sound13..15 are checked by exact reception"
+  ]
+}

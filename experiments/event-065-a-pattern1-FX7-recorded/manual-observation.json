@@ -1,0 +1,8 @@
+{
+  "user_report": "done, confirmed i heard an octave higher",
+  "audible_effect": "octave_higher_reported",
+  "numeric_display_value": null,
+  "measured_frequency_ratio": null,
+  "capture_sha256": "3c1f094e2d705690f0dfa6084c83e4bc53e6395a8bb9f0e82ab3d8726ac360e2",
+  "interpretation": "Explicit higher-octave listening report; no numerical audio ratio or exact global-byte meaning inferred"
+}

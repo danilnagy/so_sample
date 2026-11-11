@@ -1,0 +1,136 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "observe-audition-knob-dump-001",
+  "started_at": "2026-11-08T04:20:01+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "inputs": {
+    "restore": null,
+    "expected_artifact": {
+      "path": "experiments/observe-audition-knob-dump-001/../observe-audition-locks-001/edited.symbols.npz",
+      "sha256": "ba3f2508cc637bc3e0ac47702a5b5c9133189711c17dea0195251c4a6b42e6b9"
+    },
+    "baseline_artifact": {
+      "path": "experiments/observe-audition-knob-dump-001/../observe-audition-locks-001/edited.symbols.npz",
+      "sha256": "ba3f2508cc637bc3e0ac47702a5b5c9133189711c17dea0195251c4a6b42e6b9"
+    },
+    "decode_threshold": 0.0063
+  },
+  "restore": null,
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "9b1931bf17d112d9662bdc54a6037d55936eca90290e9767b519733272d0b8a7",
+      "recorded_at": "2026-11-08T04:20:46+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 509355,
+        "duration_seconds": 11.55,
+        "signal_start_seconds": 2.1,
+        "signal_end_seconds": 10.05,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.000518798828125,
+        "signal_peaks_per_channel": [
+          0.53076171875,
+          0.833587646484375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.022036370630319563,
+          "lag_ms": 1.1111111111111112,
+          "channels": "right",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-01-analysis",
+      "analysis": {
+        "capture_sha256": "9b1931bf17d112d9662bdc54a6037d55936eca90290e9767b519733272d0b8a7",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 11.55,
+          "peaks_per_channel": [
+            0.53076171875,
+            0.833587646484375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x596b"
+          },
+          {
+            "method": "realigned",
+            "passed": false,
+            "error": "No leading-label realignment decoded"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured quarter signs disagree with the observed quadrature model"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    }
+  ],
+  "accepted": null,
+  "playback": null,
+  "observations": [
+    {
+      "question": "Since the retakes, did you touch anything on the device besides knob B, PLAY and key 1? (Enter to skip)",
+      "answer": ""
+    }
+  ],
+  "interrupted": false,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-11-08T04:20:57+00:00",
+  "result": {
+    "backup_decoded": false,
+    "native_target_exact": null,
+    "capture": null,
+    "analysis": null,
+    "playback": null
+  }
+}

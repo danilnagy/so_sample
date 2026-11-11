@@ -1,0 +1,43 @@
+{
+  "analysis_version": "verified-swing6-to-public-writer-and-joint-global-handoff-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "verified_positive_swing_observation": true,
+    "current_capture_artifact_and_playback_fingerprints": true,
+    "current_manual_confirmation_preserved": true,
+    "frozen_method_and_comparison_pins_match": true,
+    "all_registered_timing_hypotheses_supported": true,
+    "public_readback_current_state": true,
+    "all_public_replay_workflow_checks_pass": true,
+    "compiler_workflow_remains_unverified": true,
+    "joint_registration_pinned_to_verified_observation": true,
+    "joint_files_match_registration": true,
+    "joint_waveform_recovers_complete_preregistered_target": true,
+    "missing_display_not_inferred": true,
+    "wrong_display_independently_rejected": true,
+    "new_joint_hardware_still_pending": true,
+    "numeric_percent_or_clock_units_unconfirmed": true
+  },
+  "validation": {
+    "full_regression_tests_passed": 790,
+    "full_regression_seconds": 90.07,
+    "ruff_check_passed": true,
+    "formatted_python_files": 215
+  },
+  "hardware_observation_sha256": "ebb6695b394f3251c29370649903d4c49bcc64e1b31420d71d721704da77563a",
+  "public_plan_workflow_sha256": "543ce8fe3f85dcf1405af3805fcc035894e92e564495834fdf9b5a4fc2965584",
+  "joint_registration_sha256": "df2e096dc97274531a9a5400b84112868ac52b6dc586e2de597051fb66772882",
+  "implementation_sha256": {
+    "src/po33_re/formats/globals.py": "4571f114f958c69b82f171afa7183f60bc15dab95eeb1091a2b3265588a44af7",
+    "src/po33_re/edits.py": "0c13121ae0de563ce88253e04bf08f8363451d02ef21bc14132ce737da7a5006",
+    "scripts/prepare_swing_edit_plans.py": "83f3ddd51bf0e04f3784ba6a81dd8285fff4f6aa8c7a90416c34769d6007105e",
+    "scripts/check_joint_tempo_swing_restore.py": "336889e780d6c5004f4553d8b1fd7ecf27a98b4befc260472af371a2d930b26f",
+    "tests/test_swing_edits.py": "e6a81ab005c495e829dffda39f9a29ab66fc50d0208061a8a9a8302799efb268"
+  },
+  "limits": [
+    "Hardware evidence covers physical0/9/18 and generated6, not all interior values",
+    "New joint100/swing9 setting remains hardware-unverified until independent capture/display",
+    "Public compiler and this audit remain software-only; no percentage/timer conversion"
+  ]
+}

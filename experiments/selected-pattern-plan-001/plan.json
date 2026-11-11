@@ -1,0 +1,201 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "389ab7211e16c260ca4cf82a61f521611d938d3e4b0cfa6aa8de9eaa34825150",
+  "source_body_sha256": "2ec710fbbbe1c7c376190607bad1b08d00614ff80c4f022ab4fdba3f3df705ea",
+  "operations": [
+    {
+      "operation": "copy_pattern",
+      "source_pattern": 1,
+      "destination_pattern": 5
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 1,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 2,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 3,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 4,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 5,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 6,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 7,
+      "keys": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 5,
+      "sound": 8,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "operation": "set_selected_pattern",
+      "pattern": 5
+    }
+  ]
+}

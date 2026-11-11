@@ -1,0 +1,43 @@
+{
+  "analysis_version": "public-mono44100-Sound6-WAV-import-preregistration-0.1",
+  "registered_before_capture": true,
+  "source_artifact": "experiments/edited-sound6-one-page-import-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "9e3b970249348f4a8b6775c66e5aa3e359c5100b22200e72403fced7ca650af9",
+  "source_capture_sha256": "1c879e3bc19ff8948feb9692d0e05548ad7ad0251577854e3f590857ae3b0c7b",
+  "source_body_sha256": "c9ddfcbea8921fef3d62e06959e378a0fa20cf5351c59ba089cfe40974780b66",
+  "source_acceptance_sha256": "905b3b8d051af69cb31c8fb3e6dfbc864f535649b446f28b1c6a6f46fe20eb01",
+  "import_report_sha256": "fae5511f1df6569006a81d346f5a5312ca5b1f86616c526cf852da576f034f50",
+  "input_wav_sha256": "c93ad0fb225611002db5fe74822602a8b66432394b3262af0a01fed9cdf79e4d",
+  "edited_artifact_sha256": "deb2df70cb3f99fa7676ba0717a46e325c8253b568d7408c107895d4cfa01a3e",
+  "restore_wav_sha256": "263dafa068a5e773738f3c2cc11f86ef734d650eb56aa5c1b2bfe90873e50764",
+  "expected_body_sha256": "5b557a2586907b90705bed847b63e33745d0cef85bc27e06f80e6f0601f29b7c",
+  "expected_sound6_header_hex": "00000000ab44000005",
+  "expected_sound6_payload_sha256": "7fa1522cf7cf5bbb592ef71ff4e0934ff6b3878b62f5537405c5bb61f7843e40",
+  "expected_packet_count": 951,
+  "expected_frame_end_byte": 190215,
+  "expected_change": {
+    "sound_slot": 6,
+    "capacity_before": 4096,
+    "capacity_after": 32768,
+    "endpoint_before": 2344,
+    "endpoint_after": 17579,
+    "input_channels": 1,
+    "input_rate_hz": 44100,
+    "resampling_ratio": [
+      625,
+      1176
+    ]
+  },
+  "expected_auditions": {
+    "sound6_key1": "New rising pitch sweep about0.75seconds",
+    "sound7_key1": "Silent",
+    "sound4_sound5_pattern1": "Unchanged"
+  },
+  "limits": [
+    "Only empty or unshared zero-start Sound6 using4096/32768/36864-code capacities and2344..30912 native frames is supported",
+    "Automatic capacity uses the smallest verified size that fits; calibration budget172032 is not a hardware memory-limit claim",
+    "Mono and explicitly selected/mixed stereo integer PCM at44.1/48k are supported;44.1k mono and new duration combinations need appropriate hardware evidence",
+    "Existing slot parameters, samples and patterns are retained; preview does not apply device pitch/filter/gain",
+    "Generated software checks are not a new hardware acceptance"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "user_report": "done and confirmed pattern plays",
+  "restore_completion_confirmed_in_requested_context": true,
+  "pattern_playback_confirmed": true,
+  "subjective_interval_confirmed": false,
+  "numeric_display_value": null,
+  "interpretation": "User confirms requested restore and pattern playback; the measured interval comes from independent recordings, not a claimed subjective or numeric UI reading",
+  "capture_sha256": "4d4f9c20f1ef89d33e427a040bcb63a519df2bf9865a340845219a28000c3c22",
+  "playback_sha256": "b4bb2beb0c08a9213af164dba4274ead1421d91d94b9b7e488ccf662f5266193"
+}

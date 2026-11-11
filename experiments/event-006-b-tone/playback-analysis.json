@@ -1,0 +1,75 @@
+{
+  "analysis_version": "ordinary-tone-playback-0.1",
+  "path": "experiments\\event-006-b-tone\\sample-playback.wav",
+  "source_sha256": "23994e265f0479c49215d5401cb25c425bed8765cc43ff0afbc6a81987991197",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 153056,
+  "channels": {
+    "left": {
+      "envelope_window_frames": 441,
+      "activity_threshold_rms": 0.0044181867835387965,
+      "low_quantile_rms": 0.0003555456819413763,
+      "audible_span_frames": [
+        57771,
+        113337
+      ],
+      "audible_span_seconds": [
+        1.31,
+        2.57
+      ],
+      "audible_duration_seconds": 1.26,
+      "frequency_fit_span_frames": [
+        59976,
+        111132
+      ],
+      "dominant_frequency_hz": 561.9461303801698,
+      "fundamental_amplitude": 0.06179547465493653,
+      "single_sine_explained_variance": 0.9993250696602766,
+      "single_sine_residual_rms": 0.0011354832966827253,
+      "activity_regions": 1,
+      "duration_resolution_seconds": 0.01,
+      "comparison_to_input": {
+        "input_frequency_hz": 375.0,
+        "playback_frequency_ratio": 1.4985230143471195,
+        "pitch_difference_semitones": 7.00249489153912
+      }
+    },
+    "right": {
+      "envelope_window_frames": 441,
+      "activity_threshold_rms": 0.00421660952619985,
+      "low_quantile_rms": 0.000340193952626248,
+      "audible_span_frames": [
+        57771,
+        113337
+      ],
+      "audible_span_seconds": [
+        1.31,
+        2.57
+      ],
+      "audible_duration_seconds": 1.26,
+      "frequency_fit_span_frames": [
+        59976,
+        111132
+      ],
+      "dominant_frequency_hz": 561.9461221999102,
+      "fundamental_amplitude": 0.05899231162647471,
+      "single_sine_explained_variance": 0.9993263891397729,
+      "single_sine_residual_rms": 0.0010829148235865058,
+      "activity_regions": 1,
+      "duration_resolution_seconds": 0.01,
+      "comparison_to_input": {
+        "input_frequency_hz": 375.0,
+        "playback_frequency_ratio": 1.4985229925330938,
+        "pitch_difference_semitones": 7.002494639523075
+      }
+    }
+  },
+  "limits": [
+    "Measured duration is audible playback duration at the triggered melodic note, not native stored sample length.",
+    "Input/playback pitch difference can reflect note transposition or existing parameter settings; exact button actions unknown.",
+    "Envelope threshold and 10 ms bins determine reported sound boundaries.",
+    "Single-sine residual includes noise, harmonics, modulation and processing; it is not a codec identification.",
+    "No payload or native sample-rate mapping is inferred."
+  ]
+}

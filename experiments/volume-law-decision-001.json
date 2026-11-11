@@ -1,0 +1,34 @@
+{
+  "analysis_version": "volume-law-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "a2660bea71d0252d883b4e713a471f6339490cc645ad31ccae0d40ead8e5f05b",
+  "native_results_sha256": "0229c1c28ac68002f6fe960c1dc455c87d5f5e1315dce9c260a59ad61550ed8d",
+  "level_results_sha256": "3e5db91f6bfc015924c7e0b392a244480f74496c543a9e01239cdac7535ff856",
+  "measured_db_by_code": {
+    "36": 0.0,
+    "0": 0.001758072876679184,
+    "63": 7.484828928326773,
+    "9": -13.29989858903518,
+    "54": 6.216225493620957,
+    "18": -8.561988904606348,
+    "45": 3.350868337533001,
+    "27": -3.946228697726224,
+    "3": -15.405875055805552,
+    "60": 7.20774261230051,
+    "12": -11.818571962834536,
+    "48": 4.354613835352402,
+    "21": -6.96865205880981,
+    "39": 1.1793560651307384,
+    "6": -14.58566737232685,
+    "30": -2.5556010088141394
+  },
+  "model_support": {
+    "power_1p38": false,
+    "db_linear_0p5": false
+  },
+  "classification": "other_or_inconclusive",
+  "limits": [
+    "Sound3 at pitch 13 and key 1 on Pattern 1; other sounds may differ",
+    "Measures recorded output level, which includes the PO-33 and interface gain stages"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "ordinary_line_input_calibration_audio",
+  "frequency_hz": 1000,
+  "duration_seconds": 0.5,
+  "sample_rate_hz": 44100,
+  "channels": 2,
+  "identical_channels": true,
+  "pcm_subtype": "PCM_16",
+  "peak_requested": 0.25,
+  "fade_frames": 221,
+  "wav_sha256": "61e447697569c47fc4f9471ece913d16c829d488cc56285836c934452084509e",
+  "purpose": "Distinct short input for a newly recorded independent Sound4 buffer"
+}

@@ -1,0 +1,27 @@
+{
+  "analysis_version": "first-generated-sound4-shrink-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "This unshared Sound4 shrink from73728 to32768 codes, generated2250Hz window and every unrelated packet preserved",
+  "recapture_results_sha256": "b43955bd457358c4cbcda111f3c65ca3604a1c9cfddfd720816a581f951d980a",
+  "manual_observation_sha256": "615bd5a0fbaf71eae3b1c79881d6778c8a745a76deb2e4235b80b0e00c4812b5",
+  "restore_registration_sha256": "4439e3b1a4336b4c3cfa4c19142088e0940b1fab000fe4979945550e9a6a8ba5",
+  "software_validation_sha256": "d074e4137aebcb50fe66777cef54f0c3126216106897138ea31694bd770b8f4d",
+  "capture_sha256": "4a11f64a99e10c2a6d49bcd3a1e4c4c5a2cc43ab481d1b884e396921b34fb3c5",
+  "artifact_sha256": "066cc3321f53582a051456dbd771f13253a3a13fc22e8c15ec8aa3e08590643f",
+  "body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "user_report": "done and confirmed",
+  "checks": {
+    "all_recapture_checks_pass": true,
+    "user_restore_and_auditions_confirmed": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "registered_body_matches": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_body_matches": true,
+    "original_software_report_remains_software_only": true
+  },
+  "exported_content_files_checked": 31,
+  "limits": [
+    "Both known Sound4 resize directions now have hardware evidence; general allocation, other slots/capacities, creation/deletion and shared-owner resizing remain unverified"
+  ]
+}

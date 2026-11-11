@@ -1,0 +1,33 @@
+{
+  "experiment_id": "edited-trim-001",
+  "capture_status": "received_and_validated_native_body",
+  "expected_file": "capture.wav",
+  "source_backup_id": "empty-001-h-sound3-copy-return",
+  "restore_wav": "../generated-sound3-short-001/restore-sound3-short.wav",
+  "restore_wav_sha256": "1381f7e4576adb14de3074b12101fdf91156b73cd6045e61a632eb0a0ea36053",
+  "expected_encoded_body_sha256": "0191ad7ee47710d5bcb117d8b3d1c9774c972ff06df829f9cb302d2f2046c4d7",
+  "expected_sound3_reference_counter": 8000,
+  "expected_other_sound_reference_counters": {
+    "1": 64704,
+    "2": 64704,
+    "8": 64704
+  },
+  "planned_actions": [
+    "Restore generated short Sound3 backup using previously validated stereo playback path",
+    "With write off and stopped playback, audition Sound3 key1 once and Sound8 key1 once; report difference",
+    "Reselect Sound8, retainTONE, stopped playback and empty Pattern1; capture full stereo backup"
+  ],
+  "actual_actions": [
+    "User reports successful generated restore and the requested tone tests; supplied the post-test backup."
+  ],
+  "source_sha256": "e039a7ce9392e44827424134bee6f08439fd66cd45b2b7712759b4c89794bc0c",
+  "purpose": "Manual hardware validation of checksum-rebuilt native trim edit and canonical post-frame carrier",
+  "hardware_verified": true,
+  "action_evidence": "User completion report; exact buttons and listening were not independently observed.",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "hardware": "hardware-validation.json",
+    "packets": "derived/analysis-001/packet-report.json",
+    "waveform": "../waveform-probes-020.json"
+  }
+}

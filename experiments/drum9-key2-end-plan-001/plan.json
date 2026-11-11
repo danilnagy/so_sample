@@ -1,0 +1,14 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "707528090cb1e487232b9b9af2a7d3ea8925632fd17edae0c69507f26f3970f3",
+  "source_body_sha256": "09c5f71aad53947f1399cd3080a67a9c6f1ffb8a8fcc5df3dbd6102ac770450f",
+  "operations": [
+    {
+      "operation": "set_drum_slice_end",
+      "sound": 9,
+      "slice": 2,
+      "end": 6045
+    }
+  ]
+}

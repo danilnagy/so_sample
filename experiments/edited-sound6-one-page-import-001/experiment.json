@@ -1,0 +1,29 @@
+{
+  "experiment_id": "edited-sound6-one-page-import-001",
+  "capture_status": "hardware_verified_exact_one_page_WAV_import_and_endpoint",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sound6-nine-pages-001",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "software_validation": "software-validation.json",
+  "input_sample": "input-sample.wav",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "done and confirmed"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "recapture_results": "hardware-recapture-results-001.json",
+    "manual_observation": "manual-observation.json"
+  },
+  "planned_actions": [
+    "Restore complete restore.wav through proven stereo receive path at established playback level",
+    "Return to Pattern1/Sound8/TONE stopped/write off with both knobs/settings unchanged",
+    "Before audition/playback save complete backup here as capture.wav at established reduced levels with one second trailing silence",
+    "After saving check Sound6/key1 new higher short beep, Sound7/key1 silent and Sound4/Sound5/Pattern1 unchanged; return to Sound8/TONE and report restore acceptance and checks"
+  ],
+  "source_sha256": "1c879e3bc19ff8948feb9692d0e05548ad7ad0251577854e3f590857ae3b0c7b",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-one-page-sound6-import-001/project.json"
+}

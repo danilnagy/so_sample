@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-fx-catalog-001",
+  "capture_status": "validated_exact_native_fx_catalog_described",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../fx-catalog-registration-001.json",
+  "plan": "../fx-catalog-plan-001/plan.json",
+  "playback_seconds": 26,
+  "observation_questions": [
+    "Describe, in order, what each effect did to the note if you can (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "measurements": "fx-catalog-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-fx-catalog-001/project.json"
+}

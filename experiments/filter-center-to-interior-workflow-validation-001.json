@@ -1,0 +1,36 @@
+{
+  "analysis_version": "verified-center-failure-and-audio-to-interior-controls-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "current_hardware_scope_checks_and_all_source_pins_pass": true,
+    "both_failed_center_scalar_orders_retained_separately_from_valid_native_scope": true,
+    "single_middle_tick_correction_and_post_observation_model_pinned": true,
+    "six_frozen_near_prior_comparisons_pass_without_broadband_claim": true,
+    "all_export_hashes_and_full_native_reconstruction_pass": true,
+    "new_branch_model_explicitly_after_center_and_before_interior_data": true,
+    "entire_independent_center_return_and_both_projections_registered": true,
+    "all_three_capture_folders_pending": true,
+    "existing_public_pitch_and_volume_guards_reject_current_filter_context": true
+  },
+  "interior_registration_sha256": "7963265f0311606476b162e1aa65d2398b5d5437779fc8d838f2fbd004c30c11",
+  "current_hardware_observation_sha256": "9751d6d7beedceca97cdc69bf52c34be317a4e0266549fe7576736c519a86d37",
+  "new_script_sha256": {
+    "scripts/prepare_sound3_filter_interior.py": "bef4b78887b462cc4f85dc03e4c8db0a0bff63d78803ec66e1459a9066868a5c",
+    "scripts/check_sound3_filter_interior.py": "e4b0aa2e73bf5a663b92314cd2997e53b5f62c7e2b47517244a8c6b2493abb0d",
+    "tests/test_sound3_filter_interior.py": "17891c48404a5912a0a523947fb98c3e667a774b6e9b31e5b33f2257a77b8ef0"
+  },
+  "focused_tests_passed": 69,
+  "last_full_regression_tests_passed": 917,
+  "production_writer_changed": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Both previous between-endpoint center predictions failed at63; original reports and incorrect full-bar cue remain immutable",
+    "Special neutral63 and two branches are new post-center hypotheses registered before these interior data",
+    "Interior values and complete bodies are unknown; no exact quarter-position code or uniformity is predicted",
+    "Two scalar branch-order projections remain distinct; failures, ramps, unchanged captures and wider changes are retained",
+    "Whole independent center body and every packet must return exactly; matching candidate codes alone are insufficient",
+    "Single middle tick is the user-confirmed center cue; interior UI units, cutoffHz, full width, resonance and public writer remain unconfirmed",
+    "No ordinary audio measurement is required for these backups; user audibility and knob directions remain separate observations"
+  ]
+}

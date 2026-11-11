@@ -1,0 +1,22 @@
+{
+  "experiment_id": "edited-sound3-volume36-002",
+  "capture_status": "validated_exact_generated36_and_higher_recorded_tone_amplitude",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-volume36-registration-002.json",
+  "hardware_restore": {
+    "status": "verified_exact_native_reception"
+  },
+  "planned_actions": [
+    "Restore complete waveform with established stereo path and playback level; keep both knobs and all audio settings unchanged",
+    "Pattern1/Sound3/TONE stopped/write off; before playback save complete capture.wav with established reduced recording level and one second tail",
+    "Separately record12 to15 seconds of ordinary Pattern1 playback as playback.wav, then stop/write off",
+    "Confirm restore success and recognizable phrase; relative loudness may be reported as uncertain without guessing; keep knobs untouched"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "native_results": "hardware-recapture-results-001.json",
+  "playback_results": "playback-gain-results-001.json",
+  "gain_comparison": "../sound3-generated-volume36-gain-results-001.json",
+  "project": "../exported-sound3-volume36-001/project.json"
+}

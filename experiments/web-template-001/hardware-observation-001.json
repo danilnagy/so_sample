@@ -1,0 +1,37 @@
+{
+  "analysis_version": "web-template-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a restore compiled by the TypeScript core from the empty-device template, with shared, referenced, embedded, sliced and absent sample records",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "session_target_exact": true
+  },
+  "predictions": [
+    "The backup equals the compiled target exactly (every packet and the whole body)",
+    "Sound 2 plays the Sound 1 tone truncated at 5000 codes; Sound 3 plays it from code 3000 to 9000",
+    "Sound 9 key 4, which has no record, is silent; key 5 plays Sound 1's buffer window 0..4000",
+    "Sound 10's sixteen windows into one buffer each play, including the overlapping key 2"
+  ],
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "6b075b6e72192aa67364cf4c797c581c2f4fa4c38bb10d5766a50fbb8d30d8d1",
+  "session_answers": [
+    {
+      "question": "Pattern 1: did Sound 2 (steps 3, 11) play the Sound 1 tone but shorter, and Sound 3 (step 7) start part-way into it? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 1 drums (Sound 9): was key 4 (step 7) silent, and did key 5 (step 11) play the Sound 1 tone? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 2: did Sound 10 play rising chirp fragments on every step, with FX 1 looping steps 9-12? (yes/no/notes)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One session on one device; audible predictions rest on listening, not on a frozen measurement",
+    "An empty key as an absent record is tested here for the first time"
+  ]
+}

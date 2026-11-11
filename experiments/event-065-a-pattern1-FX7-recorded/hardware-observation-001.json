@@ -1,0 +1,60 @@
+{
+  "analysis_version": "recorded-FX7-footer6-global9-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Uniform footer nibbles6 plus global byte131 value9 reproduce complete native body; notes, parameters, samples and every other state byte exact; user reports octave higher; original footer-only hypothesis fails",
+  "checks": {
+    "source_and_actual_native_controls_pass": true,
+    "Pattern1_primary_auxiliary_and_other_patterns_preserved": true,
+    "post_observation_footer6_plus_global9_model_reproduces_entire_body": true,
+    "capture_artifact_registration_pins_match": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_full_native_reconstruction_pass": true
+  },
+  "original_footer_only_hypothesis_supported": false,
+  "footer_nibble_values": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "global_packet_index": 2,
+  "global_payload_offset": 131,
+  "global_byte_before": 0,
+  "global_byte_after": 9,
+  "capture_sha256": "3c1f094e2d705690f0dfa6084c83e4bc53e6395a8bb9f0e82ab3d8726ac360e2",
+  "artifact_sha256": "3edd1137d6c38f695a0d80338d2e11da821499477b2fcde402e05f8cafb97ef3",
+  "artifact_path": "experiments/event-065-a-pattern1-FX7-recorded/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "99b832a7e42f801c9d266da0e4f24d3f4a0add2f2352e24274cf77d7295a276d",
+  "native_results_sha256": "0f408a16d3ffb99c9bb099ac96ada5296710cbb802f455cc44a7a822c4f0ab10",
+  "manual_observation_sha256": "53b826ed28b72e644083b25d87aacd035ee7cb1044778852e6cbe7d40614f6ce",
+  "post_observation_model_sha256": "82d991d63476b26d335f3a1002e2b284b47514176abbd1442c216254bc66c82c",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.1319580078125,
+      0.129364013671875
+    ]
+  },
+  "global_byte_meaning_and_FX_order_confirmed": false,
+  "FX_writer_enabled": false,
+  "limits": [
+    "Footer bytes1024..1031 are a new location hypothesis; both high/low-first nibble projections remain literal and no raw FX7 code is guessed",
+    "FX7 is official octave-up and requires write mode enabled, distinct from holding WRITE during knob automation",
+    "Current source preceded already confirmed ordinary playback; probe includes that playback plus WRITE/FX pass, retaining unrelated changes without sole attribution",
+    "No uniformity or whole target body is predicted; release timing may leave mixed footer values; no averages rescue failures",
+    "Broader Pattern1 and nonpattern differences remain distinct; sample/parameter changes do not rescue footer-only support",
+    "No public FX writer or interpretation of the complete effect/footer encoding is enabled"
+  ]
+}

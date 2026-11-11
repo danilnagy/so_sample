@@ -1,0 +1,106 @@
+{
+  "analysis_version": "second-drum-block-copy-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-drum9-key2-end-001",
+  "baseline_capture": "../edited-drum9-key2-end-001/capture-retry.wav",
+  "baseline_source_sha256": "447b8e92224fd5db41f53bb283bff66317da14a32bf9b0004669aed057cfec91",
+  "baseline_artifact": "../edited-drum9-key2-end-001/derived/analysis-003/capture.symbols.npz",
+  "baseline_artifact_sha256": "0d8a5a3d61b1ec84848ad9fe45bf315c9aac7b9774420356ed455b9aefb0dd5b",
+  "baseline_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "target_capture": "event-018-b-copy-sound1-to-drum10/capture.wav",
+  "expected_change": {
+    "action": "Copy selected Sound1 into empty Sound10",
+    "source_sound_slot": 1,
+    "destination_sound_slot": 10
+  },
+  "control_checks": {
+    "baseline_packet_count": 527,
+    "baseline_source_sound1_header_hex": "00000000c0fc000000",
+    "baseline_source_sound1_payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25",
+    "candidate_destination_selector_ids": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "candidate_destination_empty_before": true,
+    "patterns": "All16 identical",
+    "existing_sounds": "All existing sample buffers and references unchanged, including both accepted Sound9 windows",
+    "unrelated_packets": "Every packet outside candidate destination data unchanged; selector order retained",
+    "native_validation": "Every CRC and exact native body re-encode required",
+    "packet_count_policy": "No exact count is a preservation requirement; new data packets may be added"
+  },
+  "separately_evaluated_hypotheses": {
+    "sound10_uses_selector_block24_to39": {
+      "mapping_is_hypothesis": true
+    },
+    "all16_destination_groups_populated": {
+      "populated_ids": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    "destination_records_are_owner0_references": {
+      "record_bytes": 9,
+      "owner_id": 0
+    },
+    "destination_records_equal_original_sound9_autocopy": {
+      "reference_source_artifact": "../event-015-b-copy-sound1-to-drum9/derived/analysis-001/capture.symbols.npz",
+      "reference_source_artifact_sha256": "dcebfbb1c93317bcdb7354febb30cb3d931757bd650921eab41017c69a1da8b8",
+      "expected_payload_hex_by_destination_id": {
+        "24": "00000000cc0f000000",
+        "25": "cd0f0000981f000000",
+        "26": "991f0000642f000000",
+        "27": "652f0000303f000000",
+        "28": "313f0000fc4e000000",
+        "29": "fd4e0000c85e000000",
+        "30": "c95e0000946e000000",
+        "31": "956e0000607e000000",
+        "32": "617e00002c8e000000",
+        "33": "2d8e0000f89d000000",
+        "34": "f99d0000c4ad000000",
+        "35": "c5ad000090bd000000",
+        "36": "91bd00005ccd000000",
+        "37": "5dcd000028dd000000",
+        "38": "29dd0000f4ec000000",
+        "39": "f5ec0000c0fc000000"
+      }
+    },
+    "sixteen_new_reference_packets_only": {
+      "packet_count_delta": 16,
+      "native_body_byte_delta": 224
+    }
+  },
+  "limits": [
+    "Sound10 selector24..39 mapping is an independent test of the previously inferred drum block stride",
+    "The exact copy-record prediction uses the genuine original Sound9 copy, not its subsequently edited windows",
+    "Any destination allocation, different boundaries or failed hypotheses are reported without hiding unrelated changes",
+    "No individual Sound10 key mapping, Sound10 writer/preview or general autoslice rule is enabled by registration"
+  ]
+}

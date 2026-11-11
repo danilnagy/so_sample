@@ -1,0 +1,45 @@
+{
+  "analysis_version": "first-swing-clockwise-maximum-control-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_artifact": "experiments/edited-fine-tempo137-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "c5b3375847b325fc70ffc558e4a4aa49f39bef919e3f312c23d251fb877d609b",
+  "baseline_capture": "experiments/edited-fine-tempo137-001/capture.wav",
+  "baseline_capture_sha256": "0538c163106bac0f0c9ac88471ab246c3c53dc713db60c86233eed68e87e9a13",
+  "baseline_body_sha256": "5f25b5efd909c93b0aa0cdbb31d8aff170ea5edeb9ca6dd48eb2d7778ae696cb",
+  "baseline_acceptance_sha256": "1549b3fb812060dc25713641bd6f3a31a91aac17dcd1782eae5ab1cf24cfab3f",
+  "expected_tempo_bpm": 137,
+  "global_records": [
+    {
+      "packet_index": 1,
+      "payload_hex": "2abd50e376099c2fc255e87b0ea134c75aed8013a639cc5ff28518ab3ed164f78a1db043d669fc8f22b548db6e019427ba4de07306992cbf52e5780b9e31c457ea7d10a336c95cef8215a83bce61f4871aad40d366f98c1fb245d86bfe9124b74add70039629bc4fe275089b2ec154e77a0da033c659ec7f12a538cb5ef18417aa3dd063f6891caf42d568fb8e21b447da6d009326b94cdf7205982bbe51e4770a9d30c356e97c0fa235c85bee8114a73acd60f38619ac3fd265f88b1eb144d76afd9023b649dc6f029528bb4ee174079a2dc053e6790c9f32c558eb7e11a437ca5df08316a93ccf62f5881bae41d467fa8d20b346d96cff9225b84bde7104",
+      "payload_sha256": "c800383bf6f80b6589f84e447bf67e6dd61f6ac0984e855ad82a2a4913318674"
+    },
+    {
+      "packet_index": 2,
+      "payload_hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018900000000000000000000000000000000009326b94cdf7205982bbe51e4770a9d30c356e97c0fa235c85bee8114a73acd60f38619ac3fd265f88b1eb144d76afd9023b649dc6f029528bb4ee174079a2dc053e6790c9f32c558eb7e11a437ca5df08316a93ccf62f5881bae41d467fa8d20b346d96cff9225b84bde7104",
+      "payload_sha256": "48dca9153323f817cf31db6a219fc6167faa7a03fe3d54fa955e6f797ba91433"
+    }
+  ],
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 130,
+    "baseline_encoded_value": 0,
+    "hypothesis": "Only the byte immediately after tempo changes when setting maximum swing",
+    "basis": "Adjacent mostly-zero global bytes are a preregistered location lead, not a confirmed swing field",
+    "expected_after_encoded_value": null,
+    "baseline_display_value": null
+  },
+  "official_reference": {
+    "url": "https://teenage.engineering/guides/po-33/en",
+    "reviewed_date": "2026-10-09",
+    "section": "6, swing",
+    "paraphrase": "Hold BPM and turn knob A to adjust swing; knob B adjusts tempo and is excluded"
+  },
+  "limits": [
+    "Maximum swing is an endpoint action, not an assumed numeric percentage or byte value",
+    "Report any display label/value independently, or state that no numeric value is shown",
+    "An unchanged capture remains an eligible already-at-maximum or no-serialized-change outcome",
+    "All raw differences are reported without fitting a new location; no swing writer is enabled"
+  ]
+}

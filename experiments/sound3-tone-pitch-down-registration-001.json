@@ -1,0 +1,45 @@
+{
+  "analysis_version": "sound3-recorded-tone-A-down-preregistration-0.1",
+  "registered_before_capture": true,
+  "hardware_verified": false,
+  "experiment_id": "event-051-b-sound3-tone-pitch-lock-down",
+  "source_artifact": "experiments/event-050-a-sound3-volume36-post-playback/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "019211d5ec793c0e75513010c734b5800cdf7a2d750cfb2ba27a6fb88e49c1a4",
+  "source_capture": "experiments/event-050-a-sound3-volume36-post-playback/capture.wav",
+  "source_capture_sha256": "8ecd94cad6185a42b42e2db3b3ecced19f72dd9884316848d08e15b079e9922c",
+  "source_body_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+  "source_observation_sha256": "157e70514536f4f0e0b011b48bc4e590b9e783e2774a7e1406eae37e69732256",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "recorded_action": {
+    "mode": "TONE",
+    "sound": 3,
+    "pattern": 1,
+    "moving_knob": "A",
+    "direction": "counterclockwise_to_physical_minimum",
+    "ramp_seconds": 5,
+    "stationary_write_hold_seconds": 3,
+    "knob_B_moved": false
+  },
+  "location_hypotheses": {
+    "no_serialized_change": "Complete body stays equal to actual post-playback baseline",
+    "strict_pitch_candidate_only": "At least one Sound3 first-primary low6 field changes; only first-byte mask0x3f changes across all16 Sound3/P1 cells, auxiliary and all other state exact",
+    "pitch_candidate_plus_known_volume": "At least one first-low6 field changes; first-byte0xff and second-byte0x0f only, auxiliary and all other state exact",
+    "other_sound3_primary_changes": "Only Sound3/P1 primary cells change, with auxiliary exact; full raw tuples retained without field interpretation",
+    "sound3_primary_and_auxiliary_changes": "Only Sound3/P1 primary and auxiliary cells change; full raw tuples and auxiliary values retained"
+  },
+  "expected_audition_direction": "Sound3 should drop in pitch during counterclockwise movement; independent user report may be unknown",
+  "display_text_required": false,
+  "raw_endpoint_value_assumed": null,
+  "official_control_source": "https://teenage.engineering/guides/po-33/en",
+  "limits": [
+    "First primary low6 bits are a new location hypothesis, not a decoded pitch field",
+    "No endpoint raw code, semitone scale, numeric UI reading or complete target body is guessed",
+    "Recorded A may snapshot volume or other TONE data even with B untouched; compare strict and broader alternatives separately",
+    "Movement may retain a per-step ramp; the stationary hold does not guarantee uniform endpoint data",
+    "Auxiliary changes, other sounds, sample data, globals and other patterns remain explicit; no decoder repair or silent mask widening",
+    "No pitch-field writer or new extension of the public volume context; out-of-context volume edits continue to fail"
+  ]
+}

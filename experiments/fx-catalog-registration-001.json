@@ -1,0 +1,111 @@
+{
+  "analysis_version": "fx-catalog-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-fx-catalog-001",
+  "source_artifact": "experiments/compiled-stray-bits-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "5b21b4bf477ce3ecccbf6eb84cce8b3afed307f39d72b74dffc77215e33011f9",
+  "source_capture_sha256": "e771775e84dfb300c656986b6d735de4966c7a5fe3b6713e6ccfb2fd9ebe058e",
+  "effects": {
+    "2": [
+      1,
+      null,
+      2,
+      null,
+      3,
+      null,
+      4,
+      null,
+      5,
+      null,
+      6,
+      null,
+      7,
+      null,
+      8,
+      null
+    ],
+    "3": [
+      9,
+      null,
+      10,
+      null,
+      11,
+      null,
+      12,
+      null,
+      13,
+      null,
+      14,
+      null,
+      15,
+      null,
+      null,
+      null
+    ]
+  },
+  "control_step": [
+    3,
+    15
+  ],
+  "tone_hz": 783.9891779757236,
+  "step_seconds": 0.25,
+  "windows_ms": [
+    [
+      20,
+      60
+    ],
+    [
+      60,
+      100
+    ],
+    [
+      100,
+      140
+    ],
+    [
+      140,
+      180
+    ],
+    [
+      180,
+      220
+    ],
+    [
+      220,
+      260
+    ],
+    [
+      260,
+      300
+    ],
+    [
+      300,
+      340
+    ],
+    [
+      340,
+      380
+    ],
+    [
+      380,
+      420
+    ],
+    [
+      420,
+      460
+    ]
+  ],
+  "plan_sha256": "a0ef3410f6bfeed95aa4dda0ea56fe0d81224780d59e3abd6a9e404f77b98c98",
+  "expected_body_sha256": "732f5390dcfb959c921776c74e30ba2c5a131de72d5063ad5625ee1406725cd9",
+  "edited_artifact_sha256": "80240b77b7ef5c05de853773453e9b6ec061be0e4f464ac2a1c96d3b7d01b369",
+  "restore_wav_sha256": "06a550ee2b7b70c3790b056bed2ab52145ac72efe0dbc1e92b950c185570d5c2",
+  "method_script_sha256": "701039b3217f48c0c8dec7ad4ede0be844a043ce9217a7197eb37c3d273bcb06",
+  "hypotheses": {
+    "exact_reception": "the backup equals the target exactly",
+    "control_plain": "the control step has one onset, 784 Hz within 20 cents in every window where it sounds, and nothing above -30 dB in the following step"
+  },
+  "limits": [
+    "One tone, one key, tempo 60; effects that depend on tempo, key or sample content are described only in this setting"
+  ]
+}

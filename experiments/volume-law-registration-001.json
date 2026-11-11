@@ -1,0 +1,105 @@
+{
+  "analysis_version": "volume-law-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-volume-law-001",
+  "plan": "experiments/volume-law-plan-001/plan.json",
+  "plan_sha256": "1dca73d0dbae4ac12246f0b8723f2f0648c5da238e075bc581f5bbee10cbe6ab",
+  "compile_report_sha256": "fc1be0c0a18fc1130f49bae967f554cd7cd42784fc1ae72bba716932d5f64071",
+  "source_artifact": "experiments/compiled-pitch-law-002/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "450368043127d94cf03aa35ed08b31fe19904a15cfb76964cde52bbb835bfa2f",
+  "source_capture_sha256": "df957bf98e7c9bb790e28dd383c56936e7f30f553116dad7217db40fb220cb7e",
+  "expected_body_sha256": "ce7fd6eacf3bd833435413dfd78eb29fedf060c9d54ee563a625accf4cfb6a3f",
+  "edited_artifact_sha256": "50c4378fd6ce36e68020d61a90a8c6b16029d340686d9d8a145db187b5600d2c",
+  "restore_wav_sha256": "4a7c73f0f10d21b6143c1847bd743db728a8bf13d909c21a26f4040c7f8dd621",
+  "volume_codes": [
+    36,
+    0,
+    63,
+    9,
+    54,
+    18,
+    45,
+    27,
+    3,
+    60,
+    12,
+    48,
+    21,
+    39,
+    6,
+    30
+  ],
+  "pitch_code": 13,
+  "prior_ratios": {
+    "18_vs_21": 0.8189,
+    "36_vs_21": 2.2036
+  },
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "level_window_ms": [
+      50.0,
+      90.0
+    ],
+    "silent_below_db": -45.0,
+    "db_tolerance": 1.5,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "c20cd7e75fdc9254e345615979cd08fae5252f595d1c6a790a698ea057764416",
+  "models_db": {
+    "power_1p38": [
+      0.0,
+      null,
+      6.707850143741726,
+      -16.61685576065176,
+      4.8601187499368015,
+      -8.30842788032588,
+      2.674716359022357,
+      -3.4483091303890783,
+      -29.785402390914445,
+      6.123025489411436,
+      -13.168546630262682,
+      3.448309130389078,
+      -6.4606964865209555,
+      0.9594341327542486,
+      -21.476974510588562,
+      -2.185402390914444
+    ],
+    "db_linear_0p5": [
+      0.0,
+      null,
+      13.5,
+      -13.5,
+      9.0,
+      -9.0,
+      4.5,
+      -4.5,
+      -16.5,
+      12.0,
+      -12.0,
+      6.0,
+      -7.5,
+      1.5,
+      -15.0,
+      -3.0
+    ]
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly; only Pattern 1's Sound3 primary bytes may differ",
+    "Each step's level is the RMS 50-90 ms after its grid onset, median over five loops, in dB relative to step 1 (volume 36)",
+    "A model holds when every step with a nonzero code is within 1.5 dB in the median and in at least 4 of 5 loops",
+    "Code 0 is reported only; the measured gain table is the main result either way"
+  ],
+  "limits": [
+    "Sound3 at pitch 13 and key 1 on Pattern 1; other sounds may differ",
+    "Measures recorded output level, which includes the PO-33 and interface gain stages"
+  ]
+}

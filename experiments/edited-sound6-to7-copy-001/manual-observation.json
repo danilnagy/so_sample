@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed",
+  "context": "Response to generated Sound6-to7 reference-copy restore and same Sound6/Sound7 key1 tone/duration, unchanged Sound4/Sound5 and Pattern1 checks",
+  "requested_restore_and_audition_checks_confirmed": true,
+  "capture_sha256": "9737239d8d7b8f221eb23b0d7b8240f0a8799c3ad48482dc9e16ab94f4fc313f",
+  "limits": [
+    "Audible checks are user reports; exact packet checks are independent"
+  ]
+}

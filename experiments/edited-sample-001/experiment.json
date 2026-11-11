@@ -1,0 +1,46 @@
+{
+  "experiment_id": "edited-sample-001",
+  "capture_status": "received_and_validated_native_body",
+  "expected_file": "capture.wav",
+  "source_backup_id": "edited-trim-001",
+  "source_backup_sha256": "e039a7ce9392e44827424134bee6f08439fd66cd45b2b7712759b4c89794bc0c",
+  "restore_wav": "../generated-sample-750-001/restore-750hz.wav",
+  "restore_wav_sha256": "b58bc4195c44278434f3646aac56ee7eb9f58ff49ecc424b942c15cbee0b13ee",
+  "expected_encoded_body_sha256": "8f851166868fd99e7935a5942a2b82181f0268c3a05303f08852a0f06ebb30a0",
+  "expected_backing_codes_sha256": "80b1182143cb5ed850776979536137c650370ad2f31a8dfb4c14f357af89762d",
+  "expected_packet_count": 511,
+  "expected_sound_counters": {
+    "1": 64704,
+    "2": 64704,
+    "3": 8000,
+    "8": 64704
+  },
+  "affected_sound_slots": [
+    1,
+    2,
+    3,
+    8
+  ],
+  "planned_actions": [
+    "Restore generated750Hz sample backup using previously validated stereo playback path",
+    "With write off and stopped playback, audition Sound8 key1 and Sound3 key1; report that pitch is an octave higher, Sound8 is long and Sound3 remains brief",
+    "Reselect Sound8, retain TONE, empty Pattern1, write off and stopped playback; record complete stereo backup"
+  ],
+  "actual_actions": [
+    "User replied done to the requested restore, listening and recapture protocol; supplied this backup; no deviation reported."
+  ],
+  "source_sha256": "94b9b95f3468f4781d52542756cb858479a2a4cd3969826ad31658479919312d",
+  "purpose": "Hardware validation of signed-complement mu-law encoding and fixed-size shared sample replacement",
+  "hardware_verified": true,
+  "limits": [
+    "No allocation, resizing, nonzero start or independent per-copy sample replacement is claimed."
+  ],
+  "action_evidence": "User completion report; exact listening observations and pressed buttons were not supplied.",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "hardware": "hardware-validation.json",
+    "packets": "derived/analysis-001/packet-report.json",
+    "patterns": "derived/analysis-001/pattern-report.json",
+    "waveform": "../waveform-probes-021.json"
+  }
+}

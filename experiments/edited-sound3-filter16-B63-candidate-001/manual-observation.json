@@ -1,0 +1,9 @@
+{
+  "user_report": "done, confirmed this version sounds like it has more resonance or filter effect",
+  "audible_change": "more_resonance_or_filter_effect",
+  "requested_restore_backup_and_playback_completed_in_context": true,
+  "numeric_display_value": null,
+  "capture_sha256": "731edf3c33e7df27398ab59ec0bcde5aee57c68f2ff3309de2dc203d67e3e2e2",
+  "playback_sha256": "3c7400cc8daa6c33ecb206ba7f00a4aad3d7d69e4cf3d493a50cf43ef26c3ece",
+  "interpretation": "Explicit stronger-resonance-or-filter listening report; exact native reception and measured component-amplitude ratio remain separate evidence, not a claim of whole-sample loudness or a complete resonance law"
+}

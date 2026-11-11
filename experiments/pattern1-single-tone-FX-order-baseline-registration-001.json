@@ -1,0 +1,62 @@
+{
+  "analysis_version": "new-single-tone-baseline-after-inconclusive-order-probe-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "edited-pattern1-single-tone-no-FX-001",
+  "source_artifact": "experiments/edited-pattern1-FX-6F-first-pair-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "8a0a346703882536e6ab0dfbee093568d9053ebcaf48352c226efe38df4a4efa",
+  "source_capture": "experiments/edited-pattern1-FX-6F-first-pair-001/capture.wav",
+  "source_capture_sha256": "b6ed6ed76f19c07e01fe811d83a0e7f73a0bf14d98d03917db486a8c455e32d0",
+  "source_observation": "experiments/edited-pattern1-FX-6F-first-pair-001/hardware-observation-001.json",
+  "source_observation_sha256": "8d917f4758b7e5930650d81412dae4c565b110a1dd0f64b5043654bc26dc31a6",
+  "expected_body_sha256": "a97e89da4ebdc2bb236209d0ef295a1473e6a58757cca0165c466c4c667602a6",
+  "edited_artifact_sha256": "a3eb9367cd1033af90c926c725ec1648a8bad03962353f6152d582ef6f6aeaa8",
+  "restore_wav_sha256": "60c42b82aea3cfe4b3345dd1902167b572dbf3789fb9771468bcb6e0af1c0098",
+  "software_validation_sha256": "23eae134c338f4f330368d82cb2c8ac406c399ba19d1395a9888dfa28aee3806",
+  "earlier_inconclusive_comparison_sha256": "a3de495cc19ccb0c75a3540fe9ed2c14981b67e167661e126fbd70fd143a4059",
+  "audio_parameters": {
+    "band_hz": [
+      150.0,
+      3500.0
+    ],
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "anchor_peak_fraction": 0.005,
+    "anchor_minimum_region_seconds": 0.02,
+    "maximum_first_onset_anchor_delay_seconds": 0.025,
+    "minimum_band_rms": 0.001,
+    "minimum_region_seconds": 0.06,
+    "minimum_leading_silence_seconds": 0.3,
+    "first_onset_search_end_seconds": 5.0,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.14
+    ],
+    "frequency_search_hz": [
+      400.0,
+      3000.0
+    ],
+    "fft_grid_max_spacing_hz": 0.25,
+    "fft_peak_refine_halfwidth_hz": 1.0,
+    "minimum_fit_explained_variance": 0.9,
+    "maximum_threshold_frequency_relative_spread": 0.005,
+    "stereo_frequency_relative_tolerance": 0.005,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "octave_ratio_relative_tolerance": 0.01
+  },
+  "audio_method_script_sha256": "36d401ca136ec592fcaeecf7af4d2c360b3b639c8dca4cdf5728750af16f0501",
+  "frequency_fit_helper_sha256": "7e0d3874ef537f7dc2a56103c0dbbfa85190f4e989882386dbcf6b25eba61d51",
+  "expected_reference_frequency_hz": null,
+  "hypothesis": "One preserved Sound3 step1 trigger with all other Pattern1 cells empty and FX clear yields a usable first tone under the unchanged frozen method",
+  "limits": [
+    "Changes the entire Pattern1 cell region to one existing trigger; all samples, other15 patterns and globals remain exact",
+    "New source calibration is registered after the prior failed audio-quality check, before these new captures; prior recordings and results are unchanged",
+    "Does not retune the failed first-tone method or adjudicate the previous F6/6F order hypotheses",
+    "Native reception and audio usability must pass before preparing any new effect-order pair",
+    "No guessed reference frequency, audible octave ratio, general note editor or per-step effect writer"
+  ]
+}

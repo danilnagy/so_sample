@@ -1,0 +1,34 @@
+{
+  "analysis_version": "imported-Sound6-to7-copy-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "This zero-start 32768-code imported Sound6 owner/end17579 copied to empty Sound7 as a nine-byte owner5 reference, preserving the complete generated native body",
+  "recapture_results_sha256": "4875f352fb7f9b6ea6314464df38c734ba3430b9b16c9537d5e7df26d8eabb1c",
+  "manual_observation_sha256": "c2333d7a8f54dd493ff33faf9dd089b83605696c96aaf8ab30fce4fab23323a6",
+  "software_validation_sha256": "8d5685b20dcc5a44831c57b89842b2a6a2914db724d63cee9332330021863b2a",
+  "capture_sha256": "36b929195ee52efe831f26edec64ac707800abfb26832c012bfdd1ba5e0f90e1",
+  "artifact_sha256": "12579bb9d19941597d6213f0dba62b4d60e1225e6aa089bfc5241204689bcde7",
+  "artifact_path": "experiments/edited-imported-sound6-to7-copy-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "0e9ea03263ec6060838e557ccfc568a90eb3cfc65c2dca7180095736abf72920",
+  "checks": {
+    "all_native_recapture_checks": true,
+    "user_restore_and_auditions_confirmed": true,
+    "capture_and_artifact_hashes_match": true,
+    "export_all_content_hashes_match": true,
+    "export_full_native_body_matches": true,
+    "exported_sound6_and7_previews_identical": true,
+    "original_software_report_remains_software_only": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 33,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.164886474609375,
+      0.1588134765625
+    ]
+  },
+  "limits": [
+    "Only this source/destination pair and zero-start 32768-code header are established; other endpoints, capacities, slot pairs and deletion contexts need separate evidence"
+  ]
+}

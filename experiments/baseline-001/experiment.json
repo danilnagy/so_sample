@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "baseline-001",
+  "created_at": null,
+  "baseline_id": null,
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "User device state; detailed samples, patterns and settings not yet documented"
+  },
+  "changes": [],
+  "actions": [],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "6312a96c924ff3414b51584a1e86a2a950860b168d03cab9d735b2ed1d370370",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown",
+    "status": "received_and_inspected"
+  },
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "User reports this original capture successfully restores to their PO-33.",
+      "Detailed post-restore sample/pattern checklist and re-capture not supplied."
+    ],
+    "evidence_source": "user_report",
+    "artifact_sha256": "6312a96c924ff3414b51584a1e86a2a950860b168d03cab9d735b2ed1d370370"
+  },
+  "prior_hardware_experience": "User reports successful original backup creation and restoration; this specific capture has not yet been checked."
+}

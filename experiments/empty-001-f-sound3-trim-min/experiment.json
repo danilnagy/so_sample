@@ -1,0 +1,35 @@
+{
+  "experiment_id": "empty-001-f-sound3-trim-min",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-e-copy-to-3",
+  "baseline_source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+  "planned_actions": [
+    "Select Sound3; cycle FX toTRIM; turn knobB fully counterclockwise for minimum length, leaving knobA unchanged",
+    "Return FX toTONE and selection toSound8; retain empty Pattern1, write off, stopped playback and unchanged capture settings",
+    "Record full stereo backup"
+  ],
+  "actual_actions": [
+    "User replied done to the requested minimum Sound3 trim protocol and supplied this capture; no deviation reported"
+  ],
+  "source_sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70",
+  "preregistration": "../sound3-trim-predictions-001.json",
+  "purpose": "Test whether a non-recording trim parameter changes the candidate inline Sound3 reference record without relocating retained shared content",
+  "leave_populated_slots_afterward": [
+    1,
+    2,
+    3,
+    8
+  ],
+  "starting_fx_mode": "TONE inferred from prior protocol, not independently observed",
+  "decoder_version": "sign-crossings-0.2",
+  "action_evidence": "User completion report; exact buttons, endpoint value and original FX mode not independently observed",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "waveform": "../waveform-probes-017.json",
+    "registered_predictions": "../sound3-trim-results-001.json",
+    "coding_followup": "../sound3-trim-structure-001.json"
+  }
+}

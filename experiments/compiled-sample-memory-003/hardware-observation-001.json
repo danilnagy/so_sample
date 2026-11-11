@@ -1,0 +1,46 @@
+{
+  "analysis_version": "sample-memory-observation-0.3",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of 917504 sample codes, Sound9 converted to its own kit, and registered Sound9 pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "sound9_key_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 100.0115222002283,
+    "3": 200.0240942476553,
+    "4": 300.06619145841444,
+    "5": 400.03183865111606,
+    "6": 500.0934933902099,
+    "7": 600.056843075143,
+    "8": 700.0044379957443,
+    "9": 799.9941829714663,
+    "10": 899.962143158958,
+    "11": 999.974766442794,
+    "12": 1099.9470468573725,
+    "13": 1199.993444711644,
+    "14": 1300.0265998663585,
+    "15": 1400.0283065883364,
+    "16": 1499.9996355386097
+  },
+  "absolute": {
+    "step1_cents_vs_hit1": 0.024924283842931782,
+    "stored_rate": true
+  },
+  "total_capacity_codes": 917504,
+  "decision_sha256": "ece6540e69b399d89e4fd9dba0448be2809cb9f38fca920e21fb05baf6fb3002",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "0298200caa6cbc2a9cba8f6205a972bc8d80f532e8761565a2ed383a6a232989",
+  "session_answers": [],
+  "limits": [
+    "One total, 917504 codes, below the advertised 937500; larger totals are not tested",
+    "Only Sound9 is played; the other buffers are checked by exact reception"
+  ]
+}

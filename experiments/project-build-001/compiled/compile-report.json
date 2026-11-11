@@ -1,0 +1,1256 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "3e04d37dbaf384a5997019c118cfa68b68b7b1c0999fa4b541e0c90f96da1c63",
+  "plan_sha256": "11e52794c8cff5cbc5eabb799914c6f7df6613e2bb3a2dc9984fb5de8cf10c39",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 1,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 2,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 3,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 4,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 5,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 6,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 7,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 8,
+        "keys": [
+          1,
+          null,
+          3,
+          null,
+          5,
+          null,
+          8,
+          null,
+          1,
+          null,
+          3,
+          null,
+          5,
+          null,
+          8,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "eccb91ac3b82416b2fada562a032234a3b90f574da004bdb017e2f22ad75f2f5",
+      "after_body_sha256": "2e4c62c6b12bb1ce596e42c4c66bac28932e6b202ed5fc6c2011f743ff028378"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 9,
+        "keys": [
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "2e4c62c6b12bb1ce596e42c4c66bac28932e6b202ed5fc6c2011f743ff028378",
+      "after_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 10,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093",
+      "after_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 11,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093",
+      "after_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 12,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093",
+      "after_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 13,
+        "keys": [
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "855d536e3ffa4de98753b08128b2bbffca3ce2bd4d6cf40885d8abf0ea172093",
+      "after_body_sha256": "9efd98d227a5701e55d509684f3a21cc204d87b24213a3f79ee6c9665d87aca4"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 14,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "9efd98d227a5701e55d509684f3a21cc204d87b24213a3f79ee6c9665d87aca4",
+      "after_body_sha256": "6ba3073608ebea8848376d14db40b5e17118a691f9f7a1a69adcc88dc586e842"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 15,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "6ba3073608ebea8848376d14db40b5e17118a691f9f7a1a69adcc88dc586e842",
+      "after_body_sha256": "6ba3073608ebea8848376d14db40b5e17118a691f9f7a1a69adcc88dc586e842"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 1,
+        "sound": 16,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "6ba3073608ebea8848376d14db40b5e17118a691f9f7a1a69adcc88dc586e842",
+      "after_body_sha256": "91d36945a43bc12fcdc320deafaa7498029f5811dcf13a84edaf2201d2e8c616"
+    },
+    {
+      "operation": {
+        "operation": "set_step_effects",
+        "pattern": 1,
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "91d36945a43bc12fcdc320deafaa7498029f5811dcf13a84edaf2201d2e8c616",
+      "after_body_sha256": "91d36945a43bc12fcdc320deafaa7498029f5811dcf13a84edaf2201d2e8c616"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 1,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "91d36945a43bc12fcdc320deafaa7498029f5811dcf13a84edaf2201d2e8c616",
+      "after_body_sha256": "e2ea9ed2403f46f620059cf9559dd972bbb785dfe392f0bc4cf9b401e4bb5ac3"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 2,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "e2ea9ed2403f46f620059cf9559dd972bbb785dfe392f0bc4cf9b401e4bb5ac3",
+      "after_body_sha256": "e5651d6cf252eba3f806c7cdea342e56a02a47a0082eeeef060fde84dccfc459"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 3,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "e5651d6cf252eba3f806c7cdea342e56a02a47a0082eeeef060fde84dccfc459",
+      "after_body_sha256": "baacf0365bd7e9af7b1f3d6fb95f46669f45005e1f34eb473c69a305790609ab"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 4,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "baacf0365bd7e9af7b1f3d6fb95f46669f45005e1f34eb473c69a305790609ab",
+      "after_body_sha256": "1a8b065edd2a035db06969923928de4eda593300b5d465a7aa81f050408d13ce"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 5,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "1a8b065edd2a035db06969923928de4eda593300b5d465a7aa81f050408d13ce",
+      "after_body_sha256": "1202da62f00c31a8216d42b1ef833fe49f6527f6526c682a1c004b9364cb4276"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 6,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "1202da62f00c31a8216d42b1ef833fe49f6527f6526c682a1c004b9364cb4276",
+      "after_body_sha256": "1202da62f00c31a8216d42b1ef833fe49f6527f6526c682a1c004b9364cb4276"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 7,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "1202da62f00c31a8216d42b1ef833fe49f6527f6526c682a1c004b9364cb4276",
+      "after_body_sha256": "1202da62f00c31a8216d42b1ef833fe49f6527f6526c682a1c004b9364cb4276"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 8,
+        "keys": [
+          5,
+          null,
+          8,
+          null,
+          1,
+          null,
+          3,
+          null,
+          5,
+          null,
+          8,
+          null,
+          1,
+          null,
+          3,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 24,
+          "resonance": 40
+        }
+      },
+      "before_body_sha256": "1202da62f00c31a8216d42b1ef833fe49f6527f6526c682a1c004b9364cb4276",
+      "after_body_sha256": "2bf5dde26771811d2de084ee1b7cbfaac2ac9a48510a7214fd9c6df7274e702b"
+    },
+    {
+      "operation": {
+        "operation": "set_parameter_locks",
+        "pattern": 2,
+        "sound": 8,
+        "parameter": "filter",
+        "values": [
+          null,
+          40,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "2bf5dde26771811d2de084ee1b7cbfaac2ac9a48510a7214fd9c6df7274e702b",
+      "after_body_sha256": "e5fd88c4989b2a9c390f5bdbb365a980609c3e9f86316b64f69ad7ffec4f83fc"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 9,
+        "keys": [
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "e5fd88c4989b2a9c390f5bdbb365a980609c3e9f86316b64f69ad7ffec4f83fc",
+      "after_body_sha256": "b49f4d5484d428d245ec1a026797460db74c0366be585b75ff728e9aac54c7eb"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 10,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "b49f4d5484d428d245ec1a026797460db74c0366be585b75ff728e9aac54c7eb",
+      "after_body_sha256": "b49f4d5484d428d245ec1a026797460db74c0366be585b75ff728e9aac54c7eb"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 11,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "b49f4d5484d428d245ec1a026797460db74c0366be585b75ff728e9aac54c7eb",
+      "after_body_sha256": "1d19c047bd9e582d29186c642ff3efe542c24799144f493640bb74a52cde4cdc"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 12,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "1d19c047bd9e582d29186c642ff3efe542c24799144f493640bb74a52cde4cdc",
+      "after_body_sha256": "4d4fbf5f4ad0241c48ec29b3952712b1935a28957476d39678de767b8e683f8b"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 13,
+        "keys": [
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "4d4fbf5f4ad0241c48ec29b3952712b1935a28957476d39678de767b8e683f8b",
+      "after_body_sha256": "ce31ff45025ddd53e2cf6d5e71784b8e13f91bc14fead35b6cc6e671404b9132"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 14,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "ce31ff45025ddd53e2cf6d5e71784b8e13f91bc14fead35b6cc6e671404b9132",
+      "after_body_sha256": "1c9c6ec5466a777360f8dc36d1f94ea2caaa50eff9f65f035a497918b3ddeb49"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 15,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "1c9c6ec5466a777360f8dc36d1f94ea2caaa50eff9f65f035a497918b3ddeb49",
+      "after_body_sha256": "187bee52d787a00d0a41bb53e740a656e00ce7ceb5924d46615f958d92a2fb9f"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 16,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "187bee52d787a00d0a41bb53e740a656e00ce7ceb5924d46615f958d92a2fb9f",
+      "after_body_sha256": "5c60b746c9d8ea49c69ec7175f282dc6af17a287160ac475e1c6bbe12a8dcca0"
+    },
+    {
+      "operation": {
+        "operation": "set_step_effects",
+        "pattern": 2,
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          7
+        ]
+      },
+      "before_body_sha256": "5c60b746c9d8ea49c69ec7175f282dc6af17a287160ac475e1c6bbe12a8dcca0",
+      "after_body_sha256": "74f68e0ea9c95ddba94d001d4f152b8baea0469d34a4e83be0cff0d480ca57b5"
+    },
+    {
+      "operation": {
+        "operation": "set_pattern_chain",
+        "patterns": [
+          1,
+          2,
+          2,
+          1
+        ]
+      },
+      "before_body_sha256": "74f68e0ea9c95ddba94d001d4f152b8baea0469d34a4e83be0cff0d480ca57b5",
+      "after_body_sha256": "c5c4a34e4199a5e4f4765589ec11f02cc5298d15eb4b20aac2b1f3edfda7364f"
+    },
+    {
+      "operation": {
+        "operation": "set_tempo_byte",
+        "bpm": 100
+      },
+      "before_body_sha256": "c5c4a34e4199a5e4f4765589ec11f02cc5298d15eb4b20aac2b1f3edfda7364f",
+      "after_body_sha256": "80bb0ab4742c9dffc8d2b64ae120f2ee38b253463cc36e82e01d4d39c0b710dc"
+    },
+    {
+      "operation": {
+        "operation": "set_swing_byte",
+        "value": 4
+      },
+      "before_body_sha256": "80bb0ab4742c9dffc8d2b64ae120f2ee38b253463cc36e82e01d4d39c0b710dc",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    }
+  ],
+  "target_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "4447aa89b9d2d1a420a45e0168b17ddec2ae5e82c63c7e503a9cb1b600357daa",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "08deba3749bbbb2a50c5e59580301cfe5aa61c9c082aa5c8eab87bdacd442717",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 575483,
+    "active_frames": 3248493,
+    "silence_frames_each_end": 4410,
+    "frames": 3257313,
+    "duration_seconds": 73.86197278911564,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 575483,
+        "reconstructed_symbols": 575483,
+        "overlap_symbols": 575483,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 575483,
+        "reconstructed_symbols": 575483,
+        "overlap_symbols": 575483,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

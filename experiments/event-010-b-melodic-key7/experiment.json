@@ -1,0 +1,51 @@
+{
+  "experiment_id": "event-010-b-melodic-key7",
+  "capture_status": "received_and_validated_middle_key_invariants_and_hypotheses",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-009-b-melodic-key16",
+  "baseline_source_sha256": "a0c0bea848c7c1bf56349e695edaae8740cd465d6df044512972d6c45ed5c0f1",
+  "baseline_body_sha256": "55311018711e4b4b798609ce7c40bedb613d6dbb246ea2423aea8b8049db9fe9",
+  "baseline_artifact": "../event-009-b-melodic-key16/derived/analysis-002/capture.symbols.npz",
+  "proposed_change": {
+    "pattern": 1,
+    "step": 5,
+    "sound_slot": 3,
+    "old_keyboard_key": 16,
+    "new_keyboard_key": 7
+  },
+  "planned_actions": [
+    "On Pattern1, keep playback stopped and write off; select Sound3",
+    "Enter write, tap Step5 once to remove its note, confirm light off, exit write",
+    "Tap keyboard key7 with write off; enter write, tap Step5 once to add that note, exit write",
+    "Reselect Sound8, retain TONE and all other settings; capture the complete stereo backup before playing the changed pattern"
+  ],
+  "actual_actions": [
+    "User replied done to the fixed-Step5 Sound3 key16-to-key7 protocol and supplied this capture; no deviation reported"
+  ],
+  "source_sha256": "19d2e80e347e229081a8363668807a5ca269f8645820d59224a3f6d974cb245c",
+  "preregistration": "../melodic-key7-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Check the keyboard-index rule at an independent intermediate value before expanding the calibrated note writer",
+  "full_key_range_verified": false,
+  "action_evidence": "User completion report; exact buttons and acoustic pitch were not independently observed.",
+  "decoder_version": "sign-crossings-0.2",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "observed_keyboard_mapping": {
+    "sound_slot": 3,
+    "primary_hex": "0df883",
+    "auxiliary_by_key": {
+      "1": "f0",
+      "2": "f1",
+      "7": "f6",
+      "16": "ff"
+    },
+    "other_keys": "Not directly tested; remain unsupported"
+  },
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "registered_checks": "../melodic-key7-results-001.json",
+    "waveform": "../waveform-probes-027.json",
+    "packets": "derived/analysis-001/packet-report.json",
+    "patterns": "derived/analysis-001/pattern-report.json"
+  }
+}

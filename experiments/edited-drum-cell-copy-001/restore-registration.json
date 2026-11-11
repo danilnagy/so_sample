@@ -1,0 +1,80 @@
+{
+  "experiment_id": "edited-drum-cell-copy-001",
+  "registered_before_restore": true,
+  "capture_status": "awaiting_first_drum_note_copy_restore_and_recapture",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-020-b-drum10-key1-step1",
+  "source_backup_sha256": "17cc220dfa4c97f06606ad3c131be8f2bc6080fe7a12fc8be27842ca5c118817",
+  "source_artifact": "../event-020-b-drum10-key1-step1/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "7626a958c17a3d8914f5b90bc9a17fccad263e3ce5a5e2ef40449c5108b68ad0",
+  "source_body_sha256": "edd7c74f1817ee7bf0afb6b3c7cb9340beed04f8a2da813e4b662b2ba5ff02c7",
+  "restore_wav": "../generated-drum-cell-copy-001/restore.wav",
+  "restore_wav_sha256": "216b6e90d740e7b1a773e28af7e672fd8073b171b09f90047045fa051fd12001",
+  "restore_duration_seconds": 23.216961451247165,
+  "generated_artifact": "../generated-drum-cell-copy-001/edited.symbols.npz",
+  "generated_artifact_sha256": "8d8ae9eaccf86670b2c8bd23c112dc492bc1a060e2706a637eb4cb824490fdf3",
+  "plan": "../drum-cell-copy-plan-001/plan.json",
+  "expected_encoded_body_sha256": "6f4e2cab0060a6ff1c63eaafe7b34ea7c4ee8e95fa5d2b88ee64d1c308e6c130",
+  "expected_pattern": 1,
+  "expected_sound10_steps": [
+    1,
+    9
+  ],
+  "expected_drum_primary_hex": "0df883",
+  "expected_drum_auxiliary_byte": 16,
+  "expected_sound2_steps": [
+    9
+  ],
+  "expected_sound3_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "expected_changed_plain_packet_indices": [
+    5,
+    7
+  ],
+  "expected_pattern_byte_changes": [
+    {
+      "offset": 411,
+      "old": 0,
+      "new": 13
+    },
+    {
+      "offset": 412,
+      "old": 0,
+      "new": 248
+    },
+    {
+      "offset": 413,
+      "old": 0,
+      "new": 131
+    },
+    {
+      "offset": 905,
+      "old": 0,
+      "new": 16
+    }
+  ],
+  "expected_packet_count": 543,
+  "expected_frame_end_byte": 89844,
+  "preservation": "Source Step1 drum note, every melodic note, all samples/references, other15 patterns, footer and every other plain packet identical",
+  "planned_actions": [
+    "Restore generated-drum-cell-copy-001/restore.wav using write+sound+record and the proven stereo playback setup/levels",
+    "Keep both knobs untouched; Sound8/TONE, stopped/write off; before inspecting grids or playing, save full stereo capture.wav here with a second of trailing silence",
+    "After saving inspect Pattern1 in write mode for Sound10: only Steps1 and9 lit; exit write without tapping any steps",
+    "Inspect Sound2: only Step9 lit; Sound3: Steps1/5/9/13 lit; exit write each time without tapping steps",
+    "Play Pattern1 and confirm normal playback, then stop and return to Sound8/TONE/write off; report restore, grid and playback checks"
+  ],
+  "actual_actions": null,
+  "source_sha256": null,
+  "hardware_verified": false,
+  "limits": [
+    "Only the observed opaque Sound10/key1 primary0df883/auxiliary10 cell is copied; no drum-key or parameter encoding is inferred",
+    "Pattern1, accepted copied Sound10 window and calibrated Sound2/Sound3 neighbors bound the writers",
+    "Source note, all other cells/patterns, samples/references and opaque packets remain intact; occupied targets are rejected",
+    "This generated three-sound Step9 combination needs its own hardware restore and recapture",
+    "The failed F0 auxiliary prediction is retained independently; it is never substituted into the copied cell"
+  ]
+}

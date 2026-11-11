@@ -1,0 +1,40 @@
+{
+  "experiment_id": "empty-001-b-tone",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-a",
+  "planned_sample_slot": 8,
+  "planned_source": "../calibration-source-001/tone-375hz.wav",
+  "planned_source_sha256": "e82e7e07cd0138fd56d801092392cba3252e45c1d4a89e0833f86b15cb395103",
+  "planned_actions": [
+    "Start from new empty baseline with Pattern1 and Sound8 selected",
+    "Record full2-second calibration tone into slot8 using line input",
+    "Keep all patterns empty and controls unchanged; no trimming or parameter changes",
+    "Keep Pattern1 and Sound8 selected, write mode off, sequencer stopped",
+    "Record full stereo dump, then consecutive repeat without changing state"
+  ],
+  "actual_actions": [
+    "User supplied the requested pair of consecutive Sound8-only backups; actual sampling-button duration and setting changes were not separately reported."
+  ],
+  "source_sha256": "74d6be2ea498c4fcebed2963ef127b6a6addee07a87423148b7dae40f1d5c80c",
+  "sample_recorded_duration": null,
+  "decoder_threshold_starting_profile": 0.0063,
+  "repeat_id": "empty-001-b-tone-repeat",
+  "limits": [
+    "Sampling button timing and native sample duration are not predetermined",
+    "Internal sample codec and offsets remain unverified"
+  ],
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "repeat": "../empty-tone-repeat-001.json",
+    "waveform": "../waveform-probes-010.json",
+    "structure": "../one-tone-structure-001.json"
+  },
+  "repeat_result": {
+    "complete_phase_streams_identical": true,
+    "symbols_per_channel": 178847,
+    "partial_endpoint_intervals_identical": true
+  }
+}

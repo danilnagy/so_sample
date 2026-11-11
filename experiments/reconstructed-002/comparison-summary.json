@@ -1,0 +1,28 @@
+{
+  "threshold": 0.0063,
+  "channels": {
+    "left": {
+      "symbols": 1970367,
+      "baseline_symbols": 1970367,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail": 0
+    },
+    "right": {
+      "symbols": 1970367,
+      "baseline_symbols": 1970367,
+      "changes": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail": 0
+    }
+  },
+  "baseline": "baseline-002",
+  "schema_version": 1,
+  "passed": true,
+  "source_sha256": "8f8107745ecd6473e1df17c7c5660b56352ca155de6631c98f70b4a623ba5c80",
+  "alignment_shift": 0,
+  "discarded_symbols": 0,
+  "evidence": "Exact complete decoded phase labels and counts after hardware restore and backup, not a parsed state-field comparison."
+}

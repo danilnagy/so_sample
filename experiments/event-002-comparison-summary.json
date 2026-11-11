@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "threshold": 0.0063,
+  "representation": "absolute phase labels",
+  "comparisons": {
+    "event-002-a--event-002-a-return": {
+      "left": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 0,
+        "first_change": null,
+        "last_change": null,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 0,
+        "first_changed_ranges": [],
+        "identical": true,
+        "alignment_shift": 0
+      },
+      "right": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 0,
+        "first_change": null,
+        "last_change": null,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 0,
+        "first_changed_ranges": [],
+        "identical": true,
+        "alignment_shift": 0
+      }
+    },
+    "event-002-a--event-002-b": {
+      "left": {
+        "length_a": 1970367,
+        "length_b": 1970366,
+        "overlap_symbols": 1970366,
+        "changed_symbols": 88122,
+        "first_change": 9405,
+        "last_change": 126936,
+        "tail_symbols": 1,
+        "tail_values_a": [
+          1
+        ],
+        "tail_values_b": [],
+        "changed_range_count": 22022,
+        "first_changed_ranges": [
+          [
+            9405,
+            9411
+          ],
+          [
+            9413,
+            9414
+          ],
+          [
+            9415,
+            9427
+          ],
+          [
+            9428,
+            9434
+          ],
+          [
+            9435,
+            9437
+          ],
+          [
+            9438,
+            9447
+          ],
+          [
+            9448,
+            9449
+          ],
+          [
+            9452,
+            9454
+          ],
+          [
+            9455,
+            9456
+          ],
+          [
+            9457,
+            9458
+          ]
+        ],
+        "identical": false,
+        "alignment_shift": 0
+      },
+      "right": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 1471410,
+        "first_change": 9405,
+        "last_change": 1970366,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 482098,
+        "first_changed_ranges": [
+          [
+            9405,
+            9407
+          ],
+          [
+            9408,
+            9411
+          ],
+          [
+            9412,
+            9413
+          ],
+          [
+            9415,
+            9419
+          ],
+          [
+            9420,
+            9423
+          ],
+          [
+            9424,
+            9425
+          ],
+          [
+            9426,
+            9435
+          ],
+          [
+            9436,
+            9441
+          ],
+          [
+            9442,
+            9448
+          ],
+          [
+            9449,
+            9450
+          ]
+        ],
+        "identical": false,
+        "alignment_shift": 0
+      }
+    },
+    "event-002-b--event-002-a-return": {
+      "left": {
+        "length_a": 1970366,
+        "length_b": 1970367,
+        "overlap_symbols": 1970366,
+        "changed_symbols": 88122,
+        "first_change": 9405,
+        "last_change": 126936,
+        "tail_symbols": 1,
+        "tail_values_a": [],
+        "tail_values_b": [
+          1
+        ],
+        "changed_range_count": 22022,
+        "first_changed_ranges": [
+          [
+            9405,
+            9411
+          ],
+          [
+            9413,
+            9414
+          ],
+          [
+            9415,
+            9427
+          ],
+          [
+            9428,
+            9434
+          ],
+          [
+            9435,
+            9437
+          ],
+          [
+            9438,
+            9447
+          ],
+          [
+            9448,
+            9449
+          ],
+          [
+            9452,
+            9454
+          ],
+          [
+            9455,
+            9456
+          ],
+          [
+            9457,
+            9458
+          ]
+        ],
+        "identical": false,
+        "alignment_shift": 0
+      },
+      "right": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 1471410,
+        "first_change": 9405,
+        "last_change": 1970366,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 482098,
+        "first_changed_ranges": [
+          [
+            9405,
+            9407
+          ],
+          [
+            9408,
+            9411
+          ],
+          [
+            9412,
+            9413
+          ],
+          [
+            9415,
+            9419
+          ],
+          [
+            9420,
+            9423
+          ],
+          [
+            9424,
+            9425
+          ],
+          [
+            9426,
+            9435
+          ],
+          [
+            9436,
+            9441
+          ],
+          [
+            9442,
+            9448
+          ],
+          [
+            9449,
+            9450
+          ]
+        ],
+        "identical": false,
+        "alignment_shift": 0
+      }
+    },
+    "event-001-a--event-002-a": {
+      "left": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 0,
+        "first_change": null,
+        "last_change": null,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 0,
+        "first_changed_ranges": [],
+        "identical": true,
+        "alignment_shift": 0
+      },
+      "right": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 0,
+        "first_change": null,
+        "last_change": null,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 0,
+        "first_changed_ranges": [],
+        "identical": true,
+        "alignment_shift": 0
+      }
+    },
+    "event-001-b--event-002-b": {
+      "left": {
+        "length_a": 1970367,
+        "length_b": 1970366,
+        "overlap_symbols": 1970366,
+        "changed_symbols": 50684,
+        "first_change": 9309,
+        "last_change": 76734,
+        "tail_symbols": 1,
+        "tail_values_a": [
+          1
+        ],
+        "tail_values_b": [],
+        "changed_range_count": 12575,
+        "first_changed_ranges": [
+          [
+            9309,
+            9311
+          ],
+          [
+            9312,
+            9313
+          ],
+          [
+            9314,
+            9319
+          ],
+          [
+            9320,
+            9324
+          ],
+          [
+            9325,
+            9326
+          ],
+          [
+            9328,
+            9330
+          ],
+          [
+            9331,
+            9333
+          ],
+          [
+            9334,
+            9338
+          ],
+          [
+            9339,
+            9352
+          ],
+          [
+            9353,
+            9361
+          ]
+        ],
+        "identical": false,
+        "alignment_shift": 0
+      },
+      "right": {
+        "length_a": 1970367,
+        "length_b": 1970367,
+        "overlap_symbols": 1970367,
+        "changed_symbols": 50551,
+        "first_change": 9309,
+        "last_change": 76735,
+        "tail_symbols": 0,
+        "tail_values_a": [],
+        "tail_values_b": [],
+        "changed_range_count": 12722,
+        "first_changed_ranges": [
+          [
+            9309,
+            9313
+          ],
+          [
+            9314,
+            9316
+          ],
+          [
+            9318,
+            9319
+          ],
+          [
+            9320,
+            9329
+          ],
+          [
+            9332,
+            9333
+          ],
+          [
+            9334,
+            9339
+          ],
+          [
+            9341,
+            9348
+          ],
+          [
+            9351,
+            9354
+          ],
+          [
+            9355,
+            9362
+          ],
+          [
+            9363,
+            9366
+          ]
+        ],
+        "identical": false,
+        "alignment_shift": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "analysis_version": "FX-full-step-map-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and registered per-note pitch decision",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_pitch_result": true,
+    "decision_binds_results": true,
+    "export_hashes_and_native_body_exact": true,
+    "session_target_exact": true
+  },
+  "footer": "f66f66fff66f66ff",
+  "exploratory_reading": "The second step of each consecutive effect pair plays an exact 2.00x octave at about half length and 0.16 relative level, below the frozen 0.2 recording-peak gate, so it reads indeterminate; all 8 effect positions and all 8 none positions are consistent with the sequential high-nibble-first layout",
+  "steps": {
+    "1": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "2": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "3": {
+      "median": "indeterminate",
+      "per_loop": [
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate"
+      ]
+    },
+    "4": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "5": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "6": {
+      "median": "indeterminate",
+      "per_loop": [
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate"
+      ]
+    },
+    "7": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "8": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "9": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "10": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "11": {
+      "median": "indeterminate",
+      "per_loop": [
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate"
+      ]
+    },
+    "12": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "13": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "14": {
+      "median": "indeterminate",
+      "per_loop": [
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate",
+        "indeterminate"
+      ]
+    },
+    "15": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "16": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    }
+  },
+  "classification": "inconclusive",
+  "decision_sha256": "20dde170c1ea3db42d523c217d494820b483a11d8cabad4ca3413f8c94b08fc8",
+  "native_results_sha256": "fa479264ff3903a415a7695e0c37283ae8c94079bcadb5e42fb4ee1cf61f5938",
+  "pitch_results_sha256": "43fb08e9ce0ea78c5b7eaa3b67086b4851cb2999338a80fdbc1718860ee55483",
+  "manual_observation_sha256": "7b591433807d31c273cff3741154c4be8f540d12c28c5b645f38a7f19167d59f",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "5a8dcc14c1f92b0e8a3b4f65b7d4f362450ada16328d4577cb3dfbe60abe29c6",
+  "general_per_step_FX_writer_enabled": false,
+  "limits": [
+    "Pattern 1, effect code 6, tempo 60 and swing 0; other patterns and codes rely on the code map",
+    "No general per-step effect writer is enabled by this test alone"
+  ]
+}

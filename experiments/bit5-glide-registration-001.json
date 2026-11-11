@@ -1,0 +1,168 @@
+{
+  "analysis_version": "bit5-glide-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-bit5-glide-001",
+  "source_artifact": "experiments/compiled-note-bits-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "1910c05bafdc9c9a3570340ef48e189d5e6165b3727f13a89feaac1b342783cf",
+  "source_capture_sha256": "4417590fd264f684696304245672a91a9c829e198ff02d293e99e3e525c81728",
+  "pitches": [
+    7,
+    25,
+    7,
+    25,
+    7,
+    25,
+    7,
+    25,
+    7,
+    25,
+    7,
+    25,
+    7,
+    25,
+    7,
+    25
+  ],
+  "bits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "expected_hz": {
+    "1": 423.7852377437182,
+    "2": 1198.6456615013453,
+    "3": 423.7852377437182,
+    "4": 1198.6456615013453,
+    "5": 423.7852377437182,
+    "6": 1198.6456615013453,
+    "7": 423.7852377437182,
+    "8": 1198.6456615013453,
+    "9": 423.7852377437182,
+    "10": 1198.6456615013453,
+    "11": 423.7852377437182,
+    "12": 1198.6456615013453,
+    "13": 423.7852377437182,
+    "14": 1198.6456615013453,
+    "15": 423.7852377437182,
+    "16": 1198.6456615013453
+  },
+  "plan_sha256": "22a1b3a963f3e75ea83af964b9ce35eeaa60770f0e796c534e7e1e597890bac4",
+  "expected_body_sha256": "c646b5d24646d8d3a809420da5ff0827f0d8a99734a711cd18d5ef56ca141d77",
+  "edited_artifact_sha256": "55e35418da1ffaaf0a4a8eb2ca037250fb360ee039edce089562c5c93833b4e0",
+  "restore_wav_sha256": "3245c8f94ac49902b8b6743a49ba08d815f929095201331c35aa877dc8141016",
+  "early_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      5.0,
+      10.0,
+      15.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "late_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      100.0,
+      110.0,
+      120.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "duration_method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.001,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "margin_seconds": 0.01,
+    "threshold_fraction_of_step_peak": 0.1,
+    "tolerance_ms": 5.0,
+    "min_agreeing_loops": 4
+  },
+  "duration_method_script_sha256": "c28a7cf59bc4fd70777a93647d2a84a27761d06aac54d8eaf2c37d01a03d05cc",
+  "level_method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "level_method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "tolerances": {
+    "cents": 20.0,
+    "db": 1.5,
+    "ms": 5.0,
+    "glide_cents": 100.0
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "bit5_inert: flagged steps match plain steps of the same pitch in early and late pitch, level, and pitch-25 duration",
+    "bit5_no_glide: flagged steps start within 20 cents of target while plain steps start at least 100 cents toward the previous pitch, and flagged pitch-25 notes are more than 5 ms shorter"
+  ],
+  "limits": [
+    "One melodic sound at key 1 and two pitch codes; bit 5 on drum notes is not tested"
+  ]
+}

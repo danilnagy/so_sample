@@ -1,0 +1,11 @@
+{
+  "analysis_version": "fine-tempo100-software-prediction-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "all_synthetic_core_controls": true,
+    "all_synthetic_single_byte_hypotheses": true
+  },
+  "registration_sha256": "57cfa360239ab907f5211600fbfc01a97428c5d77ce1a943659730226fae433b",
+  "expected100_body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633"
+}

@@ -1,0 +1,91 @@
+{
+  "analysis_version": "sample-window-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Reception of two self-owned samples with nonzero start windows, and the pitch and length of their notes",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true
+  },
+  "classification": "window_honoured",
+  "model_support": {
+    "window_honoured": true,
+    "start_ignored": false
+  },
+  "reception": "exact",
+  "actual_windows": {
+    "6": [
+      11719,
+      17578
+    ],
+    "7": [
+      5859,
+      11719
+    ]
+  },
+  "notes": {
+    "1": {
+      "sound": 6,
+      "cents_from_window": 0.26024498340769137,
+      "cents_from_segment1": 702.215245848795,
+      "duration_ms": 168.18594104308391
+    },
+    "5": {
+      "sound": 6,
+      "cents_from_window": 0.24963530336219397,
+      "cents_from_segment1": 702.2046361687494,
+      "duration_ms": 168.18594104308391
+    },
+    "9": {
+      "sound": 6,
+      "cents_from_window": 0.2705474051528156,
+      "cents_from_segment1": 702.2255482705402,
+      "duration_ms": 168.18594104308391
+    },
+    "13": {
+      "sound": 6,
+      "cents_from_window": 0.2700757537573326,
+      "cents_from_segment1": 702.2250766191444,
+      "duration_ms": 168.20861678004533
+    },
+    "3": {
+      "sound": 7,
+      "cents_from_window": 0.26772510498348306,
+      "cents_from_segment1": 386.58143896981807,
+      "duration_ms": 168.25396825396825
+    },
+    "7": {
+      "sound": 7,
+      "cents_from_window": 0.29708867946097933,
+      "cents_from_segment1": 386.61080254429555,
+      "duration_ms": 168.25396825396825
+    },
+    "11": {
+      "sound": 7,
+      "cents_from_window": 0.2938851495011413,
+      "cents_from_segment1": 386.6075990143359,
+      "duration_ms": 168.25396825396825
+    },
+    "15": {
+      "sound": 7,
+      "cents_from_window": 0.3013925720700274,
+      "cents_from_segment1": 386.61510643690445,
+      "duration_ms": 168.25396825396825
+    }
+  },
+  "decision_sha256": "3c4847301d7f72ee2b3aacf4ed784869eb4013a1b45a3e4b55c282b638ea8de4",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "61a54550f443d6b99a0d818567e27fd4b7d3919afa6dff49c7524b49aeb8b3d5",
+  "session_answers": [
+    {
+      "question": "Did the notes alternate between two short tones, or sound like the same rising sample? (Enter to skip)",
+      "answer": "yes alternating"
+    }
+  ],
+  "limits": [
+    "Two windows at segment boundaries in one sample; sub-segment offsets and references are not tested"
+  ]
+}

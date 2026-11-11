@@ -1,0 +1,53 @@
+{
+  "analysis_version": "volume-zero-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "86d223cbc8586658c12e4a210674609935092ea3bb442b6c0644e45513f71563",
+  "native_results_sha256": "fed690ad52642bbc05097ed2480e4fe2f19056c6b4176aa40ff93c1eefa31cc0",
+  "level_results_sha256": "372eeb0af8840c8c08f1058efa55ebfc8bc343d414aeabb9b30c0670c2f8f611",
+  "measured_db_by_step": {
+    "1": 0.0,
+    "2": 0.0019974229117190176,
+    "3": -20.782680411118463,
+    "4": -20.781146537983467,
+    "5": -7.478136056976739,
+    "6": -7.478096313963415,
+    "7": -14.45231779749551,
+    "8": -14.450516324565516,
+    "9": -1.262698343431544,
+    "10": -1.263999186563326,
+    "11": -22.891639215692972,
+    "12": -22.88806037389985,
+    "13": -4.131221989778547,
+    "14": -4.132453267586344,
+    "15": -11.426258376837339,
+    "16": -11.428349272830738
+  },
+  "predicted_nonzero_db_vs_step1": [
+    0.0,
+    null,
+    -20.784727517361954,
+    null,
+    -7.484828928326773,
+    null,
+    -14.453480987136583,
+    null,
+    -1.268603434705816,
+    null,
+    -22.890703984132326,
+    null,
+    -4.133960590793772,
+    null,
+    -11.431057626052997,
+    null
+  ],
+  "table_reproduced": true,
+  "model_support": {
+    "hold_previous": true,
+    "fixed_default": false
+  },
+  "classification": "hold_previous",
+  "limits": [
+    "Sound3 at pitch 13 on Pattern 1",
+    "Does not test what a 0 step does after a rest or at the start of playback"
+  ]
+}

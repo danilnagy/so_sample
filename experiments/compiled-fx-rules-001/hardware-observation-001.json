@@ -1,0 +1,151 @@
+{
+  "analysis_version": "fx-rules-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of FX 14 holds from four start steps and FX 13 over a key run, and the rule each effect obeys",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "hypotheses": {
+    "exact_reception": true,
+    "control_run": true
+  },
+  "classification": {
+    "14": "loop_steps_before_hold",
+    "13": "no_single_rule"
+  },
+  "rule_support": {
+    "14": {
+      "loop_steps_before_hold": true,
+      "loop_power_of_two": false,
+      "restart_every_four": false
+    },
+    "13": {
+      "previous_on_third": false,
+      "two_earlier_on_third": false,
+      "unchanged": false
+    }
+  },
+  "heard_keys_at_100ms": {
+    "1": [
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2
+    ],
+    "2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      1,
+      2,
+      3,
+      4
+    ],
+    "3": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "4": [
+      1,
+      2,
+      3,
+      4,
+      1,
+      2,
+      3,
+      4,
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16
+    ],
+    "5": [
+      1,
+      2,
+      null,
+      null,
+      5,
+      6,
+      5,
+      7,
+      9,
+      10,
+      10,
+      11,
+      13,
+      14,
+      14,
+      15
+    ],
+    "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "decision_sha256": "e1440aa3caed3fb9fb810c8ad0e62855b599dfae4cc5f1e20dda21fe1c287d7e",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "1bd96e69d2cd54467ed8250d1f67b9b485f5ce5e6a01eaa400651eacf0cf1c8b",
+  "session_answers": [],
+  "limits": [
+    "Tempo 60, one melodic tone; FX 14 hold starts 3, 5, 7 and 9 only"
+  ]
+}

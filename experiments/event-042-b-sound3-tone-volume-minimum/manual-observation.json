@@ -1,0 +1,10 @@
+{
+  "user_report": "done, confirmed that sample is quieter but not silent",
+  "stage": "minimum_volume",
+  "volume_audition_observation_applies_to_this_capture": true,
+  "audition_result": "quieter_not_silent",
+  "display_text": null,
+  "minimum_numeric_value_confirmed": false,
+  "source": "User supplied relative audible result after the minimum capture; no display number or measured gain supplied",
+  "capture_sha256": "5d337282151d712d9b228813102747ed453de5e65d2736186c96e757f125d2c1"
+}

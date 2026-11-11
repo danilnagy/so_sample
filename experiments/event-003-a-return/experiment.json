@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "event-003-a-return",
+  "series_id": "event-003",
+  "stage": "remove_event",
+  "created_at": null,
+  "baseline_id": "event-002-a",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Planned controlled single-event experiment; actual observations pending",
+    "selected_pattern": null,
+    "selected_sound": null,
+    "selected_slice_key": null,
+    "playing": null,
+    "write_mode": null,
+    "tempo_bpm": null,
+    "swing": null,
+    "pattern_sequence": null
+  },
+  "proposed_event": {
+    "pattern": 1,
+    "step": 3,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "target_status": "kick_confirmed_step3_empty_expected_verify_before_capture",
+  "planned_capture_state": {
+    "selected_pattern": 1,
+    "selected_sound": 9,
+    "selected_slice_key": 1,
+    "playing": false,
+    "write_mode": false
+  },
+  "changes": [
+    {
+      "status": "reported_experiment_stage",
+      "action": "remove_trigger",
+      "event": {
+        "pattern": 1,
+        "step": 3,
+        "sound_slot": 9,
+        "drum_slice_key": 1
+      }
+    }
+  ],
+  "planned_actions": [
+    "Enter write mode; remove only the event just added",
+    "Verify step returns to its prior empty state; exit write mode",
+    "Record untouched return-to-A transfer without other changes"
+  ],
+  "actions": [
+    "User supplied return-to-empty recording after Step 3 event removal"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "b2abdd86ddad17ef50fa236fe0f97158a1cac5e0dcb2e38845774e7968198e8c",
+    "status": "received_and_validated",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown"
+  },
+  "planned_recording": {
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "level": "same reduced level as reconstructed-002",
+    "decoder_threshold": 0.0063
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "comparison_control": {
+    "reused_baseline": "event-002-a",
+    "status": "matched_exactly",
+    "symbols_per_channel": 1970367,
+    "changed_symbols": 0,
+    "alignment_shift": 0
+  },
+  "action_log_note": "Based on supplied experiment stage; exact button-level actions were not provided."
+}

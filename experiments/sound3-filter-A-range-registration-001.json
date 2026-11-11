@@ -1,0 +1,121 @@
+{
+  "analysis_version": "FILTER-A-counterclockwise-and-exact-clockwise-return-preregistration-0.1",
+  "registered_before_both_captures": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/event-055-b-sound3-filter-A-lock-up/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "f872022a5425e4ce2563b3fd11ce7d0b8ffed40d1879037f33b71c473fce4174",
+  "source_capture": "experiments/event-055-b-sound3-filter-A-lock-up/capture.wav",
+  "source_capture_sha256": "4d9d2867e58d85608a013b73ca9c6218b1a945c3f7e55492680b6b58139676f7",
+  "source_body_sha256": "95572be728c21f74a220664c26c19982cf0913adf52636ed1d9ef352d2f56f0f",
+  "source_observation_sha256": "feb4c35abb8a84f84304649964909c00858fefcc3a3785f785b099f64c56eda0",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-056-c-sound3-filter-A-lock-down",
+      "action": "record_only_A_counterclockwise_to_physical_minimum",
+      "expected_endpoint_code": null
+    },
+    {
+      "experiment_id": "event-057-d-return-sound3-filter-A-lock-up",
+      "action": "record_only_A_clockwise_to_physical_maximum",
+      "expected_contiguous_values": [
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62
+      ],
+      "expected_alternative_values": [
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59,
+        59
+      ],
+      "expected_complete_body_sha256": "95572be728c21f74a220664c26c19982cf0913adf52636ed1d9ef352d2f56f0f"
+    }
+  ],
+  "expected_pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "expected_volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "raw_projections": {
+    "contiguous": "(second_primary>>4) | ((third_primary&3)<<4)",
+    "high_nibble_more_significant": "((second_primary>>4)<<2) | (third_primary&3)"
+  },
+  "display_numeric_values_assumed": null,
+  "limits": [
+    "Counterclockwise endpoint code and resulting body are unknown; no zero, cutoffHz or low-pass numeric value is guessed",
+    "Exact return to the complete independent clockwise body is registered before both captures",
+    "Contiguous grouping and high-nibble-as-more-significant grouping remain alternative projections; bit order and filter law are not chosen from one endpoint",
+    "Strict candidate masks are frozen; broader third-byte/primary/auxiliary alternatives retain coupled or wider changes without rescuing strict support",
+    "Ramps and nonuniform endpoint values are retained literally; no average is used as an endpoint",
+    "User-described high-pass/inaudibility and bar display are qualitative evidence, not a digital-silence measurement or numeric UI value",
+    "No resonance field, filter writer or extension of existing pitch/volume guards is enabled"
+  ]
+}

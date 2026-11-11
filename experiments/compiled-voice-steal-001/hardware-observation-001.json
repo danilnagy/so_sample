@@ -1,0 +1,90 @@
+{
+  "analysis_version": "voice-steal-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of four overflow scenarios; registered long-note readings invalid (wrong predicted frequency), corrected exploratory re-read recorded",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "registered_classification": "no_single_model",
+  "registration_error": "key 13 predicted as -12 semitones from key 1; the verified layout gives -19",
+  "exploratory_present_by_step": {
+    "1": [
+      "1k13"
+    ],
+    "2": [
+      "1k13",
+      "2",
+      "3",
+      "4"
+    ],
+    "3": [
+      "1k13",
+      "5"
+    ],
+    "4": [
+      "1k13"
+    ],
+    "5": [
+      "1k13"
+    ],
+    "6": [
+      "1k13",
+      "2",
+      "3"
+    ],
+    "7": [
+      "1k13",
+      "5"
+    ],
+    "8": [
+      "1k13"
+    ],
+    "9": [
+      "8k13"
+    ],
+    "10": [
+      "8k13",
+      "11",
+      "12",
+      "14"
+    ],
+    "11": [
+      "8k13",
+      "1"
+    ],
+    "12": [
+      "8k13"
+    ],
+    "13": [
+      "8k13"
+    ],
+    "14": [
+      "8k13"
+    ],
+    "15": [
+      "8k13",
+      "1",
+      "2",
+      "3"
+    ],
+    "16": [
+      "8k13"
+    ]
+  },
+  "exploratory_reading": "The long note survives every overflow; a fifth note plays when a sounding voice has 84 ms or less left (A, C) and is dropped when the only busy voice has 500 ms left (D)",
+  "first_session_not_restored": "session 001's restore was not taken by the device; the backup equalled the previous state and was archived",
+  "decision_sha256": "e99db006b532168db2854b122b84c5d99da2ec47fade570aff287bce672bd3aa",
+  "exploratory_sha256": "8a4adc2dd286b8980a66ee9b754aa03a6ad4e822b816ba2f5c16067b09671697",
+  "harness_session": "hardware-session-002.json",
+  "harness_session_sha256": "8d1e89a9f79aa2e16500681e2809f943b824d907175639c8ffacc86567c04edc",
+  "session_answers": [],
+  "limits": [
+    "Overflow by one or four notes at 60 BPM; other timings and same-sound retriggers are not tested"
+  ]
+}

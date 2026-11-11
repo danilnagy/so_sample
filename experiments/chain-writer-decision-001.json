@@ -1,0 +1,39 @@
+{
+  "analysis_version": "chain-writer-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "23cefa078d276df3f988b4374e063ace7c326631cf3525abfe1d9beabe27b6dd",
+  "native_results_sha256": "2dcd6b8105bd75a5d480ad3ddfd4a9c4fa1cbc84e6e9afb4f35ec085f18496ee",
+  "frequency_results_sha256": "6b2577f6a6dfebb7d2711d5a48a691817755d64fbf037fd1e749eb9b04085547",
+  "loop_matches": {
+    "chain_5_1_1": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "first_entry_only": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "two_entries_alternate": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "model_support": {
+    "chain_5_1_1": true,
+    "first_entry_only": false,
+    "two_entries_alternate": false
+  },
+  "classification": "chain_5_1_1",
+  "limits": [
+    "One three-entry chain with a repeated pattern; longer chains are not played"
+  ]
+}

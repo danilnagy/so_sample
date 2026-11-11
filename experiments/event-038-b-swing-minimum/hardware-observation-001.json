@@ -1,0 +1,40 @@
+{
+  "analysis_version": "physical-swing-range-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Physical swing S00/S09/S18 display values equal second 0x7d5c byte130; all unrelated bytes preserved; exact zero and maximum returns",
+  "display_text": "S00",
+  "display_numeric_component": 0,
+  "observed_physical_display_bounds": [
+    0,
+    18
+  ],
+  "serialized_tempo_bpm": 137,
+  "swing_writer_verified": false,
+  "timing_units_confirmed": false,
+  "signedness_distinguished": false,
+  "checks": {
+    "all_native_controls": true,
+    "all_fixed_location_checks": true,
+    "independent_display_matches_raw_byte": true,
+    "serialized_tempo137_preserved": true,
+    "capture_and_artifact_hashes_match": true,
+    "capture_not_clipped": true
+  },
+  "capture_sha256": "0e661a99be6d26121e05dc89f15a7d79eb048cdafbad199fa3e9a88b5ea7b780",
+  "artifact_sha256": "27942149428e5f19b526a05eea975f3004939e79d4247f3e4dcb61506e499102",
+  "artifact_path": "experiments/event-038-b-swing-minimum/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "5f25b5efd909c93b0aa0cdbb31d8aff170ea5edeb9ca6dd48eb2d7778ae696cb",
+  "series_results_sha256": "06077df5b30b4f817e65aee42335b1a19436d2393b0446e5427f4cf443abcf2c",
+  "manual_observation_sha256": "902d20f226a8c520b69e44137813bba93448beec8726fcf1417280de10507097",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.1617431640625,
+      0.155670166015625
+    ]
+  },
+  "limits": [
+    "Positive range0..18 does not distinguish signed and unsigned encoding outside that range",
+    "No percent or clock timing units claimed; generated swing and offbeat timing still need hardware evidence"
+  ]
+}

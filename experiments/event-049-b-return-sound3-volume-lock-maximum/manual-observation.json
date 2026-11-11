@@ -1,0 +1,8 @@
+{
+  "user_report": "done, the first is the lowest, second is in between, then the last one is the highest and loudest",
+  "stage": "maximum_return",
+  "relative_loudness": "highest_of_three",
+  "interpretation": "Relative loudness order from the volume-control context and explicit loudest description; no pitch stability,exact gain or numeric UI reading claimed",
+  "display_text": null,
+  "capture_sha256": "ba014d338413add55e4e03ecaaf0d430e19bfd2225cf884af0bf85e4d8286991"
+}

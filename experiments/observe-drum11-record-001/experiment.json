@@ -1,0 +1,16 @@
+{
+  "experiment_id": "observe-drum11-record-001",
+  "kind": "device_side_observation",
+  "capture_status": "validated_drum_recording_structure_onset_slices",
+  "source_artifact": "../compiled-sound7-import-001/derived/analysis-001/capture.symbols.npz",
+  "registration": "../drum11-record-registration-001.json",
+  "observation_questions": [
+    "Did the PO-33 record normally, and roughly how long did you hold the buttons? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "not_applicable"
+  },
+  "analysis": "derived/analysis-001",
+  "result": "../drum11-record-result-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

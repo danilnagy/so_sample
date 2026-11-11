@@ -1,0 +1,50 @@
+{
+  "analysis_version": "fx-period-120-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "a559f7e122ea60b1d848f0f1086ef110ab0414134de997e067f5fc49eae5a524",
+  "native_results_sha256": "5180c54e9eb1ef2817f1c3065e8f3089c4daaa63fb946b9a48f48ef9e54d7dea",
+  "measurements_sha256": "f86d4eba0361f6b730c2d86bb05d632e564f79b7cac34edd2ac98e8d180c96ab",
+  "hypotheses": {
+    "exact_reception": true,
+    "control_has_no_period": true
+  },
+  "effects": {
+    "1": {
+      "pattern": 1,
+      "period_ms": 120.0,
+      "mismatch": 0.21495327102803738
+    },
+    "2": {
+      "pattern": 2,
+      "period_ms": null,
+      "mismatch": 0.06956521739130435
+    },
+    "3": {
+      "pattern": 3,
+      "period_ms": null,
+      "mismatch": 0.07964601769911504
+    },
+    "4": {
+      "pattern": 4,
+      "period_ms": 80.0,
+      "mismatch": 0.15315315315315314
+    },
+    "12": {
+      "pattern": 5,
+      "period_ms": null,
+      "mismatch": 0.031914893617021274
+    }
+  },
+  "model_support": {
+    "tempo_synced": false,
+    "fixed_ms": false
+  },
+  "classification": "other_or_inconclusive",
+  "control": {
+    "period_ms": null,
+    "mismatch": 0.4782608695652174
+  },
+  "limits": [
+    "Two tempos, 60 and 120; intermediate tempos are not measured"
+  ]
+}

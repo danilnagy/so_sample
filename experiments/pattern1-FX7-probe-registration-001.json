@@ -1,0 +1,31 @@
+{
+  "analysis_version": "Pattern1-recorded-FX7-footer-location-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_recorded_FX_capture": true,
+  "experiment_id": "event-065-a-pattern1-FX7-recorded",
+  "source_artifact": "experiments/edited-sound3-filter16-B32-middle-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3132a8907f8a16853d02c0daa94ec2d83a981cf4e0520dd230acde79ae8988ec",
+  "source_capture": "experiments/edited-sound3-filter16-B32-middle-001/capture.wav",
+  "source_capture_sha256": "07fc245fbe6924aede97e49eaf6cd920014515cf8324e440d51435fc36b812d6",
+  "source_body_sha256": "d039d344987f852ad3a8668249fab8a1366e1d1e9bc9280c789d0059947ca73f",
+  "source_observation_sha256": "843f23da5f7a91bca83b9153f6b07275644a0c365928be7bac2128ec15f25be1",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "footer_candidate": {
+    "pattern": 1,
+    "start_byte": 1024,
+    "bytes": 8
+  },
+  "raw_FX_code_prediction": null,
+  "official_effect_key": 7,
+  "official_effect_name": "octave_up",
+  "official_control_source": "https://teenage.engineering/guides/po-33/en",
+  "limits": [
+    "Footer bytes1024..1031 are a new location hypothesis; both high/low-first nibble projections remain literal and no raw FX7 code is guessed",
+    "FX7 is official octave-up and requires write mode enabled, distinct from holding WRITE during knob automation",
+    "Current source preceded already confirmed ordinary playback; probe includes that playback plus WRITE/FX pass, retaining unrelated changes without sole attribution",
+    "No uniformity or whole target body is predicted; release timing may leave mixed footer values; no averages rescue failures",
+    "Broader Pattern1 and nonpattern differences remain distinct; sample/parameter changes do not rescue footer-only support",
+    "No public FX writer or interpretation of the complete effect/footer encoding is enabled"
+  ]
+}

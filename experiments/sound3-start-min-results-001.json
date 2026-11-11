@@ -1,0 +1,116 @@
+{
+  "analysis_version": "nonzero-start-minimum-check-0.1",
+  "registration_sha256": "50a319ec1b58065da0c1dec62ad19306b25d2244b81a6feb425fd9e0d715884b",
+  "capture_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+  "artifact_sha256": "3b6eb02794d58a4a08094dd53ace16147a03e5f61696adbf72864d2dc2d79b90",
+  "decoder_version": "sign-crossings-0.2",
+  "control_checks": {
+    "packet_count": true,
+    "frame_end_byte": true,
+    "all_packet_checksums": true,
+    "exact_body_reencode": true,
+    "baseline_reference": true,
+    "reference_location": true,
+    "reference_size": true,
+    "owner_id_unchanged": true,
+    "only_reference_packet_changed": true,
+    "only_allowed_reference_bytes_changed": true,
+    "all_patterns_unchanged": true,
+    "backing_owner_unchanged": true,
+    "packet_tags_and_lengths": true,
+    "first_field_unchanged": true
+  },
+  "control_passed": true,
+  "hypothesis_checks": {
+    "second_field_is_length": false,
+    "second_field_is_endpoint": false
+  },
+  "any_registered_exact_hypothesis_fits": false,
+  "changed_plain_packet_indices": [
+    375
+  ],
+  "sound3_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 255,
+      "new": 16
+    },
+    {
+      "offset": 5,
+      "old": 255,
+      "new": 123
+    }
+  ],
+  "sound3_header_values": {
+    "before": {
+      "first_u32le": 31393,
+      "second_u32le": 65535,
+      "owner_id": 0
+    },
+    "after": {
+      "first_u32le": 31393,
+      "second_u32le": 31504,
+      "owner_id": 0
+    }
+  },
+  "observed_second_minus_first": 111,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "002346273de5b027d53b593e8183b3695ba680bcd01543286def0bc68d24f696",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "a17a0000107b000000",
+        "payload_sha256": "20600bc8347a1b02050d54fa6896f7a074065896f875c69a01e5446f5f5cb789"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "user_report": "done",
+  "nonzero_start_writer_enabled": false,
+  "limits": [
+    "The exact registered79 and31472 predictions are evaluated separately; observed31504 is not substituted into them",
+    "A broader endpoint interpretation is plausible from the proximity to start, but remains an inference pending an acoustic discriminator",
+    "The difference111 does not establish a general minimum-width rule or inclusive/exclusive endpoint",
+    "This is a physical trim control; no generated nonzero-start edit has been tested"
+  ]
+}

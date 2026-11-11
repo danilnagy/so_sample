@@ -1,0 +1,46 @@
+{
+  "hardware_verified": false,
+  "comparison_usable": false,
+  "first_tone_ratios_A_over_B": [],
+  "low_nibble_first_model_supported": false,
+  "high_nibble_first_model_supported": false,
+  "classification": "inconclusive",
+  "general_per_step_FX_writer_enabled": false,
+  "primary_ratio_classification": "inconclusive",
+  "reference_cross_check": {
+    "low_nibble_first": false,
+    "high_nibble_first": false
+  },
+  "a_first_tones_hz": [
+    1190.411635150099,
+    1190.4114566429432,
+    1190.4112810170925,
+    1190.412064657716,
+    1190.411887117601,
+    1190.4117145476916
+  ],
+  "b_first_tones_hz": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "supported_model": null,
+  "analysis_version": "single-tone-FX-order-comparison-0.1",
+  "registration_sha256": "57b474247e347196d7705857cca05a08d6ef2264de00d4c2fcd0f709d1d2a5f0",
+  "audio_results_sha256": [
+    "a860e15fffb7c9db8cc0adb580d5fb9d5a625d7fef72549d7040ce98104287dd",
+    "e8bd26451c882b9978e9310dc3d8a8bac56dc1a147d53bb1f07e8a824cc94175"
+  ],
+  "playback_sha256": {
+    "a": "faa8d2a25e79f2f53fa7b12f2f93e327581064c81ed760f49b4de96407413304",
+    "b": "b19537f5a4d06ca615b36c3c86eef9b4700f55cee1c9d90b559b3d942e4c2deb"
+  },
+  "limits": [
+    "Local to footer byte 0 of Pattern 1 with one Sound3 note on step 1; not an all-step or all-pattern ordering",
+    "Octave up is the only effect code used; no general per-step effect writer is enabled",
+    "No retuning of the frozen first-tone method after data; failed or unusable results are retained"
+  ]
+}

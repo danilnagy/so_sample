@@ -1,0 +1,30 @@
+{
+  "analysis_version": "first-generated-sound4-growth-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "This specific unshared Sound4 growth from32768 to73728 codes, with the generated1750Hz window and every unrelated packet preserved",
+  "recapture_results_sha256": "259887223864706959a70689c9f368ca28499a2836908c2ed6ab795ccc1cc2cd",
+  "manual_observation_sha256": "0af9fb37389b9135822650e31565cdcfc0c6b3d85661c09e3ce2f5d17845001d",
+  "restore_registration_sha256": "492e3d1513a583da0e1f6f4e1d7d4472827c7d4f7769a3dd48d57346016e0e8b",
+  "software_validation_sha256": "18764f7ccd73c53c2c133c1657cd3d48c61fb8cd30c86932465eadede45a82c5",
+  "capture_sha256": "895d593e7a632fbd3154721a2c53b71b0dc69efffa627da8d5a62d9105c263f0",
+  "artifact_sha256": "06c2af8c56fdd52aa05e829f79e3319c712f05ad134e825c69b113c80ee89885",
+  "body_sha256": "5e6946b26c77ec47d4bea2f02809810754d32369512353abd027a3109b01b401",
+  "user_reports": [
+    "and confirmed",
+    "done"
+  ],
+  "checks": {
+    "all_recapture_checks_pass": true,
+    "user_restore_and_auditions_confirmed": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "registered_body_matches": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_body_matches": true,
+    "original_software_report_remains_software_only": true
+  },
+  "exported_content_files_checked": 31,
+  "limits": [
+    "General allocation rounding, other slots/capacities, deletion, shared-owner resizing and generated shrink are not established by this acceptance"
+  ]
+}

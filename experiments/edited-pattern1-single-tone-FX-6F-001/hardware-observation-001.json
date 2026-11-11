@@ -1,0 +1,42 @@
+{
+  "analysis_version": "single-tone-FX-order-leg-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of the registered leg; registered audio pair result inconclusive",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_audio_report": true,
+    "export_hashes_and_native_body_exact": true,
+    "session_target_exact": true
+  },
+  "leg": "b",
+  "footer_byte0": "6F",
+  "capture_sha256": "e0417cc3adc4cbf22a70a0b5cd2fcf52c4a3f0194b7356adb7450ba5df25a85a",
+  "body_sha256": "e6f77d9c53b6024b321300bc53b32ccdaf7522cb7c1235fa39fb9f09b50b3119",
+  "native_results_sha256": "97a6cc3f7da7b92e9c6b9b5fdf8b228cc8a680fd7423587c8fd2cabd215fb56c",
+  "audio_results_sha256": "e8bd26451c882b9978e9310dc3d8a8bac56dc1a147d53bb1f07e8a824cc94175",
+  "audio_method_usable_for_this_leg": false,
+  "pair_comparison_sha256": "6bdda4e8fffbaa2ba4b7a3e91f0156d33421e6286fad2887c8124f19090189a3",
+  "pair_classification": "inconclusive",
+  "manual_observation_sha256": "b4afa3aed17fcb40e0fd53f7e894359d98ab3f7e1cfe9b527a63514f3fa65a5e",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "7782b1c7f9ac8b7679d62a71e008bcf868e495cf9b44a02bd541d898ab1ffd1e",
+  "exploratory_pitch_departures_ms": [
+    [
+      0.0,
+      150.0
+    ],
+    [
+      180.0,
+      180.0
+    ]
+  ],
+  "exploratory_pitch_track_sha256": "f40fc06f46dee974e2efdfb829786a722938b2f5bb2ecd55e837b12a3f0137b2",
+  "per_step_nibble_order_confirmed": false,
+  "general_per_step_FX_writer_enabled": false,
+  "limits": [
+    "The registered steady-tone comparison is inconclusive and unchanged",
+    "The pitch-track reading is exploratory, chosen after the data"
+  ]
+}

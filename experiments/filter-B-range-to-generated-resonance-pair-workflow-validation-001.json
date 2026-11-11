@@ -1,0 +1,38 @@
+{
+  "analysis_version": "verified-B-endpoints-to-fixed-LPF16-resonance-and-frozen-audio-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "B_native_range_scope_and_entire_return_pass": true,
+    "current_hardware_and_source_identity_pins_pass": true,
+    "all_export_hashes_and_complete_body_reconstruction_pass": true,
+    "original_common_frequency_method_unchanged_and_new_data_pending": true,
+    "public_filter_guard_still_rejects_B_layout": true,
+    "B0_native_and_waveform_pins_pass": true,
+    "B0_backup_and_audio_pending": true,
+    "B63_native_and_waveform_pins_pass": true,
+    "B63_backup_and_audio_pending": true,
+    "pair_differs_only_in_six_B_bits": true
+  },
+  "pair_registration_sha256": "a980658919688e4bc6286a2b0710d903502ea56e16150255d405637acc216e9e",
+  "current_hardware_observation_sha256": "9a81195797e58e0da2f828a827557be6e354cd424d6793b5769f9a505c0bdf60",
+  "pair_code_sha256": {
+    "scripts/prepare_generated_sound3_resonance_pair.py": "67a543b464696f7679eeed6c91bc9fb52193f361fc356b1e6028467de3a7dc82",
+    "scripts/check_generated_sound3_resonance_restore.py": "9bb8b2f2c2d14900f627b4941d2093e4ca27349f1a27ff9d4750c89ba310855a",
+    "scripts/sound3_resonance_audio.py": "1d754edaa52d9529f9017a50ab4ac7d340042ddc673a0a1254f5c99442335fe3",
+    "tests/test_generated_sound3_resonance_pair.py": "e947ff7eb1606dbaa501384fe70d5640b3f4976c8b9c11476c8e1249a20ca219"
+  },
+  "focused_tests_passed": 108,
+  "last_full_regression_tests_passed": 1025,
+  "production_writer_changed_since_full_run": false,
+  "resonance_writer_enabled": false,
+  "next_restore": "edited-sound3-filter16-B0-reference-001/restore.wav",
+  "limits": [
+    "Both generated targets are new combined cutoff/resonance contexts, not independent recorded whole-body replays",
+    "Amplitude increase is a new hypothesis after endpoint data and before both audio captures; the original common measurement method stays unchanged",
+    "Too-quiet, distorted, insufficient or otherwise unusable audio is retained without changing thresholds, windows or frequency search",
+    "B0 reference must have exact reception and usable near530.26Hz audio before requesting B63",
+    "Only fixed0/63 B at LPF16 from exact minimum source are allowed by research constructor; public cutoff guards remain unchanged",
+    "No all-code resonance law, full bit7 semantics, broad spectral response or public resonance writer is inferred"
+  ]
+}

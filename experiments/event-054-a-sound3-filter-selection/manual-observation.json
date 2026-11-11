@@ -1,0 +1,8 @@
+{
+  "user_report": "done and confirmed",
+  "FILTER_selected_confirmed_in_requested_context": true,
+  "display_label_separately_reported": null,
+  "numeric_display_value": null,
+  "interpretation": "Confirmation of the requested FILTER selection with knobs unchanged and completion of the backup; no separately typed label, numeric UI value or audible comparison supplied",
+  "capture_sha256": "501a0de245693c8fd23c56fb8ca7a04499a42cbe13578e3fe4aa9729fc1b2626"
+}

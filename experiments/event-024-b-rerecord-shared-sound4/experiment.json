@@ -1,0 +1,31 @@
+{
+  "experiment_id": "event-024-b-rerecord-shared-sound4",
+  "capture_status": "validated_growth_and_full_old_buffer_transfer_to_sound5",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-023-b-copy-sound4-to-sound5",
+  "baseline_capture": "../event-023-b-copy-sound4-to-sound5/capture.wav",
+  "baseline_source_sha256": "9cf4096737c90537a7dacbb0d4f4436c8730958468a7313eee97e73d5ed0c387",
+  "baseline_artifact": "../event-023-b-copy-sound4-to-sound5/derived/analysis-003/capture.symbols.npz",
+  "baseline_artifact_sha256": "6df29f28c9cd7d5830e4f3c449932eeb89e2268613cf50279bc9b14e6cb3cab2",
+  "baseline_body_sha256": "eb19589f3bf193f81611a7322bf79c98881531f24269eed2b8c67e342d731dfb",
+  "preregistration": "../shared-sound4-rerecord-predictions-001.json",
+  "source_tone": "../calibration-shared-overwrite-001/tone-1250hz-2s.wav",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "Keep Pattern1, playback stopped/write off, both knobs and all notes unchanged; connect the proven computer-output to PO33 line-input sampling path",
+    "Hold record+key4, play the complete two-second1250Hz tone, release after it ends to replace only Sound4; retain Sound5 without copying or deleting anything",
+    "Return to Sound8/TONE stopped/write off and reconnect the stereo backup path; before audition/playback record a complete stereo PCM16/44100Hz backup here at the same reduced levels, with a second of trailing silence",
+    "After saving audition Sound4/key1 and Sound5/key1 with write off; report whether Sound4 is longer/different and Sound5 retains its previous short tone, changes with Sound4 or is silent",
+    "Return to Sound8/TONE stopped/write off; leave both sounds present and report deviations or early sampling stop"
+  ],
+  "actual_actions": {
+    "user_report": "done and confirmed",
+    "deviations_reported": false
+  },
+  "source_sha256": "5dca9a554b76bb538cf6a24deb5fdc707893730f6bea5519c76f5106342cb057",
+  "purpose": "Observe shared-buffer ownership and allocation when the original owner is re-recorded at a longer length, while retaining an existing copy",
+  "results": "../shared-sound4-rerecord-results-001.json",
+  "sample_analysis": "../shared-sound4-sample-analysis-002.json",
+  "manual_observation": "manual-observation.json",
+  "analysis": "derived/analysis-001"
+}

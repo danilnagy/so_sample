@@ -1,0 +1,120 @@
+{
+  "analysis_version": "recorded-FILTER-interiors-and-exact-center-return-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Literal observed filter candidate with strict masks, pitch14/volume36 and all other state preserved; separate user LPF/HPF/neutral listening confirmation",
+  "checks": {
+    "native_and_strict_scope_pass": true,
+    "pitch14_and_volume36_preserved": true,
+    "capture_artifact_registration_and_result_pins_match": true,
+    "complete_body_reproduced_by_literal_value": true,
+    "capture_not_clipped": true
+  },
+  "contiguous_candidate_values": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "alternative_candidate_values": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "capture_sha256": "12eeb7abb24f6c872800dc545034f83a34851de76d614268d492987e6b5abdb1",
+  "artifact_sha256": "65da4be9b2ee2aea74def115d846f792f3da2f7408e6f086812f7a7873746913",
+  "artifact_path": "experiments/event-059-f-sound3-filter-A-lowpass-interior/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "b5e315b3f0703190ad42652eb57616385e52b2c92df04e3aa2bc1b936c005c37",
+  "native_results_sha256": "bf88756194045d7da2948a38a8e05195a64a0ee9e9298bce67f34d25173cb0ec",
+  "manual_observation_sha256": "4b5650a7fe593e560d008f58975fe9771a6b9c5347a4735346006b247e0bbafd",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.1458740234375,
+      0.14111328125
+    ]
+  },
+  "branch_scalar_order_checks": {
+    "contiguous": {
+      "lowpass_all_values_within_registered_strict_bounds": true,
+      "highpass_all_values_within_registered_strict_bounds": true,
+      "both_branch_order_hypotheses_supported": true
+    },
+    "alternative": {
+      "lowpass_all_values_within_registered_strict_bounds": false,
+      "highpass_all_values_within_registered_strict_bounds": false,
+      "both_branch_order_hypotheses_supported": false
+    }
+  },
+  "complete_filter_model_or_units_confirmed": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Both previous between-endpoint center predictions failed at63; original reports and incorrect full-bar cue remain immutable",
+    "Special neutral63 and two branches are new post-center hypotheses registered before these interior data",
+    "Interior values and complete bodies are unknown; no exact quarter-position code or uniformity is predicted",
+    "Two scalar branch-order projections remain distinct; failures, ramps, unchanged captures and wider changes are retained",
+    "Whole independent center body and every packet must return exactly; matching candidate codes alone are insufficient",
+    "Single middle tick is the user-confirmed center cue; interior UI units, cutoffHz, full width, resonance and public writer remain unconfirmed",
+    "No ordinary audio measurement is required for these backups; user audibility and knob directions remain separate observations"
+  ]
+}

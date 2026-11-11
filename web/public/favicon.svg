@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- The 4x4 pads, lit in an ordered dither that fades from the top-left corner. -->
+  <style>
+    .on { fill: #111111; }
+    .off { fill: #d9d9d9; }
+    @media (prefers-color-scheme: dark) {
+      .on { fill: #ececec; }
+      .off { fill: #3a3a3a; }
+    }
+  </style>
+  <g>
+    <rect class="on" x="1" y="1" width="6" height="6"/>
+    <rect class="on" x="9" y="1" width="6" height="6"/>
+    <rect class="on" x="17" y="1" width="6" height="6"/>
+    <rect class="off" x="25" y="1" width="6" height="6"/>
+
+    <rect class="on" x="1" y="9" width="6" height="6"/>
+    <rect class="on" x="9" y="9" width="6" height="6"/>
+    <rect class="off" x="17" y="9" width="6" height="6"/>
+    <rect class="off" x="25" y="9" width="6" height="6"/>
+
+    <rect class="on" x="1" y="17" width="6" height="6"/>
+    <rect class="off" x="9" y="17" width="6" height="6"/>
+    <rect class="on" x="17" y="17" width="6" height="6"/>
+    <rect class="off" x="25" y="17" width="6" height="6"/>
+
+    <rect class="off" x="1" y="25" width="6" height="6"/>
+    <rect class="off" x="9" y="25" width="6" height="6"/>
+    <rect class="off" x="17" y="25" width="6" height="6"/>
+    <rect class="off" x="25" y="25" width="6" height="6"/>
+  </g>
+</svg>

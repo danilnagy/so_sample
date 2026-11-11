@@ -1,0 +1,26 @@
+{
+  "status": "received_and_analyzed",
+  "expected_file": "sample-playback.wav",
+  "recording_type": "ordinary line-output playback of retained Sound 8 sample",
+  "sound_slot": 8,
+  "melodic_key": 1,
+  "source_backup_sha256": "dfcd59dfa2ae04973f49090b0997e7f1508aaf62e18a9293362240ad397e54f7",
+  "user_estimated_sample_duration_seconds": 1,
+  "planned_actions": [
+    "Keep sequencer stopped and write mode off",
+    "Use usual PO-33 output to computer stereo input connection and existing recording level",
+    "Select Sound 8, begin computer recording, tap melodic key 1 once, capture until it finishes",
+    "Save the short ordinary audio recording as sample-playback.wav",
+    "Return to Sound 9 slice key 1 afterward; retain memory and pattern state"
+  ],
+  "test_purpose": "Verify retained partial tone frequency, duration, waveform and recording quality before interpreting backup repetition",
+  "limits": [
+    "Melodic key playback may transpose the recorded input; native sample frequency is not assumed",
+    "Line-output sound can include existing parameter processing",
+    "A playback waveform alone is not a decoded backup payload"
+  ],
+  "playback_source_sha256": "23994e265f0479c49215d5401cb25c425bed8765cc43ff0afbc6a81987991197",
+  "inspection": "playback-inspection.json",
+  "analysis": "playback-analysis.json",
+  "actual_button_actions": "not separately supplied; user uploaded requested single-sample recording"
+}

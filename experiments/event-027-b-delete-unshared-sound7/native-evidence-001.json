@@ -1,0 +1,24 @@
+{
+  "analysis_version": "physical-unshared-sound7-deletion-native-evidence-0.1",
+  "hardware_observed": true,
+  "verified_scope": "This unshared Sound7 record is completely removed, with every unrelated packet preserved and full pre-creation state recovered",
+  "results_sha256": "b08ac413af8bf972627233a1299c5d651b76675d2e170a4ebbcc7e5720ea18a9",
+  "manual_observation_sha256": "a15c4855bf9afcce0866d502b557d1870abc8f0095a58381fb8677a20192b5b6",
+  "capture_sha256": "29658f8c814a9babcfe859316a8e9313e4a6e1ef31f7d7ce2d4d4c2e56e55412",
+  "artifact_sha256": "e6c1e18bd04232af76bcf2fe4099fe4f03399a6945381d6c47d55c9a4e96d1fa",
+  "body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "checks": {
+    "all_core_controls_pass": true,
+    "record_removed_and_all_unrelated_packets_preserved": true,
+    "full_buffer_not_retained": true,
+    "entire_prior_pre_creation_body_recovered": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_raw_body_matches": true
+  },
+  "exported_content_files_checked": 31,
+  "audible_checks": "Not separately confirmed",
+  "limits": [
+    "Serialized buffer removal is verified; this does not measure physical RAM reclamation or establish general deletion contexts"
+  ]
+}

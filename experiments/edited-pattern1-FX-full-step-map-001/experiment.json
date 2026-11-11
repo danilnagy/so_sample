@@ -1,0 +1,20 @@
+{
+  "experiment_id": "edited-pattern1-FX-full-step-map-001",
+  "capture_status": "validated_exact_native_pitch_track_inconclusive",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../pattern1-FX-full-step-map-registration-001.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Roughly which notes bent upward, if you could tell? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "pitch_results": "pitch-track-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-FX-full-step-map-001/project.json"
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-fx-pattern-001",
+  "capture_status": "validated_exact_native_fx_pattern_described",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../fx-pattern-registration-001.json",
+  "plan": "../fx-pattern-plan-001/plan.json",
+  "playback_seconds": 70,
+  "observation_questions": [
+    "Which effects clearly changed the run of notes, and how? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "measurements": "fx-pattern-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-fx-pattern-001/project.json"
+}

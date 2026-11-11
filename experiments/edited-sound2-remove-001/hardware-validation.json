@@ -1,0 +1,125 @@
+{
+  "analysis_version": "native-sound2-cell-removal-hardware-validation-0.1",
+  "registration_sha256": "dd549c8131abec35e9eaf21de168c9c97fc6dd271806575404944779d5507a85",
+  "capture_sha256": "aa8c083704bb92aa44893bafc3abd35e2bc05182fbb01ca7511f04752dafeb7d",
+  "artifact_sha256": "0a79c633e5d383ce066c4ce8ecc4f76275f41543e3744dd6ee6895db9b9b1fed",
+  "decoder_version": "sign-crossings-0.2",
+  "checks": {
+    "registered_body_hash_matches": true,
+    "target_body_matches": true,
+    "target_plain_packets_match": true,
+    "all_packet_checksums_valid": true,
+    "exact_body_reencode": true,
+    "packet_count": true,
+    "frame_end_byte": true,
+    "only_expected_plain_packets_changed": true,
+    "only_expected_pattern_bytes_changed": true,
+    "sample_packets_unchanged": true,
+    "other_patterns_unchanged": true,
+    "sound3_cells_unchanged": true,
+    "expected_populated_steps": true,
+    "expected_sound2_steps": true,
+    "expected_sound2_parameters": true,
+    "expected_sound3_keys": true,
+    "only_expected_sound_cells": true,
+    "footer_unchanged": true,
+    "removed_sound2_cells_empty": true,
+    "remaining_sound2_cells_unchanged": true
+  },
+  "passed": true,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "changed_plain_packet_indices": [
+    4,
+    7
+  ],
+  "pattern1_byte_changes": [
+    {
+      "offset": 3,
+      "old": 13,
+      "new": 0
+    },
+    {
+      "offset": 4,
+      "old": 40,
+      "new": 0
+    },
+    {
+      "offset": 5,
+      "old": 49,
+      "new": 0
+    },
+    {
+      "offset": 769,
+      "old": 240,
+      "new": 0
+    }
+  ],
+  "sound2_steps": [
+    9
+  ],
+  "sound3_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "user_report": "done and confirmed",
+  "hardware_verified": true,
+  "manual_observations": "User confirms Sound2 Step1 off, only Step9 lit, Sound3 Steps1/5/9/13 lit and normal playback; no deviation reported",
+  "capture_timing": "Requested before step inspection and playback; user reports completion without a deviation",
+  "limits": [
+    "Light/playback observations are user reported; acoustic waveforms were not independently measured",
+    "Only deletion of the observed Sound2 cell with calibrated optional Sound3 neighbours is validated locally",
+    "Other sounds and Sound2 keys remain unsupported; primary note parameters remain opaque"
+  ]
+}

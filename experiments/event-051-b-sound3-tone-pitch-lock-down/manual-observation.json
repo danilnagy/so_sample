@@ -1,0 +1,10 @@
+{
+  "user_report": "done, the pitch went down. display shows ticks along the bottom descreasing to right and Ptc in upper right",
+  "audition": "lower",
+  "display_label": "Ptc",
+  "display_position": "upper right",
+  "display_ticks_description": "ticks along the bottom descreasing to right",
+  "numeric_display_value": null,
+  "interpretation": "Explicit lower-pitch audition and qualitative display observation; raw stored1 is not presented as a reported UI number",
+  "capture_sha256": "c7e2d93e7805e6d8b44ad16edb8b6966ffe610df274b9bf392b2bbdee34e93b2"
+}

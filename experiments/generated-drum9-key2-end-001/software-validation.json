@@ -1,0 +1,67 @@
+{
+  "analysis_version": "nonzero-start-drum-key2-candidate-0.1",
+  "control_evidence_sha256": "c86d9e2c7d2f9d63a4aca68010c378f17997c727debe516394baf31637798f82",
+  "audition_observation_sha256": "5d00c547ed54b5637a50839dfe698428a71732f45e1f9bfc9fe061df8fd03b8a",
+  "source_capture_sha256": "78f321ce42b7cfca70013487b70c62db4bd3dac57c27f7cb9f9a4c2de35692b6",
+  "source_artifact_sha256": "707528090cb1e487232b9b9af2a7d3ea8925632fd17edae0c69507f26f3970f3",
+  "restore_wav_sha256": "28d4cdd4363c081ac94bf5b1447ccb70b9d0672cb5519139bddee60ca979f2ab",
+  "expected_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "expected_reference_hex": "cd0f00009d17000000",
+  "sound_slot": 9,
+  "slice_key": 2,
+  "selector_id": 9,
+  "start_field": 4045,
+  "endpoint_field": 6045,
+  "reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 76,
+      "new": 157
+    },
+    {
+      "offset": 5,
+      "old": 16,
+      "new": 23
+    }
+  ],
+  "changed_plain_packet_indices": [
+    385
+  ],
+  "checks": {
+    "genuine_minimum_forward_body_reproduced": true,
+    "genuine_baseline_inverse_body_reproduced": true,
+    "only_key2_reference_packet_changed": true,
+    "only_expected_endpoint_bytes_changed": true,
+    "exact_candidate_reference": true,
+    "start_and_owner_preserved": true,
+    "accepted_key1_preserved": true,
+    "candidate_inverse_reproduces_source": true,
+    "all_compiler_roundtrip_checks": true,
+    "source_file_preserved": true,
+    "preview_frame_count": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "compiler_report": "compile-report.json",
+  "preview": {
+    "sound_slot": 9,
+    "slice_key": 2,
+    "selector_id": 9,
+    "backing_sound_id": 0,
+    "backing_bytes": 65536,
+    "start_field": 4045,
+    "endpoint_field": 6045,
+    "preview_code_count": 2000,
+    "sample_rate_hz_nominal": 23437.5,
+    "preview_selection_policy": "Explicit half-open[start,end); exact device endpoint inclusivity unresolved",
+    "pitch_and_gain_applied": false,
+    "export_sample_rate_hz": 48000,
+    "export_frames": 4096
+  },
+  "limits": [
+    "Only Sound9/keys1 and2 at their separate fixed-start intervals are supported, with the literal other14 references",
+    "The reported key2 click and exact endpoint prediction support a local interpretation; this new generated nonzero-start edit needs its own hardware test",
+    "General minima, arbitrary starts, other keys/drum slots and exact endpoint inclusivity remain unresolved",
+    "The standalone key2 preview is unpitched half-open raw-code extraction; project preview opt-in still exports accepted key1 only"
+  ]
+}

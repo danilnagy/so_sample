@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "reference_id": "event-001-b",
+  "repeat_id": "event-004-b-repeat",
+  "source_sha256": "b36cd797d11e808b4481b32aef0808c978905d52466c8f2599018445a107490d",
+  "threshold": 0.0063,
+  "channels": {
+    "left": {
+      "reference_symbols": 1970367,
+      "repeat_symbols": 1970367,
+      "changed_overlap_symbols": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail_symbols": 0,
+      "tail_values_reference": [],
+      "tail_values_repeat": [],
+      "identical": true,
+      "alignment_shift": 0
+    },
+    "right": {
+      "reference_symbols": 1970367,
+      "repeat_symbols": 1970367,
+      "changed_overlap_symbols": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail_symbols": 0,
+      "tail_values_reference": [],
+      "tail_values_repeat": [],
+      "identical": true,
+      "alignment_shift": 0
+    }
+  },
+  "passed": true
+}

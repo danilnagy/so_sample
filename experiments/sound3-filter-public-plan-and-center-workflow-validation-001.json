@@ -1,0 +1,36 @@
+{
+  "analysis_version": "public-observed-FILTER-plans-and-generated-center-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "both_generated_branches_have_verified_native_and_listening_observations": true,
+    "current_verified_source_and_fresh_center_registration_pins_match": true,
+    "public_policy_is_only_five_observed_codes_and_current_noop_exact": true,
+    "all_export_hashes_and_full_current_native_body_exact": true,
+    "center_target_reproduces_entire_independent_body_and_every_packet": true,
+    "center_waveform_plan_and_compile_report_pins_match": true,
+    "generated_center_reception_registered_and_pending": true,
+    "public_filter16_accepted_wav_replay_exact": true,
+    "public_filter52_accepted_wav_replay_exact": true
+  },
+  "full_regression_tests_passed": 1025,
+  "additional_center_checker_tests_passed": 8,
+  "center_registration_sha256": "8ef829f1a69dadd69d3fe38723bac2c641881baf19909dc9ee77202a1fcea826",
+  "current_hardware_observation_sha256": "96e2e8e217d7d2b94adce7f4e31a7ee1461ed686d4d65a696b4349cb1ffdc14d",
+  "code_sha256": {
+    "src/po33_re/formats/filters.py": "12f1d172db5d3302eb19a098019165d8ac4625bcc44864863e2a43e816a342fe",
+    "src/po33_re/edits.py": "83496226fdb67b9cb1bec3f3afde026a12f0bbc5426a8ce365dec9197aefc3a8",
+    "tests/test_sound3_filter_edits.py": "f331af153721cccddbb94fb6bf7090debedcc8f1c1ed05283c9a38bf2aa27aa8",
+    "scripts/check_generated_sound3_filter_center_restore.py": "91ad89ea7009895ef8972cbde88218c568952d6f5445fd4d5f7be2f526de1fa5",
+    "tests/test_generated_sound3_filter_center_restore.py": "7e1b52438e309055c36a4880b387cb0498873e25df86560a213433fc492d0c56"
+  },
+  "public_observed_code_filter_operation_enabled": true,
+  "general_all_code_filter_law_confirmed": false,
+  "next_restore": "edited-sound3-filter63-center-001/restore.wav",
+  "limits": [
+    "Public observed-code plan returns the accepted generated52 source to the independent recorded center63 body",
+    "Entire native body and every packet are predicted before this recapture; generated63 acceptance remains pending",
+    "Listening asks for no audible filtering without moving knobs; no broadband bypass, Hz curve or quantitative response is asserted",
+    "Only observed raw codes1/16/52/62/63 and tested pitch14/volume36 layout are supported; other codes and third-byte bits remain guarded"
+  ]
+}

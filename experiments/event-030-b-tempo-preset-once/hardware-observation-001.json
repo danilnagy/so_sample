@@ -1,0 +1,37 @@
+{
+  "analysis_version": "first-tempo-display-association-hardware-observation-0.1",
+  "status": "supported_for_this_transition",
+  "hardware_verified": true,
+  "writable_field_verified": false,
+  "tempo_writer_enabled": false,
+  "verified_scope": "Physical 120-to140 BPM preset change alters only byte129 in the second7d5c payload; all samples and patterns are unchanged",
+  "native_results_sha256": "486622b6a5d62180ec56f48062a94e87fdc3eaf2eb776c55c24fc15e2335015d",
+  "manual_observation_sha256": "4334c985dfc2cfd5aa8d4e6b3868480513ef6d5d95f6fc32d9549206ff8e360c",
+  "capture_sha256": "cedcdd9b97674b93b3ebb623e3ebd2744ddb4f188a9fd899eac9407903efc1ef",
+  "artifact_sha256": "b6d4e617213811f5bdcfabe389172989bda3d30eaf3a38923adcc0bde1891690",
+  "artifact_path": "experiments/event-030-b-tempo-preset-once/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "e842aaea00d667ad6ef325a2e8cd870baa5e92dda7c7b3912270b41f740ba4df",
+  "checks": {
+    "all_native_controls": true,
+    "all_preregistered_tempo_hypotheses": true,
+    "hypothesis_supported_for_this_transition": true,
+    "display_numbers_match_user_report": true,
+    "capture_and_artifact_hashes_match": true,
+    "all_export_content_hashes_match": true,
+    "export_complete_native_body_matches": true,
+    "no_tempo_writer_enabled": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 31,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.16412353515625,
+      0.15771484375
+    ]
+  },
+  "limits": [
+    "Only one physical display/byte transition is observed; independent third value, return and generated restore remain pending",
+    "No arbitrary tempo range or writable tempo field is established"
+  ]
+}

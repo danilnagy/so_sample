@@ -1,0 +1,76 @@
+{
+  "analysis_version": "param-only-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of parameter-only filter locks between notes, and which value each unlocked note played",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "model_support": {
+    "param_only_sets_value": true,
+    "param_only_ignored": false
+  },
+  "classification": "param_only_sets_value",
+  "comparisons": [
+    {
+      "model": "param_only_sets_value",
+      "step": 3,
+      "value": 24,
+      "median_diff_db": 0.2349172802550541
+    },
+    {
+      "model": "param_only_sets_value",
+      "step": 5,
+      "value": 50,
+      "median_diff_db": 0.06310707118089587
+    },
+    {
+      "model": "param_only_sets_value",
+      "step": 9,
+      "value": 20,
+      "median_diff_db": 0.24455169618706663
+    },
+    {
+      "model": "param_only_sets_value",
+      "step": 13,
+      "value": 24,
+      "median_diff_db": 0.20121446421292966
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 3,
+      "value": 63,
+      "median_diff_db": 21.73000270934545
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 5,
+      "value": 63,
+      "median_diff_db": 9.198319985969851
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 9,
+      "value": 63,
+      "median_diff_db": 28.063326069540057
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 13,
+      "value": 56,
+      "median_diff_db": 10.506566376123661
+    }
+  ],
+  "decision_sha256": "53866128a96a8593ac0fe0328c907976b37160f14085390b508612f4d0be848c",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "192912c12b35223b726ed0674c2c904da9aa0a87956b29e75beebe5f49709d02",
+  "session_answers": [],
+  "limits": [
+    "Filter locks only, on one drum sound; parameter-only cells for other parameters are not played"
+  ]
+}

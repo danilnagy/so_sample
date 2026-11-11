@@ -1,0 +1,206 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "379cb6d087daba16079a2858aa3787686736cea869d307e4a2bab33ffb578d4d",
+  "source_body_sha256": "8a9824a131e5bd7090d2f5107f5e8f66b5a23e324d683a042291640ccdf90836",
+  "operations": [
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 16,
+      "parameter": "pitch",
+      "values": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 16,
+      "parameter": "resonance",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "copy_pattern",
+      "source_pattern": 1,
+      "destination_pattern": 2
+    },
+    {
+      "operation": "copy_pattern",
+      "source_pattern": 1,
+      "destination_pattern": 3
+    },
+    {
+      "operation": "copy_pattern",
+      "source_pattern": 1,
+      "destination_pattern": 4
+    },
+    {
+      "operation": "copy_pattern",
+      "source_pattern": 1,
+      "destination_pattern": 5
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        63,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 2,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        63,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 3,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        63,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 4,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        63,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 5,
+      "sound": 16,
+      "parameter": "filter",
+      "values": [
+        63,
+        60,
+        61,
+        62,
+        16,
+        52,
+        31,
+        32,
+        33,
+        30,
+        8,
+        24,
+        40,
+        56,
+        63,
+        63
+      ]
+    },
+    {
+      "operation": "set_pattern_chain",
+      "patterns": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

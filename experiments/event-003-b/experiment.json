@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "event-003-b",
+  "series_id": "event-003",
+  "stage": "add_event",
+  "created_at": null,
+  "baseline_id": "event-002-a",
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "Planned controlled single-event experiment; actual observations pending",
+    "selected_pattern": null,
+    "selected_sound": null,
+    "selected_slice_key": null,
+    "playing": null,
+    "write_mode": null,
+    "tempo_bpm": null,
+    "swing": null,
+    "pattern_sequence": null
+  },
+  "proposed_event": {
+    "pattern": 1,
+    "step": 3,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "target_status": "kick_confirmed_step3_empty_expected_verify_before_capture",
+  "planned_capture_state": {
+    "selected_pattern": 1,
+    "selected_sound": 9,
+    "selected_slice_key": 1,
+    "playing": false,
+    "write_mode": false
+  },
+  "changes": [
+    {
+      "status": "reported_experiment_stage",
+      "action": "add_trigger",
+      "event": {
+        "pattern": 1,
+        "step": 3,
+        "sound_slot": 9,
+        "drum_slice_key": 1
+      }
+    }
+  ],
+  "planned_actions": [
+    "Enter write mode; add only the proposed event at the previously empty step",
+    "Exit write mode; keep selected pattern/sound/slice, tempo, chain and parameters unchanged",
+    "Record untouched B transfer without playing the pattern or making other edits"
+  ],
+  "actions": [
+    "User skipped fresh A and supplied Step 3 B capture; A-return is being recorded"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "38e774432509ed0ae86b7d552b75d19543e384ef5519ffecffe2385b1bb91ac7",
+    "status": "received_and_inspected",
+    "interface": null,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "processing": "unknown"
+  },
+  "planned_recording": {
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "level": "same reduced level as reconstructed-002",
+    "decoder_threshold": 0.0063
+  },
+  "hardware_restore": {
+    "status": "not_run",
+    "observations": []
+  },
+  "baseline_reuse_note": "Reuse verified empty baseline event-002-a; validate new A-return before claiming full control."
+}

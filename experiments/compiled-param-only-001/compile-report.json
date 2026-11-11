@@ -1,0 +1,410 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "1a2a597554d3e3e714afca3a4879ea41202db299d11d66a150cda83e93cfc0ae",
+  "plan_sha256": "a315284065a0908dd3335e2316e2cd37ce01f6f2f13250c825ce4742a7aefba0",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ]
+      },
+      "before_body_sha256": "69638076fa29a526ede17113ee5a7ee422d55556621bbd97e0c2307915331128",
+      "after_body_sha256": "fda47e9ea39d12c2905e2e4b718c36e72f685c6bc489d3eae75fc94b254efc43"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "resonance",
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "before_body_sha256": "fda47e9ea39d12c2905e2e4b718c36e72f685c6bc489d3eae75fc94b254efc43",
+      "after_body_sha256": "fda47e9ea39d12c2905e2e4b718c36e72f685c6bc489d3eae75fc94b254efc43"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 1,
+        "sound": 16,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 16
+      },
+      "before_body_sha256": "fda47e9ea39d12c2905e2e4b718c36e72f685c6bc489d3eae75fc94b254efc43",
+      "after_body_sha256": "15b85e9bde31efdc5c4b5a483e8558ba81173259939b47ca8569d03c667fd720"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          null,
+          0,
+          null,
+          0,
+          null,
+          63,
+          null,
+          0,
+          null,
+          56,
+          null,
+          0,
+          null,
+          63,
+          null
+        ]
+      },
+      "before_body_sha256": "15b85e9bde31efdc5c4b5a483e8558ba81173259939b47ca8569d03c667fd720",
+      "after_body_sha256": "edc55e98917eb37082fbf176a2f05cb1b6844e934f85491dc902ee3b0adfd539"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "resonance",
+        "values": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "before_body_sha256": "edc55e98917eb37082fbf176a2f05cb1b6844e934f85491dc902ee3b0adfd539",
+      "after_body_sha256": "edc55e98917eb37082fbf176a2f05cb1b6844e934f85491dc902ee3b0adfd539"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 2,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ]
+      },
+      "before_body_sha256": "edc55e98917eb37082fbf176a2f05cb1b6844e934f85491dc902ee3b0adfd539",
+      "after_body_sha256": "edc55e98917eb37082fbf176a2f05cb1b6844e934f85491dc902ee3b0adfd539"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 2,
+        "sound": 16,
+        "parameter": "resonance",
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "before_body_sha256": "edc55e98917eb37082fbf176a2f05cb1b6844e934f85491dc902ee3b0adfd539",
+      "after_body_sha256": "b11b4542d30f9b112dbc9b962e45b0d2931eaab8d7b8857391cd7c7497540cdb"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 16,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 16
+      },
+      "before_body_sha256": "b11b4542d30f9b112dbc9b962e45b0d2931eaab8d7b8857391cd7c7497540cdb",
+      "after_body_sha256": "738a85d149c8c121bf1a4fda46305d420a341ac5f640d4fd9229875b5a7a673b"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 2,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          63,
+          null,
+          24,
+          null,
+          50,
+          null,
+          63,
+          null,
+          20,
+          null,
+          56,
+          null,
+          24,
+          null,
+          63,
+          null
+        ]
+      },
+      "before_body_sha256": "738a85d149c8c121bf1a4fda46305d420a341ac5f640d4fd9229875b5a7a673b",
+      "after_body_sha256": "eb8923abc8c9618118d82c3446306bb7d98a6b76ea0abab867653c22c22f7185"
+    },
+    {
+      "operation": {
+        "operation": "set_step_parameters",
+        "pattern": 2,
+        "sound": 16,
+        "parameter": "resonance",
+        "values": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "before_body_sha256": "eb8923abc8c9618118d82c3446306bb7d98a6b76ea0abab867653c22c22f7185",
+      "after_body_sha256": "eb8923abc8c9618118d82c3446306bb7d98a6b76ea0abab867653c22c22f7185"
+    },
+    {
+      "operation": {
+        "operation": "set_parameter_locks",
+        "pattern": 1,
+        "sound": 16,
+        "parameter": "filter",
+        "values": [
+          null,
+          24,
+          null,
+          50,
+          null,
+          null,
+          null,
+          20,
+          null,
+          null,
+          null,
+          24,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "eb8923abc8c9618118d82c3446306bb7d98a6b76ea0abab867653c22c22f7185",
+      "after_body_sha256": "f7750f98d02e19826015923101860a6b68eee726192fa28e32fb2d5aa68eb3ca"
+    },
+    {
+      "operation": {
+        "operation": "set_pattern_chain",
+        "patterns": [
+          1,
+          2
+        ]
+      },
+      "before_body_sha256": "f7750f98d02e19826015923101860a6b68eee726192fa28e32fb2d5aa68eb3ca",
+      "after_body_sha256": "f7750f98d02e19826015923101860a6b68eee726192fa28e32fb2d5aa68eb3ca"
+    }
+  ],
+  "target_body_sha256": "f7750f98d02e19826015923101860a6b68eee726192fa28e32fb2d5aa68eb3ca",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "ad01f8612475d46c0fdfef21b31596b81891a209a87a134eba8d8de2f0c4c6a1",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "4df1ae904efe865a14262aad488b13de4310c27cc78b758553e93025cb3f45b2",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 1570561,
+    "active_frames": 8865509,
+    "silence_frames_each_end": 4410,
+    "frames": 8874329,
+    "duration_seconds": 201.23195011337867,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 1570561,
+        "reconstructed_symbols": 1570561,
+        "overlap_symbols": 1570561,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 1570561,
+        "reconstructed_symbols": 1570561,
+        "overlap_symbols": 1570561,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

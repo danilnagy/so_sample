@@ -1,0 +1,37 @@
+{
+  "analysis_version": "key-scale-map-rerun-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "0e459c603ded57186af6d364c0c3894f92cb40a4d07743d54c537303b339e68f",
+  "native_results_sha256": "b1b7ac68ebc034a0edbac1b09c8c12a0d2dcf63beb4978c4791fd36ac2a29b1c",
+  "frequency_results_sha256": "8ba15c6713b5ad6e49b992acf3c4f6976581c7897e58c86743769576df7f5abc",
+  "step1_hz": 1190.569125145131,
+  "measured_cents": {
+    "1": 0.0,
+    "2": 99.84663092859252,
+    "3": 299.9132607017233,
+    "4": 399.97961559772585,
+    "5": -699.7635841675548,
+    "6": -500.32031452186783,
+    "7": -400.2366511089474,
+    "8": -200.21579395387087,
+    "9": -1200.5404334367913,
+    "10": -1100.1768362265168,
+    "11": -900.0210051217034,
+    "12": -800.0348765242379,
+    "13": -1899.859289358528,
+    "14": -1699.635672301179,
+    "15": -1600.224815385944,
+    "16": -1400.1602131678626
+  },
+  "model_support": {
+    "chromatic": false,
+    "major": false,
+    "natural_minor": false,
+    "row_layout_from_first_run": true
+  },
+  "classification": "row_layout_from_first_run",
+  "limits": [
+    "Sound3 with its recorded parameters only; other sounds may differ",
+    "Measures pitch only, not note length or level"
+  ]
+}

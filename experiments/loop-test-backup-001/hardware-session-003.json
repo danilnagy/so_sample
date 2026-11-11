@@ -1,0 +1,138 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "loop-test-backup-001",
+  "started_at": "2026-10-10T12:40:03+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 1,
+      "name": "Microphone (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    },
+    "output": {
+      "index": 5,
+      "name": "Headphones (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    }
+  },
+  "config": {
+    "input_device": "HD USB Audio",
+    "output_device": "HD USB Audio",
+    "hostapi": "MME",
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 1.0
+  },
+  "inputs": {
+    "restore": null,
+    "expected_artifact": null,
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": null,
+  "backups": [
+    {
+      "file": "backup-02.wav",
+      "sha256": "f2d48b4016d8a407abac97579082a3c89ba7b4d9a9506e6dd03123374f3544d1",
+      "recorded_at": "2026-10-10T12:40:21+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 765135,
+        "duration_seconds": 17.35,
+        "signal_start_seconds": 3.15,
+        "signal_end_seconds": 15.85,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.000885009765625,
+        "signal_peaks_per_channel": [
+          0.300567626953125,
+          0.2728271484375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": -0.6617776795488235,
+          "lag_ms": 4.489795918367347,
+          "channels": "right_from_left",
+          "detected": true,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "A delayed copy of the backup (4.5 ms, strength 0.66) is mixed into the recording; the analysis will try to remove it"
+          }
+        ]
+      },
+      "analysis_dir": "backup-02-analysis",
+      "analysis": {
+        "capture_sha256": "f2d48b4016d8a407abac97579082a3c89ba7b4d9a9506e6dd03123374f3544d1",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 17.35,
+          "peaks_per_channel": [
+            0.300567626953125,
+            0.2728271484375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x912f"
+          },
+          {
+            "method": "echo_cancelled",
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x774b"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured clock requires one exact pre-frame quarter alignment"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false,
+        "feedback_echo": {
+          "coefficient": -0.6604715199804786,
+          "lag_ms": 4.489795918367347,
+          "channels": "right_from_left",
+          "detected": true,
+          "checked": true,
+          "limit": 0.05
+        }
+      }
+    }
+  ],
+  "accepted": null,
+  "playback": null,
+  "observations": [],
+  "interrupted": true,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-10-10T12:40:28+00:00",
+  "result": {
+    "backup_decoded": false,
+    "native_target_exact": null,
+    "capture": null,
+    "analysis": null,
+    "playback": null
+  }
+}

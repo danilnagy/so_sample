@@ -1,0 +1,147 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "69c08faa305541d800c20c1a6736d5675953c9b50e94ee5182646c8a779138e9",
+  "plan_sha256": "8caa425dbe653320166dcd3e2a60ad91cf35c9078d8ed9a1f8c3a5daa23e1ca5",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 1,
+        "sound": 16,
+        "keys": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "template_sound": 9
+      },
+      "before_body_sha256": "299a1356a100770bfc276b73a0f459f9896aebba61a1e98937a2f460e4d721e4",
+      "after_body_sha256": "4b22539facf997c5f42a603c0a9ea0dc527fdd7e0c0bf28ccc3a99fb91a1bb6e"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 1,
+        "sound": 9,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 16
+      },
+      "before_body_sha256": "4b22539facf997c5f42a603c0a9ea0dc527fdd7e0c0bf28ccc3a99fb91a1bb6e",
+      "after_body_sha256": "9b71a1bf1b9c2fedf5dbd4ab83c3cb9db08b98548db601d0a8cdf9dad3b60213"
+    }
+  ],
+  "target_body_sha256": "9b71a1bf1b9c2fedf5dbd4ab83c3cb9db08b98548db601d0a8cdf9dad3b60213",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "1ece7cf6c4c200159b3aeb07f3b965317988443068cfa2337fa1ec2b01bb8ccb",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "1c86dec694d88815cfaf06262f9b5552e85de91c48d0a35dc694ca0bea798ea3",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 2063949,
+    "active_frames": 11650585,
+    "silence_frames_each_end": 4410,
+    "frames": 11659405,
+    "duration_seconds": 264.38560090702947,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 2063949,
+        "reconstructed_symbols": 2063949,
+        "overlap_symbols": 2063949,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 2063949,
+        "reconstructed_symbols": 2063949,
+        "overlap_symbols": 2063949,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

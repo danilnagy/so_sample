@@ -1,0 +1,31 @@
+{
+  "analysis_version": "verified-LPF16-B0-reference-to-frozen-B63-candidate-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "reference_hardware_native_and_audio_gate_passes": true,
+    "reference_capture_artifact_and_report_pins_match": true,
+    "reference_playback_and_original_common_method_pinned": true,
+    "all_export_hashes_and_full_native_reconstruction_pass": true,
+    "candidate_original_waveform_and_artifact_pins_unchanged": true,
+    "candidate_target_and_waveform_recovery_valid": true,
+    "candidate_differs_from_verified_reference_only_in_B_bits": true,
+    "candidate_backup_and_audio_pending": true
+  },
+  "reference_hardware_observation_sha256": "dd85a541a61433e06da17ffae7fce70bb5f9f5f48514870a25a3b99580341308",
+  "pair_registration_sha256": "a980658919688e4bc6286a2b0710d903502ea56e16150255d405637acc216e9e",
+  "last_focused_tests_passed": 108,
+  "last_full_regression_tests_passed": 1025,
+  "production_writer_changed": false,
+  "resonance_writer_enabled": false,
+  "candidate_amplitude_hypothesis_evaluated": false,
+  "next_restore": "edited-sound3-filter16-B63-candidate-001/restore.wav",
+  "limits": [
+    "Both generated targets are new combined cutoff/resonance contexts, not independent recorded whole-body replays",
+    "Amplitude increase is a new hypothesis after endpoint data and before both audio captures; the original common measurement method stays unchanged",
+    "Too-quiet, distorted, insufficient or otherwise unusable audio is retained without changing thresholds, windows or frequency search",
+    "B0 reference must have exact reception and usable near530.26Hz audio before requesting B63",
+    "Only fixed0/63 B at LPF16 from exact minimum source are allowed by research constructor; public cutoff guards remain unchanged",
+    "No all-code resonance law, full bit7 semantics, broad spectral response or public resonance writer is inferred"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "ordinary_PCM_WAV_for_direct_sample_import",
+  "frequency_hz": 1200,
+  "duration_seconds": 0.1,
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "identical_channels": true,
+  "pcm_subtype": "PCM_16",
+  "peak_requested": 0.25,
+  "fade_frames": 240,
+  "wav_sha256": "9fb2d229628767c80485c9dd23b24072218c36f910413483b5a15d552298a288",
+  "purpose": "Import the saved integer PCM through resampling and mu-law encoding into a one-page buffer; no analogue sampling step is required"
+}

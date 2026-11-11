@@ -1,0 +1,42 @@
+{
+  "experiment_id": "event-014-b-sound3-start-quarter",
+  "capture_status": "received_and_validated_second_start_control",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-nonzero-trim-001",
+  "baseline_source_sha256": "7935f7cfe3ab7a8b8d45dbe942f3144dad2c7eebb09c8aa52fb06f96a1d632d8",
+  "baseline_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+  "baseline_artifact_sha256": "903488a982528ae6b2eb05e2ff48c50ad39d810f611c8e65a8c94481033ec558",
+  "baseline_artifact": "../edited-nonzero-trim-001/derived/analysis-001/capture.symbols.npz",
+  "proposed_change": {
+    "sound_slot": 3,
+    "parameter": "TRIM knob A approximately quarter travel",
+    "knob_B": "Untouched in its existing physical position"
+  },
+  "planned_actions": [
+    "Keep Pattern1, playback stopped and write off; select Sound3",
+    "Select TRIM/tri; turn only knob A fully counterclockwise, then approximately one quarter of its travel; leave knob B untouched",
+    "Return to TONE and Sound8; record full stereo backup before audition or pattern playback with other settings unchanged"
+  ],
+  "actual_actions": [
+    "User reports done after the requested quarter-position control and backup; no deviation reported"
+  ],
+  "source_sha256": "77ff3658428a7de39ebaca89005c2d88977cee24c7b841cab6fe8f6d344b7d24",
+  "preregistration": "../sound3-start-quarter-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Check a second independent start value before generalizing the fixed-start sample-window writer",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "validation_report": "../sound3-start-quarter-results-001.json",
+  "control_passed": true,
+  "hypothesis_checks": {
+    "first_field_moves_lower": true,
+    "second_field_unchanged": false,
+    "second_field_resets_maximum": false
+  },
+  "observed_sound3_header_values": {
+    "first_u32le": 11716,
+    "second_u32le": 11827,
+    "owner_id": 0
+  },
+  "observed_second_minus_first": 111,
+  "public_writer_scope_changed": false
+}

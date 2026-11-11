@@ -1,0 +1,184 @@
+{
+  "analysis_version": "sound2-cell-removal-candidate-0.1",
+  "source_capture_sha256": "1adb6964a06f239adfcd599c2996b6d2d075e67576e63955e150ec8c5d84b56f",
+  "source_artifact_sha256": "cb4c7f9dec20b2d06e95d72aa79cf3aa05dc518619ccfb731386972c44da0e2b",
+  "restore_wav_sha256": "c72e4567bb387eeb845aac5f56d38da9d2200b94fe1e5dda0506cdd2a876593b",
+  "expected_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+  "expected_sound2_steps": [
+    9
+  ],
+  "expected_sound3_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "pattern1_byte_changes": [
+    {
+      "offset": 3,
+      "old": 13,
+      "new": 0
+    },
+    {
+      "offset": 4,
+      "old": 40,
+      "new": 0
+    },
+    {
+      "offset": 5,
+      "old": 49,
+      "new": 0
+    },
+    {
+      "offset": 769,
+      "old": 240,
+      "new": 0
+    }
+  ],
+  "changed_plain_packet_indices": [
+    4,
+    7
+  ],
+  "checks": {
+    "genuine_inverse_bodies_reproduced": true,
+    "copy_from_remaining_step9_recreates_complete_source": true,
+    "only_expected_cell_bytes_cleared": true,
+    "only_expected_plain_packets_changed": true,
+    "all_sound3_cells_unchanged": true,
+    "remaining_sound2_step9_unchanged": true,
+    "samples_unchanged": true,
+    "other_patterns_unchanged": true,
+    "packet_count": true,
+    "packet_tags_and_lengths": true,
+    "source_artifact_preserved": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "1adb6964a06f239adfcd599c2996b6d2d075e67576e63955e150ec8c5d84b56f",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 178923,
+    "active_frames": 1009991,
+    "silence_frames_each_end": 4410,
+    "frames": 1018811,
+    "duration_seconds": 23.102290249433107,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 178923,
+        "reconstructed_symbols": 178923,
+        "overlap_symbols": 178923,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 178923,
+        "reconstructed_symbols": 178923,
+        "overlap_symbols": 178923,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "packets_after_wav_decode": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "hardware_verified": false,
+  "limits": [
+    "Only occupied, observed Sound2 primary0d2831/F0 cells and optional calibrated Sound3 neighbours are supported",
+    "Existing genuine inverse bodies are reproduced exactly; this new Step1 removal needs its own hardware validation",
+    "Primary note parameters remain opaque; no other sound deletion or Sound2 pitch edit is enabled"
+  ]
+}

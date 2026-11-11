@@ -1,0 +1,10 @@
+{
+  "user_report": "done, confirmed I hear high pass filtering",
+  "user_described_filter": "high_pass",
+  "requested_restore_and_recapture_completed_in_context": true,
+  "restore_success_explicitly_stated_in_quote": false,
+  "numeric_display_value": null,
+  "capture_sha256": "570857c99376c0076fe9aa4e3236ab6ca1fce64ab5e17d8ccd3a791948b5e617",
+  "restore_wav_sha256": "5b310899d7ce1ea9e92e062ac77fc8a24df1267c07b924db7041fce258c0ee31",
+  "interpretation": "Explicit high-pass listening confirmation after requested generated restore; exact native recapture separately establishes target reception"
+}

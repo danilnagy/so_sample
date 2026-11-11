@@ -1,0 +1,33 @@
+{
+  "analysis_version": "observed-tempo-series-to-first-generated80-restore-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "physical_series_all_checks": true,
+    "physical_observations_all_checks": true,
+    "observation_hashes_pinned": true,
+    "source_and_genuine_artifact_hashes_pinned": true,
+    "source_capture_hash_pinned": true,
+    "source_body_hash_pinned": true,
+    "target_matches_entire_independent_genuine80_body": true,
+    "edited_artifact_hash_pinned": true,
+    "restore_wav_hash_pinned": true,
+    "software_report_hash_pinned": true,
+    "software_checks_pass_without_hardware_claim": true,
+    "checker_accepts_supplied_complete_target": true,
+    "checker_rejects_stale120_and_wrong_display": true,
+    "missing_display_is_not_inferred_from_target": true,
+    "generated_restore_registered_before_capture_and_pending": true
+  },
+  "passed": true,
+  "validation": {
+    "affected_pytest": "28 passed in 1.33s",
+    "ruff": "all checks passed; 191 Python files formatted",
+    "prior_full_suite": "669 passed in 83.34s before research-only tempo additions"
+  },
+  "next_required_user_action": "Restore generated80 WAV, read actual BPM without pressing BPM, capture before playback, confirm slower same Pattern1 phrase and unchanged samples",
+  "limits": [
+    "Only this exact independently known120 state to the observed80 target is tested",
+    "Generated software reports remain unverified by hardware until separate restore/recapture evidence",
+    "No public tempo writer or arbitrary BPM range is enabled"
+  ]
+}

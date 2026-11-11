@@ -1,0 +1,51 @@
+{
+  "analysis_version": "generated-volume18-native-and-audio-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Physical generated18 restore is recaptured exactly; recorded repeated Sound3 tone is lower in amplitude than uniform21 with stable pitch and loop under all six preregistered comparisons",
+  "checks": {
+    "entire_target_and_native_preservation_checks_pass": true,
+    "capture_and_artifact_hashes_match": true,
+    "audio_usable_and_identity_matches": true,
+    "frozen_method_and_pair_match": true,
+    "both_gain_and_native_input_report_hashes_match": true,
+    "six_registered_comparisons_consistent": true,
+    "contiguous_order_prediction_supported": true,
+    "alternative_order_prediction_not_supported": true,
+    "capture_not_clipped": true,
+    "all_export_content_hashes_match": true,
+    "entire_export_body_exact": true
+  },
+  "contiguous_order_supported_in_this_control": true,
+  "alternative_order_supported_in_this_control": false,
+  "subjective_gain_direction_confirmed": false,
+  "amplitude_ratio_candidate_to_reference_range": [
+    0.8188699537530233,
+    0.8189068383390649
+  ],
+  "capture_sha256": "8add5105828abe2e8aa32fbe8b69ef359bffb47d533afb15273c95697bd7d6b5",
+  "artifact_sha256": "6fe950dd2e13051347d88e5b861b3de5329de03250683a1cc68c849960ff5e73",
+  "artifact_path": "experiments/edited-sound3-volume18-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "f9a66a8a6f50e47cdf04ec325f8f265b676d079e60646f290a96e83603d52a7c",
+  "playback_sha256": "25769e865ab9e2e5ef313f041ee932117b3cd2617639550e10d3a6225c9c9c93",
+  "native_results_sha256": "1273dc24e044b9677c91ac35f416cf2f5d00f4d804e48764e90ea27360c176c4",
+  "audio_results_sha256": "7cfe6950fd101527cb7c5a3eec4e1ca64bf7b9c2fe4c5122966c4f6be4587513",
+  "gain_results_sha256": "deb18403b632292b042f6c503edf25432cd485616d8961fa25fbeb03fbd36d78",
+  "manual_observation_sha256": "309e35b1e41de12e65578b7039b4ba6cf279e82ec706e8218d9982d10555ddff",
+  "reference_hardware_observation_sha256": "a78566aada204c4d77d758f0cfc020cbb6c690f60a6f12a553b5b45e60dd5158",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.1575927734375,
+      0.1517333984375
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "volume_writer_verified": false,
+  "gain_curve_or_numeric_UI_scale_confirmed": false,
+  "limits": [
+    "Audio result relies on the instructed unchanged recording settings; separate recording hardware gain is not read back",
+    "User does not confirm the loudness direction; objective recorded-tone comparison supplies that evidence",
+    "One generated interior value supports the contiguous ordering; reciprocal upper-interior control follows",
+    "No public writer, gain law, every-value calibration or gain-rendered sample preview claimed"
+  ]
+}

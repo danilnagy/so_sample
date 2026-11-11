@@ -1,0 +1,57 @@
+{
+  "experiment_id": "event-009-b-melodic-key16",
+  "capture_status": "received_and_validated_endpoint_invariants_and_hypotheses",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-note-key-001",
+  "baseline_source_sha256": "c5add754a44ac012a44114156839349f64024c6a2f69660571dbb5b1d59c67ed",
+  "baseline_body_sha256": "91b37d61e3bc71de72748dfd846892e62a7d839a9332f13a6f9c56687cdeadf0",
+  "baseline_artifact": "../edited-note-key-001/derived/analysis-002/capture.symbols.npz",
+  "proposed_change": {
+    "pattern": 1,
+    "step": 5,
+    "sound_slot": 3,
+    "old_keyboard_key": 2,
+    "new_keyboard_key": 16
+  },
+  "planned_actions": [
+    "On Pattern1, keep stopped playback and write off; select Sound3",
+    "Enter write mode, tap Step5 once to remove its note, confirm light off, then exit write mode",
+    "Tap keyboard key16 with write off; enter write mode, tap Step5 once to add that note, then exit write mode",
+    "Reselect Sound8; retain TONE, stopped playback and all other settings; capture full stereo backup before playing the changed pattern"
+  ],
+  "actual_actions": [
+    "User replied done to the fixed-Step5 Sound3 key2-to-key16 protocol and supplied this capture; no deviation reported",
+    "Initial crossing decode failed; the independently configured measured-clock decoder recovered all511 packets"
+  ],
+  "source_sha256": "a0c0bea848c7c1bf56349e695edaae8740cd465d6df044512972d6c45ed5c0f1",
+  "preregistration": "../melodic-key16-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Test the far keyboard-index endpoint at a fixed melodic sound and step before expanding key-write support",
+  "full_key_range_verified": false,
+  "action_evidence": "User completion report; exact buttons and keyboard pitch were not independently observed.",
+  "decoder_version": "amplitude-clock-0.1",
+  "validated_symbol_artifact": "derived/analysis-002/capture.symbols.npz",
+  "original_failed_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "observed_keyboard_endpoint": {
+    "sound_slot": 3,
+    "step": 5,
+    "primary_hex": "0df883",
+    "old_auxiliary_hex": "f1",
+    "new_auxiliary_hex": "ff",
+    "tested_keyboard_keys": [
+      1,
+      2,
+      16
+    ],
+    "middle_keys": "Not yet tested"
+  },
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "registered_checks": "../melodic-key16-results-001.json",
+    "initial_failure": "initial-decode-failure.json",
+    "initial_waveform": "../waveform-probes-026.json",
+    "measured_clock": "derived/analysis-002/clock-report.json",
+    "packets": "derived/analysis-002/packet-report.json",
+    "patterns": "derived/analysis-002/pattern-report.json"
+  }
+}

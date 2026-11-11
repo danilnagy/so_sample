@@ -1,0 +1,56 @@
+{
+  "experiment_id": "edited-note-key-001",
+  "capture_status": "received_and_validated_exact_native_body_with_measured_clock",
+  "expected_file": "capture.wav",
+  "source_backup_id": "event-008-b-melodic-key2",
+  "source_backup_sha256": "ff78fa4c5b29b4b1ec4df8fdfa89cec54020da7e9059b3b342c78672edd9d90d",
+  "restore_wav": "../generated-note-key-001/restore-alternating-keys.wav",
+  "restore_wav_sha256": "825c68b6bcb087e147f9d9cde873a368e09540368b15741f020052170db963d0",
+  "expected_encoded_body_sha256": "91b37d61e3bc71de72748dfd846892e62a7d839a9332f13a6f9c56687cdeadf0",
+  "expected_pattern": 1,
+  "expected_populated_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "expected_keyboard_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 1,
+    "13": 2
+  },
+  "expected_sound_slot": 3,
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "expected_changes_from_source": "Only Pattern1 auxiliary byte962 F0-to-F1, in plain packet7; all samples, other note fields and patterns preserved",
+  "planned_actions": [
+    "Restore generated alternating-key backup using the validated stereo playback path and settings",
+    "Before playing the pattern, retain Pattern1, Sound8 selected, TONE, write off and stopped playback; record full stereo backup",
+    "After saving the backup, play Pattern1 for one or two loops; report four evenly spaced short tones with alternating key1/key2 pitches; stop playback"
+  ],
+  "actual_actions": [
+    "User explicitly confirms alternating pitches work and supplied the capture; no timing deviation reported",
+    "Initial crossing decode failed; independent measured-clock decoding recovered the exact target native body without packet repair or target-dependent alignment"
+  ],
+  "source_sha256": "c5add754a44ac012a44114156839349f64024c6a2f69660571dbb5b1d59c67ed",
+  "purpose": "First hardware test of calibrated note-key field writing rather than complete opaque step copies",
+  "hardware_verified": true,
+  "limits": [
+    "Only Sound3 keyboard keys1/2 with known primary0df883 and auxiliaryF0/F1 are supported; no upper-nibble meaning or additional key range is inferred."
+  ],
+  "action_evidence": "Alternating-pitch behavior is explicitly user reported; capture order relative to playback is not explicitly reported.",
+  "decoder_version": "amplitude-clock-0.1",
+  "validated_symbol_artifact": "derived/analysis-002/capture.symbols.npz",
+  "original_failed_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "hardware": "hardware-validation.json",
+    "initial_failure": "initial-decode-failure.json",
+    "initial_waveform": "../waveform-probes-025.json",
+    "measured_clock": "derived/analysis-002/clock-report.json",
+    "packets": "derived/analysis-002/packet-report.json",
+    "patterns": "derived/analysis-002/pattern-report.json",
+    "clock_corpus": "../amplitude-clock-corpus-001.json"
+  }
+}

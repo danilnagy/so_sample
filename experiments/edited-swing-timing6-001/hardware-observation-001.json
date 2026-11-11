@@ -1,0 +1,56 @@
+{
+  "analysis_version": "generated-swing6-hardware-observation-0.1",
+  "hardware_verified": true,
+  "swing_writer_verified": true,
+  "numeric_timing_units_confirmed": false,
+  "verified_scope": "Generated swing6 accepted at137 BPM; exact complete recapture and all six frozen stereo timing comparisons show offbeat delay with loop preserved; user independently hears more swing",
+  "display_text": null,
+  "encoded_swing_byte": 6,
+  "serialized_tempo_bpm": 137,
+  "checks": {
+    "all_native_target_checks": true,
+    "all_playback_consistency_checks": true,
+    "all_six_registered_timing_comparisons": true,
+    "capture_and_artifact_fingerprints_match": true,
+    "playback_fingerprint_matches": true,
+    "method_registration_matches_both_analysis_reports": true,
+    "encoded_swing6_and_tempo137": true,
+    "all_export_content_hashes_match": true,
+    "entire_export_body_exact": true,
+    "backup_not_clipped": true
+  },
+  "capture_sha256": "8e6599398978bb303f34502aff6bd2cb3de841feed3b663f1c7085f9ac3afec1",
+  "artifact_sha256": "214765949d94331ab6ebaa48a6f7ba14009e52fbd0c32eb08406baee4dd34c66",
+  "artifact_path": "experiments/edited-swing-timing6-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "fc595d91e0eff23869c4236bc9c602745c8e6de63c9d5257b9ba3152e9678175",
+  "playback_sha256": "5e5cd2eda43e6bc1376bd73170546c3973d5b3802de3d8e127ab2dc1dd7c9ee1",
+  "native_results_sha256": "c85ebd3e0378cc646046f5b30aabbaf2ea5d39c37b247a48afe484cc8dcfa7ec",
+  "timing_results_sha256": "a74c35175b9fb3058cb455aae5910b9849d9011747c0c140a3c5329bbc94decc",
+  "timing_comparison_sha256": "2cb9693fc942bdace89134ff47f59e96cb58e7239cb7fe5e7ef2396883b4d454",
+  "method_registration_sha256": "c10ba77e2343998f1b368c904fd87003afb7bf949d0dd24943839abeb4ffa57f",
+  "manual_observation_sha256": "a406cb4aa4c76a9bfa08474d9020026c1a53c1914f3fe7ac9e2dae60b5c4d7a5",
+  "exported_content_files_checked": 31,
+  "backup_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.160430908203125,
+      0.153717041015625
+    ]
+  },
+  "timing_summary": {
+    "usable_onsets_per_channel": 8,
+    "complete_cycles": 3,
+    "short_gap_seconds": 0.5750340136054417,
+    "long_gap_seconds": 1.176961451247166,
+    "loop_seconds": 1.7519954648526073,
+    "short_gap_delta_seconds_range": [
+      0.027188208616780063,
+      0.027301587301586938
+    ]
+  },
+  "limits": [
+    "No independent S06 display reading claimed",
+    "Physical0/9/18 plus generated6 support bounded range policy, not individual hardware tests of every integer",
+    "One positive timing point does not establish percentage or clock units"
+  ]
+}

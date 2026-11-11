@@ -1,0 +1,35 @@
+{
+  "analysis_version": "imported-shared-deletion-public-plan-to-last-owner-removal-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "previous_hardware_acceptance_all_checks": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "source_acceptance_hash_pinned": true,
+    "source_body_hash_pinned": true,
+    "public_shared_deletion_reproduces_actual_body": true,
+    "compiled_shared_deletion_reproduces_actual_body": true,
+    "compiler_report_passes_and_remains_software_only": true,
+    "original_prediction_remains_software_only": true,
+    "independent_earlier_artifact_hash_pinned": true,
+    "independent_earlier_results_hash_pinned": true,
+    "removal_prediction_equals_genuine_earlier_body": true,
+    "removal_all_core_controls": true,
+    "removal_all_hypotheses": true,
+    "removal_only_sound7_changes": true,
+    "stale_source_rejected": true,
+    "public_last_owner_deletion_scope_unchanged": true,
+    "registered_before_capture_and_pending": true
+  },
+  "passed": true,
+  "validation": {
+    "full_pytest": "655 passed in 80.86s",
+    "affected_pytest": "31 passed in 5.38s",
+    "ruff": "all checks passed; 182 Python files formatted"
+  },
+  "next_required_user_action": "Physically delete selected Sound7, capture before audition, confirm Sound6/Sound7 silent and other sounds/pattern unchanged",
+  "limits": [
+    "Only physical removal of this unshared Sound7 at endpoint17579 is tested",
+    "Serialized record removal does not measure physical RAM reclamation",
+    "Public Sound7 deletion retains its earlier endpoint guard pending this capture"
+  ]
+}

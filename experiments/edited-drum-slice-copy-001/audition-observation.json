@@ -1,0 +1,13 @@
+{
+  "analysis_version": "cross-drum-copy-user-observation-0.1",
+  "user_report": "done and confirmed",
+  "capture_sha256": "ac23213297cb3a1d0b56515bbb78bb5485b72cf5e420376ea591ae11f0d647cc",
+  "hardware_validation_sha256": "1182591cbde96d18eca1d75113bd07f8ccc58d558de583656bd458f83b789199",
+  "restore_confirmed": true,
+  "sound10_key1_short_tone_and_source_key2_comparison_confirmed": true,
+  "sound9_keys1_and2_unchanged_confirmed": true,
+  "deviations_reported": false,
+  "limits": [
+    "User confirms the requested checks; exact duration, pitch/filter rendering and endpoint inclusivity were not measured"
+  ]
+}

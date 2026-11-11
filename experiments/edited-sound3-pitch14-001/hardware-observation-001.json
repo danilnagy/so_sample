@@ -1,0 +1,53 @@
+{
+  "analysis_version": "generated-pitch14-native-and-measured-interval-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Generated14 recaptures exact complete body with volume36 and unrelated state preserved; user confirms pattern plays; all six frozen comparisons support approximately one semitone above physically verified13 with unchanged loop",
+  "checks": {
+    "entire_native_target_and_preservation_pass": true,
+    "capture_artifact_and_registration_pins_match": true,
+    "all_frozen_frequency_audio_checks_pass": true,
+    "both_native_and_audio_input_report_hashes_match": true,
+    "six_comparisons_consistent_and_frequency_increases": true,
+    "all_six_registered_one_semitone_ratios_supported": true,
+    "capture_not_clipped": true,
+    "all_export_content_hashes_and_checks_pass": true,
+    "complete_export_body_exact": true
+  },
+  "raw_pitch_value_all16_cells": 14,
+  "volume_raw_value_all16_cells": 36,
+  "measured_frequency_hz_range": [
+    530.2512291324937,
+    530.251782607444
+  ],
+  "measured_interval_cents_range": [
+    99.53099478348801,
+    99.53447740231832
+  ],
+  "one_semitone_interval_supported_for13_to14": true,
+  "all_codes_pitch_scale_confirmed": false,
+  "full_pitch_field_width_confirmed": false,
+  "numeric_UI_value_confirmed": false,
+  "capture_sha256": "4d4f9c20f1ef89d33e427a040bcb63a519df2bf9865a340845219a28000c3c22",
+  "artifact_sha256": "8aa132cae313529ae51ab990ea856b513680e13f2e20aa6b292efa052d323ab5",
+  "artifact_path": "experiments/edited-sound3-pitch14-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "05e1d379603f4457fd1496e516460e0a8de50cadf0fc810e9c2f3ca1da1b4637",
+  "playback_sha256": "b4bb2beb0c08a9213af164dba4274ead1421d91d94b9b7e488ccf662f5266193",
+  "native_results_sha256": "37244f3da0f0376e85a50fe93c9231ce84a28a5c0ef53529693a77943140fe2d",
+  "audio_results_sha256": "7dba176dfb8619da2e5d67b6b380c2b9aa26f1e41a2f89352dd28a14332e8585",
+  "interval_results_sha256": "771e465f8df6b24ac6135bc0e7c379cf01cd4b14ff085fdedafe6cebec96b5c5",
+  "manual_observation_sha256": "4028fcf1d4b726bb8d7ece53a4175da473350809335014f2908a37ed7395a104",
+  "reference_observation_sha256": "51b9648e68ca972699bdce27e5a9d60de8c518398f2b9a5ef88f2e6700b24579",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.15069580078125,
+      0.145965576171875
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "limits": [
+    "Measured13-to14 interval is within the preregistered tolerance; no exact100-cent law for every code is claimed",
+    "Audio settings are instructed unchanged, with no independent hardware gain readback",
+    "Native endpoints1/25 and generated13/14 support a bounded raw-code editor policy; other sounds, per-step edits and unknown parameter contexts remain untested"
+  ]
+}

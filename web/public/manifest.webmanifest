@@ -1,0 +1,17 @@
+{
+  "name": "SoSample",
+  "short_name": "SoSample",
+  "description": "A sample, kit and pattern editor for the PO-33 K.O! in the browser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

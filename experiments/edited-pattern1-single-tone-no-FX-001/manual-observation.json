@@ -1,0 +1,8 @@
+{
+  "user_report": "Reported that the restore and the playback recording worked",
+  "session_answers": [],
+  "one_tone_per_loop_confirmation": null,
+  "interpretation": "No explicit listening answer was supplied in the session questions; the person reported completion only",
+  "capture_sha256": "7f19bbb61714693a0d88c198232e6c420b5e25f2fc3b50601133ffcc1b22e6b6",
+  "playback_sha256": "e13cfbaf68163a3728613e5283c4e04a63e5395cbe8d12b70bd0beefe1937fe9"
+}

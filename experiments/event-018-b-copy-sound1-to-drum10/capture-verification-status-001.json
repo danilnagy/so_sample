@@ -1,0 +1,28 @@
+{
+  "analysis_version": "second-drum-copy-capture-status-0.1",
+  "registration_sha256": "0176beeca193ba8fc23a7b687d8e6562c32b37aa29306dddb6da3044b09e960c",
+  "capture_sha256": "9f13e1cb22d5bad338db09218a0d860ac8d010c1cbeb8770013d9c8381fb2765",
+  "user_report": "done",
+  "native_frame_valid": false,
+  "control_hypotheses_evaluated": false,
+  "sound10_mapping_enabled": false,
+  "verification_status": "copy_reported_complete_but_capture_cannot_verify_native_state",
+  "failed_original_archive": "capture-attempt-001.wav",
+  "initial_failure": "initial-decode-failure.json",
+  "clock_failure": "clock-decode-failure.json",
+  "clock_window_diagnostics": "clock-window-diagnostics-001.json",
+  "repeat_frame_diagnostics": "repeat-frame-diagnostics-001.json",
+  "diagnostic_derivative": "derived/analysis-003/duplicate-frame-diagnostic.wav",
+  "observations": [
+    "First native checksum failure is late in the transfer, at byte84618",
+    "Fixed waveform-only clock windows250/500/1000 all show a late quarter-model discontinuity on both channels",
+    "Source stereo frame976947 repeats exactly in976948..976950; it is the only such run in the checked active span",
+    "A single diagnostic removal of those three duplicates still fails native and clock decoding"
+  ],
+  "limits": [
+    "No expected state, reference fields or native CRC outcomes select alignment, window candidates or duplicate removal",
+    "The diagnostic derivative is not an accepted backup and does not modify the original source",
+    "The cause of the late waveform discontinuity is not established; no digital clipping indicators are present",
+    "Copy locality and Sound10 mapping cannot be confirmed without a complete valid native frame"
+  ]
+}

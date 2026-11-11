@@ -1,0 +1,30 @@
+{
+  "source_sha256": "9cf4096737c90537a7dacbb0d4f4436c8730958468a7313eee97e73d5ed0c387",
+  "uploaded_file": "po_33_61.wav",
+  "original_file_preserved": true,
+  "canonical_copy": "capture.wav",
+  "first_crossing_attempt": {
+    "analysis": "analysis-001",
+    "threshold": 0.0063,
+    "native_valid": false,
+    "error": "Packet checksum differs at wire byte4095, tag0xd497"
+  },
+  "measured_clock_attempt": {
+    "analysis": "analysis-002",
+    "native_valid": false,
+    "error": "Packet checksum differs at wire byte4095, tag0xd497"
+  },
+  "predeclared_fixed_profile_order": [
+    0.004,
+    0.01,
+    0.02
+  ],
+  "all_three_profiles_native_valid_and_whole_bodies_identical": true,
+  "selected_artifact": "derived/analysis-003/capture.symbols.npz",
+  "selection_policy": "First valid profile in the fixed order, without expected copy data or symbol repair",
+  "native_body_sha256": "eb19589f3bf193f81611a7322bf79c98881531f24269eed2b8c67e342d731dfb",
+  "limits": [
+    "This supports a boundary/acquisition issue in the original profile; exact cause and general threshold policy are not established",
+    "The default decoder and all failed attempts remain unchanged"
+  ]
+}

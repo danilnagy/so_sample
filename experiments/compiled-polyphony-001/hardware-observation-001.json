@@ -1,0 +1,179 @@
+{
+  "analysis_version": "polyphony-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of fourteen distinct sounds stacked on shared steps; the registered method failed to run and an exploratory reading counted the voices",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_exploratory": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "registered_classification": "method_failed_to_run",
+  "frozen_method_error": "The recording must start in silence before the first note",
+  "exploratory": {
+    "classification": "voice_limit_4",
+    "stacks": {
+      "1": {
+        "requested": [
+          1,
+          2
+        ],
+        "present": [
+          1,
+          2
+        ],
+        "count": 2
+      },
+      "3": {
+        "requested": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "present": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "count": 4
+      },
+      "5": {
+        "requested": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "present": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "count": 4
+      },
+      "7": {
+        "requested": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "present": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "count": 4
+      },
+      "9": {
+        "requested": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          13,
+          14
+        ],
+        "present": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "count": 4
+      },
+      "11": {
+        "requested": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          13,
+          14,
+          11,
+          12,
+          15,
+          16
+        ],
+        "present": [
+          1,
+          2,
+          3,
+          11
+        ],
+        "count": 4
+      },
+      "13": {
+        "requested": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          13,
+          14,
+          11,
+          12,
+          15,
+          16
+        ],
+        "present": [
+          1,
+          2,
+          3,
+          11
+        ],
+        "count": 4
+      },
+      "15": {
+        "requested": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "present": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "count": 4
+      }
+    }
+  },
+  "decision_sha256": "459589bd6e2714f88ee72776091c22edf54972c4bef0de19266be804ca2d2c92",
+  "exploratory_sha256": "9de5de56b5b0de74fdc02e9822832e791aed6551bac613225a67ee79f6381a62",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "a98a384fa60daab3179ce2a840494e7f65517e97c238ec86e54c49d7be6bf143",
+  "session_answers": [],
+  "limits": [
+    "Fourteen distinct sounds; Sound9 and Sound10, whose hits are 43 ms, are not stacked",
+    "Presence is judged 100 to 240 ms after the step, so voices that cut out later are not seen"
+  ]
+}

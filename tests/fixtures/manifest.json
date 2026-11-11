@@ -1,0 +1,1015 @@
+{
+  "schema_version": 1,
+  "captures": [
+    {
+      "path": "experiments/baseline-001/capture.wav",
+      "sha256": "6312a96c924ff3414b51584a1e86a2a950860b168d03cab9d735b2ed1d370370",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11316060,
+        "channel_count": 2
+      },
+      "expected_decode": {
+        "decoder_version": "sign-crossings-0.2",
+        "left_symbol_count": 2004469,
+        "right_symbol_count": 2004468,
+        "left_symbols_sha256": "31ecee89e132a9865b42fea894b51042e0d780b16325484129261b9d6b528a3f",
+        "right_symbols_sha256": "e79b7bd36e59348fefdaacc47e74afd0a5682294d4682dc3ed202aae981e3114",
+        "upstream_compatible_sha256": "027a504ff33b61e6333cc06232d2c402f5e5c214a32316f3f32173ecbfd8c92a",
+        "review_basis": "Whole retained span matches the independently executed pinned upstream converter; full channel counts and boundary remainders reviewed separately. Not verified protocol framing.",
+        "originally_reviewed_decoder_version": "sign-crossings-0.1"
+      },
+      "expected_threshold_decode": {
+        "threshold": 0.02,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970366,
+        "left_symbols_sha256": "aa92cb0b5eed36156bf2d46ded301b702668325ac32dc32905df309d230ec740",
+        "right_symbol_count": 1970366,
+        "right_symbols_sha256": "429cd882272fda7a970e1242c648e7ec9b33755e42a821f1df2f10666d52b602"
+      }
+    },
+    {
+      "path": "experiments/baseline-002/capture.wav",
+      "sha256": "9edafa3485c9d621a588e54ae9939015c878986c294f1a41d6e2789cde2379df",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11200542,
+        "channel_count": 2
+      },
+      "expected_decode": {
+        "decoder_version": "sign-crossings-0.2",
+        "left_symbol_count": 1984242,
+        "left_symbols_sha256": "168a502a34e813a0e81507a951f3f9d1dd95046cb53ceb1a8eceb25cc0f81bd7",
+        "right_symbol_count": 1984237,
+        "right_symbols_sha256": "53ddd4e83a9167421c5e35da235e6035da443c8fae06e334dac672a0bd14fba9",
+        "upstream_compatible_sha256": "c2845183ac5826ccf413026d6af46184103227d7eb0f7d05d7c1218ffb60985b",
+        "review_basis": "Fixed-input regression from inspected stereo capture; reference-layout hash does not establish independent upstream execution.",
+        "originally_reviewed_decoder_version": "sign-crossings-0.1"
+      },
+      "expected_threshold_decode": {
+        "threshold": 0.02,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "56d60b579ab7bacce42e923a18ded2f47b89590c8d92f86f870371cb8ffd2ad4",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "d39ea2df96354881501bdde53cf3fb7e03ecbc1286a18ac695fef497e38ab527"
+      }
+    },
+    {
+      "path": "experiments/baseline-003/capture.wav",
+      "sha256": "0a785dd49b36ad4a415820d5deab46877ed493044a4e0fa5774f11e42ae2d6a5",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11200542,
+        "channel_count": 2
+      },
+      "expected_decode": {
+        "decoder_version": "sign-crossings-0.2",
+        "left_symbol_count": 1982063,
+        "left_symbols_sha256": "5fe98730e907dbf270230fd4dbd0be8d7c5aa78d3068d84eeb3c9c96337d23d0",
+        "right_symbol_count": 1982056,
+        "right_symbols_sha256": "5a15375e07c8d07ef05313ed46ab27dd3d53bc2280d6e5ed67cefb943d22d1d1",
+        "upstream_compatible_sha256": "d2d62e2f5b63e138b976440a485f06b8c044faeb4dfff06e438ab9271ae9591e",
+        "review_basis": "Fixed-input regression from inspected stereo capture; reference-layout hash does not establish independent upstream execution.",
+        "originally_reviewed_decoder_version": "sign-crossings-0.1"
+      },
+      "expected_threshold_decode": {
+        "threshold": 0.02,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "56d60b579ab7bacce42e923a18ded2f47b89590c8d92f86f870371cb8ffd2ad4",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "d39ea2df96354881501bdde53cf3fb7e03ecbc1286a18ac695fef497e38ab527"
+      }
+    },
+    {
+      "path": "experiments/reconstructed-001/capture.wav",
+      "sha256": "45d3ac95193c239e4cfadbae65e832a040506a81a200ff4472d7084255354c79",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11189931,
+        "channel_count": 2
+      }
+    },
+    {
+      "path": "experiments/reconstructed-002/capture.wav",
+      "sha256": "8f8107745ecd6473e1df17c7c5660b56352ca155de6631c98f70b4a623ba5c80",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11189933,
+        "channel_count": 2
+      },
+      "expected_post_restore_decode": {
+        "threshold": 0.0063,
+        "baseline_path": "experiments/baseline-002/capture.wav",
+        "baseline_threshold": 0.02,
+        "symbols_per_channel": 1970367,
+        "left_symbols_sha256": "56d60b579ab7bacce42e923a18ded2f47b89590c8d92f86f870371cb8ffd2ad4",
+        "right_symbols_sha256": "d39ea2df96354881501bdde53cf3fb7e03ecbc1286a18ac695fef497e38ab527"
+      }
+    },
+    {
+      "path": "experiments/event-001-a/capture.wav",
+      "sha256": "08365701899e09b058065d74a366cecfe2507066c2099ce8f63926c3c257c40f",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11200701,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "c872905c6188d4a6d62497a33ed76a5472323e24072a9840773ff95aa69b5c9b",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "ef84ce8a315cc8dc9e5133f9f3947d14279b869fde08f125c38fb6d76fa6336d"
+      }
+    },
+    {
+      "path": "experiments/event-001-b/capture.wav",
+      "sha256": "1a08cc0bb65f9d32104b79dd1a3be9c9a97c58c31ad3a47dd58644e256d504a1",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11190375,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "e8c1fecf22de5047a02ef59b87d5ee19e89af0036e46820dc824fb8a75d75777",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "8f0eb615e73cd937a77bb0234e2f43544360f9e756ab2cbe88201f61ff32a648"
+      }
+    },
+    {
+      "path": "experiments/event-001-a-return/capture.wav",
+      "sha256": "001bd4615a7bb5716fe4078e76d36e3092769ab0be030282d46d2d5a6b92b225",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11211541,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970357,
+        "left_symbols_sha256": "897b8603f09540a77699c7e8043e5a741f287c079ed4ebb7061f181bea0e4025",
+        "right_symbol_count": 1970357,
+        "right_symbols_sha256": "496badeaa4fe67377c126f9790e360d2fbab227bc619d3916fd8540f9ba3cffc"
+      }
+    },
+    {
+      "path": "experiments/event-002-a/capture.wav",
+      "sha256": "94acfd882f69ed003680c9068b9a57c484aa980b7162575398cabc036e588931",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11212195,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "c872905c6188d4a6d62497a33ed76a5472323e24072a9840773ff95aa69b5c9b",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "ef84ce8a315cc8dc9e5133f9f3947d14279b869fde08f125c38fb6d76fa6336d"
+      }
+    },
+    {
+      "path": "experiments/event-002-b/capture.wav",
+      "sha256": "03d9e64af825b4420291668c9bcdb013b18ee29e8a28925625f399139bbc2334",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11207693,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970366,
+        "left_symbols_sha256": "e42604dd3185f68c63ed59c2bd352579b9c0bc46d10cdd8df47a9b0d39d8839b",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "27a2fcac4459abae2c279cc1466be7dc07edc23476b8679c129167d94b9d5f4b"
+      }
+    },
+    {
+      "path": "experiments/event-002-a-return/capture.wav",
+      "sha256": "6038dafe7e519b80b4a011dc5f7dc708b9e255c4fe2ad8454b3092791a53c23a",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11201345,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "c872905c6188d4a6d62497a33ed76a5472323e24072a9840773ff95aa69b5c9b",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "ef84ce8a315cc8dc9e5133f9f3947d14279b869fde08f125c38fb6d76fa6336d"
+      }
+    },
+    {
+      "path": "experiments/event-003-b/capture.wav",
+      "sha256": "38e774432509ed0ae86b7d552b75d19543e384ef5519ffecffe2385b1bb91ac7",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11264463,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "c915ef2ff4fbeeee6a07e5b8e96c1f1ead53fcd2fc45137394499bfa4e12d59c",
+        "right_symbol_count": 1970366,
+        "right_symbols_sha256": "7db9ba5c57f56506aa957cdd118bbb5b935dbc1cdd48478b997dbac08e0f607a"
+      }
+    },
+    {
+      "path": "experiments/event-003-a-return/capture.wav",
+      "sha256": "b2abdd86ddad17ef50fa236fe0f97158a1cac5e0dcb2e38845774e7968198e8c",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11233152,
+        "channel_count": 2
+      },
+      "expected_event_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.1",
+        "left_symbol_count": 1970367,
+        "left_symbols_sha256": "c872905c6188d4a6d62497a33ed76a5472323e24072a9840773ff95aa69b5c9b",
+        "right_symbol_count": 1970367,
+        "right_symbols_sha256": "ef84ce8a315cc8dc9e5133f9f3947d14279b869fde08f125c38fb6d76fa6336d"
+      }
+    },
+    {
+      "path": "experiments/event-004-b-repeat/capture.wav",
+      "sha256": "b36cd797d11e808b4481b32aef0808c978905d52466c8f2599018445a107490d",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11204130,
+        "channel_count": 2
+      },
+      "expected_populated_repeat": {
+        "threshold": 0.0063,
+        "reference_id": "event-001-b",
+        "symbols_per_channel": 1970367,
+        "left_symbols_sha256": "e8c1fecf22de5047a02ef59b87d5ee19e89af0036e46820dc824fb8a75d75777",
+        "right_symbols_sha256": "8f0eb615e73cd937a77bb0234e2f43544360f9e756ab2cbe88201f61ff32a648"
+      }
+    },
+    {
+      "path": "experiments/event-005-b-joint/capture.wav",
+      "sha256": "8ae9bae0ec743a18c0de55b482f8c7aecc9125f15c52b0c88a8b765a3cd78d2d",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11221599,
+        "channel_count": 2
+      },
+      "expected_joint_decode": {
+        "threshold": 0.0063,
+        "symbols_per_channel": 1970367,
+        "left_symbols_sha256": "7f937c4722f6021f94f16dff59fe7bf48e6c7359afa4acd9c6124202361dab77",
+        "right_symbols_sha256": "54cbea9b4cb8595f396149cbdd55c457d94e2d32829c93cdca4cc387cbfa10e1"
+      }
+    },
+    {
+      "path": "experiments/event-006-b-tone/capture.wav",
+      "sha256": "dfcd59dfa2ae04973f49090b0997e7f1508aaf62e18a9293362240ad397e54f7",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 11783334,
+        "channel_count": 2
+      },
+      "expected_tone_decode": {
+        "threshold": 0.0063,
+        "left_symbol_count": 2070730,
+        "right_symbol_count": 2070729,
+        "left_symbols_sha256": "c94f8f786796f7d8f35c049ed55751f87ad065dc46e8daa1cc85d9ac49383f88",
+        "right_symbols_sha256": "3c2c3d5935c3b69a14828914a8d8ca6b125ab8311f427407b7ded96ebb8b17fb"
+      }
+    },
+    {
+      "path": "experiments/empty-001-a/capture.wav",
+      "sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 358047,
+        "channel_count": 2
+      },
+      "expected_empty_decode": {
+        "threshold": 0.0063,
+        "symbols_per_channel": 45033,
+        "left_symbols_sha256": "d27a35c57dbe2eb20d76a6d471306085393eeebf3c82b33ef752c23f8d3775ef",
+        "right_symbols_sha256": "46e9950adfd944709295570d0733fcc5630140de5db7c621deb4e091807eb299",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0
+          ],
+          "right": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "path": "experiments/empty-001-a-repeat/capture.wav",
+      "sha256": "65d8145f519c71bec0162fb38c6fe134008a096cf46183be233980ff34259a57",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 377760,
+        "channel_count": 2
+      },
+      "expected_empty_decode": {
+        "threshold": 0.0063,
+        "symbols_per_channel": 45033,
+        "left_symbols_sha256": "d27a35c57dbe2eb20d76a6d471306085393eeebf3c82b33ef752c23f8d3775ef",
+        "right_symbols_sha256": "46e9950adfd944709295570d0733fcc5630140de5db7c621deb4e091807eb299",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0
+          ],
+          "right": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "path": "experiments/empty-001-b-tone/capture.wav",
+      "sha256": "74d6be2ea498c4fcebed2963ef127b6a6addee07a87423148b7dae40f1d5c80c",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1050913,
+        "channel_count": 2
+      },
+      "expected_minimal_tone_decode": {
+        "threshold": 0.0063,
+        "symbols_per_channel": 178847,
+        "left_symbols_sha256": "31584cbe74aa06690a5bda03717b17066c304cbb8c83d61194583cececd2303a",
+        "right_symbols_sha256": "3aea1bc259c693be6a686e9cdf15c07494f03269ca4847634f7ed4a0792e7d8a",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0,
+            1,
+            0
+          ],
+          "right": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "path": "experiments/empty-001-b-tone-repeat/capture.wav",
+      "sha256": "284166f13a6e926d1fcf44cb213e82b0c52be6afaf331279836f8716d8cf9a23",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1064423,
+        "channel_count": 2
+      },
+      "expected_minimal_tone_decode": {
+        "threshold": 0.0063,
+        "symbols_per_channel": 178847,
+        "left_symbols_sha256": "31584cbe74aa06690a5bda03717b17066c304cbb8c83d61194583cececd2303a",
+        "right_symbols_sha256": "3aea1bc259c693be6a686e9cdf15c07494f03269ca4847634f7ed4a0792e7d8a",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0,
+            1,
+            0
+          ],
+          "right": [
+            0
+          ]
+        }
+      }
+    },
+    {
+      "path": "experiments/empty-001-c-copy-to-1/capture.wav",
+      "sha256": "b38ea70cc43b6ebbb2797a213c156bc396c59eb57648de1c4e9943a4544eaa74",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1063407,
+        "channel_count": 2
+      },
+      "expected_copy_decode": {
+        "threshold": 0.0063,
+        "symbols_per_channel": 178868,
+        "left_symbols_sha256": "560c89d9839f237e4159e9d7d940a076add30dd152bd73ee5e7c2cdd325b2ed0",
+        "right_symbols_sha256": "05f405de0656ced94a94dadc62a74c8154e7dbb0580d058b69909d4a1744cfe7",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0,
+            1,
+            0
+          ],
+          "right": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "path": "experiments/empty-001-d-copy-to-2/capture.wav",
+      "sha256": "7acb719c345ba68f142fe9872662bf603b108d5b3671e82c49fa61320c1c8d0e",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1142189,
+        "channel_count": 2
+      },
+      "expected_recovered_copy_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "symbols_per_channel": 178900,
+        "left_symbols_sha256": "72bebba40ff2fc55aa31c66589b3f6211f5e9137211594cd5a4a94358e020397",
+        "right_symbols_sha256": "9e1c996e19dbabdeb3285005213e3c911d9558cb4d47762eccdc30819bfdfab2",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0
+          ],
+          "right": [
+            1
+          ]
+        }
+      }
+    },
+    {
+      "path": "experiments/empty-001-copy2-clean-a/capture.wav",
+      "sha256": "d6c521f933a005ae4eb1a6eda8317a809fd9d0ebdc66d7f1f315a3936cffdf66",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1064712,
+        "channel_count": 2
+      },
+      "expected_clean_copy_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "symbols_per_channel": 178868,
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0
+          ],
+          "right": []
+        },
+        "left_symbols_sha256": "560c89d9839f237e4159e9d7d940a076add30dd152bd73ee5e7c2cdd325b2ed0",
+        "right_symbols_sha256": "05f405de0656ced94a94dadc62a74c8154e7dbb0580d058b69909d4a1744cfe7"
+      }
+    },
+    {
+      "path": "experiments/empty-001-copy2-clean-b/capture.wav",
+      "sha256": "bb3991eba30c5c99234144b0f53a83ea505afd29d802c690b10502cad1b0905d",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1066948,
+        "channel_count": 2
+      },
+      "expected_clean_copy_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "symbols_per_channel": 178900,
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0
+          ],
+          "right": [
+            1
+          ]
+        },
+        "left_symbols_sha256": "72bebba40ff2fc55aa31c66589b3f6211f5e9137211594cd5a4a94358e020397",
+        "right_symbols_sha256": "9e1c996e19dbabdeb3285005213e3c911d9558cb4d47762eccdc30819bfdfab2"
+      }
+    },
+    {
+      "path": "experiments/empty-001-e-copy-to-3/capture.wav",
+      "sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1076868,
+        "channel_count": 2
+      },
+      "expected_third_copy_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0
+          ],
+          "right": [
+            1
+          ]
+        },
+        "left_symbol_count": 178922,
+        "left_symbols_sha256": "5461665a60291afd24623b25c6ca2951e3a22f042660ef03f01548582a8865a8",
+        "right_symbol_count": 178921,
+        "right_symbols_sha256": "40b2b2eea02341d918adf847c8e402174052957e4630212c5fcef7df42e5430d"
+      }
+    },
+    {
+      "path": "experiments/empty-001-f-sound3-trim-min/capture.wav",
+      "sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1096650,
+        "channel_count": 2
+      },
+      "expected_sound3_trim_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            1,
+            0
+          ]
+        },
+        "left_symbol_count": 178922,
+        "left_symbols_sha256": "21d543317ab9c98f1b198d729038ce8e63a07545c4d554004c6b5021cd568366",
+        "right_symbol_count": 178922,
+        "right_symbols_sha256": "42e5d84cc100da1465f277eef8a54aafdf0074b59cafe99413c6044c5bde219e"
+      }
+    },
+    {
+      "path": "experiments/empty-001-g-sound3-trim-return/capture.wav",
+      "sha256": "237230f9401b9be7093d306beaf38fbc139cc55dcfaf66570508d474d4e15119",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1085664,
+        "channel_count": 2
+      },
+      "expected_sound3_trim_return_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            1
+          ],
+          "right": [
+            1
+          ]
+        },
+        "left_symbol_count": 178921,
+        "left_symbols_sha256": "09b4f2c115396c17391153b40ab5c578607bbad205ef1f596c5c1d8eb0c4f7cb",
+        "right_symbol_count": 178921,
+        "right_symbols_sha256": "209923ce81e45a82de77cbf2b221afaf724da9e252bc66bdd441baa917a11399"
+      }
+    },
+    {
+      "path": "experiments/empty-001-h-sound3-copy-return/capture.wav",
+      "sha256": "cbcec520586e91ba48b46b4e05fbca58b6b6eaf392974a592ef6a8b7641da7ee",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1093371,
+        "channel_count": 2
+      },
+      "expected_sound3_copy_return_decode": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "incomplete_final_sign_intervals": {
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            1
+          ]
+        },
+        "left_symbol_count": 178922,
+        "left_symbols_sha256": "5461665a60291afd24623b25c6ca2951e3a22f042660ef03f01548582a8865a8",
+        "right_symbol_count": 178921,
+        "right_symbols_sha256": "40b2b2eea02341d918adf847c8e402174052957e4630212c5fcef7df42e5430d"
+      }
+    },
+    {
+      "path": "experiments/empty-001-h-sound3-copy-return/sample-playback.wav",
+      "sha256": "0ab0c5b150bc6c32b70f4f78705b6c7797a6d4835077786197dbae322ebef047",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 262395,
+        "channel_count": 2
+      },
+      "expected_minimal_playback": {
+        "audible_duration_seconds": 1.25,
+        "dominant_frequency_hz": 561.954,
+        "frequency_tolerance_hz": 0.02,
+        "minimum_single_sine_explained_variance": 0.99
+      }
+    },
+    {
+      "path": "experiments/edited-trim-001/capture.wav",
+      "sha256": "e039a7ce9392e44827424134bee6f08439fd66cd45b2b7712759b4c89794bc0c",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1066936,
+        "channel_count": 2
+      },
+      "expected_native_trim_recapture": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "0191ad7ee47710d5bcb117d8b3d1c9774c972ff06df829f9cb302d2f2046c4d7",
+        "sound_counters": {
+          "1": 64704,
+          "2": 64704,
+          "3": 8000,
+          "8": 64704
+        },
+        "backing_sample_sha256": "169ee14d28e9c5de29885d8bf9f42c940c67fcf6f348bcb5241dec661fa722d4"
+      }
+    },
+    {
+      "path": "experiments/edited-sample-001/capture.wav",
+      "sha256": "94b9b95f3468f4781d52542756cb858479a2a4cd3969826ad31658479919312d",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1072830,
+        "channel_count": 2
+      },
+      "expected_native_sample_recapture": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "8f851166868fd99e7935a5942a2b82181f0268c3a05303f08852a0f06ebb30a0",
+        "sound_counters": {
+          "1": 64704,
+          "2": 64704,
+          "3": 8000,
+          "8": 64704
+        },
+        "backing_codes_sha256": "80b1182143cb5ed850776979536137c650370ad2f31a8dfb4c14f357af89762d"
+      }
+    },
+    {
+      "path": "experiments/event-007-b-melodic/capture.wav",
+      "sha256": "4b5a18904460369f01abd6dce3d621b8264ccc1aee9f5b8d273e3c1db79dcb5f",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1066614,
+        "channel_count": 2
+      },
+      "expected_native_melodic_step1": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "c5a4889ed680aa756c0a04f2df92bd194319f79a6de1603a20558976043e67a9",
+        "pattern1_byte_changes": [
+          {
+            "offset": 6,
+            "old": 0,
+            "new": 13
+          },
+          {
+            "offset": 7,
+            "old": 0,
+            "new": 248
+          },
+          {
+            "offset": 8,
+            "old": 0,
+            "new": 131
+          },
+          {
+            "offset": 770,
+            "old": 0,
+            "new": 240
+          }
+        ],
+        "changed_plain_packet_indices": [
+          4,
+          7
+        ]
+      }
+    },
+    {
+      "path": "experiments/edited-pattern-001/capture.wav",
+      "sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1092107,
+        "channel_count": 2
+      },
+      "expected_native_pattern_recapture": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "8b39765df9a4caf71e509f54b0c49e2f0d95ad1a60f4effa46daa687259d0104",
+        "populated_steps": [
+          1,
+          5,
+          9,
+          13
+        ],
+        "capture_timing": "after_pattern_playback_user_reported",
+        "playback_induced_native_differences_observed": false
+      }
+    },
+    {
+      "path": "experiments/event-008-b-melodic-key2/capture.wav",
+      "sha256": "ff78fa4c5b29b4b1ec4df8fdfa89cec54020da7e9059b3b342c78672edd9d90d",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1094593,
+        "channel_count": 2
+      },
+      "expected_native_melodic_key2": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "82d11b01d01f04708b099c3e36f50f2474c09a2aaa85fa68f2511286a0159307",
+        "pattern1_byte_changes": [
+          {
+            "offset": 834,
+            "old": 240,
+            "new": 241
+          }
+        ],
+        "changed_plain_packet_indices": [
+          7
+        ]
+      }
+    },
+    {
+      "path": "experiments/edited-note-key-001/capture.wav",
+      "sha256": "c5add754a44ac012a44114156839349f64024c6a2f69660571dbb5b1d59c67ed",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1101638,
+        "channel_count": 2
+      },
+      "expected_native_key_restore": {
+        "acquisition_threshold": 0.0063,
+        "decoder_version": "amplitude-clock-0.1",
+        "initial_crossing_crc_failure_byte": 13130,
+        "packet_count": 511,
+        "encoded_body_sha256": "91b37d61e3bc71de72748dfd846892e62a7d839a9332f13a6f9c56687cdeadf0",
+        "keyboard_keys_by_step": {
+          "1": 1,
+          "5": 2,
+          "9": 1,
+          "13": 2
+        },
+        "clock_artifact_path": "experiments/edited-note-key-001/derived/analysis-002/capture.symbols.npz"
+      }
+    },
+    {
+      "path": "experiments/event-009-b-melodic-key16/capture.wav",
+      "sha256": "a0c0bea848c7c1bf56349e695edaae8740cd465d6df044512972d6c45ed5c0f1",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1063318,
+        "channel_count": 2
+      },
+      "expected_native_key16_control": {
+        "acquisition_threshold": 0.0063,
+        "decoder_version": "amplitude-clock-0.1",
+        "initial_crossing_crc_failure_byte": 17902,
+        "packet_count": 511,
+        "encoded_body_sha256": "55311018711e4b4b798609ce7c40bedb613d6dbb246ea2423aea8b8049db9fe9",
+        "pattern1_byte_changes": [
+          {
+            "offset": 834,
+            "old": 241,
+            "new": 255
+          }
+        ],
+        "clock_artifact_path": "experiments/event-009-b-melodic-key16/derived/analysis-002/capture.symbols.npz"
+      }
+    },
+    {
+      "path": "experiments/event-010-b-melodic-key7/capture.wav",
+      "sha256": "19d2e80e347e229081a8363668807a5ca269f8645820d59224a3f6d974cb245c",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1113525,
+        "channel_count": 2
+      },
+      "expected_native_key7_control": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "packet_count": 511,
+        "encoded_body_sha256": "6b4f5fd40b5b7c66a754c7a6f2d870015e69e225f24a2fe9730a6f3a135705ff",
+        "pattern1_byte_changes": [
+          {
+            "offset": 834,
+            "old": 255,
+            "new": 246
+          }
+        ]
+      }
+    },
+    {
+      "path": "experiments/edited-four-keys-001/capture.wav",
+      "sha256": "2cc8b8df219f49e9a0721d67ecf719c37575f9f9da7f264eac5b2c4736eb84bf",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1096325,
+        "channel_count": 2
+      },
+      "expected_native_four_key_restore": {
+        "acquisition_threshold": 0.0063,
+        "decoder_version": "amplitude-clock-0.1",
+        "initial_crossing_crc_failure_byte": 9941,
+        "packet_count": 511,
+        "encoded_body_sha256": "9b87309f572b188cd1e1a2651b1ca4feec5cfa8fb669068631042ca8f49465f0",
+        "keyboard_keys_by_step": {
+          "1": 1,
+          "5": 2,
+          "9": 7,
+          "13": 16
+        },
+        "clock_artifact_path": "experiments/edited-four-keys-001/derived/analysis-002/capture.symbols.npz"
+      }
+    },
+    {
+      "path": "experiments/event-011-b-sound2-layer/capture.wav",
+      "sha256": "34b9b78a92d62e76383ee2bd673ae1590793e10b2376ed2dd19974d8c1d16549",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1120267,
+        "channel_count": 2
+      },
+      "expected_native_sound2_addition": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "packet_count": 511,
+        "encoded_body_sha256": "e2d6c4a33c045deec30c27449a39182dc6bd0fb80bbe002aba85b0678ce4681d",
+        "pattern1_byte_changes": [
+          {
+            "offset": 3,
+            "old": 0,
+            "new": 13
+          },
+          {
+            "offset": 4,
+            "old": 0,
+            "new": 40
+          },
+          {
+            "offset": 5,
+            "old": 0,
+            "new": 49
+          },
+          {
+            "offset": 769,
+            "old": 0,
+            "new": 240
+          }
+        ],
+        "step1_sound_slots": [
+          2,
+          3
+        ],
+        "primary_equality_hypothesis_fit": false
+      }
+    },
+    {
+      "path": "experiments/edited-sound2-cell-001/capture.wav",
+      "sha256": "1adb6964a06f239adfcd599c2996b6d2d075e67576e63955e150ec8c5d84b56f",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1095691,
+        "channel_count": 2
+      },
+      "expected_native_sound2_cell_copy": {
+        "threshold": 0.0063,
+        "decoder_version": "sign-crossings-0.2",
+        "packet_count": 511,
+        "encoded_body_sha256": "4362aa66f6c18e7351b39016eb1b801dfa4a6ce0f4935861d4aaf45c8737668b",
+        "sound2_steps": [
+          1,
+          9
+        ],
+        "sound3_keys_by_step": {
+          "1": 1,
+          "5": 2,
+          "9": 7,
+          "13": 16
+        }
+      }
+    },
+    {
+      "path": "experiments/edited-sound2-remove-001/capture.wav",
+      "sha256": "aa8c083704bb92aa44893bafc3abd35e2bc05182fbb01ca7511f04752dafeb7d",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1121904,
+        "channel_count": 2
+      },
+      "expected_native_sound2_removal": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+        "sound2_steps": [
+          9
+        ],
+        "sound3_keys_by_step": {
+          "1": 1,
+          "5": 2,
+          "9": 7,
+          "13": 16
+        }
+      }
+    },
+    {
+      "path": "experiments/event-012-b-sound3-start/capture.wav",
+      "sha256": "24502f734e1d9170a1c5a4ac89d104fafeec3514478f39749919521336f68673",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1081082,
+        "channel_count": 2
+      },
+      "expected_native_sound3_start": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "4b697a34bea74f34654107463a9586afe31e9db1b55bf11f4f057f6e7f72ddc2",
+        "reference_header_hex": "a17a0000ffff000000",
+        "hypothesis_checks": {
+          "first_field_is_start": true,
+          "second_field_unchanged": false,
+          "second_field_moves_with_start": false
+        }
+      }
+    },
+    {
+      "path": "experiments/event-013-b-sound3-start-min/capture.wav",
+      "sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1134134,
+        "channel_count": 2
+      },
+      "expected_native_nonzero_minimum": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "002346273de5b027d53b593e8183b3695ba680bcd01543286def0bc68d24f696",
+        "reference_header_hex": "a17a0000107b000000",
+        "exact_hypotheses_fit": false,
+        "raw_width": 111,
+        "audition_user_report": "Very short click or burst"
+      }
+    },
+    {
+      "path": "experiments/edited-nonzero-trim-001/capture.wav",
+      "sha256": "7935f7cfe3ab7a8b8d45dbe942f3144dad2c7eebb09c8aa52fb06f96a1d632d8",
+      "expected_inspection": {
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1087947,
+        "channel_count": 2
+      },
+      "expected_native_verified_window": {
+        "threshold": 0.0063,
+        "packet_count": 511,
+        "encoded_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+        "reference_header_hex": "a17a0000e199000000",
+        "tone_checks_user_confirmed": true
+      }
+    }
+  ]
+}

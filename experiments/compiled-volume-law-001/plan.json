@@ -1,0 +1,56 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "450368043127d94cf03aa35ed08b31fe19904a15cfb76964cde52bbb835bfa2f",
+  "source_body_sha256": "3aead0de49e5507898fc9f5b8d319cab595ef7f8373ef3f817963fcbec2ec9e0",
+  "operations": [
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 3,
+      "parameter": "pitch",
+      "values": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 3,
+      "parameter": "volume",
+      "values": [
+        36,
+        0,
+        63,
+        9,
+        54,
+        18,
+        45,
+        27,
+        3,
+        60,
+        12,
+        48,
+        21,
+        39,
+        6,
+        30
+      ]
+    }
+  ]
+}

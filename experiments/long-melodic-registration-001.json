@@ -1,0 +1,74 @@
+{
+  "analysis_version": "long-melodic-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-long-melodic-001",
+  "source_artifact": "experiments/compiled-sample-memory-002/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "1ca559930bfe7a1d705988e79461a4ef552dd69e9aad751fe04a6e22ddfd63f8",
+  "source_capture_sha256": "bedc6276876dc433d6c58c6048aa024d242034874541fd274be6f182978eba20",
+  "sample": {
+    "path": "experiments/long-melodic-sample-001/four-segments-400-700hz-4s.wav",
+    "sha256": "e223d0426c16c8be70188c97c1bac788b7bbaeae82a67f072a6fc2df1d13fb4c",
+    "segment_hz": [
+      400.0,
+      500.0,
+      600.0,
+      700.0
+    ],
+    "segment_seconds": 1.0
+  },
+  "allocation": {
+    "sound_slot": 6,
+    "source_record_was_empty": false,
+    "source_capacity_codes": 36864,
+    "source_header_hex": "00000000dd6d000005",
+    "capacity_codes": 94208,
+    "endpoint": 93750,
+    "zero_tail_codes": 458,
+    "total_backing_capacity_codes": 872448
+  },
+  "total_capacity_codes": 872448,
+  "import_report_sha256": "1383c2094e3ac447b2b294de48170779a8fd552274f147c18844a20aedb73998",
+  "plan_sha256": "dccc6d1d97a60e3c4ceb027263bfd3794c42939c095288b398ba5744a2728537",
+  "expected_body_sha256": "55f5864c6402a4dd324c52514e0c4f1bc157406f762bf675ee9ec859fb6c5335",
+  "edited_artifact_sha256": "d7a36cfaefff26e632864dee48bb2389b613efddfe6407623d6fdb139a587353",
+  "restore_wav_sha256": "ade889d9b66e079fcc5eec5ce88abf81234f324132746c17ac54bbf43c2c1d90",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "loop_seconds": 4.0,
+    "loops": 5,
+    "tail_margin_seconds": 0.1,
+    "threshold_fraction_of_loop_peak": 0.1,
+    "quarters": 4,
+    "window_seconds": 0.05,
+    "fft_size": 65536,
+    "duration_tolerance_ms": 10.0,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "66a2607334729e221362455fe3d5364264a577872724ab103933d030f9ae6a61",
+  "expected_duration_ms": 2669.679708340069,
+  "expected_quarter_hz": [
+    599.3228307506727,
+    749.1535384383408,
+    898.9842461260089,
+    1048.814953813677
+  ],
+  "decision": [
+    "The backup must equal the compiled target exactly, every imported code included",
+    "whole_sample_plays holds when the five-loop median duration and at least 4 of 5 loops are within 10 ms of 2669.7 ms",
+    "quarters_in_order holds when every quarter's median and at least 4 of 5 loops are within 20 cents"
+  ],
+  "limits": [
+    "One 4.0 s sample in Sound6 at key 1 and pitch code 13; other lengths and slots follow by the same rule but are not played"
+  ]
+}

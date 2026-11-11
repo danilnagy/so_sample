@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed I heard first high then low",
+  "reported_section_order": [
+    "high",
+    "low"
+  ],
+  "measured_step_boundary_or_frequency_ratio": null,
+  "capture_sha256": "c8e5e2058e33d76f1e887e44876925115bfb0e802f01b1c0955dc24d3ac3211d"
+}

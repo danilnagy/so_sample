@@ -1,0 +1,61 @@
+{
+  "analysis_version": "sound3-start-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-sound2-remove-001",
+  "baseline_source_sha256": "aa8c083704bb92aa44893bafc3abd35e2bc05182fbb01ca7511f04752dafeb7d",
+  "baseline_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+  "baseline_artifact_sha256": "0a79c633e5d383ce066c4ce8ecc4f76275f41543e3744dd6ee6895db9b9b1fed",
+  "baseline_artifact": "../edited-sound2-remove-001/derived/analysis-001/capture.symbols.npz",
+  "target_capture": "event-012-b-sound3-start/capture.wav",
+  "expected_change": {
+    "sound_slot": 3,
+    "parameter": "TRIM knob A start point",
+    "knob_B": "Untouched; baseline B-controlled counter8000",
+    "target_knob_A_position": "approximately halfway through its travel"
+  },
+  "control_checks": {
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "sound3_reference_packet_index": 375,
+    "sound3_reference_before_hex": "00000000401f000000",
+    "sound3_owner_id": 0,
+    "only_allowed_payload_offsets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "patterns": "All sixteen pattern payloads identical, including note primary and auxiliary cells",
+    "backing_samples": "All65536 owner codes and all other sound headers/data identical",
+    "other_plain_packets": "Every packet except the existing Sound3 reference must be identical",
+    "sound3_record_size": 9,
+    "ownership": "Sound3 owner byte remains0; no allocation or sample-content changes"
+  },
+  "separately_evaluated_hypotheses": {
+    "first_field_is_start": {
+      "encoding": "uint32 little-endian at offsets0..3",
+      "expected": "Nonzero value smaller than the65536-code backing buffer"
+    },
+    "second_field_unchanged": {
+      "encoding": "uint32 little-endian at offsets4..7",
+      "expected_value": 8000,
+      "interpretation": "Candidate length semantics; constant value alone is ambiguous if new start remains below8000"
+    },
+    "second_field_moves_with_start": {
+      "encoding": "uint32 little-endian at offsets4..7",
+      "expected_difference_second_minus_first": 8000,
+      "interpretation": "Alternative endpoint representation preserving the prior raw width"
+    }
+  },
+  "limits": [
+    "No exact start value is predicted from an approximate physical knob position",
+    "Alternative second-field hypotheses are evaluated independently, not treated as simultaneous requirements",
+    "A small start with constant second field does not resolve endpoint versus length without further evidence",
+    "No nonzero-start sample extractor or writer is enabled by registration",
+    "Measured-clock recovery, if needed, must not use the expected fields or a target frame"
+  ]
+}

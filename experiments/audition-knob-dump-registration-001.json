@@ -1,0 +1,28 @@
+{
+  "analysis_version": "audition-knob-dump-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_backup": true,
+  "experiment_id": "observe-audition-knob-dump-001",
+  "target_artifact": "experiments/observe-audition-locks-001/edited.symbols.npz",
+  "target_artifact_sha256": "ba3f2508cc637bc3e0ac47702a5b5c9133189711c17dea0195251c4a6b42e6b9",
+  "restore_of_record_sha256": "1787482d3b70ada9fc872ec7d009c69c0b53b9c2032d4550da15f3d9b68aeb39",
+  "device_actions_since_restore": [
+    "Pattern 1 played several times",
+    "Sound 16 selected (SOUND + key 16)",
+    "knob B turned fully clockwise with WRITE off",
+    "key 1 pressed by hand many times"
+  ],
+  "instructions": "Back up the device as it is now. Do not restore first and do not touch the knobs.\nKeep WRITE off and playback stopped, then press WRITE + SOUND + PLAY when the recording is armed.",
+  "outcomes": [
+    "nothing_stored",
+    "global_records_only",
+    "sound16_cells_only",
+    "sound_records_only",
+    "mixed"
+  ],
+  "prediction": "nothing_stored",
+  "prediction_basis": "docs/sound-knobs-results.md: knobs turned without WRITE stored nothing",
+  "limits": [
+    "One device; the actions since the restore are as the person reports them"
+  ]
+}

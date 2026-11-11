@@ -1,0 +1,71 @@
+{
+  "analysis_version": "FILTER-selection-unchanged-native-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Complete physical backup after existing ordinary playback and confirmed FILTER selection with knobs untouched matches the accepted generated14 body and all packets exactly",
+  "checks": {
+    "all_selection_native_and_exact_body_checks_pass": true,
+    "independent_capture_artifact_and_registration_pins_match": true,
+    "registered_source_capture_artifact_and_observation_match": true,
+    "all16_raw_pitch_values_stay14": true,
+    "capture_not_clipped": true,
+    "all_export_checks_and_content_hashes_pass": true,
+    "complete_export_body_exact": true
+  },
+  "raw_pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "volume_raw_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "capture_sha256": "501a0de245693c8fd23c56fb8ca7a04499a42cbe13578e3fe4aa9729fc1b2626",
+  "artifact_sha256": "cd7943d6e0e43810e726b54d1b7d549f9058ee9f2304ce5486c9922b1331516f",
+  "artifact_path": "experiments/event-054-a-sound3-filter-selection/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "05e1d379603f4457fd1496e516460e0a8de50cadf0fc810e9c2f3ca1da1b4637",
+  "selection_results_sha256": "ed75782800a667a9480d51f10ccb34398a90728a97f88ddf7eab3b0c78393c05",
+  "manual_observation_sha256": "c64f35d3e7f1b3f0fd0354af4b998a1bae0c3039e65437f43513d06ba3f091ae",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.150115966796875,
+      0.14434814453125
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "filter_location_or_units_confirmed": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Combined already performed playback and FILTER selection leave no serialized change in this control",
+    "No knob movement or recorded FILTER data exists yet; candidate masks remain unverified",
+    "No separately reported numeric display or audible filter observation is inferred"
+  ]
+}

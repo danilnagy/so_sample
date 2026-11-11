@@ -1,0 +1,23 @@
+{
+  "experiment_id": "event-037-b-swing-maximum",
+  "capture_status": "validated_swing_max_S18_single_byte_association",
+  "baseline_id": "edited-fine-tempo137-001",
+  "expected_file": "capture.wav",
+  "registration": "swing-registration.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off; do not move knob B",
+    "Hold BPM continuously while turning only knob A fully clockwise; note any swing display value or label",
+    "Stop moving A before releasing BPM, then leave both knobs unchanged; read tempo without pressing BPM and report expected137",
+    "Before playback record complete stereo capture.wav at established reduced levels with one second trailing silence",
+    "Report the swing display text or no numeric display, and confirm tempo unchanged"
+  ],
+  "source_sha256": "2fd1195678408838c33a89488f0a9b131c143c9a962f3a9964d22ef70d290339",
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "native_results": "native-swing-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_text": "S18",
+  "serialized_tempo_bpm": 137,
+  "project": "../exported-swing-max18-001/project.json",
+  "swing_writer_enabled": false
+}

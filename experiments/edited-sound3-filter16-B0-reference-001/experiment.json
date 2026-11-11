@@ -1,0 +1,23 @@
+{
+  "experiment_id": "edited-sound3-filter16-B0-reference-001",
+  "capture_status": "validated_exact_reference_and_usable_frozen_audio",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-filter16-B0-B63-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_complete_target_filtered_listening_and_usable_audio"
+  },
+  "planned_actions": [
+    "For B63 wait for verified B0 native reception and usable reference audio",
+    "Restore with established stereo setup and level; keep both knobs and audio settings unchanged",
+    "Before ordinary playback save full capture.wav at established reduced level with one second trailing silence",
+    "Select Pattern1/Sound3/FILTER without knob movement; separately record12 to15 seconds ordinary playback as playback.wav, stop/write off",
+    "Report successful restore and actual sound; no WRITE-held pass or required remembered comparison"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "audio_results": "resonance-frequency-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-filter16-B0-reference-001/project.json",
+  "playback_duration_note": "10.96s is shorter than requested12..15s but passes unchanged registered coverage; no refitting"
+}

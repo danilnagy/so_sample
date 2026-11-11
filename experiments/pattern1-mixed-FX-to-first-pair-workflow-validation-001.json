@@ -1,0 +1,26 @@
+{
+  "analysis_version": "accepted-mixed-effects-to-complementary-first-pair-handoff-audit-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "accepted_mixed_native_and_hardware_checks_pass": true,
+    "source_identity_and_native_evidence_bound": true,
+    "higher_then_lower_report_not_promoted_to_nibble_order": true,
+    "first_tone_method_and_fit_helper_frozen_before_data": true,
+    "native_and_registration_stay_hardware_unverified": true,
+    "a_native_actual_waveform_and_preservation_pass": true,
+    "a_immutable_output_pins_and_pending_capture": true,
+    "b_native_actual_waveform_and_preservation_pass": true,
+    "b_immutable_output_pins_and_pending_capture": true,
+    "complementary_targets_differ_only_at_first_footer_byte": true,
+    "public_effect_plans_remain_uniform_only": true
+  },
+  "source_observation_sha256": "7fe4a80f6ab4b7c173ac0758e8cddda26f07e9d128d6b4a5709d7a909224fb21",
+  "next_registration_sha256": "f50de2cae35650d78946632c0cf787df01b5f9fcf1de0a1c1b66bd87f5ceda6c",
+  "validation": {
+    "focused_tests_passed": 100,
+    "focused_tests_seconds": 8.1,
+    "last_full_tests_passed": 1246,
+    "production_changed_since_full_suite": false,
+    "ruff_new_research_files_passed": true
+  }
+}

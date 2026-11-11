@@ -1,0 +1,45 @@
+{
+  "analysis_version": "sound3-recorded-tone-lock-up-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Recorded TONE pass moving onlyB changes32 primary bytes across all16 Sound3 cells in Pattern1; user hears louder sound; all auxiliary,other-sound,sample,global and other-pattern bytes preserved",
+  "volume_writer_verified": false,
+  "volume_specific_bitfield_confirmed": false,
+  "numeric_display_value_confirmed": false,
+  "audition_result": "louder",
+  "checks": {
+    "capture_and_artifact_fingerprints_match": true,
+    "all_native_controls_pass": true,
+    "plain_playback_preserves_original_body": true,
+    "all_sample_global_and_other_pattern_bytes_preserved": true,
+    "tempo100_and_swing9_preserved": true,
+    "capture_not_clipped": true,
+    "all16_changes_confined_to_sound3_primary": true,
+    "literal_post_observation_model_fits": true,
+    "complete_export_body_exact": true
+  },
+  "capture_sha256": "cb0ceb9bb4108001948e9dca584397a8d046ec4ca502d32e2a93a9457aa116e2",
+  "artifact_sha256": "d21b4e80bee384030d7dd4d7357b9eb193608de0dd4ac509e03ee9d69b273b03",
+  "artifact_path": "experiments/event-044-b-sound3-tone-volume-lock-up/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7",
+  "native_results_sha256": "d1937d3418a2e49047a746a278c4dc9e6655dab92ad3eff5cfb6825fff46a685",
+  "manual_observation_sha256": "c30a5607f8588861c6c742fcde1b66ac718e5ab32d83202af9dff3af7a0603d0",
+  "post_observation_literal_model": {
+    "first_primary_byte": "old|0xc0",
+    "second_primary_byte": "(old&0xf0)|0x0f",
+    "third_primary_byte_and_auxiliary": "unchanged",
+    "registered_before_initial_lock_capture": false
+  },
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.159271240234375,
+      0.15277099609375
+    ]
+  },
+  "limits": [
+    "The two high bits and low nibble are associated with this TONE pass, not yet isolated as volume and enable flags",
+    "Previously empty cells now contain primary data; no new-note trigger interpretation claimed",
+    "No numeric display,percent gain,pitch stability or hardware volume writer claimed",
+    "Uniform endpoint is an observed result, not a prediction made before the first ramp"
+  ]
+}

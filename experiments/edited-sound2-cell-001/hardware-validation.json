@@ -1,0 +1,125 @@
+{
+  "analysis_version": "native-sound2-cell-copy-hardware-validation-0.1",
+  "registration_sha256": "9ecb9d5eeef99d65d0410b51886a681f52a5354625eb79b0cd9bd31e7715ae78",
+  "capture_sha256": "1adb6964a06f239adfcd599c2996b6d2d075e67576e63955e150ec8c5d84b56f",
+  "artifact_sha256": "cb4c7f9dec20b2d06e95d72aa79cf3aa05dc518619ccfb731386972c44da0e2b",
+  "decoder_version": "sign-crossings-0.2",
+  "checks": {
+    "registered_body_hash_matches": true,
+    "target_body_matches": true,
+    "target_plain_packets_match": true,
+    "all_packet_checksums_valid": true,
+    "exact_body_reencode": true,
+    "packet_count": true,
+    "frame_end_byte": true,
+    "only_expected_plain_packets_changed": true,
+    "only_expected_pattern_bytes_changed": true,
+    "sample_packets_unchanged": true,
+    "other_patterns_unchanged": true,
+    "sound3_cells_unchanged": true,
+    "source_sound2_cell_unchanged": true,
+    "expected_populated_steps": true,
+    "expected_sound2_steps": true,
+    "expected_sound2_parameters": true,
+    "expected_sound3_keys": true,
+    "only_expected_sound_cells": true,
+    "footer_unchanged": true
+  },
+  "passed": true,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "4362aa66f6c18e7351b39016eb1b801dfa4a6ce0f4935861d4aaf45c8737668b",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "changed_plain_packet_indices": [
+    5,
+    7
+  ],
+  "pattern1_byte_changes": [
+    {
+      "offset": 387,
+      "old": 0,
+      "new": 13
+    },
+    {
+      "offset": 388,
+      "old": 0,
+      "new": 40
+    },
+    {
+      "offset": 389,
+      "old": 0,
+      "new": 49
+    },
+    {
+      "offset": 897,
+      "old": 0,
+      "new": 240
+    }
+  ],
+  "sound2_steps": [
+    1,
+    9
+  ],
+  "sound3_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 7,
+    "13": 16
+  },
+  "user_report": "done and confirmed",
+  "hardware_verified": true,
+  "manual_observations": "User confirms requested Sound2/Sound3 step lights and normal Pattern1 playback; no deviation reported",
+  "capture_timing": "Requested before write-mode inspection and playback; user reports completion without a deviation",
+  "limits": [
+    "Step lights and musical behavior are user reported; acoustic waveforms were not measured.",
+    "This validates copying the observed Sound2 primary0d2831/F0 cell with calibrated Sound3 neighbours locally.",
+    "Other sounds and Sound2 keys remain unsupported; note primary parameters remain opaque."
+  ]
+}

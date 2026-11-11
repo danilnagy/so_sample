@@ -1,0 +1,136 @@
+{
+  "status": "registered_before_third_copy_capture",
+  "analysis_version": "third-copy-predictions-0.1",
+  "reference_artifact": "experiments/empty-001-copy2-clean-b/derived/analysis-001/capture.symbols.npz",
+  "reference_artifact_sha256": "0d90f8295905ccfca03823900c4991fa33dd7b979386498eddb8691a34d76ea1",
+  "expected_before_artifact": "experiments/empty-001-copy2-clean-b/derived/analysis-001/capture.symbols.npz",
+  "expected_after_artifact": "experiments/empty-001-e-copy-to-3/derived/analysis-001/capture.symbols.npz",
+  "record_size_hypothesis": {
+    "empty_record_transport_labels": 12,
+    "populated_reference_record_transport_labels": 40,
+    "replacement_growth_transport_labels": 28,
+    "reason": "12 inferred from84 positions across7 slot positions; both copy operations move last nonzero increment28;40=12+28. These are unverified transport coordinates."
+  },
+  "first_change_models": {
+    "front_table": {
+      "first_raw_change_window": [
+        43290,
+        43299
+      ],
+      "reason": "Candidate next front-table slot position from the earlier12-label idea; previous destination2 test failed."
+    },
+    "inline_slots": {
+      "first_raw_change_window": [
+        177131,
+        177136
+      ],
+      "reason": "Previous first changes177092/177093 plus proposed40-value populated record; fixed acquisition-coordinate allowance chosen before new capture."
+    }
+  },
+  "growth_symbols_per_channel_range_inclusive": [
+    20,
+    36
+  ],
+  "growth_allowance_reason": "Predicted changing-region growth28 with an explicit +/-8 allowance for variable constant carrier endpoint length; test terminal boundary separately.",
+  "reference_prefix_span": [
+    0,
+    177131
+  ],
+  "reference_prefix_sha256": {
+    "left": "5ab08bbf978b27b2965eeb618a17832a07d243d0dd6be23ba4aab9eda617009c",
+    "right": "4ab161150981984e5e096a8708af5fb075aa6674b8cb34eccd27cd0dbdc9cfe4"
+  },
+  "anchor_predictions": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6"
+    }
+  ],
+  "last_nonzero_increment_predictions": {
+    "left": {
+      "before_index": 178764,
+      "expected_after_index": 178792,
+      "expected_displacement": 28
+    },
+    "right": {
+      "before_index": 178764,
+      "expected_after_index": 178792,
+      "expected_displacement": 28
+    }
+  },
+  "applicability": "Before is the existing clean-b artifact, pinned by SHA; if hardware state changed before the requested copy, single-action interpretation is ineligible.",
+  "limits": [
+    "These predictions do not define native payload bytes, pointers or editable fields.",
+    "Use strict complete arrays and actual source hashes; do not alter saved artifacts.",
+    "Do not infer payload length from the last nonzero increment boundary.",
+    "No shifting, window revision or tail trimming to rescue failure."
+  ]
+}

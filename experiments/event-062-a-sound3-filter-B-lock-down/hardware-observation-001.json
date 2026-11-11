@@ -1,0 +1,73 @@
+{
+  "analysis_version": "recorded-FILTER-B-minimum-literal-zero-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Only third-primary bit7 changes in five Sound3 note cells; third bits2..7 become0 in all16 cells with pitch14/volume36/cutoff63 and all other state exact; user reports no audible change",
+  "checks": {
+    "native_and_six_bit_mask_scope_pass": true,
+    "pitch14_volume36_and_cutoff63_preserved": true,
+    "capture_artifact_and_registration_pins_match": true,
+    "literal_six_bit_zero_reproduces_entire_body": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_full_body_reconstruction_pass": true
+  },
+  "contiguous_B_candidate_values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "narrow_B_candidate_values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "narrow_mask_only_hypothesis_supported": false,
+  "capture_sha256": "83e9b3583f86bf0e19d249c9a22bb28a2d08634c8d1f7e841ab561431be8d16e",
+  "artifact_sha256": "afd51c830ead74e4f2838d65134659e1ec75741013e24b24daaf484b92a16745",
+  "artifact_path": "experiments/event-062-a-sound3-filter-B-lock-down/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "bee177abf44962fde6bee1279572df70c7f0b5cf87ffadc51ffaae4768d3d274",
+  "native_results_sha256": "1e8beaf29e3ab78f6abc718f7a4856a5a7677fe3096d9964ccdc1fb38ac9ea87",
+  "manual_observation_sha256": "539149e36405f29449eee19511fcf35fb1153e2d879c7d8f401a51f192e63fa5",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.141510009765625,
+      0.137237548828125
+    ]
+  },
+  "resonance_field_width_or_law_confirmed": false,
+  "resonance_writer_enabled": false,
+  "limits": [
+    "B resonance location is a new hypothesis; third-primary bits2..6 and bits2..7 remain separate masks; bit7 is not declared a resonance bit or event flag",
+    "Endpoint code and entire resulting body are unknown; no zero, uniformity, range, audible difference or numeric display reading is predicted",
+    "A remains physically at center and stored63; coupled A changes are retained as a broader FILTER snapshot, not rescued as strict B support",
+    "Current baseline precedes the already confirmed ordinary playback; any unrelated change is retained without attributing it solely to B",
+    "Raw5/6-bit projections, bit7 and ramps remain literal; neutral cutoff may have no audible response to B",
+    "Existing public filter guards remain unchanged and reject unfamiliar third-byte contexts; no resonance writer is enabled"
+  ]
+}

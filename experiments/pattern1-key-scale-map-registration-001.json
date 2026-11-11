@@ -1,0 +1,119 @@
+{
+  "analysis_version": "key-scale-map-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "edited-pattern1-key-scale-map-001",
+  "source_artifact": "experiments/compiled-step-effects-writer-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "40645162eb44083738473cb4bb895f87bdb5f438b68c7e1b80bd96c7762f738d",
+  "source_capture_sha256": "7fb7249a176fc395091899674daf2d0fcc20ad40577d1e863f2249bbeeb75da8",
+  "expected_body_sha256": "cb75d7734eb39ed56f41fc810e8084102ab2b2f247c4b313244672f82e69dbf5",
+  "edited_artifact_sha256": "24b8f62b5c8e4087d97c18e36d7f5ffc3bf625d43a7aceec6a8c022fd0e2173a",
+  "restore_wav_sha256": "f187ef32e33a9a0a7df20855decae5d1fd30813857bc1eafac408120671b056e",
+  "method_settings": {
+    "band_hz": [
+      600.0,
+      8000.0
+    ],
+    "search_hz": [
+      900.0,
+      7500.0
+    ],
+    "window_seconds": 0.02,
+    "hop_seconds": 0.01,
+    "track_seconds": 0.4,
+    "onset_fraction_of_peak": 0.15,
+    "min_loop_gap_seconds": 1.0,
+    "loops": 5,
+    "fft_size": 32768,
+    "step1_window_ms": [
+      20.0,
+      130.0
+    ],
+    "min_relative_amplitude": 0.2,
+    "effect_min_rise": 0.1,
+    "none_max_deviation": 0.01,
+    "min_agreeing_loops": 4,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "step_tolerance_seconds": 0.03,
+    "envelope_window_seconds": 0.003,
+    "note_track_seconds": 0.1,
+    "amplitude_gate_reference": "each_note_peak",
+    "measure_window_ms": [
+      5.0,
+      40.0
+    ],
+    "min_measure_windows": 2,
+    "cents_tolerance": 20.0
+  },
+  "key_scale_script_sha256": "26ede145dfce70476c8a637d36ba99368066c3019200d480f787718a8108dd18",
+  "note_gate_script_sha256": "b212276205de7a5ca0a00ba4baa58790abcf1cbf134fac45395f179b1d947536",
+  "grid_script_sha256": "1d8815bf4802081784f2866eed5dc453e76d0b5ccef2fc9fca3de0bbaa0231ce",
+  "step1_script_sha256": "94e277367ad5f9f7d30ff1d178906654865ce9b7bd0157ceeeaa1722cc8b7e13",
+  "models_cents": {
+    "chromatic": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500
+    ],
+    "major": [
+      0,
+      200,
+      400,
+      500,
+      700,
+      900,
+      1100,
+      1200,
+      1400,
+      1600,
+      1700,
+      1900,
+      2100,
+      2300,
+      2400,
+      2600
+    ],
+    "natural_minor": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      800,
+      1000,
+      1200,
+      1400,
+      1500,
+      1700,
+      1900,
+      2000,
+      2200,
+      2400,
+      2500
+    ]
+  },
+  "decision": [
+    "The backup must equal the target exactly",
+    "Each step's pitch is the median of its notes over five loops; intervals are cents relative to step 1",
+    "A model holds when all 16 steps are within 20 cents in the median and in at least 4 of 5 loops",
+    "Otherwise other_or_inconclusive; the measured interval table is reported either way"
+  ],
+  "limits": [
+    "Sound3 with its recorded parameters only; other sounds may differ",
+    "Measures pitch only, not note length or level"
+  ]
+}

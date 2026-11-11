@@ -1,0 +1,104 @@
+{
+  "all_input_consistency_checks": true,
+  "measurements": [
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.15,
+      "short_gap_delta_seconds": 0.027301587301586938,
+      "long_gap_delta_seconds": -0.02702947845805026,
+      "loop_delta_seconds": 0.00029478458049725376,
+      "checks": {
+        "straight_short_gap_matches5_steps": true,
+        "straight_long_gap_matches11_steps": true,
+        "swing_short_gap_increases": true,
+        "swing_long_gap_decreases": true,
+        "whole_loop_period_preserved": true,
+        "opposite_gap_changes_balance": true
+      }
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.25,
+      "short_gap_delta_seconds": 0.027256235827663566,
+      "long_gap_delta_seconds": -0.026984126984126666,
+      "loop_delta_seconds": 0.0002721088435369001,
+      "checks": {
+        "straight_short_gap_matches5_steps": true,
+        "straight_long_gap_matches11_steps": true,
+        "swing_short_gap_increases": true,
+        "swing_long_gap_decreases": true,
+        "whole_loop_period_preserved": true,
+        "opposite_gap_changes_balance": true
+      }
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.35,
+      "short_gap_delta_seconds": 0.027188208616780063,
+      "long_gap_delta_seconds": -0.02692743764172323,
+      "loop_delta_seconds": 0.0002834467120169659,
+      "checks": {
+        "straight_short_gap_matches5_steps": true,
+        "straight_long_gap_matches11_steps": true,
+        "swing_short_gap_increases": true,
+        "swing_long_gap_decreases": true,
+        "whole_loop_period_preserved": true,
+        "opposite_gap_changes_balance": true
+      }
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.15,
+      "short_gap_delta_seconds": 0.027301587301586494,
+      "long_gap_delta_seconds": -0.027040816326529438,
+      "loop_delta_seconds": 0.00028344671201852023,
+      "checks": {
+        "straight_short_gap_matches5_steps": true,
+        "straight_long_gap_matches11_steps": true,
+        "swing_short_gap_increases": true,
+        "swing_long_gap_decreases": true,
+        "whole_loop_period_preserved": true,
+        "opposite_gap_changes_balance": true
+      }
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.25,
+      "short_gap_delta_seconds": 0.027256235827663566,
+      "long_gap_delta_seconds": -0.026995464852606732,
+      "loop_delta_seconds": 0.0002607709750566123,
+      "checks": {
+        "straight_short_gap_matches5_steps": true,
+        "straight_long_gap_matches11_steps": true,
+        "swing_short_gap_increases": true,
+        "swing_long_gap_decreases": true,
+        "whole_loop_period_preserved": true,
+        "opposite_gap_changes_balance": true
+      }
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.35,
+      "short_gap_delta_seconds": 0.027188208616780063,
+      "long_gap_delta_seconds": -0.02693877551020396,
+      "loop_delta_seconds": 0.000272108843536234,
+      "checks": {
+        "straight_short_gap_matches5_steps": true,
+        "straight_long_gap_matches11_steps": true,
+        "swing_short_gap_increases": true,
+        "swing_long_gap_decreases": true,
+        "whole_loop_period_preserved": true,
+        "opposite_gap_changes_balance": true
+      }
+    }
+  ],
+  "timing_hypotheses_supported": true,
+  "hardware_verified": false,
+  "numeric_timing_units_confirmed": false,
+  "analysis_version": "registered-swing0-versus6-audio-comparison-0.1",
+  "registration_sha256": "c10ba77e2343998f1b368c904fd87003afb7bf949d0dd24943839abeb4ffa57f",
+  "input_reports_sha256": [
+    "c43a9403de9c2d8c9f964b21462a6c628342902b4951862094b984c0267ce4b6",
+    "a74c35175b9fb3058cb455aae5910b9849d9011747c0c140a3c5329bbc94decc"
+  ]
+}

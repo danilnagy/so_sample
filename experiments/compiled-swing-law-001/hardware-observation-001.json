@@ -1,0 +1,31 @@
+{
+  "analysis_version": "swing-law-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of swing 18 with a click on every step, and the measured even-step position",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "linear_in_code",
+  "model_support": {
+    "linear_in_code": true,
+    "triplet_at_max": false,
+    "three_quarters_at_max": false
+  },
+  "median_position": 0.8743505387895452,
+  "delay_in_steps": 0.7487010775790903,
+  "position_spread": 0.0027680718791130987,
+  "median_step_seconds": 0.25003117913832207,
+  "decision_sha256": "962c63e39d78d7b361283322ae62f6391b8c6f7d86f157efa7e1495a21122e1a",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "5b6fd13b0414172b355503b742bf3d933baab9692c2fa52a4c58649030d483b2",
+  "session_answers": [],
+  "limits": [
+    "One swing value at 60 BPM; the law between 6 and 18 is interpolated, not measured"
+  ]
+}

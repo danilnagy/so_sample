@@ -1,0 +1,53 @@
+{
+  "analysis_version": "single-tone-FX-order-pitch-track-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "d05b9e59b19dda87818b3295466cae90271136e62c5400ebf9056fdcb771088a",
+  "native_results_sha256": {
+    "a": "8ed5d5d627f7da40af6837bda24a6f291a361b27fa3379f9f3cae2d7f0b3dd5d",
+    "b": "bc1059c6dca38d1aa4853bf7a2fa8387430765cf0850600fa62f6f682cb73db2"
+  },
+  "pitch_results_sha256": {
+    "a": "cfa476c2b5318ad97461e94fd5ed0314700c6df5ce408611219777a5bdad2b44",
+    "b": "ebe09311d80d73cfda147beccef543ae83622e5e7502e9cd403138e471cbc117"
+  },
+  "step1": {
+    "a": {
+      "class": "none",
+      "max_ratio": 1.0000182787274572,
+      "min_ratio": 0.9999750504241156,
+      "windows": 12
+    },
+    "b": {
+      "class": "effect",
+      "max_ratio": 1.2895419874986778,
+      "min_ratio": 1.0000388978056647,
+      "windows": 12
+    }
+  },
+  "step1_loop_classes": {
+    "a": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "b": [
+      "effect",
+      "effect",
+      "effect",
+      "effect",
+      "effect"
+    ]
+  },
+  "model_support": {
+    "high_nibble_first": true,
+    "low_nibble_first": false
+  },
+  "classification": "high_nibble_first",
+  "limits": [
+    "Local to footer byte 0 of Pattern 1 with one Sound3 note on step 1",
+    "Characterizes where the rising effect sits, not its exact pitch law",
+    "No general per-step effect writer is enabled"
+  ]
+}

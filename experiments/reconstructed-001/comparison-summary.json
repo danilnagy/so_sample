@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "baseline_id": "baseline-002",
+  "source_sha256": "45d3ac95193c239e4cfadbae65e832a040506a81a200ff4472d7084255354c79",
+  "threshold_experiment": {
+    "baseline_threshold": 0.02,
+    "recapture_threshold": 0.0063,
+    "rationale": "Recapture peaks are approximately 0.315 times baseline levels; amplitude-scaled threshold is 0.02 * 0.315. Original default 0.02 comparison retained separately."
+  },
+  "passed": false,
+  "channels": {
+    "left": {
+      "baseline_symbols": 1970367,
+      "recapture_symbols": 1970367,
+      "changed_overlap_symbols": 1729979,
+      "changed_overlap_percent": 87.79983627415604,
+      "first_change": 8732,
+      "last_change": 1970366,
+      "tail_symbols": 0,
+      "alignment_shift": 0,
+      "symbol_sha256": "ce81473bb1657bf47dbba416880ca2db2ddd3a875ad9912964493f12371dbfff"
+    },
+    "right": {
+      "baseline_symbols": 1970367,
+      "recapture_symbols": 1970367,
+      "changed_overlap_symbols": 696558,
+      "changed_overlap_percent": 35.351688289542,
+      "first_change": 8729,
+      "last_change": 938283,
+      "tail_symbols": 0,
+      "alignment_shift": 0,
+      "symbol_sha256": "59cde0735a383d1f441cc19624b05d450e48b2464b607604d2c564592fe00cab"
+    }
+  },
+  "interpretation": "Hardware receive acceptance is established by user report; matching state/content is not established."
+}

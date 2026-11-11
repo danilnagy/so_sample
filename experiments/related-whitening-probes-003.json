@@ -1,0 +1,33 @@
+{
+  "analysis_version": "related-device-whitening-0.3",
+  "artifact_sha256": "e5b57f9d2667fab1bba08d24d63ca3da691434f37ecb9b217e090aa0909b1527",
+  "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "lead": "https://github.com/ericlewis/libpo32/blob/3b3a0a758ba452fc809027c5bafcc5e2d0931532/core/src/po32.c",
+  "window_in_each_phase_view": [
+    8500,
+    43000
+  ],
+  "model": "coded=(raw+low8(state)) mod256; state=CRC-CCITT-1021(state,raw)",
+  "constant_plaintext_bytes": [
+    0,
+    255
+  ],
+  "minimum_run_bytes": 8,
+  "initial_states": "all65536, recovered from first3 coded bytes, remaining>=5 must match",
+  "candidate_streams": 3840,
+  "three_byte_candidates": 392571,
+  "validated_runs": 0,
+  "matches": [],
+  "payload_decoded": false,
+  "extra_phase_views": [
+    "raw_circular_increment",
+    "raw_coordinate_xor"
+  ],
+  "limits": [
+    "Related PO-32 protocol is a hypothesis, not established PO-33 compatibility.",
+    "Constant plaintext is not assumed to exist merely because sounds/patterns were cleared.",
+    "Same value mapping on both channels; independent mappings and reversed stereo order untested.",
+    "Search excludes repeated acquisition prefix and terminal carrier; no arrays are rewritten.",
+    "Matching or failure does not establish payload framing, checksum or editable fields."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "experiment_id": "empty-001-a",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "planned_state": {
+    "factory_reset_completed": true,
+    "all_16_sounds_deleted": true,
+    "all_16_patterns_cleared": true,
+    "selected_pattern": 1,
+    "selected_sound": 8,
+    "write_mode": false,
+    "sequencer_playing": false,
+    "knobs_and_effects": "no changes after reset"
+  },
+  "actual_actions": [
+    "User uploaded the requested new minimal-state baseline pair; exact reset/deletion button log and recovery-backup ID were not separately supplied."
+  ],
+  "actual_device_state": null,
+  "restore_tested_recovery_backup": null,
+  "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "recording_profile": {
+    "channels": 2,
+    "sample_rate_hz": 44100,
+    "pcm_subtype": "PCM_16",
+    "level": "same validated reduced recording level",
+    "decoder_threshold_starting_profile": 0.0063
+  },
+  "comparison_repeat": "../empty-001-a-repeat/capture.wav",
+  "purpose": "Establish a new minimal-state repeatable baseline with recording capacity for complete calibration sounds",
+  "limits": [
+    "Empty sound/pattern slots do not prove erased internal flash bytes or an all-zero payload",
+    "Factory settings and all actual actions must be reported or remain unknown",
+    "No expected transfer length, offsets or phase counts are assumed"
+  ],
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "comparison": "../empty-001-comparison.json",
+    "independent_waveform": "../waveform-probes-008.json",
+    "structure": "../empty-structure-001.json"
+  },
+  "comparison_result": {
+    "complete_labels_and_counts_match": true,
+    "symbols_per_channel": 45033,
+    "partial_endpoints_match_at_threshold_0_0063": true,
+    "incomplete_final_sign_intervals": {
+      "left": [
+        0
+      ],
+      "right": [
+        0,
+        0
+      ]
+    }
+  }
+}

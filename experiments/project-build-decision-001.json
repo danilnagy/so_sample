@@ -1,0 +1,22 @@
+{
+  "analysis_version": "project-build-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "89d2c3e081b17a511d5c3ff23b9a0ad8ff6bf2b026d919f7f106eef0ea08a49b",
+  "native_results_sha256": "43470cb7422d475b1c287114780f4bd4fd035aa889f0350d92b3ea8e5c8ac082",
+  "measurements_sha256": "a24fd264db598fc2baa346843e0160e618a4300ba699bfa922fe4eda06be02af",
+  "kick_interval_s": 0.5997052154195011,
+  "hat_offset_s": 0.17653061224489974,
+  "melody_db": {
+    "step1": 28.600651531020095,
+    "step2": -4.2381634475390175
+  },
+  "hypotheses": {
+    "tempo_100": true,
+    "swing_4": true,
+    "melody_first_note": true
+  },
+  "classification": "project_plays_as_built",
+  "limits": [
+    "One small project; the builder's software checks, not this test, cover other specs"
+  ]
+}

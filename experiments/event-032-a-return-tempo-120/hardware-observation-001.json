@@ -1,0 +1,37 @@
+{
+  "analysis_version": "physical-tempo-preset-series-hardware-observation-0.1",
+  "status": "supported_with_exact_original_return",
+  "hardware_verified": true,
+  "writable_field_verified": false,
+  "tempo_writer_enabled": false,
+  "verified_scope": "Physical preset 80-to120 changes only second7d5c byte129; series return recovers the entire independent original120 state",
+  "display_before_bpm": 80,
+  "display_after_bpm": 120,
+  "series_results_sha256": "a628d0df9aa420a118f27ba18cb237b6245a28e33a84136c829449a5006bce6b",
+  "manual_observation_sha256": "5f3a174e915512f8780e6a4e7a3db5d7b903526189663332f94d71fbf1bec76d",
+  "capture_sha256": "80023150ef49d531f72b8b62aad151831a9353b328016751d2388e99fb22e890",
+  "artifact_sha256": "4c908075fba35546a88bbc01ec352616759419eaeff8da9b6d829cf05903a98f",
+  "artifact_path": "experiments/event-032-a-return-tempo-120/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "checks": {
+    "all_native_controls": true,
+    "all_direct_byte_hypotheses": true,
+    "series_all_hypotheses": true,
+    "capture_and_artifact_hashes_match": true,
+    "display_values_independently_confirmed": true,
+    "all_export_content_hashes_match": true,
+    "export_complete_body_matches": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 31,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.16357421875,
+      0.15704345703125
+    ]
+  },
+  "limits": [
+    "Three presets and exact return support this physical byte mapping; generated tempo restore and arbitrary BPM ranges remain unverified"
+  ]
+}

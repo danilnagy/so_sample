@@ -1,0 +1,35 @@
+{
+  "analysis_version": "complete-imported-lifecycle-to-first-tempo-control-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "all_four_stages_hardware_accepted": true,
+    "all_stage_capture_and_artifact_hashes_match": true,
+    "public_copy_exact_genuine_stage": true,
+    "public_transfer_exact_genuine_stage": true,
+    "public_last_owner_removal_exact_genuine_stage": true,
+    "compiled_cycle_matches_complete_genuine_final_body": true,
+    "compiled_cycle_replays_independently_accepted_wav_byte_exactly": true,
+    "compiled_report_passes_and_remains_software_only": true,
+    "tempo_baseline_capture_and_artifact_pinned": true,
+    "tempo_baseline_acceptance_hash_pinned": true,
+    "tempo_baseline_body_hash_pinned": true,
+    "both_global_snapshots_pinned": true,
+    "valid_identical_body_is_eligible_no_change_outcome": true,
+    "missing_display_values_are_not_inferred": true,
+    "synthetic_wrong_offset_does_not_refit_candidate": true,
+    "tempo_registered_before_capture_and_pending": true
+  },
+  "passed": true,
+  "validation": {
+    "full_pytest": "669 passed in 83.34s",
+    "affected_pytest": "35 passed in 5.29s",
+    "ruff": "all checks passed; 185 Python files formatted"
+  },
+  "next_required_user_action": "Observe displayed BPM, tap BPM once with both knobs unchanged, observe new BPM, capture before playback and report both display values",
+  "limits": [
+    "Tempo storage and the candidate offset are unverified; no tempo writer is enabled",
+    "A valid identical body remains an eligible no-serialized-change outcome",
+    "BPM values must come from the user's display observation, not from candidate bytes",
+    "Changes elsewhere or multiple changed bytes remain visible and may reject the single-byte hypothesis"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "analysis_version": "first-generated-sound6-creation-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "Creation of this self-owned32768-code Sound6 sample in an empty selector, with all generated500Hz codes and unrelated state retained",
+  "recapture_results_sha256": "17f804a6d1c17ccdc5be2c356fe1b470a735438f65437a3e2b5ae535d3490e61",
+  "manual_observation_sha256": "94aa2bd7a0632db24fe656ed5dff3ab7a32a57a2da07c270ae349ff0784d3e9e",
+  "restore_registration_sha256": "81a5bcf4a13cf0f6fa54b19b1eb9a9762accc98755d15eb2dc0ebdad033cae62",
+  "software_validation_sha256": "474f9c283cb2964973b377499f5562c3d280fed1bc577b562d0919082d4eca3d",
+  "capture_sha256": "e21b04a85d73f1f53cb4cbefb1926c17c7f42ab4272c6cce09037a307a8cc776",
+  "artifact_sha256": "51c4a7acb42a604c825c1b4d3ccc581cf0c17d28c96470c0bbc58c2ecfea90ba",
+  "body_sha256": "258bb81fdb8085ab24f7be4f841ed7ea577a69943ee34a4beccabffd5d9e44f6",
+  "user_report": "done and confirmed",
+  "checks": {
+    "all_recapture_checks_pass": true,
+    "user_restore_and_auditions_confirmed": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "registered_body_matches": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_body_matches": true,
+    "original_software_report_remains_software_only": true
+  },
+  "exported_content_files_checked": 32,
+  "limits": [
+    "One empty-slot creation and both known Sound4 resize directions are verified; general capacities, other slots, deletion and shared-owner edits remain unsupported"
+  ]
+}

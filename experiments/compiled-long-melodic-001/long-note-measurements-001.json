@@ -1,0 +1,75 @@
+{
+  "analysis_version": "long-melodic-measurements-0.1",
+  "hardware_verified": false,
+  "playback_sha256": "48036759b004ec02ed0e37d244349befdcd3877ea3de205257cf5c024dc767ad",
+  "settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "loop_seconds": 4.0,
+    "loops": 5,
+    "tail_margin_seconds": 0.1,
+    "threshold_fraction_of_loop_peak": 0.1,
+    "quarters": 4,
+    "window_seconds": 0.05,
+    "fft_size": 65536,
+    "duration_tolerance_ms": 10.0,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "first_onset_seconds": 1.2643990929705216,
+  "loops": [
+    {
+      "duration_ms": 2671.0657596371884,
+      "quarter_hz": [
+        599.428222454775,
+        749.2516625552523,
+        899.1805935861005,
+        1049.0541547850357
+      ]
+    },
+    {
+      "duration_ms": 2671.9274376417234,
+      "quarter_hz": [
+        599.4500849229933,
+        749.3230698408485,
+        899.1757409482423,
+        1049.0586574755011
+      ]
+    },
+    {
+      "duration_ms": 2671.8820861678005,
+      "quarter_hz": [
+        599.466674685657,
+        749.3212860138199,
+        899.2022637931251,
+        1049.0955182366363
+      ]
+    },
+    {
+      "duration_ms": 2671.950113378685,
+      "quarter_hz": [
+        599.4466516114145,
+        749.3393486635825,
+        899.152352723195,
+        1049.0046710269685
+      ]
+    },
+    {
+      "duration_ms": 2671.3378684807253,
+      "quarter_hz": [
+        599.4345648392621,
+        749.262223383594,
+        899.1682875300864,
+        1049.0370526974896
+      ]
+    }
+  ]
+}

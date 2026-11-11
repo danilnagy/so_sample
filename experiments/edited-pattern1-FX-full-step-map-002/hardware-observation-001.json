@@ -1,0 +1,44 @@
+{
+  "analysis_version": "FX-full-step-map-confirm-observation-0.1",
+  "hardware_verified": false,
+  "registered_result": "precondition_failed",
+  "failed_checks": [
+    "only_Pattern1_and_tempo_swing_changed",
+    "pattern1_byte131_preserved",
+    "entire_actual_body_and_packets_match_target"
+  ],
+  "differences_from_target": [
+    {
+      "region": "record",
+      "tag": "0x7d5c",
+      "ordinal": 2,
+      "changed_byte_count": 1,
+      "lengths": [
+        255,
+        255
+      ],
+      "bytes": [
+        {
+          "offset": 131,
+          "old": 7,
+          "new": 14,
+          "name_hint": "opaque_global131"
+        }
+      ],
+      "bytes_truncated": false
+    }
+  ],
+  "interpretation": "Only byte 131 of the second 0x7d5c record changed (7 -> 14), after the previous session stopped Pattern 1's playback; consistent with the untested hypothesis that it stores the step where Pattern 1 last stopped",
+  "native_results_sha256": "f9120d47919db9044d3be30f1401304ab02d669aa09bb286d1b1d636359e24e5",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "27675ee7674234b40e9d0b9758ab361e93d8051d68dfbbe2b89c4332a6b7f394",
+  "session_answers": [
+    {
+      "question": "Roughly which notes bent upward, if you could tell? (Enter to skip)",
+      "answer": "1, 3, 9, 11"
+    }
+  ],
+  "exploratory_classification": "sequential_high_nibble_first",
+  "exploratory_sha256": "e6c4b1cffdbe0a3e0ac5cd809e8d33fc9f599a918152ecc6b962299f1f3c8889",
+  "lesson": "Runs without a restore inherit playback-state bytes; registrations that require exact backups should restore first"
+}

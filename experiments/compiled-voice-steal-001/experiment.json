@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-voice-steal-001",
+  "capture_status": "validated_exact_native_voice_steal_registered_invalid_exploratory_recorded",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../voice-steal-registration-001.json",
+  "plan": "../voice-steal-plan-001/plan.json",
+  "playback_seconds": 26,
+  "observation_questions": [
+    "In the second pattern, did long low notes get cut short when other notes came in? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "voice_steal_measurements": "voice-steal-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-voice-steal-001/project.json"
+}

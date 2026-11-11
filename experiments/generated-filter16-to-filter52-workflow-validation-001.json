@@ -1,0 +1,27 @@
+{
+  "analysis_version": "verified-generated-lowpass-to-registered-highpass-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "first_leg_hardware_gate_and_complete_native_checks_pass": true,
+    "first_leg_capture_artifact_result_and_listening_pins_match": true,
+    "all_current_export_hashes_and_full_native_reconstruction_pass": true,
+    "original_highpass_waveform_and_all_target_pins_unchanged": true,
+    "highpass_roundtrip_recovers_entire_registered_and_independent_body": true,
+    "highpass_reception_pending_and_public_writer_disabled": true
+  },
+  "lowpass_hardware_observation_sha256": "c8454acc263e6a2548064c0bea894e4ccaaba132c82e225bf9c9f9d9b0038946",
+  "pair_registration_sha256": "4ae4ff2cd2a09191061f53b003399121b0b5e9ac8f23ef13fe5b47ea4c1bbf3e",
+  "last_focused_tests_passed": 88,
+  "last_full_regression_tests_passed": 917,
+  "production_writer_changed": false,
+  "filter_writer_enabled": false,
+  "next_restore": "edited-sound3-filter52-highpass-001/restore.wav",
+  "limits": [
+    "Targets reproduce known physical bodies; this new test concerns generated reception and saved-pattern audible behavior",
+    "Both generated targets and their hashes are frozen before recapture; no new general cutoff law or amplitude measurement is predicted",
+    "Restore16 and verify native plus user listening before requesting52; retain mismatches without changing targets",
+    "Only fixed16/52 from exact center are allowed by research constructor; public pitch/volume guards stay unchanged",
+    "Contiguous branch ordering has support but full field width, all-code law, numeric UI and resonance remain unknown"
+  ]
+}

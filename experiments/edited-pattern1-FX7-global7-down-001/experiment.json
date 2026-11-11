@@ -1,0 +1,21 @@
+{
+  "experiment_id": "edited-pattern1-FX7-global7-down-001",
+  "capture_status": "validated_exact_generated_down_and_listening",
+  "restore_file": "restore.wav",
+  "registration": "../pattern1-generated-FX7-clear-global7-registration-001.json",
+  "leg": "down",
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "planned_actions": [
+    "Restore restore.wav using established stereo settings, after the preceding leg if this is clear",
+    "Playback stopped, write off, knobs untouched: record complete capture.wav BEFORE listening playback",
+    "With write off, play Pattern1 briefly and report whether it sounds octave-lower for down, or normal for clear; stop afterward",
+    "Do not press FX, enable write, or move knobs; use established reduced capture level with one second trailing silence"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-generated-FX7-global7-down-001/project.json"
+}

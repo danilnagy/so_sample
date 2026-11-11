@@ -1,0 +1,55 @@
+{
+  "analysis_version": "recorded-volume-interior-with-retained-ramp-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Physical quarter,middle and exact maximum-return captures change only the broader Sound3 mask; quarter uniform21 under both orderings,middle retains a ramp,simple enable pair refuted; user confirms relative loudness order",
+  "volume_writer_verified": false,
+  "packed_order_definitively_confirmed": false,
+  "numeric_display_value_confirmed": false,
+  "relative_loudness": "lowest_of_three",
+  "contiguous_model_raw_values_by_step": [
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21,
+    21
+  ],
+  "uniform_at_this_stage": true,
+  "checks": {
+    "capture_and_artifact_fingerprints_match": true,
+    "native_controls_and_all_field_scope_checks_pass": true,
+    "all_other_bits_preserved_for_this_leg": true,
+    "simple_enable_pair_alternative_refuted": true,
+    "middle_uniformity_failure_preserved": true,
+    "capture_not_clipped": true,
+    "uniform_reference_code21_under_both_orderings": true
+  },
+  "capture_sha256": "86882e8f6535972366fe18fdc15e65054f42f25acfb2a5b556c97d62834ef2d8",
+  "artifact_sha256": "d46db2f75adad017419b95a1437b57522e0306b46a644666c36e4d956eb592b8",
+  "artifact_path": "experiments/event-047-d-sound3-volume-lock-quarter/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "937b33f0c2be408e8f2321e3dabb146b2ae74976ed9ded6ddec3a3214cdd13e4",
+  "native_results_sha256": "97e61b40cd3f6273ddaa5fec754cbfc4bdfc008d45f739b1cd8926d844cd6c2f",
+  "manual_observation_sha256": "c3787475d523ee4943a7a772424297efe1204e48a120ac1efd685ed3c5ecf4ec",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.163848876953125,
+      0.15850830078125
+    ]
+  },
+  "limits": [
+    "Original uniform-middle condition fails and remains immutable; no refitting its position bands",
+    "Uniform quarter21 is common to both orderings and provides an unbiased restore/audio reference",
+    "No gain curve,pitch stability,numeric display or public volume writer claimed"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "event-050-a-sound3-volume36-post-playback",
+  "capture_status": "validated_exact_post_playback_persistence",
+  "registration": "../sound3-volume36-post-playback-registration-001.json",
+  "planned_actions": [
+    "Keep both knobs and audio settings unchanged; stop Pattern1 playback and ensure write off",
+    "Select Pattern1/Sound3/TONE without moving either knob",
+    "Save a complete backup as capture.wav at the established reduced recording level with one second trailing silence",
+    "No extra ordinary playback or restore needed; leave knobs untouched"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "persistence-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-volume36-post-playback-001/project.json"
+}

@@ -1,0 +1,50 @@
+{
+  "analysis_version": "fine-tempo-endpoints-and-exact100-return-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "baseline_artifact": "experiments/event-033-b-fine-tempo-100/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "b802ea9c8306d5c048ecd95fc629f8c3546a097f1765931b3a49544e96698280",
+  "baseline_capture": "experiments/event-033-b-fine-tempo-100/capture.wav",
+  "baseline_capture_sha256": "a296fe64000e078997becbc2b9acba5a2a986b6172168658e0cfbe874859ea1b",
+  "baseline_body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633",
+  "baseline_observation_sha256": "3183ce72c95bc5cc85bb2405c967737452d7320136a81d2bc8cbaa5c967b99d7",
+  "expected_initial_display_bpm": 100,
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 129,
+    "baseline_encoded_value": 100,
+    "hypothesis": "Fine minimum60 and maximum240 use the same direct unsigned byte; return100 recovers the entire original fine100 body"
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-034-b-fine-tempo-60",
+      "expected_before_bpm": 100,
+      "expected_after_bpm": 60,
+      "expected_body_sha256": "8146205d12593b62c9b88c8ab9ad13603d10e409d84bef4a89e339ce96865f64"
+    },
+    {
+      "experiment_id": "event-035-c-fine-tempo-240",
+      "expected_before_bpm": 60,
+      "expected_after_bpm": 240,
+      "expected_body_sha256": "681d3d77d3e557e7e345dde3928dc41bb62bc3c80b5f958dfd0857d678c68869"
+    },
+    {
+      "experiment_id": "event-036-a-return-fine-tempo-100",
+      "expected_before_bpm": 240,
+      "expected_after_bpm": 100,
+      "expected_body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633"
+    }
+  ],
+  "official_reference": {
+    "url": "https://teenage.engineering/guides/po-33/en",
+    "reviewed_date": "2026-10-09",
+    "section": "6, tempo",
+    "paraphrase": "Fine tempo uses BPM held with knob B and spans60 to240; knob A adjusts swing and is excluded"
+  },
+  "limits": [
+    "Expected display readings must be independently observed; never inferred from candidate bytes",
+    "No public fine-tempo range is enabled and no generated fine-tempo restore is claimed",
+    "Each leg is compared with the actual preceding capture; predicted body equality remains separate",
+    "Only the fixed byte model is tested; extra global/slot-parameter changes and incomplete return remain visible"
+  ]
+}

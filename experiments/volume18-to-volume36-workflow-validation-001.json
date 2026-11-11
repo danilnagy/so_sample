@@ -1,0 +1,33 @@
+{
+  "analysis_version": "accepted-volume18-to-reciprocal36-handoff-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "registered_source_to_target_roundtrip_and_scope_pass": true,
+    "current_physical18_to_target36_preserves_all_noncandidate_bits": true,
+    "candidate_file_and_software_hashes_match": true,
+    "software_checks_pass_without_hardware_claim": true,
+    "both_value_orderings_calculated_and_registered_correctly": true,
+    "opposite_reference21_predictions": true,
+    "completed_lower_interior_hardware_evidence_preserved": true,
+    "uncertain_loudness_report_not_counted_as_confirmation": true,
+    "incorrect_alternate_code_preparation_retained_as_failed": true,
+    "comparison_selected_after_prior_result_and_before_candidate_data": true,
+    "original_reference_audio_and_frozen_method_match": true
+  },
+  "registration_sha256": "59fec7bc4da2094660e57b08b3c585891ac753de1feb517f17fd86135e3cc744",
+  "current_volume18_observation_sha256": "a36dad39cc4d5b66b81f44f9f2fd9c2097768fa138d8aec0045aa6fb4c565d3f",
+  "retired_preparation_rejection_sha256": "f6f2721ebef5df43b113bd182a0cb32db0b7224fd28b46950d8dac3b987ac25e",
+  "software_validation_sha256": "54b0dd9e186f8ff4ebb72bfff9bf3cc7519871e496d6a070c8d8faeccb61a671",
+  "focused_test_result": {
+    "passed": 23,
+    "failed": 0,
+    "scope": [
+      "tests/test_generated_sound3_volume18.py",
+      "tests/test_generated_sound3_volume36.py",
+      "tests/test_sound3_volume_middle_series.py"
+    ]
+  },
+  "candidate_hardware_verified": false,
+  "volume_writer_enabled": false
+}

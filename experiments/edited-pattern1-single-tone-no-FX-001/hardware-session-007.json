@@ -1,0 +1,65 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "edited-pattern1-single-tone-no-FX-001",
+  "started_at": "2026-10-10T11:44:57+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 1,
+      "name": "Microphone (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    },
+    "output": {
+      "index": 5,
+      "name": "Headphones (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    }
+  },
+  "config": {
+    "input_device": "HD USB Audio",
+    "output_device": "HD USB Audio",
+    "hostapi": "MME",
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug"
+  },
+  "inputs": {
+    "restore": {
+      "path": "restore.wav",
+      "sha256": "60c42b82aea3cfe4b3345dd1902167b572dbf3789fb9771468bcb6e0af1c0098"
+    },
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "a3eb9367cd1033af90c926c725ec1648a8bad03962353f6152d582ef6f6aeaa8"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": {
+    "started_at": "2026-10-10T11:44:58+00:00",
+    "sample_rate_hz": 44100,
+    "frames": 1779301,
+    "duration_seconds": 40.34696145124717,
+    "wall_seconds": 40.468000000109896,
+    "stream_status_flags": []
+  },
+  "backups": [],
+  "accepted": null,
+  "playback": null,
+  "observations": [],
+  "interrupted": true,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-10-10T11:53:42+00:00",
+  "result": {
+    "backup_decoded": false,
+    "native_target_exact": null,
+    "capture": null,
+    "analysis": null,
+    "playback": null
+  }
+}

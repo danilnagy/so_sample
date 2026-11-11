@@ -1,0 +1,91 @@
+{
+  "analysis_version": "generated-FILTER16-exact-reception-and-listening-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Generated16 recaptures as the complete preregistered body and all packets, matching the independent recorded LPF body; user confirms low-pass filtering; pitch14/volume36 and every unrelated state bit preserved",
+  "checks": {
+    "entire_native_target_and_preservation_checks_pass": true,
+    "capture_artifact_registration_and_generated_wav_pins_match": true,
+    "user_explicitly_confirms_lowpass_filtering": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_full_native_reconstruction_pass": true
+  },
+  "registration_sha256": "4ae4ff2cd2a09191061f53b003399121b0b5e9ac8f23ef13fe5b47ea4c1bbf3e",
+  "capture_sha256": "3c0b24a651375ed1161629f854301165ad45ba648c2e2a5599df7150616d93b2",
+  "artifact_sha256": "ec2e5cbc43ccc05c713cb3d386bbb438d64b8fa1b9986faa922dc78e2c864bb5",
+  "artifact_path": "experiments/edited-sound3-filter16-lowpass-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "b5e315b3f0703190ad42652eb57616385e52b2c92df04e3aa2bc1b936c005c37",
+  "restore_wav_sha256": "02e8c8031de87341172207fa436a440a9660d8395142529da04bd21b12c84a16",
+  "native_results_sha256": "5508148d5bf356b1014c46240a44958fb89687e343208afffba4d38c7f3df6fd",
+  "manual_observation_sha256": "02d4a6f6697f050f424339d893b8259a4dbe9493c904232af8dc77c8b9d19c01",
+  "contiguous_candidate_values": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.143463134765625,
+      0.139190673828125
+    ]
+  },
+  "generated_highpass_verified": false,
+  "quantitative_audio_response_measured": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Targets reproduce known physical bodies; this new test concerns generated reception and saved-pattern audible behavior",
+    "Both generated targets and their hashes are frozen before recapture; no new general cutoff law or amplitude measurement is predicted",
+    "Restore16 and verify native plus user listening before requesting52; retain mismatches without changing targets",
+    "Only fixed16/52 from exact center are allowed by research constructor; public pitch/volume guards stay unchanged",
+    "Contiguous branch ordering has support but full field width, all-code law, numeric UI and resonance remain unknown"
+  ]
+}

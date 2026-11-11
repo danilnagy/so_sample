@@ -1,0 +1,27 @@
+{
+  "hardware_verified": false,
+  "comparison_usable": false,
+  "first_tone_ratios_A_over_B": [],
+  "low_nibble_first_model_supported": false,
+  "high_nibble_first_model_supported": false,
+  "classification": "inconclusive",
+  "general_per_step_FX_writer_enabled": false,
+  "analysis_version": "frozen-first-tone-complementary-FX-nibble-order-comparison-0.1",
+  "registration_sha256": "f50de2cae35650d78946632c0cf787df01b5f9fcf1de0a1c1b66bd87f5ceda6c",
+  "audio_results_sha256": [
+    "65117f4b241ce3a3473483b0d786b737d9b1314ebae0c8df7236bc1a10fb580f",
+    "8a4b62e9f581cf311d6a478edee827a975b4a0fcfec7db66c940c5b41b2ee3a2"
+  ],
+  "native_results_sha256": [
+    "646f629b531be80999f74fcbb589ce0ef0c8328acfcc6701f0054fb5e4c2eec5",
+    "1e7780dd76f230f51910353a0c73798b50b2388c5afa91729646d0a8d4542621"
+  ],
+  "limits": [
+    "First PLAY must start from the restored stopped Pattern1 state; begin audio recording before PLAY so first tone is preserved",
+    "First audible tone must correspond to the same initial event in both restores; frequency fit quality alone cannot establish that association",
+    "One first byte differs; all remaining fourteen effect nibbles areF and every nonfooter byte including global7 is exact",
+    "Identical method for both recordings: broad fixed band/search, first qualifying tone only, three thresholds and both channels; never skip a failed first region to fit a later note",
+    "Both full native targets must pass before interpreting audio; six ratios near2 or0.5 support separate local hypotheses; other results stay inconclusive",
+    "No method retuning after new data, all-pattern generalization, full effect enum or general per-step writer"
+  ]
+}

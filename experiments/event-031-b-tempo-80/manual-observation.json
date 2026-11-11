@@ -1,0 +1,8 @@
+{
+  "initial_user_report": "done",
+  "explicit_followup_confirmation": "Yes, 140\u219280 then 80\u2192120",
+  "display_before_bpm": 140,
+  "display_after_bpm": 80,
+  "source": "Explicit user confirmation; not inferred from backup bytes",
+  "capture_sha256": "b83a3a086a6c5eef5c365d98b1032d08fe67d29b65afb200f490b27b170cbfcd"
+}

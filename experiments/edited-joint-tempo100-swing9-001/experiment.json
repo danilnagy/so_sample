@@ -1,0 +1,23 @@
+{
+  "experiment_id": "edited-joint-tempo100-swing9-001",
+  "capture_status": "validated_joint_tempo100_swing9_restore",
+  "expected_file": "capture.wav",
+  "restore_file": "restore.wav",
+  "registration": "joint-global-registration.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observation": "hardware-observation-001.json"
+  },
+  "planned_actions": [
+    "Restore complete restore.wav using established stereo playback path and level",
+    "Keep both knobs untouched; select Pattern1/Sound8/TONE stopped and write off",
+    "Read ordinary BPM display without pressing BPM or moving knobs and report actual value; expected100",
+    "Before playing Pattern1 record complete backup capture.wav at established reduced levels with one second trailing silence",
+    "After saving briefly play Pattern1 to confirm same notes and slower swung rhythm; stop and return to Sound8/TONE"
+  ],
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "native_results": "hardware-recapture-results-001.json",
+  "analysis": "derived/analysis-001",
+  "project": "../exported-joint-tempo100-swing9-001/project.json"
+}

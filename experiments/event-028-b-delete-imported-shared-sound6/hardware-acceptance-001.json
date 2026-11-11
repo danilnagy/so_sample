@@ -1,0 +1,35 @@
+{
+  "analysis_version": "imported-shared-Sound6-deletion-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "This physical deletion of Sound6 transfers all 32768 imported chirp codes and endpoint17579 to Sound7/self-owner6, preserving the entire registered native body",
+  "recapture_results_sha256": "d6a89f20c20bd69003f25a3c5e5117d3a8d017311df7ef6870d51cf1df6f61f4",
+  "manual_observation_sha256": "1d76cbf229baa74d07882710acd1df320df6e73345b595e05a5b1858f90e566c",
+  "software_prediction_sha256": "05dea9fa0c95680c1507f95ccda18a0c467da459e94cffb0a19857692ebf0930",
+  "capture_sha256": "69f7911f772ea76e3ff8a9b8d7ee45e819aaea239ebea982a92484208fd0a429",
+  "artifact_sha256": "11e0decd4bfe263dc674498d94345f42e3c229f5013e4d42aaa4a6fc48d4a0cd",
+  "artifact_path": "experiments/event-028-b-delete-imported-shared-sound6/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "684437bc68251bb2cf3400e64be024d677baeb0e5389106c0122ea30b30724f1",
+  "checks": {
+    "all_native_recapture_controls": true,
+    "all_registered_transfer_hypotheses": true,
+    "alternative_retained_owner_and_reference_rejected": true,
+    "user_deletion_and_auditions_confirmed": true,
+    "capture_and_artifact_hashes_match": true,
+    "export_all_content_hashes_match": true,
+    "export_full_native_body_matches": true,
+    "prediction_report_remains_software_only": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 32,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.164642333984375,
+      0.158203125
+    ]
+  },
+  "limits": [
+    "Shared Sound6 deletion at this imported endpoint is verified; deleting the last imported owner, arbitrary endpoints, slots and additional referrers are not established by this control"
+  ]
+}

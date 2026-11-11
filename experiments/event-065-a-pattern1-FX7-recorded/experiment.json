@@ -1,0 +1,18 @@
+{
+  "experiment_id": "event-065-a-pattern1-FX7-recorded",
+  "capture_status": "validated_literal_footer6_global9_original_footer_only_failed",
+  "registration": "../pattern1-FX7-probe-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1 selected and both knobs plus audio settings unchanged; stop playback",
+    "Press WRITE once to enable write mode and confirm its indicator",
+    "Start playback; hold FX and key7 together for about8 seconds",
+    "Release FX/key7, immediately stop playback, then switch write mode off",
+    "Save a complete capture.wav here at established reduced level with one second trailing silence; report actual sound/display changes",
+    "No knob movement, restore or separate playback recording needed; do not hold WRITE during FX pass or press other keyboard keys"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "FX-probe-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-pattern1-FX7-recorded-001/project.json"
+}

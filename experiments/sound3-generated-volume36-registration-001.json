@@ -1,0 +1,58 @@
+{
+  "analysis_version": "fixed-volume36-reciprocal-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_candidate_capture_and_audio": true,
+  "reference_already_observed": true,
+  "selected_after_original_volume18_result": true,
+  "source_artifact": "experiments/replayed-sound3-volume21-reference-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3207663bfaeb3f26a07a4dc5096634124163bc1990dbcf1ed8038ec8e36fee87",
+  "source_capture": "experiments/replayed-sound3-volume21-reference-001/capture.wav",
+  "source_capture_sha256": "631cc2937a553685d71e76ca7334d60536e23a6e050d1bfa202da769fc71181b",
+  "source_body_sha256": "937b33f0c2be408e8f2321e3dabb146b2ae74976ed9ded6ddec3a3214cdd13e4",
+  "source_observation_sha256": "a78566aada204c4d77d758f0cfc020cbb6c690f60a6f12a553b5b45e60dd5158",
+  "prior_generated18_observation_sha256": "a36dad39cc4d5b66b81f44f9f2fd9c2097768fa138d8aec0045aa6fb4c565d3f",
+  "prior_generated18_gain_results_sha256": "deb18403b632292b042f6c503edf25432cd485616d8961fa25fbeb03fbd36d78",
+  "gain_measurement_registration": "experiments/sound3-volume18-gain-method-registration-001.json",
+  "gain_measurement_registration_sha256": "f33793227ce402ada428cd40415cbf1225e5cf5f930940aaa844a8ff4e4f50e7",
+  "reference_audio": "experiments/replayed-sound3-volume21-reference-001/playback.wav",
+  "reference_audio_sha256": "1756980622b9dbb2a4441b55fc20a8a12ee4fc7418cb523796ca64122c4ee339",
+  "reference_audio_results_sha256": "7a2b440fd5a180b825f13bc374e7785bbba408c66af9e2bc454bac70cd69c540",
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "replayed-sound3-volume21-reference-001",
+      "contiguous_raw_code": 21,
+      "alternative_order_raw_code": 21,
+      "expected_body_sha256": "937b33f0c2be408e8f2321e3dabb146b2ae74976ed9ded6ddec3a3214cdd13e4",
+      "restore_wav_sha256": "a2b9020f2574a890cec1c7a9d304f1b7bd12f287e9e5c607ea4f48863995f91b",
+      "edited_artifact_sha256": "ce42730d540c7e73644661b9c44a179878be110c4ea2de49acbf8d90bb9fb818",
+      "software_validation_sha256": "4041f7f80778620f5ce560168337ec5bdbefcf85725fd3b09bb39702b4dc3ab6",
+      "backup_file": "capture.wav",
+      "ordinary_playback_file": "playback.wav"
+    },
+    {
+      "experiment_id": "edited-sound3-volume36-001",
+      "contiguous_raw_code": 36,
+      "alternative_order_raw_code": 18,
+      "expected_body_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+      "restore_wav_sha256": "870f8792ce49d8f36d0eeb0c3da458153f9a1d8f04651dc85e9a344bff35c249",
+      "edited_artifact_sha256": "8974223f2f3c955ea8aa8cabd0fe5dff198bfd7c55dbe413b5f0880dd7e8ad05",
+      "software_validation_sha256": "c5cd1dc7a268db78aeb040fd0c0ef339cdb15dff6627e9d3ef0aef5f343f2ecf",
+      "backup_file": "capture.wav",
+      "ordinary_playback_file": "playback.wav"
+    }
+  ],
+  "gain_hypotheses": {
+    "contiguous_order": "36>21: repeated Sound3 tone amplitude should increase",
+    "alternative_order": "18<21: repeated Sound3 tone amplitude should decrease",
+    "minimum_relative_amplitude_difference": 0.03,
+    "unchanged_pitch_relative_tolerance": 0.005,
+    "unchanged_loop_seconds_tolerance": 0.005
+  },
+  "limits": [
+    "This complementary test is selected after observing the original lower-interior result; all new data remain pending",
+    "Reuse the original reference audio and exactly frozen tone measurement; no new fit or gain law",
+    "All six comparisons must support the direction with stable pitch and loop; unchanged recording settings are required",
+    "Subjective relative loudness is optional and an uncertain impression must not become a confirmed observation",
+    "No public volume writer or every-value calibration; software remains hardware unverified"
+  ]
+}

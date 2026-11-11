@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed it sounds like the lower volume",
+  "interpretation": "Confirmation of the requested reference restore and lower-level audible state; no separately typed numeric display, exact gain or pitch comparison claimed",
+  "restore_success_confirmed_in_requested_context": true,
+  "lower_level_reference_confirmed": true,
+  "numeric_display_reported": null,
+  "capture_sha256": "631cc2937a553685d71e76ca7334d60536e23a6e050d1bfa202da769fc71181b",
+  "playback_sha256": "1756980622b9dbb2a4441b55fc20a8a12ee4fc7418cb523796ca64122c4ee339"
+}

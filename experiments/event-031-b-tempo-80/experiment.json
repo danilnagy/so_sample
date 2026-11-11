@@ -1,0 +1,22 @@
+{
+  "experiment_id": "event-031-b-tempo-80",
+  "capture_status": "validated_tempo_preset_and_exact_original_return",
+  "expected_file": "capture.wav",
+  "series_registration": "../tempo-preset-series-registration-001.json",
+  "expected_display_before_bpm": 140,
+  "expected_display_after_bpm": 80,
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off and both knobs unchanged",
+    "Tap BPM once and note the displayed new BPM; report unexpected values before continuing the next leg",
+    "Before playback save complete stereo capture.wav at established reduced levels with one second trailing silence",
+    "Report the actual displayed transitions for both captures"
+  ],
+  "source_sha256": "b83a3a086a6c5eef5c365d98b1032d08fe67d29b65afb200f490b27b170cbfcd",
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_before_bpm": 140,
+  "display_after_bpm": 80,
+  "project": "../exported-tempo-80-001/project.json",
+  "tempo_writer_enabled": false
+}

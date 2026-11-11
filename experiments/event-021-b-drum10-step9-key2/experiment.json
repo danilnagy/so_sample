@@ -1,0 +1,28 @@
+{
+  "experiment_id": "event-021-b-drum10-step9-key2",
+  "capture_status": "validated_key2_note_replacement",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-drum-cell-copy-001",
+  "baseline_capture": "../edited-drum-cell-copy-001/capture.wav",
+  "baseline_source_sha256": "5de811a38223d7b4f14dfc65ba1ff724ec4a36458c8413196dc71ab9d4d3d648",
+  "baseline_artifact": "../edited-drum-cell-copy-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "0d6d518212530c82ad74d432de4693ff0ee7956bc349741aa18fff2552a532a5",
+  "baseline_body_sha256": "6f4e2cab0060a6ff1c63eaafe7b34ea7c4ee8e95fa5d2b88ee64d1c308e6c130",
+  "decoder_threshold": 0.0063,
+  "preregistration": "../drum10-step9-key2-predictions-001.json",
+  "planned_actions": [
+    "Retain Pattern1, stopped/write off; select Sound10/TONE; enter write, tap lit Step9 once to remove only its drum note, then exit write; retain Step1",
+    "With write off tap keyboard key2 once to select that drum slice; enter write, tap Step9 once to add the key2 note, then exit write",
+    "Keep both knobs and all other notes/settings unchanged; return to Sound8/TONE stopped/write off",
+    "Before pattern playback capture a complete stereo PCM16/44100Hz backup here at successful reduced levels, with a second of trailing silence",
+    "Leave Step1/key1 and Step9/key2 present; report deviations"
+  ],
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "853d6d6249a98538ab4200b1067d216636b6e796044dc01bf1993c2b80061114",
+  "purpose": "Independently test drum-key auxiliary mapping on a layered step while retaining the accepted source key1 and all sample state",
+  "results": "../drum10-step9-key2-results-001.json",
+  "analysis": "derived/analysis-001"
+}

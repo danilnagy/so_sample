@@ -1,0 +1,41 @@
+{
+  "experiment_id": "empty-001-c-copy-to-1",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-b-tone",
+  "baseline_source_sha256": "74d6be2ea498c4fcebed2963ef127b6a6addee07a87423148b7dae40f1d5c80c",
+  "planned_action": "Copy existing Sound8 into empty melodic Sound1, retaining Sound8, then return to Sound8 and record one complete backup",
+  "planned_source_slot": 8,
+  "planned_destination_slot": 1,
+  "planned_patterns": "all remain empty",
+  "planned_capture_selection": {
+    "pattern": 1,
+    "sound": 8,
+    "write_mode": false,
+    "playing": false
+  },
+  "actual_actions": [
+    "User confirmed completion of requested Sound8-to-Sound1 copy control and supplied the backup; exact button log not separately supplied."
+  ],
+  "source_sha256": "b38ea70cc43b6ebbb2797a213c156bc396c59eb57648de1c4e9943a4544eaa74",
+  "purpose": "Compare a stored sound and its device-side copy without resampling the analogue input",
+  "hypotheses": [
+    "Measure whether transfer length increases or remains the same; neither is assumed",
+    "Search copied state for exact reusable transport subsequences while retaining source ambiguity",
+    "Distinguish observable slot/serialization changes from uncontrolled new ADC recordings"
+  ],
+  "limits": [
+    "Copy semantics, allocation sharing and state validation remain unverified",
+    "A copied transport substring is not automatically a writable sample field",
+    "No fresh A or A-return is requested; retain both copies afterward"
+  ],
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "independent_waveform": "../waveform-probes-012.json",
+    "structure": "../copy-structure-001.json"
+  },
+  "observed_complete_symbols_per_channel": 178868,
+  "next_control": "empty-001-d-copy-to-2"
+}

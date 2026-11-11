@@ -1,0 +1,57 @@
+{
+  "analysis_version": "FX-code-map-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_backup": true,
+  "experiment_id": "observe-FX-code-map-001",
+  "baseline_artifact": "experiments/edited-pattern1-FX-position-map-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "a2b6b67e0104ed88dff71c0cbd041b9e81e872aabdcd30fc766886650573058b",
+  "baseline_body_sha256": "36cef7116a3e9bc6c50e1e770e4b0de52d36887f415f8e8729222694144d3ccf",
+  "assignments": {
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 6,
+    "6": 7,
+    "7": 8,
+    "8": 9,
+    "9": 10,
+    "10": 11,
+    "11": 12,
+    "12": 13,
+    "13": 14,
+    "14": 15,
+    "15": 16
+  },
+  "predicted_codes": {
+    "1": "0",
+    "2": "1",
+    "3": "2",
+    "4": "3",
+    "5": "4",
+    "6": "5",
+    "7": "6",
+    "8": "7",
+    "9": "8",
+    "10": "9",
+    "11": "A",
+    "12": "B",
+    "13": "C",
+    "14": "D",
+    "15": "E"
+  },
+  "known_controls": {
+    "7": "6",
+    "8": "7"
+  },
+  "decision": [
+    "For each key, the codes stored in its pattern's footer are read; F means no effect",
+    "A key maps to a code when its pattern holds exactly one non-F code",
+    "The key-minus-one model is supported when all 15 keys map to their predicted codes and both controls match",
+    "Other changes outside the footers of patterns 2..16 are reported, not interpreted"
+  ],
+  "limits": [
+    "Records codes only; what each effect sounds like is not measured",
+    "Coverage depends on how long each key was held"
+  ]
+}

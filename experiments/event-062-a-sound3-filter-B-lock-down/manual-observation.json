@@ -1,0 +1,8 @@
+{
+  "user_report": "done, no audible change, explainable with no filter",
+  "audible_change": "none_reported",
+  "user_explanation": "explainable with no filter",
+  "numeric_display_value": null,
+  "capture_sha256": "83e9b3583f86bf0e19d249c9a22bb28a2d08634c8d1f7e841ab561431be8d16e",
+  "interpretation": "No audible change is explicitly confirmed; neutral cutoff as its cause is a user explanation consistent with stored63, not an independent resonance transfer-function measurement"
+}

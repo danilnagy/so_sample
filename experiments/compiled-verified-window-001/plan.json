@@ -1,0 +1,9 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "3b6eb02794d58a4a08094dd53ace16147a03e5f61696adbf72864d2dc2d79b90",
+  "source_body_sha256": "002346273de5b027d53b593e8183b3695ba680bcd01543286def0bc68d24f696",
+  "operations": [
+    {"operation": "set_sound_end", "sound": 3, "end": 39393}
+  ]
+}

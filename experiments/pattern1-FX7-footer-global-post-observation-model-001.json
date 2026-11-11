@@ -1,0 +1,10 @@
+{
+  "analysis_version": "FX7-footer6-and-global9-post-observation-model-0.1",
+  "hardware_verified": false,
+  "registered_before_FX7_data": false,
+  "rule": "Set Pattern1 footer to eight0x66 bytes and second0x7d5c payload byte131 to9; preserve all other payload bytes",
+  "complete_body_reproduced": true,
+  "original_footer_only_hypothesis_failed": true,
+  "global_byte_meaning_and_nibble_order_confirmed": false,
+  "native_results_sha256": "0f408a16d3ffb99c9bb099ac96ada5296710cbb802f455cc44a7a822c4f0ab10"
+}

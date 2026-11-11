@@ -1,0 +1,90 @@
+{
+  "analysis_version": "generated-FILTER52-exact-reception-and-listening-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Generated52 recaptures as the complete preregistered body and all packets, matching independent recorded HPF; user confirms high-pass filtering; pitch14/volume36 and every unrelated state bit preserved",
+  "checks": {
+    "entire_native_target_and_preservation_checks_pass": true,
+    "capture_artifact_registration_and_generated_wav_pins_match": true,
+    "user_explicitly_confirms_highpass_filtering": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_full_native_reconstruction_pass": true
+  },
+  "registration_sha256": "4ae4ff2cd2a09191061f53b003399121b0b5e9ac8f23ef13fe5b47ea4c1bbf3e",
+  "capture_sha256": "570857c99376c0076fe9aa4e3236ab6ca1fce64ab5e17d8ccd3a791948b5e617",
+  "artifact_sha256": "fb668600266b61db96d7db8eaf4cbc2883d7b4926183eaf294e5c46e1ef1de76",
+  "artifact_path": "experiments/edited-sound3-filter52-highpass-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "fd5c085eae8bcea16f167c240d014f770e588c0a205c1117c732021afa0102af",
+  "restore_wav_sha256": "5b310899d7ce1ea9e92e062ac77fc8a24df1267c07b924db7041fce258c0ee31",
+  "native_results_sha256": "ae551529a1bba34331f6f3d17f356db46af13bb95a8e6b5a36fa163b1fbd1466",
+  "manual_observation_sha256": "2a6e7cc1634ee0ed17e3868851fd9f76b6dc03e7bb3a6f26913596e14ec5f57e",
+  "contiguous_candidate_values": [
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52,
+    52
+  ],
+  "pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.142852783203125,
+      0.13873291015625
+    ]
+  },
+  "quantitative_audio_response_measured": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Targets reproduce known physical bodies; this new test concerns generated reception and saved-pattern audible behavior",
+    "Both generated targets and their hashes are frozen before recapture; no new general cutoff law or amplitude measurement is predicted",
+    "Restore16 and verify native plus user listening before requesting52; retain mismatches without changing targets",
+    "Only fixed16/52 from exact center are allowed by research constructor; public pitch/volume guards stay unchanged",
+    "Contiguous branch ordering has support but full field width, all-code law, numeric UI and resonance remain unknown"
+  ]
+}

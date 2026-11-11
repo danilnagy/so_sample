@@ -1,0 +1,28 @@
+{
+  "experiment_id": "edited-sound4-growth-001",
+  "capture_status": "hardware_verified_entire_generated_growth_body_matches",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-025-b-rerecord-unshared-sound4-short",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "software_validation": "software-validation.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "User reported: and confirmed; requested restore and audition checks confirmed"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "manual_observation": "manual-observation.json",
+    "recapture_results": "hardware-recapture-results-001.json"
+  },
+  "planned_actions": [
+    "Restore the complete restore.wav through the proven stereo receive path at established levels",
+    "Return to Pattern1/Sound8/TONE, stopped/write off, both knobs unchanged",
+    "Before audition or pattern playback record the complete dump to capture.wav with one second of trailing silence",
+    "Then audition Sound4/key1 and Sound5/key1 and check Pattern1 unchanged; return to Sound8/TONE stopped/write off and report acceptance and observations"
+  ],
+  "source_sha256": "895d593e7a632fbd3154721a2c53b71b0dc69efffa627da8d5a62d9105c263f0",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-generated-sound4-growth-001/project.json"
+}

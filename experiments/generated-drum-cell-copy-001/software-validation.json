@@ -1,0 +1,64 @@
+{
+  "analysis_version": "first-drum-cell-copy-candidate-0.1",
+  "control_evidence_sha256": "e95f23ca6e3cfb6d2b15b8c67f01c840677568499f0a25d8e67ba981cccdf1c9",
+  "source_capture_sha256": "17cc220dfa4c97f06606ad3c131be8f2bc6080fe7a12fc8be27842ca5c118817",
+  "source_artifact_sha256": "7626a958c17a3d8914f5b90bc9a17fccad263e3ce5a5e2ef40449c5108b68ad0",
+  "source_body_sha256": "edd7c74f1817ee7bf0afb6b3c7cb9340beed04f8a2da813e4b662b2ba5ff02c7",
+  "restore_wav_sha256": "216b6e90d740e7b1a773e28af7e672fd8073b171b09f90047045fa051fd12001",
+  "expected_body_sha256": "6f4e2cab0060a6ff1c63eaafe7b34ea7c4ee8e95fa5d2b88ee64d1c308e6c130",
+  "pattern": 1,
+  "sound": 10,
+  "source_step": 1,
+  "target_steps": [
+    9
+  ],
+  "primary_hex": "0df883",
+  "auxiliary_byte": 16,
+  "pattern1_byte_changes": [
+    {
+      "offset": 411,
+      "old": 0,
+      "new": 13
+    },
+    {
+      "offset": 412,
+      "old": 0,
+      "new": 248
+    },
+    {
+      "offset": 413,
+      "old": 0,
+      "new": 131
+    },
+    {
+      "offset": 905,
+      "old": 0,
+      "new": 16
+    }
+  ],
+  "changed_plain_packet_indices": [
+    5,
+    7
+  ],
+  "checks": {
+    "genuine_before_addition_body_reproduced": true,
+    "exact_expected_step9_cell_bytes": true,
+    "only_expected_plain_packets_changed": true,
+    "entire_genuine_addition_body_reproduced": true,
+    "candidate_inverse_reproduces_source": true,
+    "both_drumnotes_removed_reproduce_genuine_baseline": true,
+    "all_compiler_roundtrip_checks": true,
+    "source_artifact_preserved": true,
+    "source_capture_preserved": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "compiler_report": "compile-report.json",
+  "limits": [
+    "Only the observed opaque Sound10/key1 primary0df883/auxiliary10 cell is copied; no drum-key or parameter encoding is inferred",
+    "Pattern1, accepted copied Sound10 window and calibrated Sound2/Sound3 neighbors bound the writers",
+    "Source note, all other cells/patterns, samples/references and opaque packets remain intact; occupied targets are rejected",
+    "This generated three-sound Step9 combination needs its own hardware restore and recapture",
+    "The failed F0 auxiliary prediction is retained independently; it is never substituted into the copied cell"
+  ]
+}

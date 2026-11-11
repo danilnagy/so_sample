@@ -1,0 +1,14 @@
+{
+  "analysis_version": "tempo-preset-series-software-prediction-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "first_prediction_passes_registered_single_byte_checks": true,
+    "return_prediction_passes_registered_single_byte_checks": true,
+    "return_prediction_equals_complete_independent_original_body": true,
+    "source_file_unchanged": true
+  },
+  "registration_sha256": "9a2a92f905e46db6dd45af2195993f7e87201c7f4c9b987a3369952ea003cc57",
+  "expected80_body_sha256": "2a1a594b027dcd228f20e2b72961e995b27a3c8378643d74ad03a323ce3c17ce",
+  "expected120_return_body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0"
+}

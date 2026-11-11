@@ -1,0 +1,12 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "5eec8293bd2f061fad97dd7b4973ce5d918d2d5ab3b86932f4461276530a1a58",
+  "source_body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633",
+  "operations": [
+    {
+      "operation": "set_tempo",
+      "bpm": 137
+    }
+  ]
+}

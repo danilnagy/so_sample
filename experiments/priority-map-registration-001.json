@@ -1,0 +1,266 @@
+{
+  "analysis_version": "priority-map-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-priority-map-001",
+  "source_artifact": "experiments/compiled-swing-law-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "e32f298e00477193f6e644083aaade063675b38a03d0d2c27181acb4027be359",
+  "source_capture_sha256": "e72da22909736fe54001ebdbfe6a2c3857db71cdb8f7a3f327a212a4b8b2ea8c",
+  "voices_hz": {
+    "1": 599.3228307506727,
+    "2": 653.5660418548391,
+    "3": 712.7192052499305,
+    "4": 777.2258198307022,
+    "5": 847.5698387829855,
+    "11": 1500.0,
+    "12": 500.0,
+    "13": 300.0,
+    "14": 400.0,
+    "15": 1200.0,
+    "16": 1350.0
+  },
+  "solo_steps": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "11": 6,
+    "12": 7,
+    "13": 8,
+    "14": 9,
+    "15": 10,
+    "16": 11
+  },
+  "stacks": {
+    "1": [
+      1,
+      2,
+      3,
+      4,
+      11
+    ],
+    "3": [
+      1,
+      2,
+      3,
+      4,
+      12
+    ],
+    "5": [
+      1,
+      2,
+      3,
+      4,
+      13
+    ],
+    "7": [
+      1,
+      2,
+      3,
+      4,
+      14
+    ],
+    "9": [
+      1,
+      2,
+      3,
+      4,
+      15
+    ],
+    "11": [
+      1,
+      2,
+      3,
+      4,
+      16
+    ],
+    "13": [
+      1,
+      2,
+      3,
+      5,
+      11
+    ],
+    "15": [
+      2,
+      3,
+      4,
+      5,
+      11
+    ]
+  },
+  "rankings": {
+    "lowest_sounds_win": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "sound11_outranks_4_and_5": [
+      1,
+      2,
+      3,
+      11,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "rule_predictions": {
+    "lowest_sounds_win": {
+      "1": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "5": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "7": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "9": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "11": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "13": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "15": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "sound11_outranks_4_and_5": {
+      "1": [
+        1,
+        2,
+        3,
+        11
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "5": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "7": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "9": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "11": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "13": [
+        1,
+        2,
+        3,
+        11
+      ],
+      "15": [
+        2,
+        3,
+        4,
+        11
+      ]
+    }
+  },
+  "plan_sha256": "f9821930b52c85ad84d6ed754d8dff21669eb5125c777a05c7c60daf6603861a",
+  "expected_body_sha256": "ab6d6b9ede12895cae2a96f966fb4d444fbc98514f0eb38f6d907b9d056a772b",
+  "edited_artifact_sha256": "f5d6cb60365e7952c123f65483d6a0fb9b842c56d87d201a3023f704b3f60be0",
+  "restore_wav_sha256": "a976c048a28c750b4318c3a8bcfc39425a1a89b98055a17e7adb16a042c66ec7",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "cycles_measured": 3,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "four_voices holds when every stack's majority count over three cycles is 4",
+    "A ranking holds when every stack's majority present set equals its prediction"
+  ],
+  "limits": [
+    "Sounds 1..5 and 11..16 only; Sound9 and Sound10 hits are too short for the window"
+  ]
+}

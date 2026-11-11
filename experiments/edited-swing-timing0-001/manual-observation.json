@@ -1,0 +1,9 @@
+{
+  "user_report": "done, confirmed I can hear it",
+  "restore_acceptance_confirmed": true,
+  "added_step2_note_audible_confirmed": true,
+  "independent_swing_display_reported": false,
+  "interpretation": "User confirms the requested restore and added note; no swing display or timing value was independently reported",
+  "capture_sha256": "002f1d33922bc300f58b51f41a68e990ce6797a67fcb5619e0b3651bacbd7956",
+  "playback_sha256": "66ccc83783a30af95101977284038cc4096eb9085381ea7bc5d19d5c0ffdbcc3"
+}

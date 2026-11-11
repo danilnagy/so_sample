@@ -1,0 +1,16 @@
+{
+  "experiment_id": "event-059-f-sound3-filter-A-lowpass-interior",
+  "capture_status": "validated_literal_interior_and_contiguous_branch",
+  "registration": "../sound3-filter-A-interior-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/FILTER, B and all audio settings unchanged",
+    "Start playback and hold WRITE; From the current single-tick center move only A counterclockwise to about halfway toward fully counterclockwise (roughly one-quarter of total knob travel) over about5 seconds",
+    "Hold WRITE3 more seconds stationary, release WRITE, stop playback and ensure write off",
+    "Save complete capture.wav here at established reduced level with one second trailing silence before the next action",
+    "Report actual audibility/display without guessing numeric codes; no separate playback.wav or restore is required"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-filter-A-interior-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

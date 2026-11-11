@@ -1,0 +1,118 @@
+{
+  "analysis_version": "generated-B32-interior-and-frozen-endpoint-comparison-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_middle_native_and_audio": true,
+  "endpoint_audio_already_observed": true,
+  "experiment_id": "edited-sound3-filter16-B32-middle-001",
+  "source_artifact": "experiments/edited-sound3-filter16-B63-candidate-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "31e178d0ae8b46beaf36d05cf857a9e52a2b418f6a6dd0d56a5a4c26bd16a0ed",
+  "source_capture": "experiments/edited-sound3-filter16-B63-candidate-001/capture.wav",
+  "source_capture_sha256": "731edf3c33e7df27398ab59ec0bcde5aee57c68f2ff3309de2dc203d67e3e2e2",
+  "source_body_sha256": "fd0817c1c7791225eab3fe2f2d91f459ddad0c00fd0aacbd87e8672232323039",
+  "source_observation_sha256": "5c0e63d76980ea62dd16300fcb59584719b6760ea8f8dbfd771de761bd59d749",
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "expected_B_value": 32,
+  "expected_body_sha256": "d039d344987f852ad3a8668249fab8a1366e1d1e9bc9280c789d0059947ca73f",
+  "restore_wav_sha256": "9acf88e36985c186f0c2e6bc91eb0e7954d87e6a1d12621a4be74ecef05ae92b",
+  "edited_artifact_sha256": "fec60b2247a4cfaf0dda214af711b0db999a3122fe9d12f1eeb84fb4408cd9e5",
+  "software_validation_sha256": "c8beac3c5c0c6077ceb71f7a7b1c9419b621c6574f397eb47c55222de942d3bd",
+  "endpoint_inputs": [
+    {
+      "raw_B_value": 0,
+      "audio_results": "experiments/edited-sound3-filter16-B0-reference-001/resonance-frequency-results-001.json",
+      "audio_results_sha256": "a4465d9622a6596da6afd987ceccc1f86afe6219e767cbeebba57efe23c9f8c2",
+      "playback": "experiments/edited-sound3-filter16-B0-reference-001/playback.wav",
+      "playback_sha256": "f9a433e3bdf42e7411eb1e767936245894ebb7c342c8f3dd141c59bde3dcd067",
+      "native_results": "experiments/edited-sound3-filter16-B0-reference-001/hardware-recapture-results-001.json",
+      "native_results_sha256": "7e586802ec8c4eb3dda8bebbb2de2855448498a97ea690f97d3a910109d962f5",
+      "capture": "experiments/edited-sound3-filter16-B0-reference-001/capture.wav",
+      "capture_sha256": "5c87d7837f7fea376ffeaa303a2ac3f71116de168f5afd9f00d709e2252a1027",
+      "artifact": "experiments/edited-sound3-filter16-B0-reference-001/derived/analysis-001/capture.symbols.npz",
+      "artifact_sha256": "5132333234cd006c16da9dcdd127d698b9da9afdd3d90506a9a6d2a02da1ff9d",
+      "observation": "experiments/edited-sound3-filter16-B0-reference-001/hardware-observation-001.json",
+      "observation_sha256": "dd85a541a61433e06da17ffae7fce70bb5f9f5f48514870a25a3b99580341308"
+    },
+    {
+      "raw_B_value": 63,
+      "audio_results": "experiments/edited-sound3-filter16-B63-candidate-001/resonance-frequency-results-001.json",
+      "audio_results_sha256": "57f3de17482a4bd37a456de88bf1aa40fc52eb922bc38decb5080dcc114dbc31",
+      "playback": "experiments/edited-sound3-filter16-B63-candidate-001/playback.wav",
+      "playback_sha256": "3c7400cc8daa6c33ecb206ba7f00a4aad3d7d69e4cf3d493a50cf43ef26c3ece",
+      "native_results": "experiments/edited-sound3-filter16-B63-candidate-001/hardware-recapture-results-001.json",
+      "native_results_sha256": "e9cc8f0f6a8c0e4a30c192e712d8d7ab0cc9bae8cb4f97edc091d835c1db9e9c",
+      "capture": "experiments/edited-sound3-filter16-B63-candidate-001/capture.wav",
+      "capture_sha256": "731edf3c33e7df27398ab59ec0bcde5aee57c68f2ff3309de2dc203d67e3e2e2",
+      "artifact": "experiments/edited-sound3-filter16-B63-candidate-001/derived/analysis-001/capture.symbols.npz",
+      "artifact_sha256": "31e178d0ae8b46beaf36d05cf857a9e52a2b418f6a6dd0d56a5a4c26bd16a0ed",
+      "observation": "experiments/edited-sound3-filter16-B63-candidate-001/hardware-observation-001.json",
+      "observation_sha256": "5c0e63d76980ea62dd16300fcb59584719b6760ea8f8dbfd771de761bd59d749"
+    }
+  ],
+  "pair_registration_sha256": "a980658919688e4bc6286a2b0710d903502ea56e16150255d405637acc216e9e",
+  "frequency_method": {
+    "parameters": {
+      "center_frequency_hz": 525.0,
+      "half_bandwidth_hz": 75.0,
+      "envelope_seconds": 0.005,
+      "threshold_peak_fractions": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "minimum_region_seconds": 0.06,
+      "edge_margin_seconds": 0.03,
+      "minimum_band_rms": 0.001,
+      "maximum_gap_residual_seconds": 0.006,
+      "threshold_gap_spread_seconds": 0.004,
+      "stereo_onset_tolerance_seconds": 0.002,
+      "nominal_loop_seconds": 2.4,
+      "loop_tolerance_seconds": 0.005,
+      "steady_fit_window_after_onset_seconds": [
+        0.08,
+        0.18
+      ],
+      "frequency_search_hz": [
+        465.0,
+        585.0
+      ],
+      "fft_grid_max_spacing_hz": 0.25,
+      "fft_peak_refine_halfwidth_hz": 1.0,
+      "minimum_fit_explained_variance": 0.9,
+      "minimum_complete_cycles": 3,
+      "reference_frequency_lead_hz": 500.65,
+      "reference_frequency_relative_tolerance": 0.005,
+      "minimum_relative_frequency_increase": 0.005,
+      "hypothesized_ratio_for_one_semitone": 1.0594630943592953,
+      "semitone_ratio_relative_tolerance": 0.002,
+      "unchanged_loop_seconds_tolerance": 0.005
+    },
+    "algorithm": "Common450..600Hz third-order zero-phase band; frozen onset thresholds; fit80..180ms after each onset; Hann FFT with spacing<=0.25Hz selects global peak in465..585Hz, refine least-squares sine/cos/DC within1Hz; identical method for both legs"
+  },
+  "resonance_comparison_parameters": {
+    "reference_frequency_lead_hz": 530.26,
+    "frequency_relative_tolerance": 0.005,
+    "loop_seconds_tolerance": 0.005,
+    "minimum_amplitude_increase_fraction": 0.05
+  },
+  "original_frequency_registration": "experiments/sound3-generated-pitch13-14-registration-001.json",
+  "original_frequency_registration_sha256": "164a99c14a96e7e96f4ffea2b3e35e5f7ea7316647600075dd0291aa87f14110",
+  "hypothesis": "B32 repeated-component amplitude is between observed B0 and B63, with both adjacent amplitude ratios at least1.05 and consistent pitch/loop",
+  "limits": [
+    "B32 target is new and has no physical recapture yet; endpoints were already observed before this new interior registration",
+    "New hypothesis requires middle amplitude above minimum by at least5% and maximum above middle by at least5% in all six common measurements; failure remains retained",
+    "Original common audio method, windows, thresholds, band and search remain unchanged; missing/quiet/distorted audio is not refitted",
+    "Only fixed32 from exact accepted LPF16/B63 is allowed by constructor; no general resonance writer or cutoff guard extension",
+    "Literal32 tests an interior code and bit7 with lower candidate bits clear; no numeric UI midpoint, proportional Q scale or complete bit7 semantics inferred"
+  ]
+}

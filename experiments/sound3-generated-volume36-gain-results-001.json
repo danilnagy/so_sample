@@ -1,0 +1,87 @@
+{
+  "hardware_verified": false,
+  "measurements": [
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.15,
+      "amplitude_ratio_candidate_to_reference": 2.2035374446978544,
+      "relative_frequency_delta": -0.00017672059628692782,
+      "loop_delta_seconds": 0.000430839002266481,
+      "comparison_consistent": true,
+      "contiguous36_gain_direction_supported": true,
+      "alternative9_gain_direction_supported": false
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.25,
+      "amplitude_ratio_candidate_to_reference": 2.2035505446627197,
+      "relative_frequency_delta": -0.00017947727026079718,
+      "loop_delta_seconds": 0.00043083900226781324,
+      "comparison_consistent": true,
+      "contiguous36_gain_direction_supported": true,
+      "alternative9_gain_direction_supported": false
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.35,
+      "amplitude_ratio_candidate_to_reference": 2.203535598819297,
+      "relative_frequency_delta": -0.00018190510175652985,
+      "loop_delta_seconds": 0.0004421768707483231,
+      "comparison_consistent": true,
+      "contiguous36_gain_direction_supported": true,
+      "alternative9_gain_direction_supported": false
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.15,
+      "amplitude_ratio_candidate_to_reference": 2.2035940869218007,
+      "relative_frequency_delta": -0.00017656138605548488,
+      "loop_delta_seconds": 0.0004195011337864152,
+      "comparison_consistent": true,
+      "contiguous36_gain_direction_supported": true,
+      "alternative9_gain_direction_supported": false
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.25,
+      "amplitude_ratio_candidate_to_reference": 2.203639177446777,
+      "relative_frequency_delta": -0.00017935478327713028,
+      "loop_delta_seconds": 0.00043083900226736915,
+      "comparison_consistent": true,
+      "contiguous36_gain_direction_supported": true,
+      "alternative9_gain_direction_supported": false
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.35,
+      "amplitude_ratio_candidate_to_reference": 2.20358274194693,
+      "relative_frequency_delta": -0.00018189450623951053,
+      "loop_delta_seconds": 0.0004421768707483231,
+      "comparison_consistent": true,
+      "contiguous36_gain_direction_supported": true,
+      "alternative9_gain_direction_supported": false
+    }
+  ],
+  "all_contiguous36_gain_directions_supported": true,
+  "all_alternative9_gain_directions_supported": false,
+  "gain_curve_or_numeric_UI_scale_confirmed": false,
+  "volume_writer_enabled": false,
+  "analysis_version": "fixed-volume36-reciprocal-gain-comparison-0.1",
+  "registration_sha256": "59fec7bc4da2094660e57b08b3c585891ac753de1feb517f17fd86135e3cc744",
+  "gain_method_sha256": "f33793227ce402ada428cd40415cbf1225e5cf5f930940aaa844a8ff4e4f50e7",
+  "gain_input_reports_sha256": [
+    "7a2b440fd5a180b825f13bc374e7785bbba408c66af9e2bc454bac70cd69c540",
+    "9e41848b811768020ccb7d3739528eb16881320c4ecf75b422cba11e91f02960"
+  ],
+  "native_input_reports_sha256": [
+    "517b3c82ce7e70d2aa8972a7f43ebbe4f109f0cf89b0ba90824f19a1edd94663",
+    "525e46fad3d65be1c176af953145cd062651f1bf1cd26c20dd1112f41662e188"
+  ],
+  "limits": [
+    "This complementary test is selected after observing the original lower-interior result; all new data remain pending",
+    "Reuse the original reference audio and exactly frozen tone measurement; no new fit or gain law",
+    "All six comparisons must support the direction with stable pitch and loop; unchanged recording settings are required",
+    "Subjective relative loudness is optional and an uncertain impression must not become a confirmed observation",
+    "No public volume writer or every-value calibration; software remains hardware unverified"
+  ]
+}

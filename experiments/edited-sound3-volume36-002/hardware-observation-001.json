@@ -1,0 +1,49 @@
+{
+  "analysis_version": "generated-volume36-reciprocal-native-and-audio-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Physical generated36 restore recaptures exact body; user confirms pattern plays; all six preregistered comparisons measure increased Sound3 tone amplitude with stable pitch and loop against reference21",
+  "checks": {
+    "entire_target_and_native_preservation_pass": true,
+    "capture_and_artifact_hashes_match": true,
+    "audio_usable_and_identity_matches": true,
+    "frozen_method_and_registration_match": true,
+    "both_gain_and_native_report_hashes_match": true,
+    "six_registered_comparisons_consistent": true,
+    "contiguous36_increase_prediction_supported": true,
+    "alternative9_decrease_prediction_not_supported": true,
+    "previous_lower_interior_evidence_preserved": true,
+    "capture_not_clipped": true,
+    "all_export_content_hashes_match": true,
+    "entire_export_body_exact": true
+  },
+  "contiguous_order_supported_in_both_generated_directions": true,
+  "subjective_gain_direction_confirmed": false,
+  "amplitude_ratio_candidate_to_reference_range": [
+    2.203535598819297,
+    2.203639177446777
+  ],
+  "capture_sha256": "476cb53192991b06b453929bfd5549cc9eb64715fb29f86c2226949336250c86",
+  "artifact_sha256": "1ee4a7cc78fb7e39c5e236772d2d2f14f865b64377a39a3f2387588ea96ac751",
+  "artifact_path": "experiments/edited-sound3-volume36-002/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+  "playback_sha256": "e41260c6a054c27b714ed203dc92aaab57299d3abbd2da853b1d98709c6f22ea",
+  "native_results_sha256": "525e46fad3d65be1c176af953145cd062651f1bf1cd26c20dd1112f41662e188",
+  "audio_results_sha256": "9e41848b811768020ccb7d3739528eb16881320c4ecf75b422cba11e91f02960",
+  "gain_results_sha256": "23cd3fb0111de3f3b358670f3191bd4fe64cf996574f1fc8e9dde779e4c642c0",
+  "manual_observation_sha256": "6be5fa8073973cfe510ad699b289efe5b04a91bdba681b238f27f80ab2804afc",
+  "lower_interior_observation_sha256": "a36dad39cc4d5b66b81f44f9f2fd9c2097768fa138d8aec0045aa6fb4c565d3f",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.158355712890625,
+      0.153289794921875
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "gain_curve_or_numeric_UI_scale_confirmed": false,
+  "limits": [
+    "Recorded audio relies on instructed unchanged audio settings; no separate hardware gain readback",
+    "Both generated directions support uniform Sound3/P1 six-bit volume ordering; other sounds and independent per-step edits remain untested",
+    "No gain law, zero-as-mute assumption, numeric UI scale or every-interior-value hardware verification"
+  ]
+}

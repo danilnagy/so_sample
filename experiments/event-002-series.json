@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "event-002",
+  "status": "analyzed_exact_return_with_step_related_onset",
+  "purpose": "Add and remove one complete pattern event, then examine reproducible transport differences",
+  "proposed_event": {
+    "pattern": 1,
+    "step": 2,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "captures": [
+    "event-002-a",
+    "event-002-b",
+    "event-002-a-return"
+  ],
+  "prerequisites": {
+    "target_step_empty": "Expected after return to user-confirmed empty Pattern 1; verify before A",
+    "target_slice_recognizable": "Confirmed kick Sound 9 slice 1"
+  },
+  "comparison_order": [
+    "A vs returned A before attributing B changes",
+    "A vs B and B vs returned A per channel",
+    "Explicit count/tail checks and waveform diagnostics before protocol offset inference"
+  ],
+  "claims": {
+    "field_offset_known": false,
+    "payload_coding_verified": false,
+    "editable_field_verified": false
+  },
+  "results": {
+    "a_return_identical_both_channels": true,
+    "empty_baseline_matches_event001": true,
+    "event_first_changed_symbol_both_channels": 9405,
+    "step1_first_changed_symbol": 9309,
+    "observed_onset_shift_symbols": 96,
+    "b_left_missing_terminal_symbols": 1,
+    "state_field_identified": false
+  }
+}

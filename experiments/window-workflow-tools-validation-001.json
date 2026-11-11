@@ -1,0 +1,23 @@
+{
+  "analysis_version": "window-workflow-tools-validation-0.1",
+  "pytest": {
+    "passed": 338,
+    "failed": 0,
+    "duration_seconds": 58.65,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --basetemp .tools/pytest-window-workflow-full-001 -p no:cacheprovider",
+    "windows_execution": "Normal filesystem access, automatically approved for temporary test fixtures"
+  },
+  "ruff": {"lint": "passed", "format": "passed", "formatted_file_count": 107, "scope": ["src", "tests", "scripts"]},
+  "recapture_sha256": "7935f7cfe3ab7a8b8d45dbe942f3144dad2c7eebb09c8aa52fb06f96a1d632d8",
+  "native_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+  "hardware_comparison": "edited-nonzero-trim-001/hardware-validation.json",
+  "fixed_start_edit_hardware_verified": true,
+  "project_export": "exported-verified-window-001/export-report.json",
+  "project_content_files_hash_checked": 26,
+  "project_preview_sound_slots": [1, 2, 3, 8],
+  "plan_replay_audit": "edit-plan-replay-validation-001.json",
+  "plan_replay_byte_identical_to_accepted_wav": true,
+  "compiler_report_remains_software_only": true,
+  "next_control": "event-014-b-sound3-start-quarter",
+  "general_start_writer_enabled": false
+}

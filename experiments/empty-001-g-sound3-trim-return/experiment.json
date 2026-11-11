@@ -1,0 +1,37 @@
+{
+  "experiment_id": "empty-001-g-sound3-trim-return",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated_return_prediction_failed",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-f-sound3-trim-min",
+  "baseline_source_sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70",
+  "return_reference_id": "empty-001-e-copy-to-3",
+  "return_reference_source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+  "planned_actions": [
+    "Select Sound3; cycle FX toTRIM; turn knobB fully clockwise to maximum length, leaving knobA unchanged",
+    "Return FX toTONE and selection toSound8; keep empty Pattern1, write off, stopped playback and same recording settings",
+    "Record full stereo backup"
+  ],
+  "actual_actions": [
+    "User replied done to the requested maximum Sound3 trim protocol and supplied this capture; no deviation reported"
+  ],
+  "source_sha256": "237230f9401b9be7093d306beaf38fbc139cc55dcfaf66570508d474d4e15119",
+  "preregistration": "../sound3-trim-return-predictions-001.json",
+  "purpose": "Test whether hardware length endpoint restores the original untrimmed serialized transport prefix",
+  "leave_populated_slots_afterward": [
+    1,
+    2,
+    3,
+    8
+  ],
+  "decoder_version": "sign-crossings-0.2",
+  "action_evidence": "User completion report; exact buttons, parameter endpoint value and audible length not independently observed",
+  "return_status": "Does not match original untrimmed serialized prefix",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "waveform": "../waveform-probes-018.json",
+    "registered_predictions": "../sound3-trim-return-results-001.json",
+    "coding_followup": "../sound3-trim-max-structure-001.json"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "user_report": "sound 3 became louded, recordings uploaded",
+  "stage": "recorded_tone_lock_up",
+  "audible_observation_applies_to_this_capture": true,
+  "audition_result": "louder",
+  "display_text": null,
+  "exact_gain_or_maximum_number_reported": false,
+  "capture_sha256": "cb0ceb9bb4108001948e9dca584397a8d046ec4ca502d32e2a93a9457aa116e2"
+}

@@ -1,0 +1,43 @@
+{
+  "analysis_version": "tempo-third-preset-and-original-return-preregistration-0.1",
+  "registered_before_both_captures": true,
+  "baseline_artifact": "experiments/event-030-b-tempo-preset-once/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "b6d4e617213811f5bdcfabe389172989bda3d30eaf3a38923adcc0bde1891690",
+  "baseline_capture": "experiments/event-030-b-tempo-preset-once/capture.wav",
+  "baseline_capture_sha256": "cedcdd9b97674b93b3ebb623e3ebd2744ddb4f188a9fd899eac9407903efc1ef",
+  "baseline_body_sha256": "e842aaea00d667ad6ef325a2e8cd870baa5e92dda7c7b3912270b41f740ba4df",
+  "baseline_observation_sha256": "b7d2289c75317c0cac55bb8c61303efd1385d32a21fe8fd6c6deecc45ad77536",
+  "original120_artifact": "experiments/event-029-b-delete-imported-unshared-sound7/derived/analysis-001/capture.symbols.npz",
+  "original120_artifact_sha256": "5aa1c2ac9326d2ebdec439b7dc1811e917aaf9b780c0b4c8f8d043db1e557407",
+  "original120_body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 129,
+    "baseline_encoded_value": 140,
+    "hypothesis": "Second opaque global packet byte129 stores the displayed integer BPM directly; only this byte changes after one BPM preset press",
+    "basis": "Before collection, the mostly-zero prefix has byte128=1 and byte129=120; numeric coincidence is a lead, not field identification",
+    "baseline_device_display_bpm": 140
+  },
+  "expected_initial_display_bpm": 140,
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-031-b-tempo-80",
+      "expected_before_bpm": 140,
+      "expected_after_bpm": 80,
+      "expected_body_sha256": "2a1a594b027dcd228f20e2b72961e995b27a3c8378643d74ad03a323ce3c17ce"
+    },
+    {
+      "experiment_id": "event-032-a-return-tempo-120",
+      "expected_before_bpm": 80,
+      "expected_after_bpm": 120,
+      "expected_body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0"
+    }
+  ],
+  "limits": [
+    "Fixed byte129 and direct integer BPM are preregistered; no offset or encoding fitting is allowed",
+    "Expected preset values are predictions; actual display readings must be reported independently",
+    "Returning120 must recover the complete independent original body, not only the candidate byte",
+    "No tempo writer, arbitrary BPM range or hardware acceptance of generated tempo edits is established"
+  ]
+}

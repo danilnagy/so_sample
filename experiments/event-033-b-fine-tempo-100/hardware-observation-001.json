@@ -1,0 +1,37 @@
+{
+  "analysis_version": "physical-fine-tempo100-hardware-observation-0.1",
+  "status": "supported_for_fine100_transition",
+  "hardware_verified": true,
+  "fine_tempo_writer_verified": false,
+  "public_tempo_scope": "Presets80/120/140 only within recognized opaque context",
+  "verified_scope": "Physical fine tempo80-to100 changes only second7d5c payload byte129; all unrelated global and sound-parameter/sample/pattern bytes remain exact",
+  "display_bpm": 100,
+  "native_results_sha256": "d2620b99632bfe00f68b59c8c7b7604fd6afd6e03584b30be8057f8040f679c3",
+  "manual_observation_sha256": "bf16743c1435c2de9ec6856da9fe0d0f1752a7c1c9acb2429ac3ba4db5fafdd5",
+  "capture_sha256": "a296fe64000e078997becbc2b9acba5a2a986b6172168658e0cfbe874859ea1b",
+  "artifact_sha256": "b802ea9c8306d5c048ecd95fc629f8c3546a097f1765931b3a49544e96698280",
+  "artifact_path": "experiments/event-033-b-fine-tempo-100/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633",
+  "checks": {
+    "all_native_controls": true,
+    "all_fixed_byte_hypotheses": true,
+    "whole_body_matches_preregistered100_prediction": true,
+    "display100_independently_reported": true,
+    "capture_and_artifact_hashes_match": true,
+    "all_export_content_hashes_match": true,
+    "export_complete_body_matches": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 31,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.163360595703125,
+      0.156524658203125
+    ]
+  },
+  "limits": [
+    "A single fine100 value is physically observed; range endpoints, exact fine-value return and generated arbitrary fine tempo remain pending",
+    "Public preset editing is unchanged and still rejects100 as source/target"
+  ]
+}

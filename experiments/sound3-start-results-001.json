@@ -1,0 +1,126 @@
+{
+  "analysis_version": "sample-start-control-check-0.1",
+  "registration_sha256": "5457bec534601b7b51addf4e0eb874b4e0144b24760b53a4d493ddd6d41887d1",
+  "capture_sha256": "24502f734e1d9170a1c5a4ac89d104fafeec3514478f39749919521336f68673",
+  "artifact_sha256": "e569b316e6f67a880206ab17bc6c1839f571fa8b93a985e4b3357f73175d35f7",
+  "decoder_version": "sign-crossings-0.2",
+  "control_checks": {
+    "packet_count": true,
+    "frame_end_byte": true,
+    "all_packet_checksums": true,
+    "exact_body_reencode": true,
+    "baseline_reference": true,
+    "reference_location": true,
+    "reference_size": true,
+    "owner_id_unchanged": true,
+    "only_reference_packet_changed": true,
+    "only_allowed_reference_bytes_changed": true,
+    "all_patterns_unchanged": true,
+    "backing_owner_unchanged": true,
+    "packet_tags_and_lengths": true
+  },
+  "control_passed": true,
+  "hypothesis_checks": {
+    "first_field_is_start": true,
+    "second_field_unchanged": false,
+    "second_field_moves_with_start": false
+  },
+  "any_registered_second_field_hypothesis_fits": false,
+  "changed_plain_packet_indices": [
+    375
+  ],
+  "sound3_reference_byte_changes": [
+    {
+      "offset": 0,
+      "old": 0,
+      "new": 161
+    },
+    {
+      "offset": 1,
+      "old": 0,
+      "new": 122
+    },
+    {
+      "offset": 4,
+      "old": 64,
+      "new": 255
+    },
+    {
+      "offset": 5,
+      "old": 31,
+      "new": 255
+    }
+  ],
+  "sound3_header_values": {
+    "before": {
+      "first_u32le": 0,
+      "second_u32le": 8000,
+      "owner_id": 0
+    },
+    "after": {
+      "first_u32le": 31393,
+      "second_u32le": 65535,
+      "owner_id": 0
+    }
+  },
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "4b697a34bea74f34654107463a9586afe31e9db1b55bf11f4f057f6e7f72ddc2",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "a17a0000ffff000000",
+        "payload_sha256": "b81cd35238138ab59124166ce339080ac0954d6645e604c1eda6b2b361e06869"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "user_report": "still hear the tone and done",
+  "audible_tone_confirmed": true,
+  "nonzero_start_writer_enabled": false,
+  "limits": [
+    "Control preservation and mutually alternative field hypotheses are evaluated separately",
+    "Audible tone is user reported; duration and exact start position were not independently measured",
+    "Both second-field predictions fail; observed65535 is retained without assigning endpoint, length or sentinel semantics",
+    "A passing physical control is not acceptance of a generated nonzero-start edit"
+  ]
+}

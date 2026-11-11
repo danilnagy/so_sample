@@ -1,0 +1,171 @@
+{
+  "analysis_version": "sample-codec-calibration-0.1",
+  "source_capture_sha256": "cbcec520586e91ba48b46b4e05fbca58b6b6eaf392974a592ef6a8b7641da7ee",
+  "sound": {
+    "sound_slot": 3,
+    "backing_sound_id": 0,
+    "backing_bytes": 65536,
+    "B_controlled_counter": 64704,
+    "sample_rate_hz_nominal": 23437.5,
+    "codec": "signed-complement G711 mu-law hypothesis",
+    "counter_policy": "Use counter samples at zero start; inclusive-end distinction remains unverified",
+    "export_sample_rate_hz": 48000,
+    "export_frames": 132514
+  },
+  "decoded_wave_sha256": "28661e1d827c3b8c9e7726d8b8d207a6b014d0159f6728812e0d161c16245be7",
+  "decoded_wave_tone_measurement": {
+    "analysis_version": "ordinary-tone-playback-0.1",
+    "path": "experiments\\empty-001-h-sound3-copy-return\\derived\\packet-001\\decoded-sound3.wav",
+    "source_sha256": "28661e1d827c3b8c9e7726d8b8d207a6b014d0159f6728812e0d161c16245be7",
+    "sample_rate_hz": 48000,
+    "pcm_subtype": "PCM_16",
+    "frames": 132514,
+    "channels": {
+      "left": {
+        "envelope_window_frames": 480,
+        "activity_threshold_rms": 0.004957143782526851,
+        "low_quantile_rms": 2.6392265450275893e-05,
+        "audible_span_frames": [
+          0,
+          89760
+        ],
+        "audible_span_seconds": [
+          0.0,
+          1.87
+        ],
+        "audible_duration_seconds": 1.87,
+        "frequency_fit_span_frames": [
+          2400,
+          87360
+        ],
+        "dominant_frequency_hz": 375.0149454523194,
+        "fundamental_amplitude": 0.06855671897935213,
+        "single_sine_explained_variance": 0.9997157768500231,
+        "single_sine_residual_rms": 0.0008174801870648351,
+        "activity_regions": 1,
+        "duration_resolution_seconds": 0.01,
+        "comparison_to_input": {
+          "input_frequency_hz": 375.0,
+          "playback_frequency_ratio": 1.0000398545395184,
+          "pitch_difference_semitones": 0.0006899616092811784
+        }
+      },
+      "right": {
+        "envelope_window_frames": 480,
+        "activity_threshold_rms": 0.004957143782526851,
+        "low_quantile_rms": 2.6392265450275893e-05,
+        "audible_span_frames": [
+          0,
+          89760
+        ],
+        "audible_span_seconds": [
+          0.0,
+          1.87
+        ],
+        "audible_duration_seconds": 1.87,
+        "frequency_fit_span_frames": [
+          2400,
+          87360
+        ],
+        "dominant_frequency_hz": 375.0149454523194,
+        "fundamental_amplitude": 0.06855671897935213,
+        "single_sine_explained_variance": 0.9997157768500231,
+        "single_sine_residual_rms": 0.0008174801870648351,
+        "activity_regions": 1,
+        "duration_resolution_seconds": 0.01,
+        "comparison_to_input": {
+          "input_frequency_hz": 375.0,
+          "playback_frequency_ratio": 1.0000398545395184,
+          "pitch_difference_semitones": 0.0006899616092811784
+        }
+      }
+    },
+    "limits": [
+      "Measured duration is audible playback duration at the triggered melodic note, not native stored sample length.",
+      "Input/playback pitch difference can reflect note transposition or existing parameter settings; exact button actions unknown.",
+      "Envelope threshold and 10 ms bins determine reported sound boundaries.",
+      "Single-sine residual includes noise, harmonics, modulation and processing; it is not a codec identification.",
+      "No payload or native sample-rate mapping is inferred."
+    ]
+  },
+  "ordinary_playback_sha256": "0ab0c5b150bc6c32b70f4f78705b6c7797a6d4835077786197dbae322ebef047",
+  "ordinary_playback_tone_measurement": {
+    "analysis_version": "ordinary-tone-playback-0.1",
+    "path": "experiments\\empty-001-h-sound3-copy-return\\sample-playback.wav",
+    "source_sha256": "0ab0c5b150bc6c32b70f4f78705b6c7797a6d4835077786197dbae322ebef047",
+    "sample_rate_hz": 44100,
+    "pcm_subtype": "PCM_16",
+    "frames": 262395,
+    "channels": {
+      "left": {
+        "envelope_window_frames": 441,
+        "activity_threshold_rms": 0.002728366548396343,
+        "low_quantile_rms": 0.00034104581854954287,
+        "audible_span_frames": [
+          63063,
+          118188
+        ],
+        "audible_span_seconds": [
+          1.43,
+          2.68
+        ],
+        "audible_duration_seconds": 1.25,
+        "frequency_fit_span_frames": [
+          65268,
+          115983
+        ],
+        "dominant_frequency_hz": 561.9542160815539,
+        "fundamental_amplitude": 0.012800921489742233,
+        "single_sine_explained_variance": 0.9969185898440633,
+        "single_sine_residual_rms": 0.0005032801930866959,
+        "activity_regions": 1,
+        "duration_resolution_seconds": 0.01,
+        "comparison_to_input": {
+          "input_frequency_hz": 375.0,
+          "playback_frequency_ratio": 1.4985445762174772,
+          "pitch_difference_semitones": 7.002743992655443
+        }
+      },
+      "right": {
+        "envelope_window_frames": 441,
+        "activity_threshold_rms": 0.0026267802006796795,
+        "low_quantile_rms": 0.00032834752508495993,
+        "audible_span_frames": [
+          63063,
+          118188
+        ],
+        "audible_span_seconds": [
+          1.43,
+          2.68
+        ],
+        "audible_duration_seconds": 1.25,
+        "frequency_fit_span_frames": [
+          65268,
+          115983
+        ],
+        "dominant_frequency_hz": 561.9541506059448,
+        "fundamental_amplitude": 0.012242824194803633,
+        "single_sine_explained_variance": 0.9968800893041457,
+        "single_sine_residual_rms": 0.0004843450619211851,
+        "activity_regions": 1,
+        "duration_resolution_seconds": 0.01,
+        "comparison_to_input": {
+          "input_frequency_hz": 375.0,
+          "playback_frequency_ratio": 1.498544401615853,
+          "pitch_difference_semitones": 7.002741975522957
+        }
+      }
+    },
+    "limits": [
+      "Measured duration is audible playback duration at the triggered melodic note, not native stored sample length.",
+      "Input/playback pitch difference can reflect note transposition or existing parameter settings; exact button actions unknown.",
+      "Envelope threshold and 10 ms bins determine reported sound boundaries.",
+      "Single-sine residual includes noise, harmonics, modulation and processing; it is not a codec identification.",
+      "No payload or native sample-rate mapping is inferred."
+    ]
+  },
+  "limits": [
+    "Nominal23437.5Hz and signed-complement G711 interpretation are supported by this calibration tone; arbitrary sample types remain untested.",
+    "At zero start theB-controlled counter is compatible with an end/length measure; inclusive endpoint and nonzero-start semantics remain unverified."
+  ]
+}

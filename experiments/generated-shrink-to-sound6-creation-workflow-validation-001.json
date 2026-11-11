@@ -1,0 +1,32 @@
+{
+  "analysis_version": "verified-generated-shrink-to-empty-sound6-creation-workflow-audit-0.1",
+  "checks": {
+    "source_shrink_is_hardware_verified": true,
+    "source_and_target_bodies_registered": true,
+    "all_candidate_software_checks_pass": true,
+    "all_generated_files_hashes_match": true,
+    "creation_checker_accepts_target_and_rejects_empty_baseline": true,
+    "total_backing_capacity_below_prior_observation": true,
+    "software_report_does_not_claim_hardware": true,
+    "registration_before_device_capture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "shrink_acceptance_sha256": "30f990d73e75768f1a6f239dc61225f40335b895fdae64ee5ef707eae6aa9b92",
+  "creation_registration_sha256": "81a5bcf4a13cf0f6fa54b19b1eb9a9762accc98755d15eb2dc0ebdad033cae62",
+  "validation": {
+    "targeted_tests": "35 passed in3.29s",
+    "ruff_check": "passed",
+    "ruff_format": "156 Python files formatted"
+  },
+  "shrink_capture_sample_rate_hz": 44100,
+  "shrink_capture_peak_per_channel": [
+    0.168792724609375,
+    0.16168212890625
+  ],
+  "shrink_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Restore Sound6 creation backup, capture before audition, confirm new lower Sound6 tone and retained Sound4/Sound5/Pattern1"
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "edited-pattern1-FX-position-map-001",
+  "capture_status": "validated_exact_native_pitch_track_sequential_high_nibble_first",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../pattern1-FX-position-map-registration-001.json",
+  "playback_seconds": 14,
+  "observation_questions": [
+    "Which of the four notes, if any, bent upward? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "pitch_results": "pitch-track-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-FX-position-map-001/project.json"
+}

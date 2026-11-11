@@ -1,0 +1,61 @@
+{
+  "analysis_version": "note-bits-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "3c375660d903e92d0680c8fcd57727a90577c80222c1cffba3c32f417311d0fd",
+  "native_results_sha256": "8c709edd3c74a9a8fcf5cc3fed05387ce432583fd1e5bb0cdbda4bfec54bbc8c",
+  "measurements_sha256": "b2775592fe1e843ce0df0928d6dc8a9df925d0dcd2d691d85fc9662912e3681f",
+  "bit5_stored": true,
+  "reception": "exact",
+  "measured_cents": {
+    "1": 0.0,
+    "2": 598.3640315214177,
+    "3": 599.9772122816897,
+    "4": -600.0539155474277,
+    "5": -600.1677726814305,
+    "6": 1198.5983944748643,
+    "7": 1199.7351296697984,
+    "8": -0.006496026177415851,
+    "9": 0.011825505183904562,
+    "10": -1200.5663303633114,
+    "11": -1200.5172870811598,
+    "12": 1198.5969839008294,
+    "13": 1199.7789762082257,
+    "14": 0.06328436009216738,
+    "15": -0.004963004716315832,
+    "16": -0.008349597508444412
+  },
+  "pitch": {
+    "model_support": {
+      "zero_holds_last_pitch": true,
+      "zero_is_pitch_13": false,
+      "zero_is_below_code_1": false
+    },
+    "classification": "zero_holds_last_pitch"
+  },
+  "bit5_comparisons": [
+    {
+      "flagged_step": 7,
+      "plain_step": 6,
+      "cents_diff": 1.13673519493409,
+      "db_diff": -0.684396462125406,
+      "ms_diff": -12.358276643990934
+    },
+    {
+      "flagged_step": 9,
+      "plain_step": 8,
+      "cents_diff": 0.018321531361320413,
+      "db_diff": -0.0001239445339749068
+    },
+    {
+      "flagged_step": 13,
+      "plain_step": 12,
+      "cents_diff": 1.1819923073962855,
+      "db_diff": -0.7282151843342461,
+      "ms_diff": -12.902494331065753
+    }
+  ],
+  "bit5_inert": false,
+  "limits": [
+    "One melodic sound at key 1; bit 5 on drum notes is not tested"
+  ]
+}

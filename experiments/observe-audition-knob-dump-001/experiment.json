@@ -1,0 +1,16 @@
+{
+  "experiment_id": "observe-audition-knob-dump-001",
+  "kind": "device_side_observation_without_restore",
+  "capture_status": "awaiting_hardware_session",
+  "expected_artifact": "../observe-audition-locks-001/edited.symbols.npz",
+  "source_artifact": "../observe-audition-locks-001/edited.symbols.npz",
+  "restore_of_record": "../observe-audition-locks-001/restore.wav",
+  "registration": "../audition-knob-dump-registration-001.json",
+  "playback_seconds": 0,
+  "observation_questions": [
+    "Since the retakes, did you touch anything on the device besides knob B, PLAY and key 1? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "none; the device holds the audition-lock restore"
+  }
+}

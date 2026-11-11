@@ -1,0 +1,44 @@
+{
+  "analysis_version": "sound3-selection-and-minimum-tone-volume-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "hardware_verified": false,
+  "baseline_artifact": "experiments/edited-joint-tempo100-swing9-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "506843efa4aeb08ac739e5a371e5e052ade1667b514f3831d8b79c7a9e3529a7",
+  "baseline_capture": "experiments/edited-joint-tempo100-swing9-001/capture.wav",
+  "baseline_capture_sha256": "41ecbebbaa09b5055b1cf5b2c3c6035f012da17bfde9460aa96385ac5718275a",
+  "baseline_body_sha256": "1dab085d95629db191991a089c9e4e67f56fc2a7dd571b1674fa8dbce144e551",
+  "baseline_observation_sha256": "48c29795726d0894d47ec2092b93d78d01f73a6a71cdd35f0c713fcf1074503d",
+  "expected_tempo_bpm": 100,
+  "expected_swing_byte": 9,
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-041-a-sound3-tone-selected",
+      "action": "Select Sound3/TONE without moving knobs; no playback or note audition before capture",
+      "expected_body_sha256": null
+    },
+    {
+      "experiment_id": "event-042-b-sound3-tone-volume-minimum",
+      "action": "Sound3/TONE stopped/write off; turn only B fully counterclockwise without holding BPM or another button; capture before any audition",
+      "expected_body_sha256": null
+    }
+  ],
+  "location_hypotheses": {
+    "selection_only_no_serialized_change": "Compare complete selectionA body to currentSound8 baseline",
+    "volume_no_serialized_change": "A valid possible outcome: live TONE settings may be transient or omitted from the backup",
+    "volume_changes_only_non_sample_non_pattern_packets": "Preserve sample records and all patterns; report every other changed tag, index and payload offset",
+    "volume_changes_pattern_parameters": "Alternative retained and reported despite write-off instruction; no event bytes guessed",
+    "minimum_display_and_raw_value_unknown": true
+  },
+  "manual_observations_requested": [
+    "Report actual display label/number while adjusting B if visible; do not infer it from bytes",
+    "After saving B tap Sound3 keyboard key1 with write off and report silent,quieter or unchanged",
+    "No original volume number or return setting is guessed"
+  ],
+  "official_control_reference": "https://teenage.engineering/guides/po-33/en#section6",
+  "limits": [
+    "No candidate volume offset, numeric scale, minimum display or predicted body supplied",
+    "SelectionA is a fresh control; B is compared against actualA, never only against priorSound8",
+    "No volume writer enabled, and an unchanged backup is retained as a meaningful outcome",
+    "Only software/capture evidence is generated automatically; later user observations remain separate"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "note": "Exploratory transforms of absolute labels; no verified protocol-bit interpretation or alignment applied.",
+  "channels": {
+    "left": {
+      "angular_delta_mod4": {
+        "length": 1970366,
+        "changed_positions": 88232,
+        "first_change": 9308,
+        "last_change": 126936,
+        "units": "transition index i joins original symbols i and i+1"
+      },
+      "adjacent_coordinate_xor": {
+        "length": 1970366,
+        "changed_positions": 88241,
+        "first_change": 9308,
+        "last_change": 126936,
+        "units": "transition index i joins original symbols i and i+1"
+      }
+    },
+    "right": {
+      "angular_delta_mod4": {
+        "length": 1970366,
+        "changed_positions": 1701414,
+        "first_change": 9308,
+        "last_change": 1970231,
+        "units": "transition index i joins original symbols i and i+1"
+      },
+      "adjacent_coordinate_xor": {
+        "length": 1970366,
+        "changed_positions": 1470119,
+        "first_change": 9308,
+        "last_change": 1970231,
+        "units": "transition index i joins original symbols i and i+1"
+      }
+    }
+  }
+}

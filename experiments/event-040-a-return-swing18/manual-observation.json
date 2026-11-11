@@ -1,0 +1,9 @@
+{
+  "user_report": "done, S00, S09, S18",
+  "series_position": 3,
+  "display_text": "S18",
+  "display_numeric_component": 18,
+  "independent_display_source": "User report in requested capture order",
+  "tempo_display_separately_reported": false,
+  "capture_sha256": "05eda85f4c5a678653fd782dbe56e13e635d1932b863fc7bb085152e28ddbec8"
+}

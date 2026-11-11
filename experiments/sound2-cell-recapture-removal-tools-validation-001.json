@@ -1,0 +1,25 @@
+{
+  "analysis_version": "sound2-cell-recapture-removal-tools-validation-0.1",
+  "pytest": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --basetemp .tools/pytest-cell-copy-recapture-removal-001 -p no:cacheprovider",
+    "passed": 288,
+    "failed": 0,
+    "duration_seconds": 51.10,
+    "windows_execution": "Normal filesystem access, automatically approved for temporary test fixtures"
+  },
+  "ruff": {
+    "lint": "passed",
+    "format": "passed",
+    "formatted_file_count": 96,
+    "scope": ["src", "tests", "scripts"]
+  },
+  "genuine_recapture_sha256": "1adb6964a06f239adfcd599c2996b6d2d075e67576e63955e150ec8c5d84b56f",
+  "native_body_sha256": "4362aa66f6c18e7351b39016eb1b801dfa4a6ce0f4935861d4aaf45c8737668b",
+  "cell_copy_hardware_validation": "edited-sound2-cell-001/hardware-validation.json",
+  "cell_copy_hardware_verified": true,
+  "removal_candidate_wav_sha256": "c72e4567bb387eeb845aac5f56d38da9d2200b94fe1e5dda0506cdd2a876593b",
+  "removal_candidate_body_sha256": "1e493f1495ecf2dc68077a35ae97b8883acbe96b94d0798427a9f3f990a1761a",
+  "removal_candidate_software_validation": "generated-sound2-remove-001/software-validation.json",
+  "removal_candidate_hardware_verified": false,
+  "next_recapture": "edited-sound2-remove-001/capture.wav"
+}

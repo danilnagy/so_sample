@@ -1,0 +1,230 @@
+{
+  "analysis_version": "sample-memory-registration-0.3",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-sample-memory-003",
+  "source_artifact": "experiments/compiled-sample-memory-002/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "1ca559930bfe7a1d705988e79461a4ef552dd69e9aad751fe04a6e22ddfd63f8",
+  "source_capture_sha256": "bedc6276876dc433d6c58c6048aa024d242034874541fd274be6f182978eba20",
+  "total_capacity_codes": 917504,
+  "hits": [
+    {
+      "path": "experiments/drum9-memory-hits-001/key01-450hz.wav",
+      "sha256": "d03419aa5653aea69ad1009c0c3a5916401788b9f1402dc6ef3cfe27ebbc4754",
+      "hz": 450.0
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key02-477hz.wav",
+      "sha256": "2b5abb3ee2658775e1fcba7cc5cae44cb707e58c04270790ccb1c57df8daf9f3",
+      "hz": 476.758
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key03-505hz.wav",
+      "sha256": "eb00492134b39e71243c44b2367c088ef609b82625cfa7a6287874415786e0bd",
+      "hz": 505.108
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key04-535hz.wav",
+      "sha256": "c27074bb913f158f52c479ae55453b4bec356f954d9d228916042ac1b8097640",
+      "hz": 535.143
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key05-567hz.wav",
+      "sha256": "b8e8a5ebff548af31b7e2deb9a83d9c0f3ea503f38e7684665481265ea90b812",
+      "hz": 566.964
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key06-601hz.wav",
+      "sha256": "a33e2f10b010d0122a9d0e9e61c19535105093af28d3942de4cb65a853f4bfa1",
+      "hz": 600.678
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key07-636hz.wav",
+      "sha256": "f62bff6ad89b0c1716e44cb5690fdc2dab59799847f095fcce5a84530ee34c6d",
+      "hz": 636.396
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key08-674hz.wav",
+      "sha256": "19cd4970381df12bd6a6617acdf7fe055e6f873a7259f2bdb5d30f470738639f",
+      "hz": 674.238
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key09-714hz.wav",
+      "sha256": "0f5f02afcc07935490cc6409087f6ab8133809a88c455b13272e4a037ff5e7dc",
+      "hz": 714.33
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key10-757hz.wav",
+      "sha256": "4c849bd596d722ec50a89f6537908f7167847168a394080d2041d5230fe04441",
+      "hz": 756.807
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key11-802hz.wav",
+      "sha256": "b7def21cfa4a8c86d176ec639adbaeb739247d45463ca5bcefa0bce86ccb6184",
+      "hz": 801.809
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key12-849hz.wav",
+      "sha256": "da9f475f4720eb2c441daac64fbfd8e5fcf734fd0cc16d2754b856deaf0f18be",
+      "hz": 849.487
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key13-900hz.wav",
+      "sha256": "9ef96308053b21ade77a14bd4b9aeca8e05b25ef0e4bad821972a31aec9a23c5",
+      "hz": 900.0
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key14-954hz.wav",
+      "sha256": "325ac894458a9697bb3b874a5d24be476818cbd7c16a4b7f4d096fb3623ebdfd",
+      "hz": 953.517
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key15-1010hz.wav",
+      "sha256": "0f08a9ea72633149446dfdcdb9b10cd70838347defac96d97efe5135076ff53a",
+      "hz": 1010.216
+    },
+    {
+      "path": "experiments/drum9-memory-hits-001/key16-1070hz.wav",
+      "sha256": "c184849566cbf52a5cf1acbddd8deba73b620a41c66134ba5b2eac512d25e329",
+      "hz": 1070.286
+    }
+  ],
+  "hit_codes": 6375,
+  "allocation": {
+    "drum_slot": 9,
+    "owner_sound_id": 8,
+    "source_kit_was_empty": false,
+    "source_layout": "references_to_sound_id_0",
+    "source_capacity_codes": 0,
+    "capacity_codes": 102400,
+    "kit_codes": 102000,
+    "windows": [
+      [
+        0,
+        6375
+      ],
+      [
+        6375,
+        12750
+      ],
+      [
+        12750,
+        19125
+      ],
+      [
+        19125,
+        25500
+      ],
+      [
+        25500,
+        31875
+      ],
+      [
+        31875,
+        38250
+      ],
+      [
+        38250,
+        44625
+      ],
+      [
+        44625,
+        51000
+      ],
+      [
+        51000,
+        57375
+      ],
+      [
+        57375,
+        63750
+      ],
+      [
+        63750,
+        70125
+      ],
+      [
+        70125,
+        76500
+      ],
+      [
+        76500,
+        82875
+      ],
+      [
+        82875,
+        89250
+      ],
+      [
+        89250,
+        95625
+      ],
+      [
+        95625,
+        102000
+      ]
+    ],
+    "total_backing_capacity_codes": 917504
+  },
+  "stage_report_sha256": "5dba141022612aad58e6cc832096638bcae55de7b237c81e34387c6c9f5a7ded",
+  "plan_sha256": "62d2baf4222f9d912105a52054e1d7aa88a561010c2aa893b5b8000c9e0a2ad2",
+  "expected_body_sha256": "23bc056217ca70934fb8d6f05c860147e2a12488b2ea9ed2ec83a4b97a5876f7",
+  "edited_artifact_sha256": "1d61d49adb768f243fbe53821fd63b48f272fbe4c662ece16c24598bd5e2daad",
+  "restore_wav_sha256": "9018ffab97b562febc3e89255bda1a09b215fa4f8d034b7d8ba524f1e98c0063",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "sound9_key_k": [
+      0.0,
+      100.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      700.0,
+      800.0,
+      900.0,
+      1000.0,
+      1100.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0
+    ]
+  },
+  "absolute_hz": 450.0,
+  "decision": [
+    "The backup must equal the compiled target exactly, every buffer and reference included",
+    "Pitch: sound9_key_k holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of 450 Hz"
+  ],
+  "limits": [
+    "One total, 917504 codes, below the advertised 937500; larger totals are not tested",
+    "Only Sound9 is played; the other buffers are checked by exact reception"
+  ]
+}

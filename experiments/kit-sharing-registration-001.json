@@ -1,0 +1,114 @@
+{
+  "analysis_version": "kit-sharing-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "kit-sharing-001",
+  "expected_artifact_source": "Python decode of the TypeScript restore.wav",
+  "packets_json_sha256": "6e03b96a7815c617d73e68eeb6664ecb6cf7167c7ebf15b2f4f423bb5a7fb7fa",
+  "project_json_sha256": "b129e056511dede081b97177267be33d1ba07d9ceed563a2338c0d1a9348542a",
+  "expected_body_sha256": "4d4ad5446b3c0560d23daeacbd5249f852f7d81b5f36cd9f064b9da6960a7e2e",
+  "edited_artifact_sha256": "7e0121a5a0ce162baa0e6a3de42b8fb71613c86403651a92c007622ba95a6fde",
+  "restore_wav_sha256": "90bd7359ce1f61a64c30b2fe376ce37cb6ee61021987514c5b130ef5c3c999cf",
+  "decoded_restore_carries_typescript_packets": true,
+  "tempo": 100,
+  "swing": 0,
+  "chain": [
+    1,
+    2,
+    3
+  ],
+  "sound_data_packets": 111,
+  "layout": {
+    "Sound 11 key 1": {
+      "id": 40,
+      "owner": 40,
+      "start": 0,
+      "end": 5859,
+      "stores": 12288
+    },
+    "Sound 11 key 3": {
+      "id": 42,
+      "owner": 40,
+      "start": 5859,
+      "end": 10078,
+      "stores": 0
+    },
+    "Sound 11 key 7": {
+      "id": 46,
+      "owner": 40,
+      "start": 10078,
+      "end": 11250,
+      "stores": 0
+    },
+    "Sound 12 key 1": {
+      "id": 56,
+      "owner": 40,
+      "start": 0,
+      "end": 5859,
+      "stores": 0
+    },
+    "Sound 12 key 3": {
+      "id": 58,
+      "owner": 40,
+      "start": 5859,
+      "end": 10078,
+      "stores": 0
+    },
+    "Sound 12 key 7": {
+      "id": 62,
+      "owner": 40,
+      "start": 10078,
+      "end": 11250,
+      "stores": 0
+    },
+    "Sound 13 key 1": {
+      "id": 72,
+      "owner": 72,
+      "start": 0,
+      "end": 5859,
+      "stores": 12288
+    },
+    "Sound 13 key 3": {
+      "id": 74,
+      "owner": 40,
+      "start": 5859,
+      "end": 10078,
+      "stores": 0
+    },
+    "Sound 13 key 5": {
+      "id": 76,
+      "owner": 40,
+      "start": 7359,
+      "end": 10078,
+      "stores": 0
+    },
+    "Sound 13 key 6": {
+      "id": 77,
+      "owner": 72,
+      "start": 5859,
+      "end": 8672,
+      "stores": 0
+    },
+    "Sound 13 key 7": {
+      "id": 78,
+      "owner": 40,
+      "start": 10078,
+      "end": 11250,
+      "stores": 0
+    }
+  },
+  "predictions": [
+    "The backup equals the compiled target exactly (every packet and the whole body)",
+    "Pattern 2 on Sound 12, whose every key references Sound 11's kit buffer, sounds the same as Pattern 1 on Sound 11",
+    "Pattern 3 on Sound 13 plays its own kick and blip, Sound 11's snare and hat, and a window from 1500 codes into Sound 11's snare on step 16"
+  ],
+  "decision": [
+    "Exact reception is decided by the native check of the backup against the target",
+    "The audible predictions are decided by the user's answers to the observation questions",
+    "If both hold, the compiler's SHARE_KIT_SAMPLES default is turned on; if either fails, it stays off and the failure is kept"
+  ],
+  "limits": [
+    "One session on one device; audible predictions rest on listening, not on a frozen measurement",
+    "A drum key referencing another drum sound's kit buffer is tested here for the first time; a melodic owner referenced by drum keys was verified in web-template-001"
+  ]
+}

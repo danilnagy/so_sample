@@ -1,0 +1,27 @@
+{
+  "analysis_version": "verified-pitch-range-to-generated-interval-pair-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "exact_independent_minimum_return_and_masks_pass": true,
+    "current_hardware_observation_and_source_pins_pass": true,
+    "export_full_body_and_content_hashes_pass": true,
+    "both_backups_and_audio_pending_after_preregistration": true,
+    "common_frequency_search_does_not_fit_to_candidate_hypothesis": true,
+    "edited-sound3-pitch13-reference-001_target_and_phase_checks_pass": true,
+    "edited-sound3-pitch13-reference-001_all_registered_file_hashes_match": true,
+    "edited-sound3-pitch14-001_target_and_phase_checks_pass": true,
+    "edited-sound3-pitch14-001_all_registered_file_hashes_match": true
+  },
+  "source_hardware_observation_sha256": "a9885840a745a224b5c50d1c439189cd071a2aa0acb10ad47436c43d65ddd573",
+  "pair_registration_sha256": "164a99c14a96e7e96f4ffea2b3e35e5f7ea7316647600075dd0291aa87f14110",
+  "focused_tests_passed": 40,
+  "last_full_regression_tests_passed": 853,
+  "production_writer_changed": false,
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "Generated13 is a new reference with parameter-only pitch13, not a complete replay of the earlier genuine neutral body",
+    "Both physical pair legs and frequency hypothesis remain pending",
+    "Reference reception and usable audio must pass before candidate restoration"
+  ]
+}

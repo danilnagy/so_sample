@@ -1,0 +1,33 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "kind": "playback_only",
+  "experiment": "retake-002",
+  "started_at": "2026-11-08T04:07:37+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "playback": null,
+  "interrupted": true,
+  "hardware_verified": false,
+  "finished_at": "2026-11-08T04:08:50+00:00"
+}

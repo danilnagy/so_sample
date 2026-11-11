@@ -1,0 +1,36 @@
+{
+  "analysis_version": "kit-sharing-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a restore whose drum keys reference another drum sound's kit buffer; the audible predictions are the session answers",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "session_target_exact": true
+  },
+  "predictions": [
+    "The backup equals the compiled target exactly (every packet and the whole body)",
+    "Pattern 2 on Sound 12, whose every key references Sound 11's kit buffer, sounds the same as Pattern 1 on Sound 11",
+    "Pattern 3 on Sound 13 plays its own kick and blip, Sound 11's snare and hat, and a window from 1500 codes into Sound 11's snare on step 16"
+  ],
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "7ec316383704996c81f9b6a8b3259448731d631924f94c69cdd79212e5423bfe",
+  "session_answers": [
+    {
+      "question": "Pattern 1 (Sound 11): did you hear a falling kick on steps 1 and 9, a noise snare on 5 and 13, and short hats on the off-beats? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 2 (Sound 12): did it sound the same as Pattern 1, every hit present? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 3 (Sound 13): the same beat, plus a buzzy blip on step 14 and a short snare tail on step 16? (yes/no/notes)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One session on one device; audible predictions rest on listening, not on a frozen measurement",
+    "A drum key referencing another drum sound's kit buffer is tested here for the first time; a melodic owner referenced by drum keys was verified in web-template-001"
+  ]
+}

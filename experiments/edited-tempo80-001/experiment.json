@@ -1,0 +1,28 @@
+{
+  "experiment_id": "edited-tempo80-001",
+  "capture_status": "hardware_verified_exact_generated_tempo80",
+  "expected_file": "capture.wav",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "done and confirmed, tempo changed to 80"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "recapture_results": "hardware-recapture-results-001.json"
+  },
+  "planned_actions": [
+    "Restore the complete restore.wav at the established stereo playback level",
+    "Return to Pattern1/Sound8/TONE stopped/write off; keep both knobs unchanged",
+    "Read and report the displayed BPM without pressing BPM; expected80",
+    "Before audition/playback record a complete stereo capture.wav at established reduced levels with one second trailing silence",
+    "After saving confirm Pattern1 retains the phrase at the slower80 BPM tempo and samples sound unchanged; return to Sound8/TONE"
+  ],
+  "source_sha256": "7512efa7fa484824a6e68a2747bb3d4a4a44f031ca02259728248e47e59465f6",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_bpm": 80,
+  "project": "../exported-generated-tempo80-001/project.json"
+}

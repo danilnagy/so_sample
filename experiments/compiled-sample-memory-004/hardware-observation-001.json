@@ -1,0 +1,98 @@
+{
+  "analysis_version": "sample-memory-observation-0.4",
+  "hardware_verified": true,
+  "verified_scope": "Device response to a 1019904-code restore, above the advertised 40 s",
+  "checks": {
+    "registration_pin_matches": true,
+    "decision_binds_native": true,
+    "capture_pin_matches": true,
+    "export_checks_pass": true
+  },
+  "outcome": "other",
+  "hypothesis_supported": "advertised_limit_rejects",
+  "summary": {
+    "total_capacity_codes": 987136,
+    "buffers": {
+      "0": 65536,
+      "3": 32768,
+      "4": 32768,
+      "5": 36864,
+      "6": 32768,
+      "8": 102400,
+      "24": 102400,
+      "40": 102400,
+      "56": 102400,
+      "72": 102400,
+      "88": 102400,
+      "104": 102400,
+      "120": 69632
+    },
+    "sound_ids_differing_from_target": [
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "sound_ids_differing_from_source": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135
+    ]
+  },
+  "classification": null,
+  "measured_cents_by_step": null,
+  "absolute": null,
+  "decision_sha256": "3a2655d4c1cb57c8f822ab52b955af5840fc632356748aaccaa337788cbe961f",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "abb575b94cc1736d96293c69b402752f9a60c42b67c0bf38fa159353ba028496",
+  "session_answers": [
+    {
+      "question": "Did the PO-33 show ERR or anything unusual during or after the restore? Describe it (Enter for no)",
+      "answer": "ERR was displayed after a bit over 4 min of restore"
+    }
+  ],
+  "limits": [
+    "One total above the advertised limit; the exact limit is not located by this test"
+  ]
+}

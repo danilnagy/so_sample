@@ -1,0 +1,20 @@
+{
+  "experiment_id": "event-042-b-sound3-tone-volume-minimum",
+  "capture_status": "validated_no_serialized_change",
+  "expected_file": "capture.wav",
+  "registration": "../sound3-tone-volume-probe-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1, stopped/write off, tempo100 and swing9; knobA untouched",
+    "Sound3/TONE stopped/write off; turn only B fully counterclockwise without holding BPM or another button; capture before any audition",
+    "Save complete stereo capture.wav at established reduced levels with one second trailing silence before next action",
+    "After B has been saved, audition Sound3 key1 and report sound/display observations; leave Sound3/TONE stopped/write off"
+  ],
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-tone-volume-probe-results-001.json",
+  "source_sha256": "5d337282151d712d9b228813102747ed453de5e65d2736186c96e757f125d2c1",
+  "volume_writer_enabled": false,
+  "audition_result": "quieter_not_silent",
+  "project": "../exported-sound3-live-volume-minimum-001/project.json"
+}

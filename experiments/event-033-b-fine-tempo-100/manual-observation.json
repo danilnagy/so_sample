@@ -1,0 +1,8 @@
+{
+  "user_report": "done, 100",
+  "display_after_bpm": 100,
+  "display_before_bpm": 80,
+  "before_display_source": "Previously hardware-accepted80 source; retained by the requested control",
+  "source": "User explicitly supplied100; not inferred from bytes",
+  "capture_sha256": "a296fe64000e078997becbc2b9acba5a2a986b6172168658e0cfbe874859ea1b"
+}

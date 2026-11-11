@@ -1,0 +1,76 @@
+{
+  "hardware_verified": false,
+  "measurements": [
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.15,
+      "amplitude_ratio_candidate_to_reference": 7.1446639335146145,
+      "relative_frequency_delta": -5.924230093456995e-05,
+      "loop_delta_seconds": 0.0001247165532864969,
+      "comparison_consistent": true,
+      "amplitude_increase_supported": true
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.25,
+      "amplitude_ratio_candidate_to_reference": 7.144625715986551,
+      "relative_frequency_delta": -5.5861953848102e-05,
+      "loop_delta_seconds": 0.00010204081632592121,
+      "comparison_consistent": true,
+      "amplitude_increase_supported": true
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.35,
+      "amplitude_ratio_candidate_to_reference": 7.144754224703638,
+      "relative_frequency_delta": -5.4125952095418484e-05,
+      "loop_delta_seconds": 9.070294784496724e-05,
+      "comparison_consistent": true,
+      "amplitude_increase_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.15,
+      "amplitude_ratio_candidate_to_reference": 7.14730585389972,
+      "relative_frequency_delta": -5.664343657285631e-05,
+      "loop_delta_seconds": 0.0001247165532864969,
+      "comparison_consistent": true,
+      "amplitude_increase_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.25,
+      "amplitude_ratio_candidate_to_reference": 7.147305708686177,
+      "relative_frequency_delta": -5.396722410688781e-05,
+      "loop_delta_seconds": 0.00010204081632592121,
+      "comparison_consistent": true,
+      "amplitude_increase_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.35,
+      "amplitude_ratio_candidate_to_reference": 7.147394828719648,
+      "relative_frequency_delta": -5.2791253249084846e-05,
+      "loop_delta_seconds": 0.000113378684805987,
+      "comparison_consistent": true,
+      "amplitude_increase_supported": true
+    }
+  ],
+  "comparison_usable": true,
+  "all_amplitude_increases_supported": true,
+  "general_resonance_law_or_broad_spectral_response_confirmed": false,
+  "resonance_writer_enabled": false,
+  "analysis_version": "native-bound-frozen-resonance-component-comparison-0.1",
+  "registration_sha256": "a980658919688e4bc6286a2b0710d903502ea56e16150255d405637acc216e9e",
+  "reference_audio_results_sha256": "a4465d9622a6596da6afd987ceccc1f86afe6219e767cbeebba57efe23c9f8c2",
+  "candidate_audio_results_sha256": "57f3de17482a4bd37a456de88bf1aa40fc52eb922bc38decb5080dcc114dbc31",
+  "candidate_native_results_sha256": "e9cc8f0f6a8c0e4a30c192e712d8d7ab0cc9bae8cb4f97edc091d835c1db9e9c",
+  "limits": [
+    "Both generated targets are new combined cutoff/resonance contexts, not independent recorded whole-body replays",
+    "Amplitude increase is a new hypothesis after endpoint data and before both audio captures; the original common measurement method stays unchanged",
+    "Too-quiet, distorted, insufficient or otherwise unusable audio is retained without changing thresholds, windows or frequency search",
+    "B0 reference must have exact reception and usable near530.26Hz audio before requesting B63",
+    "Only fixed0/63 B at LPF16 from exact minimum source are allowed by research constructor; public cutoff guards remain unchanged",
+    "No all-code resonance law, full bit7 semantics, broad spectral response or public resonance writer is inferred"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "analysis_version": "generated-volume18-pair-gain-method-preregistration-0.1",
+  "registered_before_both_audio_captures": true,
+  "hardware_verified": false,
+  "pair_registration_sha256": "5379853f556bc31d982a7197893b7a0104899d32d351f259f3bcb97a202988f8",
+  "parameters": {
+    "center_frequency_hz": 500.65,
+    "half_bandwidth_hz": 15.0,
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "minimum_region_seconds": 0.06,
+    "edge_margin_seconds": 0.03,
+    "minimum_band_rms": 0.001,
+    "maximum_gap_residual_seconds": 0.006,
+    "threshold_gap_spread_seconds": 0.004,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "nominal_loop_seconds": 2.4,
+    "loop_tolerance_seconds": 0.005,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.18
+    ],
+    "frequency_search_relative_halfwidth": 0.005,
+    "minimum_fit_explained_variance": 0.9,
+    "minimum_complete_cycles": 3,
+    "minimum_relative_amplitude_difference": 0.03,
+    "unchanged_pitch_relative_tolerance": 0.005,
+    "unchanged_loop_seconds_tolerance": 0.005
+  },
+  "limits": [
+    "500.65 Hz lead comes from earlier independent Sound3/key16 playback; it is fixed before reference/candidate recordings",
+    "Compare all six stereo/threshold sine-amplitude ratios,requiring at least three full cycles,pitch and loop stability",
+    "The two orderings predict opposite amplitude directions; no exact amplitude ratio or gain curve is fitted",
+    "An unusable baseline stops dependent candidate work until clarified; no tone-frequency rescue after seeing candidate data"
+  ]
+}

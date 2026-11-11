@@ -1,0 +1,26 @@
+{
+  "analysis_version": "imported-Sound6-to7-copy-preregistration-0.1",
+  "registered_before_capture": true,
+  "source_artifact": "experiments/edited-sound6-mono-WAV-import-001/derived/analysis-002/capture.symbols.npz",
+  "source_artifact_sha256": "42abc578dd9829432de80f03f8c2ac9dd9bb5725cca964ba928b7e337c69ae44",
+  "source_capture_sha256": "ea299978cae355585815d8677d4835f514209a41c2cc36b3f2976b7a5dc1287c",
+  "source_acceptance_sha256": "0c89273b3d3880315deb9b444f44a6956fceddb2ca809ddd7d3cddcecae11c0b",
+  "source_body_sha256": "5b557a2586907b90705bed847b63e33745d0cef85bc27e06f80e6f0601f29b7c",
+  "expected_body_sha256": "0e9ea03263ec6060838e557ccfc568a90eb3cfc65c2dca7180095736abf72920",
+  "expected_packet_count": 952,
+  "expected_frame_end_byte": 190229,
+  "expected_sound7_reference_hex": "00000000ab44000005",
+  "expected_sound6_payload_sha256": "7fa1522cf7cf5bbb592ef71ff4e0934ff6b3878b62f5537405c5bb61f7843e40",
+  "limits": [
+    "Only this unchanged imported Sound6 owner and empty Sound7 are tested",
+    "One nine-byte reference is inserted; no backing codes or allocation are added",
+    "Public copy/deletion guards are unchanged pending appropriate evidence"
+  ],
+  "restore_wav_sha256": "50d7a759036a91cfd00466ec8d6a77cfb5b3fa959867c140b663b3877dd93af9",
+  "edited_artifact_sha256": "d1be41c1f313c6a2a743bcf91cdae137e33be9161c03234cc4a14b912bb178cf",
+  "software_validation_sha256": "8d5685b20dcc5a44831c57b89842b2a6a2914db724d63cee9332330021863b2a",
+  "expected_auditions": {
+    "sound6_and_sound7_key1": "Matching rising pitch sweeps about 0.75 seconds",
+    "other_sounds_and_pattern1": "Unchanged"
+  }
+}

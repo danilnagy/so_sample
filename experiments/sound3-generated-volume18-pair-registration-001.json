@@ -1,0 +1,55 @@
+{
+  "analysis_version": "generated-volume21-versus18-gain-ordering-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/event-047-d-sound3-volume-lock-quarter/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "d46db2f75adad017419b95a1437b57522e0306b46a644666c36e4d956eb592b8",
+  "source_capture": "experiments/event-047-d-sound3-volume-lock-quarter/capture.wav",
+  "source_capture_sha256": "86882e8f6535972366fe18fdc15e65054f42f25acfb2a5b556c97d62834ef2d8",
+  "source_body_sha256": "937b33f0c2be408e8f2321e3dabb146b2ae74976ed9ded6ddec3a3214cdd13e4",
+  "source_observation_sha256": "020204f53244f4afca92b0463a5cc20a35bf4a07f72fd20423a058f3db446576",
+  "interior_results_sha256": "97e61b40cd3f6273ddaa5fec754cbfc4bdfc008d45f739b1cd8926d844cd6c2f",
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "replayed-sound3-volume21-reference-001",
+      "contiguous_raw_code": 21,
+      "alternative_order_raw_code": 21,
+      "expected_body_sha256": "937b33f0c2be408e8f2321e3dabb146b2ae74976ed9ded6ddec3a3214cdd13e4",
+      "restore_wav_sha256": "a2b9020f2574a890cec1c7a9d304f1b7bd12f287e9e5c607ea4f48863995f91b",
+      "edited_artifact_sha256": "ce42730d540c7e73644661b9c44a179878be110c4ea2de49acbf8d90bb9fb818",
+      "software_validation_sha256": "4041f7f80778620f5ce560168337ec5bdbefcf85725fd3b09bb39702b4dc3ab6",
+      "backup_file": "capture.wav",
+      "ordinary_playback_file": "playback.wav"
+    },
+    {
+      "experiment_id": "edited-sound3-volume18-001",
+      "contiguous_raw_code": 18,
+      "alternative_order_raw_code": 36,
+      "expected_body_sha256": "f9a66a8a6f50e47cdf04ec325f8f265b676d079e60646f290a96e83603d52a7c",
+      "restore_wav_sha256": "d2f382dfffb079c51cc14d8f33c4e0bad424107249fa5964c5333e591584472a",
+      "edited_artifact_sha256": "84409e60123910da28c3c44b6f0be47d50444a54cb862b74c50ab8fd851c6abe",
+      "software_validation_sha256": "7f4918b528e2a711f54c4797512490361c99ee5bc3fcd3b8a9a50cb794fd41e3",
+      "backup_file": "capture.wav",
+      "ordinary_playback_file": "playback.wav"
+    }
+  ],
+  "gain_hypotheses": {
+    "contiguous_order": "Reference21 versus generated18: Sound3 repeated-tone amplitude should decrease",
+    "alternative_order": "Reference21 versus generated36: Sound3 repeated-tone amplitude should increase",
+    "pitch_and_timing": "Repeated-tone frequency and onset intervals must remain unchanged; samples,keys and all other parameters remain exact",
+    "minimum_relative_amplitude_difference": 0.03,
+    "unchanged_pitch_relative_tolerance": 0.005,
+    "unchanged_loop_seconds_tolerance": 0.005,
+    "minimum_complete_cycles": 3,
+    "nominal_loop_seconds": 2.4,
+    "reference_tone_lead_hz": 500.65
+  },
+  "limits": [
+    "Reference21 is common to both encodings and exactly reproduces the independent genuine quarter body",
+    "Generated18 is a fixed new research value; no public volume writer enabled",
+    "Amplitude comparison needs unchanged audio settings and independent ordinary recordings; no linear,dB or percent gain curve assumed",
+    "The failed uniform-middle and four-bit reports remain immutable; this is a separate generated ordering test",
+    "First verify reference reception and usable audio before requesting candidate18 restoration",
+    "Software never becomes hardware verification; missing evidence remains unevaluated"
+  ]
+}

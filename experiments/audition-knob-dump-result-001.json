@@ -1,0 +1,31 @@
+{
+  "analysis_version": "audition-knob-dump-result-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "f02f3f12bd21d0528a8d86d7568b7e5361b717d11baa57ce922ed5493a1540d8",
+  "decoder": "web",
+  "attempt": "backup-01.wav",
+  "capture_sha256": "9b1931bf17d112d9662bdc54a6037d55936eca90290e9767b519733272d0b8a7",
+  "exact_target": true,
+  "outcome": "nothing_stored",
+  "prediction": "nothing_stored",
+  "prediction_held": true,
+  "regions": {
+    "global_records": false,
+    "pattern_cells": false,
+    "sound_records": false
+  },
+  "change_count": 0,
+  "changes": [],
+  "attempts": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "9b1931bf17d112d9662bdc54a6037d55936eca90290e9767b519733272d0b8a7",
+      "decoded": true,
+      "method": "preamble found after 0 left and 1 right labels",
+      "packets": 270,
+      "peak": 0.833587646484375,
+      "exact_target": true,
+      "state_equal": true
+    }
+  ]
+}

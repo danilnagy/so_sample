@@ -1,0 +1,16 @@
+{
+  "experiment_id": "event-054-a-sound3-filter-selection",
+  "capture_status": "validated_exact_unchanged_FILTER_selection",
+  "registration": "../sound3-filter-selection-and-A-registration-001.json",
+  "planned_actions": [
+    "Keep both knobs and audio settings unchanged; stop playback and ensure write off",
+    "Select Pattern1/Sound3, press FX until FILTER selected without moving a knob",
+    "Save complete capture.wav at established reduced recording level with one second trailing silence; no restore or extra playback needed",
+    "Leave knobs untouched; recorded A adjustment waits for this capture to be verified"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "selection-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-filter-selection-001/project.json"
+}

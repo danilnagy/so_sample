@@ -1,0 +1,37 @@
+{
+  "analysis_version": "first-generated-sound6-creation-registration-0.1",
+  "registered_before_capture": true,
+  "source_acceptance_sha256": "30f990d73e75768f1a6f239dc61225f40335b895fdae64ee5ef707eae6aa9b92",
+  "software_validation_sha256": "474f9c283cb2964973b377499f5562c3d280fed1bc577b562d0919082d4eca3d",
+  "source_artifact": "experiments/edited-sound4-shrink-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "066cc3321f53582a051456dbd771f13253a3a13fc22e8c15ec8aa3e08590643f",
+  "source_capture_sha256": "4a11f64a99e10c2a6d49bcd3a1e4c4c5a2cc43ab481d1b884e396921b34fb3c5",
+  "source_body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "edited_artifact_sha256": "000e48d1438001fedfcc371a8e38c354aabb5b052fdcf3f219b15872f6a5bab5",
+  "restore_wav_sha256": "6a59118e82b6db98b36fc67f4e72e7ec16ea65264cfc94412b1d8af4473540e6",
+  "expected_body_sha256": "258bb81fdb8085ab24f7be4f841ed7ea577a69943ee34a4beccabffd5d9e44f6",
+  "expected_sound6_payload_sha256": "97a6bf5e34e747bc61b8e78948de418affc7bb7cfc38c3011fb6a1110a728360",
+  "expected_sound6_header_hex": "00000000c078000005",
+  "expected_packet_count": 951,
+  "expected_frame_end_byte": 190215,
+  "expected_change": {
+    "sound_slot": 6,
+    "selector_id": 5,
+    "before": "empty",
+    "capacity_after": 32768,
+    "endpoint": 30912,
+    "owner_id": 5
+  },
+  "expected_auditions": {
+    "sound6_key1": "New lower500Hz tone lasting about1.32seconds at nominal key1 pitch",
+    "sound4_key1": "Retained higher2250Hz tone about1.32seconds",
+    "sound5_key1": "Retained old shorter1000Hz tone",
+    "pattern1": "Previous alternating pitches and drum notes unchanged"
+  },
+  "limits": [
+    "One empty melodic Sound6 selector gets a self-owned32768-code sample using observed Sound4 headers and page geometry",
+    "The final total backing capacity stays below an independently observed172032-code state; this is a probe bound, not a device memory-limit claim",
+    "Allocation rounding, arbitrary slots/capacities, deletion and shared-owner mutation remain unsupported",
+    "Exact native recapture and user audition checks are needed before hardware acceptance"
+  ]
+}

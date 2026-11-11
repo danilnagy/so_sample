@@ -1,0 +1,38 @@
+{
+  "analysis_version": "generated-fine137-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "fine_tempo_writer_verified": true,
+  "verified_scope": "This generated100-to137 fine-tempo edit restores the requested confirmed display and entire registered native body, preserving all unrelated bytes",
+  "recapture_results_sha256": "a25f1d1eb89a4077557eb4ef03aa809554ba1613b72191d2fd623f7bbc33735f",
+  "manual_observation_sha256": "20a31bc8b778c9a764e36aff6e35aab84e93995db2cabb712aa48f3b0648ae65",
+  "software_validation_sha256": "e89a093326848f5b1d325c9f78b967091b7f66431271de435413730b0f9e11d2",
+  "capture_sha256": "0538c163106bac0f0c9ac88471ab246c3c53dc713db60c86233eed68e87e9a13",
+  "artifact_sha256": "c5b3375847b325fc70ffc558e4a4aa49f39bef919e3f312c23d251fb877d609b",
+  "artifact_path": "experiments/edited-fine-tempo137-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "5f25b5efd909c93b0aa0cdbb31d8aff170ea5edeb9ca6dd48eb2d7778ae696cb",
+  "display_bpm": 137,
+  "checks": {
+    "all_native_controls": true,
+    "all_fine_tempo_hypotheses": true,
+    "all_exact_target_and_display_checks": true,
+    "user_confirmed_requested137_display_restore_and_auditions": true,
+    "capture_and_artifact_hashes_match": true,
+    "all_export_content_hashes_match": true,
+    "export_complete_body_matches": true,
+    "original_software_report_remains_software_only": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 31,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.162567138671875,
+      0.156005859375
+    ]
+  },
+  "limits": [
+    "The60-to240 integer field range is supported by physical endpoints, representative fine/preset observations and generated137/80 restores; every integer is not individually hardware tested",
+    "Unknown opaque global layouts remain outside writable scope and compiler replays remain software-only"
+  ]
+}

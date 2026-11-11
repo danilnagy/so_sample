@@ -1,0 +1,27 @@
+{
+  "analysis_version": "verified-pitch-minimum-to-registered-range-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "minimum_native_controls_and_strict_mask_pass": true,
+    "separate_hardware_observation_checks_pass": true,
+    "current_capture_artifact_observation_and_results_pins_match": true,
+    "uniform_minimum1_and_volume36_readback": true,
+    "qualitative_display_and_pitch_report_preserved_without_numeric_inference": true,
+    "uniform1_rule_retained_as_post_observation_model": true,
+    "upper_endpoint_unknown_and_exact_minimum_return_preregistered": true,
+    "both_mask_alternatives_explicit": true,
+    "both_range_captures_pending": true
+  },
+  "minimum_observation_sha256": "807c4e914b8fb108a5d8eadfc31a71b96d9c3df2db799fa4bb8ff50d8eb9ca69",
+  "range_registration_sha256": "86bdcecb39a7974374406a98b05210a90f00d70369de252561b57bb9935e7691",
+  "focused_tests_passed": 45,
+  "last_full_regression_tests_passed": 853,
+  "production_writer_changed_this_control": false,
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "Upper endpoint, field width and pitch scale remain unknown",
+    "Exact minimum return is a new preregistered prediction, not a rewrite of the earlier post-observation minimum model",
+    "Software handoff checks remain separate from physical observations"
+  ]
+}

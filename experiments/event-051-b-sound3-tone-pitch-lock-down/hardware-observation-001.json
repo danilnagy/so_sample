@@ -1,0 +1,79 @@
+{
+  "analysis_version": "recorded-TONE-A-minimum-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Recorded counterclockwise TONE A pass changes only first-primary low6 candidate bits in all16 Sound3/P1 cells; uniform raw1, unchanged volume36 and other state; user hears lower pitch and reports Ptc/ticks",
+  "checks": {
+    "native_controls_and_preservation_pass": true,
+    "strict_registered_pitch_candidate_only_supported": true,
+    "all16_low6_values_are1_with_volume36": true,
+    "all16_first_primary_cells_changed": true,
+    "capture_artifact_and_registration_hashes_match": true,
+    "entire_body_reproduced_by_post_observation_uniform1_rule": true,
+    "capture_not_clipped": true,
+    "all_export_checks_and_content_hashes_pass": true,
+    "complete_export_body_exact": true,
+    "public_volume_guard_still_rejects_changed_pitch_context": true
+  },
+  "raw_first_low6_values": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "volume_raw_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "pitch_candidate_location_supported_in_this_control": true,
+  "pitch_field_width_confirmed": false,
+  "pitch_scale_confirmed": false,
+  "numeric_UI_value_confirmed": false,
+  "capture_sha256": "c7e2d93e7805e6d8b44ad16edb8b6966ffe610df274b9bf392b2bbdee34e93b2",
+  "artifact_sha256": "6fe87026f009133696c3e4f035b9571ed439550fa6219b4f3125e04ac66c5fd4",
+  "artifact_path": "experiments/event-051-b-sound3-tone-pitch-lock-down/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "227d4d25e644c83f2d8e89d2a4135125f8cb926082983a81b4842de21e654fc2",
+  "native_results_sha256": "4d4dabf178985e9ef0b6cf768ad6af94b9fc7521441550e73d847b268ce50329",
+  "manual_observation_sha256": "51e7d95b6be9808e3e13892483b4b32d306fdb55579d75f9495d6a7cd8ccdc0c",
+  "post_observation_model_sha256": "c3f5478c613aff45964f37e9a73c9971a89347f42047fe0cc91d58342bbcb1aa",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.1563720703125,
+      0.1502685546875
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "Uniform raw1 is observed after data; the initial probe did not predict a minimum endpoint code or full body",
+    "First-low6 location does not establish use of all six bits, a pitch scale or a numeric UI value",
+    "Broader location hypotheses include the strict mask as nested alternatives; their true flags do not mean extra bits changed",
+    "Raw sample previews do not render the pattern pitch shift; public volume context remains unchanged"
+  ]
+}

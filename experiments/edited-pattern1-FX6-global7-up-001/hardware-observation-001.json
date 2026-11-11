@@ -1,0 +1,41 @@
+{
+  "analysis_version": "generated-footer6-global7-native-and-audible-octave-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact generated footer6/global7 body received; user hears the octave effect in the requested up-test context",
+  "checks": {
+    "source_is_exact_accepted_clear_body": true,
+    "source_and_actual_native_valid": true,
+    "all16_footer_nibbles_are6": true,
+    "only_eight_Pattern1_footer_bytes_changed": true,
+    "global131_stays7": true,
+    "target_body_matches_registration": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_and_artifact_pins_match": true,
+    "capture_not_clipped": true,
+    "all_export_hashes_and_native_body_exact": true
+  },
+  "capture_sha256": "ce7b88d7590d6704209f21080910210daac1c1c02f124265d90c6c0914a2439e",
+  "artifact_sha256": "9b2e77b68f683c399391971ed522a3e87e96ab5dfa841b8d75d2a2812f2ac111",
+  "artifact_path": "experiments/edited-pattern1-FX6-global7-up-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "1147b3d4952aa4ade735b011047bcf22a469855bc3e1fff9c6f6cd4c462ca495",
+  "registration_sha256": "cf5b9bcefa626579ba2523eec0c57e0d233a3dd2e351f8fffedad03cad58dcbf",
+  "native_results_sha256": "166d948f12be05e1ef2a1e7f5f74750c01d17eaf3809a92095106c1868f07a07",
+  "manual_observation_sha256": "4b362008ff99aeccecbd5b13fe2f71d7d3d933e3c19d0667d934a591a7c6aed1",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.157562255859375,
+      0.1522216796875
+    ]
+  },
+  "audible_octave_effect_confirmed": true,
+  "explicit_direction_or_measured_octave_ratio_confirmed": false,
+  "global_role_or_nibble_order_confirmed": false,
+  "FX_writer_enabled": false,
+  "limits": [
+    "Earlier recorded-up9 global value is not required for this exact generated footer6/global7 restore and audible octave effect",
+    "No assertion that global131 is irrelevant to every effect or context",
+    "Uniform nibbles do not establish their per-step ordering; no full effect enum or public writer",
+    "Listening scope is the user's literal octave-effect report; no independent up-direction statement or measured2:1 ratio supplied"
+  ]
+}

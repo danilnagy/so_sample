@@ -1,0 +1,39 @@
+{
+  "analysis_version": "single-repeat-run-waveform-diagnostic-0.1",
+  "source_sha256": "9f13e1cb22d5bad338db09218a0d860ac8d010c1cbeb8770013d9c8381fb2765",
+  "derived_sha256": "13a2f92335112604358ea5d11b5b99af0abf043a55672a3c726df1d92d80c878",
+  "policy": "One waveform-only hypothesis: remove exactly the three stereo frames duplicating the preceding active frame. No target data, expected fields or CRC outcomes selected the run or removal count.",
+  "removed_source_frame_span": [
+    976948,
+    976951
+  ],
+  "same_stereo_sample_repeated_four_times": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "attempts": {
+    "crossing": {
+      "valid": false,
+      "error": "Packet checksum differs at wire byte84618, tag0xef78"
+    },
+    "clock": {
+      "valid": false,
+      "error": "Measured quarter signs disagree with the observed quadrature model"
+    }
+  },
+  "hardware_verified": false
+}

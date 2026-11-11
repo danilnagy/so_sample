@@ -1,0 +1,15 @@
+{
+  "analysis_version": "drum-cell-copy-user-observation-0.1",
+  "user_report": "done and confirmed",
+  "capture_sha256": "5de811a38223d7b4f14dfc65ba1ff724ec4a36458c8413196dc71ab9d4d3d648",
+  "hardware_validation_sha256": "30a7562ef2b5cd5844780a601814de29040f318ff0271cf99ffe2cbdc3b1e788",
+  "restore_confirmed": true,
+  "sound10_steps1_and9_confirmed": true,
+  "sound2_step9_confirmed": true,
+  "sound3_steps1_5_9_13_confirmed": true,
+  "normal_pattern1_playback_confirmed": true,
+  "deviations_reported": false,
+  "limits": [
+    "Step lights and playback are user reported; acoustic waveforms, durations and arbitrary polyphony were not measured"
+  ]
+}

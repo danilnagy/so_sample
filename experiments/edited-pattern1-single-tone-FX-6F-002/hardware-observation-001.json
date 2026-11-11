@@ -1,0 +1,42 @@
+{
+  "analysis_version": "single-tone-FX-order-pitch-track-leg-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and registered step-1 pitch classification for this leg",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_pitch_result": true,
+    "decision_binds_this_leg": true,
+    "export_hashes_and_native_body_exact": true,
+    "session_target_exact": true
+  },
+  "leg": "b",
+  "footer_byte0": "6F",
+  "step1": {
+    "class": "effect",
+    "max_ratio": 1.2895419874986778,
+    "min_ratio": 1.0000388978056647,
+    "windows": 12
+  },
+  "step1_loop_classes": [
+    "effect",
+    "effect",
+    "effect",
+    "effect",
+    "effect"
+  ],
+  "pair_classification": "high_nibble_first",
+  "decision_sha256": "69e06ac77adb142bb02a7c0f342f8330cabcc991f07f66c505aa3db826b08cbb",
+  "native_results_sha256": "bc1059c6dca38d1aa4853bf7a2fa8387430765cf0850600fa62f6f682cb73db2",
+  "pitch_results_sha256": "ebe09311d80d73cfda147beccef543ae83622e5e7502e9cd403138e471cbc117",
+  "manual_observation_sha256": "440a405829d3d2071e3e9c4c23545373bf76f395bf92bff70ef2e4f2c1326fd8",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "4c8db9b93489b02526f9e251f57a2c10587607ff6c554cc3f425b95b0bff1887",
+  "general_per_step_FX_writer_enabled": false,
+  "limits": [
+    "Local to footer byte 0 of Pattern 1 with one Sound3 note on step 1",
+    "Characterizes where the rising effect sits, not its exact pitch law",
+    "No general per-step effect writer is enabled"
+  ]
+}

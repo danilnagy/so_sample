@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-038-b-swing-minimum",
+  "capture_status": "validated_physical_swing_range",
+  "expected_file": "capture.wav",
+  "series_registration": "../swing-range-series-registration-001.json",
+  "requested_display_value": null,
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off, tempo137 and knob B unchanged",
+    "Hold BPM and turn A fully counterclockwise; stop moving A before releasing BPM",
+    "Before playback save complete stereo capture.wav at established reduced levels with one second trailing silence",
+    "Report the actual display text/value, including any minus sign, before proceeding if a requested value is unavailable"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_text": "S00",
+  "serialized_tempo_bpm": 137,
+  "source_sha256": "0e661a99be6d26121e05dc89f15a7d79eb048cdafbad199fa3e9a88b5ea7b780"
+}

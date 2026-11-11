@@ -1,0 +1,46 @@
+{
+  "analysis_version": "melodic-notes-writer-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and registered per-step pitches of a melody written by set_melodic_notes",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "melody_written",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 1400.2454878915817,
+    "3": -199.99667194764007,
+    "4": 1500.0974860909762,
+    "5": -299.423088871103,
+    "6": 1700.172963950297,
+    "7": -499.63001983463374,
+    "8": 1800.2221601082354,
+    "9": 600.2054456568212,
+    "10": 700.401731978591,
+    "11": 500.2568343273053,
+    "12": 899.8886605910307,
+    "13": 300.0435766911724,
+    "14": 999.9874899666765,
+    "15": 199.684268231409,
+    "16": 1200.058096367509
+  },
+  "decision_sha256": "5d29c751417f196ba3abcd9a6571adc1a5c4e3b12945a4fa7592d4cb524c1a00",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "5be658506d7c74baae910a351dafd47220f8223d9b9ceb0d5e0eabe0caf9491c",
+  "session_answers": [
+    {
+      "question": "Did the melody jump between low and high notes? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "Sound3 on Pattern 1 with one shared set of note parameters",
+    "Other melodic sounds are expected to share the key layout but were not measured"
+  ]
+}

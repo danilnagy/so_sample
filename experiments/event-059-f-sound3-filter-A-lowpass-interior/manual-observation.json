@@ -1,0 +1,7 @@
+{
+  "user_report": "done, heard low pass filter applied in first, high pass in second, no filter in last",
+  "user_described_filter": "low_pass",
+  "numeric_display_value": null,
+  "capture_sha256": "12eeb7abb24f6c872800dc545034f83a34851de76d614268d492987e6b5abdb1",
+  "interpretation": "Explicit qualitative listening confirmation for the requested three captures; no cutoff frequency or measured broadband response inferred"
+}

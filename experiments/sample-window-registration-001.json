@@ -1,0 +1,121 @@
+{
+  "analysis_version": "sample-window-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-sample-window-001",
+  "source_artifact": "experiments/compiled-bit5-glide-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "be40a172f6d4bab49533a10b41ad052b633d2287e8bc167db375edc7f3fdfe26",
+  "source_capture_sha256": "f07c81634eb9d0fec3d787a13f1d1d4f38e25ba56fc7b3fc362f0200cee6dbba",
+  "sample": {
+    "path": "experiments/sample-window-source-001/four-segments-400-700hz-1s.wav",
+    "sha256": "6cf5a8f4107a6127919edcb7c0092b1a51066f4e728757bdb9885ae360803e68",
+    "segment_hz": [
+      400.0,
+      500.0,
+      600.0,
+      700.0
+    ],
+    "segment_seconds": 0.25,
+    "native_codes": 23438
+  },
+  "boundaries_codes": [
+    0,
+    5859,
+    11719,
+    17578,
+    23438
+  ],
+  "windows": {
+    "6": [
+      11719,
+      17578
+    ],
+    "7": [
+      5859,
+      11719
+    ]
+  },
+  "steps": {
+    "6": [
+      1,
+      5,
+      9,
+      13
+    ],
+    "7": [
+      3,
+      7,
+      11,
+      15
+    ]
+  },
+  "expected_hz": {
+    "6": 898.9842461260089,
+    "7": 749.1535384383408
+  },
+  "ignored_hz": 599.3228307506727,
+  "expected_ms": 166.84430305242094,
+  "import_reports_sha256": {
+    "6": "86dce8e009a98054671300ee955a0e973fb5661b242a7ed8f43f9aadc7a21228",
+    "7": "ba6cd36222ddfe33425ca79832ca14c7ce3105811f0f9f00ad4351a06f9f8c99"
+  },
+  "plan_sha256": "162153bc88645a44d652910d3c521a246ca3e9df423ea2ac07362ac89add46fc",
+  "expected_body_sha256": "2c82e7cf38326c6ac6f384153321c6f617b6b4bca6c1c170d699ec2ce06a53f7",
+  "edited_artifact_sha256": "a63539a25f868f2b05f2a744a598fd92fa0966c9ce51348ac4445dd4a0ba820a",
+  "restore_wav_sha256": "c888cf22652904b0fdae0a1da28517ef8c81b3e7ba04471f5a58f3c0a4a840b8",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      100.0,
+      110.0,
+      120.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "duration_method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.001,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "margin_seconds": 0.01,
+    "threshold_fraction_of_step_peak": 0.1,
+    "tolerance_ms": 5.0,
+    "min_agreeing_loops": 4
+  },
+  "duration_method_script_sha256": "c28a7cf59bc4fd70777a93647d2a84a27761d06aac54d8eaf2c37d01a03d05cc",
+  "tolerances": {
+    "cents": 20.0,
+    "ms": 5.0,
+    "long_ms": 230.0
+  },
+  "decision": [
+    "Reception: the backup equals the target exactly, or differs only in the two 8-byte windows (window_rewritten_by_device)",
+    "window_honoured: every note within 20 cents of its segment's frequency and within 5 ms of 166.7 ms, in the five-loop median",
+    "start_ignored: every note within 20 cents of segment 1's frequency and at least 230 ms long"
+  ],
+  "limits": [
+    "Two windows at segment boundaries in one sample; sub-segment offsets and references are not tested"
+  ]
+}

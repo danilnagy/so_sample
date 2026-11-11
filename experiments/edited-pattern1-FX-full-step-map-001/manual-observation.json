@@ -1,0 +1,10 @@
+{
+  "session_answers": [
+    {
+      "question": "Roughly which notes bent upward, if you could tell? (Enter to skip)",
+      "answer": "seems like 3 and 4"
+    }
+  ],
+  "capture_sha256": "2bb0dfd448a6b250459f0f4fb71f2392c8ef5fe0409a70bbdc8700a2094e5234",
+  "playback_sha256": "6f8fc9435fee53fd965e69162a342971d67e336ba020124f83bdbee23d6831e4"
+}

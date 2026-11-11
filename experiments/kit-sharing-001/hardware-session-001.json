@@ -1,0 +1,434 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "experiment": "kit-sharing-001",
+  "started_at": "2026-11-09T18:35:36+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "inputs": {
+    "restore": {
+      "path": "restore.wav",
+      "sha256": "90bd7359ce1f61a64c30b2fe376ce37cb6ee61021987514c5b130ef5c3c999cf"
+    },
+    "expected_artifact": {
+      "path": "edited.symbols.npz",
+      "sha256": "7e0121a5a0ce162baa0e6a3de42b8fb71613c86403651a92c007622ba95a6fde"
+    },
+    "baseline_artifact": null,
+    "decode_threshold": 0.0063
+  },
+  "restore": {
+    "started_at": "2026-11-09T18:35:47+00:00",
+    "gain": 0.3,
+    "peak_after_gain": 0.15000000596046448,
+    "sample_rate_hz": 44100,
+    "frames": 547842,
+    "duration_seconds": 12.422721088435374,
+    "padding_seconds": [
+      0.25,
+      1.0
+    ],
+    "wall_seconds": 13.961615531996358,
+    "stream_status_flags": []
+  },
+  "backups": [
+    {
+      "file": "backup-01.wav",
+      "sha256": "760d0c454d69929b41e85eb20a993be515de5f36b5ff74a68e7b56ddbd98b5af",
+      "recorded_at": "2026-11-09T18:38:11+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 2546775,
+        "duration_seconds": 57.75,
+        "signal_start_seconds": 44.1,
+        "signal_end_seconds": 56.25,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.017547607421875,
+        "signal_peaks_per_channel": [
+          0.012969970703125,
+          0.02032470703125
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.01389453423284845,
+          "lag_ms": 77.32426303854875,
+          "channels": "left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "At least one channel is very quiet; check the stereo cable and level"
+          }
+        ]
+      },
+      "analysis_dir": "backup-01-analysis",
+      "analysis": {
+        "capture_sha256": "760d0c454d69929b41e85eb20a993be515de5f36b5ff74a68e7b56ddbd98b5af",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 57.75,
+          "peaks_per_channel": [
+            0.013031005859375,
+            0.02032470703125
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "left: Crossing gap exceeds one second; refusing to invent a long sign run"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    },
+    {
+      "file": "backup-02.wav",
+      "sha256": "525cc60069d81c56efd58cb5b79b4cae1596b3cc67731d5ff76b0a97754e89f3",
+      "recorded_at": "2026-11-09T18:38:35+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 703395,
+        "duration_seconds": 15.95,
+        "signal_start_seconds": 2.25,
+        "signal_end_seconds": 14.45,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.000762939453125,
+        "signal_peaks_per_channel": [
+          0.012969970703125,
+          0.020355224609375
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.013639363853044232,
+          "lag_ms": 77.32426303854875,
+          "channels": "left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "message": "At least one channel is very quiet; check the stereo cable and level"
+          }
+        ]
+      },
+      "analysis_dir": "backup-02-analysis",
+      "analysis": {
+        "capture_sha256": "525cc60069d81c56efd58cb5b79b4cae1596b3cc67731d5ff76b0a97754e89f3",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 15.95,
+          "peaks_per_channel": [
+            0.012969970703125,
+            0.020355224609375
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": false,
+            "error": "Packet checksum differs at wire byte4095, tag0x5768"
+          },
+          {
+            "method": "realigned",
+            "passed": false,
+            "error": "No leading-label realignment decoded"
+          },
+          {
+            "method": "measured_clock",
+            "passed": false,
+            "error": "Measured clock requires one exact pre-frame quarter alignment"
+          }
+        ],
+        "method": null,
+        "native": null,
+        "hardware_verified": false
+      }
+    },
+    {
+      "file": "backup-03.wav",
+      "sha256": "446571b2384c826bb9282508a668dec4976a5fb1b803556b13ef7432205e893e",
+      "recorded_at": "2026-11-09T18:38:59+00:00",
+      "recording": {
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 670320,
+        "duration_seconds": 15.2,
+        "signal_start_seconds": 1.4,
+        "signal_end_seconds": 13.7,
+        "trailing_quiet_seconds": 1.5,
+        "noise_peak_before_signal": 0.001312255859375,
+        "signal_peaks_per_channel": [
+          0.50830078125,
+          0.80877685546875
+        ],
+        "detection": {
+          "signal_peak": 0.02,
+          "end_quiet_seconds": 1.5,
+          "block_seconds": 0.05,
+          "note": "Detection only chooses when to stop; the recording is not trimmed"
+        },
+        "stream_status_flags": [],
+        "feedback_echo": {
+          "coefficient": 0.013599548796026253,
+          "lag_ms": 77.32426303854875,
+          "channels": "left",
+          "detected": false,
+          "checked": true,
+          "limit": 0.05
+        },
+        "findings": []
+      },
+      "analysis_dir": "backup-03-analysis",
+      "analysis": {
+        "capture_sha256": "446571b2384c826bb9282508a668dec4976a5fb1b803556b13ef7432205e893e",
+        "levels": {
+          "sample_rate_hz": 44100,
+          "pcm_subtype": "PCM_16",
+          "duration_seconds": 15.2,
+          "peaks_per_channel": [
+            0.50830078125,
+            0.80877685546875
+          ],
+          "possible_clipping": false
+        },
+        "attempts": [
+          {
+            "method": "crossing",
+            "threshold": 0.0063,
+            "passed": true,
+            "error": null
+          }
+        ],
+        "method": "crossing",
+        "native": {
+          "codec_version": "po33-crc-additive-0.1",
+          "frame_start_byte": 4095,
+          "frame_end_byte": 47679,
+          "required_complete_label_span": [
+            0,
+            95361
+          ],
+          "packet_count": 347,
+          "all_packet_checksums_valid": true,
+          "encoded_body_sha256": "4d4ad5446b3c0560d23daeacbd5249f852f7d81b5f36cd9f064b9da6960a7e2e",
+          "tags": {
+            "0x985b": 1,
+            "0x7d5c": 2,
+            "0xa041": 16,
+            "0xc498": 80,
+            "0x68b5": 136,
+            "0xef78": 111,
+            "0x826f": 1
+          },
+          "sounds": [
+            {
+              "sound_id": 40,
+              "packet_count": 51,
+              "payload_bytes": 12297,
+              "header_hex": "00000000e316000028",
+              "payload_sha256": "f0e8b72671bf14977c611256cdbb61206aab9e351b22e7b5aad1d64d27c9cf19"
+            },
+            {
+              "sound_id": 42,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "e31600005e27000028",
+              "payload_sha256": "768aa94c022331c96b5d309e95b1f23d4f501f129bf93a789594ecce955da7da"
+            },
+            {
+              "sound_id": 46,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "5e270000f22b000028",
+              "payload_sha256": "84bbf8d900df6bbe725f70053b1f0db904d502c21e58812f26679a5184382141"
+            },
+            {
+              "sound_id": 56,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "00000000e316000028",
+              "payload_sha256": "5a9fd6238ba4446674cf173f1bacd83ac633e0717c9a8453b5958e239879db4b"
+            },
+            {
+              "sound_id": 58,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "e31600005e27000028",
+              "payload_sha256": "768aa94c022331c96b5d309e95b1f23d4f501f129bf93a789594ecce955da7da"
+            },
+            {
+              "sound_id": 62,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "5e270000f22b000028",
+              "payload_sha256": "84bbf8d900df6bbe725f70053b1f0db904d502c21e58812f26679a5184382141"
+            },
+            {
+              "sound_id": 72,
+              "packet_count": 51,
+              "payload_bytes": 12297,
+              "header_hex": "00000000e316000048",
+              "payload_sha256": "f204f049312cc682bb8fb0942ee51b585819e474c0995eb3b2b587f487824f1a"
+            },
+            {
+              "sound_id": 74,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "e31600005e27000028",
+              "payload_sha256": "768aa94c022331c96b5d309e95b1f23d4f501f129bf93a789594ecce955da7da"
+            },
+            {
+              "sound_id": 76,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "bf1c00005e27000028",
+              "payload_sha256": "b0301d98ba4373647fb4aaa4f773fc643d9b62a5495209fc9d139cc56464a53b"
+            },
+            {
+              "sound_id": 77,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "e3160000e021000048",
+              "payload_sha256": "b5cdc6bd7d19dee312feeb98f3e2f96678e04d6fdd658501e5df7aa865eb0b73"
+            },
+            {
+              "sound_id": 78,
+              "packet_count": 1,
+              "payload_bytes": 9,
+              "header_hex": "5e270000f22b000028",
+              "payload_sha256": "84bbf8d900df6bbe725f70053b1f0db904d502c21e58812f26679a5184382141"
+            }
+          ]
+        },
+        "hardware_verified": false
+      },
+      "target": {
+        "exact_target_body": true,
+        "target_body_sha256": "4d4ad5446b3c0560d23daeacbd5249f852f7d81b5f36cd9f064b9da6960a7e2e",
+        "captured_body_sha256": "4d4ad5446b3c0560d23daeacbd5249f852f7d81b5f36cd9f064b9da6960a7e2e",
+        "differences_from_target": {
+          "identical_body": true,
+          "packet_counts": [
+            347,
+            347
+          ],
+          "change_count": 0,
+          "changes": []
+        }
+      }
+    }
+  ],
+  "accepted": {
+    "attempt": "backup-03.wav",
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001"
+  },
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "db7e3f0f25403a97120994f9b6db0dafc507e2858965e0e8dc6743c2731fa5f5",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 950355,
+        "duration_seconds": 21.55,
+        "signal_onset_seconds": 1.55,
+        "seconds_after_onset": 20.0,
+        "peaks_per_channel": [
+          0.495361328125,
+          0.685272216796875
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-01.wav",
+    "accepted_with_findings": false,
+    "sha256": "db7e3f0f25403a97120994f9b6db0dafc507e2858965e0e8dc6743c2731fa5f5"
+  },
+  "observations": [
+    {
+      "question": "Pattern 1 (Sound 11): did you hear a falling kick on steps 1 and 9, a noise snare on 5 and 13, and short hats on the off-beats? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 2 (Sound 12): did it sound the same as Pattern 1, every hit present? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Pattern 3 (Sound 13): the same beat, plus a buzzy blip on step 14 and a short snare tail on step 16? (yes/no/notes)",
+      "answer": "yes"
+    },
+    {
+      "question": "Anything else you noticed (Enter to skip)",
+      "answer": ""
+    }
+  ],
+  "interrupted": false,
+  "hardware_verified": false,
+  "limits": [
+    "Software checks cover exact native reception only; they do not confirm sound",
+    "Observations are the person's own words, recorded verbatim"
+  ],
+  "finished_at": "2026-11-09T18:39:53+00:00",
+  "result": {
+    "backup_decoded": true,
+    "native_target_exact": true,
+    "capture": "capture.wav",
+    "analysis": "derived/analysis-001",
+    "playback": "playback.wav"
+  }
+}

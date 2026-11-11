@@ -1,0 +1,80 @@
+{
+  "analysis_version": "first-drum10-pattern-key2-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-drum-cell-copy-001",
+  "baseline_capture": "../edited-drum-cell-copy-001/capture.wav",
+  "baseline_source_sha256": "5de811a38223d7b4f14dfc65ba1ff724ec4a36458c8413196dc71ab9d4d3d648",
+  "baseline_artifact": "../edited-drum-cell-copy-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "0d6d518212530c82ad74d432de4693ff0ee7956bc349741aa18fff2552a532a5",
+  "baseline_body_sha256": "6f4e2cab0060a6ff1c63eaafe7b34ea7c4ee8e95fa5d2b88ee64d1c308e6c130",
+  "expected_change": {
+    "pattern": 1,
+    "step": 9,
+    "sound_slot": 10,
+    "old_slice_key": 1,
+    "new_slice_key": 2
+  },
+  "control_checks": {
+    "packet_count": 543,
+    "frame_end_byte": 89844,
+    "pattern_packet_indices": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "baseline_pattern_sha256": "865269c2992d09b887b358761a6276f375c45cca7ba0e9ac82bf94098357da64",
+    "baseline_primary_hex": "0df883",
+    "baseline_auxiliary_byte": 16,
+    "primary_span": [
+      411,
+      414
+    ],
+    "auxiliary_offset": 905,
+    "allowed_pattern_byte_offsets": [
+      411,
+      412,
+      413,
+      905
+    ],
+    "source_step1_primary_span": [
+      27,
+      30
+    ],
+    "source_step1_auxiliary_offset": 777,
+    "preservation": "Source Step1/key1, all melodic notes, all other pattern bytes, all samples/references, other15 patterns and every other plain packet identical"
+  },
+  "separately_evaluated_hypotheses": {
+    "primary_remains_observed_drum_pair": {
+      "expected_hex": "0df883"
+    },
+    "auxiliary_preserves_drum_upper_nibble_and_increments_key": {
+      "expected_value": 17
+    },
+    "auxiliary_matches_melodic_key2": {
+      "expected_value": 241
+    },
+    "only_auxiliary_byte_changes": {
+      "expected_byte_changes": [
+        {
+          "offset": 905,
+          "old": 16,
+          "new": 17
+        }
+      ]
+    },
+    "only_auxiliary_packet_changes": {
+      "expected_changed_plain_packet_indices": [
+        7
+      ]
+    }
+  },
+  "limits": [
+    "The two exact auxiliary predictions11/F1 are independently evaluated and may both fail",
+    "This control tests the recorded drum-note key action; it does not map Sound10/key2 to a sample-reference selector",
+    "No key2 writer, drum-key setter, key2 project projection or general nibble meaning is enabled in advance",
+    "The observed key1 copy remains accepted; all source/sample and melodic context must be retained",
+    "Capture before pattern playback; do not move either knob or change tempo/effects/chain"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "analysis_version": "generated-straight-offbeat-control-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Device accepted generated straight swing0 with cloned offbeat Sound3/key16 event; exact entire backup target, audible added note and measured straight timing baseline",
+  "swing6_writer_verified": false,
+  "timing_units_confirmed": false,
+  "display_text": null,
+  "encoded_swing_byte": 0,
+  "serialized_tempo_bpm": 137,
+  "checks": {
+    "all_exact_native_recapture_checks": true,
+    "capture_and_artifact_fingerprints_match": true,
+    "encoded_swing0_and_tempo137": true,
+    "ordinary_playback_fingerprint_matches": true,
+    "all_stereo_and_onset_checks": true,
+    "all_six_straight_gap_reference_checks": true,
+    "method_registered_before_probe_data": true,
+    "all_export_content_hashes_match": true,
+    "complete_export_body_exact": true,
+    "backup_not_clipped": true
+  },
+  "capture_sha256": "002f1d33922bc300f58b51f41a68e990ce6797a67fcb5619e0b3651bacbd7956",
+  "artifact_sha256": "b38828671aca4d84abb70c7b37b94d70c453def44c91715949b6185969aea4d3",
+  "artifact_path": "experiments/edited-swing-timing0-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "1da3b29b71a0ce601b485b94a5b40256058d3cf79f61d50f743d25fe28aa03e2",
+  "playback_sha256": "66ccc83783a30af95101977284038cc4096eb9085381ea7bc5d19d5c0ffdbcc3",
+  "native_results_sha256": "e69ea069d3e3c6d6991cad5d968fa3dda3f700f0945e8916d66c0b59bd1d3a09",
+  "timing_results_sha256": "c43a9403de9c2d8c9f964b21462a6c628342902b4951862094b984c0267ce4b6",
+  "method_registration_sha256": "c10ba77e2343998f1b368c904fd87003afb7bf949d0dd24943839abeb4ffa57f",
+  "manual_observation_sha256": "fa301c8c79254c0c7adfe9756c02e86c9d4b3d12d69a34d6444b5a89709451f1",
+  "exported_content_files_checked": 31,
+  "backup_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.160980224609375,
+      0.1551513671875
+    ]
+  },
+  "timing_summary": {
+    "repeated_tone_center_hz": 500.65,
+    "resolved_onsets_per_channel_at25percent": 29,
+    "complete_cycles": 14,
+    "short_gap_seconds": 0.5477777777777781,
+    "long_gap_seconds": 1.2039455782312927,
+    "loop_seconds": 1.7517233560090704
+  },
+  "limits": [
+    "The initial high-note description is corrected by baseline spectrum; the repeated note is near500 Hz",
+    "No independent swing display or generated positive-swing effect claimed",
+    "Numeric percent/clock units and public swing writer remain unverified"
+  ]
+}

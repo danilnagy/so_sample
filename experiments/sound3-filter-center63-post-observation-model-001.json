@@ -1,0 +1,13 @@
+{
+  "analysis_version": "FILTER-center63-post-observation-literal-model-0.1",
+  "hardware_verified": false,
+  "registered_before_center_data": false,
+  "rule": "Set second-primary high-four and third-primary low-two bits to all ones in all16 Sound3/P1 cells; preserve all other bits",
+  "complete_body_reproduced": true,
+  "native_results_sha256": "25e55590312e1aeb155d2329b724534f505d7f447c62cc690924e3b2cf15b37a",
+  "failed_preregistered_scalar_order_checks": {
+    "all_contiguous_values_between_endpoints": false,
+    "all_alternative_values_between_endpoints": false
+  },
+  "interpretation": "Special neutral code63 is a post-observation hypothesis; general filter law and broadband bypass are unconfirmed"
+}

@@ -1,0 +1,138 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "d05c4c2c03a3236f1a63e91a63f9b9efd224fc784d3519ffa80f537fca3fd265",
+  "source_body_sha256": "db67d29a520997934eac7d849ef0a2c29b2ae63df851fc95988460358d8ce33b",
+  "operations": [
+    {
+      "operation": "set_step_parameters",
+      "pattern": 2,
+      "sound": 1,
+      "parameter": "pitch",
+      "values": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ]
+    },
+    {
+      "operation": "set_note_unknown_bits",
+      "pattern": 2,
+      "sound": 1,
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "operation": "set_sample_window",
+      "sound": 6,
+      "start": 11719,
+      "end": 17578
+    },
+    {
+      "operation": "set_sample_window",
+      "sound": 7,
+      "start": 5859,
+      "end": 11719
+    },
+    {
+      "operation": "set_melodic_notes_from",
+      "pattern": 2,
+      "sound": 6,
+      "keys": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "template_sound": 1
+    },
+    {
+      "operation": "set_melodic_notes_from",
+      "pattern": 2,
+      "sound": 7,
+      "keys": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "template_sound": 1
+    },
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 2,
+      "sound": 1,
+      "keys": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}

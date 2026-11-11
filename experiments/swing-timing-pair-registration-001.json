@@ -1,0 +1,75 @@
+{
+  "analysis_version": "swing-timing-pair-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "hardware_verified": false,
+  "source_artifact": "experiments/event-040-a-return-swing18/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "aa90e8f444bff76700b2f78b27a857a432f552f3c69d472ff40eb6b10e729ff7",
+  "source_body_sha256": "51b9358a087173aa4ebd4e49eda47e698ba34c7dd077237ccb7d353291b6eea8",
+  "physical_series_sha256": "06077df5b30b4f817e65aee42335b1a19436d2393b0446e5427f4cf443abcf2c",
+  "independent_display_evidence": [
+    {
+      "observation": "experiments/event-038-b-swing-minimum/hardware-observation-001.json",
+      "observation_sha256": "8d0d45ad2ef749d5bd135187cd45521a77edfbc97c8f8fa4917e2b0c3ebf03eb",
+      "experiment_id": "event-038-b-swing-minimum",
+      "capture_sha256": "0e661a99be6d26121e05dc89f15a7d79eb048cdafbad199fa3e9a88b5ea7b780",
+      "artifact_sha256": "27942149428e5f19b526a05eea975f3004939e79d4247f3e4dcb61506e499102",
+      "artifact_path": "C:\\Users\\danil\\OneDrive\\Documents\\Github\\danilnagy\\po_33\\experiments\\event-038-b-swing-minimum\\derived\\analysis-001\\capture.symbols.npz"
+    },
+    {
+      "observation": "experiments/event-039-c-swing-9/hardware-observation-001.json",
+      "observation_sha256": "0888d2614d68ef4cbbba52f2ec87f6306a1eee80f72634d8639b6cbd8e8d8ecd",
+      "experiment_id": "event-039-c-swing-9",
+      "capture_sha256": "035b0a516321db3fdcac7b132c4cb4b463bc3a93e0290ca0fb1a0a21b98158bb",
+      "artifact_sha256": "6a1795b4596586d27d7a3d80259a92ceebcfa483d7082c0a248f00a85eeed9e7",
+      "artifact_path": "C:\\Users\\danil\\OneDrive\\Documents\\Github\\danilnagy\\po_33\\experiments\\event-039-c-swing-9\\derived\\analysis-001\\capture.symbols.npz"
+    },
+    {
+      "observation": "experiments/event-040-a-return-swing18/hardware-observation-001.json",
+      "observation_sha256": "7784d0e29e63867ffdedc9fa5fad09ed452e50b2d5c583a54b37bef0d49dd3fa",
+      "experiment_id": "event-040-a-return-swing18",
+      "capture_sha256": "05eda85f4c5a678653fd782dbe56e13e635d1932b863fc7bb085152e28ddbec8",
+      "artifact_sha256": "aa90e8f444bff76700b2f78b27a857a432f552f3c69d472ff40eb6b10e729ff7",
+      "artifact_path": "C:\\Users\\danil\\OneDrive\\Documents\\Github\\danilnagy\\po_33\\experiments\\event-040-a-return-swing18\\derived\\analysis-001\\capture.symbols.npz"
+    }
+  ],
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "edited-swing-timing0-001",
+      "swing_byte": 0,
+      "expected_body_sha256": "1da3b29b71a0ce601b485b94a5b40256058d3cf79f61d50f743d25fe28aa03e2",
+      "restore_wav_sha256": "723b3505c844a8498bc2846390a555445b28d1172e5f2f75c3811bb0dd5a5c87",
+      "edited_artifact_sha256": "99cfd79d131d13973436bb0ed512aab213d3834126148954d71aaf60e1c8f3b9",
+      "software_validation_sha256": "a753e0d5fd067a045e115f572ad90e0a453d6dfd1b21e7386beecd9b5afe7bd1",
+      "backup_file": "capture.wav",
+      "ordinary_playback_file": "playback.wav"
+    },
+    {
+      "experiment_id": "edited-swing-timing6-001",
+      "swing_byte": 6,
+      "expected_body_sha256": "fc595d91e0eff23869c4236bc9c602745c8e6de63c9d5257b9ba3152e9678175",
+      "restore_wav_sha256": "b20109edb54c0c73a2c867dc3fc141e71f2d9840b68e9b592939d3b2a68811ad",
+      "edited_artifact_sha256": "8bebf451feb2eadb3058f6e00da24964c23d54843805b5d6641df675f8238ffd",
+      "software_validation_sha256": "788b6aeb6df5fd2048271002bdd8f8620a9074096d472e95bb126a89282b30ca",
+      "backup_file": "capture.wav",
+      "ordinary_playback_file": "playback.wav"
+    }
+  ],
+  "pair_checks": {
+    "identical_all_pattern_bytes": true,
+    "only_one_plain_payload_byte_differs": true
+  },
+  "timing_hypotheses": {
+    "identical_sound3_key16_events": "Pattern1 steps2 and13; same opaque primary and auxiliary values and same sample window",
+    "zero_swing_reference": "Successive high-note onset gaps alternate11 and5 sixteenth steps; entire cycle16 steps",
+    "six_swing_probe": "Compared with swing0, same-parity-to-offbeat gap increases and opposite gap decreases; entire loop period remains constant",
+    "nominal_loop_seconds": 1.7518248175182483,
+    "measure_without_assumed_units": "Use repeated onset pairs and common high-tone component; report measured interval differences, never fit byte to percent or clock units",
+    "insufficient_audio": "If high-note onsets cannot be resolved consistently across at least3 full cycles, report timing unevaluated and request clearer or longer playback"
+  },
+  "limits": [
+    "Target6 is a new interior numeric hypothesis; no public swing writer enabled",
+    "Software reports never become hardware verified; raw recaptures and ordinary playback are separate evidence",
+    "Swing display is not read by turning A because that would change the restored state",
+    "First verify straight control before asking for the second restore; timing units remain unknown"
+  ]
+}

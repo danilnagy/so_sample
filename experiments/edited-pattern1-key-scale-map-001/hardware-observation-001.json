@@ -1,0 +1,35 @@
+{
+  "analysis_version": "key-scale-map-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of key s on step s; registered pitch decision inconclusive because playback ran at 80 BPM",
+  "native_check_passed": true,
+  "registered_classification": "other_or_inconclusive",
+  "decision_sha256": "d00590896c1ad55e01ad8783027033e6a906e7d42d34144f58cac943b150ec26",
+  "native_results_sha256": "1ad5b724ab679792fa52c8287189c2f749ef1d1ab44f951c146a10dee5c3f5e9",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "3ce29b8d9fc3c48c8df05bbdfd78dfe475d81ae239afdbfcc4125e835cbe6f25",
+  "exploratory_median_cents_by_key": [
+    1,
+    100,
+    300,
+    401,
+    -698,
+    -499,
+    -400,
+    -200,
+    -1201,
+    -1098,
+    -900,
+    -801,
+    -1901,
+    -1702,
+    -1600,
+    -1400
+  ],
+  "exploratory_sha256": "8325c136f168378b25bbeb94ea1801706a993c057f563e70bfec156b315fe04d",
+  "lessons": [
+    "The tempo changed between the backup and the playback; keep BPM untouched",
+    "Low keys play long and a new note cuts the previous one, so onsets must come from the step grid, not silence gaps",
+    "The lowest keys sit near 400 Hz, below the registered search floor"
+  ]
+}

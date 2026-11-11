@@ -1,0 +1,39 @@
+{
+  "analysis_version": "physical-fine-tempo-endpoints-and-return-hardware-observation-0.1",
+  "status": "supported_with_exact_original100_return",
+  "hardware_verified": true,
+  "fine_tempo_writer_verified": false,
+  "public_tempo_scope": "Presets80/120/140 in recognized opaque context",
+  "verified_scope": "Fine endpoint60/240 and exact100 return use the same direct byte; all unrelated bytes are preserved",
+  "display_before_bpm": 100,
+  "display_bpm": 60,
+  "series_results_sha256": "9d3c73871aa3dcb1c9ccb004608471c4c7b5d143909019488f8a8498719537b3",
+  "manual_observation_sha256": "473c17230bb0860b698d605fa1e5cc6ac657d59d0fac6f019d26824fcf8a35a4",
+  "capture_sha256": "4ece0ed862318c0f2ace0d1e6545db4502af6c18be51c5302af713ebee12638e",
+  "artifact_sha256": "1c5ad34633d93054f003d8393aa9fe6fc0518c27af7e2cfbdf975c7de2b6d885",
+  "artifact_path": "experiments/event-034-b-fine-tempo-60/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "8146205d12593b62c9b88c8ab9ad13603d10e409d84bef4a89e339ce96865f64",
+  "checks": {
+    "all_native_controls": true,
+    "all_fixed_byte_hypotheses": true,
+    "all_leg_prediction_hypotheses": true,
+    "all_series_return_hypotheses": true,
+    "actual_display_values_independently_confirmed": true,
+    "capture_and_artifact_hashes_match": true,
+    "all_export_content_hashes_match": true,
+    "export_complete_body_matches": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 31,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.162872314453125,
+      0.157073974609375
+    ]
+  },
+  "limits": [
+    "Physical endpoints and return are verified; generated arbitrary fine tempo remains a separate hardware gate",
+    "Public preset scope is unchanged; not every integer has been independently observed"
+  ]
+}

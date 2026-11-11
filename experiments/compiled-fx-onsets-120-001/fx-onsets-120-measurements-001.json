@@ -1,0 +1,1015 @@
+{
+  "analysis_version": "fx-onsets-120-measurements-0.1",
+  "hardware_verified": false,
+  "playback_sha256": "8ce7a29088a84f37a9ab1338770e3352f8bfdca6c69ca75163972417c8f0eb1c",
+  "settings": {
+    "band_hz": [
+      150.0,
+      6000.0
+    ],
+    "envelope_window_seconds": 0.003,
+    "skip_seconds": 0.02,
+    "onset_fraction": 0.15,
+    "refractory_seconds": 0.025,
+    "fft_size": 32768,
+    "window_starts_ms": [
+      50.0,
+      90.0
+    ],
+    "window_ms": 40.0,
+    "step_seconds": 0.125
+  },
+  "first_onset_seconds": 1.7420181405895692,
+  "patterns": {
+    "1": [
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": -5
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": -5
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 7,
+          "level_db": -5
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 8,
+          "level_db": -5
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": -5
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": -5
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 11,
+          "level_db": -5
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 12,
+          "level_db": -5
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ],
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": -5
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": -5
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 7,
+          "level_db": -5
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 8,
+          "level_db": -5
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": -5
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": -5
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 11,
+          "level_db": -5
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 12,
+          "level_db": -5
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ]
+    ],
+    "2": [
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": -1
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 2,
+          "key": 7,
+          "level_db": -9
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": null,
+          "level_db": -51
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": -1
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 2,
+          "key": 11,
+          "level_db": -8
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": null,
+          "level_db": -50
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ],
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": -1
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 2,
+          "key": 7,
+          "level_db": -8
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": null,
+          "level_db": -51
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": -1
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 2,
+          "key": 11,
+          "level_db": -8
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": null,
+          "level_db": -50
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ]
+    ],
+    "3": [
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ],
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ]
+    ],
+    "4": [
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 7,
+          "level_db": 0
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": 0
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 11,
+          "level_db": 0
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ],
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 7,
+          "level_db": 0
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": 0
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 11,
+          "level_db": 0
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ]
+    ],
+    "5": [
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 7,
+          "level_db": 0
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 8,
+          "level_db": 0
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": 0
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 11,
+          "level_db": 0
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 12,
+          "level_db": 0
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ],
+      [
+        {
+          "step": 1,
+          "onsets": 1,
+          "key": 1,
+          "level_db": 0
+        },
+        {
+          "step": 2,
+          "onsets": 1,
+          "key": 2,
+          "level_db": 0
+        },
+        {
+          "step": 3,
+          "onsets": 1,
+          "key": 3,
+          "level_db": 0
+        },
+        {
+          "step": 4,
+          "onsets": 1,
+          "key": 4,
+          "level_db": 0
+        },
+        {
+          "step": 5,
+          "onsets": 1,
+          "key": 5,
+          "level_db": 0
+        },
+        {
+          "step": 6,
+          "onsets": 1,
+          "key": 6,
+          "level_db": 0
+        },
+        {
+          "step": 7,
+          "onsets": 1,
+          "key": 7,
+          "level_db": 0
+        },
+        {
+          "step": 8,
+          "onsets": 1,
+          "key": 8,
+          "level_db": 0
+        },
+        {
+          "step": 9,
+          "onsets": 1,
+          "key": 9,
+          "level_db": 0
+        },
+        {
+          "step": 10,
+          "onsets": 1,
+          "key": 10,
+          "level_db": 0
+        },
+        {
+          "step": 11,
+          "onsets": 1,
+          "key": 11,
+          "level_db": 0
+        },
+        {
+          "step": 12,
+          "onsets": 1,
+          "key": 12,
+          "level_db": 0
+        },
+        {
+          "step": 13,
+          "onsets": 1,
+          "key": 13,
+          "level_db": 0
+        },
+        {
+          "step": 14,
+          "onsets": 1,
+          "key": 14,
+          "level_db": 0
+        },
+        {
+          "step": 15,
+          "onsets": 1,
+          "key": 15,
+          "level_db": 0
+        },
+        {
+          "step": 16,
+          "onsets": 1,
+          "key": 16,
+          "level_db": 0
+        }
+      ]
+    ]
+  }
+}

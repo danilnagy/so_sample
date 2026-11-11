@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-swing-law-001",
+  "capture_status": "validated_exact_native_swing_law_linear_in_code",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../swing-law-registration-001.json",
+  "plan": "../swing-law-plan-001/plan.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did the clicks sound strongly swung, almost in pairs? What did the swing display show? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "swing_measurements": "swing-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-swing-law-001/project.json"
+}

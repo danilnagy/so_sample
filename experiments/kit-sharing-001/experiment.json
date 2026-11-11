@@ -1,0 +1,22 @@
+{
+  "experiment_id": "kit-sharing-001",
+  "capture_status": "validated_exact_native_kit_sharing",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../kit-sharing-registration-001.json",
+  "builder": "web/scripts/build-kit-sharing-test.ts",
+  "playback_seconds": 20,
+  "playback_instructions": "# Kit-sharing test\n\nAfter the restore, press PLAY. The chain plays Patterns 1, 2 and 3 and loops; each is one\nbar at 100 BPM, so a pass takes about seven seconds.\n\n- Pattern 1 plays Sound 11: kick on steps 1 and 9, snare on 5 and 13, hat on 3, 7, 11, 15.\n- Pattern 2 plays the same beat on Sound 12, whose keys all point into Sound 11's samples.\n  It should sound exactly like Pattern 1.\n- Pattern 3 plays the same beat on Sound 13, plus a buzzy blip on step 14 and the tail of\n  the snare (the snare from part-way in) on step 16.\n\nA silent or wrong hit in Pattern 2 or 3 is the thing to listen for. Let it run for the\nplayback recording, then answer the questions.\n",
+  "observation_questions": [
+    "Pattern 1 (Sound 11): did you hear a falling kick on steps 1 and 9, a noise snare on 5 and 13, and short hats on the off-beats? (yes/no/notes)",
+    "Pattern 2 (Sound 12): did it sound the same as Pattern 1, every hit present? (yes/no/notes)",
+    "Pattern 3 (Sound 13): the same beat, plus a buzzy blip on step 14 and a short snare tail on step 16? (yes/no/notes)",
+    "Anything else you noticed (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

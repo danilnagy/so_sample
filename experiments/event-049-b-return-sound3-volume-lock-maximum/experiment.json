@@ -1,0 +1,18 @@
+{
+  "experiment_id": "event-049-b-return-sound3-volume-lock-maximum",
+  "capture_status": "validated_exact_maximum_return",
+  "expected_file": "capture.wav",
+  "registration": "../sound3-volume-middle-series-registration-001.json",
+  "planned_actions": [
+    "Keep Pattern1/Sound3/TONE,tempo100,swing9; knobA untouched",
+    "Play,hold WRITE and slowly turn only B to fully clockwise maximum over about5 seconds",
+    "Hold WRITE3 more seconds with knobs stationary,release,stop,ensure write off,then save complete capture.wav at established reduced levels with one second tail",
+    "Save before next leg; report relative loudness and any display labels; leave final maximum stopped/write off"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-volume-middle-series-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "volume_writer_enabled": false,
+  "project": "../exported-sound3-volume-middle-return-maximum-001/project.json"
+}

@@ -1,0 +1,228 @@
+{
+  "analysis_version": "observed-pattern-layout-0.2",
+  "patterns": [
+    {
+      "pattern_slot": 1,
+      "payload_bytes": 1032,
+      "payload_sha256": "32fdaf3e4b8099b734cf7161b30b94838685f07d5275cde72440f00187bdab0a",
+      "all_primary_and_auxiliary_bytes_zero": false,
+      "nonzero_step_rows": [
+        {
+          "step": 1,
+          "primary_48_bytes_hex": "0000000d28310df883000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "nonzero_12_byte_regions": [
+            {
+              "region_index": 0,
+              "hex": "0000000d28310df883000000"
+            }
+          ],
+          "auxiliary_16_bytes_hex": "00f0f000000000000000000000000000",
+          "nonzero_three_byte_cells": [
+            {
+              "cell_index": 1,
+              "candidate_sound_slot": 2,
+              "primary_hex": "0d2831",
+              "auxiliary_byte": 240
+            },
+            {
+              "cell_index": 2,
+              "candidate_sound_slot": 3,
+              "primary_hex": "0df883",
+              "auxiliary_byte": 240
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "primary_48_bytes_hex": "0000000000000df883000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "nonzero_12_byte_regions": [
+            {
+              "region_index": 0,
+              "hex": "0000000000000df883000000"
+            }
+          ],
+          "auxiliary_16_bytes_hex": "0000f100000000000000000000000000",
+          "nonzero_three_byte_cells": [
+            {
+              "cell_index": 2,
+              "candidate_sound_slot": 3,
+              "primary_hex": "0df883",
+              "auxiliary_byte": 241
+            }
+          ]
+        },
+        {
+          "step": 9,
+          "primary_48_bytes_hex": "0000000d28310df883000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "nonzero_12_byte_regions": [
+            {
+              "region_index": 0,
+              "hex": "0000000d28310df883000000"
+            }
+          ],
+          "auxiliary_16_bytes_hex": "00f0f600000000000000000000000000",
+          "nonzero_three_byte_cells": [
+            {
+              "cell_index": 1,
+              "candidate_sound_slot": 2,
+              "primary_hex": "0d2831",
+              "auxiliary_byte": 240
+            },
+            {
+              "cell_index": 2,
+              "candidate_sound_slot": 3,
+              "primary_hex": "0df883",
+              "auxiliary_byte": 246
+            }
+          ]
+        },
+        {
+          "step": 13,
+          "primary_48_bytes_hex": "0000000000000df883000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "nonzero_12_byte_regions": [
+            {
+              "region_index": 0,
+              "hex": "0000000000000df883000000"
+            }
+          ],
+          "auxiliary_16_bytes_hex": "0000ff00000000000000000000000000",
+          "nonzero_three_byte_cells": [
+            {
+              "cell_index": 2,
+              "candidate_sound_slot": 3,
+              "primary_hex": "0df883",
+              "auxiliary_byte": 255
+            }
+          ]
+        }
+      ],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 2,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 3,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 4,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 5,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 6,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 7,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 8,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 9,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 10,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 11,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 12,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 13,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 14,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 15,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    },
+    {
+      "pattern_slot": 16,
+      "payload_bytes": 1032,
+      "payload_sha256": "db6c4a36dbb45d5d8843acdc0f7b9d5513b21634c30e89d8541d162d282a0758",
+      "all_primary_and_auxiliary_bytes_zero": true,
+      "nonzero_step_rows": [],
+      "opaque_footer_hex": "ffffffffffffffff"
+    }
+  ],
+  "limits": [
+    "Only raw byte regions are reported; sound, pitch, volume, timing and effects are not decoded.",
+    "A48-byte primary stride and16-byte auxiliary stride are supported by local controlled kicks.",
+    "The12-byte regions and auxiliary entries retain their raw values; their general semantics remain unverified.",
+    "Sound2/Sound3/Sound9 controls support three primary bytes and one auxiliary byte per sound slot; other slots remain untested."
+  ]
+}

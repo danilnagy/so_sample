@@ -1,0 +1,37 @@
+{
+  "analysis_version": "long-melodic-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "3195539d18dc352a16f4c6a82a8440c144b06b07753493c28ff2067b43caef2b",
+  "native_results_sha256": "6accef310c946ce0db215829576a96b9e4624fb032e9640d58fc0afb9c2a6fef",
+  "measurements_sha256": "bf124e49685a2ee23d69bf9e56586dd2205ffa2a7664385851f3aa788c269315",
+  "expected_duration_ms": 2669.679708340069,
+  "median_duration_ms": 2671.8820861678005,
+  "duration_holds": true,
+  "quarters": [
+    {
+      "expected_hz": 599.3228307506727,
+      "median_cents_off": 0.35763821821851083,
+      "holds": true
+    },
+    {
+      "expected_hz": 749.1535384383408,
+      "median_cents_off": 0.3876078674023074,
+      "holds": true
+    },
+    {
+      "expected_hz": 898.9842461260089,
+      "median_cents_off": 0.36873510711694274,
+      "holds": true
+    },
+    {
+      "expected_hz": 1048.814953813677,
+      "median_cents_off": 0.3947938089018394,
+      "holds": true
+    }
+  ],
+  "pitch_holds": true,
+  "classification": "whole_sample_plays_in_order",
+  "limits": [
+    "One 4.0 s sample in Sound6 at key 1 and pitch code 13; other lengths and slots follow by the same rule but are not played"
+  ]
+}

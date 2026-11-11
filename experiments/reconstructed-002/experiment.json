@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "reconstructed-002",
+  "baseline_id": "baseline-002",
+  "created_at": null,
+  "device": {
+    "model": "PO-33",
+    "firmware": "unknown"
+  },
+  "state": {
+    "description": "User followed controlled procedure: restore candidate 002 and immediately back up without intervening state changes. Full decoded channel streams match baseline 002/003."
+  },
+  "changes": [],
+  "actions": [
+    "Restore corrected candidate 002",
+    "Immediately make backup without playing or changing sounds, patterns, sequences or settings",
+    "Record with the same reduced-level settings as reconstructed-001"
+  ],
+  "capture": {
+    "path": "capture.wav",
+    "sha256": "8f8107745ecd6473e1df17c7c5660b56352ca155de6631c98f70b4a623ba5c80",
+    "status": "received_and_validated",
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "pcm_subtype": "PCM_16",
+    "interface": null,
+    "processing": "unknown",
+    "level_notes": "User confirms same reduced-level settings; observed peaks 0.168457 left and 0.160736 right; no clipping."
+  },
+  "hardware_restore": {
+    "status": "accepted",
+    "evidence_source": "user_report_and_recapture_analysis",
+    "artifact_sha256": "778e05040b81ee451bb0692b9765181c4a7ad30fb49904495bccc048ef4232f7",
+    "observations": [
+      "User followed controlled restoration and immediate re-capture procedure.",
+      "All 1,970,367 phase labels per channel match baseline 002/003 exactly at normalized threshold 0.0063."
+    ]
+  },
+  "generated_restore_record": "../baseline-002/generated-restore-44100-002.json",
+  "comparison_control": {
+    "status": "controlled_user_report",
+    "changes": [],
+    "transport_comparison": "exact_complete_phase_labels_and_counts",
+    "decoder_threshold": 0.0063,
+    "musical_state_parser_verified": false
+  }
+}

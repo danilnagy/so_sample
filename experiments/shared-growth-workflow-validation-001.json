@@ -1,0 +1,33 @@
+{
+  "analysis_version": "shared-growth-to-unshared-shrink-workflow-audit-0.1",
+  "rerecord_results_sha256": "2dfab04465ec425fa82cad5c927658c52a19068fce8d79b0f02fac28f210bfcc",
+  "sample_analysis_sha256": "6e55a70daa56390a41a2b3921c5d4f279c82a2fb0bffeaeead5aa0f7945a9d6d",
+  "next_registration_sha256": "9c5058fa8bac243406da6660c248e396e1929fc114fdc54e946e1b4cf889db06",
+  "project": "exported-shared-owner-growth-001/project.json",
+  "exported_content_files_checked": 31,
+  "checks": {
+    "all_rerecord_controls_pass": true,
+    "full_old_buffer_transfer_and_used_window_preserved": true,
+    "tracking_alternative_remains_false": true,
+    "all_unrelated_records_and_plain_packets_preserved": true,
+    "source_files_preserved": true,
+    "analysis_and_ordered_page_checks_match": true,
+    "new_and_retained_frequencies_distinct": true,
+    "first_page_order_hypothesis_preserved": true,
+    "all_project_files_and_source_copies_match": true,
+    "entire_raw_project_body_matches": true,
+    "next_shrink_baseline_identity_matches": true,
+    "next_source_unshared_and_independent_copy_registered": true,
+    "short_tone_hash_format_and_frequency_match": true,
+    "next_control_registered_before_capture": true,
+    "analysis_and_export_remain_software_only": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "validation": {
+    "targeted_tests": "23 passed in 3.34s",
+    "ruff_check": "passed",
+    "ruff_format": "149 files formatted"
+  },
+  "next_required_user_action": "Record the short1500Hz input into unshared Sound4, preserve Sound5, capture before audition, then report both tones"
+}

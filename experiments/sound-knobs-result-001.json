@@ -1,0 +1,20 @@
+{
+  "analysis_version": "sound-knobs-result-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "5de99c5d11c3670c41e9152ff9eef0b64786af75dab97eb2e1504e54a03e7a6b",
+  "capture_sha256": "64edcac2f546c9b0bc00035db2c542dc03d989e18b59c1d59699df08a4feff6e",
+  "artifact_sha256": "6e7ecb3ad20ff08f9aa07d42444c756eb34e4ddd1536915402ff3d0edec73f95",
+  "outcome": "nothing_stored",
+  "global_byte_changes": {},
+  "pattern_byte_changes": [],
+  "changed_sound_ids": [],
+  "all_changes": {
+    "identical_body": true,
+    "packet_counts": [
+      3450,
+      3450
+    ],
+    "change_count": 0,
+    "changes": []
+  }
+}

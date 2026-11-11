@@ -1,0 +1,36 @@
+{
+  "analysis_version": "first-drum-slice-hardware-workflow-audit-0.1",
+  "checks": {
+    "hardware_exact_target_and_locality": true,
+    "all_exported_content_hashes": true,
+    "complete_native_packet_view_exact": true,
+    "source_capture_preserved": true,
+    "source_artifact_preserved": true,
+    "only_key1_drum_preview_present": true,
+    "melodic_previews_retained": true,
+    "historical_software_report_still_hardware_false": true,
+    "export_report_remains_hardware_false": true
+  },
+  "passed": true,
+  "hardware_report_sha256": "b0e6568e744c5849a49f4b52b196cac4386c4e3e90a866ead915f3dd7d75c882",
+  "historical_software_report_sha256": "2d7ab78363c33744a3d032234de7860da6817111267c5982b210aac1bbfe75bb",
+  "source_capture_sha256": "0ddaf2dd97497f4046ccf69a346b03284e5701296a91686f6880a3cf88770c3e",
+  "source_artifact_sha256": "cfb6a1470674c6d8e9f42ec127c84f0605b7084c17e03ad06791acaa37cc52d3",
+  "native_body_sha256": "4eca78dcdf5521941bb07c0d16e4cad71115512021670c203d87256ce142e667",
+  "exported_content_file_count": 27,
+  "suite": {
+    "passed": 393,
+    "failed": 0,
+    "elapsed_seconds": 60.21,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-drum-hardware-001"
+  },
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 120,
+  "new_device_operation_claimed_by_export": false,
+  "limits": [
+    "Only Sound9/key1 zero-start endpoint2000 has this registered acceptance evidence",
+    "The optional preview is an unpitched half-open raw-code selection, not an independently measured device rendering",
+    "Nonzero-start drum key2 remains a separately registered physical control"
+  ]
+}

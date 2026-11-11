@@ -1,0 +1,89 @@
+{
+  "analysis_version": "fx-period-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-fx-period-001",
+  "source_artifact": "experiments/compiled-fx-direction-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "be18be33c1eed4fd70c67362320b19ca59a197e771a0f235299c7d09f90e801f",
+  "source_capture_sha256": "704f1a27980c9bc40d6ed31bd2989baa04060ea889780b17ab386966ace9029b",
+  "held_effects": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 12
+  },
+  "note_steps": [
+    1,
+    5
+  ],
+  "hold_steps": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "control_pattern": 6,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "candidates_ms": {
+    "1/8": 500.0,
+    "1/12": 333.3333333333333,
+    "1/16": 250.0,
+    "1/24": 166.66666666666666,
+    "1/32": 125.0,
+    "1/48": 83.33333333333333,
+    "1/64": 62.5
+  },
+  "tolerance": 0.08,
+  "plan_sha256": "83bd9343ae0c0f2cf5c1a38cd16f08f0b7601ecf538e0aaa53b269d40db50ada",
+  "expected_body_sha256": "89f62115d8423a86180fd5c204ef655c576795914be09bb0275b951c8c55e1ba",
+  "edited_artifact_sha256": "67ffb8ec7aecfd6c29240665551ebc9871a903373644e3c2e2993218b78baf6c",
+  "restore_wav_sha256": "02b20f7337be537cfaae48c25adccba3f54259b71593bf54c6064f44cb7fa4ef",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      6000.0
+    ],
+    "envelope_window_seconds": 0.003,
+    "skip_seconds": 0.02,
+    "onset_fraction": 0.15,
+    "fft_size": 32768,
+    "track_start_ms": 20.0,
+    "track_end_ms": 1200.0,
+    "hop_ms": 10.0,
+    "window_ms": 30.0,
+    "lag_range_ms": [
+      40.0,
+      700.0
+    ],
+    "near_best_fraction": 0.25,
+    "near_best_cents": 3.0,
+    "max_mean_cents": 60.0,
+    "reference_hz": 599.3228307506727
+  },
+  "method_script_sha256": "b9f78f543b43bf01ead89608977e81d94bd8d7ddb08b620192df564db5665af7",
+  "descriptor_method_script_sha256": "701039b3217f48c0c8dec7ad4ede0be844a043ce9217a7197eb37c3d273bcb06",
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "The control's held-position note has no period",
+    "Each effect is classified as the single candidate within 8% of its measured period, else unresolved"
+  ],
+  "limits": [
+    "One tempo; whether the periods scale with tempo is not tested"
+  ]
+}

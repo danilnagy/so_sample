@@ -1,0 +1,104 @@
+{
+  "analysis_version": "native-note-key-hardware-validation-0.1",
+  "capture_sha256": "c5add754a44ac012a44114156839349f64024c6a2f69660571dbb5b1d59c67ed",
+  "artifact_sha256": "5e9415925ca25059eee6a53a2731bc8e97ae4538f3fd956e845a57ea87ce9939",
+  "initial_crossing_artifact_sha256": "6de8369472f43ae08d814eb4684d2c655b4cabd670582488494c336e2ee6dfd1",
+  "demodulation": {
+    "method": "amplitude-clock-0.1",
+    "clock_report": "derived/analysis-002/clock-report.json",
+    "initial_crossing_decode": "Failed checksum at wire byte13130; left timing slip, original artifact preserved",
+    "target_data_used_for_recovery": false
+  },
+  "checks": {
+    "registered_body_hash_matches": true,
+    "target_body_matches": true,
+    "target_plain_packets_match": true,
+    "all_packet_checksums_valid": true,
+    "exact_body_reencode": true,
+    "packet_count": true,
+    "frame_end_byte": true,
+    "only_expected_plain_packet_changed": true,
+    "only_expected_auxiliary_byte_changed": true,
+    "sample_packets_unchanged": true,
+    "other_patterns_unchanged": true,
+    "expected_populated_steps": true,
+    "expected_keyboard_keys": true
+  },
+  "passed": true,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "91b37d61e3bc71de72748dfd846892e62a7d839a9332f13a6f9c56687cdeadf0",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "changed_plain_packet_indices": [
+    7
+  ],
+  "pattern1_byte_changes": [
+    {
+      "offset": 962,
+      "old": 240,
+      "new": 241
+    }
+  ],
+  "keyboard_keys_by_step": {
+    "1": 1,
+    "5": 2,
+    "9": 1,
+    "13": 2
+  },
+  "user_report": "the alternating pitches work and capture uploaded",
+  "hardware_verified": true,
+  "capture_timing": "Not explicitly reported; requested before pattern playback",
+  "limits": [
+    "Restore and alternating-pitch behavior are user reported; acoustic pitch intervals were not measured.",
+    "The initial crossing decoder failed; measured-clock recovery uses waveform signs with unique pre-frame alignment and all-quarter checks, not packet repair.",
+    "The full native frame is compared exactly; the measured-clock artifact's unobserved capture edges are not treated as a complete waveform capture.",
+    "This validates the observed Sound3 key1/2 edit locally; other keys and sound slots remain untested."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "analysis_version": "sample-memory-observation-0.2",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of 815104 sample codes, with registered Sound11 pitch and duration",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "new_kit_key_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": -99.99101571812433,
+    "3": -199.97396550807503,
+    "4": -300.0250077325104,
+    "5": -399.99272801470784,
+    "6": -500.02154838845144,
+    "7": -599.700500782858,
+    "8": -699.6649180494978,
+    "9": -800.0746448858724,
+    "10": -899.983704564869,
+    "11": -1000.0226946362932,
+    "12": -1099.9746669744206,
+    "13": -1200.0085791606766,
+    "14": -1299.9652158501094,
+    "15": -1399.9808798648485,
+    "16": -1500.0219841549392
+  },
+  "absolute": {
+    "step1_cents_vs_hit1": -0.42400907591708065,
+    "classification": "stored_rate"
+  },
+  "total_capacity_codes": 815104,
+  "stops_at_window_end": true,
+  "decision_sha256": "d3699d348e4e237affc562ff5d97cf2fb3fafbaba1dd8e3fe34768a74f8661f0",
+  "harness_session": "hardware-session-002.json",
+  "harness_session_sha256": "d7cf895e6c587d030f804c31cce5af5b4a13cd58241d257c377c3b62ae988f37",
+  "session_answers": [],
+  "limits": [
+    "One total, 815104 codes; totals between it and the advertised 937500 are not tested",
+    "Only Sound11 is played; the other buffers are checked by exact reception"
+  ]
+}

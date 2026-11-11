@@ -1,0 +1,118 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "f25cb7c4e4d5f03974ba6c1ee7af999b8e0525c56ec06e1457e200c031e2e38c",
+  "plan_sha256": "f1dc94f370f3b941ba8318fa5525ff964a334b0ed47a644cd53b27bf48fa1ded",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 1,
+        "sound": 3,
+        "keys": [
+          16,
+          1,
+          15,
+          2,
+          14,
+          3,
+          13,
+          4,
+          12,
+          5,
+          11,
+          6,
+          10,
+          7,
+          9,
+          8
+        ]
+      },
+      "before_body_sha256": "cb75d7734eb39ed56f41fc810e8084102ab2b2f247c4b313244672f82e69dbf5",
+      "after_body_sha256": "ed5ab6070eaa99dc0fc0de10d6fb3590c61170830ac1e01c79a2ffb46b551a0b"
+    }
+  ],
+  "target_body_sha256": "ed5ab6070eaa99dc0fc0de10d6fb3590c61170830ac1e01c79a2ffb46b551a0b",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "36dded80d071253b55fb6444c65d4d3e1dc6f6b01eb4c1fb4584bf804768994a",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "f19bcb753b78d50a1e9117cd17518b240e9deeec3a2d268e6c0619bc404a3368",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 313647,
+    "active_frames": 1770481,
+    "silence_frames_each_end": 4410,
+    "frames": 1779301,
+    "duration_seconds": 40.34696145124717,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 313647,
+        "reconstructed_symbols": 313647,
+        "overlap_symbols": 313647,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 313647,
+        "reconstructed_symbols": 313647,
+        "overlap_symbols": 313647,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "experiment_id": "event-013-b-sound3-start-min",
+  "capture_status": "received_and_validated_fixed_start_minimum_with_exact_hypotheses_rejected",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-012-b-sound3-start",
+  "baseline_source_sha256": "24502f734e1d9170a1c5a4ac89d104fafeec3514478f39749919521336f68673",
+  "baseline_body_sha256": "4b697a34bea74f34654107463a9586afe31e9db1b55bf11f4f057f6e7f72ddc2",
+  "baseline_artifact_sha256": "e569b316e6f67a880206ab17bc6c1839f571fa8b93a985e4b3357f73175d35f7",
+  "baseline_artifact": "../event-012-b-sound3-start/derived/analysis-001/capture.symbols.npz",
+  "proposed_change": {
+    "sound_slot": 3,
+    "parameter": "TRIM knob B minimum length",
+    "knob_A": "Untouched at the recorded nonzero start"
+  },
+  "planned_actions": [
+    "Keep Pattern1, playback stopped and write off; select Sound3",
+    "Press FX until TRIM/tri; turn only knob B fully counterclockwise to minimum; leave knob A untouched",
+    "Return FX to TONE, select Sound8 and record a complete stereo backup with all other settings unchanged before audition or pattern playback"
+  ],
+  "actual_actions": [
+    "User replied done to the fixed-start knob B minimum protocol; then independently reports Very short click or burst when auditioning Sound3 key1 with write off; no deviation reported"
+  ],
+  "source_sha256": "8c13edb2051ecaf7253b491449826ead3f9083a64c6f4b287cdcb3225dc0682b",
+  "preregistration": "../sound3-start-min-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Distinguish length and endpoint alternatives at an unchanged nonzero sample start",
+  "nonzero_start_writer_enabled": true,
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "decoder_version": "sign-crossings-0.2",
+  "validation_report": "../sound3-start-min-results-001.json",
+  "audition_observation": "audition-observation.json",
+  "observed_sound3_header_values": {
+    "first_u32le": 31393,
+    "second_u32le": 31504,
+    "owner_id": 0
+  },
+  "any_registered_exact_hypothesis_fits": false,
+  "nonzero_start_writer_scope": {
+    "experimental": true,
+    "sound_slot": 3,
+    "fixed_start_field": 31393,
+    "endpoint_interval": [
+      31504,
+      65535
+    ],
+    "other_starts_supported": false,
+    "generated_edit_hardware_verified": false
+  }
+}

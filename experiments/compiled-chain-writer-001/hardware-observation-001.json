@@ -1,0 +1,50 @@
+{
+  "analysis_version": "chain-writer-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a written three-entry chain and the order its loops play",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "chain_5_1_1",
+  "loop_matches": {
+    "chain_5_1_1": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "first_entry_only": [
+      true,
+      false,
+      false,
+      true,
+      false
+    ],
+    "two_entries_alternate": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "decision_sha256": "a2ebfe5358a1b19081fc58e00ad706a7e4957ccabd7023bfa4f8ad8ec172ec33",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "0a3a7ac842d18198eea878a910130232ae1604824eafddedadce0fd2b5c42493",
+  "session_answers": [
+    {
+      "question": "Did playback go falling, rising, rising, then repeat? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One three-entry chain with a repeated pattern; longer chains are not played"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "experiment_id": "event-023-b-copy-sound4-to-sound5",
+  "capture_status": "validated_reference_copy_with_three_agreeing_fixed_profiles",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-022-b-record-independent-sound4",
+  "baseline_capture": "../event-022-b-record-independent-sound4/capture.wav",
+  "baseline_source_sha256": "06ba6534872d05e434485b031f458b1289d6acaa37dc59ac2482b3a8eb1c25a0",
+  "baseline_artifact": "../event-022-b-record-independent-sound4/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "f30c99ed814fea1223983d0c5279e74d272d42c2464ea958b69276f62b604312",
+  "baseline_body_sha256": "523f2dd9b29f1ffbfa94e453138aa72cc8a0ee8c75a6373c1d35b47b346fc803",
+  "preregistration": "../sound4-to5-copy-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "Keep Pattern1, stopped/write off and both knobs unchanged; select Sound4/TONE with sound+4",
+    "Hold write+sound, press5, then release to copy Sound4 into verified empty Sound5",
+    "Select Sound8/TONE stopped/write off; before audition/playback save a full stereo PCM16/44100Hz backup here at the same reduced levels, including a second of trailing silence",
+    "Leave both sounds present and report deviations; no new sample recording or pattern change is needed"
+  ],
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "9cf4096737c90537a7dacbb0d4f4436c8730958468a7313eee97e73d5ed0c387",
+  "purpose": "Establish sharing of the second independent buffer before observing what re-recording its original owner does to a retained copy",
+  "results": "../sound4-to5-copy-results-001.json",
+  "analysis": "derived/analysis-003",
+  "uploaded_file": "po_33_61.wav",
+  "canonical_capture": "capture.wav",
+  "decoder_threshold_used": 0.004,
+  "verification_status": "capture-verification-status-001.json"
+}

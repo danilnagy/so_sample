@@ -1,0 +1,43 @@
+{
+  "analysis_version": "volume-law-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and a measured per-step gain table at pitch 13; neither registered law holds",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "other_or_inconclusive",
+  "measured_db_by_code_relative_to_36": {
+    "0": 0.0,
+    "3": -15.41,
+    "6": -14.59,
+    "9": -13.3,
+    "12": -11.82,
+    "18": -8.56,
+    "21": -6.97,
+    "27": -3.95,
+    "30": -2.56,
+    "36": 0.0,
+    "39": 1.18,
+    "45": 3.35,
+    "48": 4.35,
+    "54": 6.22,
+    "60": 7.21,
+    "63": 7.48
+  },
+  "code0_observation": "Volume code 0 played at the preceding step's level (volume 36) within 0.002 dB in every loop, not silence",
+  "decision_sha256": "15f426f245451a6b237bb4e639d58312aed4659c154c7f5c49f2a6907d35c566",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "0569d9fac238d7765a5420ca7c6abbfac1d345ae2e8e60256a45cb0ac8927e6e",
+  "session_answers": [
+    {
+      "question": "Did the notes jump between loud and quiet, and did any distort? (Enter to skip)",
+      "answer": "jumped around but not distort"
+    }
+  ]
+}

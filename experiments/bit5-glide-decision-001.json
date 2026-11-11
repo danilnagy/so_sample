@@ -1,0 +1,183 @@
+{
+  "analysis_version": "bit5-glide-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "0e14ceb71dc721d3db4cdeb3ca38a620b673bd7b92b47c8b2aeee249009c07e1",
+  "native_results_sha256": "8e89ec0ea94bcad1a7645e9ea239444515fdfc4196fce70f6baa7449a294113e",
+  "measurements_sha256": "d43a4068824da1fb0b5f5668b44dfc9b36501283782d0e964e290e40f1c2366e",
+  "steps": {
+    "1": {
+      "pitch": 7,
+      "bit5": 0,
+      "early_cents_from_target": 69.7488560476057,
+      "late_cents_from_target": 0.1882731829140363,
+      "level_db": 32.49318440785967,
+      "duration_ms": null
+    },
+    "2": {
+      "pitch": 25,
+      "bit5": 0,
+      "early_cents_from_target": -25.537124340089175,
+      "late_cents_from_target": -1.181611323300919,
+      "level_db": 26.578743689620403,
+      "duration_ms": 180.36281179138322
+    },
+    "3": {
+      "pitch": 7,
+      "bit5": 0,
+      "early_cents_from_target": 70.34261644813624,
+      "late_cents_from_target": 0.18287079972806367,
+      "level_db": 32.49333986302861,
+      "duration_ms": null
+    },
+    "4": {
+      "pitch": 25,
+      "bit5": 0,
+      "early_cents_from_target": -25.793777953239818,
+      "late_cents_from_target": -1.1512051349556915,
+      "level_db": 26.591836392742024,
+      "duration_ms": 180.4308390022676
+    },
+    "5": {
+      "pitch": 7,
+      "bit5": 0,
+      "early_cents_from_target": 66.51207741265016,
+      "late_cents_from_target": 0.12025120161714152,
+      "level_db": 32.4933901399338,
+      "duration_ms": null
+    },
+    "6": {
+      "pitch": 25,
+      "bit5": 0,
+      "early_cents_from_target": -25.308111698749894,
+      "late_cents_from_target": -1.1724078828155602,
+      "level_db": 26.565041107759342,
+      "duration_ms": 180.31746031746033
+    },
+    "7": {
+      "pitch": 7,
+      "bit5": 0,
+      "early_cents_from_target": 65.1589788338314,
+      "late_cents_from_target": 0.15944408047353578,
+      "level_db": 32.49273619619124,
+      "duration_ms": null
+    },
+    "8": {
+      "pitch": 25,
+      "bit5": 0,
+      "early_cents_from_target": -27.351013984931875,
+      "late_cents_from_target": -1.1856712340368412,
+      "level_db": 26.67161457848936,
+      "duration_ms": 180.7482993197279
+    },
+    "9": {
+      "pitch": 7,
+      "bit5": 1,
+      "early_cents_from_target": 70.8808849130568,
+      "late_cents_from_target": 0.1800050795615969,
+      "level_db": 32.49263526112565,
+      "duration_ms": null
+    },
+    "10": {
+      "pitch": 25,
+      "bit5": 1,
+      "early_cents_from_target": -26.817951063401782,
+      "late_cents_from_target": -1.1605398418161645,
+      "level_db": 26.640246509875716,
+      "duration_ms": 180.63492063492066
+    },
+    "11": {
+      "pitch": 7,
+      "bit5": 1,
+      "early_cents_from_target": 69.20300398380962,
+      "late_cents_from_target": 0.13704850449205777,
+      "level_db": 32.49296614332287,
+      "duration_ms": null
+    },
+    "12": {
+      "pitch": 25,
+      "bit5": 1,
+      "early_cents_from_target": -25.47061965232206,
+      "late_cents_from_target": -1.1692035589735172,
+      "level_db": 26.570030331681448,
+      "duration_ms": 180.34013605442175
+    },
+    "13": {
+      "pitch": 7,
+      "bit5": 1,
+      "early_cents_from_target": 70.32653912167078,
+      "late_cents_from_target": 0.15740793512965068,
+      "level_db": 32.49342489940199,
+      "duration_ms": null
+    },
+    "14": {
+      "pitch": 25,
+      "bit5": 1,
+      "early_cents_from_target": -25.911813112654215,
+      "late_cents_from_target": -1.156087101966385,
+      "level_db": 26.596285756464795,
+      "duration_ms": 180.4308390022676
+    },
+    "15": {
+      "pitch": 7,
+      "bit5": 1,
+      "early_cents_from_target": 67.33579647239011,
+      "late_cents_from_target": 0.15067676137456393,
+      "level_db": 32.492702307923324,
+      "duration_ms": null
+    },
+    "16": {
+      "pitch": 25,
+      "bit5": 1,
+      "early_cents_from_target": -24.70041934685653,
+      "late_cents_from_target": -1.1342324053779391,
+      "level_db": 26.53272510704797,
+      "duration_ms": 180.20408163265304
+    }
+  },
+  "summary": {
+    "7": {
+      "early_cents_from_target": {
+        "plain": 68.13046673012792,
+        "flagged": 69.7647715527402
+      },
+      "late_cents_from_target": {
+        "plain": 0.17115744010079972,
+        "flagged": 0.1540423482521073
+      },
+      "level_db": {
+        "plain": 32.49326213544414,
+        "flagged": 32.4928342256231
+      },
+      "duration_ms": {
+        "plain": null,
+        "flagged": null
+      }
+    },
+    "25": {
+      "early_cents_from_target": {
+        "plain": -25.665451146664495,
+        "flagged": -25.691216382488136
+      },
+      "late_cents_from_target": {
+        "plain": -1.1770096030582395,
+        "flagged": -1.1583134718912746
+      },
+      "level_db": {
+        "plain": 26.585290041181214,
+        "flagged": 26.583158044073123
+      },
+      "duration_ms": {
+        "plain": 180.39682539682542,
+        "flagged": 180.38548752834467
+      }
+    }
+  },
+  "model_support": {
+    "bit5_inert": true,
+    "bit5_no_glide": false
+  },
+  "classification": "bit5_inert",
+  "limits": [
+    "One melodic sound at key 1 and two pitch codes; bit 5 on drum notes is not tested"
+  ]
+}

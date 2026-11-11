@@ -1,0 +1,31 @@
+{
+  "analysis_version": "first-physical-tempo-association-to-third-preset-return-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "first_physical_tempo_association_all_checks": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "source_observation_hash_pinned": true,
+    "source_body_hash_pinned": true,
+    "independent_original120_artifact_hash_pinned": true,
+    "predicted80_hash_pinned": true,
+    "return120_equals_complete_independent_original_body": true,
+    "all_synthetic_model_checks": true,
+    "display_values_are_not_inferred": true,
+    "both_captures_preregistered_and_still_pending": true,
+    "prediction_report_passes_and_remains_software_only": true,
+    "no_tempo_writer_or_generated_restore_verification": true
+  },
+  "passed": true,
+  "validation": {
+    "affected_pytest": "21 passed in 0.83s",
+    "ruff": "all checks passed; 188 Python files formatted",
+    "prior_full_suite": "669 passed in 83.34s before this turn's research-only additions"
+  },
+  "next_required_user_action": "Tap BPM once for expected80, capture; tap again for expected120, capture; report actual display transitions and leave120 in place",
+  "limits": [
+    "Fixed byte129 and direct integer BPM are preregistered; no offset or encoding fitting is allowed",
+    "Expected preset values are predictions; actual display readings must be reported independently",
+    "Returning120 must recover the complete independent original body, not only the candidate byte",
+    "No tempo writer, arbitrary BPM range or hardware acceptance of generated tempo edits is established"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "analysis_version": "pattern-chain-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Device storage and playback of a two-pattern chain",
+  "protocol_deviation": "The person chained Pattern1 then Pattern2 instead of the registered Pattern1 then Pattern5; Pattern2 is empty",
+  "actual_chain": [
+    1,
+    2
+  ],
+  "registered_hypotheses": {
+    "chain_in_global_record_only": true,
+    "chain_1_5": "not applicable: a different chain was made; its Pattern1 loops match",
+    "chain_5_1": false
+  },
+  "checks": {
+    "only_globals_changed": true,
+    "entries_and_length": true,
+    "pattern1_on_loops_1_3_5": true,
+    "empty_pattern2_silent_on_loops_2_4": true,
+    "export_checks_pass": true
+  },
+  "reading": "Second global record bytes 0.. hold the chain entries counted from zero and byte 128 holds the chain length; the selected pattern is a chain of one. Entries past the length can hold stale values in other backups.",
+  "result_sha256": "97b5fa8d7a243a3282113d02cc1b129fb56d642f94b2817fa5e767c747663c52",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "42e8e528d704e54350a1ea2b4e7449ce97c37565b637f0dc9fa231792f1beb89"
+}

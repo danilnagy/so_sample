@@ -1,0 +1,35 @@
+{
+  "analysis_version": "web-template-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "web-template-001",
+  "template_artifact": "experiments/empty-001-a/derived/analysis-001/capture.symbols.npz",
+  "template_capture_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "packets_json_sha256": "a5ebd28e2ef5328fbc9a6afc861fea58b21b2b8fe3fa3f4ea0afc141a75a21b4",
+  "project_json_sha256": "dd479a6f86effaf40d8ff8489354558267b775d34cebd10fb0ae2227e239fe2d",
+  "expected_body_sha256": "af55da25d85dcf0cd48833fbfef67f63594b00fd57e2655d09b6534411b52021",
+  "edited_artifact_sha256": "10fb3d87c6a9868b8e76a8520debfaf255989f3e82714c60a51060156b0d6623",
+  "restore_wav_sha256": "56500f13f16796fa555e7bfd235f94ab23665e1fa89b617192d3aeffeab4404c",
+  "typescript_and_python_restores_identical": true,
+  "tempo": 100,
+  "swing": 4,
+  "chain": [
+    1,
+    2
+  ],
+  "sound_data_packets": 133,
+  "predictions": [
+    "The backup equals the compiled target exactly (every packet and the whole body)",
+    "Sound 2 plays the Sound 1 tone truncated at 5000 codes; Sound 3 plays it from code 3000 to 9000",
+    "Sound 9 key 4, which has no record, is silent; key 5 plays Sound 1's buffer window 0..4000",
+    "Sound 10's sixteen windows into one buffer each play, including the overlapping key 2"
+  ],
+  "decision": [
+    "Exact reception is decided by the native check of the backup against the target",
+    "The audible predictions are decided by the user's answers to the observation questions"
+  ],
+  "limits": [
+    "One session on one device; audible predictions rest on listening, not on a frozen measurement",
+    "An empty key as an absent record is tested here for the first time"
+  ]
+}

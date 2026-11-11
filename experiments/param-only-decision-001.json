@@ -1,0 +1,65 @@
+{
+  "analysis_version": "param-only-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "edc7d3694752c890c66a85185080a10c6cc5562c69dbf79f149de5dc39c9a81e",
+  "native_results_sha256": "16d87520591a57e8bf4885755ec0b3ba0ba1684fec01216799fefca3208e68f4",
+  "measurements_sha256": "585a5024d6ce04a652de4d331825cd4e70a26c217509a4fe0304744b38102883",
+  "comparisons": [
+    {
+      "model": "param_only_sets_value",
+      "step": 3,
+      "value": 24,
+      "median_diff_db": 0.2349172802550541
+    },
+    {
+      "model": "param_only_sets_value",
+      "step": 5,
+      "value": 50,
+      "median_diff_db": 0.06310707118089587
+    },
+    {
+      "model": "param_only_sets_value",
+      "step": 9,
+      "value": 20,
+      "median_diff_db": 0.24455169618706663
+    },
+    {
+      "model": "param_only_sets_value",
+      "step": 13,
+      "value": 24,
+      "median_diff_db": 0.20121446421292966
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 3,
+      "value": 63,
+      "median_diff_db": 21.73000270934545
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 5,
+      "value": 63,
+      "median_diff_db": 9.198319985969851
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 9,
+      "value": 63,
+      "median_diff_db": 28.063326069540057
+    },
+    {
+      "model": "param_only_ignored",
+      "step": 13,
+      "value": 56,
+      "median_diff_db": 10.506566376123661
+    }
+  ],
+  "model_support": {
+    "param_only_sets_value": true,
+    "param_only_ignored": false
+  },
+  "classification": "param_only_sets_value",
+  "limits": [
+    "Filter locks only, on one drum sound; parameter-only cells for other parameters are not played"
+  ]
+}

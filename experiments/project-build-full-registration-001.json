@@ -1,0 +1,1935 @@
+{
+  "analysis_version": "project-build-full-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "project-build-full-001/compiled",
+  "source_artifact": "experiments/compiled-fx-onsets-120-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "2aaadb5bb18736fb7e484a10710cf7a803943f240aebb7badf8b97b618f95485",
+  "source_capture_sha256": "001bece3c5eee0719a6bfd55c912bb29f098e9528f6500ef4579bc58aeb98f90",
+  "spec": {
+    "tempo": 128,
+    "swing": 6,
+    "chain": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "melodic": {
+      "1": "experiments\\project-build-full-source-001\\melodic1.wav",
+      "2": "experiments\\project-build-full-source-001\\melodic2.wav",
+      "3": "experiments\\project-build-full-source-001\\melodic3.wav",
+      "4": "experiments\\project-build-full-source-001\\melodic4.wav",
+      "5": "experiments\\project-build-full-source-001\\melodic5.wav",
+      "6": "experiments\\project-build-full-source-001\\melodic6.wav",
+      "7": "experiments\\project-build-full-source-001\\melodic7.wav",
+      "8": "experiments\\project-build-full-source-001\\melodic8.wav"
+    },
+    "drums": {
+      "9": [
+        "experiments\\project-build-full-source-001\\kit9-key01.wav",
+        "experiments\\project-build-full-source-001\\kit9-key02.wav",
+        "experiments\\project-build-full-source-001\\kit9-key03.wav",
+        "experiments\\project-build-full-source-001\\kit9-key04.wav",
+        "experiments\\project-build-full-source-001\\kit9-key05.wav",
+        "experiments\\project-build-full-source-001\\kit9-key06.wav",
+        "experiments\\project-build-full-source-001\\kit9-key07.wav",
+        "experiments\\project-build-full-source-001\\kit9-key08.wav",
+        "experiments\\project-build-full-source-001\\kit9-key09.wav",
+        "experiments\\project-build-full-source-001\\kit9-key10.wav",
+        "experiments\\project-build-full-source-001\\kit9-key11.wav",
+        "experiments\\project-build-full-source-001\\kit9-key12.wav",
+        "experiments\\project-build-full-source-001\\kit9-key13.wav",
+        "experiments\\project-build-full-source-001\\kit9-key14.wav",
+        "experiments\\project-build-full-source-001\\kit9-key15.wav",
+        "experiments\\project-build-full-source-001\\kit9-key16.wav"
+      ],
+      "10": [
+        "experiments\\project-build-full-source-001\\kit10-key01.wav",
+        "experiments\\project-build-full-source-001\\kit10-key02.wav",
+        "experiments\\project-build-full-source-001\\kit10-key03.wav",
+        "experiments\\project-build-full-source-001\\kit10-key04.wav",
+        "experiments\\project-build-full-source-001\\kit10-key05.wav",
+        "experiments\\project-build-full-source-001\\kit10-key06.wav",
+        "experiments\\project-build-full-source-001\\kit10-key07.wav",
+        "experiments\\project-build-full-source-001\\kit10-key08.wav",
+        "experiments\\project-build-full-source-001\\kit10-key09.wav",
+        "experiments\\project-build-full-source-001\\kit10-key10.wav",
+        "experiments\\project-build-full-source-001\\kit10-key11.wav",
+        "experiments\\project-build-full-source-001\\kit10-key12.wav",
+        "experiments\\project-build-full-source-001\\kit10-key13.wav",
+        "experiments\\project-build-full-source-001\\kit10-key14.wav",
+        "experiments\\project-build-full-source-001\\kit10-key15.wav",
+        "experiments\\project-build-full-source-001\\kit10-key16.wav"
+      ],
+      "11": [
+        "experiments\\project-build-full-source-001\\kit11-key01.wav",
+        "experiments\\project-build-full-source-001\\kit11-key02.wav",
+        "experiments\\project-build-full-source-001\\kit11-key03.wav",
+        "experiments\\project-build-full-source-001\\kit11-key04.wav",
+        "experiments\\project-build-full-source-001\\kit11-key05.wav",
+        "experiments\\project-build-full-source-001\\kit11-key06.wav",
+        "experiments\\project-build-full-source-001\\kit11-key07.wav",
+        "experiments\\project-build-full-source-001\\kit11-key08.wav",
+        "experiments\\project-build-full-source-001\\kit11-key09.wav",
+        "experiments\\project-build-full-source-001\\kit11-key10.wav",
+        "experiments\\project-build-full-source-001\\kit11-key11.wav",
+        "experiments\\project-build-full-source-001\\kit11-key12.wav",
+        "experiments\\project-build-full-source-001\\kit11-key13.wav",
+        "experiments\\project-build-full-source-001\\kit11-key14.wav",
+        "experiments\\project-build-full-source-001\\kit11-key15.wav",
+        "experiments\\project-build-full-source-001\\kit11-key16.wav"
+      ],
+      "12": [
+        "experiments\\project-build-full-source-001\\kit12-key01.wav",
+        "experiments\\project-build-full-source-001\\kit12-key02.wav",
+        "experiments\\project-build-full-source-001\\kit12-key03.wav",
+        "experiments\\project-build-full-source-001\\kit12-key04.wav",
+        "experiments\\project-build-full-source-001\\kit12-key05.wav",
+        "experiments\\project-build-full-source-001\\kit12-key06.wav",
+        "experiments\\project-build-full-source-001\\kit12-key07.wav",
+        "experiments\\project-build-full-source-001\\kit12-key08.wav",
+        "experiments\\project-build-full-source-001\\kit12-key09.wav",
+        "experiments\\project-build-full-source-001\\kit12-key10.wav",
+        "experiments\\project-build-full-source-001\\kit12-key11.wav",
+        "experiments\\project-build-full-source-001\\kit12-key12.wav",
+        "experiments\\project-build-full-source-001\\kit12-key13.wav",
+        "experiments\\project-build-full-source-001\\kit12-key14.wav",
+        "experiments\\project-build-full-source-001\\kit12-key15.wav",
+        "experiments\\project-build-full-source-001\\kit12-key16.wav"
+      ],
+      "13": [
+        "experiments\\project-build-full-source-001\\kit13-key01.wav",
+        "experiments\\project-build-full-source-001\\kit13-key02.wav",
+        "experiments\\project-build-full-source-001\\kit13-key03.wav",
+        "experiments\\project-build-full-source-001\\kit13-key04.wav",
+        "experiments\\project-build-full-source-001\\kit13-key05.wav",
+        "experiments\\project-build-full-source-001\\kit13-key06.wav",
+        "experiments\\project-build-full-source-001\\kit13-key07.wav",
+        "experiments\\project-build-full-source-001\\kit13-key08.wav",
+        "experiments\\project-build-full-source-001\\kit13-key09.wav",
+        "experiments\\project-build-full-source-001\\kit13-key10.wav",
+        "experiments\\project-build-full-source-001\\kit13-key11.wav",
+        "experiments\\project-build-full-source-001\\kit13-key12.wav",
+        "experiments\\project-build-full-source-001\\kit13-key13.wav",
+        "experiments\\project-build-full-source-001\\kit13-key14.wav",
+        "experiments\\project-build-full-source-001\\kit13-key15.wav",
+        "experiments\\project-build-full-source-001\\kit13-key16.wav"
+      ],
+      "14": [
+        "experiments\\project-build-full-source-001\\kit14-key01.wav",
+        "experiments\\project-build-full-source-001\\kit14-key02.wav",
+        "experiments\\project-build-full-source-001\\kit14-key03.wav",
+        "experiments\\project-build-full-source-001\\kit14-key04.wav",
+        "experiments\\project-build-full-source-001\\kit14-key05.wav",
+        "experiments\\project-build-full-source-001\\kit14-key06.wav",
+        "experiments\\project-build-full-source-001\\kit14-key07.wav",
+        "experiments\\project-build-full-source-001\\kit14-key08.wav",
+        "experiments\\project-build-full-source-001\\kit14-key09.wav",
+        "experiments\\project-build-full-source-001\\kit14-key10.wav",
+        "experiments\\project-build-full-source-001\\kit14-key11.wav",
+        "experiments\\project-build-full-source-001\\kit14-key12.wav",
+        "experiments\\project-build-full-source-001\\kit14-key13.wav",
+        "experiments\\project-build-full-source-001\\kit14-key14.wav",
+        "experiments\\project-build-full-source-001\\kit14-key15.wav",
+        "experiments\\project-build-full-source-001\\kit14-key16.wav"
+      ],
+      "15": [
+        "experiments\\project-build-full-source-001\\kit15-key01.wav",
+        "experiments\\project-build-full-source-001\\kit15-key02.wav",
+        "experiments\\project-build-full-source-001\\kit15-key03.wav",
+        "experiments\\project-build-full-source-001\\kit15-key04.wav",
+        "experiments\\project-build-full-source-001\\kit15-key05.wav",
+        "experiments\\project-build-full-source-001\\kit15-key06.wav",
+        "experiments\\project-build-full-source-001\\kit15-key07.wav",
+        "experiments\\project-build-full-source-001\\kit15-key08.wav",
+        "experiments\\project-build-full-source-001\\kit15-key09.wav",
+        "experiments\\project-build-full-source-001\\kit15-key10.wav",
+        "experiments\\project-build-full-source-001\\kit15-key11.wav",
+        "experiments\\project-build-full-source-001\\kit15-key12.wav",
+        "experiments\\project-build-full-source-001\\kit15-key13.wav",
+        "experiments\\project-build-full-source-001\\kit15-key14.wav",
+        "experiments\\project-build-full-source-001\\kit15-key15.wav",
+        "experiments\\project-build-full-source-001\\kit15-key16.wav"
+      ],
+      "16": [
+        "experiments\\project-build-full-source-001\\kit16-key01.wav",
+        "experiments\\project-build-full-source-001\\kit16-key02.wav",
+        "experiments\\project-build-full-source-001\\kit16-key03.wav",
+        "experiments\\project-build-full-source-001\\kit16-key04.wav",
+        "experiments\\project-build-full-source-001\\kit16-key05.wav",
+        "experiments\\project-build-full-source-001\\kit16-key06.wav",
+        "experiments\\project-build-full-source-001\\kit16-key07.wav",
+        "experiments\\project-build-full-source-001\\kit16-key08.wav",
+        "experiments\\project-build-full-source-001\\kit16-key09.wav",
+        "experiments\\project-build-full-source-001\\kit16-key10.wav",
+        "experiments\\project-build-full-source-001\\kit16-key11.wav",
+        "experiments\\project-build-full-source-001\\kit16-key12.wav",
+        "experiments\\project-build-full-source-001\\kit16-key13.wav",
+        "experiments\\project-build-full-source-001\\kit16-key14.wav",
+        "experiments\\project-build-full-source-001\\kit16-key15.wav",
+        "experiments\\project-build-full-source-001\\kit16-key16.wav"
+      ]
+    },
+    "patterns": {
+      "1": {
+        "notes": {
+          "1": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ],
+          "14": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ]
+        },
+        "parameters": {
+          "1": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "2": {
+        "notes": {
+          "2": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "2": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2
+        ]
+      },
+      "3": {
+        "notes": {
+          "3": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "3": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3
+        ]
+      },
+      "4": {
+        "notes": {
+          "4": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "4": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          4
+        ]
+      },
+      "5": {
+        "notes": {
+          "5": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "5": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          5
+        ]
+      },
+      "6": {
+        "notes": {
+          "6": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "6": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          6
+        ]
+      },
+      "7": {
+        "notes": {
+          "7": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "7": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          7
+        ]
+      },
+      "8": {
+        "notes": {
+          "8": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "8": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          8
+        ]
+      },
+      "9": {
+        "notes": {
+          "1": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "1": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          9
+        ]
+      },
+      "10": {
+        "notes": {
+          "2": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "2": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          10
+        ]
+      },
+      "11": {
+        "notes": {
+          "3": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "3": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          11
+        ]
+      },
+      "12": {
+        "notes": {
+          "4": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "4": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          12
+        ]
+      },
+      "13": {
+        "notes": {
+          "5": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "5": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          13
+        ]
+      },
+      "14": {
+        "notes": {
+          "6": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "6": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          14
+        ]
+      },
+      "15": {
+        "notes": {
+          "7": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "7": {
+            "filter": 63,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          15
+        ]
+      },
+      "16": {
+        "notes": {
+          "8": [
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null,
+            1,
+            null,
+            3,
+            null,
+            5,
+            null,
+            8,
+            null
+          ],
+          "13": [
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null
+          ],
+          "11": [
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1,
+            null,
+            1
+          ]
+        },
+        "parameters": {
+          "8": {
+            "filter": 30,
+            "resonance": 1
+          }
+        },
+        "locks": {
+          "11": {
+            "volume": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              24
+            ]
+          }
+        },
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1
+        ]
+      }
+    }
+  },
+  "spec_sha256": "11d49ea54ae1a9f71688001d11631270d0ebcf5f97bff2fadbb5611b0d04e590",
+  "build_report_sha256": "3ad318934590ae7538f58ae625698f90f6572fc3b838b0007e87d66b6e0612ef",
+  "total_sample_codes": 196608,
+  "expected_body_sha256": "e641b02bd2f9f2e0fac7a52ba73b86b4d7cb5403e5e2af7d595defe2caa9638d",
+  "edited_artifact_sha256": "230dea77d7149928de0dc6cc2e88664705eadda6b21ca21b2a94e45ac4d67613",
+  "restore_wav_sha256": "845b08249bcd8000fcdbf013a7306db9f1ed182949e270f22a6d87fca9f2809e",
+  "onset_settings": {
+    "kick": {
+      "band_hz": [
+        1755.0,
+        2145.0
+      ],
+      "envelope_window_seconds": 0.003,
+      "skip_seconds": 0.02,
+      "threshold_fraction": 0.15,
+      "refractory_seconds": 0.04,
+      "steps_per_loop": 4,
+      "loops": 10
+    },
+    "snare": {
+      "band_hz": [
+        1890.0,
+        2310.0
+      ],
+      "envelope_window_seconds": 0.003,
+      "skip_seconds": 0.02,
+      "threshold_fraction": 0.15,
+      "refractory_seconds": 0.04,
+      "steps_per_loop": 2,
+      "loops": 10
+    }
+  },
+  "onset_method_script_sha256": "ecab19649dd5681266b10c74714011d89dd578dbd0918ff0d33ee9b2a13890f5",
+  "level_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.1171875,
+    "window_ms": [
+      60.0,
+      110.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "level_method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "expected": {
+    "kick_interval_s": 0.46875,
+    "chain_cycle_s": 15.0
+  },
+  "melody_key1_hz": 329.6275569128699,
+  "tolerances": {
+    "kick_s": 0.005,
+    "cycle_s": 0.02,
+    "melody_db": 20.0
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "tempo_128: median Sound13 onset interval within 5 ms of 0.469 s",
+    "chain_8: median interval between Sound14 bursts (pairs 8 steps apart, 1.5 s) within 20 ms of the 15.0 s chain cycle",
+    "melody_first_note: the melody's key-1 level in step 1 exceeds step 2 by at least 20 dB"
+  ],
+  "limits": [
+    "One large project; the spec exercises every slot and pattern once"
+  ]
+}

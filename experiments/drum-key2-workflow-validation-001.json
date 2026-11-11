@@ -1,0 +1,43 @@
+{
+  "analysis_version": "nonzero-start-drum-key2-workflow-audit-0.1",
+  "checks": {
+    "physical_control_locality": true,
+    "registered_exact_endpoint_passes": true,
+    "alternative_length_failure_retained": true,
+    "separate_click_observation_matches_source": true,
+    "candidate_and_compiler_checks": true,
+    "restore_wav_matches_registered_hash": true,
+    "source_capture_preserved": true,
+    "source_artifact_preserved": true,
+    "all_exported_content_hashes": true,
+    "all_native_packets_export_exactly": true,
+    "both_keyboard_mappings_observed": true,
+    "project_preview_still_key1_only": true,
+    "candidate_report_still_hardware_false": true
+  },
+  "passed": true,
+  "control_report_sha256": "c86d9e2c7d2f9d63a4aca68010c378f17997c727debe516394baf31637798f82",
+  "audition_observation_sha256": "5d00c547ed54b5637a50839dfe698428a71732f45e1f9bfc9fe061df8fd03b8a",
+  "source_capture_sha256": "78f321ce42b7cfca70013487b70c62db4bd3dac57c27f7cb9f9a4c2de35692b6",
+  "source_artifact_sha256": "707528090cb1e487232b9b9af2a7d3ea8925632fd17edae0c69507f26f3970f3",
+  "source_native_body_sha256": "09c5f71aad53947f1399cd3080a67a9c6f1ffb8a8fcc5df3dbd6102ac770450f",
+  "candidate_restore_wav_sha256": "28d4cdd4363c081ac94bf5b1447ccb70b9d0672cb5519139bddee60ca979f2ab",
+  "candidate_native_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "restore_registration_sha256": "45c8254f79e4b917554e4f364159f1481feee9b60290da3822e9a057e293c8a5",
+  "exported_content_file_count": 27,
+  "suite": {
+    "passed": 405,
+    "failed": 0,
+    "elapsed_seconds": 104.71,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-drum-key2-001"
+  },
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 123,
+  "generated_key2_edit_hardware_verified": false,
+  "limits": [
+    "Exact field prediction and click observation support the local key2 endpoint interpretation; generated endpoint6045 still requires its own device test",
+    "Only the two measured fixed starts and their separate bounds are supported; no general minimum/inclusivity or other drum mapping is claimed",
+    "Two-slice plan composition has software coverage, not blanket hardware acceptance of every combination"
+  ]
+}

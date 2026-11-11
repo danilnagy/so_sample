@@ -1,0 +1,173 @@
+{
+  "analysis_version": "FX-full-step-map-confirm-exploratory-0.1",
+  "exploratory": true,
+  "reason": "Registered decision did not run: the backup differed from the target in byte 131",
+  "playback_sha256": "a40d149f5b4e7af38a6d622ee51650132953cd9796fce5d2bfc4dbb6abd93cfc",
+  "steps": {
+    "1": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "2": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "3": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "4": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "5": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "6": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "7": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "8": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "9": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "10": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "11": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "12": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "13": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "14": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "15": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "16": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    }
+  },
+  "model_support": {
+    "sequential_high_nibble_first": true,
+    "sequential_low_nibble_first": false
+  },
+  "classification": "sequential_high_nibble_first"
+}

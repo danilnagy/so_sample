@@ -1,0 +1,59 @@
+{
+  "analysis_version": "second-nonzero-start-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-nonzero-trim-001",
+  "baseline_source_sha256": "7935f7cfe3ab7a8b8d45dbe942f3144dad2c7eebb09c8aa52fb06f96a1d632d8",
+  "baseline_body_sha256": "b3296f2ed7b3a74cedc79b8d89900e5128c7da1da0e2fed9839d1858412eddfe",
+  "baseline_artifact_sha256": "903488a982528ae6b2eb05e2ff48c50ad39d810f611c8e65a8c94481033ec558",
+  "baseline_artifact": "../edited-nonzero-trim-001/derived/analysis-001/capture.symbols.npz",
+  "target_capture": "event-014-b-sound3-start-quarter/capture.wav",
+  "expected_change": {
+    "sound_slot": 3,
+    "parameter": "TRIM knob A approximately quarter travel",
+    "knob_B": "Untouched in its existing physical position"
+  },
+  "control_checks": {
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "sound3_reference_packet_index": 375,
+    "sound3_reference_before_hex": "a17a0000e199000000",
+    "sound3_record_size": 9,
+    "sound3_owner_id": 0,
+    "only_allowed_payload_offsets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "patterns": "All16 identical",
+    "backing_samples": "All65536 codes and other sound records identical",
+    "other_plain_packets": "Only the existing Sound3 reference may change",
+    "coupling_policy": "Second field may change with knob A as in the first start control; its change is reported, not masked"
+  },
+  "separately_evaluated_hypotheses": {
+    "first_field_moves_lower": {
+      "expected_range_exclusive": [
+        0,
+        31393
+      ],
+      "interpretation": "Independent second start value from approximately quarter rather than half travel"
+    },
+    "second_field_unchanged": {
+      "expected_value": 39393
+    },
+    "second_field_resets_maximum": {
+      "expected_value": 65535
+    }
+  },
+  "limits": [
+    "No exact start value is inferred from approximate knob angle",
+    "Neither second-field hypothesis is a preservation requirement; other values remain unclassified",
+    "Physical knob B position differs from the generated endpoint field and may influence coupling; it is left untouched",
+    "The writer remains fixed to start31393 until independent evidence justifies a broader scope",
+    "No general minimum or endpoint-inclusivity rule is inferred"
+  ]
+}

@@ -1,0 +1,43 @@
+.venv/
+.tools/
+reference/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files-*/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+experiments/**/*.wav
+experiments/**/*.bin
+experiments/**/*.npz
+experiments/**/derived/
+.po33-hardware.json
+experiments/**/attempts/
+experiments/exported-*/
+web/node_modules/
+web/dist/
+
+# Playwright output (the baselines in web/e2e/__screenshots__ are tracked)
+web/test-results/
+web/playwright-report/
+test-results/
+
+# Third-party audio and the kits built from it, kept for local use only (not redistributable):
+# the TR pack, and the presets built from it (npm run presets -- --pack "<TR pack folder>").
+sample_packs/
+web/presets-tr/
+# Golden fixtures whose device state may include factory sample audio: local only, their tests skip without them.
+web/src/core/__fixtures__/local/
+.DS_Store
+
+# Scratch output of the pack scripts; the shipped presets live in web/src/presets (tracked)
+project_packs/
+
+# Local environment and logs
+.env
+.env.*
+*.log
+web/blob-report/
+web/playwright/.cache/

@@ -1,0 +1,101 @@
+{
+  "analysis_version": "volume-zero-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-volume-zero-001",
+  "plan": "experiments/volume-zero-plan-001/plan.json",
+  "plan_sha256": "f5b0dc24a301ec3b8ed0370ac54883432145d7eed7c5d24e7cceea58756887ee",
+  "compile_report_sha256": "37f333a853349141f6104b695a8404eb5a47cffcab4e6362dd64e20fbaefe466",
+  "source_artifact": "experiments/compiled-volume-law-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "2bc821fd3d0bac0c7b25379ed4363a110360aba758f38ef637dace5fdf4f1b81",
+  "source_capture_sha256": "5708fc15f73720459e579a2113615e22a731634d02ac72ceb6c5bf0678250503",
+  "expected_body_sha256": "6e5415e18295dd94e6a0ced3e0bd4f62931514a386b3cd330b0e5b10f774cfad",
+  "edited_artifact_sha256": "a238e21a3acb3df5b61b59252870f7ef115f970436e5b0b5677b14e742313637",
+  "restore_wav_sha256": "19b2817eb7350348cd1a0e891960ef5c112d2668e45ecd9093eb4719560b0427",
+  "volume_codes": [
+    63,
+    0,
+    9,
+    0,
+    36,
+    0,
+    21,
+    0,
+    54,
+    0,
+    3,
+    0,
+    45,
+    0,
+    27,
+    0
+  ],
+  "first_run_table_db_vs_36": {
+    "36": 0.0,
+    "0": 0.001758072876679184,
+    "63": 7.484828928326773,
+    "9": -13.29989858903518,
+    "54": 6.216225493620957,
+    "18": -8.561988904606348,
+    "45": 3.350868337533001,
+    "27": -3.946228697726224,
+    "3": -15.405875055805552,
+    "60": 7.20774261230051,
+    "12": -11.818571962834536,
+    "48": 4.354613835352402,
+    "21": -6.96865205880981,
+    "39": 1.1793560651307384,
+    "6": -14.58566737232685,
+    "30": -2.5556010088141394
+  },
+  "first_run_decision_sha256": "15f426f245451a6b237bb4e639d58312aed4659c154c7f5c49f2a6907d35c566",
+  "predicted_nonzero_db_vs_step1": [
+    0.0,
+    null,
+    -20.784727517361954,
+    null,
+    -7.484828928326773,
+    null,
+    -14.453480987136583,
+    null,
+    -1.268603434705816,
+    null,
+    -22.890703984132326,
+    null,
+    -4.133960590793772,
+    null,
+    -11.431057626052997,
+    null
+  ],
+  "tolerance_db": 0.5,
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "level_window_ms": [
+      50.0,
+      90.0
+    ],
+    "silent_below_db": -45.0,
+    "db_tolerance": 1.5,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "c20cd7e75fdc9254e345615979cd08fae5252f595d1c6a790a698ea057764416",
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "Levels are measured with the frozen volume method (RMS 50-90 ms, median of five loops, dB vs step 1)",
+    "table_reproduced: every nonzero step within 0.5 dB of the first run's table",
+    "hold_previous: every 0 step within 0.5 dB of the step before it; fixed_default: all 0 steps within 0.5 dB of one another",
+    "A model is supported only if the table also reproduces and exactly one model holds"
+  ],
+  "limits": [
+    "Sound3 at pitch 13 on Pattern 1",
+    "Does not test what a 0 step does after a rest or at the start of playback"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "analysis_version": "cross-drum-copy-hardware-workflow-audit-0.1",
+  "hardware_validation_sha256": "1182591cbde96d18eca1d75113bd07f8ccc58d558de583656bd458f83b789199",
+  "audition_observation_sha256": "6955dc0b4fb2d811ae0dd5eff351e0fc644d022790d00d546b94a6d81f6cf2b6",
+  "next_preregistration_sha256": "fb66942f3f938d6f8fae721a2b62dcfcf4f6be91558cdd558b890003b5d2e6f5",
+  "checks": {
+    "hardware_checks_pass": true,
+    "hardware_capture_and_artifact_identity": true,
+    "original_restore_registration_preserved": true,
+    "source_target_body_matches_registration": true,
+    "user_observation_matches_capture": true,
+    "export_checks_and_all_content_hashes_pass": true,
+    "project_source_copies_match_accepted_capture": true,
+    "raw_project_whole_body_matches": true,
+    "copied_preview_exact_source_preview_bytes": true,
+    "copied_preview_format": true,
+    "software_reports_remain_unverified": true,
+    "next_control_baseline_identity": true,
+    "next_control_candidate_cell_and_all_sound10_notes_empty": true,
+    "next_control_existing_melodic_neighbor_preserved": true,
+    "next_control_sample_remains_accepted_copy": true,
+    "next_control_registered_before_upload": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "hardware_evidence": "edited-drum-slice-copy-001/hardware-validation.json",
+  "project": "exported-verified-cross-drum-copy-001/project.json",
+  "exported_content_files_checked": 29,
+  "validation": {
+    "preview_and_hardware_regressions": "93 passed in 9.02s",
+    "new_control_checker": "9 passed in 0.41s",
+    "full_regression_tests": "467 passed in 88.28s",
+    "ruff_check": "passed",
+    "ruff_format": "134 files formatted"
+  },
+  "next_required_user_action": "Add Sound10/key1 at Pattern1/Step1 and save event020 capture before pattern playback"
+}

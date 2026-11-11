@@ -1,0 +1,17 @@
+{
+  "analysis_version": "note-key-initial-crossing-failure-0.1",
+  "source_sha256": "c5add754a44ac012a44114156839349f64024c6a2f69660571dbb5b1d59c67ed",
+  "decoder_version": "sign-crossings-0.2",
+  "threshold": 0.0063,
+  "artifact": "derived/analysis-001/capture.symbols.npz",
+  "artifact_sha256": "6de8369472f43ae08d814eb4684d2c655b4cabd670582488494c336e2ee6dfd1",
+  "native_packet_decode_passed": false,
+  "failure": "Packet checksum differs at wire byte13130, tag0xc498",
+  "left_complete_labels": 178958,
+  "right_complete_labels": 178956,
+  "independent_waveform_report": "../waveform-probes-025.json",
+  "first_left_clock_disagreement": 26472,
+  "right_clock_label_disagreements": 0,
+  "resolution": "New measured-clock artifact with pre-frame-only alignment recovers all511 checksums and the exact generated body; original failed artifact is retained",
+  "recovery_report": "derived/analysis-002/clock-report.json"
+}

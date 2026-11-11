@@ -1,0 +1,86 @@
+{
+  "hardware_verified": false,
+  "measurements": [
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.15,
+      "frequency_ratio_candidate_to_reference": 1.0591777507838172,
+      "interval_cents": 99.53366657905275,
+      "loop_delta_seconds": 0.0006009070294776819,
+      "comparison_consistent": true,
+      "increased_frequency_supported": true,
+      "one_semitone_ratio_supported": true
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.25,
+      "frequency_ratio_candidate_to_reference": 1.0591767787279276,
+      "interval_cents": 99.53207774561609,
+      "loop_delta_seconds": 0.000294784580498586,
+      "comparison_consistent": true,
+      "increased_frequency_supported": true,
+      "one_semitone_ratio_supported": true
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.35,
+      "frequency_ratio_candidate_to_reference": 1.0591761161670334,
+      "interval_cents": 99.53099478348801,
+      "loop_delta_seconds": 0.0004988662131522048,
+      "comparison_consistent": true,
+      "increased_frequency_supported": true,
+      "one_semitone_ratio_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.15,
+      "frequency_ratio_candidate_to_reference": 1.0591782468497097,
+      "interval_cents": 99.53447740231832,
+      "loop_delta_seconds": 0.0006009070294776819,
+      "comparison_consistent": true,
+      "increased_frequency_supported": true,
+      "one_semitone_ratio_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.25,
+      "frequency_ratio_candidate_to_reference": 1.0591771686134093,
+      "interval_cents": 99.53271501685393,
+      "loop_delta_seconds": 0.0003061224489790959,
+      "comparison_consistent": true,
+      "increased_frequency_supported": true,
+      "one_semitone_ratio_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.35,
+      "frequency_ratio_candidate_to_reference": 1.0591764351148267,
+      "interval_cents": 99.53151610679585,
+      "loop_delta_seconds": 0.0005102040816336029,
+      "comparison_consistent": true,
+      "increased_frequency_supported": true,
+      "one_semitone_ratio_supported": true
+    }
+  ],
+  "all_frequency_increases_supported": true,
+  "all_one_semitone_ratios_supported": true,
+  "all_codes_scale_or_full_field_width_confirmed": false,
+  "pitch_field_writer_enabled": false,
+  "analysis_version": "native-verified-generated-pitch13-14-frequency-comparison-0.1",
+  "registration_sha256": "164a99c14a96e7e96f4ffea2b3e35e5f7ea7316647600075dd0291aa87f14110",
+  "audio_input_reports_sha256": [
+    "788db32c3fcd6cebe8c691ca1340a74e1a09c0ce4341c53ab8651216bddd185b",
+    "7dba176dfb8619da2e5d67b6b380c2b9aa26f1e41a2f89352dd28a14332e8585"
+  ],
+  "native_input_reports_sha256": [
+    "eb47a672ef3050139101a99d276332999a68d5226db65076a962b5697c69bb26",
+    "37244f3da0f0376e85a50fe93c9231ce84a28a5c0ef53529693a77943140fe2d"
+  ],
+  "limits": [
+    "Frequency law is a new hypothesis selected after native endpoint data, before either pair audio",
+    "Both data sets use the same wide band/FFT search without fitting around a presumed candidate frequency",
+    "First verify13 reception and usable audio before requesting14 restoration; failed methods remain retained without rescue",
+    "Only fixed13/14 and exact genuine minimum are accepted by research constructor; no public pitch setter",
+    "One interval does not establish every code's semitone law, full field width or a numeric UI scale"
+  ]
+}

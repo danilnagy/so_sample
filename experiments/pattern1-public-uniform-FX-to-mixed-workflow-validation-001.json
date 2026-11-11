@@ -1,0 +1,26 @@
+{
+  "analysis_version": "uniform-effect-promotion-and-mixed-handoff-audit-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "none_accepted_hardware_identity_and_native": true,
+    "none_full_WAV_replay_and_software_status": true,
+    "octave_up_accepted_hardware_identity_and_native": true,
+    "octave_up_full_WAV_replay_and_software_status": true,
+    "octave_down_accepted_hardware_identity_and_native": true,
+    "octave_down_full_WAV_replay_and_software_status": true,
+    "all_nine_public_transitions_match_independent_bodies": true,
+    "mixed_target_actual_WAV_native_and_preservation_pass": true,
+    "mixed_registration_pins_and_pending_before_data": true,
+    "public_operation_rejects_mixed_context": true
+  },
+  "promotion_sha256": "70d0754b274bfab640d30c29bc0f79c9cf3c9dcb922c510dc5910bacf7191287",
+  "next_registration_sha256": "5d01607013e18ec11569e3c1e5f4ebcafff686ef58b2c284f6704055f3a9b608",
+  "validation": {
+    "full_tests_passed": 1246,
+    "full_tests_seconds": 124.02,
+    "post_full_focused_tests_passed": 72,
+    "focused_tests_seconds": 5.33,
+    "production_changed_since_full_suite": false,
+    "ruff_new_research_and_production_files_passed": true
+  }
+}

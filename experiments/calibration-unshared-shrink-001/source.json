@@ -1,0 +1,13 @@
+{
+  "kind": "ordinary_line_input_calibration_audio",
+  "frequency_hz": 1500,
+  "duration_seconds": 0.25,
+  "sample_rate_hz": 44100,
+  "channels": 2,
+  "identical_channels": true,
+  "pcm_subtype": "PCM_16",
+  "peak_requested": 0.25,
+  "fade_frames": 221,
+  "wav_sha256": "6bebe496c813b3dce2b8b0793e0992322e153fa43600983f6f36d4699ec241fd",
+  "purpose": "Short distinct replacement to observe shrinking or reuse of an unshared73728-code buffer"
+}

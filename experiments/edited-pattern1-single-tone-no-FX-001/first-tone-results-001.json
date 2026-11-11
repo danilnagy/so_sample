@@ -1,0 +1,166 @@
+{
+  "analysis_version": "fixed-first-tone-wide-search-FX-nibble-probe-0.1",
+  "hardware_verified": false,
+  "source_sha256": "e13cfbaf68163a3728613e5283c4e04a63e5395cbe8d12b70bd0beefe1937fe9",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 670320,
+  "parameters": {
+    "band_hz": [
+      150.0,
+      3500.0
+    ],
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "anchor_peak_fraction": 0.005,
+    "anchor_minimum_region_seconds": 0.02,
+    "maximum_first_onset_anchor_delay_seconds": 0.025,
+    "minimum_band_rms": 0.001,
+    "minimum_region_seconds": 0.06,
+    "minimum_leading_silence_seconds": 0.3,
+    "first_onset_search_end_seconds": 5.0,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.14
+    ],
+    "frequency_search_hz": [
+      400.0,
+      3000.0
+    ],
+    "fft_grid_max_spacing_hz": 0.25,
+    "fft_peak_refine_halfwidth_hz": 1.0,
+    "minimum_fit_explained_variance": 0.9,
+    "maximum_threshold_frequency_relative_spread": 0.005,
+    "stereo_frequency_relative_tolerance": 0.005,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "octave_ratio_relative_tolerance": 0.01
+  },
+  "channels": {
+    "left": {
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "first_onset_seconds": 1.240498866213152,
+          "fit_span_frames": [
+            58234,
+            60880
+          ],
+          "fit": {
+            "frequency_hz": 1190.417182693937,
+            "fft_peak_hz": 1190.5,
+            "explained_variance": 0.9999919289610864,
+            "fundamental_amplitude": 0.1778776733550877,
+            "fit_success": true
+          },
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "first_onset_seconds": 1.2406349206349205,
+          "fit_span_frames": [
+            58240,
+            60886
+          ],
+          "fit": {
+            "frequency_hz": 1190.4170420562616,
+            "fft_peak_hz": 1190.5,
+            "explained_variance": 0.999991958470466,
+            "fundamental_amplitude": 0.1778771732811616,
+            "fit_success": true
+          },
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "first_onset_seconds": 1.2407709750566893,
+          "fit_span_frames": [
+            58246,
+            60892
+          ],
+          "fit": {
+            "frequency_hz": 1190.416683595244,
+            "fft_peak_hz": 1190.5,
+            "explained_variance": 0.9999919383403078,
+            "fundamental_amplitude": 0.1778781195768571,
+            "fit_success": true
+          },
+          "usable": true
+        }
+      ],
+      "passed": true
+    },
+    "right": {
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "first_onset_seconds": 1.240498866213152,
+          "fit_span_frames": [
+            58234,
+            60880
+          ],
+          "fit": {
+            "frequency_hz": 1190.417144779522,
+            "fft_peak_hz": 1190.5,
+            "explained_variance": 0.999991862530658,
+            "fundamental_amplitude": 0.1685382469041358,
+            "fit_success": true
+          },
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "first_onset_seconds": 1.2406349206349205,
+          "fit_span_frames": [
+            58240,
+            60886
+          ],
+          "fit": {
+            "frequency_hz": 1190.4170188548806,
+            "fft_peak_hz": 1190.5,
+            "explained_variance": 0.9999918835594044,
+            "fundamental_amplitude": 0.16853806166580496,
+            "fit_success": true
+          },
+          "usable": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "first_onset_seconds": 1.2407709750566893,
+          "fit_span_frames": [
+            58246,
+            60892
+          ],
+          "fit": {
+            "frequency_hz": 1190.4166834095677,
+            "fft_peak_hz": 1190.5,
+            "explained_variance": 0.9999918509387732,
+            "fundamental_amplitude": 0.1685389055599628,
+            "fit_success": true
+          },
+          "usable": true
+        }
+      ],
+      "passed": true
+    }
+  },
+  "checks": {
+    "both_channels_usable": true,
+    "all_three_stereo_thresholds_agree": true,
+    "no_full_scale_samples": true
+  },
+  "passed": true,
+  "registration_sha256": "532016cc000e9cf14f13f08e7a74fe29c8f6d5f0557acd340c512c7dd5924eb2",
+  "native_results_sha256": "2e6a1063ba1f1b26b7c4798750266fb82c7fe2651afae4140319aa3907af867b",
+  "new_effect_order_adjudicated": false,
+  "limits": [
+    "Changes the entire Pattern1 cell region to one existing trigger; all samples, other15 patterns and globals remain exact",
+    "New source calibration is registered after the prior failed audio-quality check, before these new captures; prior recordings and results are unchanged",
+    "Does not retune the failed first-tone method or adjudicate the previous F6/6F order hypotheses",
+    "Native reception and audio usability must pass before preparing any new effect-order pair",
+    "No guessed reference frequency, audible octave ratio, general note editor or per-step effect writer"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "status": "registered_before_clean_before_and_after_captures",
+  "analysis_version": "clean-copy2-predictions-0.1",
+  "hypothesis_source_registration_sha256": "421f60f707566aa7783fdc08d9fd8960ddf4c6dad554c4c6cf4db0e0b241019e",
+  "reference_artifact": "experiments\\empty-001-c-copy-to-1\\derived\\analysis-001\\capture.symbols.npz",
+  "reference_artifact_sha256": "c03df4887c8386885fbd618588047d38a2bfaddd5c26626317254f5e1b9cdf6e",
+  "expected_before_artifact": "experiments/empty-001-copy2-clean-a/derived/analysis-001/capture.symbols.npz",
+  "expected_after_artifact": "experiments/empty-001-copy2-clean-b/derived/analysis-001/capture.symbols.npz",
+  "first_change_models": {
+    "front_table": {
+      "first_raw_change_window": [
+        43278,
+        43287
+      ],
+      "reason": "Observed84-value difference between first Sound8 and Sound1 changes suggests12 per slot; slot2 is one position after1."
+    },
+    "inline_slots": {
+      "first_raw_change_window": [
+        177085,
+        177121
+      ],
+      "reason": "Immediately following the shared transport block in the current capture; coarse tag/boundary allowance explicitly chosen before data."
+    }
+  },
+  "growth_symbols_per_channel_range_inclusive": [
+    0,
+    128
+  ],
+  "reference_prefix_span": [
+    0,
+    177085
+  ],
+  "reference_prefix_sha256": {
+    "left": "f4fe796647837f5ec3eb189d601cbf2cc6078d9495be44764468740eb6e38b69",
+    "right": "387369185607e492587f6ae7bb77bc286fa5b23492056c770d27fab097d5c11a"
+  },
+  "anchor_predictions": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b"
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8"
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6"
+    }
+  ],
+  "applicability": "Fresh before-state must preserve reference prefix and anchors before absolute windows are considered applicable. It is not assumed to be the originalC.",
+  "limits": [
+    "Use actual freshA-toB comparison; no shifted or rewritten artifacts.",
+    "Original deviated capture remains observational, regardless of matching predictions.",
+    "If before-state geometry differs, position hypotheses are inapplicable, not rescued by moving windows.",
+    "Failure of both models does not establish a cipher or safe writable field."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "analysis_version": "key-scale-map-rerun-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "edited-pattern1-key-scale-map-002",
+  "first_registration_sha256": "1d93c673ff1aeca4ec4da676d3a676c581df4c964bc4df54774520293f4f5c43",
+  "first_observation_sha256": "df3e0d8b2670535be38c9e6fcb8ef0165f3629159c52fb5352173070a42d1c1c",
+  "source_artifact": "experiments/compiled-step-effects-writer-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "40645162eb44083738473cb4bb895f87bdb5f438b68c7e1b80bd96c7762f738d",
+  "source_capture_sha256": "7fb7249a176fc395091899674daf2d0fcc20ad40577d1e863f2249bbeeb75da8",
+  "first_capture_sha256": "7f582fff5cbf8a3f2ed9c20a097a60b2a154e27951a8707c638d2b26e3241aad",
+  "expected_body_sha256": "cb75d7734eb39ed56f41fc810e8084102ab2b2f247c4b313244672f82e69dbf5",
+  "edited_artifact_sha256": "24b8f62b5c8e4087d97c18e36d7f5ffc3bf625d43a7aceec6a8c022fd0e2173a",
+  "restore_wav_sha256": "f187ef32e33a9a0a7df20855decae5d1fd30813857bc1eafac408120671b056e",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "chromatic": [
+      0,
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500
+    ],
+    "major": [
+      0,
+      200,
+      400,
+      500,
+      700,
+      900,
+      1100,
+      1200,
+      1400,
+      1600,
+      1700,
+      1900,
+      2100,
+      2300,
+      2400,
+      2600
+    ],
+    "natural_minor": [
+      0,
+      200,
+      300,
+      500,
+      700,
+      800,
+      1000,
+      1200,
+      1400,
+      1500,
+      1700,
+      1900,
+      2000,
+      2200,
+      2400,
+      2500
+    ],
+    "row_layout_from_first_run": [
+      0,
+      100,
+      300,
+      400,
+      -700,
+      -500,
+      -400,
+      -200,
+      -1200,
+      -1100,
+      -900,
+      -800,
+      -1900,
+      -1700,
+      -1600,
+      -1400
+    ]
+  },
+  "row_layout_source": "exploratory 80 BPM reading of the first run's playback",
+  "decision": [
+    "The backup must equal the target exactly",
+    "Pitches are measured on the 250 ms step grid from the first note's onset, 5-40 ms after each step",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Otherwise other_or_inconclusive; the measured table is reported either way"
+  ],
+  "limits": [
+    "Sound3 with its recorded parameters only; other sounds may differ",
+    "Measures pitch only, not note length or level"
+  ]
+}

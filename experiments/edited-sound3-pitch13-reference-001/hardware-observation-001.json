@@ -1,0 +1,45 @@
+{
+  "analysis_version": "generated-pitch13-reference-native-and-frequency-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Generated uniform13 Sound3/P1 reference accepted with exact complete native recapture; user hears pattern; all six preregistered ordinary-frequency measurements pass near500.626Hz with loop near2.4s",
+  "checks": {
+    "entire_native_target_and_preservation_checks_pass": true,
+    "capture_artifact_and_registration_pins_match": true,
+    "all_six_frozen_frequency_measurements_pass": true,
+    "ordinary_audio_identity_and_frozen_parameters_match": true,
+    "backup_recording_not_clipped": true,
+    "all_export_content_hashes_and_checks_pass": true,
+    "complete_export_body_exact": true,
+    "both_prepared_artifacts_waves_and_reports_remain_registered": true
+  },
+  "raw_pitch_value_all16_cells": 13,
+  "volume_raw_value_all16_cells": 36,
+  "measured_frequency_hz_range": [
+    500.62563518894024,
+    500.6261197159325
+  ],
+  "capture_sha256": "89b777b110bd7cc066f5c44237da1d2fd849c32041428158eca71e1200fe8acb",
+  "artifact_sha256": "445a665295acabb6112615d1aa1a882b6734b31c05c125c55df6a5d14f5f8753",
+  "artifact_path": "experiments/edited-sound3-pitch13-reference-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "7f09d45808d5a9064139b43f717bbc8bd8e99a9248411bc534641ff343783fdd",
+  "playback_sha256": "77f112f8ecf40be0dc1bf7e9c321ffbd93eeec3ef1a0edaf1677c8863a4119c1",
+  "native_results_sha256": "eb47a672ef3050139101a99d276332999a68d5226db65076a962b5697c69bb26",
+  "audio_results_sha256": "788db32c3fcd6cebe8c691ca1340a74e1a09c0ce4341c53ab8651216bddd185b",
+  "manual_observation_sha256": "a6ec0165394a29b9d6204d830b511d39d42a2c07b80ae4dfbc4b57da7fc86908",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.151519775390625,
+      0.14666748046875
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "one_semitone_interval_confirmed": false,
+  "all_codes_pitch_scale_confirmed": false,
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "This is a physically accepted generated reference, not a complete replay of the older genuine neutral body",
+    "Candidate14 remains pending; reference acceptance does not confirm the interval hypothesis",
+    "No numeric UI value, all-code law or full field width claimed; previews retain raw sample data"
+  ]
+}

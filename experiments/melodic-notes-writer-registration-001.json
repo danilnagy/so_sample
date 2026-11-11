@@ -1,0 +1,107 @@
+{
+  "analysis_version": "melodic-notes-writer-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-melodic-notes-writer-001",
+  "plan": "experiments/melodic-notes-plan-001/plan.json",
+  "plan_sha256": "f1dc94f370f3b941ba8318fa5525ff964a334b0ed47a644cd53b27bf48fa1ded",
+  "compile_report_sha256": "9337909ac3b404380a6da9b9a87a80965271f52ca3b83bf65fb715566c7c894d",
+  "source_artifact": "experiments/edited-pattern1-key-scale-map-002/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "f25cb7c4e4d5f03974ba6c1ee7af999b8e0525c56ec06e1457e200c031e2e38c",
+  "source_capture_sha256": "f19bcb753b78d50a1e9117cd17518b240e9deeec3a2d268e6c0619bc404a3368",
+  "expected_body_sha256": "ed5ab6070eaa99dc0fc0de10d6fb3590c61170830ac1e01c79a2ffb46b551a0b",
+  "edited_artifact_sha256": "e54af4763d88a9fa3f73a7cedf515e4f1031f4f90e55d9d74703e7a4292641d6",
+  "restore_wav_sha256": "36dded80d071253b55fb6444c65d4d3e1dc6f6b01eb4c1fb4584bf804768994a",
+  "melody_keys": [
+    16,
+    1,
+    15,
+    2,
+    14,
+    3,
+    13,
+    4,
+    12,
+    5,
+    11,
+    6,
+    10,
+    7,
+    9,
+    8
+  ],
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "melody_written": [
+      0,
+      1400,
+      -200,
+      1500,
+      -300,
+      1700,
+      -500,
+      1800,
+      600,
+      700,
+      500,
+      900,
+      300,
+      1000,
+      200,
+      1200
+    ],
+    "previous_order_kept": [
+      0,
+      100,
+      300,
+      400,
+      -700,
+      -500,
+      -400,
+      -200,
+      -1200,
+      -1100,
+      -900,
+      -800,
+      -1900,
+      -1700,
+      -1600,
+      -1400
+    ]
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly; only Pattern 1's Sound3 auxiliary bytes may differ from the source",
+    "Pitches are measured with the frozen grid-only method; cents are relative to step 1",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops"
+  ],
+  "limits": [
+    "Sound3 on Pattern 1 with one shared set of note parameters",
+    "Other melodic sounds are expected to share the key layout but were not measured"
+  ]
+}

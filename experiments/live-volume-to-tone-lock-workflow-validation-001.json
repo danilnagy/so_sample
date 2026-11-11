@@ -1,0 +1,44 @@
+{
+  "analysis_version": "unchanged-live-volume-to-recorded-tone-probe-workflow-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "selection_and_minimum_hardware_observations_pass": true,
+    "current_source_and_capture_fingerprints_match": true,
+    "selection_source_fingerprints_match": true,
+    "both_complete_bodies_match_known_joint_state": true,
+    "relative_audible_result_not_converted_to_silence_or_number": true,
+    "manual_and_native_observation_pins_match": true,
+    "new_registration_pins_verified_baseline_observation": true,
+    "all16_sound3_raw_cells_registered_without_interpretation": true,
+    "plain_playback_prediction_pinned_before_data": true,
+    "lock_body_and_numeric_maximum_not_guessed": true,
+    "ineffective_lock_and_plain_playback_equality_remain_explicit": true,
+    "volume_and_pitch_field_writers_remain_disabled": true,
+    "new_hardware_actions_pending": true,
+    "registration_is_software_only": true
+  },
+  "current_observation_sha256": "6a772f1dd5930cfff858a53e227abfb040198c785a933c1a725f5f84f01ae3c4",
+  "tone_lock_registration_sha256": "656cb37dde4d2e80a526c03839176a9ac9880e88e42613640a5c9f92845e14a6",
+  "validation": {
+    "affected_tests_passed": 13,
+    "affected_test_seconds": 1.07,
+    "ruff_check_passed": true,
+    "formatted_python_files": 221,
+    "prior_full_suite_before_research_changes": {
+      "passed": 790,
+      "seconds": 90.07
+    },
+    "production_writer_changes_this_turn": false
+  },
+  "implementation_sha256": {
+    "scripts/prepare_sound3_tone_lock_probe.py": "40d915fe13fc08a7012f87c2f2dec58705951cadc2399da17aaca8f5173a2bf1",
+    "scripts/check_sound3_tone_lock_probe.py": "fbdbd345cc0dcbffc19afbb3ad1348532d99d20c19f4f03ff4f7858bab172cb7",
+    "tests/test_sound3_tone_lock_probe.py": "f7a3a16af315e40d61a975e6706d475a9ed011262ae0e471e5c682c32e09a0cb"
+  },
+  "limits": [
+    "Current live-volume evidence is relative and scoped to stopped/write-off snapshots",
+    "Recorded TONE may snapshot a pair of parameters; no volume-specific bitfield or identical maximum values predicted",
+    "Both new physical captures remain pending; no software hardware-verification claims"
+  ]
+}

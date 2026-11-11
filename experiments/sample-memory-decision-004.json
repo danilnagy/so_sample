@@ -1,0 +1,11 @@
+{
+  "analysis_version": "sample-memory-decision-0.4",
+  "hardware_verified": false,
+  "registration_sha256": "d5601ef1ec320289a0a8436fa7c433d05ab590f210f93b5de57789e06c0a9424",
+  "native_results_sha256": "eabf590cd903ddecb5b465d184b5b50be5446c5a581497633e3a0c181673de75",
+  "outcome": "other",
+  "hypothesis_supported": "advertised_limit_rejects",
+  "limits": [
+    "One total above the advertised limit; the exact limit is not located by this test"
+  ]
+}

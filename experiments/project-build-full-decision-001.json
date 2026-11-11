@@ -1,0 +1,23 @@
+{
+  "analysis_version": "project-build-full-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "564a2a47d1481c4363e4e7d8e336f506176b7ffa175ee1d480da760f9b22e690",
+  "native_results_sha256": "ad9f8f512b0035bb613aa516d4ff64adc15f0978162ed5977a41d1670a9d9b2e",
+  "measurements_sha256": "9f857dc33c29f406b380411053e133a4f941d2097b3e859b3247bfa38b22a9b7",
+  "kick_interval_s": 0.468367346938777,
+  "chain_cycle_s": null,
+  "snare_burst_intervals_s": [],
+  "melody_db": {
+    "step1": 23.5194368333483,
+    "step2": 16.274175164686607
+  },
+  "hypotheses": {
+    "tempo_128": true,
+    "chain_8": false,
+    "melody_first_note": false
+  },
+  "classification": "other",
+  "limits": [
+    "One large project; the spec exercises every slot and pattern once"
+  ]
+}

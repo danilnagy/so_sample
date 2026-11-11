@@ -1,0 +1,28 @@
+{
+  "experiment_id": "event-019-b-copy-drum9-key1-to-drum10-key1",
+  "capture_status": "validated_physical_single_slice_copy",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-018-b-copy-sound1-to-drum10",
+  "baseline_capture": "../event-018-b-copy-sound1-to-drum10/capture-retry.wav",
+  "baseline_source_sha256": "073011e3cdd30f3bb376396385a154ec581d24412c0f93362d189e2e8126e804",
+  "baseline_artifact": "../event-018-b-copy-sound1-to-drum10/derived/analysis-004/capture.symbols.npz",
+  "baseline_artifact_sha256": "4ad498dd37a011e7dc30890d18b8416b412651b8aa3eecb7958fccf32252d1d4",
+  "baseline_body_sha256": "9e2801c1d2e76144a88ea71c05cc69e0be58476d077305abb4997c2fb9d64323",
+  "preregistration": "../cross-drum-slice-copy-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "With Pattern1 selected, playback stopped and write off, select Sound9 and tap keyboard key1 once to choose the source slice",
+    "Hold write+sound; press and release10 while keeping write+sound held; then press1 and release all buttons to copy into Sound10/key1",
+    "Reselect Sound8/TONE without moving either knob or changing the successful recording setup",
+    "Before further audition or pattern playback record a full stereo backup as capture.wav here, including a second of silence after the dump ends",
+    "Leave the copied slice present and report any deviation without further edits"
+  ],
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "9b2e9d4400a521063629dcf73d1de74972b7deb1a8b956d67f76c0787cf4be1b",
+  "purpose": "Independently map Sound10 key1 and test raw cross-drum slice reference copying while preserving source, neighbors and all existing state",
+  "analysis": "derived/analysis-001",
+  "results": "../cross-drum-slice-copy-results-001.json"
+}

@@ -1,0 +1,11 @@
+{
+  "analysis_version": "FILTER-clockwise-contiguous62-post-observation-model-0.1",
+  "hardware_verified": false,
+  "registered_before_clockwise_data": false,
+  "rule": "Replace all16 Sound3/P1 second-primary high nibble by0xe and third-primary low2 bits by3; preserve every other bit",
+  "complete_body_reproduced": true,
+  "native_results_sha256": "7c5060b930790002b386b2c6dccad6bcdeee9d0cc5358abc71df7fcb4713a512",
+  "contiguous_projection_value": 62,
+  "alternative_high_nibble_is_more_significant_projection_value": 59,
+  "bit_order_width_or_Hz_scale_confirmed": false
+}

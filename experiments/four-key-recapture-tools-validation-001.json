@@ -1,0 +1,27 @@
+{
+  "analysis_version": "four-key-recapture-tools-validation-0.1",
+  "pytest": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --basetemp .tools/pytest-four-key-recapture-002 -p no:cacheprovider",
+    "passed": 248,
+    "failed": 0,
+    "duration_seconds": 52.57,
+    "windows_execution": "Normal filesystem access, automatically approved; sandbox attempt interrupted after temporary-fixture errors"
+  },
+  "ruff": {
+    "lint": "passed",
+    "format": "passed",
+    "formatted_file_count": 91,
+    "scope": ["src", "tests", "scripts"]
+  },
+  "genuine_capture_sha256": "2cc8b8df219f49e9a0721d67ecf719c37575f9f9da7f264eac5b2c4736eb84bf",
+  "native_body_sha256": "9b87309f572b188cd1e1a2651b1ca4feec5cfa8fb669068631042ca8f49465f0",
+  "hardware_comparison": "edited-four-keys-001/hardware-validation.json",
+  "hardware_verified": true,
+  "validated_writer_scope": {
+    "sound_slot": 3,
+    "keyboard_keys": [1, 2, 7, 16],
+    "primary_hex": "0df883"
+  },
+  "next_control": "event-011-b-sound2-layer",
+  "next_control_capture_required": true
+}

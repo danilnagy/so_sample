@@ -1,0 +1,64 @@
+{
+  "analysis_version": "bit5-glide-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of alternating pitch notes with bit 5 clear then set, and their early pitch, late pitch, level and duration",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "bit5_inert",
+  "model_support": {
+    "bit5_inert": true,
+    "bit5_no_glide": false
+  },
+  "summary": {
+    "7": {
+      "early_cents_from_target": {
+        "plain": 68.13046673012792,
+        "flagged": 69.7647715527402
+      },
+      "late_cents_from_target": {
+        "plain": 0.17115744010079972,
+        "flagged": 0.1540423482521073
+      },
+      "level_db": {
+        "plain": 32.49326213544414,
+        "flagged": 32.4928342256231
+      },
+      "duration_ms": {
+        "plain": null,
+        "flagged": null
+      }
+    },
+    "25": {
+      "early_cents_from_target": {
+        "plain": -25.665451146664495,
+        "flagged": -25.691216382488136
+      },
+      "late_cents_from_target": {
+        "plain": -1.1770096030582395,
+        "flagged": -1.1583134718912746
+      },
+      "level_db": {
+        "plain": 26.585290041181214,
+        "flagged": 26.583158044073123
+      },
+      "duration_ms": {
+        "plain": 180.39682539682542,
+        "flagged": 180.38548752834467
+      }
+    }
+  },
+  "decision_sha256": "0604a3efabd0f153be7b6426c6a71ad91d3607a2d3afa79739286e24bbab120d",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "603395e120123a98980d2492eb9754c7d29cc6dd4f41eb32c252c643ae78c24a",
+  "session_answers": [],
+  "limits": [
+    "One melodic sound at key 1 and two pitch codes; bit 5 on drum notes is not tested"
+  ]
+}

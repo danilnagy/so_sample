@@ -1,0 +1,128 @@
+{
+  "analysis_version": "param-only-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-param-only-001",
+  "source_artifact": "experiments/compiled-no-lock-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "1a2a597554d3e3e714afca3a4879ea41202db299d11d66a150cda83e93cfc0ae",
+  "source_capture_sha256": "4df1ae904efe865a14262aad488b13de4310c27cc78b758553e93025cb3f45b2",
+  "note_filters": [
+    63,
+    null,
+    0,
+    null,
+    0,
+    null,
+    63,
+    null,
+    0,
+    null,
+    56,
+    null,
+    0,
+    null,
+    63,
+    null
+  ],
+  "param_only_filters": [
+    null,
+    24,
+    null,
+    50,
+    null,
+    null,
+    null,
+    20,
+    null,
+    null,
+    null,
+    24,
+    null,
+    null,
+    null,
+    null
+  ],
+  "param_only_cells_hex": [
+    "008001",
+    "002003",
+    "004001",
+    "008001"
+  ],
+  "reference_filters": [
+    63,
+    null,
+    24,
+    null,
+    50,
+    null,
+    63,
+    null,
+    20,
+    null,
+    56,
+    null,
+    24,
+    null,
+    63,
+    null
+  ],
+  "unlocked_steps": [
+    3,
+    5,
+    9,
+    13
+  ],
+  "models": {
+    "param_only_sets_value": [
+      24,
+      50,
+      20,
+      24
+    ],
+    "param_only_ignored": [
+      63,
+      63,
+      63,
+      56
+    ]
+  },
+  "tolerance_db": 1.5,
+  "floor_db": -30.0,
+  "plan_sha256": "a315284065a0908dd3335e2316e2cd37ce01f6f2f13250c825ce4742a7aefba0",
+  "expected_body_sha256": "f7750f98d02e19826015923101860a6b68eee726192fa28e32fb2d5aa68eb3ca",
+  "edited_artifact_sha256": "db965f0491c58003d9c49f712b480582628e05e4e8ad318875da38eb5775c482",
+  "restore_wav_sha256": "ad01f8612475d46c0fdfef21b31596b81891a209a87a134eba8d8de2f0c4c6a1",
+  "method_settings": {
+    "band_hz": [
+      100.0,
+      11000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      60.0,
+      220.0
+    ],
+    "fft_size": 65536,
+    "fundamental_hz": 200.0,
+    "harmonics": 50,
+    "peak_search_hz": 3.0,
+    "bottom_band": [
+      1,
+      3
+    ],
+    "top_band": [
+      40,
+      50
+    ],
+    "type_margin_db": 3.0,
+    "silent_db": -40.0,
+    "edge_db": 3.0
+  },
+  "method_script_sha256": "3410d5e768927d144e931391118ef54a46905268cd8898ca0aa43dd158618278",
+  "cycles_measured": 5,
+  "limits": [
+    "Filter locks only, on one drum sound; parameter-only cells for other parameters are not played"
+  ]
+}

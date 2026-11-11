@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-note-bits-001",
+  "capture_status": "validated_note_bits_exact_zero_holds_last_pitch",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../note-bits-registration-001.json",
+  "plan": "../note-bits-plan-001/plan.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did any note sound different from its neighbour in an odd way, or go missing? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "exact"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "note_bits_measurements": "note-bits-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-note-bits-001/project.json"
+}

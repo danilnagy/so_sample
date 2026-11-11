@@ -1,0 +1,160 @@
+{
+  "analysis_version": "drum-key2-nonzero-minimum-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "edited-drum9-slice-end-001",
+  "baseline_capture": "../edited-drum9-slice-end-001/capture.wav",
+  "baseline_source_sha256": "0ddaf2dd97497f4046ccf69a346b03284e5701296a91686f6880a3cf88770c3e",
+  "baseline_artifact": "../edited-drum9-slice-end-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "cfb6a1470674c6d8e9f42ec127c84f0605b7084c17e03ad06791acaa37cc52d3",
+  "baseline_body_sha256": "4eca78dcdf5521941bb07c0d16e4cad71115512021670c203d87256ce142e667",
+  "target_capture": "event-017-b-drum9-key2-trim-min/capture.wav",
+  "expected_change": {
+    "sound_slot": 9,
+    "slice_key": 2,
+    "parameter": "TRIM knobB to minimum",
+    "knob_A": "Untouched"
+  },
+  "control_checks": {
+    "packet_count": 527,
+    "frame_end_byte": 89620,
+    "sound9_selector_ids": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "reference_packet_indices": {
+      "8": [
+        383
+      ],
+      "9": [
+        385
+      ],
+      "10": [
+        387
+      ],
+      "11": [
+        389
+      ],
+      "12": [
+        391
+      ],
+      "13": [
+        393
+      ],
+      "14": [
+        395
+      ],
+      "15": [
+        397
+      ],
+      "16": [
+        399
+      ],
+      "17": [
+        401
+      ],
+      "18": [
+        403
+      ],
+      "19": [
+        405
+      ],
+      "20": [
+        407
+      ],
+      "21": [
+        409
+      ],
+      "22": [
+        411
+      ],
+      "23": [
+        413
+      ]
+    },
+    "reference_before_hex": {
+      "8": "00000000d007000000",
+      "9": "cd0f0000981f000000",
+      "10": "991f0000642f000000",
+      "11": "652f0000303f000000",
+      "12": "313f0000fc4e000000",
+      "13": "fd4e0000c85e000000",
+      "14": "c95e0000946e000000",
+      "15": "956e0000607e000000",
+      "16": "617e00002c8e000000",
+      "17": "2d8e0000f89d000000",
+      "18": "f99d0000c4ad000000",
+      "19": "c5ad000090bd000000",
+      "20": "91bd00005ccd000000",
+      "21": "5dcd000028dd000000",
+      "22": "29dd0000f4ec000000",
+      "23": "f5ec0000c0fc000000"
+    },
+    "reference_record_bytes": 9,
+    "owner_id": 0,
+    "only_allowed_payload_offsets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "changed_records": "Exactly one of the16 Sound9 references",
+    "other15_sound9_references": "Identical, including the accepted key1 endpoint2000",
+    "backing_and_other_sounds": "All bytes unchanged",
+    "patterns": "All16 identical",
+    "every_other_plain_packet": "Identical",
+    "coupling_policy": "Both fields of the one changed reference may move; evaluate and report separately"
+  },
+  "separately_evaluated_hypotheses": {
+    "key2_maps_to_selector9": {
+      "expected_changed_selector_ids": [
+        9
+      ]
+    },
+    "first_field_unchanged": {
+      "expected_value": 4045
+    },
+    "second_field_is_length": {
+      "expected_value": 127
+    },
+    "second_field_is_endpoint": {
+      "expected_value": 4172,
+      "expected_second_minus_first": 127
+    },
+    "second_field_moves_lower_but_above_first": {
+      "expected_range_exclusive": [
+        4045,
+        8088
+      ]
+    }
+  },
+  "planned_post_capture_audition": {
+    "procedure": "After saving, select Sound9/TONE and tap key2 once; report very short click/burst or a sustained tone; return to Sound8 without moving knobs",
+    "purpose": "Separate an endpoint near the4045 start from a literal second-field length producing a longer tone",
+    "interpretation_limit": "User-reported acoustic discriminator; no exact duration measurement is claimed"
+  },
+  "limits": [
+    "The127 offset is transferred from the observed zero-start drum key1 minimum as an exact hypothesis, not a general minimum rule",
+    "Exact endpoint4172 and length127 predictions may both fail; the broader endpoint-range prediction is evaluated independently",
+    "The key2 selector mapping is independent of one-reference preservation; any different changed selector is reported",
+    "No first-field coupling, endpoint inclusivity, universal drum minimum or other key mapping is assumed",
+    "The existing writer still supports key1 only; no nonzero-start drum edit is enabled by this registration"
+  ]
+}

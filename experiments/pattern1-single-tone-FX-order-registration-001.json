@@ -1,0 +1,104 @@
+{
+  "analysis_version": "single-tone-FX-order-pair-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "source_experiment": "edited-pattern1-single-tone-no-FX-001",
+  "source_artifact": "experiments/edited-pattern1-single-tone-no-FX-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "36e560598b3a006c2c668a3c3c83edb7bce3d101de3f2fbe1a243e41ddf8961e",
+  "source_capture_sha256": "7f19bbb61714693a0d88c198232e6c420b5e25f2fc3b50601133ffcc1b22e6b6",
+  "source_body_sha256": "a97e89da4ebdc2bb236209d0ef295a1473e6a58757cca0165c466c4c667602a6",
+  "source_observation_sha256": "ce8e926aa8545575075ce8c0230e66a483a3b7c025102f6143cf870778724ea6",
+  "reference_audio_results_sha256": "828bc8062b9a0223e9e3849baf11eb7b5f52e09ac67f886f6f7f25aac7f80c82",
+  "reference_frequency_hz": 1190.4169592315686,
+  "reference_measurements_hz": [
+    1190.417182693937,
+    1190.4170420562616,
+    1190.416683595244,
+    1190.417144779522,
+    1190.4170188548806,
+    1190.4166834095677
+  ],
+  "reference_relative_tolerance": 0.01,
+  "legs": {
+    "a": {
+      "directory": "edited-pattern1-single-tone-FX-F6-001",
+      "footer_byte0": "F6",
+      "expected_body_sha256": "57c3d50265f49a68677cc463182a1c2799c975f2f10f9e370e319b7c9a504131",
+      "edited_artifact_sha256": "ddc6a91ee068937dd81d65cfa02a5e5786402dff025370100a5bd2c402ccb826",
+      "restore_wav_sha256": "cdc782a46405156aa312b7fd14b99158e48562608e6cdb7af2a784e345c00724",
+      "software_validation_sha256": "94d41aa56dda94a77fabb9796b65328a43aaff075d991f5b2bd824909de2346e"
+    },
+    "b": {
+      "directory": "edited-pattern1-single-tone-FX-6F-001",
+      "footer_byte0": "6F",
+      "expected_body_sha256": "e6f77d9c53b6024b321300bc53b32ccdaf7522cb7c1235fa39fb9f09b50b3119",
+      "edited_artifact_sha256": "0e78db72db0ee33d072b0bcb51109b331e2ce4e93ec206a656f7225d4f3fa9e0",
+      "restore_wav_sha256": "88633077b34dd4a2ae88741eb31d077d2093c7bfac6114ff4f5dae0cd40b6e18",
+      "software_validation_sha256": "b3419c84d366c1a74a89a9234a80bc4e44a6a24ba8cb4fb636193338b94f0fbb"
+    }
+  },
+  "capture_order": [
+    "a",
+    "b"
+  ],
+  "audio_parameters": {
+    "band_hz": [
+      150.0,
+      3500.0
+    ],
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "anchor_peak_fraction": 0.005,
+    "anchor_minimum_region_seconds": 0.02,
+    "maximum_first_onset_anchor_delay_seconds": 0.025,
+    "minimum_band_rms": 0.001,
+    "minimum_region_seconds": 0.06,
+    "minimum_leading_silence_seconds": 0.3,
+    "first_onset_search_end_seconds": 5.0,
+    "steady_fit_window_after_onset_seconds": [
+      0.08,
+      0.14
+    ],
+    "frequency_search_hz": [
+      400.0,
+      3000.0
+    ],
+    "fft_grid_max_spacing_hz": 0.25,
+    "fft_peak_refine_halfwidth_hz": 1.0,
+    "minimum_fit_explained_variance": 0.9,
+    "maximum_threshold_frequency_relative_spread": 0.005,
+    "stereo_frequency_relative_tolerance": 0.005,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "octave_ratio_relative_tolerance": 0.01
+  },
+  "audio_method_script_sha256": "36d401ca136ec592fcaeecf7af4d2c360b3b639c8dca4cdf5728750af16f0501",
+  "frequency_fit_helper_sha256": "7e0d3874ef537f7dc2a56103c0dbbfa85190f4e989882386dbcf6b25eba61d51",
+  "predictions": {
+    "low_nibble_first": {
+      "a_over_b_ratio": 2.0,
+      "a_frequency_hz": 2380.8339184631373,
+      "b_frequency_hz": 1190.4169592315686
+    },
+    "high_nibble_first": {
+      "a_over_b_ratio": 0.5,
+      "a_frequency_hz": 1190.4169592315686,
+      "b_frequency_hz": 2380.8339184631373
+    }
+  },
+  "decision": [
+    "Both legs must be received exactly; only footer byte 0 may differ from the source",
+    "Primary: the frozen comparison of all six A/B first-tone ratios, near 2 or near 0.5 within the registered 1% tolerance",
+    "Secondary: each leg's six first tones must match its model's predicted frequency within 1% of the registered reference",
+    "A model is supported only if primary and secondary agree; anything else stays inconclusive"
+  ],
+  "earlier_lead": "The earlier F6 restore's first tone (about 1190.65 Hz) matched the unshifted reference, suggesting high nibble first; it was not registered and does not count here",
+  "limits": [
+    "Local to footer byte 0 of Pattern 1 with one Sound3 note on step 1; not an all-step or all-pattern ordering",
+    "Octave up is the only effect code used; no general per-step effect writer is enabled",
+    "No retuning of the frozen first-tone method after data; failed or unusable results are retained"
+  ]
+}

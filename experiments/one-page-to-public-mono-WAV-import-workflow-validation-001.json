@@ -1,0 +1,61 @@
+{
+  "analysis_version": "one-page-acceptance-public-import-mono-workflow-audit-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "previous_hardware_acceptance_all_checks": true,
+    "current_source_pinned_to_acceptance": true,
+    "current_capture_pinned_to_acceptance": true,
+    "source_acceptance_hash_pinned": true,
+    "public_command_replay_matches_accepted_restore_wav": true,
+    "public_replay_matches_genuine_native_body": true,
+    "both_import_reports_pass_and_remain_software_only": true,
+    "mono_input_original_copy_and_registration_match": true,
+    "mono_input_and_exact_resampling_count": true,
+    "all_quantized_input_codes_preserved": true,
+    "zero_tail_exact": true,
+    "capacity_and_header_exact": true,
+    "target_body_hash_pinned": true,
+    "target_artifact_hash_pinned": true,
+    "restore_wav_hash_pinned": true,
+    "import_report_hash_pinned": true,
+    "checker_accepts_complete_target": true,
+    "checker_rejects_stale_source": true,
+    "registered_before_capture_and_still_pending": true,
+    "previous_capture_has_no_clipping": true
+  },
+  "passed": true,
+  "previous_capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.165924072265625,
+      0.16009521484375
+    ]
+  },
+  "next_target": {
+    "capacity_codes": 32768,
+    "sound6_header_hex": "00000000ab44000005",
+    "sound6_payload_sha256": "7fa1522cf7cf5bbb592ef71ff4e0934ff6b3878b62f5537405c5bb61f7843e40",
+    "window": {
+      "resolved": true,
+      "owner_id": 5,
+      "endpoint": 17579,
+      "backing_code_count": 32768,
+      "logical_codes_sha256": "5eaa94f610f8fe5345c250fc82312f2529c43c09fc2458f0984ea7bae25a58db"
+    },
+    "packet_count": 951,
+    "frame_end_byte": 190215
+  },
+  "validation": {
+    "full_pytest": "637 passed in 82.34s",
+    "targeted_pytest": "33 passed in 2.76s",
+    "ruff": "all checks passed; 175 Python files formatted"
+  },
+  "next_required_user_action": "Restore mono WAV import candidate, capture before audition, then confirm rising Sound6 sweep and unchanged controls",
+  "limits": [
+    "Only empty or unshared zero-start Sound6 using4096/32768/36864-code capacities and2344..30912 native frames is supported",
+    "Automatic capacity uses the smallest verified size that fits; calibration budget172032 is not a hardware memory-limit claim",
+    "Mono and explicitly selected/mixed stereo integer PCM at44.1/48k are supported;44.1k mono and new duration combinations need appropriate hardware evidence",
+    "Existing slot parameters, samples and patterns are retained; preview does not apply device pitch/filter/gain",
+    "Generated software checks are not a new hardware acceptance"
+  ]
+}

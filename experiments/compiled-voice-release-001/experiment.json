@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-voice-release-001",
+  "capture_status": "validated_exact_native_voice_release_measured",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../voice-release-registration-001.json",
+  "plan": "../voice-release-plan-001/plan.json",
+  "playback_seconds": 26,
+  "observation_questions": [
+    "In the second pattern, did the fourth note of each group sometimes not play? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "voice_release_measurements": "voice-release-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-voice-release-001/project.json"
+}

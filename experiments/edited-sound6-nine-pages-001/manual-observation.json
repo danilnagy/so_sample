@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed",
+  "requested_restore_and_audition_checks_confirmed": true,
+  "context": "Nine-page restore accepted, familiar Sound6 tone, silent Sound7 and unchanged Sound4/Sound5/Pattern1 checks",
+  "capture_sha256": "4bd755836feb7ac6f1bcaa806838d398dbf58122a2c2a3882a7909f45409150e",
+  "limits": [
+    "Audible confirmation is a user report; native byte checks are independent"
+  ]
+}

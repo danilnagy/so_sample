@@ -1,0 +1,36 @@
+{
+  "analysis_version": "first-drum-copy-workflow-audit-0.1",
+  "checks": {
+    "physical_copy_preservation_checks": true,
+    "all_exported_content_hashes": true,
+    "all_source_packets_exact": true,
+    "all16_sound9_records_present": true,
+    "sound9_not_mislabeled_as_other_drum_slots": true,
+    "no_drum_previews": true,
+    "capture_preserved": true,
+    "artifact_preserved": true
+  },
+  "passed": true,
+  "control_report_sha256": "13df30ede4bf25eba9d10d6da0bbf34031b6fab000b35186a333fc4a267ca7bc",
+  "capture_sha256": "9bafc45f6e12bae5cdcb1c80f60b57248cd3003144946dbf2b670cd20be7a34c",
+  "artifact_sha256": "dcebfbb1c93317bcdb7354febb30cb3d931757bd650921eab41017c69a1da8b8",
+  "native_body_sha256": "f83e2157513a3ae344631366464e3a25363fc296900575d792139455b66b91a0",
+  "exported_content_file_count": 26,
+  "sound_view_schema_version": 2,
+  "suite": {
+    "passed": 366,
+    "failed": 0,
+    "elapsed_seconds": 60.61,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-drum-copy-001"
+  },
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 114,
+  "drum_preview_enabled": false,
+  "drum_writer_enabled": false,
+  "limits": [
+    "Physical copy localizes the Sound9 block; individual keyboard order needs the next independent slice control",
+    "Other drum-slot mapping and general slice-boundary rules remain unverified",
+    "No generated drum edit has been restored; the export is a read-only representation"
+  ]
+}

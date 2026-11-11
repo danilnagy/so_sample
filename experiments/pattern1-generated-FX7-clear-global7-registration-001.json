@@ -1,0 +1,50 @@
+{
+  "analysis_version": "generated-footer7-and-FF-global7-return-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_both_physical_recaptures": true,
+  "source_artifact": "experiments/edited-pattern1-FX6-global7-up-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "9b2e77b68f683c399391971ed522a3e87e96ab5dfa841b8d75d2a2812f2ac111",
+  "source_capture": "experiments/edited-pattern1-FX6-global7-up-001/capture.wav",
+  "source_capture_sha256": "ce7b88d7590d6704209f21080910210daac1c1c02f124265d90c6c0914a2439e",
+  "source_observation": "experiments/edited-pattern1-FX6-global7-up-001/hardware-observation-001.json",
+  "source_observation_sha256": "8077ff3b7c3865969255233f275cd0066e58320fa49f647517953b4d26ea35d1",
+  "independent_clear_artifact": "experiments/event-070-b-pattern1-plain-playback/derived/analysis-001/capture.symbols.npz",
+  "independent_clear_artifact_sha256": "f189d754bca67751df455bb0add12989781de604003ccc8dd103b661c9ad08ff",
+  "independent_clear_capture": "experiments/event-070-b-pattern1-plain-playback/capture.wav",
+  "independent_clear_capture_sha256": "9d07aa2c42d9779c0ca75ab780da818ddcc2b1a8fb714810b84ae847ff08ac10",
+  "independent_clear_observation": "experiments/event-070-b-pattern1-plain-playback/hardware-observation-001.json",
+  "independent_clear_observation_sha256": "1a1f0410e101bb26fddf869959a0c6fe471d0b8a73b359643a18fc80371ba0f8",
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "edited-pattern1-FX7-global7-down-001",
+      "source_body": "1147b3d4952aa4ade735b011047bcf22a469855bc3e1fff9c6f6cd4c462ca495",
+      "target_body": "01cb7130546dd862c8b9ef290785dd9e6c3094e64e6b9279dae4730edea7cd68",
+      "footer": 119,
+      "leg": "down",
+      "edited_artifact_sha256": "d40b112548c3452d4982690339777676d1719d0a33b397c378ebbfe3723d6c28",
+      "restore_wav_sha256": "badf1a0346751437f460c9e20342776d48063e488be881a8e94fe969975d6d5e",
+      "software_validation_sha256": "4faf91a4e74dc6e50ab4fec76f197dd5ae7578237793438980d2da176424d8e5"
+    },
+    {
+      "experiment_id": "edited-pattern1-FX15-global7-clear-001",
+      "source_body": "01cb7130546dd862c8b9ef290785dd9e6c3094e64e6b9279dae4730edea7cd68",
+      "target_body": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+      "footer": 255,
+      "leg": "clear",
+      "edited_artifact_sha256": "af7782dfa2a520946c3b85f11a164e95e59bee1a4c18d4751b08407230d16a1d",
+      "restore_wav_sha256": "db097a88e3681c6f290b8bbf568b1ca05281040584ac98dc59e16dbfc011d03e",
+      "software_validation_sha256": "7e227b9ff2cf8e302c48ffbca4829e7ee421460738eaaed3af1cb9aef1d88b93"
+    }
+  ],
+  "hypotheses": [
+    "Footer7 alone produces audible octave-down while global131 remains7",
+    "FooterF restores normal playback and the entire independent clear body including global131"
+  ],
+  "limits": [
+    "Fixed exact-source pair only; no public FX writer, nibble order or complete enum",
+    "Down native target must pass before adjudicating clear; pair may be recorded and uploaded in order together",
+    "Native reception and listening are separate; no measured octave ratio or direction inferred from bytes",
+    "Each physical backup must precede its listening playback; all other bytes including global131 are fixed",
+    "Any failed target or listening hypothesis remains retained; do not widen masks or rewrite prior evidence"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_id": "edited-sound4-shrink-001",
+  "capture_status": "hardware_verified_entire_generated_shrink_body_matches",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sound4-growth-001",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "software_validation": "software-validation.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "done and confirmed"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "recapture_results": "hardware-recapture-results-001.json",
+    "manual_observation": "manual-observation.json"
+  },
+  "planned_actions": [
+    "Restore the complete restore.wav through the proven stereo receive path at established levels",
+    "Return to Pattern1/Sound8/TONE, stopped/write off, both knobs unchanged",
+    "Before audition or pattern playback record a complete dump to capture.wav with one second of trailing silence",
+    "After saving audition Sound4/key1 for a higher shorter tone, Sound5/key1 for the retained short tone and Pattern1 for unchanged behavior; return to Sound8/TONE stopped/write off and report restore acceptance and checks"
+  ],
+  "source_sha256": "4a11f64a99e10c2a6d49bcd3a1e4c4c5a2cc43ab481d1b884e396921b34fb3c5",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-generated-sound4-shrink-001/project.json"
+}

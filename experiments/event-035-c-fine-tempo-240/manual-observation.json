@@ -1,0 +1,8 @@
+{
+  "initial_user_report": "done",
+  "explicit_followup_confirmation": "Yes: 60, 240, 100",
+  "display_before_bpm": 60,
+  "display_after_bpm": 240,
+  "source": "Explicit user confirmation, not candidate-byte inference",
+  "capture_sha256": "1f8de2aafb3281ab6a1db133222669f6082a6131e51094e95b3b25ecf7f621dc"
+}

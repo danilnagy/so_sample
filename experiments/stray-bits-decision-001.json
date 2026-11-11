@@ -1,0 +1,135 @@
+{
+  "analysis_version": "stray-bits-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "4f0dc9ecd3f3bd18ffdfcf26bbe8bede1509f865ea568084b1f97a255d9ab0a0",
+  "native_results_sha256": "b440c30ef28f35aa23f855c1ad7f0c8852a83ca47a7cf133f4cd8e6567b08b0c",
+  "measurements_sha256": "3a81d823b60311a24e25777b597e318d188b928a769df51e5abf429334da9d5a",
+  "hypotheses": {
+    "raw_values_kept": true,
+    "odd_steps_normal": true
+  },
+  "raw_cells": {
+    "2": {
+      "sound": 8,
+      "outcome": "kept",
+      "actual_primary": "0df907",
+      "actual_auxiliary": 32
+    },
+    "4": {
+      "sound": 8,
+      "outcome": "kept",
+      "actual_primary": "0df907",
+      "actual_auxiliary": 16
+    },
+    "6": {
+      "sound": 13,
+      "outcome": "kept",
+      "actual_primary": "0df907",
+      "actual_auxiliary": 240
+    },
+    "8": {
+      "sound": 8,
+      "outcome": "kept",
+      "actual_primary": "0df907",
+      "actual_auxiliary": 224
+    },
+    "10": {
+      "sound": 8,
+      "outcome": "kept",
+      "actual_primary": "0df907",
+      "actual_auxiliary": 0
+    },
+    "12": {
+      "sound": 8,
+      "outcome": "kept",
+      "actual_primary": "00f907",
+      "actual_auxiliary": 245
+    }
+  },
+  "global_bytes": {
+    "131": {
+      "outcome": "kept",
+      "actual": 1
+    },
+    "132": {
+      "outcome": "kept",
+      "actual": 2
+    },
+    "133": {
+      "outcome": "kept",
+      "actual": 3
+    },
+    "134": {
+      "outcome": "kept",
+      "actual": 4
+    },
+    "135": {
+      "outcome": "kept",
+      "actual": 5
+    },
+    "136": {
+      "outcome": "kept",
+      "actual": 6
+    },
+    "137": {
+      "outcome": "kept",
+      "actual": 7
+    },
+    "138": {
+      "outcome": "kept",
+      "actual": 8
+    },
+    "139": {
+      "outcome": "kept",
+      "actual": 9
+    },
+    "140": {
+      "outcome": "kept",
+      "actual": 10
+    },
+    "141": {
+      "outcome": "kept",
+      "actual": 11
+    },
+    "142": {
+      "outcome": "kept",
+      "actual": 12
+    },
+    "143": {
+      "outcome": "kept",
+      "actual": 13
+    },
+    "144": {
+      "outcome": "kept",
+      "actual": 14
+    },
+    "145": {
+      "outcome": "kept",
+      "actual": 15
+    },
+    "146": {
+      "outcome": "kept",
+      "actual": 16
+    }
+  },
+  "even_steps_sounding": {
+    "2": {
+      "sound8_key1": 0.0
+    },
+    "4": {
+      "sound8_key1": 0.0
+    },
+    "6": {},
+    "8": {
+      "sound8_key1": 0.0,
+      "sound13": -1.2
+    },
+    "10": {},
+    "12": {
+      "sound8_key6": 0.0
+    }
+  },
+  "limits": [
+    "One pattern; six raw cells and sixteen global bytes; no model for the even steps"
+  ]
+}

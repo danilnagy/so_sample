@@ -1,0 +1,7 @@
+{
+  "user_report": "done, changed from 120 to 140",
+  "display_before_bpm": 120,
+  "display_after_bpm": 140,
+  "source": "Explicit user display observation; not inferred from backup bytes",
+  "capture_sha256": "cedcdd9b97674b93b3ebb623e3ebd2744ddb4f188a9fd899eac9407903efc1ef"
+}

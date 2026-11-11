@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent comparison to actual recorded waveform, not encode/decode agreement",
+  "selection": "Fixed first-data cycle window [30,500), same acquisition-relative boundary on each capture",
+  "cycle_origin_policy": "first-11 acquisition crossing plus nominal quarter cycle",
+  "carrier_candidates_hz": [
+    7800,
+    7812.5
+  ],
+  "captures": {
+    "baseline-001": {
+      "source_sha256": "6312a96c924ff3414b51584a1e86a2a950860b168d03cab9d735b2ed1d370370",
+      "channels": {
+        "left": {
+          "legacy_7800": {
+            "correlation": -0.11658907194637752,
+            "gain_fit": -0.10323467604342607,
+            "gain_fitted_residual_rms": 0.29308257799836945
+          },
+          "legacy_7812_5": {
+            "correlation": 0.5940464322415999,
+            "gain_fit": 0.5257946494513277,
+            "gain_fitted_residual_rms": 0.2373835332461617
+          },
+          "staggered_7812_5": {
+            "correlation": 0.9777840068363792,
+            "gain_fit": 0.8014689236971965,
+            "gain_fitted_residual_rms": 0.061856454029708526
+          },
+          "terminal_carrier_measurement": {
+            "start_frame": 11142479,
+            "end_frame": 11143072,
+            "fitted_hz": 7812.515777753914,
+            "fit_residual_rms": 0.01742487137048038,
+            "note": "Short noisy carrier window; approximate frequency, not exact device clock or confidence interval."
+          },
+          "source_window": {
+            "start_frame": 20527,
+            "end_frame": 23180,
+            "cycle_origin_sample": 20357.70738683774
+          }
+        },
+        "right": {
+          "legacy_7800": {
+            "correlation": -0.15013328004256588,
+            "gain_fit": -0.12375737401190055,
+            "gain_fitted_residual_rms": 0.27574506138763644
+          },
+          "legacy_7812_5": {
+            "correlation": 0.5989346713035258,
+            "gain_fit": 0.4937846637934602,
+            "gain_fitted_residual_rms": 0.22334750286741603
+          },
+          "staggered_7812_5": {
+            "correlation": 0.979099984068829,
+            "gain_fit": 0.7887332097313285,
+            "gain_fitted_residual_rms": 0.05672440043827368
+          },
+          "terminal_carrier_measurement": {
+            "start_frame": 11142479,
+            "end_frame": 11143072,
+            "fitted_hz": 7812.5126792991005,
+            "fit_residual_rms": 0.01663733693646124,
+            "note": "Short noisy carrier window; approximate frequency, not exact device clock or confidence interval."
+          },
+          "source_window": {
+            "start_frame": 20527,
+            "end_frame": 23180,
+            "cycle_origin_sample": 20357.717030002263
+          }
+        }
+      }
+    },
+    "baseline-002": {
+      "source_sha256": "9edafa3485c9d621a588e54ae9939015c878986c294f1a41d6e2789cde2379df",
+      "channels": {
+        "left": {
+          "legacy_7800": {
+            "correlation": -0.12194469206341498,
+            "gain_fit": -0.10796050549035846,
+            "gain_fitted_residual_rms": 0.29290394630829086
+          },
+          "legacy_7812_5": {
+            "correlation": 0.5932044209849284,
+            "gain_fit": 0.52509072981311,
+            "gain_fitted_residual_rms": 0.23757592432795838
+          },
+          "staggered_7812_5": {
+            "correlation": 0.9769092162604022,
+            "gain_fit": 0.8004451532622999,
+            "gain_fitted_residual_rms": 0.06305107836278288
+          },
+          "terminal_carrier_measurement": {
+            "start_frame": 11159588,
+            "end_frame": 11160181,
+            "fitted_hz": 7812.415205061728,
+            "fit_residual_rms": 0.017416756906562806,
+            "note": "Short noisy carrier window; approximate frequency, not exact device clock or confidence interval."
+          },
+          "source_window": {
+            "start_frame": 38421,
+            "end_frame": 41074,
+            "cycle_origin_sample": 38251.82930252377
+          }
+        },
+        "right": {
+          "legacy_7800": {
+            "correlation": -0.14327832355290307,
+            "gain_fit": -0.11813400876126358,
+            "gain_fitted_residual_rms": 0.2761266675774855
+          },
+          "legacy_7812_5": {
+            "correlation": 0.5989277972551103,
+            "gain_fit": 0.49397938838129823,
+            "gain_fitted_residual_rms": 0.22342820297401078
+          },
+          "staggered_7812_5": {
+            "correlation": 0.978505711610585,
+            "gain_fit": 0.7886371289952694,
+            "gain_fitted_residual_rms": 0.05753660131172273
+          },
+          "terminal_carrier_measurement": {
+            "start_frame": 11159588,
+            "end_frame": 11160181,
+            "fitted_hz": 7812.412934891034,
+            "fit_residual_rms": 0.016655974113230065,
+            "note": "Short noisy carrier window; approximate frequency, not exact device clock or confidence interval."
+          },
+          "source_window": {
+            "start_frame": 38421,
+            "end_frame": 41074,
+            "cycle_origin_sample": 38251.83965370093
+          }
+        }
+      }
+    },
+    "baseline-003": {
+      "source_sha256": "0a785dd49b36ad4a415820d5deab46877ed493044a4e0fa5774f11e42ae2d6a5",
+      "channels": {
+        "left": {
+          "legacy_7800": {
+            "correlation": -0.10361004777405006,
+            "gain_fit": -0.09174625317637994,
+            "gain_fitted_residual_rms": 0.2935208195886171
+          },
+          "legacy_7812_5": {
+            "correlation": 0.591649525321608,
+            "gain_fit": 0.5236982489618631,
+            "gain_fitted_residual_rms": 0.2379155613042707
+          },
+          "staggered_7812_5": {
+            "correlation": 0.9697268196298333,
+            "gain_fit": 0.7948990406135146,
+            "gain_fitted_residual_rms": 0.07206360612572049
+          },
+          "terminal_carrier_measurement": {
+            "start_frame": 11152757,
+            "end_frame": 11153350,
+            "fitted_hz": 7812.528990579935,
+            "fit_residual_rms": 0.017441046567284395,
+            "note": "Short noisy carrier window; approximate frequency, not exact device clock or confidence interval."
+          },
+          "source_window": {
+            "start_frame": 30846,
+            "end_frame": 33499,
+            "cycle_origin_sample": 30676.699202308635
+          }
+        },
+        "right": {
+          "legacy_7800": {
+            "correlation": -0.15875850553989357,
+            "gain_fit": -0.13092338305305112,
+            "gain_fitted_residual_rms": 0.2754795791764742
+          },
+          "legacy_7812_5": {
+            "correlation": 0.5912531201118956,
+            "gain_fit": 0.4876481365869958,
+            "gain_fitted_residual_rms": 0.22502429478768765
+          },
+          "staggered_7812_5": {
+            "correlation": 0.9685869296852627,
+            "gain_fit": 0.7805627358539989,
+            "gain_fitted_residual_rms": 0.06938542829297467
+          },
+          "terminal_carrier_measurement": {
+            "start_frame": 11152757,
+            "end_frame": 11153350,
+            "fitted_hz": 7812.5271369821685,
+            "fit_residual_rms": 0.016665942836991885,
+            "note": "Short noisy carrier window; approximate frequency, not exact device clock or confidence interval."
+          },
+          "source_window": {
+            "start_frame": 30846,
+            "end_frame": 33499,
+            "cycle_origin_sample": 30676.70993952751
+          }
+        }
+      }
+    }
+  },
+  "interpretation": "Staggered waveform matches these measured windows substantially better. Hardware acceptance remains pending."
+}

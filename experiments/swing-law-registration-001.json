@@ -1,0 +1,46 @@
+{
+  "analysis_version": "swing-law-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-swing-law-001",
+  "source_artifact": "experiments/compiled-sample-window-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "e7e4e3e09ba1a86806f451b94a4a31ec6727431860c2f2984080a090f245429b",
+  "source_capture_sha256": "f708fbf7babea8d22be80eb62fa0b1f92cc004f50bccd9505df7865816a8ab6c",
+  "swing": 18,
+  "click_window": [
+    11719,
+    13719
+  ],
+  "swing6_reference_position": 0.6242009132420091,
+  "plan_sha256": "5ca895932247c91c2326d32cbbc2214f24d3c1fbe09c89a46fd62efe48930f9b",
+  "expected_body_sha256": "70ddcfc3e95ea9220ee008d7ec7c2cf922a8eb72b642dca199e75ab86af465ec",
+  "edited_artifact_sha256": "fbb506bf44d848bb37c580c3f3f91c31d8be1de8b0d80273af5d1a6fd79283d6",
+  "restore_wav_sha256": "067b5ebcda909f87e14a4363454af3bfd3a578b87211e33525e3d6519f86fde8",
+  "method_settings": {
+    "band_hz": [
+      300.0,
+      4000.0
+    ],
+    "envelope_window_seconds": 0.003,
+    "skip_seconds": 0.02,
+    "threshold_fraction": 0.15,
+    "refractory_seconds": 0.04,
+    "steps_per_loop": 16,
+    "loops": 5
+  },
+  "method_script_sha256": "ecab19649dd5681266b10c74714011d89dd578dbd0918ff0d33ee9b2a13890f5",
+  "models_position": {
+    "linear_in_code": 0.8726027397260273,
+    "triplet_at_max": 0.6666666666666666,
+    "three_quarters_at_max": 0.75
+  },
+  "tolerance": 0.02,
+  "max_spread": 0.04,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "A model holds when the five-loop median even-step position is within 0.02 of it and the spread is below 0.04"
+  ],
+  "limits": [
+    "One swing value at 60 BPM; the law between 6 and 18 is interpolated, not measured"
+  ]
+}

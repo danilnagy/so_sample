@@ -1,0 +1,44 @@
+{
+  "analysis_version": "falsified-four-bit-endpoint-to-independent-interior-models-workflow-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "physical_endpoint_observations_pass": true,
+    "maximum_raw_capture_and_artifact_fingerprints_match": true,
+    "minimum_raw_capture_and_artifact_fingerprints_match": true,
+    "both_observations_pinned_in_new_registration": true,
+    "original_four_bit_failure_remains_preserved": true,
+    "old_minimum_prediction_file_remains_unchanged_and_falsified": true,
+    "entire_independent_louder_return_remains_exact": true,
+    "new_broader_mask_preserves_every_other_endpoint_bit": true,
+    "both_orderings_and_enable_alternative_declared_before_data": true,
+    "interior_values_and_bodies_not_guessed": true,
+    "unchanged_maximum_cannot_fake_successful_interior_order": true,
+    "no_gain_units_UI_values_or_volume_writer_inferred": true,
+    "all_three_physical_captures_still_pending": true,
+    "new_registration_remains_software_only": true
+  },
+  "failed_endpoint_results_sha256": "8043c7ecda2a25d949c57602093d109a47c0c94d5c4eb2f14984d82a5d6a3a5e",
+  "new_middle_registration_sha256": "ff0753201362dc33fe9728e1a17c30944560b3948002a8ae99044d34dda05369",
+  "validation": {
+    "affected_tests_passed": 13,
+    "affected_test_seconds": 1.43,
+    "ruff_check_passed": true,
+    "formatted_python_files": 227,
+    "prior_full_suite_before_research_changes": {
+      "passed": 790,
+      "seconds": 90.07
+    },
+    "production_writer_changes_this_turn": false
+  },
+  "implementation_sha256": {
+    "scripts/prepare_sound3_volume_middle_series.py": "5d5172de4cc959e4070f9ae74acc3ae7f1459010d453f2ee2f46c69fa26cdd4d",
+    "scripts/check_sound3_volume_middle_series.py": "190321c0cd7e21fa891d90d17933f5a9b04ee300fe6aacb974392f42e9896fd6",
+    "tests/test_sound3_volume_middle_series.py": "28b8ebe1032bfbd0f4bf2bc1525b90d2d0bfff7c71cecccb643110d7a6ea1742"
+  },
+  "limits": [
+    "Six-bit mask and orderings are new post-endpoint hypotheses; original narrow model stays falsified",
+    "Mechanical bands are auxiliary,not gain/UI calibrations",
+    "No public volume writer; next interior and full-return observations remain pending"
+  ]
+}

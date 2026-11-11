@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "baseline": "event-002-a",
+  "baseline_reused": true,
+  "fresh_a_skipped_by_user": true,
+  "return_control_status": "matched_exactly",
+  "threshold": 0.0063,
+  "pre_registered_prediction": 9501,
+  "channels": {
+    "left": {
+      "baseline_symbols": 1970367,
+      "b_symbols": 1970367,
+      "overlap_symbols": 1970367,
+      "changed_symbols": 1471877,
+      "first_change": 9502,
+      "last_change": 1970366,
+      "tail_symbols": 0,
+      "prediction_matches": false,
+      "alignment_shift": 0
+    },
+    "right": {
+      "baseline_symbols": 1970367,
+      "b_symbols": 1970366,
+      "overlap_symbols": 1970366,
+      "changed_symbols": 1471744,
+      "first_change": 9500,
+      "last_change": 1970365,
+      "tail_symbols": 1,
+      "prediction_matches": false,
+      "alignment_shift": 0
+    }
+  },
+  "prediction_matches_both_channels": false
+}

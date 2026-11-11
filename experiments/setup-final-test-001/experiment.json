@@ -1,0 +1,18 @@
+{
+  "experiment_id": "setup-final-test-001",
+  "kind": "setup_test",
+  "description": "End-to-end check of the cable-swap harness setup: restore, backup verified against the target, and a playback recording that meets the audio protocol. Replays the 6F first-pair restore, accepted on 2026-10-09, because it differs from the single-tone state the device holds now, so an exact match proves the restore landed.",
+  "source_restore": "../edited-pattern1-FX-6F-first-pair-001/restore.wav",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "playback_seconds": 14,
+  "observation_questions": [
+    "Did the PO-33 finish receiving without ERR, and did the pattern play? (Enter to skip)"
+  ],
+  "capture_status": "setup_verified_exact_native_and_usable_playback",
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "hardware_session": "hardware-session-002.json",
+  "result_summary": "Restore with cable swaps landed exactly (backup-03 equals the 6F target, 815 packets). backup-02 was rejected by the echo check (0.14 at 4.5 ms) before the cable swap; playback-02 passed the protocol checks. Session 001 restore did not reach the device (backup equalled the prior single-tone state)."
+}

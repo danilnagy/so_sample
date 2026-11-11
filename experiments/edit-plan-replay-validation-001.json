@@ -1,0 +1,17 @@
+{
+  "analysis_version": "accepted-restore-plan-replay-0.1",
+  "passed": true,
+  "checks": {
+    "compiled_wav_byte_identical_to_accepted_restore": true,
+    "native_body_equals_verified_recapture": true,
+    "copied_plan_hash_matches": true
+  },
+  "restore_wav_sha256": "06b311337489a1176c80bc27172b343dc649ec2bd4c6880ad0d967470527949f",
+  "plan_sha256": "79103c4cfa2e0b82d524c341bc3c254de11860738ccd47eb05eb81d65435ccbd",
+  "hardware_evidence": "edited-nonzero-trim-001/hardware-validation.json",
+  "compiler_report": "compiled-verified-window-001/compile-report.json",
+  "limits": [
+    "This replays the same previously accepted bytes; no new hardware operation was performed",
+    "Other operation combinations require their own appropriate evidence; all library guards remain active"
+  ]
+}

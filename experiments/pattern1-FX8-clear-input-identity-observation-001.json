@@ -1,0 +1,16 @@
+{
+  "analysis_version": "FX8-clear-duplicate-input-identity-0.1",
+  "hardware_verified": false,
+  "byte_identical_WAV_inputs": true,
+  "shared_capture_sha256": "2ab2ebcf08a1f130e274cd05700ef7d6020963e23fc8bd72dca0c5bbfc3c99d1",
+  "capture_paths": [
+    "experiments/event-066-b-pattern1-FX8-recorded/capture.wav",
+    "experiments/event-067-c-pattern1-FX16-clear/capture.wav"
+  ],
+  "native_bodies_equal": true,
+  "both_footers": "7777777777777777",
+  "software_return_report_sha256": "e1f1b3a060f5508c1566ae9a9295699c17f9815186e6c5d8a2f0059d73d98ace",
+  "clear_prediction_adjudicable_from_current_inputs": false,
+  "clear_hardware_verified": false,
+  "interpretation": "Retain the original report and duplicate raw WAV unchanged; its failed clear-footer comparison is not independent evidence against the clearing model; obtain the actual clear recording in a fresh folder"
+}

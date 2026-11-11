@@ -1,0 +1,51 @@
+{
+  "analysis_version": "exact-first-pair-native-and-inconclusive-audio-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact fixed first-pair native target received; all nonfooter state and global7 preserved; pair audio result is inconclusive",
+  "checks": {
+    "source_body_is_exact_accepted_mixed": true,
+    "source_and_actual_native_valid": true,
+    "footer_matches_fixed_first_pair_probe": true,
+    "only_eight_Pattern1_footer_bytes_changed": true,
+    "global131_stays7": true,
+    "target_body_matches_registration": true,
+    "entire_actual_body_and_packets_match_target": true,
+    "capture_artifact_registration_pins_match": true,
+    "capture_not_clipped": true,
+    "playback_raw_identity_and_no_clipping": true,
+    "export_hashes_and_native_body_exact": true
+  },
+  "capture_sha256": "7059ea455c81a88f145285096ece3155d04c48d66e76e85166635e1bea0a961f",
+  "artifact_sha256": "bcc75c587bda05f3c3d93faf610fbe83a2147252ef5dbf3c2d2ef4029bb19d33",
+  "artifact_path": "experiments/edited-pattern1-FX-F6-first-pair-001/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "93b7135678ba383f5c18c32d90c7d5c6f277d2872b4307f85321d41d64d15e6b",
+  "native_results_sha256": "646f629b531be80999f74fcbb589ce0ef0c8328acfcc6701f0054fb5e4c2eec5",
+  "manual_observation_sha256": "a6536b52dd9a3a732725a1c3a313d1a3c11e337214be1c0379adb31f567d5482",
+  "audio_results_sha256": "65117f4b241ce3a3473483b0d786b737d9b1314ebae0c8df7236bc1a10fb580f",
+  "playback_sha256": "b16e19838a1d1d871f162c7bee8c42e426747222950ccc8ce08e0396aa4c6e6c",
+  "audio_comparison_sha256": "a3de495cc19ccb0c75a3540fe9ed2c14981b67e167661e126fbd70fd143a4059",
+  "audio_method_usable_for_this_leg": true,
+  "pair_order_classification": "inconclusive",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.15057373046875,
+      0.14703369140625
+    ]
+  },
+  "playback_level": {
+    "sample_rate_hz": 44100,
+    "duration_seconds": 20.67997732426304,
+    "peaks_per_channel": [
+      0.131103515625,
+      0.12554931640625
+    ]
+  },
+  "per_step_nibble_order_confirmed": false,
+  "general_per_step_FX_writer_enabled": false,
+  "limits": [
+    "Hardware verification covers exact native reception and literal recorded evidence, not a nibble-order conclusion",
+    "A first-tone fits pass; B first-tone fit quality/span fail; no valid frequency ratio exists under the frozen method",
+    "Keep all failed/unused fits and original comparison unchanged; do not tune the method or substitute later notes"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "edited-sound3-filter63-center-001",
+  "capture_status": "validated_exact_public_filter63_reception_and_unfiltered_listening",
+  "registration": "../sound3-generated-filter63-center-registration-001.json",
+  "restore_file": "restore.wav",
+  "hardware_restore": {
+    "status": "verified_complete_native_target_and_user_unfiltered_confirmation"
+  },
+  "planned_actions": [
+    "Restore with established stereo setup and playback level, keeping both knobs and recording settings unchanged",
+    "Before ordinary playback save full capture.wav here at established reduced recording level with one second trailing silence",
+    "Select Pattern1/Sound3/FILTER without knob movement; play with write off and report whether the whole sample sounds unfiltered, then stop",
+    "No WRITE-held pass or separate playback.wav needed"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-generated-filter63-001/project.json"
+}

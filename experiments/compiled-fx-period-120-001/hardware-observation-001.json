@@ -1,0 +1,52 @@
+{
+  "analysis_version": "fx-period-120-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of five looping effects at 120 BPM, and whether their periods halved",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_measurements": true,
+    "decision_binds_measurements": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "hypotheses": {
+    "exact_reception": true,
+    "control_has_no_period": true
+  },
+  "effects": {
+    "1": {
+      "pattern": 1,
+      "period_ms": 120.0,
+      "mismatch": 0.21495327102803738
+    },
+    "2": {
+      "pattern": 2,
+      "period_ms": null,
+      "mismatch": 0.06956521739130435
+    },
+    "3": {
+      "pattern": 3,
+      "period_ms": null,
+      "mismatch": 0.07964601769911504
+    },
+    "4": {
+      "pattern": 4,
+      "period_ms": 80.0,
+      "mismatch": 0.15315315315315314
+    },
+    "12": {
+      "pattern": 5,
+      "period_ms": null,
+      "mismatch": 0.031914893617021274
+    }
+  },
+  "decision_sha256": "dc3c614e0044acb32acba0f8bc83a7927c93f9ddf23538b055cd709781ea2837",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "7ed924858240966d5c91fdb36435e6f6b30179ce6d0ea1e2ba242fb2a09de3ce",
+  "session_answers": [],
+  "limits": [
+    "Two tempos, 60 and 120; intermediate tempos are not measured"
+  ]
+}

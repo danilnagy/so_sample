@@ -1,0 +1,25 @@
+{
+  "analysis_version": "physical-shared-sound6-deletion-native-evidence-0.1",
+  "hardware_observed": true,
+  "verified_scope": "Physical deletion of this Sound6 owner clears selector5 and transfers all32768 codes to self-owned Sound7/selector6, retaining every unrelated packet",
+  "results_sha256": "4377905436c7a7695bd4356827520bf5af4413723cf3150edd839d37e68799a7",
+  "manual_observation_sha256": "9d9f50c9713d13cb258de64dcc09cbae6b541877f555374256201fa2b218691e",
+  "capture_sha256": "85944505d73d4a6097800da7220bf34badec35633286e1a2771476b9479c9c7b",
+  "artifact_sha256": "678e5c3cf51029b1278ee7023306d60de584d2dbd7b49b6df5de7e9869167371",
+  "body_sha256": "15122b45a12cbe4ceab6ad4f5c5f7c5980f41ef772a9ed10ba7350e29edac4f1",
+  "checks": {
+    "all_core_controls_pass": true,
+    "entire_predicted_transfer_body_matches": true,
+    "full_and_used_buffer_preserved": true,
+    "all_unrelated_packets_preserved": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_raw_body_matches": true,
+    "retained_sound7_preview_pcm_matches_prior_window": true
+  },
+  "exported_content_files_checked": 32,
+  "audible_checks": "Not separately confirmed; raw window and decoded preview preservation independently verified",
+  "limits": [
+    "This is physical deletion evidence, not a newly performed generated deletion restore or proof of every shared-owner policy"
+  ]
+}

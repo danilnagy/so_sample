@@ -1,0 +1,24 @@
+{
+  "experiment_id": "event-053-d-return-sound3-tone-pitch-lock-minimum",
+  "capture_status": "validated_exact_raw1_minimum_return",
+  "registration": "../sound3-tone-pitch-range-registration-001.json",
+  "registered_leg": {
+    "experiment_id": "event-053-d-return-sound3-tone-pitch-lock-minimum",
+    "knob_action": "recorded_A_counterclockwise_to_physical_minimum",
+    "expected_endpoint_code": 1,
+    "expected_complete_body_sha256": "227d4d25e644c83f2d8e89d2a4135125f8cb926082983a81b4842de21e654fc2"
+  },
+  "planned_actions": [
+    "Keep Pattern1/Sound3/TONE, B and all audio settings unchanged",
+    "While Pattern1 plays hold WRITE and turn only A to this leg's physical endpoint over about5 seconds",
+    "Hold WRITE3 more seconds stationary, release WRITE, stop playback and ensure write off",
+    "Save a complete capture.wav at established reduced level with one second tail; save the maximum capture before beginning the minimum return",
+    "Report audible pitch direction and any display text actually seen; after final return leave A at minimum and B untouched"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "../sound3-tone-pitch-range-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "pitch_field_writer_enabled": false,
+  "project": "../exported-sound3-tone-pitch-return-minimum-001/project.json"
+}

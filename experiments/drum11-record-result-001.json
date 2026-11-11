@@ -1,0 +1,459 @@
+{
+  "analysis_version": "drum11-record-result-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "7209819be20d06b8f0af1d073b267500cc7222d10214219b70b0ff02675702b1",
+  "capture_sha256": "b3fe95e64af95536f9c439b6bfde0fb459cc35e8387b8b7665f058a05ee58338",
+  "artifact_sha256": "4b6294d7c117d05c600d1980c6ae80c35013f2602a784a6da3803058a8a94eb4",
+  "owner_sound_id": 40,
+  "owner_capacity_codes": 102400,
+  "owner_header": {
+    "start": 0,
+    "end": 3066,
+    "owner": 40
+  },
+  "slice_references": {
+    "40": {
+      "start": 0,
+      "end": 3066,
+      "owner": 40
+    },
+    "41": {
+      "start": 3066,
+      "end": 5886,
+      "owner": 40
+    },
+    "42": {
+      "start": 5886,
+      "end": 8949,
+      "owner": 40
+    },
+    "43": {
+      "start": 8949,
+      "end": 11762,
+      "owner": 40
+    },
+    "44": {
+      "start": 11762,
+      "end": 14527,
+      "owner": 40
+    },
+    "45": {
+      "start": 14527,
+      "end": 17649,
+      "owner": 40
+    },
+    "46": {
+      "start": 17649,
+      "end": 20434,
+      "owner": 40
+    },
+    "47": {
+      "start": 20434,
+      "end": 23540,
+      "owner": 40
+    },
+    "48": {
+      "start": 23540,
+      "end": 26321,
+      "owner": 40
+    },
+    "49": {
+      "start": 26321,
+      "end": 29432,
+      "owner": 40
+    },
+    "50": {
+      "start": 29432,
+      "end": 32248,
+      "owner": 40
+    },
+    "51": {
+      "start": 32248,
+      "end": 35321,
+      "owner": 40
+    },
+    "52": {
+      "start": 35321,
+      "end": 38141,
+      "owner": 40
+    },
+    "53": {
+      "start": 38141,
+      "end": 40920,
+      "owner": 40
+    },
+    "54": {
+      "start": 40920,
+      "end": 44030,
+      "owner": 40
+    },
+    "55": {
+      "start": 44030,
+      "end": 101824,
+      "owner": 40
+    }
+  },
+  "slice_windows": [
+    [
+      0,
+      3066
+    ],
+    [
+      3066,
+      5886
+    ],
+    [
+      5886,
+      8949
+    ],
+    [
+      8949,
+      11762
+    ],
+    [
+      11762,
+      14527
+    ],
+    [
+      14527,
+      17649
+    ],
+    [
+      17649,
+      20434
+    ],
+    [
+      20434,
+      23540
+    ],
+    [
+      23540,
+      26321
+    ],
+    [
+      26321,
+      29432
+    ],
+    [
+      29432,
+      32248
+    ],
+    [
+      32248,
+      35321
+    ],
+    [
+      35321,
+      38141
+    ],
+    [
+      38141,
+      40920
+    ],
+    [
+      40920,
+      44030
+    ],
+    [
+      44030,
+      101824
+    ]
+  ],
+  "hypotheses": {
+    "new_self_owned_buffer": true,
+    "sixteen_references": true,
+    "equal_split": false,
+    "everything_else_unchanged": true
+  },
+  "all_changes": {
+    "identical_body": false,
+    "packet_counts": [
+      951,
+      1391
+    ],
+    "change_count": 16,
+    "changes": [
+      {
+        "region": "sound",
+        "sound_id": 40,
+        "slot_hint": {
+          "slot": 11,
+          "key": 1,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 0,
+            "end": 3066,
+            "owner": 40
+          }
+        },
+        "sample_codes": {
+          "lengths": [
+            0,
+            102400
+          ],
+          "changed_in_overlap": 0,
+          "first_changed_offset": null,
+          "last_changed_offset": null
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 41,
+        "slot_hint": {
+          "slot": 11,
+          "key": 2,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 3066,
+            "end": 5886,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 42,
+        "slot_hint": {
+          "slot": 11,
+          "key": 3,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 5886,
+            "end": 8949,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 43,
+        "slot_hint": {
+          "slot": 11,
+          "key": 4,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 8949,
+            "end": 11762,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 44,
+        "slot_hint": {
+          "slot": 11,
+          "key": 5,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 11762,
+            "end": 14527,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 45,
+        "slot_hint": {
+          "slot": 11,
+          "key": 6,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 14527,
+            "end": 17649,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 46,
+        "slot_hint": {
+          "slot": 11,
+          "key": 7,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 17649,
+            "end": 20434,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 47,
+        "slot_hint": {
+          "slot": 11,
+          "key": 8,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 20434,
+            "end": 23540,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 48,
+        "slot_hint": {
+          "slot": 11,
+          "key": 9,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 23540,
+            "end": 26321,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 49,
+        "slot_hint": {
+          "slot": 11,
+          "key": 10,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 26321,
+            "end": 29432,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 50,
+        "slot_hint": {
+          "slot": 11,
+          "key": 11,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 29432,
+            "end": 32248,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 51,
+        "slot_hint": {
+          "slot": 11,
+          "key": 12,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 32248,
+            "end": 35321,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 52,
+        "slot_hint": {
+          "slot": 11,
+          "key": 13,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 35321,
+            "end": 38141,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 53,
+        "slot_hint": {
+          "slot": 11,
+          "key": 14,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 38141,
+            "end": 40920,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 54,
+        "slot_hint": {
+          "slot": 11,
+          "key": 15,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 40920,
+            "end": 44030,
+            "owner": 40
+          }
+        }
+      },
+      {
+        "region": "sound",
+        "sound_id": 55,
+        "slot_hint": {
+          "slot": 11,
+          "key": 16,
+          "verified": false
+        },
+        "header": {
+          "old": null,
+          "new": {
+            "start": 44030,
+            "end": 101824,
+            "owner": 40
+          }
+        }
+      }
+    ]
+  }
+}

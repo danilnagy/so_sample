@@ -1,0 +1,22 @@
+{
+  "analysis_version": "verified-pitch13-reference-to-pitch14-handoff-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "entire_native_target_and_preservation_checks_pass": true,
+    "capture_artifact_and_registration_pins_match": true,
+    "all_six_frozen_frequency_measurements_pass": true,
+    "ordinary_audio_identity_and_frozen_parameters_match": true,
+    "backup_recording_not_clipped": true,
+    "all_export_content_hashes_and_checks_pass": true,
+    "complete_export_body_exact": true,
+    "both_prepared_artifacts_waves_and_reports_remain_registered": true,
+    "candidate_backup_and_audio_still_pending": true
+  },
+  "pair_registration_sha256": "164a99c14a96e7e96f4ffea2b3e35e5f7ea7316647600075dd0291aa87f14110",
+  "reference_hardware_observation_sha256": "51b9648e68ca972699bdce27e5a9d60de8c518398f2b9a5ef88f2e6700b24579",
+  "native_results_sha256": "eb47a672ef3050139101a99d276332999a68d5226db65076a962b5697c69bb26",
+  "frequency_results_sha256": "788db32c3fcd6cebe8c691ca1340a74e1a09c0ce4341c53ab8651216bddd185b",
+  "candidate_hardware_verified": false,
+  "pitch_field_writer_enabled": false
+}

@@ -1,0 +1,53 @@
+{
+  "analysis_version": "selected-pattern-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of a written Pattern5 selected through global byte 0, and which pattern plays",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "pattern5_selected",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": -0.004559958569159858,
+    "3": -150.01716923170363,
+    "4": -149.98056480985332,
+    "5": -299.9928335392381,
+    "6": -299.9929115893301,
+    "7": -450.05973891628884,
+    "8": -450.0529474881437,
+    "9": -600.0640290982545,
+    "10": -600.0729044524069,
+    "11": -750.0680424199102,
+    "12": -750.0632272687698,
+    "13": -900.0686165541244,
+    "14": -900.0525093564333,
+    "15": -1050.0677678408697,
+    "16": -1050.0626016806607
+  },
+  "absolute": {
+    "cents_vs_models": {
+      "pattern5_selected": 0.2777331406385011,
+      "pattern1_plays": 1050.277179592379
+    },
+    "classification": "pattern5_selected"
+  },
+  "decision_sha256": "a2ad10f7ae2ba47cfa81d0e84960ae1586ba9a65e5e51b1908bcae711fa8d3f0",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "d1e9068610753d2cd3b226bd033c34a2dba5627052c26a9a16b83c8f1f249e77",
+  "session_answers": [
+    {
+      "question": "Did the pattern play eight falling notes? Did you need to press anything besides play? (Enter to skip)",
+      "answer": "yes falling notes, no press anything"
+    }
+  ],
+  "limits": [
+    "One pattern (5) selected by byte 0; other patterns and pattern chains are not tested",
+    "Playback starts with the play button only, right after the backup"
+  ]
+}

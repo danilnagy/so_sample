@@ -1,0 +1,35 @@
+{
+  "analysis_version": "imported-last-owner-deletion-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "Physical removal of unshared Sound7/end17579 clears all 32768 backing codes and recovers the complete independently genuine earlier state",
+  "recapture_results_sha256": "826fde0ea6346b702a3df1e46df32c50d19f268e04d53ff6a119982870aeffdf",
+  "manual_observation_sha256": "75ae7b78590abc125d118e505caa0b5cbf21d6cc5f30440d71ecac41eee605f7",
+  "capture_sha256": "32c8fd9150f4884c45fce6e3bcd5679477b1a6bc75932f03f64071c63e84a5a3",
+  "artifact_sha256": "5aa1c2ac9326d2ebdec439b7dc1811e917aaf9b780c0b4c8f8d043db1e557407",
+  "artifact_path": "experiments/event-029-b-delete-imported-unshared-sound7/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "checks": {
+    "all_native_controls": true,
+    "all_removal_hypotheses": true,
+    "retained_full_owner_alternative_rejected": true,
+    "complete_body_recovers_independent_earlier_capture": true,
+    "user_deletion_and_auditions_confirmed": true,
+    "capture_and_artifact_hashes_match": true,
+    "all_export_content_hashes_match": true,
+    "export_complete_native_body_matches": true,
+    "prediction_report_remains_software_only": true,
+    "capture_not_clipped": true
+  },
+  "exported_content_files_checked": 31,
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peak_per_channel": [
+      0.16455078125,
+      0.158416748046875
+    ]
+  },
+  "limits": [
+    "These two verified endpoints and 32768-code lifecycle contexts remain bounded; arbitrary slots, allocation and physical RAM reclamation are not established"
+  ]
+}

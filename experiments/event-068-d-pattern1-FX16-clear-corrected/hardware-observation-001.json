@@ -1,0 +1,35 @@
+{
+  "analysis_version": "corrected-FX16-clear-native-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Distinct corrected input verifies the original FF footer clear prediction and independent no-FX state except global131; global131 is 7",
+  "checks": {
+    "source_body_matches_registration": true,
+    "actual_native_controls_pass": true,
+    "independent_baseline_body_matches_registration": true,
+    "clear_footer_matches_original_prediction": true,
+    "footer_plus_global_low4_scope_preserved": true,
+    "clear_matches_independent_baseline_except_global131": true,
+    "clear_prediction_adjudicable_from_input": true,
+    "capture_artifact_pins_match": true,
+    "capture_not_clipped": true,
+    "export_hashes_and_entire_native_body_exact": true
+  },
+  "entire_original_no_FX_body_equal_diagnostic": false,
+  "global_byte_after": 7,
+  "capture_sha256": "1ca827fcb8106d870581f786d24a2e20054c90a6925ab5bcd506efcd3ea38be2",
+  "artifact_sha256": "bb5b8d210c4b5105ca96c3802a23c21b800f579cdf11f0fee6b2cd5f77ac4764",
+  "artifact_path": "experiments/event-068-d-pattern1-FX16-clear-corrected/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+  "native_results_sha256": "7666d5969a25af0b5d3600013a8629d45f324b7a1c73dd793fd8ea748afee748",
+  "registration_sha256": "7d036a506c3bffa96ec74a3a39cf9a7bf71ed588c4dfae3a3a206d1990ffb0fc",
+  "manual_observation_sha256": "5be18e1b60a711dc67c041faf7ee64b2038bba659028d0659ddc412403abf814",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.13592529296875,
+      0.132476806640625
+    ]
+  },
+  "global_role_or_nibble_order_confirmed": false,
+  "FX_writer_enabled": false
+}

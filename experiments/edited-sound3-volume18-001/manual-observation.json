@@ -1,0 +1,10 @@
+{
+  "user_report": "done. I honestly can't tell if it's louder or quieter because i don't remember the baseline and don't want to guess, but if I had to guess I would say louder",
+  "restore_completion_confirmed_in_requested_context": true,
+  "relative_loudness_confirmed": false,
+  "tentative_guess": "louder",
+  "interpretation": "User explicitly cannot reliably compare loudness from memory; tentative guess is retained without treating it as a confirmed directional observation",
+  "numeric_display_reported": null,
+  "capture_sha256": "8add5105828abe2e8aa32fbe8b69ef359bffb47d533afb15273c95697bd7d6b5",
+  "playback_sha256": "25769e865ab9e2e5ef313f041ee932117b3cd2617639550e10d3a6225c9c9c93"
+}

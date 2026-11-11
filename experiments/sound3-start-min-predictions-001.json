@@ -1,0 +1,57 @@
+{
+  "analysis_version": "sound3-nonzero-start-minimum-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_id": "event-012-b-sound3-start",
+  "baseline_source_sha256": "24502f734e1d9170a1c5a4ac89d104fafeec3514478f39749919521336f68673",
+  "baseline_body_sha256": "4b697a34bea74f34654107463a9586afe31e9db1b55bf11f4f057f6e7f72ddc2",
+  "baseline_artifact_sha256": "e569b316e6f67a880206ab17bc6c1839f571fa8b93a985e4b3357f73175d35f7",
+  "baseline_artifact": "../event-012-b-sound3-start/derived/analysis-001/capture.symbols.npz",
+  "target_capture": "event-013-b-sound3-start-min/capture.wav",
+  "expected_change": {
+    "sound_slot": 3,
+    "parameter": "TRIM knob B minimum length",
+    "knob_A": "Untouched at the recorded nonzero start"
+  },
+  "control_checks": {
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "sound3_reference_packet_index": 375,
+    "sound3_reference_before_hex": "a17a0000ffff000000",
+    "sound3_record_size": 9,
+    "sound3_owner_id": 0,
+    "only_allowed_payload_offsets": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "first_field_unchanged": 31393,
+    "patterns": "All16 payloads identical",
+    "backing_samples": "All65536 codes and other sound headers/data identical",
+    "other_plain_packets": "Only the existing Sound3 reference may change; no allocation or ownership changes"
+  },
+  "independent_zero_start_minimum_anchor": {
+    "capture": "empty-001-f-sound3-trim-min/capture.wav",
+    "capture_sha256": "09d7f911938ac6c4c21264db92c894db40895b2b18ea6ca324c345ac7eac7d70",
+    "reference_header_hex": "000000004f00000000",
+    "observed_second_field": 79
+  },
+  "separately_evaluated_hypotheses": {
+    "second_field_is_length": {
+      "expected_value": 79,
+      "interpretation": "Minimum second field independent of nonzero start"
+    },
+    "second_field_is_endpoint": {
+      "expected_value": 31472,
+      "expected_second_minus_first": 79,
+      "interpretation": "Absolute second field preserving the previously observed minimum raw width"
+    }
+  },
+  "limits": [
+    "The current65535 field has unknown meaning and is not treated as a validated end or length",
+    "Preservation checks and alternative hypotheses are evaluated separately; other values remain failures of these predictions",
+    "Inclusive versus exclusive endpoint is not resolved by a stored minimum difference alone",
+    "No nonzero-start sample extractor or writer is enabled; no generated restore is requested",
+    "Measured-clock decoding, if needed, must not use expected payload values"
+  ]
+}

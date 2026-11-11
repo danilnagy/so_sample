@@ -1,0 +1,36 @@
+{
+  "analysis_version": "verified-FILTER-range-to-center-and-frozen-audio-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "both_hardware_observations_and_range_checks_pass": true,
+    "both_capture_artifact_manual_and_result_hashes_match": true,
+    "source_capture_artifact_and_observation_pins_match": true,
+    "current_raw_projections_pitch_and_volume_read_back": true,
+    "endpoint_confirmation_retained_without_midpoint_or_digital_zero_claim": true,
+    "all_export_content_hashes_and_complete_native_reconstruction_pass": true,
+    "prior_audio_pins_and_original_common_method_unchanged": true,
+    "center_is_preregistered_with_unknown_code_and_pending_files": true
+  },
+  "range_results_sha256": "c54a70f0b2754e4d0577e5f95fb2c5eb3917bbb78ebd7336710b6f73c95a9461",
+  "center_registration_sha256": "a154f538a4a7b4cc169e1228effbcc5521168b93df11b2f65fb26a36b900b95f",
+  "current_hardware_observation_sha256": "d3d4f2067dd67089ce08f3faa2687a4e8c7b266782b6c6f61627995e37f0cdad",
+  "center_script_sha256": {
+    "scripts/prepare_sound3_filter_center.py": "4696384bc86a47eaa0ad42ca4e4e83ae5bd12255d11147cd724a5e280a63c55e",
+    "scripts/check_sound3_filter_center.py": "8a44ff2079148e16dd3d2dc8adfa87c802ad1d68e165872f9d8a4e2ec36aba63",
+    "scripts/sound3_filter_center_audio.py": "578f9ba1080f4d5731680dc8ae9b776894f49f73e3a5b5bdf8f704e3696a0f79",
+    "tests/test_sound3_filter_center.py": "c5803571b26b1723edd3685593ae00b2a53b7c04f4a4401710ef3461d2459f4d"
+  },
+  "focused_tests_passed": 53,
+  "last_full_regression_tests_passed": 917,
+  "production_writer_changed": false,
+  "filter_writer_enabled": false,
+  "limits": [
+    "Interior raw value and whole target body are unknown;31/32 or uniformity are not predicted",
+    "Raw between-endpoint tests concern two monotonic scalar interpretations only; passing/failing them does not settle all mode/flag models",
+    "Reference audio already exists from before FILTER recording; new comparison is registered before center data, with the original common frequency method unchanged",
+    "Near-reference tone amplitude is a5% hypothesis at the repeated component, not proof of broadband bypass or a complete filter law",
+    "Tone frequency and loop must stay consistent; failures or ramps are retained without fitting new windows, thresholds or endpoint codes",
+    "No numeric UI, digital silence, resonance or filter writer is inferred; other third-byte bits stay opaque"
+  ]
+}

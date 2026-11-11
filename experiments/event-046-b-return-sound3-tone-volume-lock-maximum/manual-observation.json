@@ -1,0 +1,9 @@
+{
+  "user_report": "done and confirmed the sample sounded lower in first recording than second",
+  "stage": "maximum_return",
+  "relative_loudness": "higher_than_first",
+  "interpretation": "Lower interpreted as quieter in the preceding volume-control context; no pitch stability,exact gain or silence inferred",
+  "display_text": null,
+  "numeric_display_value_reported": false,
+  "capture_sha256": "12630614bdd5b3a1b3666b3b2abe4505752ddc5db99682ed43afbd454e4d496f"
+}

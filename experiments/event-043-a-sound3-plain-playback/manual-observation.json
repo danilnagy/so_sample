@@ -1,0 +1,9 @@
+{
+  "user_report": "sound 3 became louded, recordings uploaded",
+  "stage": "plain_playback",
+  "audible_observation_applies_to_this_capture": false,
+  "audition_result": null,
+  "display_text": null,
+  "exact_gain_or_maximum_number_reported": false,
+  "capture_sha256": "f3c9325a292e7a90ce33a43e6330dd57f623bc71917f48dd231b3514714fbb92"
+}

@@ -1,0 +1,37 @@
+{
+  "analysis_version": "sound3-live-volume-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Selection-only and stopped/write-off minimum-TONE-volume captures match the prior complete project; user independently reports Sound3 quieter but not silent after minimum action",
+  "volume_writer_verified": false,
+  "volume_field_located": false,
+  "minimum_numeric_value_confirmed": false,
+  "audition_result": "quieter_not_silent",
+  "checks": {
+    "original_WAV_and_artifact_fingerprints_match": true,
+    "all_native_controls_pass": true,
+    "selection_and_minimum_bodies_equal_prior_joint_state": true,
+    "all_sample_pattern_and_global_bytes_preserved": true,
+    "tempo100_and_swing9_preserved": true,
+    "capture_not_clipped": true,
+    "complete_export_body_exact": true
+  },
+  "capture_sha256": "5d337282151d712d9b228813102747ed453de5e65d2736186c96e757f125d2c1",
+  "artifact_sha256": "2a1a4fff11b528ec32758a0d9178bbf5cb49441b983f7ff6bc451b3ac6f4c550",
+  "artifact_path": "experiments/event-042-b-sound3-tone-volume-minimum/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "1dab085d95629db191991a089c9e4e67f56fc2a7dd571b1674fa8dbce144e551",
+  "native_results_sha256": "0917232a83c5392c1394863d5ffd7369142641a3887ca00406d0426f9d2c1d68",
+  "manual_observation_sha256": "3ff68ae00f6590563d45c3d00caf77bef7b53853a6488cbbdb58e47ea7369f42",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.159759521484375,
+      0.152984619140625
+    ]
+  },
+  "limits": [
+    "Audible gain is relative user evidence, not a calibrated amplitude measurement",
+    "No exact minimum number or silence claimed",
+    "Unchanged backup under these conditions does not establish every live-volume persistence or parameter-lock behavior",
+    "Exported samples retain unchanged raw data and do not reproduce the quieter live gain"
+  ]
+}

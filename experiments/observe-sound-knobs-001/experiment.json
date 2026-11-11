@@ -1,0 +1,20 @@
+{
+  "experiment_id": "observe-sound-knobs-001",
+  "kind": "device_side_observation_after_restore",
+  "capture_status": "validated_knob_observation_nothing_stored",
+  "restore_file": "restore.wav",
+  "source_artifact": "../compiled-no-lock-001/edited.symbols.npz",
+  "registration": "../sound-knobs-registration-001.json",
+  "playback_seconds": 0,
+  "observation_questions": [
+    "Which parameter names did the screen show for knobs A and B, and which way did you turn each? (Enter to skip)",
+    "Anything else you noticed? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "restored_known_state_before_device_action"
+  },
+  "analysis": "derived/analysis-001",
+  "result": "../sound-knobs-result-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-sound-knobs-001/project.json"
+}

@@ -1,0 +1,38 @@
+{
+  "paths": [
+    {
+      "computer_output": "left",
+      "recorded_input": "left",
+      "direct_strength": 0.06274892566725689,
+      "direct_latency_ms": 242.6530612244898
+    },
+    {
+      "computer_output": "right",
+      "recorded_input": "right",
+      "direct_strength": 0.004005610339570209,
+      "direct_latency_ms": 242.67573696145126
+    }
+  ],
+  "direct_return_found": false,
+  "echo_detected": null,
+  "message": "The probe did not come back through the PO-33. Check that it is switched on, both cables are connected, and the volumes are up. A MIX pot turned fully to the input side also mutes computer playback.",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 1,
+      "name": "Microphone (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    },
+    "output": {
+      "index": 5,
+      "name": "Headphones (2- HD USB Audio Dev",
+      "hostapi": "MME"
+    }
+  },
+  "stream_status_flags": [],
+  "probe": {
+    "seconds": 0.2,
+    "level": 0.05,
+    "sample_rate_hz": 44100
+  }
+}

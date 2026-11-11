@@ -1,0 +1,22 @@
+{
+  "validation_id": "native-pattern-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-native-pattern-001 -p no:cacheprovider",
+    "passed": 193,
+    "failed": 0,
+    "duration_seconds": 47.41,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 76
+  },
+  "sample_hardware_validation": "edited-sample-001/hardware-validation.json",
+  "sample_replacement_hardware_verified": true,
+  "native_pattern_analysis": "native-pattern-controls-001.json",
+  "pattern_reconstruction_evidence": "Retrospective software reconstruction, not hardware restore",
+  "next_device_control": "event-007-b-melodic/experiment.json",
+  "pattern_edit_hardware_verified": false
+}

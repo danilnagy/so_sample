@@ -1,0 +1,7 @@
+{
+  "user_report": "done and confirmed I can hear the octave effect",
+  "audible_octave_effect_confirmed": true,
+  "explicit_direction_or_numeric_ratio_confirmation": null,
+  "interpretation": "Octave effect heard in the requested octave-up restore context; user does not separately state direction or measured frequency ratio",
+  "capture_sha256": "ce7b88d7590d6704209f21080910210daac1c1c02f124265d90c6c0914a2439e"
+}

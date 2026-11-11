@@ -1,0 +1,31 @@
+{
+  "analysis_version": "key2-to-second-sample-workflow-audit-0.1",
+  "key2_results_sha256": "d2e0e3cb938dd74ef6dcda91910e0054aba543c2d38976b734d0cc39477fd190",
+  "next_registration_sha256": "db741fe8aa85a8243bc8d0b4821bccfa122025c3fb6439b86c644c60611b93b3",
+  "project": "exported-drum10-key2-note-001/project.json",
+  "exported_content_files_checked": 29,
+  "checks": {
+    "key2_preservation_and_exact11_prediction_pass": true,
+    "failed_melodicF1_prediction_preserved": true,
+    "accepted_source_files_preserved": true,
+    "all_project_files_and_source_copies_match": true,
+    "whole_raw_project_body_matches": true,
+    "only_recorded_key_projection_broadened": true,
+    "allocation_baseline_identity_matches": true,
+    "sound4_independently_checked_empty": true,
+    "source_tone_hash_and_format_match": true,
+    "source_tone_frequency_and_stereo_match": true,
+    "next_control_registered_before_capture": true,
+    "export_remains_software_only": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "validation": {
+    "targeted_tests": "55 passed in 6.30s",
+    "ruff_check": "passed",
+    "ruff_format": "141 files formatted",
+    "initial_test_attempt": "Automatic permission review timed out before execution",
+    "sandbox_attempt": "Windows WinError5 prevented temporary fixtures and cleanup"
+  },
+  "next_required_user_action": "Record the prepared ordinary tone into empty Sound4; capture before audition/playback, then confirm Sound4 tone"
+}

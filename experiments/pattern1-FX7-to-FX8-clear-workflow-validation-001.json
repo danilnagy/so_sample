@@ -1,0 +1,37 @@
+{
+  "analysis_version": "verified-FX7-strict-failure-to-new-footer-global-controls-handoff-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "current_literal_hardware_scope_and_all_source_pins_pass": true,
+    "original_strict_failure_retained_without_relabeling": true,
+    "two_field_model_is_post_observation_and_pinned": true,
+    "all_export_hashes_and_full_native_body_exact": true,
+    "new_scopes_explicitly_revised_after_first_data": true,
+    "both_future_global_values_unknown_and_footer_predictions_registered": true,
+    "independent_original_baseline_pinned_and_within_new_declared_scope": true,
+    "both_new_captures_pending_and_no_public_FX_writer": true
+  },
+  "current_hardware_observation_sha256": "754c6b769b9e959a9834b1f1f2c4a60073d4f60d8da934e52a6e729bf1bc138b",
+  "return_registration_sha256": "9791bb3a7902b8dbf946ae90ea7c464fd85f040ad71ab1fbadf4de926840ff30",
+  "new_code_sha256": {
+    "scripts/prepare_pattern1_fx_return_controls.py": "3e2747bc2332c7562bbff3ce51a2deaf8404a3563a922507a4b3ac98caf64d67",
+    "scripts/check_pattern1_fx_return_controls.py": "13be0fd4fbb5f4995579013227bdbe93b4d2570a11c788d82f42b4f81641c955",
+    "tests/test_pattern1_fx_return_controls.py": "11b2afb3168d46188ec48b7391f3e610dbafed1b98a1679402e14140b1a04cc0"
+  },
+  "focused_tests_passed": 56,
+  "last_full_regression_tests_passed": 1137,
+  "production_writer_changed": false,
+  "FX_writer_enabled": false,
+  "next_captures": [
+    "event-066-b-pattern1-FX8-recorded",
+    "event-067-c-pattern1-FX16-clear"
+  ],
+  "limits": [
+    "Original footer-only FX7 prediction failed due to global byte131 0-to9; original report remains immutable; footer-plus-global masks are new hypotheses registered before these captures",
+    "Global byte131 meaning and both new values are unknown; low-four and whole-byte scopes remain separate, with all other fields exact",
+    "FX8 raw7 and clear raw15 are new footer hypotheses, not pre-existing full effect-map facts; failures/mixed values remain literal without averaging",
+    "Clear should match the independent no-FX state except the explicitly unknown global byte131; full original-body equality is an additional diagnostic, not a guessed global-byte target",
+    "Nibble order remains unresolved for uniform vectors; no exact whole FX8 body, public FX writer or full map is predicted"
+  ]
+}

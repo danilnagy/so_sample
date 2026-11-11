@@ -1,0 +1,54 @@
+{
+  "experiment_id": "empty-001-h-sound3-copy-return",
+  "series_id": "empty-001",
+  "capture_status": "received_and_validated_complete_label_return",
+  "expected_file": "capture.wav",
+  "baseline_id": "empty-001-g-sound3-trim-return",
+  "baseline_source_sha256": "237230f9401b9be7093d306beaf38fbc139cc55dcfaf66570508d474d4e15119",
+  "return_reference_id": "empty-001-e-copy-to-3",
+  "return_reference_source_sha256": "a2d9672bd061bb9a8ea63af687164dda9e71a4c56d15d658b65d5c79d88af81f",
+  "planned_actions": [
+    "Select Sound8; hold write+sound and press3 to copy over the existing destination",
+    "Reselect Sound8; retain TONE, empty Pattern1, write off, stopped playback and unchanged knobs/recording settings",
+    "Record full stereo backup"
+  ],
+  "actual_actions": [
+    "User replied done to the requested copy8-over3 return protocol and supplied this capture; no deviation reported"
+  ],
+  "source_sha256": "cbcec520586e91ba48b46b4e05fbca58b6b6eaf392974a592ef6a8b7641da7ee",
+  "preregistration": "../sound3-copy-return-predictions-001.json",
+  "purpose": "Test whether copying restores original Sound3 defaults after minimum/maximum trim controls",
+  "leave_populated_slots_afterward": [
+    1,
+    2,
+    3,
+    8
+  ],
+  "decoder_version": "sign-crossings-0.2",
+  "action_evidence": "User completion report; exact buttons and audible settings not independently observed",
+  "return_status": "All complete phase labels and both counts equal original Sound3-copy reference",
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "symbols": "derived/analysis-001/capture.symbols.npz",
+    "waveform": "../waveform-probes-019.json",
+    "registered_predictions": "../sound3-copy-return-results-001.json"
+  },
+  "planned_playback": {
+    "capture_status": "received_and_validated",
+    "expected_file": "sample-playback.wav",
+    "selected_sound": 3,
+    "trigger_key": 1,
+    "write_mode": false,
+    "sequencer_stopped": true,
+    "source_tone_hz": 375,
+    "instructions": "../../docs/minimal-tone-playback-control.md",
+    "purpose": "Measure audible duration/frequency of the full tone in the cleared series; not assumed native sample data",
+    "source_sha256": "0ab0c5b150bc6c32b70f4f78705b6c7797a6d4835077786197dbae322ebef047",
+    "actual_actions": [
+      "User replied done to the requested ordinary Sound3 key1 playback and supplied this recording; no deviation reported"
+    ],
+    "action_evidence": "User completion report; exact pressed key and knob values not independently observed",
+    "inspection": "playback-inspection.json",
+    "analysis": "playback-analysis.json"
+  }
+}

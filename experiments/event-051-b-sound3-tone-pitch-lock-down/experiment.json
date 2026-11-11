@@ -1,0 +1,19 @@
+{
+  "experiment_id": "event-051-b-sound3-tone-pitch-lock-down",
+  "capture_status": "validated_pitch_candidate_only_uniform_raw1",
+  "registration": "../sound3-tone-pitch-down-registration-001.json",
+  "planned_actions": [
+    "Select Pattern1/Sound3/TONE with playback stopped and write off; keep B and all audio settings unchanged",
+    "Start Pattern1, hold WRITE and slowly move only A counterclockwise to its physical minimum over about5 seconds",
+    "Continue holding WRITE for3 seconds with both knobs stationary; do not press keyboard keys or hold BPM/FX",
+    "Release WRITE, stop playback and ensure write off; record full capture.wav at established reduced level with one second trailing silence",
+    "Report whether Sound3 dropped in pitch and any display text actually observed; uncertain or absent readings remain unknown; leave A at minimum and B untouched"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "pitch-probe-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "post_observation_model": "minimum-post-observation-model-001.json",
+  "project": "../exported-sound3-tone-pitch-minimum-001/project.json",
+  "pitch_field_writer_enabled": false
+}

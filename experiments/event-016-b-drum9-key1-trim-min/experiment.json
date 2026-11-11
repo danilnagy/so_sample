@@ -1,0 +1,54 @@
+{
+  "experiment_id": "event-016-b-drum9-key1-trim-min",
+  "capture_status": "received_and_validated_key1_mapping_and_minimum",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-015-b-copy-sound1-to-drum9",
+  "baseline_capture": "../event-015-b-copy-sound1-to-drum9/capture.wav",
+  "baseline_source_sha256": "9bafc45f6e12bae5cdcb1c80f60b57248cd3003144946dbf2b670cd20be7a34c",
+  "baseline_artifact": "../event-015-b-copy-sound1-to-drum9/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "dcebfbb1c93317bcdb7354febb30cb3d931757bd650921eab41017c69a1da8b8",
+  "baseline_body_sha256": "f83e2157513a3ae344631366464e3a25363fc296900575d792139455b66b91a0",
+  "preregistration": "../drum9-key1-trim-min-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "With Pattern1 selected, playback stopped and write off, select Sound9 and tap keyboard key1 once to select its slice",
+    "Select TRIM/tri using FX; leave knobA untouched; turn only knobB slightly clockwise then fully counterclockwise",
+    "Return to TONE and Sound8 without further knob movement",
+    "Before any further audition or pattern playback, record a complete stereo backup as capture.wav here with the successful recording settings",
+    "Leave the new slice length in place and report any deviations"
+  ],
+  "actual_actions": [
+    "User reports done after the requested last-triggered key1 trim minimum and full backup; no deviation reported"
+  ],
+  "source_sha256": "bb5cbcd9cee52cd390dcc9f5e33f1fec719891d951d4d92ae21d3dae1a924046",
+  "purpose": "Independently locate drum key1 reference and compare its minimum with melodic controls",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "validation_report": "../drum9-key1-trim-min-results-001.json",
+  "control_passed": true,
+  "hypothesis_checks": {
+    "key1_maps_to_selector8": true,
+    "first_field_unchanged_zero": true,
+    "second_field_is_zero_start_melodic_minimum": false,
+    "second_field_moves_lower": true
+  },
+  "observed_reference_values": {
+    "selector_id": 8,
+    "before_hex": "00000000cc0f000000",
+    "after_hex": "000000007f00000000",
+    "before": {
+      "first_u32le": 0,
+      "second_u32le": 4044,
+      "owner_id": 0
+    },
+    "after": {
+      "first_u32le": 0,
+      "second_u32le": 127,
+      "owner_id": 0
+    }
+  },
+  "experimental_drum_writer_enabled": true,
+  "enabled_scope": "Sound9/key1, start0/owner0/65536 codes, endpoint127..4044 and exact observed other15 references only",
+  "generated_drum_edit_hardware_verified": false,
+  "current_project_export": "../exported-drum9-key1-min-001/project.json",
+  "workflow_validation": "../drum-slice-workflow-validation-001.json"
+}

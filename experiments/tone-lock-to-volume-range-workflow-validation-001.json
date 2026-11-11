@@ -1,0 +1,45 @@
+{
+  "analysis_version": "recorded-tone-endpoint-to-volume-nibble-range-workflow-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "current_physical_tone_observation_passes": true,
+    "current_source_capture_and_artifact_hashes_match": true,
+    "current_native_body_matches_registration": true,
+    "native_and_manual_observations_remain_pinned": true,
+    "actual_louder_observation_does_not_invent_numeric_display": true,
+    "observed_changes_are_all16_sound3_primary_cells_only": true,
+    "initial_literal_model_explicitly_post_observation": true,
+    "source_has_all16_candidate_f_nibbles": true,
+    "minimum_body_prediction_matches_registered_file": true,
+    "return_file_matches_independent_entire_maximum": true,
+    "software_prediction_preserves_every_noncandidate_bit": true,
+    "export_content_files_remain_verified": true,
+    "no_volume_writer_or_gain_display_inference": true,
+    "future_hardware_actions_pending": true,
+    "new_registration_pins_actual_observation_and_is_software_only": true
+  },
+  "current_observation_sha256": "f11f9e84a294422600b126c76f03f9d2829b28bc81af9048f05f92791819b111",
+  "volume_range_registration_sha256": "8e57025c60419eb656a967a34dfea7910b3f934902533d804843658451c92294",
+  "validation": {
+    "affected_tests_passed": 14,
+    "affected_test_seconds": 1.16,
+    "ruff_check_passed": true,
+    "formatted_python_files": 224,
+    "prior_full_suite_before_research_changes": {
+      "passed": 790,
+      "seconds": 90.07
+    },
+    "production_writer_changes_this_turn": false
+  },
+  "implementation_sha256": {
+    "scripts/prepare_sound3_volume_lock_range.py": "7e99d31ad64da2da56c54cdca04a385fbf864f69d275894f44c29e004fea7a66",
+    "scripts/check_sound3_volume_lock_range.py": "8a73ddd1bf7d28e08b29a5954160eab55f562afa49fb25b75310847b04de62b8",
+    "tests/test_sound3_volume_lock_range.py": "91971e80f0b66d82a50a2c0f219db18f03ab20cc3825c408abed0ed59c8d674b"
+  },
+  "limits": [
+    "Minimum0 is an encoded prediction, not a UI reading or silence claim",
+    "High0xc0 bits and other Tone semantics remain opaque",
+    "Future minimum and complete maximum return still require physical data; no public volume writer enabled"
+  ]
+}

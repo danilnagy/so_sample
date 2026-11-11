@@ -1,0 +1,33 @@
+{
+  "analysis_version": "drum-cell-copy-hardware-workflow-audit-0.1",
+  "hardware_validation_sha256": "30a7562ef2b5cd5844780a601814de29040f318ff0271cf99ffe2cbdc3b1e788",
+  "manual_observation_sha256": "a167c17b7875465d5b47d438784aec13287c46eee4793c5dc0f29a72fa8d6a2e",
+  "next_preregistration_sha256": "fa2d36f3eae1068ccae4433c00fee6a9729b72c0f156ecc54b94bd42f337f87f",
+  "project": "exported-verified-drum-cell-copy-001/project.json",
+  "exported_content_files_checked": 29,
+  "checks": {
+    "all_hardware_native_checks_pass": true,
+    "accepted_capture_and_artifact_match": true,
+    "original_target_registration_unchanged": true,
+    "accepted_body_matches_entire_registered_target": true,
+    "manual_checks_recorded_separately": true,
+    "all_exported_content_hashes_match": true,
+    "source_project_copies_match_accepted_state": true,
+    "project_raw_view_matches_entire_body": true,
+    "project_drum_key1_events_at1_and9": true,
+    "project_melodic_events_preserved": true,
+    "software_and_original_registration_remain_unverified": true,
+    "next_key_control_baseline_hashes_match": true,
+    "next_key_control_source_and_target_key1_cells_match": true,
+    "next_control_registered_before_capture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "hardware_evidence": "edited-drum-cell-copy-001/hardware-validation.json",
+  "validation": {
+    "hardware_and_next_key_control_regressions": "46 passed in 3.22s",
+    "ruff_check": "passed",
+    "ruff_format": "139 files formatted"
+  },
+  "next_required_user_action": "Replace only Sound10 Step9/key1 with key2, retaining Step1/key1, then capture before pattern playback"
+}

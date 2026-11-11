@@ -1,0 +1,58 @@
+{
+  "analysis_version": "FX-position-map-decision-0.1",
+  "hardware_verified": false,
+  "registration_sha256": "1e2e4cec7851ef1b60a1c15e929bdbcfb279b2e7890605740ff7e43686e43070",
+  "native_results_sha256": "fc1639e2eaa83c866c7cb7e049c458feba77ca37287cb3aa480f26fddaff963d",
+  "pitch_results_sha256": "98c714e89d536f79c30a665dff24f053dce5a1bcdcfdd55da852c0bb7de09a98",
+  "steps": {
+    "1": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "5": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    },
+    "9": {
+      "median": "none",
+      "per_loop": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
+    },
+    "13": {
+      "median": "effect",
+      "per_loop": [
+        "effect",
+        "effect",
+        "effect",
+        "effect",
+        "effect"
+      ]
+    }
+  },
+  "model_support": {
+    "sequential_high_nibble_first": true,
+    "effect_on_no_note_step": false
+  },
+  "classification": "sequential_high_nibble_first",
+  "limits": [
+    "Tests footer bytes 0, 2, 4 and 6 high nibbles through four notes; low nibbles of bytes 1..7 are inferred, not observed",
+    "Pattern 1 and effect code 6 only; no general per-step effect writer is enabled"
+  ]
+}

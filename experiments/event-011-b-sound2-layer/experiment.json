@@ -1,0 +1,41 @@
+{
+  "experiment_id": "event-011-b-sound2-layer",
+  "capture_status": "received_and_validated_cell_addition_with_primary_equality_hypothesis_rejected",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-four-keys-001",
+  "baseline_source_sha256": "2cc8b8df219f49e9a0721d67ecf719c37575f9f9da7f264eac5b2c4736eb84bf",
+  "baseline_body_sha256": "9b87309f572b188cd1e1a2651b1ca4feec5cfa8fb669068631042ca8f49465f0",
+  "baseline_artifact_sha256": "853f5ea6670d5b4508190f79d5547453ea9119fa95c98dc06cd02f1e5861d0b0",
+  "baseline_artifact": "../edited-four-keys-001/derived/analysis-002/capture.symbols.npz",
+  "proposed_change": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 2,
+    "keyboard_key": 1,
+    "operation": "Add one Sound2 note without removing the existing Sound3 note"
+  },
+  "planned_actions": [
+    "Stop playback and leave write off; retain Pattern1 and select Sound2",
+    "With write off, tap keyboard key1 once to select its pitch",
+    "Enter write; Sound2 Step1 should be unlit. Tap Step1 once to add the Sound2 note, then exit write. Do not remove any Sound3 note",
+    "Reselect Sound8, retain TONE and all other settings; record a full stereo backup before playing the changed pattern"
+  ],
+  "actual_actions": [
+    "User replied done to the registered Sound2 key1 addition; no deviation reported"
+  ],
+  "source_sha256": "34b9b78a92d62e76383ee2bd673ae1590793e10b2376ed2dd19974d8c1d16549",
+  "preregistration": "../sound2-layer-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Test the per-sound cell layout and preservation of an existing event when adding a second sound on the same step",
+  "hardware_generated_edit_verified": false,
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "decoder_version": "sign-crossings-0.2",
+  "validation_report": "../sound2-layer-results-001.json",
+  "observed_note_cell": {
+    "sound_slot": 2,
+    "primary_hex": "0d2831",
+    "auxiliary_byte": 240
+  },
+  "registered_primary_equality_hypothesis_fit": false,
+  "registered_auxiliary_key_hypothesis_fit": true
+}

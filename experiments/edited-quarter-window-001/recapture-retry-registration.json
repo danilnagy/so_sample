@@ -1,0 +1,22 @@
+{
+  "experiment_id": "edited-quarter-window-001-retry",
+  "registered_before_capture": true,
+  "expected_file": "capture-retry.wav",
+  "restore_target_registration": "restore-registration.json",
+  "restore_target_registration_sha256": "7061c8eed42124a2ef88d5918d987edb2891a40b77a8ec5927013a1add76b636",
+  "expected_encoded_body_sha256": "933eca1c290f4fcde0718ddf87e342c3f5b059bbb96d070f98fd6145c342699a",
+  "expected_sound3_header_hex": "c42d0000044d000000",
+  "expected_packet_count": 511,
+  "expected_frame_end_byte": 89396,
+  "prior_failed_capture_sha256": "fb9f53873505501de9152f0af7dea9af44656e08e2b4e599f2701cfac26db54a",
+  "planned_actions": [
+    "Keep the current restored state; do not restore again or move either knob",
+    "Use the previous successful stereo capture input, recording path and levels, with no audio effects",
+    "With Sound8/TONE, write off and playback stopped, record a complete device backup",
+    "Export as stereo PCM16/44100Hz capture-retry.wav here; preserve the first capture unchanged"
+  ],
+  "limits": [
+    "Auditions already passed; the retry only supplies a reliable native recapture",
+    "Any state changes caused by audition will be reported explicitly rather than masked"
+  ]
+}

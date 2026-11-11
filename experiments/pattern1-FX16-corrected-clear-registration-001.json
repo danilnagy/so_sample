@@ -1,0 +1,43 @@
+{
+  "footer_candidate": {
+    "pattern": 1,
+    "start_byte": 1024,
+    "bytes": 8
+  },
+  "global_candidate": {
+    "packet_index": 2,
+    "tag": 32092,
+    "payload_offset": 131,
+    "narrow_mask": 15,
+    "broader_mask": 255
+  },
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "independent_no_FX_artifact": "experiments/edited-sound3-filter16-B32-middle-001/derived/analysis-001/capture.symbols.npz",
+  "independent_no_FX_artifact_sha256": "3132a8907f8a16853d02c0daa94ec2d83a981cf4e0520dd230acde79ae8988ec",
+  "independent_no_FX_body_sha256": "d039d344987f852ad3a8668249fab8a1366e1d1e9bc9280c789d0059947ca73f",
+  "analysis_version": "FX16-corrected-input-and-original-clear-prediction-binding-0.1",
+  "hardware_verified": false,
+  "experiment_id": "event-068-d-pattern1-FX16-clear-corrected",
+  "registered_before_corrected_clear_data_available": true,
+  "original_physical_clear_already_reported": true,
+  "original_clear_registration_sha256": "9791bb3a7902b8dbf946ae90ea7c464fd85f040ad71ab1fbadf4de926840ff30",
+  "clear_prediction_unchanged_from_original_registration": true,
+  "source_artifact": "experiments/event-066-b-pattern1-FX8-recorded/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "2f59946a92a2256099f53f52313e2ce05e236e7fc59168a56ef97874fded5477",
+  "source_capture": "experiments/event-066-b-pattern1-FX8-recorded/capture.wav",
+  "source_capture_sha256": "2ab2ebcf08a1f130e274cd05700ef7d6020963e23fc8bd72dca0c5bbfc3c99d1",
+  "source_body_sha256": "e3a3dfbb517181d48b7356726dbf34097171e775a34c1a1e73b2ac570915d096",
+  "source_observation_sha256": "5eb6630c1ce0968b558e6c448fb5ac75563eafaefef6c5d4cb168cbfe102b689",
+  "expected_footer_hex": "ffffffffffffffff",
+  "expected_global_byte": null,
+  "rejected_duplicate_capture_sha256": "2ab2ebcf08a1f130e274cd05700ef7d6020963e23fc8bd72dca0c5bbfc3c99d1",
+  "input_identity_observation_sha256": "8fcd02af75428974e2917a6aa4b5cd6bdb82c26cf7b0c57ad29420e3ab98f67e",
+  "limits": [
+    "Original two raw WAVs are identical; their clear comparison cannot adjudicate the clearing model; original raw files and reports remain unchanged",
+    "This binds the unchanged prior clear prediction to the actual FX8 source before corrected data becomes available, after the user already reported the physical clear action",
+    "Corrected data may be the existing actual clear recording or a fresh backup of the already-cleared device; no additional FX action is required",
+    "Global131 value remains unknown; low-four/whole-byte scopes remain separate and every other state byte must return to the independent original no-FX state",
+    "Do not treat duplicated input as a valid clear recapture, infer global role or enable a public FX writer"
+  ]
+}

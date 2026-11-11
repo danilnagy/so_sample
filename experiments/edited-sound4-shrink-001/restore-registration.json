@@ -1,0 +1,35 @@
+{
+  "analysis_version": "first-generated-unshared-sound4-shrink-registration-0.1",
+  "registered_before_capture": true,
+  "source_artifact": "experiments/edited-sound4-growth-001/derived/analysis-001/capture.symbols.npz",
+  "verified_growth_acceptance_sha256": "44c9df679d010256df705ef501793d996a2aaf49f7732bc20a68fad05b3d0e87",
+  "software_validation_sha256": "d074e4137aebcb50fe66777cef54f0c3126216106897138ea31694bd770b8f4d",
+  "source_artifact_sha256": "06c2af8c56fdd52aa05e829f79e3319c712f05ad134e825c69b113c80ee89885",
+  "source_capture_sha256": "895d593e7a632fbd3154721a2c53b71b0dc69efffa627da8d5a62d9105c263f0",
+  "source_body_sha256": "5e6946b26c77ec47d4bea2f02809810754d32369512353abd027a3109b01b401",
+  "edited_artifact_sha256": "70874631adbc7a0c90eab1c6092bcbd7d852f3fbdca87b9fe949c97761b3fd06",
+  "restore_wav_sha256": "9fb25b37196de46a708a67b087fce34b931cba9f3067e86862b3cc9eab656fbb",
+  "expected_body_sha256": "12acce04d44039abcda973f1e6590f47ac798610e40f4ef440f8322a7b3bebd0",
+  "expected_sound4_payload_sha256": "89414862fe9dfba4e0ae4393d075cd4504130c3f9e59d0b46979f711cc874699",
+  "expected_sound4_header_hex": "00000000c078000003",
+  "expected_sound5_payload_sha256": "f4a712aee09a92b26040b2b31d760c6fb35eef7c250ba4d83d06da6c13f3d9ce",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "expected_change": {
+    "sound_slot": 4,
+    "selector_id": 3,
+    "capacity_before": 73728,
+    "capacity_after": 32768
+  },
+  "expected_auditions": {
+    "sound4_key1": "New higher2250Hz tone about1.32seconds at nominal key1 pitch",
+    "sound5_key1": "Retained shorter1000Hz tone",
+    "pattern1": "Previously checked alternating pitches and drum notes unchanged"
+  },
+  "limits": [
+    "This probe resizes only unshared Sound4 between two observed allocations and reuses the exact target header and chunk lengths",
+    "No general allocation rounding, memory limit, new slot, deletion or shared-owner mutation is implemented",
+    "A generated2250Hz tone fills the logical window;1856 tail codes are intentionally zero in the generated replacement",
+    "Waveform checks are software-only; hardware acceptance and a matching recapture are pending"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "experiment_id": "event-018-b-copy-sound1-to-drum10",
+  "capture_status": "received_and_validated_clean_second_drum_copy_retry",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-drum9-key2-end-001",
+  "baseline_capture": "../edited-drum9-key2-end-001/capture-retry.wav",
+  "baseline_source_sha256": "447b8e92224fd5db41f53bb283bff66317da14a32bf9b0004669aed057cfec91",
+  "baseline_artifact": "../edited-drum9-key2-end-001/derived/analysis-003/capture.symbols.npz",
+  "baseline_artifact_sha256": "0d8a5a3d61b1ec84848ad9fe45bf315c9aac7b9774420356ed455b9aefb0dd5b",
+  "baseline_body_sha256": "1f3295c4cc8150d75a1513c76d996c54ed460c9b9d26730c556d7da24065ad28",
+  "preregistration": "../drum10-copy-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "With Pattern1 selected, playback stopped and write off, select Sound1 with sound+1",
+    "Hold write+sound, press10, then release to copy Sound1 into empty drumSound10",
+    "Return to Sound8/TONE and retain both knob positions and the successful recording settings",
+    "Before audition or pattern playback record a complete stereo backup as capture.wav here",
+    "Leave the copied sound present and report any deviation without further edits"
+  ],
+  "actual_actions": [
+    "User reports done for Sound1-to-Sound10 copy, then updated the file with a clean retry; no state deviation reported"
+  ],
+  "source_sha256": "073011e3cdd30f3bb376396385a154ec581d24412c0f93362d189e2e8126e804",
+  "purpose": "Independently test the second drum selector block and fresh autocopy references while preserving both accepted Sound9 slices and all existing state",
+  "control_passed": true,
+  "hypothesis_checks": {
+    "sound10_uses_selector_block24_to39": true,
+    "all16_destination_groups_populated": true,
+    "destination_records_are_owner0_references": true,
+    "destination_records_equal_original_sound9_autocopy": true,
+    "sixteen_new_reference_packets_only": true
+  },
+  "sound10_mapping_enabled": true,
+  "verification_status_report": "capture-verification-status-001.json",
+  "failed_capture_archive": "capture-attempt-001.wav",
+  "retry_registration": "recapture-retry-registration.json",
+  "next_expected_file": "capture-retry.wav",
+  "validated_capture": "capture-retry.wav",
+  "validated_symbol_artifact": "derived/analysis-004/capture.symbols.npz",
+  "validation_report": "../drum10-copy-results-001.json",
+  "sound10_writer_enabled": false,
+  "sound10_preview_enabled": false,
+  "current_project_export": "../exported-drum10-copy-002/project.json",
+  "workflow_validation": "../drum10-copy-workflow-validation-001.json"
+}

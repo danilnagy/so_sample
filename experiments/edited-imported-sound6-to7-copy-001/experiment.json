@@ -1,0 +1,26 @@
+{
+  "experiment_id": "edited-imported-sound6-to7-copy-001",
+  "capture_status": "hardware_verified_exact_imported_reference_copy",
+  "expected_file": "capture.wav",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "done and confirmed"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "recapture_results": "hardware-recapture-results-001.json",
+    "manual_observation": "manual-observation.json"
+  },
+  "planned_actions": [
+    "Restore complete restore.wav at the established stereo playback level",
+    "Select Pattern1/Sound8/TONE stopped/write off, keeping both knobs unchanged",
+    "Before audition save complete stereo capture.wav at the established reduced levels with one second trailing silence",
+    "After saving compare Sound6/key1 and Sound7/key1 sweeps, confirm other sounds and Pattern1 unchanged; return to Sound8/TONE"
+  ],
+  "source_sha256": "36b929195ee52efe831f26edec64ac707800abfb26832c012bfdd1ba5e0f90e1",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-imported-sound6-to7-copy-001/project.json"
+}

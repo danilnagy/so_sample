@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-drum-pitch-001",
+  "capture_status": "validated_exact_native_drum_pitch_semitone_per_code",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../drum-pitch-registration-001.json",
+  "plan": "../drum-pitch-plan-001/plan.json",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Did one drum sound play at changing pitches? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "pitch_results": "key-frequency-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-drum-pitch-001/project.json"
+}

@@ -1,0 +1,110 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "aa90e8f444bff76700b2f78b27a857a432f552f3c69d472ff40eb6b10e729ff7",
+  "plan_sha256": "fb9db0ed6a5a3dc33433f6dcc15a29ec4bdea03bbf16aa877176b97c5656ba01",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "clone_step",
+        "pattern": 1,
+        "source_step": 13,
+        "target_steps": [
+          2
+        ]
+      },
+      "before_body_sha256": "51b9358a087173aa4ebd4e49eda47e698ba34c7dd077237ccb7d353291b6eea8",
+      "after_body_sha256": "4adfece900970f591ed0558ba1a8c1374f1948762454b6c451a702cc5b02c4fa"
+    },
+    {
+      "operation": {
+        "operation": "set_swing",
+        "value": 0
+      },
+      "before_body_sha256": "4adfece900970f591ed0558ba1a8c1374f1948762454b6c451a702cc5b02c4fa",
+      "after_body_sha256": "1da3b29b71a0ce601b485b94a5b40256058d3cf79f61d50f743d25fe28aa03e2"
+    }
+  ],
+  "target_body_sha256": "1da3b29b71a0ce601b485b94a5b40256058d3cf79f61d50f743d25fe28aa03e2",
+  "restore_wav_sha256": "723b3505c844a8498bc2846390a555445b28d1172e5f2f75c3811bb0dd5a5c87",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "05eda85f4c5a678653fd782dbe56e13e635d1932b863fc7bb085152e28ddbec8",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 313647,
+    "active_frames": 1770481,
+    "silence_frames_each_end": 4410,
+    "frames": 1779301,
+    "duration_seconds": 40.34696145124717,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 313647,
+        "reconstructed_symbols": 313647,
+        "overlap_symbols": 313647,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 313647,
+        "reconstructed_symbols": 313647,
+        "overlap_symbols": 313647,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

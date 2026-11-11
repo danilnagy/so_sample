@@ -1,0 +1,28 @@
+{
+  "analysis_version": "first-generated-sound6-to7-copy-hardware-acceptance-0.1",
+  "status": "accepted",
+  "hardware_verified": true,
+  "verified_scope": "This empty-Sound7 reference copy of owner5 under Sound6, with unchanged full buffer and all unrelated state retained",
+  "recapture_results_sha256": "1a22190fb5f0f4c4f6e330d207c6132cad57dfc53d0af186c3d560e11f9a52ed",
+  "manual_observation_sha256": "55b748ecd2e9065bfb16815a1dcc58e4eb743055e70b064377d69b27c24259de",
+  "restore_registration_sha256": "d83b9a0c9a037d952c0f4deab6ce9fa2d67f48bcd5f2340965accd0587a3d2b7",
+  "software_validation_sha256": "5cb3cbde0a96b77c7a1f70cbc81c53b80e2522dd2b64a8f99d7292996e518b61",
+  "capture_sha256": "9737239d8d7b8f221eb23b0d7b8240f0a8799c3ad48482dc9e16ab94f4fc313f",
+  "artifact_sha256": "86f4d0e0b23b03494edb622e8de25e9b756b48f558d9f89943b03d0529184def",
+  "body_sha256": "c90ffd7eb2a11d83ab0492ba6b4920d6b0c77342b6c09eb35e9b28a1f7b14a00",
+  "user_report": "done and confirmed",
+  "checks": {
+    "all_recapture_checks_pass": true,
+    "user_restore_and_auditions_confirmed": true,
+    "source_capture_and_artifact_hashes_match": true,
+    "registered_body_matches": true,
+    "export_all_file_hashes_match": true,
+    "export_entire_body_matches": true,
+    "copied_previews_are_byte_identical": true,
+    "original_software_report_remains_software_only": true
+  },
+  "exported_content_files_checked": 33,
+  "limits": [
+    "Generated Sound6 creation, known Sound4 resize directions and this shared reference copy are verified; deletion behavior and general allocation remain unsupported"
+  ]
+}

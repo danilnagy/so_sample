@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "experiments\\empty-001-copy2-clean-b\\capture.wav",
+  "source_sha256": "bb3991eba30c5c99234144b0f53a83ea505afd29d802c690b10502cad1b0905d",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 1066948,
+  "duration_seconds": 24.193832199546485,
+  "channel_count": 2,
+  "channels": {
+    "left": {
+      "peak_amplitude": 0.16802978515625,
+      "rms": 0.09003172815871723,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    },
+    "right": {
+      "peak_amplitude": 0.16070556640625,
+      "rms": 0.086089636300964,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    }
+  },
+  "channel_similarity": {
+    "identical": false,
+    "correlation": -0.0008745772297548775,
+    "difference_rms": 0.12462220689522402
+  },
+  "clipping_note": "Near-full-scale samples indicate possible clipping, not proof."
+}

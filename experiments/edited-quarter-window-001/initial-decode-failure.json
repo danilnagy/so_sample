@@ -1,0 +1,10 @@
+{
+  "source_sha256": "fb9f53873505501de9152f0af7dea9af44656e08e2b4e599f2701cfac26db54a",
+  "decoder_version": "sign-crossings-0.2",
+  "threshold": 0.0063,
+  "artifact": "derived/analysis-001/capture.symbols.npz",
+  "artifact_sha256": "b4b574fd9fecc5eb60609da8148689f3f4dc7e29cfb064663b6437b926e5235d",
+  "native_frame_valid": false,
+  "error": "Packet checksum differs at wire byte4095, tag0x7ce1",
+  "original_capture_and_artifact_preserved": true
+}

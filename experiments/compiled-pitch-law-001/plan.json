@@ -1,0 +1,55 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "3f35d316b034432992cdf924a70e4bac56e27463dc483d745bfd530d0f4e46e4",
+  "source_body_sha256": "ed5ab6070eaa99dc0fc0de10d6fb3590c61170830ac1e01c79a2ffb46b551a0b",
+  "operations": [
+    {
+      "operation": "set_melodic_notes",
+      "pattern": 1,
+      "sound": 3,
+      "keys": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": "set_step_parameters",
+      "pattern": 1,
+      "sound": 3,
+      "parameter": "pitch",
+      "values": [
+        13,
+        1,
+        25,
+        7,
+        19,
+        4,
+        22,
+        10,
+        16,
+        2,
+        24,
+        5,
+        21,
+        8,
+        18,
+        12
+      ]
+    }
+  ]
+}

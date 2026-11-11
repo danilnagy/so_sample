@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "experiments\\empty-001-b-tone\\capture.wav",
+  "source_sha256": "74d6be2ea498c4fcebed2963ef127b6a6addee07a87423148b7dae40f1d5c80c",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 1050913,
+  "duration_seconds": 23.830226757369616,
+  "channel_count": 2,
+  "channels": {
+    "left": {
+      "peak_amplitude": 0.16845703125,
+      "rms": 0.09077182534056938,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    },
+    "right": {
+      "peak_amplitude": 0.161041259765625,
+      "rms": 0.08679282899988194,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    }
+  },
+  "channel_similarity": {
+    "identical": false,
+    "correlation": 0.00033952729095800384,
+    "difference_rms": 0.1255673889751244
+  },
+  "clipping_note": "Near-full-scale samples indicate possible clipping, not proof."
+}

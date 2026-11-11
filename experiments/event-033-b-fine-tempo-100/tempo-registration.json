@@ -1,0 +1,32 @@
+{
+  "analysis_version": "fine-tempo80-to100-control-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_artifact": "experiments/edited-tempo80-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "eb049e30b69ec886029aeb357ba63c300c68e67a67a8d5904aa200ad2fd26f5c",
+  "baseline_capture": "experiments/edited-tempo80-001/capture.wav",
+  "baseline_capture_sha256": "7512efa7fa484824a6e68a2747bb3d4a4a44f031ca02259728248e47e59465f6",
+  "baseline_body_sha256": "2a1a594b027dcd228f20e2b72961e995b27a3c8378643d74ad03a323ce3c17ce",
+  "baseline_acceptance_sha256": "0ef4b334932cab12967b354245a7004617843ff01efd416f6fa9e2efe165a74d",
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 129,
+    "baseline_encoded_value": 80,
+    "hypothesis": "Fine tempo uses the same direct integer BPM byte; only byte129 changes80 to100"
+  },
+  "expected_before_display_bpm": 80,
+  "requested_after_display_bpm": 100,
+  "expected100_body_sha256": "d01d2cdd2f9cd85aca19e17ebc7967327aba647926faf91dcb2db0fe42de2633",
+  "official_control_reference": {
+    "url": "https://teenage.engineering/guides/po-33/en",
+    "reviewed_date": "2026-10-09",
+    "section": "6, tempo",
+    "paraphrase": "Hold BPM and turn knob B for fine tempo; knob A controls swing and is excluded"
+  },
+  "limits": [
+    "Only the physical fine-tempo100 observation is requested; the prediction is not a generated restore",
+    "Public tempo editing remains restricted to80/120/140 and the recognized opaque context",
+    "Record the actual display value independently if100 cannot be reached; do not infer it from bytes",
+    "Other global or sound-parameter changes remain visible; touching knob B is allowed only while BPM is held"
+  ]
+}

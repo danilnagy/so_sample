@@ -1,0 +1,52 @@
+{
+  "analysis_version": "recorded-volume-range-failed-four-bit-model-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Valid physical minimum and maximum captures; minimum clears first-byte0xc0 as well as second-byte0x0f in all16 Sound3 cells, falsifying four-bit-only model; entire maximum return exact; user reports lower loudness at minimum",
+  "four_bit_only_model_supported": false,
+  "six_bit_volume_model_confirmed": false,
+  "volume_writer_verified": false,
+  "numeric_display_value_confirmed": false,
+  "relative_loudness": "higher_than_first",
+  "checks": {
+    "capture_and_artifact_fingerprints_match": true,
+    "native_controls_pass": true,
+    "all_unrelated_state_preserved": true,
+    "only_post_observation_six_candidate_bits_differ": true,
+    "previous_four_bit_only_prediction_retained_as_failed": true,
+    "complete_maximum_return_is_exact": true,
+    "capture_not_clipped": true,
+    "complete_export_body_exact": true
+  },
+  "post_observation_candidate": {
+    "primary_low16_mask": "0x0fc0",
+    "contiguous_bit_indices": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "little_endian_endpoint_value": 63,
+    "registered_before_endpoint_data": false,
+    "alternative": "four value bits with two bits acting as zero/nonzero enable flags remains possible from endpoints alone"
+  },
+  "capture_sha256": "12630614bdd5b3a1b3666b3b2abe4505752ddc5db99682ed43afbd454e4d496f",
+  "artifact_sha256": "e1f1b45da8180e19577ae10e69dcdabae322a81d6185577d4a6447c8e0ec648b",
+  "artifact_path": "experiments/event-046-b-return-sound3-tone-volume-lock-maximum/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "e34fbe7f6238c230deeacd96139b26e5ca88bb5f300a7831da87a24e32afaef7",
+  "native_results_sha256": "8043c7ecda2a25d949c57602093d109a47c0c94d5c4eb2f14984d82a5d6a3a5e",
+  "manual_observation_sha256": "5e2432ee4aa1021f61f2ae03906f6d3732027344d95d0d76fdde222cc10a10e2",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.15869140625,
+      0.15289306640625
+    ]
+  },
+  "limits": [
+    "Original failed minimum prediction is immutable; broader mask is a new post-observation hypothesis",
+    "Endpoints cannot distinguish six-bit value ordering or two possible enable flags",
+    "No numeric UI range,gain units,mute behavior or volume writer verified"
+  ]
+}

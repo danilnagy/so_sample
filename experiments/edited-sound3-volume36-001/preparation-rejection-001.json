@@ -1,0 +1,30 @@
+{
+  "analysis_version": "volume36-alternative-code-preparation-rejection-0.1",
+  "hardware_verified": false,
+  "passed": false,
+  "reason": "Independent semantic test catches actual alternative code9 versus mistakenly declared18; native waveform is not the issue",
+  "actual_alternative_raw_values": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "declared_alternative_raw_value": 18,
+  "registration_sha256": "c85d68d2e31fafa1960f04db8cbc1909681734a223bdc88563af6c5ddb736613",
+  "software_validation_sha256": "c5cd1dc7a268db78aeb040fd0c0ef339cdb15dff6627e9d3ef0aef5f343f2ecf",
+  "restore_wav_sha256": "870f8792ce49d8f36d0eeb0c3da458153f9a1d8f04651dc85e9a344bff35c249",
+  "physical_restore_requested": false,
+  "superseding_registration": "../sound3-generated-volume36-registration-002.json"
+}

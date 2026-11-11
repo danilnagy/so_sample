@@ -1,0 +1,20 @@
+{
+  "experiment_id": "compiled-no-lock-001",
+  "capture_status": "validated_exact_native_no_lock_measured",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../no-lock-registration-001.json",
+  "plan": "../no-lock-plan-001/plan.json",
+  "playback_seconds": 44,
+  "observation_questions": [
+    "Did two alternating patterns play, with some steps repeating the sound before them? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "no_lock_measurements": "no-lock-measurements-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-no-lock-001/project.json"
+}

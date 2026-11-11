@@ -1,0 +1,50 @@
+{
+  "analysis_version": "exact-global7-project-uniform-effect-policy-0.1",
+  "hardware_verified": false,
+  "public_uniform_FX_writer_enabled": true,
+  "public_mixed_FX_writer_enabled": false,
+  "operation": "set_pattern1_effect",
+  "allowed_effect_names": [
+    "none",
+    "octave_up",
+    "octave_down"
+  ],
+  "normalized_clear_body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+  "verified_scope": "Uniform footerF/6/7 only; complete exact calibrated global7 project pinned by normalized native-body hash",
+  "evidence": [
+    {
+      "effect": "none",
+      "observation": "experiments/edited-pattern1-FX15-global7-clear-001/hardware-observation-001.json",
+      "observation_sha256": "fffb2f7bd12cfd06d032ca0b7d1c274a69673da31ff3bbec0840f3aac54162fe",
+      "native_results_sha256": "fda3b44d5817aeaf4b48079629486d0a140fd87613ee6bc52f1bd54d559c3049",
+      "body_sha256": "3d3762e28817a2bccf83986539c889d1e74e70139b2313affcc3d56cc1bb370b",
+      "replay_report_sha256": "84c5e8d8fb74c88bae788b4a250f4fcd769c14fb1ff5f4abb809f67261f9585b"
+    },
+    {
+      "effect": "octave_up",
+      "observation": "experiments/edited-pattern1-FX6-global7-up-001/hardware-observation-001.json",
+      "observation_sha256": "8077ff3b7c3865969255233f275cd0066e58320fa49f647517953b4d26ea35d1",
+      "native_results_sha256": "166d948f12be05e1ef2a1e7f5f74750c01d17eaf3809a92095106c1868f07a07",
+      "body_sha256": "1147b3d4952aa4ade735b011047bcf22a469855bc3e1fff9c6f6cd4c462ca495",
+      "replay_report_sha256": "c29c75d8d1de5c12cad715a6648869df25ced712b586917cd4472fda8313b8d1"
+    },
+    {
+      "effect": "octave_down",
+      "observation": "experiments/edited-pattern1-FX7-global7-down-001/hardware-observation-001.json",
+      "observation_sha256": "22ffcc1891c0c9f484ce04b1eec483b9e989ea6c06625279d6d82e2c58f8661b",
+      "native_results_sha256": "14676f05301741b498e1de9fc8367b579a932b15fa5034f8c5c0cb95e0f959a1",
+      "body_sha256": "01cb7130546dd862c8b9ef290785dd9e6c3094e64e6b9279dae4730edea7cd68",
+      "replay_report_sha256": "05c6eaca5b50dfb7905a81a0dc79178215a5b88e3751b3f1e702223bc521ed3e"
+    }
+  ],
+  "validation": {
+    "full_tests_passed": 1246,
+    "full_tests_seconds": 124.02,
+    "post_full_focused_tests_passed": 72,
+    "focused_tests_seconds": 5.33,
+    "production_changed_since_full_suite": false,
+    "ruff_new_research_and_production_files_passed": true
+  },
+  "per_step_nibble_order_or_global_role_confirmed": false,
+  "earlier_observations_unchanged": true
+}

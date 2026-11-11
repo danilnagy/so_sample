@@ -1,0 +1,128 @@
+{
+  "analysis_version": "second-start-window-hardware-validation-0.1",
+  "registration_sha256": "7061c8eed42124a2ef88d5918d987edb2891a40b77a8ec5927013a1add76b636",
+  "retry_registration_sha256": "9d7f4b755a85476af0eb499bb6ad9def1e2f3fdcc643e95584c08a10c319f4cd",
+  "capture_file": "capture-retry.wav",
+  "capture_sha256": "fa3c5f47983a46b1ce1a7f533eff7df94f6cdefed13efe7bafa6b5f190ff86cb",
+  "artifact_sha256": "80b41e0fc6db479df2e61bd40cfc4988f70a6a0ecfb39de6c68cc736cd3b3eb3",
+  "decoder_version": "sign-crossings-0.2",
+  "checks": {
+    "packet_count": true,
+    "frame_end_byte": true,
+    "all_packet_checksums": true,
+    "exact_body_reencode": true,
+    "baseline_reference": true,
+    "reference_location": true,
+    "reference_size": true,
+    "owner_id_unchanged": true,
+    "only_reference_packet_changed": true,
+    "only_allowed_reference_bytes_changed": true,
+    "all_patterns_unchanged": true,
+    "backing_owner_unchanged": true,
+    "packet_tags_and_lengths": true,
+    "registered_body_hash_matches": true,
+    "target_body_matches": true,
+    "target_plain_packets_match": true,
+    "expected_changed_packets": true,
+    "expected_reference_byte_changes": true,
+    "start_field_unchanged": true,
+    "endpoint_field_matches": true,
+    "target_packet_count": true
+  },
+  "passed": true,
+  "hardware_verified": true,
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "933eca1c290f4fcde0718ddf87e342c3f5b059bbb96d070f98fd6145c342699a",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "c42d0000044d000000",
+        "payload_sha256": "5dd6ad121e7521609c7d9afdd8f3b586e07df4ca7c0bfbdbee5c08748ae604ff"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "changed_plain_packet_indices": [
+    375
+  ],
+  "sound3_reference_byte_changes": [
+    {
+      "offset": 4,
+      "old": 51,
+      "new": 4
+    },
+    {
+      "offset": 5,
+      "old": 46,
+      "new": 77
+    }
+  ],
+  "sound3_header_values": {
+    "before": {
+      "first_u32le": 11716,
+      "second_u32le": 11827,
+      "owner_id": 0
+    },
+    "after": {
+      "first_u32le": 11716,
+      "second_u32le": 19716,
+      "owner_id": 0
+    }
+  },
+  "restore_and_tone_check_user_report": "done and passed",
+  "retry_user_report": "done",
+  "manual_observations": "User confirms restore and both requested tone checks; retry recorded afterward without reported state changes",
+  "provenance": {
+    "retry_uploaded_as": "capture.wav",
+    "retry_preserved_as": "capture-retry.wav",
+    "first_failed_wav_sha256": "fb9f53873505501de9152f0af7dea9af44656e08e2b4e599f2701cfac26db54a",
+    "first_failed_wav_still_available": false,
+    "first_failed_artifact_and_reports_retained": true,
+    "note": "The user replaced capture.wav with the retry; the old WAV cannot be recovered from its hash or artifact"
+  },
+  "limits": [
+    "Only this registered second-start endpoint window has matching hardware evidence",
+    "Tone duration and frequencies are user reported rather than independently measured",
+    "General minimum-width rules, interpolated start values and endpoint inclusivity remain unresolved"
+  ]
+}

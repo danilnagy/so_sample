@@ -1,0 +1,104 @@
+{
+  "analysis_version": "native-pattern-hardware-validation-0.1",
+  "capture_sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+  "recapture_artifact_sha256": "37b84f54a2a1e89e60eb4a91b52624ed0f60ae8aee625a14ac81c7b2d0df4801",
+  "generated_artifact_sha256": "3164f4ac81bde39503e9a875a062ac461c09d5597b1941f3e5f454aaac2b16a8",
+  "checks": {
+    "registered_body_sha256_matches": true,
+    "generated_body_matches_recapture": true,
+    "generated_plain_packets_match_recapture": true,
+    "exact_body_reencode": true,
+    "all_packet_checksums_valid": true,
+    "packet_count_unchanged": true,
+    "expected_frame_end_byte": true,
+    "only_pattern_data_packets_changed": true,
+    "sample_packets_unchanged": true,
+    "packet_tags_and_lengths_unchanged": true,
+    "other_patterns_unchanged": true,
+    "expected_populated_steps": true,
+    "all_populated_raw_rows_match_source": true,
+    "opaque_footer_unchanged": true
+  },
+  "passed": true,
+  "changed_plain_packet_indices": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "populated_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "8b39765df9a4caf71e509f54b0c49e2f0d95ad1a60f4effa46daa687259d0104",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "user_report": "yes, it worked as expected!",
+  "restore_and_playback_reported_success": true,
+  "hardware_verified": true,
+  "limits": [
+    "Restore and four-note playback are user reported; no independent playback audio is supplied.",
+    "The checksum-validated native body is compared; acquisition and post-frame carrier are separate.",
+    "This verifies this opaque-step copy on this local device path, not general note bitfield edits."
+  ],
+  "capture_context": {
+    "analysis_version": "pattern-recapture-context-0.1",
+    "received_date_local": "2026-10-08",
+    "user_report": "done, recorded after playback",
+    "relative_to_pattern_playback": "after",
+    "capture_timing_evidence": "Explicit user report",
+    "source_sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+    "playback_induced_native_differences_observed": false,
+    "comparison": "Full native body matches the generated target exactly; no offsets, masks or state normalization applied"
+  }
+}

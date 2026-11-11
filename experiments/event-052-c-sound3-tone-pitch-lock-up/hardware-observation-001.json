@@ -1,0 +1,73 @@
+{
+  "analysis_version": "recorded-tone-pitch-range-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Recorded maximum has uniform raw25; return is exact independent raw1 minimum; only first-low5 bits change, volume36 and all other state preserved; user hears up/down",
+  "checks": {
+    "native_controls_and_all_preservation_checks_pass": true,
+    "both_registered_mask_checks_pass": true,
+    "all16_volume_values_remain36": true,
+    "capture_artifact_and_registration_fingerprints_match": true,
+    "entire_body_reproduced_by_literal_low5_value": true,
+    "capture_not_clipped": true
+  },
+  "raw_pitch_candidate_values": [
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25
+  ],
+  "volume_raw_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "upper_endpoint_code_known_before_capture": false,
+  "return_complete_body_predicted_before_capture": false,
+  "pitch_field_width_confirmed": false,
+  "pitch_scale_confirmed": false,
+  "numeric_UI_value_confirmed": false,
+  "capture_sha256": "1cb35e3e0c0f370b0992e531c900a10ad5afb41042b72072c311e442ac429479",
+  "artifact_sha256": "9b271f18d254a179b7a8646038abcb4dccde49c0407c8c20e1e31774df2646fc",
+  "artifact_path": "experiments/event-052-c-sound3-tone-pitch-lock-up/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "3924a9ad5734cb5603513ab3660eb3fcb176d53b269d049e9ff9f77740c2e5d1",
+  "native_results_sha256": "a3eb875d93fac3ae9b7ce745316abfa991b9fea0ebb71cb4fbb994441106e768",
+  "manual_observation_sha256": "040884ea694edbfab99c6beb745b9bbb98763eae8f6d63f50d615cf568023cc4",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.152740478515625,
+      0.14678955078125
+    ]
+  },
+  "pitch_field_writer_enabled": false,
+  "limits": [
+    "Literal upper25 model is post-observation; upper code was not preregistered",
+    "Low5 and low6 masks both fit; unchanged bit5 does not establish full field width",
+    "No semitone scale, frequency law or UI numbers confirmed; generated interior/audio controls follow"
+  ]
+}

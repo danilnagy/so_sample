@@ -1,0 +1,219 @@
+{
+  "analysis_version": "drum11-record-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Device recording into drum Sound11 read from one backup",
+  "hypotheses": {
+    "new_self_owned_buffer": true,
+    "sixteen_references": true,
+    "equal_split": false,
+    "everything_else_unchanged": true
+  },
+  "owner_sound_id": 40,
+  "owner_capacity_codes": 102400,
+  "recorded_end_code": 101824,
+  "slice_windows": [
+    [
+      0,
+      3066
+    ],
+    [
+      3066,
+      5886
+    ],
+    [
+      5886,
+      8949
+    ],
+    [
+      8949,
+      11762
+    ],
+    [
+      11762,
+      14527
+    ],
+    [
+      14527,
+      17649
+    ],
+    [
+      17649,
+      20434
+    ],
+    [
+      20434,
+      23540
+    ],
+    [
+      23540,
+      26321
+    ],
+    [
+      26321,
+      29432
+    ],
+    [
+      29432,
+      32248
+    ],
+    [
+      32248,
+      35321
+    ],
+    [
+      35321,
+      38141
+    ],
+    [
+      38141,
+      40920
+    ],
+    [
+      40920,
+      44030
+    ],
+    [
+      44030,
+      101824
+    ]
+  ],
+  "slice_analysis": {
+    "burst_onsets_codes": [
+      0,
+      2961,
+      5875,
+      8789,
+      11703,
+      14664,
+      17578,
+      20492,
+      23453,
+      26367,
+      29281,
+      32242,
+      35156,
+      38070,
+      41031,
+      43945
+    ],
+    "slices": [
+      {
+        "window": [
+          0,
+          3066
+        ],
+        "dominant_hz": 400.18558502197266
+      },
+      {
+        "window": [
+          3066,
+          5886
+        ],
+        "dominant_hz": 436.3059997558594
+      },
+      {
+        "window": [
+          5886,
+          8949
+        ],
+        "dominant_hz": 475.6450653076172
+      },
+      {
+        "window": [
+          8949,
+          11762
+        ],
+        "dominant_hz": 518.5604095458984
+      },
+      {
+        "window": [
+          11762,
+          14527
+        ],
+        "dominant_hz": 565.7672882080078
+      },
+      {
+        "window": [
+          14527,
+          17649
+        ],
+        "dominant_hz": 616.908073425293
+      },
+      {
+        "window": [
+          17649,
+          20434
+        ],
+        "dominant_hz": 672.6980209350586
+      },
+      {
+        "window": [
+          20434,
+          23540
+        ],
+        "dominant_hz": 733.494758605957
+      },
+      {
+        "window": [
+          23540,
+          26321
+        ],
+        "dominant_hz": 800.013542175293
+      },
+      {
+        "window": [
+          26321,
+          29432
+        ],
+        "dominant_hz": 872.6119995117188
+      },
+      {
+        "window": [
+          29432,
+          32248
+        ],
+        "dominant_hz": 951.2901306152344
+      },
+      {
+        "window": [
+          32248,
+          35321
+        ],
+        "dominant_hz": 1037.4784469604492
+      },
+      {
+        "window": [
+          35321,
+          38141
+        ],
+        "dominant_hz": 1131.5345764160156
+      },
+      {
+        "window": [
+          38141,
+          40920
+        ],
+        "dominant_hz": 1233.816146850586
+      },
+      {
+        "window": [
+          40920,
+          44030
+        ],
+        "dominant_hz": 1345.3960418701172
+      },
+      {
+        "window": [
+          44030,
+          101824
+        ],
+        "dominant_hz": 91.552734375
+      }
+    ]
+  },
+  "slices_1_to_15_hold_bursts_1_to_15_in_order": true,
+  "reading": "Leading silence is trimmed; slice boundaries sit at detected burst onsets; slice k holds burst k; slice 16 runs to the end of the recording; the buffer is owned by slice 1's sound id",
+  "result_sha256": "d22ef812d08e047415f37fed91ac0e905ac1d95887e143b623c620e620692a4d",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "2c75cd7d2b865e5759b225ae263fd78addb2a49b2e2a18cdf9b2edda0f4f031e"
+}

@@ -1,0 +1,107 @@
+{
+  "analysis_version": "FX-full-step-map-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "edited-pattern1-FX-full-step-map-001",
+  "source_artifact": "experiments/edited-pattern1-single-tone-no-FX-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "36e560598b3a006c2c668a3c3c83edb7bce3d101de3f2fbe1a243e41ddf8961e",
+  "source_capture_sha256": "7f19bbb61714693a0d88c198232e6c420b5e25f2fc3b50601133ffcc1b22e6b6",
+  "expected_body_sha256": "42962ebc5e552d3b5365e2794f2683c56bb0c65eaeeebeaf3c87c96d845459cb",
+  "edited_artifact_sha256": "6c1cd8b22eda22e66a0ddac1347b8402836c65f9c97c94a834b3d4f2b592eaa9",
+  "restore_wav_sha256": "9cd5178c51f80404d292cee72883a40adf5fde012cc73a7385f60cac52c656b9",
+  "footer": "f66f66fff66f66ff",
+  "effect_steps": [
+    2,
+    3,
+    5,
+    6,
+    10,
+    11,
+    13,
+    14
+  ],
+  "tempo_bpm": 60,
+  "swing": 0,
+  "reference_frequency_hz": 1190.4169592315686,
+  "method_settings": {
+    "band_hz": [
+      600.0,
+      3500.0
+    ],
+    "search_hz": [
+      900.0,
+      2700.0
+    ],
+    "window_seconds": 0.02,
+    "hop_seconds": 0.01,
+    "track_seconds": 0.4,
+    "onset_fraction_of_peak": 0.15,
+    "min_loop_gap_seconds": 1.0,
+    "loops": 5,
+    "fft_size": 32768,
+    "step1_window_ms": [
+      20.0,
+      130.0
+    ],
+    "min_relative_amplitude": 0.2,
+    "effect_min_rise": 0.1,
+    "none_max_deviation": 0.01,
+    "min_agreeing_loops": 4,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "step_tolerance_seconds": 0.03,
+    "envelope_window_seconds": 0.003,
+    "note_track_seconds": 0.2
+  },
+  "method_script_sha256": "1d8815bf4802081784f2866eed5dc453e76d0b5ccef2fc9fca3de0bbaa0231ce",
+  "grouping_script_sha256": "d70384f93b9113ac811ebb185c1dfd7e9c393887c002dbded17cf55c672a2f00",
+  "step1_method_script_sha256": "94e277367ad5f9f7d30ff1d178906654865ce9b7bd0157ceeeaa1722cc8b7e13",
+  "predictions": {
+    "sequential_high_nibble_first": {
+      "1": "none",
+      "2": "effect",
+      "3": "effect",
+      "4": "none",
+      "5": "effect",
+      "6": "effect",
+      "7": "none",
+      "8": "none",
+      "9": "none",
+      "10": "effect",
+      "11": "effect",
+      "12": "none",
+      "13": "effect",
+      "14": "effect",
+      "15": "none",
+      "16": "none"
+    },
+    "sequential_low_nibble_first": {
+      "1": "effect",
+      "2": "none",
+      "3": "none",
+      "4": "effect",
+      "5": "effect",
+      "6": "effect",
+      "7": "none",
+      "8": "none",
+      "9": "effect",
+      "10": "none",
+      "11": "none",
+      "12": "effect",
+      "13": "effect",
+      "14": "effect",
+      "15": "none",
+      "16": "none"
+    }
+  },
+  "decision": [
+    "The backup must equal the target exactly; only Pattern 1 and the tempo and swing bytes may differ from the source",
+    "Each of the 16 notes is classified 20-130 ms after its onset with the frozen thresholds",
+    "A model holds only if all 16 steps are found and each matches in its five-loop median and at least 4 of 5 loops",
+    "Anything else is inconclusive; the observed per-step map is reported either way"
+  ],
+  "limits": [
+    "Pattern 1, effect code 6, tempo 60 and swing 0; other patterns and codes rely on the code map",
+    "No general per-step effect writer is enabled by this test alone"
+  ]
+}

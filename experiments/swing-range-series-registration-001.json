@@ -1,0 +1,52 @@
+{
+  "analysis_version": "swing-minimum-middle9-and-exact18-return-preregistration-0.1",
+  "registered_before_all_captures": true,
+  "baseline_artifact": "experiments/event-037-b-swing-maximum/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "550c905ac802602e69b691b970536c0bc5bfe76cbd4252b1713b516fdcb360f4",
+  "baseline_capture": "experiments/event-037-b-swing-maximum/capture.wav",
+  "baseline_capture_sha256": "2fd1195678408838c33a89488f0a9b131c143c9a962f3a9964d22ef70d290339",
+  "baseline_body_sha256": "51b9358a087173aa4ebd4e49eda47e698ba34c7dd077237ccb7d353291b6eea8",
+  "baseline_observation_sha256": "5361c2f48ae95ae3bbd1bb9fe11a78d7f1b8fe71ab86f9b52fa712c48e549d79",
+  "original_zero_artifact": "experiments/edited-fine-tempo137-001/derived/analysis-001/capture.symbols.npz",
+  "original_zero_artifact_sha256": "c5b3375847b325fc70ffc558e4a4aa49f39bef919e3f312c23d251fb877d609b",
+  "original_zero_body_sha256": "5f25b5efd909c93b0aa0cdbb31d8aff170ea5edeb9ca6dd48eb2d7778ae696cb",
+  "expected_tempo_bpm": 137,
+  "candidate": {
+    "tag": "0x7d5c",
+    "occurrence_index_zero_based": 1,
+    "payload_offset_zero_based": 130,
+    "baseline_encoded_value": 18
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-038-b-swing-minimum",
+      "action": "Hold BPM and turn A fully counterclockwise",
+      "requested_display_value": null,
+      "expected_body_sha256": null
+    },
+    {
+      "experiment_id": "event-039-c-swing-9",
+      "action": "Hold BPM and set displayed swing9",
+      "requested_display_value": 9,
+      "expected_body_sha256": "ea13a17f3bb7e131ed8c54d3809bd66eeb298425b4f4d62324d1520ae801942b"
+    },
+    {
+      "experiment_id": "event-040-a-return-swing18",
+      "action": "Hold BPM and return to displayed maximum18",
+      "requested_display_value": 18,
+      "expected_body_sha256": "51b9358a087173aa4ebd4e49eda47e698ba34c7dd077237ccb7d353291b6eea8"
+    }
+  ],
+  "encoding_models": {
+    "direct_unsigned_byte": "Every independently reported numeric display equals the raw byte130",
+    "direct_signed_byte": "Every independently reported numeric display equals signed8(raw byte130), with bytes>=128 interpreted as byte-256",
+    "minimum_value_is_unknown": true,
+    "minimum_zero_returns_prior_zero_body": "Conditional only: if user independently observes minimum0, that capture must equal the complete independent original zero-byte state"
+  },
+  "limits": [
+    "Unsigned and signed8 models are registered before minimum data; no after-the-fact scale or offset fitting",
+    "No minimum number, percentage or timing unit is assumed",
+    "Middle9 and return18 must match their complete body predictions; return must equal originalS18 state",
+    "Missing display readings remain unevaluated; no swing writer is enabled"
+  ]
+}

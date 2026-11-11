@@ -1,0 +1,9 @@
+{
+  "user_report": "done, S18 was shown for max swing",
+  "display_text": "S18",
+  "display_numeric_component": 18,
+  "source": "User supplied the display text; units are not assumed",
+  "tempo_display_separately_reported": false,
+  "serialized_tempo_bpm": 137,
+  "capture_sha256": "2fd1195678408838c33a89488f0a9b131c143c9a962f3a9964d22ef70d290339"
+}

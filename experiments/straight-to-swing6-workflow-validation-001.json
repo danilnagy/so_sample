@@ -1,0 +1,39 @@
+{
+  "analysis_version": "straight-offbeat-to-swing6-handoff-workflow-validation-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "straight_hardware_observation_checks_pass": true,
+    "straight_source_and_artifact_hashes_match": true,
+    "straight_native_and_audio_reports_match_observation": true,
+    "straight_playback_and_manual_report_immutable": true,
+    "original_pair_and_new_method_pins_match": true,
+    "swing6_software_checks_pass_and_remain_unverified": true,
+    "swing6_files_match_original_registration": true,
+    "swing6_waveform_recovers_exact_source_bound_target": true,
+    "positive_swing_hardware_still_pending": true,
+    "method_registered_before_positive_swing_data": true,
+    "handoff_points_to_verified_straight_control": true
+  },
+  "straight_observation_sha256": "4587d2c740e77cb1fae68f4cfaafcb0333514fc6cc63bbe93c9ac2c5b9cc35d0",
+  "measurement_registration_sha256": "c10ba77e2343998f1b368c904fd87003afb7bf949d0dd24943839abeb4ffa57f",
+  "validation": {
+    "affected_tests_passed": 47,
+    "affected_test_seconds": 3.24,
+    "ruff_check_passed": true,
+    "formatted_python_files": 212,
+    "prior_full_suite_before_research_changes": {
+      "passed": 740,
+      "seconds": 87.72
+    }
+  },
+  "implementation_sha256": {
+    "scripts/swing_timing_analysis.py": "3ceb2986161a296f828c296834a8cf051c977285457b2f02cbba57a1e9ae8df0",
+    "scripts/check_swing_timing_pair_audio.py": "db4bd178e1c9080483df750712979b2a445a8a7a82e55028a5f31a0eb27dc8a1",
+    "tests/test_swing_timing_analysis.py": "4d9e8cfd03f8b8bd3fa586ec78bb47180a766fbcd4dc47c74139b59fdf386db7"
+  },
+  "limits": [
+    "Straight hardware and measured timing are verified separately; positive swing hardware remains pending",
+    "No public swing writer or percent/clock unit mapping enabled"
+  ]
+}

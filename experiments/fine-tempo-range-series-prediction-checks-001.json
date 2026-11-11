@@ -1,0 +1,12 @@
+{
+  "analysis_version": "fine-tempo-range-series-software-prediction-check-0.1",
+  "hardware_verified": false,
+  "passed": true,
+  "checks": {
+    "leg1_synthetic_controls_and_hypotheses": true,
+    "leg2_synthetic_controls_and_hypotheses": true,
+    "leg3_synthetic_controls_and_hypotheses": true,
+    "complete_return_equals_independently_observed100_body": true
+  },
+  "registration_sha256": "f5f64593df54440bd2c4369bc385a06bc55f0702be1b670c3a987ca052b883fa"
+}

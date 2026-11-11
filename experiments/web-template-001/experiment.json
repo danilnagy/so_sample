@@ -1,0 +1,21 @@
+{
+  "experiment_id": "web-template-001",
+  "capture_status": "validated_exact_native_web_template",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../web-template-registration-001.json",
+  "builder": "web/scripts/build-web-template-test.ts",
+  "playback_seconds": 22,
+  "observation_questions": [
+    "Pattern 1: did Sound 2 (steps 3, 11) play the Sound 1 tone but shorter, and Sound 3 (step 7) start part-way into it? (yes/no/notes)",
+    "Pattern 1 drums (Sound 9): was key 4 (step 7) silent, and did key 5 (step 11) play the Sound 1 tone? (yes/no/notes)",
+    "Pattern 2: did Sound 10 play rising chirp fragments on every step, with FX 1 looping steps 9-12? (yes/no/notes)",
+    "Anything else you noticed (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json"
+}

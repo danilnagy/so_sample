@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "baseline": "event-002-a",
+  "threshold": 0.0063,
+  "source_sha256": "b2abdd86ddad17ef50fa236fe0f97158a1cac5e0dcb2e38845774e7968198e8c",
+  "channels": {
+    "left": {
+      "baseline_symbols": 1970367,
+      "return_symbols": 1970367,
+      "changed_overlap_symbols": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail_symbols": 0,
+      "tail_values_baseline": [],
+      "tail_values_return": [],
+      "identical": true,
+      "alignment_shift": 0
+    },
+    "right": {
+      "baseline_symbols": 1970367,
+      "return_symbols": 1970367,
+      "changed_overlap_symbols": 0,
+      "first_change": null,
+      "last_change": null,
+      "tail_symbols": 0,
+      "tail_values_baseline": [],
+      "tail_values_return": [],
+      "identical": true,
+      "alignment_shift": 0
+    }
+  },
+  "passed": true
+}

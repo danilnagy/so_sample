@@ -1,0 +1,928 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "08afcd48a507053599d616b654e47978d32c814eff1471f16a7c7229e66b0d26",
+  "plan_sha256": "272108920336641b3a3b6fb8f0b6988886e438110fd0e909c370a297892e8146",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 1,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 2,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 3,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 4,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 5,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 6,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 7,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 8,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "7156fb4fc22fe2f444245fc280c3d41eab3f87d03b4cfa8c41777d93d81c25f6",
+      "after_body_sha256": "c8b07b336de69e9096b7b821b8e4bd2c2d5dc5e29f5670a8e326076106c9a826"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 9,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "c8b07b336de69e9096b7b821b8e4bd2c2d5dc5e29f5670a8e326076106c9a826",
+      "after_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 10,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4",
+      "after_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 11,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4",
+      "after_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 12,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4",
+      "after_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 13,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "4efef636f89820abb088005e03fb904c6f41ec61617c3a536872901beb0d36e4",
+      "after_body_sha256": "4be784884d99c9dd951427e148cc69fa09b7573f8cb109fbf7945a3ddb959a54"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 14,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "4be784884d99c9dd951427e148cc69fa09b7573f8cb109fbf7945a3ddb959a54",
+      "after_body_sha256": "3d94eca161dd2cef085e36a46186ba073bf6d767d35d748c8db65e3d2ba1e903"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 15,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "3d94eca161dd2cef085e36a46186ba073bf6d767d35d748c8db65e3d2ba1e903",
+      "after_body_sha256": "3d94eca161dd2cef085e36a46186ba073bf6d767d35d748c8db65e3d2ba1e903"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 16,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "3d94eca161dd2cef085e36a46186ba073bf6d767d35d748c8db65e3d2ba1e903",
+      "after_body_sha256": "3d94eca161dd2cef085e36a46186ba073bf6d767d35d748c8db65e3d2ba1e903"
+    },
+    {
+      "operation": {
+        "operation": "set_notes",
+        "pattern": 2,
+        "sound": 8,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "parameters": {
+          "pitch": 13,
+          "volume": 36,
+          "filter": 63,
+          "resonance": 1
+        }
+      },
+      "before_body_sha256": "3d94eca161dd2cef085e36a46186ba073bf6d767d35d748c8db65e3d2ba1e903",
+      "after_body_sha256": "2eaca3a3147b4a25fa962eca08923284c610972c480e799d5e853af7d1f49560"
+    },
+    {
+      "operation": {
+        "operation": "set_step_effects",
+        "pattern": 2,
+        "effects": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "2eaca3a3147b4a25fa962eca08923284c610972c480e799d5e853af7d1f49560",
+      "after_body_sha256": "2eacf2f12212faf4c9966caffdf3cd6ce016fc575e5e0ed25dcb7f15165b3970"
+    },
+    {
+      "operation": {
+        "operation": "set_raw_cell",
+        "pattern": 2,
+        "step": 2,
+        "sound": 8,
+        "primary_hex": "0df907",
+        "auxiliary": 32
+      },
+      "before_body_sha256": "2eacf2f12212faf4c9966caffdf3cd6ce016fc575e5e0ed25dcb7f15165b3970",
+      "after_body_sha256": "658d85c44ae17d2722094212c7bc175302d16b80c79340db445b0fec4fd36412"
+    },
+    {
+      "operation": {
+        "operation": "set_raw_cell",
+        "pattern": 2,
+        "step": 4,
+        "sound": 8,
+        "primary_hex": "0df907",
+        "auxiliary": 16
+      },
+      "before_body_sha256": "658d85c44ae17d2722094212c7bc175302d16b80c79340db445b0fec4fd36412",
+      "after_body_sha256": "a57c06ddc43c54663c47a2e498cbd825d9112e3554144dfca1ca01208beacd20"
+    },
+    {
+      "operation": {
+        "operation": "set_raw_cell",
+        "pattern": 2,
+        "step": 6,
+        "sound": 13,
+        "primary_hex": "0df907",
+        "auxiliary": 240
+      },
+      "before_body_sha256": "a57c06ddc43c54663c47a2e498cbd825d9112e3554144dfca1ca01208beacd20",
+      "after_body_sha256": "e3245897f4606ee64687223dd7c9e8ec04613df3f2a07934dddb468d6378f1eb"
+    },
+    {
+      "operation": {
+        "operation": "set_raw_cell",
+        "pattern": 2,
+        "step": 8,
+        "sound": 8,
+        "primary_hex": "0df907",
+        "auxiliary": 224
+      },
+      "before_body_sha256": "e3245897f4606ee64687223dd7c9e8ec04613df3f2a07934dddb468d6378f1eb",
+      "after_body_sha256": "2593d9d4590d9ff38f6803d11ab1f7c17e484f1fae3689a0d8ce04a42ce90e7f"
+    },
+    {
+      "operation": {
+        "operation": "set_raw_cell",
+        "pattern": 2,
+        "step": 10,
+        "sound": 8,
+        "primary_hex": "0df907",
+        "auxiliary": 0
+      },
+      "before_body_sha256": "2593d9d4590d9ff38f6803d11ab1f7c17e484f1fae3689a0d8ce04a42ce90e7f",
+      "after_body_sha256": "2ac68e3237c5ce6e9c8bc7320134fcb82652d44704bb65b014e58096c99fdb3a"
+    },
+    {
+      "operation": {
+        "operation": "set_raw_cell",
+        "pattern": 2,
+        "step": 12,
+        "sound": 8,
+        "primary_hex": "00f907",
+        "auxiliary": 245
+      },
+      "before_body_sha256": "2ac68e3237c5ce6e9c8bc7320134fcb82652d44704bb65b014e58096c99fdb3a",
+      "after_body_sha256": "013d9702efe54da402056b984780f24324c93758b4b27aec09fc58ec298f5617"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 131,
+        "value": 1
+      },
+      "before_body_sha256": "013d9702efe54da402056b984780f24324c93758b4b27aec09fc58ec298f5617",
+      "after_body_sha256": "9ac01bd22db1d2b36a217d6664f1c949c3b53913285e4b02d8be7d75b99bd24a"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 132,
+        "value": 2
+      },
+      "before_body_sha256": "9ac01bd22db1d2b36a217d6664f1c949c3b53913285e4b02d8be7d75b99bd24a",
+      "after_body_sha256": "0923950c9838c84afccf6d8dff7a5fd92f679bf3c69b40e12466b401d50747b8"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 133,
+        "value": 3
+      },
+      "before_body_sha256": "0923950c9838c84afccf6d8dff7a5fd92f679bf3c69b40e12466b401d50747b8",
+      "after_body_sha256": "9c95a49c00f9bcfb5c7ea3956618be14844afb4e3fff2cd8c0f8cbd451395f2a"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 134,
+        "value": 4
+      },
+      "before_body_sha256": "9c95a49c00f9bcfb5c7ea3956618be14844afb4e3fff2cd8c0f8cbd451395f2a",
+      "after_body_sha256": "d6a89f78c0a5219194b20367ccc8bb8d0d286be9be59818ce0f12e778f99cbae"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 135,
+        "value": 5
+      },
+      "before_body_sha256": "d6a89f78c0a5219194b20367ccc8bb8d0d286be9be59818ce0f12e778f99cbae",
+      "after_body_sha256": "a6680fe19d35b44856b3039ed76cd38f99eab2449a8de9eed0678dcdfa4cbe3e"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 136,
+        "value": 6
+      },
+      "before_body_sha256": "a6680fe19d35b44856b3039ed76cd38f99eab2449a8de9eed0678dcdfa4cbe3e",
+      "after_body_sha256": "5e737bca0ec96f50c688f0e0be56f0f4108f08c5f06057be3d19f3192400ceee"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 137,
+        "value": 7
+      },
+      "before_body_sha256": "5e737bca0ec96f50c688f0e0be56f0f4108f08c5f06057be3d19f3192400ceee",
+      "after_body_sha256": "17459d8102af1f91834ab911e71d72451f8948eb8f8c73a0de1b760a8790220f"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 138,
+        "value": 8
+      },
+      "before_body_sha256": "17459d8102af1f91834ab911e71d72451f8948eb8f8c73a0de1b760a8790220f",
+      "after_body_sha256": "c53011caf1358919f945d56cc15a702c62935909a9bacf207d09fce87096cb0b"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 139,
+        "value": 9
+      },
+      "before_body_sha256": "c53011caf1358919f945d56cc15a702c62935909a9bacf207d09fce87096cb0b",
+      "after_body_sha256": "c2c987603b63677029e9d1a78b5abc962895fbe6e75edfa0cd5bfdfd173a08d7"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 140,
+        "value": 10
+      },
+      "before_body_sha256": "c2c987603b63677029e9d1a78b5abc962895fbe6e75edfa0cd5bfdfd173a08d7",
+      "after_body_sha256": "198428af03c94004ca768b7019ac40c71ba957a14ce5462c003a9b4727bddb86"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 141,
+        "value": 11
+      },
+      "before_body_sha256": "198428af03c94004ca768b7019ac40c71ba957a14ce5462c003a9b4727bddb86",
+      "after_body_sha256": "2d9c96ee501e5c8581601bd4b1ea675a9a0956e3977f72bd05ac2629e97f4a44"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 142,
+        "value": 12
+      },
+      "before_body_sha256": "2d9c96ee501e5c8581601bd4b1ea675a9a0956e3977f72bd05ac2629e97f4a44",
+      "after_body_sha256": "9eb3da096cbffd2df768c258c17bb4025685c21223bbcf29a770efa67b20bca8"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 143,
+        "value": 13
+      },
+      "before_body_sha256": "9eb3da096cbffd2df768c258c17bb4025685c21223bbcf29a770efa67b20bca8",
+      "after_body_sha256": "7fa32c5246d0e31167c7c9e0da1b181953450a9f2a373af3049ebc03013adeb1"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 144,
+        "value": 14
+      },
+      "before_body_sha256": "7fa32c5246d0e31167c7c9e0da1b181953450a9f2a373af3049ebc03013adeb1",
+      "after_body_sha256": "a173932431fd44346e42892cf7cb53ae92e8a9f656ac1578f0782c41bfbec6b3"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 145,
+        "value": 15
+      },
+      "before_body_sha256": "a173932431fd44346e42892cf7cb53ae92e8a9f656ac1578f0782c41bfbec6b3",
+      "after_body_sha256": "a4b13464215321f826ba4740d7156959498180a91ba551cc440167501a2f4979"
+    },
+    {
+      "operation": {
+        "operation": "set_global_byte",
+        "ordinal": 1,
+        "offset": 146,
+        "value": 16
+      },
+      "before_body_sha256": "a4b13464215321f826ba4740d7156959498180a91ba551cc440167501a2f4979",
+      "after_body_sha256": "49611f6b27ad1f925c3e844d5c85537e490d83639dcd2d715371328744598d7b"
+    },
+    {
+      "operation": {
+        "operation": "set_swing_byte",
+        "value": 0
+      },
+      "before_body_sha256": "49611f6b27ad1f925c3e844d5c85537e490d83639dcd2d715371328744598d7b",
+      "after_body_sha256": "7a2595f413774febaa15035070c34810f108a26f1cd9b3a393483fd89b34cc2f"
+    },
+    {
+      "operation": {
+        "operation": "set_pattern_chain",
+        "patterns": [
+          2
+        ]
+      },
+      "before_body_sha256": "7a2595f413774febaa15035070c34810f108a26f1cd9b3a393483fd89b34cc2f",
+      "after_body_sha256": "2f2fe82261b9a1683617de3f350589be4f44825deb205032245e5f0845561c16"
+    }
+  ],
+  "target_body_sha256": "2f2fe82261b9a1683617de3f350589be4f44825deb205032245e5f0845561c16",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "77238de26600b73c697ff870f8b07de4759298e6a75921f4efb5ac569058cf08",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "c49769e3c7b6832c6cc1eebcf1ae4b990b9cc68248ae3aca92defcfed8bc2c94",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 575483,
+    "active_frames": 3248493,
+    "silence_frames_each_end": 4410,
+    "frames": 3257313,
+    "duration_seconds": 73.86197278911564,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 575483,
+        "reconstructed_symbols": 575483,
+        "overlap_symbols": 575483,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 575483,
+        "reconstructed_symbols": 575483,
+        "overlap_symbols": 575483,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

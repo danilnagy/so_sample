@@ -1,0 +1,79 @@
+{
+  "schema": "po33.hardware-session",
+  "schema_version": 1,
+  "kind": "playback_only",
+  "experiment": "retake-002",
+  "started_at": "2026-11-08T04:09:38+00:00",
+  "audio": {
+    "backend": "sounddevice",
+    "input": {
+      "index": 2,
+      "name": "Microphone In",
+      "hostapi": "Core Audio"
+    },
+    "output": {
+      "index": 1,
+      "name": "Headphone",
+      "hostapi": "Core Audio"
+    }
+  },
+  "config": {
+    "input_device": "Microphone In",
+    "output_device": "Headphone",
+    "hostapi": null,
+    "sample_rate": 44100,
+    "subtype": "PCM_16",
+    "input_cable": "unplug",
+    "playback_gain": 0.3
+  },
+  "playback": {
+    "attempts": [
+      {
+        "file": "playback-01.wav",
+        "sha256": "a64a621bdf50fa313bcdb38fae6a8a6a914effb7439c026cf5632609bef5826a",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1545705,
+        "duration_seconds": 35.05,
+        "signal_onset_seconds": 3.05,
+        "seconds_after_onset": 32.0,
+        "peaks_per_channel": [
+          0.619720458984375,
+          0.999908447265625
+        ],
+        "stream_status_flags": [],
+        "findings": [
+          {
+            "severity": "error",
+            "message": "Peak near full scale; reduce the recording level"
+          }
+        ]
+      },
+      {
+        "file": "playback-02.wav",
+        "sha256": "9c09285f9a4bd49a0290465c55bdc835d12497876d166341c8a56ef7344aec73",
+        "status": "complete",
+        "sample_rate_hz": 44100,
+        "pcm_subtype": "PCM_16",
+        "frames": 1486170,
+        "duration_seconds": 33.7,
+        "signal_onset_seconds": 1.7,
+        "seconds_after_onset": 32.0,
+        "peaks_per_channel": [
+          0.523712158203125,
+          0.924072265625
+        ],
+        "stream_status_flags": [],
+        "findings": []
+      }
+    ],
+    "file": "playback.wav",
+    "accepted": "playback-02.wav",
+    "accepted_with_findings": false,
+    "sha256": "9c09285f9a4bd49a0290465c55bdc835d12497876d166341c8a56ef7344aec73"
+  },
+  "interrupted": false,
+  "hardware_verified": false,
+  "finished_at": "2026-11-08T04:11:40+00:00"
+}

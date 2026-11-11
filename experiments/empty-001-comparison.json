@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "channels": {
+    "left": {
+      "original_symbols": 45033,
+      "reconstructed_symbols": 45033,
+      "overlap_symbols": 45033,
+      "changed_overlap_symbols": 0,
+      "tail_symbols": 0,
+      "identical": true,
+      "changed_ranges": [],
+      "range_convention": "zero-based end-exclusive symbol indices",
+      "alignment_shift": 0,
+      "discarded_for_alignment": 0
+    },
+    "right": {
+      "original_symbols": 45033,
+      "reconstructed_symbols": 45033,
+      "overlap_symbols": 45033,
+      "changed_overlap_symbols": 0,
+      "tail_symbols": 0,
+      "identical": true,
+      "changed_ranges": [],
+      "range_convention": "zero-based end-exclusive symbol indices",
+      "alignment_shift": 0,
+      "discarded_for_alignment": 0
+    }
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "evidence": "Exact complete phase labels and counts; not verified protocol/state data",
+  "source_capture_hashes": [
+    "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+    "65d8145f519c71bec0162fb38c6fe134008a096cf46183be233980ff34259a57"
+  ],
+  "boundary_comparison": {
+    "threshold": 0.0063,
+    "left_incomplete_sign_intervals": [
+      0
+    ],
+    "right_incomplete_sign_intervals": [
+      0,
+      0
+    ],
+    "partial_final_intervals_match": true,
+    "encoding_limitation": "Current encoder rejects nonempty incomplete final sign intervals; no restore candidate was synthesized."
+  }
+}

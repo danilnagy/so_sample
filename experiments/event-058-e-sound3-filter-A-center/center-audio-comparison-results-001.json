@@ -1,0 +1,78 @@
+{
+  "hardware_verified": false,
+  "measurements": [
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.15,
+      "amplitude_ratio_center_to_prior": 0.9727726880639537,
+      "relative_frequency_delta": 1.7324729444823106e-05,
+      "loop_delta_seconds": -0.00018140589569171084,
+      "comparison_consistent": true,
+      "near_reference_amplitude_supported": true
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.25,
+      "amplitude_ratio_center_to_prior": 0.9727816138482623,
+      "relative_frequency_delta": 1.8363164510093455e-05,
+      "loop_delta_seconds": 0.00020408163265361878,
+      "comparison_consistent": true,
+      "near_reference_amplitude_supported": true
+    },
+    {
+      "channel": "left",
+      "threshold_peak_fraction": 0.35,
+      "amplitude_ratio_center_to_prior": 0.9727853183027719,
+      "relative_frequency_delta": 1.9044010727720107e-05,
+      "loop_delta_seconds": -0.0001587301587298029,
+      "comparison_consistent": true,
+      "near_reference_amplitude_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.15,
+      "amplitude_ratio_center_to_prior": 0.9735369193556181,
+      "relative_frequency_delta": 1.642713212968161e-05,
+      "loop_delta_seconds": -0.00018140589569171084,
+      "comparison_consistent": true,
+      "near_reference_amplitude_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.25,
+      "amplitude_ratio_center_to_prior": 0.9735478985995272,
+      "relative_frequency_delta": 1.754003691356587e-05,
+      "loop_delta_seconds": 0.0001587301587298029,
+      "comparison_consistent": true,
+      "near_reference_amplitude_supported": true
+    },
+    {
+      "channel": "right",
+      "threshold_peak_fraction": 0.35,
+      "amplitude_ratio_center_to_prior": 0.9735528902164444,
+      "relative_frequency_delta": 1.8263137420371223e-05,
+      "loop_delta_seconds": -0.00017006802721120096,
+      "comparison_consistent": true,
+      "near_reference_amplitude_supported": true
+    }
+  ],
+  "comparison_usable": true,
+  "all_near_reference_amplitudes_supported": true,
+  "broadband_bypass_or_filter_law_confirmed": false,
+  "filter_writer_enabled": false,
+  "analysis_version": "registered-FILTER-center-to-prior-tone-comparison-0.1",
+  "registration_sha256": "a154f538a4a7b4cc169e1228effbcc5521168b93df11b2f65fb26a36b900b95f",
+  "prior_audio_results_sha256": "7dba176dfb8619da2e5d67b6b380c2b9aa26f1e41a2f89352dd28a14332e8585",
+  "center_audio_results_sha256": "a7c6c0df601c02b205410c8c27b0f0c060a67347e2c2af52c288c6a5bfb79868",
+  "center_native_results_sha256": "25e55590312e1aeb155d2329b724534f505d7f447c62cc690924e3b2cf15b37a",
+  "native_source_and_scope_pass": true,
+  "limits": [
+    "Interior raw value and whole target body are unknown;31/32 or uniformity are not predicted",
+    "Raw between-endpoint tests concern two monotonic scalar interpretations only; passing/failing them does not settle all mode/flag models",
+    "Reference audio already exists from before FILTER recording; new comparison is registered before center data, with the original common frequency method unchanged",
+    "Near-reference tone amplitude is a5% hypothesis at the repeated component, not proof of broadband bypass or a complete filter law",
+    "Tone frequency and loop must stay consistent; failures or ramps are retained without fitting new windows, thresholds or endpoint codes",
+    "No numeric UI, digital silence, resonance or filter writer is inferred; other third-byte bits stay opaque"
+  ],
+  "stored_center_and_near_reference_component_supported": true
+}

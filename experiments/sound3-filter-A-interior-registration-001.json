@@ -1,0 +1,147 @@
+{
+  "analysis_version": "FILTER-two-interiors-and-exact-neutral-return-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_all_three_captures": true,
+  "model_revised_after_center63_observation": true,
+  "source_artifact": "experiments/event-058-e-sound3-filter-A-center/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "8d0521869b751c15d3766012b91c05edf58f4b2c03fe84e53e6ecdff0a64091e",
+  "source_capture": "experiments/event-058-e-sound3-filter-A-center/capture.wav",
+  "source_capture_sha256": "e537f40ed8fb7fb463040ff4af8413fcb0a71894336696e8fd205d425f71d59b",
+  "source_body_sha256": "8f80a398ac7130f1802ba865985cb3f7174f9f0129af1182eb6d5da450d6a341",
+  "source_observation_sha256": "9751d6d7beedceca97cdc69bf52c34be317a4e0266549fe7576736c519a86d37",
+  "source_native_results_sha256": "25e55590312e1aeb155d2329b724534f505d7f447c62cc690924e3b2cf15b37a",
+  "source_audio_comparison_sha256": "380fdbf5b40d38e3abdd8286c17983faa2aa813cca03d5cb268a115df061029d",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "candidate": {
+    "pattern": 1,
+    "sound": 3,
+    "second_primary_mask": 240,
+    "third_primary_mask": 3
+  },
+  "broader_FILTER_candidate": {
+    "second_primary_mask": 240,
+    "third_primary_mask": 255
+  },
+  "expected_pitch_values": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "expected_volume_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-059-f-sound3-filter-A-lowpass-interior",
+      "physical_side": "counterclockwise_lowpass",
+      "expected_raw_code": null
+    },
+    {
+      "experiment_id": "event-060-g-sound3-filter-A-highpass-interior",
+      "physical_side": "clockwise_highpass",
+      "expected_raw_code": null
+    },
+    {
+      "experiment_id": "event-061-h-return-sound3-filter-A-center",
+      "physical_side": "single_middle_tick_center_return",
+      "expected_contiguous_values": [
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63
+      ],
+      "expected_alternative_values": [
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63
+      ],
+      "expected_complete_body_sha256": "8f80a398ac7130f1802ba865985cb3f7174f9f0129af1182eb6d5da450d6a341"
+    }
+  ],
+  "branch_scalar_order_hypotheses": {
+    "contiguous": {
+      "lowpass_strict_bounds": [
+        1,
+        32
+      ],
+      "highpass_strict_bounds": [
+        31,
+        62
+      ]
+    },
+    "alternative": {
+      "lowpass_strict_bounds": [
+        4,
+        32
+      ],
+      "highpass_strict_bounds": [
+        31,
+        59
+      ]
+    }
+  },
+  "hypothesis_interpretation": "Special neutral63 with interior LPF/HPF in lower/upper numerical branches; these are falsifiable scalar-order hypotheses, not already decoded mode bits",
+  "limits": [
+    "Both previous between-endpoint center predictions failed at63; original reports and incorrect full-bar cue remain immutable",
+    "Special neutral63 and two branches are new post-center hypotheses registered before these interior data",
+    "Interior values and complete bodies are unknown; no exact quarter-position code or uniformity is predicted",
+    "Two scalar branch-order projections remain distinct; failures, ramps, unchanged captures and wider changes are retained",
+    "Whole independent center body and every packet must return exactly; matching candidate codes alone are insufficient",
+    "Single middle tick is the user-confirmed center cue; interior UI units, cutoffHz, full width, resonance and public writer remain unconfirmed",
+    "No ordinary audio measurement is required for these backups; user audibility and knob directions remain separate observations"
+  ]
+}

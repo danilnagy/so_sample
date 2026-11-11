@@ -1,0 +1,21 @@
+{
+  "experiment_id": "event-035-c-fine-tempo-240",
+  "capture_status": "validated_fine_tempo_endpoint_or_exact100_return",
+  "expected_file": "capture.wav",
+  "series_registration": "../fine-tempo-range-series-registration-001.json",
+  "expected_display_before_bpm": 60,
+  "expected_display_after_bpm": 240,
+  "planned_actions": [
+    "Keep Pattern1/Sound8/TONE stopped/write off and knob A untouched",
+    "Hold BPM continuously while turning knob B to displayed240; stop moving B before releasing BPM",
+    "Before playback save a complete stereo capture.wav with established reduced recording levels and one second trailing silence",
+    "Report the actual display value; do not continue to the next leg without saving this capture"
+  ],
+  "source_sha256": "1f8de2aafb3281ab6a1db133222669f6082a6131e51094e95b3b25ecf7f621dc",
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "display_bpm": 240,
+  "project": "../exported-fine-tempo240-001/project.json",
+  "fine_tempo_writer_enabled": false
+}

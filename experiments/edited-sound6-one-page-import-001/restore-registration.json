@@ -1,0 +1,38 @@
+{
+  "analysis_version": "one-page-Sound6-WAV-import-preregistration-0.1",
+  "registered_before_capture": true,
+  "software_validation_sha256": "95a4a2d9ec730d032a5cd825c4945dfce989b0f658e28f3404d62f36b7433416",
+  "source_artifact": "experiments/edited-sound6-nine-pages-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "265a082edcd970fbfd78ceb388ab57d36ecd03bb16f293f8c024961f3e415eba",
+  "source_capture_sha256": "4bd755836feb7ac6f1bcaa806838d398dbf58122a2c2a3882a7909f45409150e",
+  "source_body_sha256": "196444b1b49e0826e9ce7f4b0a4672af4e0a19a7b728a9618408a12e1ee3b3a7",
+  "source_acceptance_sha256": "0ad72f4e68edd96e13d983dfc9ae5edbaad5ad21ea462307994eb3cc07848b15",
+  "edited_artifact_sha256": "321b2b4efcbf184507851c3909f64d56f920c9370ce236e03ac381a503e0c79a",
+  "restore_wav_sha256": "f8736ed60f4206b9b08ee2d1c209e6797f2c8bb955c33247b876d951e37f20eb",
+  "expected_body_sha256": "c9ddfcbea8921fef3d62e06959e378a0fa20cf5351c59ba089cfe40974780b66",
+  "expected_sound6_payload_sha256": "95fe41c99c57fc61fcf69fd7f77f45a07022f19b4a4fe1e2dad105aef0e21bac",
+  "expected_sound6_header_hex": "000000002809000005",
+  "input_wav_sha256": "9fb2d229628767c80485c9dd23b24072218c36f910413483b5a15d552298a288",
+  "expected_packet_count": 832,
+  "expected_frame_end_byte": 160948,
+  "expected_change": {
+    "sound_slot": 6,
+    "selector_id": 5,
+    "capacity_before": 36864,
+    "capacity_after": 4096,
+    "endpoint_before": 30912,
+    "endpoint_after": 2344,
+    "input_PCM_frames48k": 4800
+  },
+  "expected_auditions": {
+    "sound6_key1": "New higher1200Hz short beep, about0.1seconds at nominal key1 pitch",
+    "sound7_key1": "Remains empty/silent",
+    "sound4_sound5_pattern1": "Unchanged"
+  },
+  "limits": [
+    "The actual saved PCM WAV is resampled and quantized without gain normalization; the pre-save sine is not used as a code oracle",
+    "This probe tests one4096-code page and a new2344 endpoint under unshared Sound6; failure would not isolate size from endpoint interpretation by itself",
+    "Ordinary WAV input is restricted to100ms48k identical stereo PCM for this calibration",
+    "No arbitrary import, allocation or public copy/deletion scope is enabled before this hardware test"
+  ]
+}

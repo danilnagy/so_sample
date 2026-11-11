@@ -1,0 +1,50 @@
+{
+  "analysis_version": "native-melodic-key2-preregistration-0.1",
+  "registered_before_capture": true,
+  "baseline_source_sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+  "baseline_body_sha256": "8b39765df9a4caf71e509f54b0c49e2f0d95ad1a60f4effa46daa687259d0104",
+  "target_capture": "event-008-b-melodic-key2/capture.wav",
+  "expected_change": {
+    "pattern": 1,
+    "step": 5,
+    "sound_slot": 3,
+    "old_melodic_keyboard_key": 1,
+    "new_melodic_keyboard_key": 2
+  },
+  "control_checks": {
+    "packet_count": 511,
+    "frame_end_byte": 89396,
+    "all_packet_checksums": "Valid with the fixed reviewed phase profile",
+    "sample_packets": "All sample selector and data packets identical to baseline",
+    "other_patterns": "Patterns2..16 identical to baseline",
+    "all_other_plain_packets": "Outside Pattern1 data chunks, identical to baseline after reselecting Sound8",
+    "populated_steps": [
+      1,
+      5,
+      9,
+      13
+    ],
+    "changed_cell": "At least one byte changes in Sound3 Step5 primary[198,201) or auxiliary byte834",
+    "locality": "All other1032-byte Pattern1 payload positions remain identical, including Steps1/9/13 and footer"
+  },
+  "separately_evaluated_hypotheses": {
+    "primary_stays_unchanged": {
+      "span": [
+        198,
+        201
+      ],
+      "expected_hex": "0df883"
+    },
+    "auxiliary_key_index": {
+      "offset": 834,
+      "old_value": 240,
+      "expected_new_value": 241,
+      "interpretation": "Hypothesis: low nibble is keyboard index0..15; key2 changes F0 to F1 while upper nibble remains opaque"
+    }
+  },
+  "limits": [
+    "The F1 value and key-index interpretation are predictions, not established note bitfields.",
+    "Control invariants and field hypotheses must be reported separately; a hypothesis miss is retained.",
+    "No masked or normalized metadata match is allowed; unexpected differences require investigation."
+  ]
+}

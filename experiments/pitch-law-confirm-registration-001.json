@@ -1,0 +1,106 @@
+{
+  "analysis_version": "pitch-law-confirm-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-pitch-law-002",
+  "plan": "experiments/pitch-law-plan-002/plan.json",
+  "plan_sha256": "3444c92c2864248ced5a72eb42c46f7271dd2ed704848224e37a7f06277453d8",
+  "compile_report_sha256": "4276c5ddba6fb1977dc6d3f0e5b4d602721c147117f52d166f6531511dbb62ca",
+  "source_artifact": "experiments/compiled-pitch-law-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "185ec9b40d6eb0215734e9f9e72ee292b1611f6fec3e7c056a90a2786cd99bb1",
+  "source_capture_sha256": "09e7ffac7f8d161a82c5c96230ae8c97c90335f19dfd4d47306f0c0e7d5f5339",
+  "expected_body_sha256": "3aead0de49e5507898fc9f5b8d319cab595ef7f8373ef3f817963fcbec2ec9e0",
+  "edited_artifact_sha256": "c9581f2697cdfec28dd5a25177b4d9ff7129cc27aab62ff6b2b45ab10072a4a7",
+  "restore_wav_sha256": "5f7a1c8b2d5785b1f1c0a3f89159d9677d6e1cae1be1cc769d8a2121e87239d5",
+  "pitch_codes": [
+    13,
+    25,
+    1,
+    19,
+    7,
+    22,
+    4,
+    16,
+    10,
+    24,
+    2,
+    21,
+    5,
+    18,
+    8,
+    14
+  ],
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      50.0,
+      60.0,
+      70.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "semitone_per_code": [
+      0,
+      1200,
+      -1200,
+      600,
+      -600,
+      900,
+      -900,
+      300,
+      -300,
+      1100,
+      -1100,
+      800,
+      -800,
+      500,
+      -500,
+      100
+    ],
+    "previous_order_kept": [
+      0,
+      -1200,
+      1200,
+      -600,
+      600,
+      -900,
+      900,
+      -300,
+      300,
+      -1100,
+      1100,
+      -800,
+      800,
+      -500,
+      500,
+      -100
+    ]
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly; only Pattern 1's Sound3 cells may differ",
+    "Pitches are measured with the frozen grid-only method 50-90 ms after each grid onset, after the pitch glide; cents are relative to step 1 (code 13)",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Otherwise inconclusive; the measured table is reported either way"
+  ],
+  "limits": [
+    "Sound3 with key 1 on Pattern 1; codes outside 1..25 are not tested"
+  ]
+}

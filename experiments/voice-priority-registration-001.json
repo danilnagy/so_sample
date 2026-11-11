@@ -1,0 +1,289 @@
+{
+  "analysis_version": "voice-priority-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-voice-priority-001",
+  "source_artifact": "experiments/compiled-polyphony-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "25283042d78f40c91b7836943db1d2c112aae107cc99fe53aad1c955853dad9e",
+  "source_capture_sha256": "9628b60ebc818f08a17687d9e295cd0f40fa5b777e3f7f40f00fd942f6849f16",
+  "voices_hz": {
+    "1": 599.3228307506727,
+    "2": 653.5660418548391,
+    "3": 712.7192052499305,
+    "4": 777.2258198307022,
+    "5": 847.5698387829855,
+    "6": 924.2816628119948,
+    "7": 1007.9366418352505,
+    "8": 1099.162566517964,
+    "13": 300.0,
+    "14": 400.0,
+    "11": 1500.0,
+    "12": 500.0,
+    "15": 1200.0,
+    "16": 1350.0
+  },
+  "solo_steps": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "13": 9,
+    "14": 10,
+    "11": 11,
+    "12": 12,
+    "15": 13,
+    "16": 14
+  },
+  "stacks": {
+    "1": [
+      1,
+      2,
+      3,
+      4,
+      11
+    ],
+    "3": [
+      1,
+      2,
+      3,
+      4,
+      16
+    ],
+    "5": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "7": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "9": [
+      1,
+      11,
+      12,
+      13,
+      14
+    ],
+    "11": [
+      1,
+      2,
+      11,
+      12,
+      13
+    ],
+    "13": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "15": [
+      1,
+      2,
+      3,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "voice_count": 4,
+  "rule_predictions": {
+    "lowest_sounds_win": {
+      "1": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "5": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "7": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "9": [
+        1,
+        11,
+        12,
+        13
+      ],
+      "11": [
+        1,
+        2,
+        11,
+        12
+      ],
+      "13": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "15": [
+        1,
+        2,
+        3,
+        11
+      ]
+    },
+    "highest_sounds_win": {
+      "1": [
+        2,
+        3,
+        4,
+        11
+      ],
+      "3": [
+        2,
+        3,
+        4,
+        16
+      ],
+      "5": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "7": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "9": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "11": [
+        2,
+        11,
+        12,
+        13
+      ],
+      "13": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "15": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "drums_win": {
+      "1": [
+        1,
+        2,
+        3,
+        11
+      ],
+      "3": [
+        1,
+        2,
+        3,
+        16
+      ],
+      "5": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "7": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "9": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "11": [
+        1,
+        11,
+        12,
+        13
+      ],
+      "13": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "15": [
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  "plan_sha256": "0f9ac28200e7dc722fa435b1ea7b4168b44de4aa813cb9432554fda5554e6554",
+  "expected_body_sha256": "0d1492e4651113462ac3122e8ac4d38745b226522e6cc69e10c65c2059afb31e",
+  "edited_artifact_sha256": "52c6fd3e6bf2058ff988af664090f4677800788c7aa38dba1be1f735276fa8cd",
+  "restore_wav_sha256": "c45c10ec9335a2b30c44f3945b83d7d1bb80035f314289e437cd7f7517a7de3a",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      4000.0
+    ],
+    "onset_noise_ratio": 10.0,
+    "onset_min_fraction_of_peak": 0.02,
+    "noise_floor_seconds": 0.2,
+    "skip_seconds": 0.02,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "window_ms": [
+      100.0,
+      240.0
+    ],
+    "fft_size": 65536,
+    "peak_search_hz": 12.0,
+    "presence_db": -10.0
+  },
+  "method_script_sha256": "e700aa8b29f77a0f61376735469ca6982656da3cce55e6e8d9bb56ada68bbf50",
+  "cycles_measured": 3,
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "four_voices holds when every stack's majority count over three cycles is 4",
+    "A rule holds when every stack's majority present set equals its prediction"
+  ],
+  "limits": [
+    "Sounds triggered on the same step at 60 BPM; stealing across steps is not tested"
+  ]
+}

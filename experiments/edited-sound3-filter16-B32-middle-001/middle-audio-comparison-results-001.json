@@ -1,0 +1,148 @@
+{
+  "hardware_verified": false,
+  "middle_above_minimum": {
+    "hardware_verified": false,
+    "measurements": [
+      {
+        "channel": "left",
+        "threshold_peak_fraction": 0.15,
+        "amplitude_ratio_candidate_to_reference": 6.4669918436773495,
+        "relative_frequency_delta": -0.00012687300763980502,
+        "loop_delta_seconds": 0.000294784580498586,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "left",
+        "threshold_peak_fraction": 0.25,
+        "amplitude_ratio_candidate_to_reference": 6.467011680045067,
+        "relative_frequency_delta": -0.0001232640784377681,
+        "loop_delta_seconds": 0.00028344671201763205,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "left",
+        "threshold_peak_fraction": 0.35,
+        "amplitude_ratio_candidate_to_reference": 6.46707237599321,
+        "relative_frequency_delta": -0.00012129380046366212,
+        "loop_delta_seconds": 0.0002721088435366781,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "right",
+        "threshold_peak_fraction": 0.15,
+        "amplitude_ratio_candidate_to_reference": 6.4693511778938815,
+        "relative_frequency_delta": -0.00012480690722083132,
+        "loop_delta_seconds": 0.00028344671201807614,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "right",
+        "threshold_peak_fraction": 0.25,
+        "amplitude_ratio_candidate_to_reference": 6.469431993852197,
+        "relative_frequency_delta": -0.00012177687034620188,
+        "loop_delta_seconds": 0.00028344671201763205,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "right",
+        "threshold_peak_fraction": 0.35,
+        "amplitude_ratio_candidate_to_reference": 6.469473869646151,
+        "relative_frequency_delta": -0.00012051677125191063,
+        "loop_delta_seconds": 0.00029478458049769785,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      }
+    ],
+    "comparison_usable": true,
+    "all_amplitude_increases_supported": true,
+    "general_resonance_law_or_broad_spectral_response_confirmed": false,
+    "resonance_writer_enabled": false
+  },
+  "maximum_above_middle": {
+    "hardware_verified": false,
+    "measurements": [
+      {
+        "channel": "left",
+        "threshold_peak_fraction": 0.15,
+        "amplitude_ratio_candidate_to_reference": 1.1047893837224816,
+        "relative_frequency_delta": 6.763928830522126e-05,
+        "loop_delta_seconds": -0.00017006802721208913,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "left",
+        "threshold_peak_fraction": 0.25,
+        "amplitude_ratio_candidate_to_reference": 1.1047800853727179,
+        "relative_frequency_delta": 6.741043387470391e-05,
+        "loop_delta_seconds": -0.00018140589569171084,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "left",
+        "threshold_peak_fraction": 0.35,
+        "amplitude_ratio_candidate_to_reference": 1.1047895878243283,
+        "relative_frequency_delta": 6.717599640015948e-05,
+        "loop_delta_seconds": -0.00018140589569171084,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "right",
+        "threshold_peak_fraction": 0.15,
+        "amplitude_ratio_candidate_to_reference": 1.104794848411143,
+        "relative_frequency_delta": 6.81719789819013e-05,
+        "loop_delta_seconds": -0.00015873015873157925,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "right",
+        "threshold_peak_fraction": 0.25,
+        "amplitude_ratio_candidate_to_reference": 1.1047810248995822,
+        "relative_frequency_delta": 6.781790489163164e-05,
+        "loop_delta_seconds": -0.00018140589569171084,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      },
+      {
+        "channel": "right",
+        "threshold_peak_fraction": 0.35,
+        "amplitude_ratio_candidate_to_reference": 1.1047876493101247,
+        "relative_frequency_delta": 6.773368104728839e-05,
+        "loop_delta_seconds": -0.00018140589569171084,
+        "comparison_consistent": true,
+        "amplitude_increase_supported": true
+      }
+    ],
+    "comparison_usable": true,
+    "all_amplitude_increases_supported": true,
+    "general_resonance_law_or_broad_spectral_response_confirmed": false,
+    "resonance_writer_enabled": false
+  },
+  "both_comparisons_usable": true,
+  "all_middle_amplitudes_between_endpoints_with_registered_margin": true,
+  "general_resonance_law_or_bit7_role_confirmed": false,
+  "resonance_writer_enabled": false,
+  "analysis_version": "frozen-B32-middle-to-prior-B0-B63-component-comparison-0.1",
+  "registration_sha256": "b54dcad7399ec660cdb45e2e28b45ab63c52c4ac6b72b78d366526a44aa84b91",
+  "middle_audio_results_sha256": "0ad9f3283870885b980f280262c77010e13a8bb7968fe618b84b09d41c5bab49",
+  "middle_native_results_sha256": "2b1a53f6c225461b786f0312f9f297a912ac63a0ebca28ab4223f68e5e722ade",
+  "endpoint_audio_results_sha256": [
+    "a4465d9622a6596da6afd987ceccc1f86afe6219e767cbeebba57efe23c9f8c2",
+    "57f3de17482a4bd37a456de88bf1aa40fc52eb922bc38decb5080dcc114dbc31"
+  ],
+  "limits": [
+    "B32 target is new and has no physical recapture yet; endpoints were already observed before this new interior registration",
+    "New hypothesis requires middle amplitude above minimum by at least5% and maximum above middle by at least5% in all six common measurements; failure remains retained",
+    "Original common audio method, windows, thresholds, band and search remain unchanged; missing/quiet/distorted audio is not refitted",
+    "Only fixed32 from exact accepted LPF16/B63 is allowed by constructor; no general resonance writer or cutoff guard extension",
+    "Literal32 tests an interior code and bit7 with lower candidate bits clear; no numeric UI midpoint, proportional Q scale or complete bit7 semantics inferred"
+  ]
+}

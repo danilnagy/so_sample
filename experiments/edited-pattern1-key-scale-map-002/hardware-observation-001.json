@@ -1,0 +1,42 @@
+{
+  "analysis_version": "key-scale-map-rerun-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception and registered per-key pitch intervals",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "row_layout_from_first_run",
+  "step1_hz": 1190.569125145131,
+  "measured_cents_by_key": {
+    "1": 0.0,
+    "2": 99.84663092859252,
+    "3": 299.9132607017233,
+    "4": 399.97961559772585,
+    "5": -699.7635841675548,
+    "6": -500.32031452186783,
+    "7": -400.2366511089474,
+    "8": -200.21579395387087,
+    "9": -1200.5404334367913,
+    "10": -1100.1768362265168,
+    "11": -900.0210051217034,
+    "12": -800.0348765242379,
+    "13": -1899.859289358528,
+    "14": -1699.635672301179,
+    "15": -1600.224815385944,
+    "16": -1400.1602131678626
+  },
+  "decision_sha256": "6a3c31f0861cd81307279e75b3ec6cfd817903809b48ea1c716e0ffd128e42dd",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "bdef34df80ea5118eb41debb8207ab618f9997749a2ef9118aa4f63f0c89426f",
+  "session_answers": [],
+  "limits": [
+    "Sound3 with its recorded parameters only; other sounds may differ",
+    "Measures pitch only, not note length or level"
+  ]
+}

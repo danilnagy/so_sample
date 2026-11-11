@@ -1,0 +1,57 @@
+{
+  "experiment_id": "event-017-b-drum9-key2-trim-min",
+  "capture_status": "received_and_validated_key2_mapping_and_endpoint_minimum",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-drum9-slice-end-001",
+  "baseline_capture": "../edited-drum9-slice-end-001/capture.wav",
+  "baseline_source_sha256": "0ddaf2dd97497f4046ccf69a346b03284e5701296a91686f6880a3cf88770c3e",
+  "baseline_artifact": "../edited-drum9-slice-end-001/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "cfb6a1470674c6d8e9f42ec127c84f0605b7084c17e03ad06791acaa37cc52d3",
+  "baseline_body_sha256": "4eca78dcdf5521941bb07c0d16e4cad71115512021670c203d87256ce142e667",
+  "preregistration": "../drum9-key2-trim-min-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "With Pattern1 selected, playback stopped and write off, select Sound9 and tap keyboard key2 once",
+    "Select TRIM/tri; leave knobA untouched; turn only knobB slightly clockwise then fully counterclockwise",
+    "Return to TONE and Sound8; before further audition or pattern playback record a full stereo backup as capture.wav here",
+    "After saving, select Sound9/TONE and tap key2 once; report very short click/burst or sustained tone",
+    "Return to Sound8/TONE with write off and playback stopped; leave knobs untouched and retain the changed key2 trim"
+  ],
+  "actual_actions": [
+    "User reports done and confirmed I hear a click after the requested key2 minimum backup and post-capture audition; no deviation reported"
+  ],
+  "source_sha256": "78f321ce42b7cfca70013487b70c62db4bd3dac57c27f7cb9f9a4c2de35692b6",
+  "purpose": "Independently map drum key2 and discriminate nonzero-start length versus endpoint fields while preserving the accepted key1 window",
+  "user_report": "done and confirmed I hear a click",
+  "validated_symbol_artifact": "derived/analysis-001/capture.symbols.npz",
+  "validation_report": "../drum9-key2-trim-min-results-001.json",
+  "audition_observation": "audition-observation.json",
+  "control_passed": true,
+  "hypothesis_checks": {
+    "key2_maps_to_selector9": true,
+    "first_field_unchanged": true,
+    "second_field_is_length": false,
+    "second_field_is_endpoint": true,
+    "second_field_moves_lower_but_above_first": true
+  },
+  "reference_values": {
+    "selector_id": 9,
+    "before_hex": "cd0f0000981f000000",
+    "after_hex": "cd0f00004c10000000",
+    "before": {
+      "first_u32le": 4045,
+      "second_u32le": 8088,
+      "owner_id": 0
+    },
+    "after": {
+      "first_u32le": 4045,
+      "second_u32le": 4172,
+      "owner_id": 0
+    }
+  },
+  "experimental_nonzero_start_drum_writer_enabled": true,
+  "enabled_scope": "Sound9/key1 start0/end127..4044 and key2 start4045/end4172..8088, owner0/65536 codes and literal other14 references",
+  "generated_key2_edit_hardware_verified": false,
+  "current_project_export": "../exported-drum9-key2-min-001/project.json",
+  "workflow_validation": "../drum-key2-workflow-validation-001.json"
+}

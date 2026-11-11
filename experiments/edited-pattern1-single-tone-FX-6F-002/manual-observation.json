@@ -1,0 +1,10 @@
+{
+  "session_answers": [
+    {
+      "question": "Describe the pitch of the repeating tone, if you noticed it (Enter to skip)",
+      "answer": "pitch bend at beginning"
+    }
+  ],
+  "capture_sha256": "9d108a60c6869316df78fd9cbd1a6c96e09fb35940bc3d7b7cb117e3394d093e",
+  "playback_sha256": "a7b9750c8608a05a420e93bb10b3efbf8f20186916b4d7e4ddad8a64bb0b39c3"
+}

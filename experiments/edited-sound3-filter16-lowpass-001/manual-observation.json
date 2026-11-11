@@ -1,0 +1,10 @@
+{
+  "user_report": "done and confirmed I hear low pass filtering",
+  "user_described_filter": "low_pass",
+  "requested_restore_and_recapture_completed_in_context": true,
+  "restore_success_explicitly_stated_in_quote": false,
+  "numeric_display_value": null,
+  "capture_sha256": "3c0b24a651375ed1161629f854301165ad45ba648c2e2a5599df7150616d93b2",
+  "restore_wav_sha256": "02e8c8031de87341172207fa436a440a9660d8395142529da04bd21b12c84a16",
+  "interpretation": "User explicitly confirms audible low-pass filtering after the requested generated restore; complete native recapture separately establishes target reception"
+}

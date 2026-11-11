@@ -1,0 +1,981 @@
+{
+  "analysis_version": "staggered-phase-probes-0.1",
+  "inputs": [
+    {
+      "path": "experiments\\event-002-a\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "7f703285c550c9352fa618d541d8d660fef1a3876dfaa69ebbede003a11460c0",
+      "source_sha256": "94acfd882f69ed003680c9068b9a57c484aa980b7162575398cabc036e588931"
+    },
+    {
+      "path": "experiments\\event-001-b\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "9c5820088d255acff70e7c8c802da553a69ddacd920b301a5d8db9b6b4324c8b",
+      "source_sha256": "1a08cc0bb65f9d32104b79dd1a3be9c9a97c58c31ad3a47dd58644e256d504a1"
+    },
+    {
+      "path": "experiments\\event-002-b\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "e6994958d45a333910939ce5e6f3308a2146a9ecb35865a7adafe9f08f328ede",
+      "source_sha256": "03d9e64af825b4420291668c9bcdb013b18ee29e8a28925625f399139bbc2334"
+    },
+    {
+      "path": "experiments\\event-003-b\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "3931d9cdf8e2860517b7d344d2d994a62ba640613604a73326735f98a14b057a",
+      "source_sha256": "38e774432509ed0ae86b7d552b75d19543e384ef5519ffecffe2385b1bb91ac7"
+    },
+    {
+      "path": "experiments\\event-004-b-repeat\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "0ecd6fe51d10218210617558aff422aecdfbd9f357aeec4cad26a4f4816177a9",
+      "source_sha256": "b36cd797d11e808b4481b32aef0808c978905d52466c8f2599018445a107490d"
+    }
+  ],
+  "grouping": "cell[n] = (high[n+1], low[n]); circular indices 10=0,11=1,01=2,00=3",
+  "increment": "increment[n] = (phase[n+1] - phase[n]) modulo 4",
+  "units": "diagnostic phase cells and increments, not verified protocol bits",
+  "original_artifacts_modified": false,
+  "payload_decoded": false,
+  "roundtrip_checks": [
+    {
+      "input_index": 0,
+      "channel": "left",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 0,
+      "channel": "right",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 1,
+      "channel": "left",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 1,
+      "channel": "right",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 2,
+      "channel": "left",
+      "labels": 1970366,
+      "phase_cells": 1970365,
+      "increments": 1970364,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 2,
+      "channel": "right",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 3,
+      "channel": "left",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 3,
+      "channel": "right",
+      "labels": 1970366,
+      "phase_cells": 1970365,
+      "increments": 1970364,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 4,
+      "channel": "left",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    },
+    {
+      "input_index": 4,
+      "channel": "right",
+      "labels": 1970367,
+      "phase_cells": 1970366,
+      "increments": 1970365,
+      "initial_high": 1,
+      "final_low": 1,
+      "initial_phase": 0,
+      "increments_inverse_exact": true,
+      "original_labels_inverse_exact": true
+    }
+  ],
+  "variants": [
+    {
+      "input_indices": [
+        0,
+        1
+      ],
+      "channels": {
+        "left": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970366
+            ],
+            "shared_count": 1970366,
+            "changed_count": 88281,
+            "first_change": 9309,
+            "last_change": 126936
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9309
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                126937,
+                1970366
+              ],
+              "phase_offset_mod4": 0
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 88256,
+            "first_change": 9308,
+            "last_change": 126936
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 255,
+                  "holdout_errors": 241,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 271,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 257,
+                  "holdout_errors": 270,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 271,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        },
+        "right": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970366
+            ],
+            "shared_count": 1970366,
+            "changed_count": 1931579,
+            "first_change": 9308,
+            "last_change": 1970365
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9308
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                126937,
+                1970366
+              ],
+              "phase_offset_mod4": 3
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 88575,
+            "first_change": 9307,
+            "last_change": 126936
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 251,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 252,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 258,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 252,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input_indices": [
+        0,
+        2
+      ],
+      "channels": {
+        "left": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 88262,
+            "first_change": 9404,
+            "last_change": 126936
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9404
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                126937,
+                1970365
+              ],
+              "phase_offset_mod4": 0
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970364
+            ],
+            "shared_count": 1970364,
+            "changed_count": 88167,
+            "first_change": 9403,
+            "last_change": 126936
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 258,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 261,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 238,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 261,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        },
+        "right": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970366
+            ],
+            "shared_count": 1970366,
+            "changed_count": 1931338,
+            "first_change": 9404,
+            "last_change": 1970365
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9404
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                126937,
+                1970366
+              ],
+              "phase_offset_mod4": 3
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 88248,
+            "first_change": 9403,
+            "last_change": 126936
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 255,
+                  "holdout_errors": 253,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 257,
+                  "holdout_errors": 257,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 246,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 257,
+                  "holdout_errors": 257,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input_indices": [
+        0,
+        3
+      ],
+      "channels": {
+        "left": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970366
+            ],
+            "shared_count": 1970366,
+            "changed_count": 1728236,
+            "first_change": 9501,
+            "last_change": 1970365
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9501
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                938283,
+                1970366
+              ],
+              "phase_offset_mod4": 3
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 699622,
+            "first_change": 9500,
+            "last_change": 938282
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 257,
+                  "holdout_errors": 254,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 255,
+                  "holdout_errors": 253,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 255,
+                  "holdout_errors": 246,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 255,
+                  "holdout_errors": 253,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        },
+        "right": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 1728910,
+            "first_change": 9500,
+            "last_change": 1970364
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9500
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                938283,
+                1970365
+              ],
+              "phase_offset_mod4": 3
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970364
+            ],
+            "shared_count": 1970364,
+            "changed_count": 696192,
+            "first_change": 9499,
+            "last_change": 938282
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 257,
+                  "holdout_errors": 247,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 268,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 268,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 268,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "input_indices": [
+        0,
+        4
+      ],
+      "channels": {
+        "left": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970366
+            ],
+            "shared_count": 1970366,
+            "changed_count": 88281,
+            "first_change": 9309,
+            "last_change": 126936
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9309
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                126937,
+                1970366
+              ],
+              "phase_offset_mod4": 0
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 88256,
+            "first_change": 9308,
+            "last_change": 126936
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 255,
+                  "holdout_errors": 241,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 271,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 257,
+                  "holdout_errors": 270,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 271,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        },
+        "right": {
+          "phase_comparison": {
+            "lengths": [
+              1970366,
+              1970366
+            ],
+            "shared_count": 1970366,
+            "changed_count": 1931579,
+            "first_change": 9308,
+            "last_change": 1970365
+          },
+          "relative_phase_runs_minimum64": [
+            {
+              "span": [
+                0,
+                9308
+              ],
+              "phase_offset_mod4": 0
+            },
+            {
+              "span": [
+                126937,
+                1970366
+              ],
+              "phase_offset_mod4": 3
+            }
+          ],
+          "increment_comparison": {
+            "lengths": [
+              1970365,
+              1970365
+            ],
+            "shared_count": 1970365,
+            "changed_count": 88575,
+            "first_change": 9307,
+            "last_change": 126936
+          },
+          "recurrence_probes": [
+            {
+              "mode": "xor",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 251,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 252,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            },
+            {
+              "mode": "subtract_mod4",
+              "increment_span": [
+                20000,
+                21024
+              ],
+              "coordinate_probes": [
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 258,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                },
+                {
+                  "training_bits": 512,
+                  "holdout_bits": 512,
+                  "fitted_degree": 256,
+                  "holdout_errors": 252,
+                  "small_degree_bound": 32,
+                  "small_recurrence_supported": false,
+                  "trivial_zero_difference": false,
+                  "tap_lags": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Regrouping follows encoder component indices; it is not verified protocol framing.",
+    "Phase-cell and increment indices differ from original absolute-label indices.",
+    "A constant relative phase disappears from increments, but earlier differences persist.",
+    "Boundary coordinates and initial phase must be retained for a lossless inverse."
+  ]
+}

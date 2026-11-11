@@ -1,0 +1,115 @@
+{
+  "analysis_version": "fx-direction-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-fx-direction-001",
+  "source_artifact": "experiments/compiled-fx-loop-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "b76a554c15448060ade7e040a00259af36ee21645c51ee33b19f9d1589c4e298",
+  "source_capture_sha256": "3a251134b1ff375ba1c5b2c784645ed116a43fe7f39f1e74e8a0b9b63cc7f5c2",
+  "held_effects": {
+    "1": 1,
+    "2": 2,
+    "3": 15,
+    "4": 3,
+    "5": 4,
+    "6": 12,
+    "7": 11,
+    "8": 13
+  },
+  "note_steps": [
+    1,
+    5,
+    9,
+    13
+  ],
+  "hold_steps": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "control_pattern": 9,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "segment_hz": [
+    599.3228307506727,
+    749.1535384383408,
+    898.984246126009,
+    1048.8149538136772
+  ],
+  "models": {
+    "forward": [
+      1,
+      2,
+      3,
+      4,
+      null
+    ],
+    "reverse": [
+      4,
+      3,
+      2,
+      1,
+      null
+    ],
+    "hold_first": [
+      1,
+      1,
+      1,
+      1,
+      "any"
+    ]
+  },
+  "plan_sha256": "d7ce8b67fbdf4c9bdc5a516ae31f4a90a8c8e26f5afb3709617ebd4f9d531c34",
+  "expected_body_sha256": "14e0d150ae4d42944836d2742023d9f27aa0ad7791e1a2c9d1da02f2f78c20e8",
+  "edited_artifact_sha256": "a1a7173eb7523d515afc4bb95e33ab099e24fc5f3afb2cb0429055ca82bc9574",
+  "restore_wav_sha256": "071163b358032d4b4bd28eac2bb778838ab9a87e4887fd455dd83da83fafa45c",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      6000.0
+    ],
+    "envelope_window_seconds": 0.003,
+    "skip_seconds": 0.02,
+    "onset_fraction": 0.15,
+    "refractory_seconds": 0.025,
+    "fft_size": 32768,
+    "window_starts_ms": [
+      20.0,
+      190.0,
+      360.0,
+      530.0,
+      700.0
+    ],
+    "window_ms": 120.0,
+    "note_seconds": 1.0,
+    "silence_db": -30.0
+  },
+  "method_script_sha256": "4ecf6e43d720a37bb76580593771d9ab4d7d55aa88e4d83f9accce3e9770e469",
+  "descriptor_method_script_sha256": "701039b3217f48c0c8dec7ad4ede0be844a043ce9217a7197eb37c3d273bcb06",
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "The control pattern's four notes and every pattern's first note read forward",
+    "Each held effect is classified as the model matching all three held notes, else described"
+  ],
+  "limits": [
+    "One sample and one key at tempo 60; effects that depend on content are described in this setting only"
+  ]
+}

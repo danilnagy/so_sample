@@ -1,0 +1,7 @@
+{
+  "user_report": "done and confirmed",
+  "requested_restore_display_and_audition_checks_confirmed": true,
+  "confirmed_expected_display_bpm": 137,
+  "display_evidence": "User confirmed the prior request to read137 without pressing BPM; no numeric display value was inferred from backup bytes",
+  "capture_sha256": "0538c163106bac0f0c9ac88471ab246c3c53dc713db60c86233eed68e87e9a13"
+}

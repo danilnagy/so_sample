@@ -1,0 +1,70 @@
+{
+  "analysis_version": "recorded-B-maximum-and-exact-minimum-return-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Uniform literal third-bits2..7 value with strict scope and all other state exact; separate no-sound-change and resonance-display confirmation; return matches entire independent minimum",
+  "checks": {
+    "native_six_bit_scope_pitch_volume_and_cutoff_pass": true,
+    "capture_artifact_registration_pins_match": true,
+    "literal_value_reproduces_entire_body": true,
+    "capture_not_clipped": true
+  },
+  "contiguous_B_candidate_values": [
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63,
+    63
+  ],
+  "narrow_B_candidate_values": [
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31,
+    31
+  ],
+  "capture_sha256": "749f8190b6bfe8b2f6a23af471ed15b6015cae9d4fcd85136f14a213446110d8",
+  "artifact_sha256": "d2f3dcfbb6338c02f6581612f943ae8c750e514f460000a85edf45ab3590c1a7",
+  "artifact_path": "experiments/event-063-b-sound3-filter-B-lock-up/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "fc1ef5b3b55b3d27b67b89171812a89e11668d5c95e8783135e994aebb76a9dd",
+  "native_results_sha256": "7d25998d9e2bb8a6a56947858878c874708038162d6a2d1f4e2854a70a01a67e",
+  "manual_observation_sha256": "ec0369334919f1954918d243dedd71e23b95164d571b76decf401f052a335679",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.140716552734375,
+      0.137054443359375
+    ]
+  },
+  "resonance_general_law_or_bit7_role_confirmed": false,
+  "resonance_writer_enabled": false,
+  "limits": [
+    "Maximum endpoint and body are unknown; no63, range, uniformity or audible change is predicted",
+    "Exact return to entire independent minimum body and every packet is registered before both captures",
+    "Narrow mask0x7c failed at the first minimum because bit7 changed; original failed report remains immutable; both masks and projections stay separate",
+    "All stored A63, pitch14, volume36 and noncandidate state must be preserved under the six-bit mask; wider snapshots are retained without rescue",
+    "No audible change is acceptable at neutral cutoff; no resonance law or bit7 role is inferred from endpoints alone",
+    "Public filter guards remain unchanged and reject this new third-byte context; no resonance writer is enabled"
+  ]
+}

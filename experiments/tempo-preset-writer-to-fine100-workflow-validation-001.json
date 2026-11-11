@@ -1,0 +1,32 @@
+{
+  "analysis_version": "hardware-verified-preset-writer-to-physical-fine100-workflow-0.1",
+  "hardware_verified": false,
+  "checks": {
+    "generated80_hardware_acceptance_all_checks": true,
+    "source_capture_and_artifact_hashes_pinned": true,
+    "source_acceptance_hash_pinned": true,
+    "source_body_hash_pinned": true,
+    "public_preset_operation_reproduces_genuine80_body": true,
+    "public_preset_inverse_recovers_independent120_body": true,
+    "public_compiler_replays_accepted_wav_byte_exactly": true,
+    "compiler_report_passes_and_remains_software_only": true,
+    "original_research_software_report_stays_software_only": true,
+    "fine100_model_matches_registered_hash": true,
+    "fine100_prediction_all_controls_and_hypotheses": true,
+    "fine100_remains_outside_public_source_and_target_scope": true,
+    "fine100_registered_before_capture_and_pending": true
+  },
+  "passed": true,
+  "validation": {
+    "full_pytest": "705 passed in 85.55s",
+    "affected_pytest": "39 passed in 2.82s",
+    "ruff": "all checks passed; 194 Python files formatted"
+  },
+  "next_required_user_action": "With playback stopped and write off, hold BPM while turning only knob B to displayed100, stop moving before releasing, capture before playback and report actual display values",
+  "limits": [
+    "Only the physical fine-tempo100 observation is requested; the prediction is not a generated restore",
+    "Public tempo editing remains restricted to80/120/140 and the recognized opaque context",
+    "Record the actual display value independently if100 cannot be reached; do not infer it from bytes",
+    "Other global or sound-parameter changes remain visible; touching knob B is allowed only while BPM is held"
+  ]
+}

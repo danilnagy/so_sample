@@ -1,0 +1,25 @@
+{
+  "experiment_id": "compiled-polyphony-001",
+  "capture_status": "validated_exact_native_polyphony_method_failed_exploratory_4_voices",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../polyphony-registration-001.json",
+  "plan": "../polyphony-plan-001/plan.json",
+  "import_stages": [
+    "../import-drum11-polyphony-stage-001",
+    "../import-drum12-polyphony-stage-001",
+    "../import-drum15-polyphony-stage-001",
+    "../import-drum16-polyphony-stage-001"
+  ],
+  "playback_seconds": 26,
+  "observation_questions": [
+    "Did the second pattern's chords get thicker, and did any voices seem to drop out? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-polyphony-001/project.json"
+}

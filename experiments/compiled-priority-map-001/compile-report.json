@@ -1,0 +1,897 @@
+{
+  "analysis_version": "bounded-edit-plan-compile-0.1",
+  "source_artifact_sha256": "e32f298e00477193f6e644083aaade063675b38a03d0d2c27181acb4027be359",
+  "plan_sha256": "f9821930b52c85ad84d6ed754d8dff21669eb5125c777a05c7c60daf6603861a",
+  "operation_trace": [
+    {
+      "operation": {
+        "operation": "set_swing_byte",
+        "value": 0
+      },
+      "before_body_sha256": "70ddcfc3e95ea9220ee008d7ec7c2cf922a8eb72b642dca199e75ab86af465ec",
+      "after_body_sha256": "c94efbe361700549a22c29c1a5ed38af022aac9cd4dc94d0f86b22d45e51894b"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 2,
+        "sound": 1,
+        "keys": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "c94efbe361700549a22c29c1a5ed38af022aac9cd4dc94d0f86b22d45e51894b",
+      "after_body_sha256": "73678fa5e603bc2ac4c0994389d9c1655ca777ba4dfee2a66a291f295fa5b2ee"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 2,
+        "sound": 2,
+        "keys": [
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "73678fa5e603bc2ac4c0994389d9c1655ca777ba4dfee2a66a291f295fa5b2ee",
+      "after_body_sha256": "ec3a6fb2127bc1f50c289972ba2f9417cb741674893f931294c59c4321bbc6f2"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 2,
+        "sound": 3,
+        "keys": [
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "ec3a6fb2127bc1f50c289972ba2f9417cb741674893f931294c59c4321bbc6f2",
+      "after_body_sha256": "f715eced6df399d726184daa85812007304ffd0ba547e94fc0bf4ea6502cf55c"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 2,
+        "sound": 4,
+        "keys": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "f715eced6df399d726184daa85812007304ffd0ba547e94fc0bf4ea6502cf55c",
+      "after_body_sha256": "62b7462802c462250cbcb367e7494767d1ea049aa1caa893b1680c91dc7883a7"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 2,
+        "sound": 5,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "62b7462802c462250cbcb367e7494767d1ea049aa1caa893b1680c91dc7883a7",
+      "after_body_sha256": "ad656875cdf1405d44cef09a9171a9ebcaf4571074d7d674e8e38fe17814677b"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 11,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "ad656875cdf1405d44cef09a9171a9ebcaf4571074d7d674e8e38fe17814677b",
+      "after_body_sha256": "1dbe110c1b0c7494edcd3b9db9619a06fabb5466a1b8f8cb199093e5de755484"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 12,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "1dbe110c1b0c7494edcd3b9db9619a06fabb5466a1b8f8cb199093e5de755484",
+      "after_body_sha256": "83239ce6cf23aa2d3bf018feba2a2fdaa3931c4cefe90aa9f01efe7c3af4e225"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 13,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "83239ce6cf23aa2d3bf018feba2a2fdaa3931c4cefe90aa9f01efe7c3af4e225",
+      "after_body_sha256": "e457ec3806c345a61f335faf604816f5638c19fecc26db8458fde9efe75df5a5"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 14,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "e457ec3806c345a61f335faf604816f5638c19fecc26db8458fde9efe75df5a5",
+      "after_body_sha256": "bdc939bedbc8cc338e6c019348b669388dfde31038dcccd231e4356b9830fa7d"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 15,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "bdc939bedbc8cc338e6c019348b669388dfde31038dcccd231e4356b9830fa7d",
+      "after_body_sha256": "5e3bc08dbde2fcbc1af467ff366a706e149cb2018f04ab68c5b2c86271658860"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 2,
+        "sound": 16,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 6
+      },
+      "before_body_sha256": "5e3bc08dbde2fcbc1af467ff366a706e149cb2018f04ab68c5b2c86271658860",
+      "after_body_sha256": "c69c5017e3a73ddd16586787875a25de1c68498abfa3e2832d9deb2ea95c4e98"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 2,
+        "sound": 6,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "c69c5017e3a73ddd16586787875a25de1c68498abfa3e2832d9deb2ea95c4e98",
+      "after_body_sha256": "e7e96b7abeb27d3bf9228914923cf65686ba4004a18f16c6526201c9e2e04e8e"
+    },
+    {
+      "operation": {
+        "operation": "copy_pattern",
+        "source_pattern": 2,
+        "destination_pattern": 3
+      },
+      "before_body_sha256": "e7e96b7abeb27d3bf9228914923cf65686ba4004a18f16c6526201c9e2e04e8e",
+      "after_body_sha256": "3b7607e8704ddbae2996b0be667a6dbfa1ac3f28c09b8a04955368630043849c"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 3,
+        "sound": 1,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "3b7607e8704ddbae2996b0be667a6dbfa1ac3f28c09b8a04955368630043849c",
+      "after_body_sha256": "7cafc5b07fbe8d58318107907e0e980d6b4aa5888a678f2291838450df5a07dc"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 3,
+        "sound": 2,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "7cafc5b07fbe8d58318107907e0e980d6b4aa5888a678f2291838450df5a07dc",
+      "after_body_sha256": "11577ded6b48af1327b6a21b9db2b02c44331ead9869def0ab0654965aa81702"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 3,
+        "sound": 3,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "11577ded6b48af1327b6a21b9db2b02c44331ead9869def0ab0654965aa81702",
+      "after_body_sha256": "be89e03740fd7ae49e0f3a9018f227aafd69fc79c5e370e25f996c6c078b9005"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 3,
+        "sound": 4,
+        "keys": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "be89e03740fd7ae49e0f3a9018f227aafd69fc79c5e370e25f996c6c078b9005",
+      "after_body_sha256": "4a7dd4264515a3debfa59bbc0ecaae2b0924a0c9140049b11b0a1acbd2c887d1"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes_from",
+        "pattern": 3,
+        "sound": 5,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "4a7dd4264515a3debfa59bbc0ecaae2b0924a0c9140049b11b0a1acbd2c887d1",
+      "after_body_sha256": "54eeada8bb8faf2178da1a75a17614aa5f3b522b11e12f912404c1d013ea71fa"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 3,
+        "sound": 11,
+        "keys": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "54eeada8bb8faf2178da1a75a17614aa5f3b522b11e12f912404c1d013ea71fa",
+      "after_body_sha256": "29d4fece4a5d26a87556d5c11230fbf8d17dc3dafc99d1bd46d631458eca0f35"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 3,
+        "sound": 12,
+        "keys": [
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "29d4fece4a5d26a87556d5c11230fbf8d17dc3dafc99d1bd46d631458eca0f35",
+      "after_body_sha256": "f64d9a009c613ca6f615d443e60add2870214d7a9c864252df36f4af481c8986"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 3,
+        "sound": 13,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "f64d9a009c613ca6f615d443e60add2870214d7a9c864252df36f4af481c8986",
+      "after_body_sha256": "30f8a6d0e473048b0dd1890af0dfe84ba10a0fbc1fd01950141cfd788596f303"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 3,
+        "sound": 14,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "30f8a6d0e473048b0dd1890af0dfe84ba10a0fbc1fd01950141cfd788596f303",
+      "after_body_sha256": "18a91c6ac030a06edd5ff73108bb5f053efc123461079a6674b04057be7a4c20"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 3,
+        "sound": 15,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "18a91c6ac030a06edd5ff73108bb5f053efc123461079a6674b04057be7a4c20",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_drum_notes",
+        "pattern": 3,
+        "sound": 16,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "template_sound": 1
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 2,
+        "sound": 7,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 2,
+        "sound": 8,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 3,
+        "sound": 6,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 3,
+        "sound": 7,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_melodic_notes",
+        "pattern": 3,
+        "sound": 8,
+        "keys": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0"
+    },
+    {
+      "operation": {
+        "operation": "set_pattern_chain",
+        "patterns": [
+          2,
+          3
+        ]
+      },
+      "before_body_sha256": "f6f32e1ac74dc7005e3544809eb1cac219ffc887f1727a2043ab2faa13bfa2f0",
+      "after_body_sha256": "ab6d6b9ede12895cae2a96f966fb4d444fbc98514f0eb38f6d907b9d056a772b"
+    }
+  ],
+  "target_body_sha256": "ab6d6b9ede12895cae2a96f966fb4d444fbc98514f0eb38f6d907b9d056a772b",
+  "restore_wav": "restore.wav",
+  "restore_wav_sha256": "a976c048a28c750b4318c3a8bcfc39425a1a89b98055a17e7adb16a042c66ec7",
+  "encoding": {
+    "schema_version": 1,
+    "encoder_version": "staggered-quadrature-0.2",
+    "source_capture_sha256": "e72da22909736fe54001ebdbfe6a2c3857db71cdb8f7a3f327a212a4b8b2ea8c",
+    "phase_convention": "absolute-sign-pairs-v1:11=3,10=2,00=0,01=1",
+    "sample_rate_hz": 44100,
+    "carrier_hz": 7812.5,
+    "waveform_model": "staggered quadrature sign components",
+    "pcm_subtype": "PCM_16",
+    "channels": 2,
+    "amplitude": 0.5,
+    "symbols_per_channel": 533673,
+    "active_frames": 3012483,
+    "silence_frames_each_end": 4410,
+    "frames": 3021303,
+    "duration_seconds": 68.51027210884354,
+    "preamble_policy": "Preserve all stored labels; no additional long carrier preamble.",
+    "acquisition_primer": {
+      "cycles": 0.5,
+      "quarter_signs": [
+        0,
+        1
+      ],
+      "purpose": "Explicit sign-run acquisition; not captured protocol data"
+    },
+    "final_cycle_policy": "Synthesize final full cycle; hold final phase for half-cycle guard",
+    "transition_policy": "I updates at 0.375 to next high coordinate; Q at 0.125 to current low coordinate",
+    "model_evidence": "Captured quarter midpoints and waveform correlation; not hardware acceptance",
+    "discarded_symbols": 0,
+    "hardware_verified": false,
+    "warnings": [
+      "Experimental reconstruction; device acceptance is not established.",
+      "Source pre-acquisition waveform and noise are not reconstructed.",
+      "Primer and final hold guard are explicit synthesis conventions."
+    ]
+  },
+  "strict_phase_roundtrip": {
+    "schema_version": 1,
+    "channels": {
+      "left": {
+        "original_symbols": 533673,
+        "reconstructed_symbols": 533673,
+        "overlap_symbols": 533673,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      },
+      "right": {
+        "original_symbols": 533673,
+        "reconstructed_symbols": 533673,
+        "overlap_symbols": 533673,
+        "changed_overlap_symbols": 0,
+        "tail_symbols": 0,
+        "identical": true,
+        "changed_ranges": [],
+        "range_convention": "zero-based end-exclusive symbol indices",
+        "alignment_shift": 0,
+        "discarded_for_alignment": 0
+      }
+    },
+    "passed": true,
+    "hardware_verified": false,
+    "evidence": "Exact complete phase labels and counts; not verified protocol/state data"
+  },
+  "checks": {
+    "source_file_unchanged": true,
+    "all_packet_checksums": true,
+    "strict_phase_roundtrip": true,
+    "exact_target_body_after_wav_decode": true,
+    "exact_target_packets_after_wav_decode": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "limits": [
+    "Each operation retains its existing calibration and context guards; no arbitrary packet or JSON-view edits are imported",
+    "Unknown packets are preserved through verified packet rebuilding; new combinations need appropriate hardware evidence"
+  ]
+}

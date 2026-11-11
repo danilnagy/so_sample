@@ -1,0 +1,297 @@
+{
+  "analysis_version": "drum-kit-import-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-drum-kit-import-001",
+  "source_artifact": "experiments/compiled-drum-notes-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3cb44250b88b2f312bd5733a0f2c9fb44f0e5327d5801161828fa3d3324855c2",
+  "source_capture_sha256": "74d2b3eace4bc1161726c0ac0e386c0ad1228fc2cdcad684f6d79b7aca3e9dde",
+  "hits": [
+    {
+      "path": "experiments/drum-kit-hits-001/key01-1500hz-1750codes.wav",
+      "sha256": "1016b81b77c99e8d2a725d79f18ca4e1989c7774be1cb5ecd140149963d78a2d",
+      "hz": 1500.0,
+      "native_codes": 1750
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key02-1416hz-2000codes.wav",
+      "sha256": "8002a9bc3a196763cd5708d2874c75c7dbd9f593a9daab5864a9506ccc70a374",
+      "hz": 1415.811,
+      "native_codes": 2000
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key03-1336hz-2250codes.wav",
+      "sha256": "c6628859da9a3fe5508823e1a0cdd805526c7d3f1f39935486d06a3f574ab361",
+      "hz": 1336.348,
+      "native_codes": 2250
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key04-1261hz-2500codes.wav",
+      "sha256": "6c6ad3e9d44da82ef812776497450531a6aa26f007b62d02a0b6384e9f127516",
+      "hz": 1261.345,
+      "native_codes": 2500
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key05-1191hz-2750codes.wav",
+      "sha256": "76e2fc3fba07ed2ba91d1cd6ae8c797d35cfdf863b5b524863dcf760b7dcb680",
+      "hz": 1190.551,
+      "native_codes": 2750
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key06-1124hz-3000codes.wav",
+      "sha256": "a38f0bc40074ec82dedf242151c8dfd89f0ea85e781dd074ed3fdca5cb7ad1ee",
+      "hz": 1123.73,
+      "native_codes": 3000
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key07-1061hz-3250codes.wav",
+      "sha256": "5dfcc1bfe80dee264c53cd96ec6700a017ac0035fb56da0fa46c64e885f5a923",
+      "hz": 1060.66,
+      "native_codes": 3250
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key08-1001hz-3500codes.wav",
+      "sha256": "fe6624e53a6be3c8ff40b58a24c1f6e3d4446e0292df8a23b7d9fd53cb978ae7",
+      "hz": 1001.13,
+      "native_codes": 3500
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key09-945hz-3750codes.wav",
+      "sha256": "5ae06986fff2dbc8b587b4bcf4a20f9c2def5d1d6b19b63025d57164f7d98974",
+      "hz": 944.941,
+      "native_codes": 3750
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key10-892hz-4000codes.wav",
+      "sha256": "c1a86b836f938e2e28b36e7ba3b023334b9434d12ff69c171de0b3758f21f362",
+      "hz": 891.905,
+      "native_codes": 4000
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key11-842hz-4250codes.wav",
+      "sha256": "a9c5e9b279331fd2a98bc3f23593529d00933b9e0185ca456cd0f1c716568c2b",
+      "hz": 841.847,
+      "native_codes": 4250
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key12-795hz-4500codes.wav",
+      "sha256": "d8d2c7f51ad9dceca1bdfed526d7e840b641d8b7ad4d30e9b4f8ae2611a7d83b",
+      "hz": 794.597,
+      "native_codes": 4500
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key13-750hz-4750codes.wav",
+      "sha256": "3115a0f766c071c8dd09cf9d4b597307df1f27d693d26eebd41c4fada9d609ec",
+      "hz": 750.0,
+      "native_codes": 4750
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key14-708hz-5000codes.wav",
+      "sha256": "ce21efe9c5ac187bfd60e3f970a46f35f5cc4990922b333a6e7877eea3e2907b",
+      "hz": 707.906,
+      "native_codes": 5000
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key15-668hz-5250codes.wav",
+      "sha256": "6e62a27fa21e2f4e0ef3d32c1440fe535c77f233a11b84b2185b86ef13bfb2d0",
+      "hz": 668.174,
+      "native_codes": 5250
+    },
+    {
+      "path": "experiments/drum-kit-hits-001/key16-631hz-5500codes.wav",
+      "sha256": "fe80dec5bb682fbd5e7f2f393827c73646797c0569eb87b12ee8a0a34019f8cf",
+      "hz": 630.672,
+      "native_codes": 5500
+    }
+  ],
+  "import_report_sha256": "52152b7542978d22badf0aff58505731424f4406abea242cff13133994112391",
+  "allocation": {
+    "drum_slot": 11,
+    "owner_sound_id": 40,
+    "source_kit_was_empty": false,
+    "source_capacity_codes": 102400,
+    "capacity_codes": 102400,
+    "kit_codes": 58000,
+    "windows": [
+      [
+        0,
+        1750
+      ],
+      [
+        1750,
+        3750
+      ],
+      [
+        3750,
+        6000
+      ],
+      [
+        6000,
+        8500
+      ],
+      [
+        8500,
+        11250
+      ],
+      [
+        11250,
+        14250
+      ],
+      [
+        14250,
+        17500
+      ],
+      [
+        17500,
+        21000
+      ],
+      [
+        21000,
+        24750
+      ],
+      [
+        24750,
+        28750
+      ],
+      [
+        28750,
+        33000
+      ],
+      [
+        33000,
+        37500
+      ],
+      [
+        37500,
+        42250
+      ],
+      [
+        42250,
+        47250
+      ],
+      [
+        47250,
+        52500
+      ],
+      [
+        52500,
+        58000
+      ]
+    ],
+    "total_backing_capacity_codes": 266240
+  },
+  "expected_body_sha256": "e7ba5feb15daa3b45b39994b2525d8e78f50e37b0adf97828077a40978f9c8b2",
+  "edited_artifact_sha256": "b953a9dc8290ec02f1286927306b0bb5abaf68ad8d3838203f1e143ba8bbe312",
+  "restore_wav_sha256": "579ed7ee8ee77447aff9e9f56db4aa7fd35464e9946526d27e186bc2f4899b14",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "new_kit_key_k": [
+      -0.0,
+      -100.0,
+      -200.0,
+      -300.0,
+      -400.0,
+      -500.0,
+      -600.0,
+      -700.0,
+      -800.0,
+      -900.0,
+      -1000.0,
+      -1100.0,
+      -1200.0,
+      -1300.0,
+      -1400.0,
+      -1500.0
+    ],
+    "old_kit_still_playing": [
+      0.0,
+      150.0,
+      300.0,
+      450.0,
+      600.0,
+      750.0,
+      900.0,
+      1050.0,
+      1200.0,
+      1350.0,
+      1500.0,
+      1650.0,
+      1800.0,
+      1950.0,
+      2100.0,
+      2250.0
+    ]
+  },
+  "absolute_models_cents_vs_hit1": {
+    "stored_rate": 0.0
+  },
+  "duration_method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.001,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "margin_seconds": 0.01,
+    "threshold_fraction_of_step_peak": 0.1,
+    "tolerance_ms": 5.0,
+    "min_agreeing_loops": 4
+  },
+  "duration_method_script_sha256": "c28a7cf59bc4fd70777a93647d2a84a27761d06aac54d8eaf2c37d01a03d05cc",
+  "duration_model_ms": [
+    74.66666666666667,
+    85.33333333333333,
+    96.0,
+    106.66666666666667,
+    117.33333333333333,
+    128.0,
+    138.66666666666666,
+    149.33333333333334,
+    160.0,
+    170.66666666666666,
+    181.33333333333334,
+    192.0,
+    202.66666666666666,
+    213.33333333333334,
+    224.0,
+    234.66666666666666
+  ],
+  "decision": [
+    "The backup must equal the compiled target exactly, including every imported code and window",
+    "Pitch: a model holds when all 16 steps are within 20 cents of it in the five-loop median and in at least 4 of 5 loops",
+    "Absolute: step 1 within 20 cents of 1500 Hz",
+    "Duration: stops_at_window_end holds when all 16 steps are within 5 ms in the median and in at least 4 of 5 loops"
+  ],
+  "limits": [
+    "Replaces the kit in Sound11 only, with the observed 102400-code capacity; empty drum slots and other capacities are not tested",
+    "Pure tones with 3 ms fades; real drum hits are not played here"
+  ]
+}

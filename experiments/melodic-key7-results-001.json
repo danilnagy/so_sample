@@ -1,0 +1,93 @@
+{
+  "analysis_version": "registered-key-control-check-0.1",
+  "registration_sha256": "ce3599a5010852b34ccb30a8e8fe0a7e2a4643d21860142510180c02384d3fa5",
+  "baseline_source_sha256": "a0c0bea848c7c1bf56349e695edaae8740cd465d6df044512972d6c45ed5c0f1",
+  "capture_sha256": "19d2e80e347e229081a8363668807a5ca269f8645820d59224a3f6d974cb245c",
+  "artifact_sha256": "d39396c96b084f83b1b9785c12568060f27dbda271d9345ac8277beb1d328b87",
+  "decoder_version": "sign-crossings-0.2",
+  "control_checks": {
+    "packet_count": true,
+    "frame_end_byte": true,
+    "all_packet_checksums": true,
+    "exact_body_reencode": true,
+    "sample_packets": true,
+    "other_patterns": true,
+    "all_other_plain_packets": true,
+    "populated_steps": true,
+    "changed_cell": true,
+    "locality": true
+  },
+  "control_passed": true,
+  "hypothesis_checks": {
+    "primary_stays_unchanged": true,
+    "auxiliary_key_index": true
+  },
+  "all_registered_hypotheses_fit": true,
+  "changed_plain_packet_indices": [
+    7
+  ],
+  "pattern1_byte_changes": [
+    {
+      "offset": 834,
+      "old": 255,
+      "new": 246
+    }
+  ],
+  "native_frame": {
+    "codec_version": "po33-crc-additive-0.1",
+    "frame_start_byte": 4095,
+    "frame_end_byte": 89396,
+    "required_complete_label_span": [
+      0,
+      178795
+    ],
+    "packet_count": 511,
+    "all_packet_checksums_valid": true,
+    "encoded_body_sha256": "6b4f5fd40b5b7c66a754c7a6f2d870015e69e225f24a2fe9730a6f3a135705ff",
+    "tags": {
+      "0x985b": 1,
+      "0x7d5c": 2,
+      "0xa041": 16,
+      "0xc498": 80,
+      "0x68b5": 136,
+      "0xef78": 275,
+      "0x826f": 1
+    },
+    "sounds": [
+      {
+        "sound_id": 0,
+        "packet_count": 272,
+        "payload_bytes": 65545,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "b8097de275a64c32faa557cf54c327328fd49d39112dc83b15701155d66c2d25"
+      },
+      {
+        "sound_id": 1,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      },
+      {
+        "sound_id": 2,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000401f000000",
+        "payload_sha256": "8ac7ee71dfe17359d088d4fdc54a11719aaa5b8e0b06cdba930af1d6b10fa71c"
+      },
+      {
+        "sound_id": 7,
+        "packet_count": 1,
+        "payload_bytes": 9,
+        "header_hex": "00000000c0fc000000",
+        "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+      }
+    ]
+  },
+  "user_evidence": "User completion report for the registered physical control; exact buttons and pitch were not independently observed",
+  "limits": [
+    "Control invariants and field hypotheses are evaluated separately; no failed hypothesis is reclassified as a pass.",
+    "A physical key control is not acceptance of a generated key edit or every intermediate keyboard value.",
+    "Measured-clock decoding, when used, is independent of these expected byte values."
+  ]
+}

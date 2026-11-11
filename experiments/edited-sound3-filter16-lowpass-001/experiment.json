@@ -1,0 +1,21 @@
+{
+  "experiment_id": "edited-sound3-filter16-lowpass-001",
+  "capture_status": "validated_exact_generated16_reception_and_lowpass_listening",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-filter16-52-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_complete_native_target_and_user_lowpass_confirmation"
+  },
+  "planned_actions": [
+    "For52 wait until16 native reception and listening are verified",
+    "Restore through established stereo path and playback level; keep both knobs and recording settings unchanged",
+    "Before ordinary playback save full capture.wav here at reduced level with one second trailing silence",
+    "Select Pattern1/Sound3/FILTER with no knob movement; play and report successful restore plus actual filter sound, then stop/write off",
+    "No separate playback.wav or WRITE-held pass required"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-generated-filter16-001/project.json"
+}

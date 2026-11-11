@@ -1,0 +1,22 @@
+{
+  "experiment_id": "edited-pattern1-single-tone-FX-6F-002",
+  "leg": "b",
+  "capture_status": "validated_exact_native_pitch_track_high_nibble_first",
+  "restore_file": "restore.wav",
+  "expected_artifact": "edited.symbols.npz",
+  "registration": "../pattern1-single-tone-FX-order-pitch-track-registration-001.json",
+  "restore_copied_from": "../edited-pattern1-single-tone-FX-6F-001",
+  "playback_seconds": 14,
+  "observation_questions": [
+    "Describe the pitch of the repeating tone, if you noticed it (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "verified_exact_native_target"
+  },
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "pitch_results": "pitch-track-results-001.json",
+  "manual_observation": "manual-observation.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern1-single-tone-FX-6F-002/project.json"
+}

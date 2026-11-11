@@ -1,0 +1,28 @@
+{
+  "experiment_id": "edited-sound6-create-001",
+  "capture_status": "hardware_verified_entire_generated_sound6_creation_body_matches",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sound4-shrink-001",
+  "restore_file": "restore.wav",
+  "registration": "restore-registration.json",
+  "software_validation": "software-validation.json",
+  "hardware_restore": {
+    "status": "accepted",
+    "observations": [
+      "done and confirmed"
+    ],
+    "native_recapture_validation": "passed_entire_body_exact",
+    "recapture_results": "hardware-recapture-results-001.json",
+    "manual_observation": "manual-observation.json"
+  },
+  "planned_actions": [
+    "Restore complete restore.wav through proven stereo receive path at established playback level",
+    "Return to Pattern1/Sound8/TONE stopped/write off, keeping both knobs and settings unchanged",
+    "Before audition or pattern playback save complete backup here as capture.wav with one second of trailing silence at established reduced recording levels",
+    "After saving audition Sound6/key1 for the new lower tone, Sound4/key1 and Sound5/key1 for unchanged tones, and Pattern1 for unchanged playback; return to Sound8/TONE and report acceptance and checks"
+  ],
+  "source_sha256": "e21b04a85d73f1f53cb4cbefb1926c17c7f42ab4272c6cce09037a307a8cc776",
+  "analysis": "derived/analysis-001",
+  "hardware_acceptance": "hardware-acceptance-001.json",
+  "project": "../exported-generated-sound6-create-001/project.json"
+}

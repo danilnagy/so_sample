@@ -1,0 +1,391 @@
+{
+  "analysis_version": "registered-swing-tone-onsets-0.1",
+  "hardware_verified": false,
+  "source_sha256": "5e5cd2eda43e6bc1376bd73170546c3973d5b3802de3d8e127ab2dc1dd7c9ee1",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 354563,
+  "duration_seconds": 8.039977324263038,
+  "peaks_per_channel": [
+    0.13623046875,
+    0.130767822265625
+  ],
+  "parameters": {
+    "center_frequency_hz": 500.65,
+    "half_bandwidth_hz": 15.0,
+    "envelope_seconds": 0.005,
+    "threshold_peak_fractions": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "minimum_region_seconds": 0.06,
+    "edge_margin_seconds": 0.03,
+    "minimum_band_rms": 0.001,
+    "maximum_gap_residual_seconds": 0.006,
+    "threshold_gap_spread_seconds": 0.004,
+    "stereo_onset_tolerance_seconds": 0.002,
+    "nominal_loop_seconds": 1.7518248175182483,
+    "loop_tolerance_seconds": 0.005
+  },
+  "channels": {
+    "left": {
+      "band_peak_rms": 0.033357909630185784,
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "threshold_rms": 0.005003686444527867,
+          "onsets_seconds": [
+            1.0193650793650795,
+            2.195873015873016,
+            2.771315192743764,
+            3.947891156462585,
+            4.5233106575963715,
+            5.699886621315192,
+            6.274467120181406,
+            7.4518820861678
+          ],
+          "regions_frames": [
+            [
+              44954,
+              59280
+            ],
+            [
+              96838,
+              117222
+            ],
+            [
+              122215,
+              136541
+            ],
+            [
+              174102,
+              194485
+            ],
+            [
+              199478,
+              213804
+            ],
+            [
+              251365,
+              271759
+            ],
+            [
+              276704,
+              291067
+            ],
+            [
+              328628,
+              349022
+            ]
+          ],
+          "complete_nonoverlapping_cycles": 3,
+          "short_gap_median_seconds": 0.5754195011337866,
+          "long_gap_median_seconds": 1.176575963718821,
+          "loop_median_seconds": 1.7519954648526075,
+          "maximum_gap_residual_seconds": 0.0008390022675737185,
+          "alternating_gaps_consistent": true,
+          "loop_near_registered137_bpm": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "threshold_rms": 0.008339477407546446,
+          "onsets_seconds": [
+            1.023514739229025,
+            2.2004308390022675,
+            2.7754648526077097,
+            3.9524263038548755,
+            4.527460317460317,
+            5.704421768707483,
+            6.278616780045351,
+            7.4564172335600905
+          ],
+          "regions_frames": [
+            [
+              45137,
+              59097
+            ],
+            [
+              97039,
+              117039
+            ],
+            [
+              122398,
+              136358
+            ],
+            [
+              174302,
+              194303
+            ],
+            [
+              199661,
+              213621
+            ],
+            [
+              251565,
+              271575
+            ],
+            [
+              276887,
+              290884
+            ],
+            [
+              328828,
+              348839
+            ]
+          ],
+          "complete_nonoverlapping_cycles": 3,
+          "short_gap_median_seconds": 0.5750340136054417,
+          "long_gap_median_seconds": 1.176961451247166,
+          "loop_median_seconds": 1.7519954648526073,
+          "maximum_gap_residual_seconds": 0.0008390022675737185,
+          "alternating_gaps_consistent": true,
+          "loop_near_registered137_bpm": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "threshold_rms": 0.011675268370565024,
+          "onsets_seconds": [
+            1.0273242630385488,
+            2.203809523809524,
+            2.7792743764172334,
+            3.955827664399093,
+            4.531269841269841,
+            5.707800453514739,
+            6.2824716553287985,
+            7.459818594104308
+          ],
+          "regions_frames": [
+            [
+              45305,
+              58927
+            ],
+            [
+              97188,
+              116870
+            ],
+            [
+              122566,
+              136189
+            ],
+            [
+              174452,
+              194134
+            ],
+            [
+              199829,
+              213451
+            ],
+            [
+              251714,
+              271409
+            ],
+            [
+              277057,
+              290714
+            ],
+            [
+              328978,
+              348673
+            ]
+          ],
+          "complete_nonoverlapping_cycles": 3,
+          "short_gap_median_seconds": 0.5754421768707485,
+          "long_gap_median_seconds": 1.1765419501133787,
+          "loop_median_seconds": 1.7519841269841272,
+          "maximum_gap_residual_seconds": 0.0008049886621310787,
+          "alternating_gaps_consistent": true,
+          "loop_near_registered137_bpm": true
+        }
+      ],
+      "thresholds_agree": true,
+      "all_alternating_gaps_consistent": true,
+      "all_loops_near_registered137_bpm": true
+    },
+    "right": {
+      "band_peak_rms": 0.03192105850469795,
+      "measurements": [
+        {
+          "threshold_peak_fraction": 0.15,
+          "threshold_rms": 0.004788158775704693,
+          "onsets_seconds": [
+            1.0193650793650795,
+            2.195873015873016,
+            2.771315192743764,
+            3.947891156462585,
+            4.5233106575963715,
+            5.699863945578231,
+            6.274467120181406,
+            7.4518820861678
+          ],
+          "regions_frames": [
+            [
+              44954,
+              59280
+            ],
+            [
+              96838,
+              117222
+            ],
+            [
+              122215,
+              136541
+            ],
+            [
+              174102,
+              194485
+            ],
+            [
+              199478,
+              213804
+            ],
+            [
+              251364,
+              271759
+            ],
+            [
+              276704,
+              291067
+            ],
+            [
+              328628,
+              349023
+            ]
+          ],
+          "complete_nonoverlapping_cycles": 3,
+          "short_gap_median_seconds": 0.5754195011337866,
+          "long_gap_median_seconds": 1.1765646258503404,
+          "loop_median_seconds": 1.751984126984127,
+          "maximum_gap_residual_seconds": 0.0008503401360542284,
+          "alternating_gaps_consistent": true,
+          "loop_near_registered137_bpm": true
+        },
+        {
+          "threshold_peak_fraction": 0.25,
+          "threshold_rms": 0.007980264626174488,
+          "onsets_seconds": [
+            1.0234920634920635,
+            2.2004308390022675,
+            2.7754648526077097,
+            3.9524263038548755,
+            4.527460317460317,
+            5.7043990929705215,
+            6.278639455782313,
+            7.4564172335600905
+          ],
+          "regions_frames": [
+            [
+              45136,
+              59097
+            ],
+            [
+              97039,
+              117039
+            ],
+            [
+              122398,
+              136358
+            ],
+            [
+              174302,
+              194302
+            ],
+            [
+              199661,
+              213621
+            ],
+            [
+              251564,
+              271575
+            ],
+            [
+              276888,
+              290884
+            ],
+            [
+              328828,
+              348839
+            ]
+          ],
+          "complete_nonoverlapping_cycles": 3,
+          "short_gap_median_seconds": 0.5750340136054417,
+          "long_gap_median_seconds": 1.176950113378685,
+          "loop_median_seconds": 1.751984126984127,
+          "maximum_gap_residual_seconds": 0.0008276643990920984,
+          "alternating_gaps_consistent": true,
+          "loop_near_registered137_bpm": true
+        },
+        {
+          "threshold_peak_fraction": 0.35,
+          "threshold_rms": 0.011172370476644282,
+          "onsets_seconds": [
+            1.0273242630385488,
+            2.203809523809524,
+            2.779297052154195,
+            3.955827664399093,
+            4.531269841269841,
+            5.707800453514739,
+            6.2824716553287985,
+            7.459818594104308
+          ],
+          "regions_frames": [
+            [
+              45305,
+              58927
+            ],
+            [
+              97188,
+              116870
+            ],
+            [
+              122567,
+              136189
+            ],
+            [
+              174452,
+              194133
+            ],
+            [
+              199829,
+              213451
+            ],
+            [
+              251714,
+              271409
+            ],
+            [
+              277057,
+              290714
+            ],
+            [
+              328978,
+              348673
+            ]
+          ],
+          "complete_nonoverlapping_cycles": 3,
+          "short_gap_median_seconds": 0.5754421768707485,
+          "long_gap_median_seconds": 1.176530612244898,
+          "loop_median_seconds": 1.7519727891156465,
+          "maximum_gap_residual_seconds": 0.0008163265306118106,
+          "alternating_gaps_consistent": true,
+          "loop_near_registered137_bpm": true
+        }
+      ],
+      "thresholds_agree": true,
+      "all_alternating_gaps_consistent": true,
+      "all_loops_near_registered137_bpm": true
+    }
+  },
+  "checks": {
+    "all_threshold_and_gap_checks": true,
+    "independent_stereo_onsets_agree": true,
+    "capture_not_clipped": true
+  },
+  "passed": true,
+  "limits": [
+    "Absolute onset times include filter and threshold delay; repeated interval comparison cancels common delay",
+    "Tone selection comes from straight-control spectral exploration and is fixed before the swing6 capture",
+    "No percentage or clock timing units inferred; manual observations remain separate"
+  ],
+  "registration_sha256": "c10ba77e2343998f1b368c904fd87003afb7bf949d0dd24943839abeb4ffa57f"
+}

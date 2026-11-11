@@ -1,0 +1,240 @@
+{
+  "analysis_version": "sample-memory-registration-0.4",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-sample-memory-004",
+  "source_artifact": "experiments/compiled-sample-memory-003/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "dceddeafe57bc2cbfbe7e7a1785ff11d7b3f5c0b1171f145d466b182fcd008c5",
+  "source_capture_sha256": "1c86dec694d88815cfaf06262f9b5552e85de91c48d0a35dc694ca0bea798ea3",
+  "total_capacity_codes": 1019904,
+  "advertised_codes": 937500,
+  "hits": [
+    {
+      "path": "experiments/drum10-memory-hits-001/key01-350hz.wav",
+      "sha256": "28ce8b0146f350e21a3cbbd87ee4af1681388f33658ab97fa253e7bd84d97602",
+      "hz": 350.0
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key02-371hz.wav",
+      "sha256": "1c095a9f7130678706555c8543f186b6c488acac892cc8e715894ae0c113f14f",
+      "hz": 370.812
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key03-393hz.wav",
+      "sha256": "011210ba18e7654356c0b9cbd560679635b34938efa5659744b98d3e2fa1dd90",
+      "hz": 392.862
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key04-416hz.wav",
+      "sha256": "db1d84cb513aa5caa314b22333e007c1ffc832f480550172221e16cfead5c56a",
+      "hz": 416.222
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key05-441hz.wav",
+      "sha256": "ef1629b0d64a286a05b7c2a3a17541641057494607113b73347d6960a0a17ea0",
+      "hz": 440.972
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key06-467hz.wav",
+      "sha256": "b88b0a9df4403481d16d399e71c53ca58cef1148b571b749cb4e97b44c572234",
+      "hz": 467.194
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key07-495hz.wav",
+      "sha256": "90f33e39e377ac06059ff01b41127ac6d136886092f86fe4172bc4a98b05e478",
+      "hz": 494.975
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key08-524hz.wav",
+      "sha256": "98b957311368d83ba706aa0047791144744ca94d1bedc51967391c5af06b25d2",
+      "hz": 524.407
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key09-556hz.wav",
+      "sha256": "0ba31c3facf87df31bdb3ffcb5e78194b5e405676b7a5cc84047c194fd6e7869",
+      "hz": 555.59
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key10-589hz.wav",
+      "sha256": "c48f333d8ebcff795f2f057a2f2a52ee79ff8728535bf9add65e64e37fdb6268",
+      "hz": 588.627
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key11-624hz.wav",
+      "sha256": "f176bae7833e8088bdefcf6085c135cfce628a07b9a97f177a431f5da61c0688",
+      "hz": 623.629
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key12-661hz.wav",
+      "sha256": "d2be5970b2f840e36a83724085ca58427190fae4c11df8accd08f8b1226c2219",
+      "hz": 660.712
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key13-700hz.wav",
+      "sha256": "ee5c23cb431bebb4d9d729a24f1b899dcfa7b341e49c55d24bbfdef5d4a89907",
+      "hz": 700.0
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key14-742hz.wav",
+      "sha256": "bbe1c992679aba8ce0993c83351e8a35671eec45f14499d0c156fb4a1a2adbd6",
+      "hz": 741.624
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key15-786hz.wav",
+      "sha256": "c56ac145ced142aa6dda44d64955f483b4bae96f06850a36641f5c8239814684",
+      "hz": 785.723
+    },
+    {
+      "path": "experiments/drum10-memory-hits-001/key16-832hz.wav",
+      "sha256": "693545f213c832287246871fc2549d952860d57fb4bba2e410ab02fc857b5dfe",
+      "hz": 832.445
+    }
+  ],
+  "hit_codes": 6375,
+  "allocation": {
+    "drum_slot": 10,
+    "owner_sound_id": 24,
+    "source_kit_was_empty": false,
+    "source_layout": "references_to_sound_id_0",
+    "source_capacity_codes": 0,
+    "capacity_codes": 102400,
+    "kit_codes": 102000,
+    "windows": [
+      [
+        0,
+        6375
+      ],
+      [
+        6375,
+        12750
+      ],
+      [
+        12750,
+        19125
+      ],
+      [
+        19125,
+        25500
+      ],
+      [
+        25500,
+        31875
+      ],
+      [
+        31875,
+        38250
+      ],
+      [
+        38250,
+        44625
+      ],
+      [
+        44625,
+        51000
+      ],
+      [
+        51000,
+        57375
+      ],
+      [
+        57375,
+        63750
+      ],
+      [
+        63750,
+        70125
+      ],
+      [
+        70125,
+        76500
+      ],
+      [
+        76500,
+        82875
+      ],
+      [
+        82875,
+        89250
+      ],
+      [
+        89250,
+        95625
+      ],
+      [
+        95625,
+        102000
+      ]
+    ],
+    "total_backing_capacity_codes": 1019904
+  },
+  "stage_report_sha256": "fd09e13c3f45e5fc691387e482093f40270ce812dd25cd3f51fa6f907fd63547",
+  "plan_sha256": "cdf1fbe72acb38ed49cf0dba1ccd217c4aa1be8966d74bdb0aa56bcafaf9c33d",
+  "expected_body_sha256": "f8172145953d920ece8ec03dcf2b5883174e9dd101ddffee0f87d949df69381b",
+  "edited_artifact_sha256": "d7178a3fc0d163e457468b9d967142d4c9455a5eda3d988b7b3c114f73f5e796",
+  "restore_wav_sha256": "98e163690f386d62199c7fd085c51dd943ffe01ec7769e4d1ef4dfadd567ae18",
+  "hypotheses": {
+    "advertised_limit_rejects": "the backup differs from the target",
+    "accepted": "the backup equals the target exactly"
+  },
+  "outcomes": [
+    "accepted_exact",
+    "kept_previous",
+    "empty",
+    "other",
+    "not_decoded"
+  ],
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "sound10_key_k": [
+      0.0,
+      100.0,
+      200.0,
+      300.0,
+      400.0,
+      500.0,
+      600.0,
+      700.0,
+      800.0,
+      900.0,
+      1000.0,
+      1100.0,
+      1200.0,
+      1300.0,
+      1400.0,
+      1500.0
+    ]
+  },
+  "absolute_hz": 350.0,
+  "decision": [
+    "Outcome from the accepted backup: accepted_exact, kept_previous, empty, other, or not_decoded",
+    "Only if accepted_exact: sound10_key_k holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops; step 1 within 20 cents of 350 Hz"
+  ],
+  "limits": [
+    "One total above the advertised limit; the exact limit is not located by this test"
+  ]
+}

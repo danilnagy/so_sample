@@ -1,0 +1,26 @@
+{
+  "analysis_version": "nonzero-start-drum-recapture-status-0.1",
+  "registration_sha256": "45c8254f79e4b917554e4f364159f1481feee9b60290da3822e9a057e293c8a5",
+  "capture_sha256": "5cfdffdf3ed3e2f1a4b95ee64533fe0fea789345dfa7e42b1ef33c65a7c6d38f",
+  "archived_capture": "capture-attempt-001.wav",
+  "user_report": "done and confirmed",
+  "restore_and_both_sound9_tone_checks_user_confirmed": true,
+  "native_frame_valid": false,
+  "target_body_comparison_performed": false,
+  "hardware_verified": false,
+  "verification_status": "user_checks_passed_but_exact_native_recapture_unverified",
+  "initial_failure": "initial-decode-failure.json",
+  "clock_failure": "clock-decode-failure.json",
+  "waveform_diagnostics": "waveform-threshold-diagnostics-001.json",
+  "minimum_error_cells_over_quarter_offsets": {
+    "left": 363,
+    "right": 64
+  },
+  "limits": [
+    "The user confirms device restore and both auditions; this report does not claim a failed hardware restore",
+    "Both established decoders fail, and waveform model errors are distributed through payload coverage",
+    "Higher decoder thresholds also fail; target values, CRC-guided repair and expected-state substitution are not used",
+    "The recording has no digital clipping indicators; the specific cause of distortion is not established",
+    "Key2 hardware acceptance and its project preview remain pending reliable native recapture"
+  ]
+}

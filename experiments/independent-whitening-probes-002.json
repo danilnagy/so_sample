@@ -1,0 +1,26 @@
+{
+  "analysis_version": "independent-channel-whitening-0.1",
+  "artifact_sha256": "e5b57f9d2667fab1bba08d24d63ca3da691434f37ecb9b217e090aa0909b1527",
+  "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "view": "staggered_phase",
+  "window_in_phase_view": [
+    8500,
+    43000
+  ],
+  "lead_commit": "3b3a0a758ba452fc809027c5bafcc5e2d0931532",
+  "model": "coded=(raw+low8(state)) mod256; state=CRC-CCITT-1021(state,raw)",
+  "independent_channel_mappings": true,
+  "minimum_run_bytes": 8,
+  "candidate_streams": 18432,
+  "three_byte_candidates": 2489535,
+  "validated_runs": 0,
+  "matches": [],
+  "payload_decoded": false,
+  "limits": [
+    "Constant plaintext0/255 and this16-bit update are finite related-device hypotheses.",
+    "All65536 seed states are considered; first3 bytes select candidates and>=5 additional bytes must match.",
+    "Same temporal channel offset; separate channel delays and other CRC/whitening rules untested.",
+    "Enumerated streams may overlap or be equivalent; counts are not independent statistical trials.",
+    "No artifact rewrite, native framing, checksum or editable field is inferred."
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "analysis_version": "clean-copy-check-0.1",
+  "registration_sha256": "df004cd669774ea1f435e481d2a13e7d8cd20545dcf90cc852065106f7ee162a",
+  "inputs": [
+    {
+      "path": "experiments\\empty-001-c-copy-to-1\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "c03df4887c8386885fbd618588047d38a2bfaddd5c26626317254f5e1b9cdf6e",
+      "source_sha256": "b38ea70cc43b6ebbb2797a213c156bc396c59eb57648de1c4e9943a4544eaa74",
+      "decoder_version": "sign-crossings-0.1"
+    },
+    {
+      "path": "experiments\\empty-001-copy2-clean-a\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "ac2140560309978c140ab0b02f7ad01c595181878f68b1b68558aff37e5669b4",
+      "source_sha256": "d6c521f933a005ae4eb1a6eda8317a809fd9d0ebdc66d7f1f315a3936cffdf66",
+      "decoder_version": "sign-crossings-0.2"
+    },
+    {
+      "path": "experiments\\empty-001-copy2-clean-b\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "0d90f8295905ccfca03823900c4991fa33dd7b979386498eddb8691a34d76ea1",
+      "source_sha256": "bb3991eba30c5c99234144b0f53a83ea505afd29d802c690b10502cad1b0905d",
+      "decoder_version": "sign-crossings-0.2"
+    },
+    {
+      "path": "experiments\\empty-001-d-copy-to-2\\derived\\analysis-001\\capture.symbols.npz",
+      "artifact_sha256": "7e09d71f9e0cbc8d2804de2c359d800a6225b2b54136153c26345b7090937ec9",
+      "source_sha256": "7acb719c345ba68f142fe9872662bf603b108d5b3671e82c49fa61320c1c8d0e",
+      "decoder_version": "sign-crossings-0.2"
+    }
+  ],
+  "protocol_status": "no_deviation_reported",
+  "reported_deviation": null,
+  "channels": {
+    "left": {
+      "complete_counts": [
+        178868,
+        178900
+      ],
+      "count_increase": 32,
+      "changed_shared_labels": 1249,
+      "strict_first_change": 177093,
+      "strict_last_change": 178765,
+      "complete_arrays_equal": false,
+      "before_reference_prefix_matches": true,
+      "growth_range_matches": true,
+      "observed_window_matches": {
+        "front_table": false,
+        "inline_slots": true
+      },
+      "reference_to_before": {
+        "complete_counts": [
+          178868,
+          178868
+        ],
+        "count_increase": 0,
+        "changed_shared_labels": 0,
+        "strict_first_change": null,
+        "strict_last_change": null,
+        "complete_arrays_equal": true
+      },
+      "earlier_deviated_after_to_clean_after": {
+        "complete_counts": [
+          178900,
+          178900
+        ],
+        "count_increase": 0,
+        "changed_shared_labels": 0,
+        "strict_first_change": null,
+        "strict_last_change": null,
+        "complete_arrays_equal": true
+      },
+      "incomplete_final_sign_intervals": {
+        "reference": [
+          0,
+          1,
+          0
+        ],
+        "before": [
+          0
+        ],
+        "after": [
+          0
+        ],
+        "earlier_deviated_after": [
+          0
+        ]
+      }
+    },
+    "right": {
+      "complete_counts": [
+        178868,
+        178900
+      ],
+      "count_increase": 32,
+      "changed_shared_labels": 1350,
+      "strict_first_change": 177092,
+      "strict_last_change": 178867,
+      "complete_arrays_equal": false,
+      "before_reference_prefix_matches": true,
+      "growth_range_matches": true,
+      "observed_window_matches": {
+        "front_table": false,
+        "inline_slots": true
+      },
+      "reference_to_before": {
+        "complete_counts": [
+          178868,
+          178868
+        ],
+        "count_increase": 0,
+        "changed_shared_labels": 0,
+        "strict_first_change": null,
+        "strict_last_change": null,
+        "complete_arrays_equal": true
+      },
+      "earlier_deviated_after_to_clean_after": {
+        "complete_counts": [
+          178900,
+          178900
+        ],
+        "count_increase": 0,
+        "changed_shared_labels": 0,
+        "strict_first_change": null,
+        "strict_last_change": null,
+        "complete_arrays_equal": true
+      },
+      "incomplete_final_sign_intervals": {
+        "reference": [
+          1,
+          1
+        ],
+        "before": [],
+        "after": [
+          1
+        ],
+        "earlier_deviated_after": [
+          1
+        ]
+      }
+    }
+  },
+  "anchors": [
+    {
+      "channel": "left",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "fad12588bd6188c8a135df3b91a445629a5d871cab8d658be7e77144ad490643",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "967624102efdcc48b41adfff423cf397e03849f402cd98bbb6c699a7c832d73b",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "left",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "9af990146b8cdfac5275aae7c117f82799a346c58bfd90a77ab180ec17f04081",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        90000,
+        90128
+      ],
+      "expected_same_target_increment_span": [
+        90000,
+        90128
+      ],
+      "uint8_increment_array_sha256": "debfe0852b4892482de5b3c0ac5b4c322ca22b2e8921c2fd7048c9b2d93cabd2",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        120000,
+        120128
+      ],
+      "expected_same_target_increment_span": [
+        120000,
+        120128
+      ],
+      "uint8_increment_array_sha256": "d10aa64f6b2f86ca62863368230b1a5fbb8802f8080b3c86eb86e2c8709ca2a8",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    },
+    {
+      "channel": "right",
+      "source_increment_span": [
+        150000,
+        150128
+      ],
+      "expected_same_target_increment_span": [
+        150000,
+        150128
+      ],
+      "uint8_increment_array_sha256": "f7f0bbf6282e7815839be523bbda548b2a40e08ef8fe541351b0dd58e6c552e6",
+      "before_same_position_matches": true,
+      "after_same_position_matches": true
+    }
+  ],
+  "payload_decoded": false,
+  "absolute_position_models_applicable": true,
+  "single_action_interpretation_eligible": true,
+  "model_results": {
+    "front_table": "window_prediction_failed",
+    "inline_slots": "window_prediction_passed"
+  },
+  "limits": [
+    "Protocol eligibility relies on user report; this script cannot observe hardware actions.",
+    "Fresh before-state applicability is checked before interpreting absolute position models.",
+    "No shifts, phase rotations, rewritten arrays or adjusted prediction windows are used.",
+    "Complete arrays and partial terminal intervals are reported separately.",
+    "Earlier deviated capture remains observational even if its complete arrays equal clean after.",
+    "A successful location prediction does not decode native fields, storage pointers or checksums."
+  ]
+}

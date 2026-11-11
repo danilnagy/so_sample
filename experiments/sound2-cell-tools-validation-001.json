@@ -1,0 +1,32 @@
+{
+  "analysis_version": "sound2-cell-tools-validation-0.1",
+  "pytest": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --basetemp .tools/pytest-sound-cells-full-001 -p no:cacheprovider",
+    "passed": 269,
+    "failed": 0,
+    "duration_seconds": 49.83,
+    "windows_execution": "Normal filesystem access, automatically approved for pytest temporary fixtures"
+  },
+  "post_registration_capture_inspection": {
+    "passed": 1,
+    "failed": 0,
+    "duration_seconds": 11.84,
+    "purpose": "Verify the updated manifest includes the new genuine recording and all hashes/inspection values still match"
+  },
+  "ruff": {
+    "lint": "passed",
+    "format": "passed",
+    "formatted_file_count": 94,
+    "scope": ["src", "tests", "scripts"]
+  },
+  "genuine_capture_sha256": "34b9b78a92d62e76383ee2bd673ae1590793e10b2376ed2dd19974d8c1d16549",
+  "native_body_sha256": "e2d6c4a33c045deec30c27449a39182dc6bd0fb80bbe002aba85b0678ce4681d",
+  "control_checks_passed": true,
+  "primary_equality_hypothesis_fit": false,
+  "auxiliary_key_hypothesis_fit": true,
+  "candidate_restore_wav_sha256": "fb3715a6951f9563a8778537433ccb30c015818494043d333728e6ad3251147e",
+  "candidate_native_body_sha256": "4362aa66f6c18e7351b39016eb1b801dfa4a6ce0f4935861d4aaf45c8737668b",
+  "candidate_software_validation": "generated-sound2-cell-001/software-validation.json",
+  "candidate_hardware_verified": false,
+  "next_recapture": "edited-sound2-cell-001/capture.wav"
+}

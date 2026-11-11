@@ -1,0 +1,57 @@
+{
+  "analysis_version": "volume36-post-playback-persistence-hardware-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Full physical backup after the already recorded ordinary playback remains exactly equal to the accepted uniform36 body",
+  "checks": {
+    "registered_source_files_and_observation_match": true,
+    "source_observation_checks_pass": true,
+    "independent_recapture_identity_matches": true,
+    "source_body_matches_registration": true,
+    "native_checksum_geometry_and_reencoding_pass": true,
+    "entire_post_playback_body_matches_prediction": true,
+    "entire_native_body_and_packets_unchanged": true,
+    "prior_ordinary_playback_file_matches": true,
+    "capture_not_clipped": true,
+    "all_export_checks_and_content_hashes_pass": true,
+    "complete_export_body_exact": true
+  },
+  "volume_raw_values": [
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36,
+    36
+  ],
+  "capture_sha256": "8ecd94cad6185a42b42e2db3b3ecced19f72dd9884316848d08e15b079e9922c",
+  "artifact_sha256": "019211d5ec793c0e75513010c734b5800cdf7a2d750cfb2ba27a6fb88e49c1a4",
+  "artifact_path": "experiments/event-050-a-sound3-volume36-post-playback/derived/analysis-001/capture.symbols.npz",
+  "body_sha256": "c0cc91737d5998aa5d6a214b1eeae0a46213b524d3f5fd307745d1bb780bd39c",
+  "native_results_sha256": "451ce0a7ee77776a7b26aea850c35c700b2b4edf32025b679dc2270356a5213b",
+  "manual_observation_sha256": "c5bae6d056892af995fa52b4ca91a1112f4c1f9d1c9d950a8c9030a08ed53965",
+  "source_hardware_observation_sha256": "f23a108d81b700d86a4d2dbe3ee7b7bbc8920a78441810df21652d66ea51f008",
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.15570068359375,
+      0.14996337890625
+    ]
+  },
+  "exported_content_files_checked": 31,
+  "pitch_field_verified": false,
+  "limits": [
+    "No new restore or knob movement requested",
+    "A changed complete body is retained as a failed persistence prediction, without fitting it into later pitch data",
+    "No TONE pitch field or pitch endpoint value is assumed; the recorded A probe is a later control"
+  ]
+}

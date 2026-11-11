@@ -1,0 +1,23 @@
+{
+  "experiment_id": "replayed-sound3-volume21-reference-001",
+  "capture_status": "validated_exact_uniform21_reference_and_usable_audio",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-volume18-pair-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_exact_native_reception"
+  },
+  "planned_actions": [
+    "For generated18 wait until reference native capture and ordinary playback are verified",
+    "Restore complete restore.wav with established stereo path and level; keep both knobs and recording/output levels unchanged",
+    "Select Pattern1/Sound3/TONE stopped/write off; before pattern playback save complete capture.wav with established reduced levels and one second tail",
+    "Separately record12 to15 seconds of ordinary Pattern1 playback as playback.wav,then stop/write off",
+    "Report restore success and same recognizable phrase; no numeric volume display inferred or read by moving B"
+  ],
+  "analysis": "derived/analysis-001",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "native_results": "hardware-recapture-results-001.json",
+  "playback_results": "playback-gain-results-001.json",
+  "project": "../exported-sound3-volume21-reference-001/project.json",
+  "volume_writer_enabled": false
+}

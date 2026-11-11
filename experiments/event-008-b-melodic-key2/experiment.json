@@ -1,0 +1,49 @@
+{
+  "experiment_id": "event-008-b-melodic-key2",
+  "capture_status": "received_and_validated_key2_invariants_and_hypotheses",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-pattern-001",
+  "baseline_source_sha256": "494957d160d0454eef3db5273e05496c59f98b6da89c0dc6bb25ee9115c182af",
+  "baseline_body_sha256": "8b39765df9a4caf71e509f54b0c49e2f0d95ad1a60f4effa46daa687259d0104",
+  "baseline_reused": "Hardware-verified four-note after-playback recapture exactly equals the generated body",
+  "proposed_change": {
+    "pattern": 1,
+    "step": 5,
+    "sound_slot": 3,
+    "old_melodic_keyboard_key": 1,
+    "new_melodic_keyboard_key": 2
+  },
+  "planned_actions": [
+    "On Pattern1, retain stopped playback and write off; select Sound3",
+    "Enter write mode, tap Step5 once to remove its existing note, confirm its light is off, then exit write mode",
+    "Tap melodic keyboard key2 with write off; enter write mode, tap Step5 once to add that note, then exit write mode",
+    "Reselect Sound8; retain TONE, stopped playback and all other settings",
+    "Record complete stereo backup before playing the modified pattern"
+  ],
+  "actual_actions": [
+    "User replied done to the fixed-Step5 Sound3 key1-to-key2 protocol and supplied this capture; no deviation reported."
+  ],
+  "source_sha256": "ff78fa4c5b29b4b1ec4df8fdfa89cec54020da7e9059b3b342c78672edd9d90d",
+  "preregistration": "../melodic-key2-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "purpose": "Separate melodic key selection from fixed step position without changing samples or the other three notes",
+  "note_bitfields_verified": false,
+  "action_evidence": "User completion report; exact button actions and pitched playback were not independently observed.",
+  "observed_keyboard_mapping": {
+    "sound_slot": 3,
+    "primary_hex": "0df883",
+    "auxiliary_by_keyboard_key": {
+      "1": "f0",
+      "2": "f1"
+    },
+    "upper_nibble": "Opaque and preserved",
+    "other_keys": "Untested"
+  },
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "registered_checks": "../melodic-key2-results-001.json",
+    "packets": "derived/analysis-001/packet-report.json",
+    "patterns": "derived/analysis-001/pattern-report.json",
+    "waveform": "../waveform-probes-024.json"
+  }
+}

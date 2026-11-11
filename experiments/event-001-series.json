@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "event-001",
+  "status": "analyzed_reversible_shared_span_with_terminal_tail_difference",
+  "purpose": "Add and remove one complete pattern event, then examine reproducible transport differences",
+  "proposed_event": {
+    "pattern": 1,
+    "step": 1,
+    "sound_slot": 9,
+    "drum_slice_key": 1
+  },
+  "captures": [
+    "event-001-a",
+    "event-001-b",
+    "event-001-a-return"
+  ],
+  "prerequisites": {
+    "target_step_empty": "confirmed_by_user_entire_pattern_1_empty",
+    "target_slice_recognizable": "confirmed_by_user_kick_sound_9_slice_1"
+  },
+  "comparison_order": [
+    "A vs returned A before attributing B changes",
+    "A vs B and B vs returned A per channel",
+    "Explicit count/tail checks and waveform diagnostics before protocol offset inference"
+  ],
+  "claims": {
+    "field_offset_known": false,
+    "payload_coding_verified": false,
+    "editable_field_verified": false
+  },
+  "target_confirmation": {
+    "evidence_source": "user_report",
+    "pattern": 1,
+    "pattern_empty": true,
+    "sound_slot": 9,
+    "drum_slice_key": 1,
+    "sound_description": "recognizable kick"
+  },
+  "results": {
+    "return_shared_span_identical": true,
+    "return_missing_terminal_symbols_per_channel": 10,
+    "event_first_changed_symbol_per_channel": 9309,
+    "event_left_changed_symbols": 88307,
+    "event_right_changed_symbols": 1471718,
+    "state_offset_identified": false
+  }
+}

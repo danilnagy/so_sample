@@ -1,0 +1,22 @@
+{
+  "experiment_id": "edited-sound3-filter16-B32-middle-001",
+  "capture_status": "validated_exact_B32_and_both_frozen_component_margins",
+  "restore_file": "restore.wav",
+  "registration": "../sound3-generated-filter16-B32-middle-registration-001.json",
+  "hardware_restore": {
+    "status": "verified_complete_target_audible_pattern_and_frozen_audio"
+  },
+  "planned_actions": [
+    "Restore with established stereo setup and playback level; keep both knobs and recording settings unchanged",
+    "Before playback save full capture.wav at established reduced level with one second trailing silence",
+    "Select Pattern1/Sound3/FILTER without knob movement; separately record12 to15 seconds ordinary playback as playback.wav, then stop/write off",
+    "Report actual sound, including uncertainty; no WRITE-held pass or required guessed comparison"
+  ],
+  "analysis": "derived/analysis-001",
+  "native_results": "hardware-recapture-results-001.json",
+  "audio_results": "resonance-frequency-results-001.json",
+  "audio_comparison": "middle-audio-comparison-results-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-sound3-filter16-B32-middle-001/project.json"
+}

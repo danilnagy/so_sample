@@ -1,0 +1,30 @@
+{
+  "experiment_id": "event-025-b-rerecord-unshared-sound4-short",
+  "capture_status": "validated_unshared_capacity_shrink_only_sound4_changed",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-024-b-rerecord-shared-sound4",
+  "baseline_capture": "../event-024-b-rerecord-shared-sound4/capture.wav",
+  "baseline_source_sha256": "5dca9a554b76bb538cf6a24deb5fdc707893730f6bea5519c76f5106342cb057",
+  "baseline_artifact": "../event-024-b-rerecord-shared-sound4/derived/analysis-001/capture.symbols.npz",
+  "baseline_artifact_sha256": "b1f5f51d82f861c472f07763137c466c4da986ec244c986425d3af1279bd8f4d",
+  "baseline_body_sha256": "be92460f9d8014d92b54c1e6baf2a6fcdb29c8cad37a2f1d6f25cda3e69364b2",
+  "preregistration": "../unshared-sound4-shrink-predictions-001.json",
+  "source_tone": "../calibration-unshared-shrink-001/tone-1500hz-0p25s.wav",
+  "decoder_threshold": 0.0063,
+  "planned_actions": [
+    "Keep Pattern1 stopped/write off, all notes and both knobs unchanged; use the proven computer-to-PO33 line-input sampling path",
+    "Hold record+key4, play the complete quarter-second1500Hz tone, release after it ends to re-record only Sound4; retain Sound5",
+    "Return to Sound8/TONE stopped/write off, reconnect the stereo backup path and record a complete PCM16/44100Hz backup here before audition/playback, with a second of trailing silence",
+    "After saving audition Sound4/key1 for a brief changed tone and Sound5/key1 for the retained old short tone; return to Sound8/TONE and report both outcomes/deviations"
+  ],
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "859e6eaeee774088e16eff03c60fedb909284de0ee2231c6c025d2aedfd7bf84",
+  "purpose": "Distinguish shrinking from reuse of an unshared sample allocation, with independent Sound5 and all prior musical state preserved",
+  "results": "../unshared-sound4-shrink-results-001.json",
+  "sample_analysis": "../unshared-sound4-shrink-sample-analysis-001.json",
+  "manual_observation": "manual-observation.json",
+  "analysis": "derived/analysis-001"
+}

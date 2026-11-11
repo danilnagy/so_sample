@@ -1,0 +1,54 @@
+{
+  "analysis_version": "FX8-and-clear-footer-global-return-preregistration-0.1",
+  "hardware_verified": false,
+  "registered_before_both_captures": true,
+  "scope_revised_after_FX7_observation": true,
+  "source_artifact": "experiments/event-065-a-pattern1-FX7-recorded/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "3edd1137d6c38f695a0d80338d2e11da821499477b2fcde402e05f8cafb97ef3",
+  "source_capture": "experiments/event-065-a-pattern1-FX7-recorded/capture.wav",
+  "source_capture_sha256": "3c1f094e2d705690f0dfa6084c83e4bc53e6395a8bb9f0e82ab3d8726ac360e2",
+  "source_body_sha256": "99b832a7e42f801c9d266da0e4f24d3f4a0add2f2352e24274cf77d7295a276d",
+  "source_observation_sha256": "754c6b769b9e959a9834b1f1f2c4a60073d4f60d8da934e52a6e729bf1bc138b",
+  "independent_no_FX_artifact": "experiments/edited-sound3-filter16-B32-middle-001/derived/analysis-001/capture.symbols.npz",
+  "independent_no_FX_artifact_sha256": "3132a8907f8a16853d02c0daa94ec2d83a981cf4e0520dd230acde79ae8988ec",
+  "independent_no_FX_body_sha256": "d039d344987f852ad3a8668249fab8a1366e1d1e9bc9280c789d0059947ca73f",
+  "expected_packet_count": 815,
+  "expected_frame_end_byte": 156758,
+  "footer_candidate": {
+    "pattern": 1,
+    "start_byte": 1024,
+    "bytes": 8
+  },
+  "global_candidate": {
+    "packet_index": 2,
+    "tag": 32092,
+    "payload_offset": 131,
+    "narrow_mask": 15,
+    "broader_mask": 255
+  },
+  "expected_capture_sequence": [
+    {
+      "experiment_id": "event-066-b-pattern1-FX8-recorded",
+      "official_effect_key": 8,
+      "official_effect_name": "octave_down",
+      "expected_footer_hex": "7777777777777777",
+      "raw_code_model": "New key-minus-one mapping hypothesis predicts7 after observed FX7 code6",
+      "expected_global_byte": null
+    },
+    {
+      "experiment_id": "event-067-c-pattern1-FX16-clear",
+      "official_effect_key": 16,
+      "official_effect_name": "no_effect_clear",
+      "expected_footer_hex": "ffffffffffffffff",
+      "expected_global_byte": null
+    }
+  ],
+  "official_control_source": "https://teenage.engineering/guides/po-33/en",
+  "limits": [
+    "Original footer-only FX7 prediction failed due to global byte131 0-to9; original report remains immutable; footer-plus-global masks are new hypotheses registered before these captures",
+    "Global byte131 meaning and both new values are unknown; low-four and whole-byte scopes remain separate, with all other fields exact",
+    "FX8 raw7 and clear raw15 are new footer hypotheses, not pre-existing full effect-map facts; failures/mixed values remain literal without averaging",
+    "Clear should match the independent no-FX state except the explicitly unknown global byte131; full original-body equality is an additional diagnostic, not a guessed global-byte target",
+    "Nibble order remains unresolved for uniform vectors; no exact whole FX8 body, public FX writer or full map is predicted"
+  ]
+}

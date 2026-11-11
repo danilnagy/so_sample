@@ -1,0 +1,10 @@
+{
+  "session_answers": [
+    {
+      "question": "Which of the four notes, if any, bent upward? (Enter to skip)",
+      "answer": "2nd and 4th bent upward"
+    }
+  ],
+  "capture_sha256": "193a9efcc641f41c26e8830e3120cbdcdea48fef009a0437a6f7135429cf5bcc",
+  "playback_sha256": "0fb45040cba13fb6486de733fae1da85f0b4793cef1dd11839ba55688ce787ef"
+}

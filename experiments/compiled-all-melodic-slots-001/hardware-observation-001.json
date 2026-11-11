@@ -1,0 +1,50 @@
+{
+  "analysis_version": "all-melodic-slots-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of self-owned imports in all eight melodic slots, with registered per-slot pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "slot_s_plays_its_tone",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 0.06380956879594835,
+    "3": 150.03896110511192,
+    "4": 150.07916384100253,
+    "5": 299.9882662938922,
+    "6": 300.03956328006456,
+    "7": 450.05727404636787,
+    "8": 450.05130179746754,
+    "9": 600.0415187692397,
+    "10": 600.1034660426245,
+    "11": 750.0200919009444,
+    "12": 750.1639697385324,
+    "13": 900.0181942608746,
+    "14": 900.0417198113518,
+    "15": 1050.0508553612444,
+    "16": 1050.1004131948307
+  },
+  "absolute": {
+    "step1_cents_vs_expected": -0.2024889245973327,
+    "holds": true
+  },
+  "total_capacity_codes": 745472,
+  "decision_sha256": "3b903046aa9e2a59f45bdd59f9372ad9aa1131e24bb470a89de35d17630aafb0",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "152263f82a9f7f63a2ea97ccaca6c848f628ad4959d9a115bb0aaeefbee207b0",
+  "session_answers": [
+    {
+      "question": "Did the pattern play eight rising notes, one on every other step? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One short tone per melodic slot at key 1 and pitch code 13; Sound9 and Sound10 kits are checked by exact reception only"
+  ]
+}

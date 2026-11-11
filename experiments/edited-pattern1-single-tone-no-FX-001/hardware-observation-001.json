@@ -1,0 +1,77 @@
+{
+  "analysis_version": "single-tone-baseline-native-and-audio-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact single-tone native target received; the unchanged frozen first-tone method finds a usable first tone in all six measurements",
+  "checks": {
+    "native_check_passed": true,
+    "audio_check_passed": true,
+    "capture_and_artifact_pins_match": true,
+    "playback_identity_matches_audio_report": true,
+    "body_matches_registered_target": true,
+    "export_hashes_and_native_body_exact": true,
+    "capture_not_clipped": true,
+    "playback_not_clipped": true,
+    "accepted_capture_is_harness_attempt": true
+  },
+  "capture_sha256": "7f19bbb61714693a0d88c198232e6c420b5e25f2fc3b50601133ffcc1b22e6b6",
+  "artifact_sha256": "36e560598b3a006c2c668a3c3c83edb7bce3d101de3f2fbe1a243e41ddf8961e",
+  "body_sha256": "a97e89da4ebdc2bb236209d0ef295a1473e6a58757cca0165c466c4c667602a6",
+  "native_results_sha256": "2e6a1063ba1f1b26b7c4798750266fb82c7fe2651afae4140319aa3907af867b",
+  "audio_results_sha256": "828bc8062b9a0223e9e3849baf11eb7b5f52e09ac67f886f6f7f25aac7f80c82",
+  "manual_observation_sha256": "64beb4cec0298172a56939a19fca9d43150256460a9422e50bfbe3b40ba45aff",
+  "playback_sha256": "e13cfbaf68163a3728613e5283c4e04a63e5395cbe8d12b70bd0beefe1937fe9",
+  "harness_sessions": {
+    "hardware-session-001.json": "0cb6372b7075ed9037de5e3d0147586abb7c9cd08134795c784e6b95dee77ecc",
+    "hardware-session-002.json": "6deaf3ff749d22fea2c6365a8009855e82164904a0daad974c53225cd6a823a4",
+    "hardware-session-003.json": "e2f8d231cb619d1b8a4738dd1764707dbc795eefc6a9bcfa6af3cefac23a7a6e",
+    "hardware-session-004.json": "a750de6c40b93d7be4f82128465d45c70303c3665e27cb9991c25534634403c7",
+    "hardware-session-005.json": "e2bdf802c87ba1c6b34802b40c010e9f2ffd6d6812104911566c380bb760ad1e",
+    "hardware-session-006.json": "0828000bab39591a9ace0a240e0f2720fe8e726421cfff7880a27bce0b448c4a",
+    "hardware-session-007.json": "e8cb89b62edf5a5bb1237c1c6b1ae2cfdb38e61275bdf294f1c2bcd92f8a93c9",
+    "hardware-session-008.json": "86340e1149e6d3856fffb34b63951f1dc1725723a226ccd70f7e632433ded5fb",
+    "hardware-session-009.json": "03ee469462a4b9316d741c05c383b6c1734cb64fe46f6882432190b7432e50db",
+    "hardware-session-010.json": "c39c52ab87a053f9c263fab5594d504679df75705e5deda41b59218f453e4cc4"
+  },
+  "restore_session": "hardware-session-009.json",
+  "playback_session": "hardware-session-010.json",
+  "first_tone": {
+    "frequency_hz": 1190.417182693937,
+    "onset_seconds": 1.240498866213152
+  },
+  "supplementary_loop_measurement": {
+    "method": "envelope onsets above 25% of peak in 5 ms blocks, merged within 0.3 s; chosen after the data arrived, not part of the frozen method",
+    "onsets_seconds": [
+      1.2422,
+      3.6417,
+      6.0413,
+      8.4408,
+      10.8404,
+      13.2399
+    ],
+    "median_interval_seconds": 2.3995,
+    "tones_per_interval": 1
+  },
+  "capture_level": {
+    "sample_rate_hz": 44100,
+    "peaks_per_channel": [
+      0.03643798828125,
+      0.03460693359375
+    ]
+  },
+  "playback_level": {
+    "sample_rate_hz": 44100,
+    "duration_seconds": 15.2,
+    "peaks_per_channel": [
+      0.24725341796875,
+      0.23443603515625
+    ]
+  },
+  "new_effect_order_adjudicated": false,
+  "per_step_nibble_order_confirmed": false,
+  "general_per_step_FX_writer_enabled": false,
+  "limits": [
+    "Establishes a usable unshifted single-tone reference, not the effect nibble order",
+    "The earlier F6/6F comparison stays inconclusive and unchanged",
+    "Earlier failed harness sessions and attempts are retained in attempts/"
+  ]
+}

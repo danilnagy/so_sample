@@ -1,0 +1,33 @@
+{
+  "analysis_version": "verified-sound6-creation-to-generated-reference-copy-workflow-audit-0.1",
+  "checks": {
+    "source_creation_is_hardware_verified": true,
+    "source_and_target_bodies_registered": true,
+    "all_candidate_software_checks_pass": true,
+    "generated_files_hashes_match": true,
+    "copy_checker_accepts_target_and_rejects_empty_baseline": true,
+    "backing_capacity_unchanged": true,
+    "sound6_and7_preview_windows_exactly_identical": true,
+    "software_report_does_not_claim_hardware": true,
+    "registered_before_recapture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "creation_acceptance_sha256": "c15f44e41c3a57cb4bd60a7b996906145835086aeac6044ae75f18a636547bb2",
+  "copy_registration_sha256": "d83b9a0c9a037d952c0f4deab6ce9fa2d67f48bcd5f2340965accd0587a3d2b7",
+  "validation": {
+    "targeted_tests": "30 passed in3.57s",
+    "ruff_check": "passed",
+    "ruff_format": "159 Python files formatted"
+  },
+  "creation_capture_sample_rate_hz": 44100,
+  "creation_capture_peak_per_channel": [
+    0.16827392578125,
+    0.1612548828125
+  ],
+  "creation_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Restore Sound6-to7 copy backup, capture before audition, confirm matching Sound6/Sound7 tones and unchanged Sound4/Sound5/Pattern1, retaining both copied sounds"
+}

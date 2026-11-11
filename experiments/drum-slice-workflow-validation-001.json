@@ -1,0 +1,40 @@
+{
+  "analysis_version": "first-drum-slice-workflow-audit-0.1",
+  "checks": {
+    "physical_slice_locality": true,
+    "failed79_prediction_retained": true,
+    "candidate_checks_and_compiler_roundtrips": true,
+    "candidate_wav_matches_registered_hash": true,
+    "source_capture_preserved": true,
+    "source_artifact_preserved": true,
+    "all_exported_content_hashes": true,
+    "all_native_packets_exported_exactly": true,
+    "only_key1_mapping_marked_observed": true,
+    "no_drum_export_previews": true,
+    "software_reports_remain_hardware_unverified": true
+  },
+  "passed": true,
+  "control_report_sha256": "c279a90562723889006c00da7881153c705fca76aa253afcb6290167acd4253f",
+  "source_capture_sha256": "bb5cbcd9cee52cd390dcc9f5e33f1fec719891d951d4d92ae21d3dae1a924046",
+  "source_artifact_sha256": "3495d30f8003b614a828d94d6fba85a3c8fdef3e52a70f4b201c40a3c3153daf",
+  "source_native_body_sha256": "ce8c3712bf6557ab0ea5a97363a7f9dbb35fba2293c670873a474f3e357cabc9",
+  "candidate_restore_wav_sha256": "76c74a4a3b10cbc8324b606adf7af4b901c29b333e2c4fcfe31fc9380e382c41",
+  "candidate_native_body_sha256": "4eca78dcdf5521941bb07c0d16e4cad71115512021670c203d87256ce142e667",
+  "restore_registration_sha256": "6dc2c1dbebb1f488940507caa72b6e1d2fed7a4232d96ed5b38806cd3386ae2b",
+  "exported_content_file_count": 26,
+  "suite": {
+    "passed": 387,
+    "failed": 0,
+    "elapsed_seconds": 63.48,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest --basetemp .tools/pytest-drum-slice-001"
+  },
+  "ruff_lint_passed": true,
+  "ruff_format_check_passed": true,
+  "formatted_python_file_count": 118,
+  "generated_drum_edit_hardware_verified": false,
+  "limits": [
+    "Only the physical key1 mapping and local minimum are observed; the generated endpoint2000 operation is pending hardware verification",
+    "The local127..4044 guard is not a general drum minimum or endpoint inclusivity rule",
+    "Other keys, starts, neighbors and drum slots are rejected by the experimental writer"
+  ]
+}

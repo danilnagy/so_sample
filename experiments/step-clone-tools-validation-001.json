@@ -1,0 +1,22 @@
+{
+  "validation_id": "step-clone-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-step-clone-001 -p no:cacheprovider",
+    "passed": 206,
+    "failed": 0,
+    "duration_seconds": 59.57,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 78
+  },
+  "melodic_control_results": "melodic-step1-results-001.json",
+  "melodic_control_all_registered_checks_passed": true,
+  "known_corrected_joint_body_reproduced": true,
+  "pattern_candidate_software_validation": "generated-pattern-four-001/software-validation.json",
+  "pattern_candidate_hardware_verified": false,
+  "next_device_test": "edited-pattern-001/experiment.json"
+}

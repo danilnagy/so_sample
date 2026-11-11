@@ -1,0 +1,54 @@
+{
+  "codec_version": "po33-crc-additive-0.1",
+  "frame_start_byte": 4095,
+  "frame_end_byte": 89396,
+  "required_complete_label_span": [
+    0,
+    178795
+  ],
+  "packet_count": 511,
+  "all_packet_checksums_valid": true,
+  "encoded_body_sha256": "16f805b339192fbc3810dceb77a0c420e8ef5487ce92fea92aaa94a98e7bafc1",
+  "tags": {
+    "0x985b": 1,
+    "0x7d5c": 2,
+    "0xa041": 16,
+    "0xc498": 80,
+    "0x68b5": 136,
+    "0xef78": 275,
+    "0x826f": 1
+  },
+  "sounds": [
+    {
+      "sound_id": 0,
+      "packet_count": 272,
+      "payload_bytes": 65545,
+      "header_hex": "00000000c0fc000000",
+      "payload_sha256": "5c65632d53a6765debb50d8452663f52629e365bcbb0ea70be50c8d222b4dab3"
+    },
+    {
+      "sound_id": 1,
+      "packet_count": 1,
+      "payload_bytes": 9,
+      "header_hex": "00000000c0fc000000",
+      "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+    },
+    {
+      "sound_id": 2,
+      "packet_count": 1,
+      "payload_bytes": 9,
+      "header_hex": "00000000c0fc000000",
+      "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+    },
+    {
+      "sound_id": 7,
+      "packet_count": 1,
+      "payload_bytes": 9,
+      "header_hex": "00000000c0fc000000",
+      "payload_sha256": "9bce868e80a5bde5d357b6feb70a78b4636e0380c1140cd62271463e20792cb8"
+    }
+  ],
+  "source_sha256": "cbcec520586e91ba48b46b4e05fbca58b6b6eaf392974a592ef6a8b7641da7ee",
+  "artifact_sha256": "5f667fa7ba94e491f243a00ec09fe119d54f708dd81aad289d3952ba48109cab",
+  "exact_body_reencode": true
+}

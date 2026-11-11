@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "experiments\\baseline-001\\capture.wav",
+  "source_sha256": "6312a96c924ff3414b51584a1e86a2a950860b168d03cab9d735b2ed1d370370",
+  "sample_rate_hz": 44100,
+  "pcm_subtype": "PCM_16",
+  "frames": 11316060,
+  "duration_seconds": 256.6,
+  "channel_count": 2,
+  "channels": {
+    "left": {
+      "peak_amplitude": 0.533660888671875,
+      "rms": 0.2912577276277672,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    },
+    "right": {
+      "peak_amplitude": 0.509002685546875,
+      "rms": 0.27787773412648786,
+      "possible_clipping": false,
+      "near_full_scale_samples": 0
+    }
+  },
+  "channel_similarity": {
+    "identical": false,
+    "correlation": 0.00016381754716947688,
+    "difference_rms": 0.4025178030221259
+  },
+  "clipping_note": "Near-full-scale samples indicate possible clipping, not proof."
+}

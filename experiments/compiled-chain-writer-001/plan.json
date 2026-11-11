@@ -1,0 +1,16 @@
+{
+  "schema": "po33.edit-plan",
+  "schema_version": 1,
+  "source_artifact_sha256": "035b2666bacae4b1fcba6867e6f283a1c38f9acb0d25e62e427724e5d7698dd2",
+  "source_body_sha256": "c2bdb50dfb72666745d3427214028a28f07771a17498e8d90764f024fd5313a6",
+  "operations": [
+    {
+      "operation": "set_pattern_chain",
+      "patterns": [
+        5,
+        1,
+        1
+      ]
+    }
+  ]
+}

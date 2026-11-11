@@ -1,0 +1,412 @@
+{
+  "analysis_version": "bounded-frame-crcs-0.1",
+  "artifact": "experiments\\event-006-b-tone\\derived\\analysis-001\\capture.symbols.npz",
+  "artifact_sha256": "7170da4e681752679542c83d4a8bba5d24e34e6a0853ec4624fe13744dbb85e3",
+  "source_sha256": "dfcd59dfa2ae04973f49090b0997e7f1508aaf62e18a9293362240ad397e54f7",
+  "training_region_start_values": 1179200,
+  "selection": "Post-observation; candidate 520-value structure, not verified framing",
+  "crc16_comparisons": 798720,
+  "crc32_comparisons": 4792320,
+  "hits": [
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "raw_labels",
+      "channel": "right",
+      "symbol_offset": 2,
+      "label_permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "candidate": {
+        "byte_offset": 92,
+        "initial": 65535,
+        "final_xor": 65535,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_phase",
+      "channel": "right",
+      "symbol_offset": 0,
+      "label_permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "candidate": {
+        "byte_offset": 111,
+        "initial": 65535,
+        "final_xor": 0,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_phase",
+      "channel": "right",
+      "symbol_offset": 2,
+      "label_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "candidate": {
+        "byte_offset": 121,
+        "initial": 65535,
+        "final_xor": 0,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_phase",
+      "channel": "right",
+      "symbol_offset": 2,
+      "label_permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "candidate": {
+        "byte_offset": 2,
+        "initial": 0,
+        "final_xor": 65535,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_phase",
+      "channel": "right",
+      "symbol_offset": 2,
+      "label_permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "candidate": {
+        "byte_offset": 124,
+        "initial": 0,
+        "final_xor": 0,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_phase",
+      "channel": "left",
+      "symbol_offset": 3,
+      "label_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "candidate": {
+        "byte_offset": 98,
+        "initial": 65535,
+        "final_xor": 0,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "left",
+      "symbol_offset": 0,
+      "label_permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "candidate": {
+        "byte_offset": 52,
+        "initial": 0,
+        "final_xor": 0,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "left",
+      "symbol_offset": 0,
+      "label_permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "candidate": {
+        "byte_offset": 26,
+        "initial": 65535,
+        "final_xor": 65535,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 0,
+      "label_permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "candidate": {
+        "byte_offset": 119,
+        "initial": 0,
+        "final_xor": 65535,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 0,
+      "label_permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "candidate": {
+        "byte_offset": 73,
+        "initial": 65535,
+        "final_xor": 65535,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 1,
+      "label_permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "candidate": {
+        "byte_offset": 3,
+        "initial": 0,
+        "final_xor": 0,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "left",
+      "symbol_offset": 3,
+      "label_permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "candidate": {
+        "byte_offset": 55,
+        "initial": 0,
+        "final_xor": 65535,
+        "endian": "little"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 3,
+      "label_permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "candidate": {
+        "byte_offset": 51,
+        "initial": 0,
+        "final_xor": 0,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 3,
+      "label_permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "candidate": {
+        "byte_offset": 36,
+        "initial": 0,
+        "final_xor": 0,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 3,
+      "label_permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "candidate": {
+        "byte_offset": 68,
+        "initial": 0,
+        "final_xor": 0,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_increments",
+      "channel": "right",
+      "symbol_offset": 3,
+      "label_permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "candidate": {
+        "byte_offset": 120,
+        "initial": 65535,
+        "final_xor": 0,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    },
+    {
+      "model": "per_channel_128bytes_crc16_ccitt",
+      "view": "staggered_coordinate_xor",
+      "channel": "left",
+      "symbol_offset": 3,
+      "label_permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "candidate": {
+        "byte_offset": 114,
+        "initial": 65535,
+        "final_xor": 65535,
+        "endian": "big"
+      },
+      "holdout_first_frame": 10,
+      "holdout_frames": 64,
+      "holdout_matching_checksums": 0,
+      "distinct_holdout_payloads": 64,
+      "all_holdout_frames_pass": false
+    }
+  ],
+  "payload_decoded": false,
+  "limits": [
+    "CRC16 polynomial 0x1021; initial 0/FFFF, final XOR 0/FFFF, both endiannesses.",
+    "CRC32 is Python zlib default ZIP-compatible CRC, both stored endiannesses.",
+    "First mapped label occupies low two bits; per-channel bytes interleave left then right.",
+    "No symbol-interleaved layout, reversed pair time order, other polynomials or header coverage tested.",
+    "Only real consecutive samples used, not artificial wrapping of a nonperiodic raw-phase ring.",
+    "Single-block hits require independent holdout; failure does not disprove all validation/coding."
+  ]
+}

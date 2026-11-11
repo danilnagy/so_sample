@@ -1,0 +1,46 @@
+{
+  "analysis_version": "pitch-law-confirm-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception (decoded via leading-label realignment, checksum validated) and registered settled per-step pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true,
+    "decoded_by_realignment": true
+  },
+  "classification": "semitone_per_code",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 1198.9882616626485,
+    "3": -1200.1402816568068,
+    "4": 598.6896443803846,
+    "5": -599.6932681579361,
+    "6": 898.8803824062466,
+    "7": -899.4482661322716,
+    "8": 298.188807413001,
+    "9": -300.09497085204083,
+    "10": 1099.017840402525,
+    "11": -1100.7543364503158,
+    "12": 798.3580275675306,
+    "13": -800.2929131988845,
+    "14": 498.11372983993795,
+    "15": -500.1052653630123,
+    "16": 97.61034174073043
+  },
+  "decision_sha256": "9052cc1c4837941d8508b93b8270a9a1746b66bac45548fb72816c77f998f397",
+  "harness_session": "hardware-session-002.json",
+  "harness_session_sha256": "b6db5640566c0992b6978878efdc0c30017c274d3ae5c7e4cd323b42168b1635",
+  "session_answers": [
+    {
+      "question": "Did the notes jump around in pitch? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "Sound3 with key 1 on Pattern 1; codes outside 1..25 are not tested"
+  ]
+}

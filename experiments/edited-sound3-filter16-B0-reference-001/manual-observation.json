@@ -1,0 +1,9 @@
+{
+  "user_report": "done, and confirmed it sounds like the pattern filtered",
+  "audible_pattern": "recognizable_filtered_pattern",
+  "requested_restore_backup_and_playback_completed_in_context": true,
+  "numeric_display_value": null,
+  "capture_sha256": "5c87d7837f7fea376ffeaa303a2ac3f71116de168f5afd9f00d709e2252a1027",
+  "playback_sha256": "f9a433e3bdf42e7411eb1e767936245894ebb7c342c8f3dd141c59bde3dcd067",
+  "interpretation": "Explicit filtered-pattern listening confirmation after requested B0 reference restore; no comparative resonance strength or remembered amplitude inferred"
+}

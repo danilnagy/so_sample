@@ -1,0 +1,51 @@
+{
+  "analysis_version": "drum-memory-observation-0.1",
+  "hardware_verified": true,
+  "verified_scope": "Exact native reception of 675840 sample codes (six kits plus melodic buffers) and registered Sound16 pitches",
+  "checks": {
+    "native_check_passed": true,
+    "capture_pin_matches": true,
+    "registration_pin_matches": true,
+    "playback_matches_results": true,
+    "decision_binds_results": true,
+    "export_checks_pass": true,
+    "session_target_exact": true
+  },
+  "classification": "sound16_key_k",
+  "measured_cents_by_step": {
+    "1": 0.0,
+    "2": 100.03440805703534,
+    "3": 200.0303843912736,
+    "4": 299.97118816879635,
+    "5": 399.98838608610123,
+    "6": 499.96122309712433,
+    "7": 599.9967632853429,
+    "8": 699.9817120468317,
+    "9": 799.9807551883907,
+    "10": 899.9807036373876,
+    "11": 1000.0222050742861,
+    "12": 1100.0464772485698,
+    "13": 1200.003001144047,
+    "14": 1300.0265390356242,
+    "15": 1399.9912961138562,
+    "16": 1499.999194538868
+  },
+  "absolute": {
+    "step1_cents_vs_hit1": -0.021757764948479197,
+    "stored_rate": true
+  },
+  "total_capacity_codes": 675840,
+  "decision_sha256": "3bc4caf376a1af8df2b5b4de96ac661d2d866a4273203b9192710b5fabd6058c",
+  "harness_session": "hardware-session-001.json",
+  "harness_session_sha256": "523802c0d8f309caf7ba5e2716d24155990f9973dce848864b02d6a6d4419298",
+  "session_answers": [
+    {
+      "question": "Did the restore finish without ERR, and the pattern play a rising run of 16 beeps? (Enter to skip)",
+      "answer": "yes"
+    }
+  ],
+  "limits": [
+    "One total, 675840 codes; the device limit itself is not located by this test",
+    "Only Sound16's kit is played; Sound13..15 are checked by exact reception"
+  ]
+}

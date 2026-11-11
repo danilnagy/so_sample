@@ -1,0 +1,38 @@
+{
+  "analysis_version": "unshared-deletion-and-plan-cycle-to-odd-page-workflow-audit-0.1",
+  "checks": {
+    "last_owner_removal_native_evidence_passes": true,
+    "current_source_capture_and_artifact_hashes_match": true,
+    "current_entire_body_matches_registration": true,
+    "cycle_compiler_passes_and_returns_current_body": true,
+    "cycle_wav_byte_exact_to_prior_accepted_restore": true,
+    "odd_page_candidate_passes_software_checks": true,
+    "odd_page_candidate_files_are_registered": true,
+    "odd_page_target_checks_pass_with_exact_capacity": true,
+    "odd_page_alternatives_are_not_conflated": true,
+    "software_reports_do_not_claim_hardware": true,
+    "candidate_registered_before_capture": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "unshared_native_evidence_sha256": "9a7e15b4060bf4d8b5a53d73f21348afa4ba11438e2b7d6db3697a52438aacb1",
+  "cycle_compile_report_sha256": "e15128d1c24c866bc4c0450d1380fe4bce44e2bcee66fca385ec969ecf3ca8c4",
+  "cycle_restore_sha256": "9fb25b37196de46a708a67b087fce34b931cba9f3067e86862b3cc9eab656fbb",
+  "odd_page_registration_sha256": "4678e6f474dbc6ae588a2439747c0257b6bcec3bedf76113df9d19886cd46435",
+  "validation": {
+    "targeted_tests": "26 passed in4.35s",
+    "full_suite": "604 passed in81.56s",
+    "ruff_check": "passed",
+    "ruff_format": "168 Python files formatted"
+  },
+  "unshared_deletion_capture_sample_rate_hz": 44100,
+  "unshared_deletion_capture_peak_per_channel": [
+    0.167083740234375,
+    0.161102294921875
+  ],
+  "unshared_deletion_capture_clipped_samples_per_channel": [
+    0,
+    0
+  ],
+  "next_required_user_action": "Restore odd-page Sound6 candidate, capture before audition, report receive acceptance, familiar Sound6 tone and unchanged other state"
+}

@@ -1,0 +1,303 @@
+{
+  "analysis_version": "fx-rules-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-fx-rules-001",
+  "source_artifact": "experiments/project-build-full-001/compiled/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "b14684504a283d4bffcad05d99c05ebc940d0841971bbc3b8ca10d45cb45b5d2",
+  "source_capture_sha256": "17e3849cd566cad8609fe65f6146c0ead86439bc26db10b712786697554b809a",
+  "sound": 8,
+  "key_hz": [
+    493.8833012561241,
+    523.2511306011974,
+    587.3295358348151,
+    622.2539674441618,
+    329.6275569128699,
+    369.9944227116344,
+    391.9954359817493,
+    440.0,
+    246.94165062806206,
+    261.6255653005987,
+    293.6647679174076,
+    311.1269837220809,
+    164.81377845643496,
+    184.9972113558172,
+    195.99771799087466,
+    220.0
+  ],
+  "holds": {
+    "1": [
+      14,
+      3,
+      16
+    ],
+    "2": [
+      14,
+      7,
+      16
+    ],
+    "3": [
+      14,
+      9,
+      16
+    ],
+    "4": [
+      14,
+      5,
+      12
+    ],
+    "5": [
+      13,
+      2,
+      16
+    ]
+  },
+  "control_pattern": 6,
+  "chain": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "predictions": {
+    "1": {
+      "loop_steps_before_hold": {
+        "3": 1,
+        "4": 2,
+        "5": 1,
+        "6": 2,
+        "7": 1,
+        "8": 2,
+        "9": 1,
+        "10": 2,
+        "11": 1,
+        "12": 2,
+        "13": 1,
+        "14": 2,
+        "15": 1,
+        "16": 2
+      },
+      "loop_power_of_two": {
+        "3": 1,
+        "4": 2,
+        "5": 1,
+        "6": 2,
+        "7": 1,
+        "8": 2,
+        "9": 1,
+        "10": 2,
+        "11": 1,
+        "12": 2,
+        "13": 1,
+        "14": 2,
+        "15": 1,
+        "16": 2
+      },
+      "restart_every_four": {
+        "3": 3,
+        "4": 4,
+        "5": 1,
+        "6": 2,
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 1,
+        "14": 2,
+        "15": 3,
+        "16": 4
+      }
+    },
+    "2": {
+      "loop_steps_before_hold": {
+        "7": 1,
+        "8": 2,
+        "9": 3,
+        "10": 4,
+        "11": 5,
+        "12": 6,
+        "13": 1,
+        "14": 2,
+        "15": 3,
+        "16": 4
+      },
+      "loop_power_of_two": {
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 1,
+        "14": 2,
+        "15": 3,
+        "16": 4
+      },
+      "restart_every_four": {
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 1,
+        "14": 2,
+        "15": 3,
+        "16": 4
+      }
+    },
+    "3": {
+      "loop_steps_before_hold": {
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 5,
+        "14": 6,
+        "15": 7,
+        "16": 8
+      },
+      "loop_power_of_two": {
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 5,
+        "14": 6,
+        "15": 7,
+        "16": 8
+      },
+      "restart_every_four": {
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4,
+        "13": 1,
+        "14": 2,
+        "15": 3,
+        "16": 4
+      }
+    },
+    "4": {
+      "loop_steps_before_hold": {
+        "5": 1,
+        "6": 2,
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4
+      },
+      "loop_power_of_two": {
+        "5": 1,
+        "6": 2,
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4
+      },
+      "restart_every_four": {
+        "5": 1,
+        "6": 2,
+        "7": 3,
+        "8": 4,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 4
+      }
+    },
+    "5": {
+      "previous_on_third": {
+        "2": 2,
+        "3": 2,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 6,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 10,
+        "12": 12,
+        "13": 13,
+        "14": 14,
+        "15": 14,
+        "16": 16
+      },
+      "two_earlier_on_third": {
+        "2": 2,
+        "3": 1,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 5,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 9,
+        "12": 12,
+        "13": 13,
+        "14": 14,
+        "15": 13,
+        "16": 16
+      },
+      "unchanged": {
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10,
+        "11": 11,
+        "12": 12,
+        "13": 13,
+        "14": 14,
+        "15": 15,
+        "16": 16
+      }
+    }
+  },
+  "plan_sha256": "b89eb5cdd47c1f1d49904e250d5f1deb1c683fbde14ae3a14489696fb1b367b5",
+  "expected_body_sha256": "c5fd20e2ee8bc579210370b3701e99d0032a38936c12d0f559e55e700e67861d",
+  "edited_artifact_sha256": "2fb4b6b21396b784c44e71b5629c4737e387ff349d2498c5d4c829f61607549f",
+  "restore_wav_sha256": "2fc97e18f444900e4602375770209615ffce1fcddf2a031006531b1c14dc8b5f",
+  "method_settings": {
+    "band_hz": [
+      150.0,
+      6000.0
+    ],
+    "envelope_window_seconds": 0.003,
+    "skip_seconds": 0.02,
+    "onset_fraction": 0.15,
+    "refractory_seconds": 0.025,
+    "fft_size": 32768,
+    "window_starts_ms": [
+      30.0,
+      100.0,
+      180.0
+    ],
+    "window_ms": 40.0,
+    "step_seconds": 0.25
+  },
+  "method_script_sha256": "809f937dbb21a505e996fb2c686ac6f695c65dc3b4cb421b77f80b1951e0a648",
+  "descriptor_method_script_sha256": "701039b3217f48c0c8dec7ad4ede0be844a043ce9217a7197eb37c3d273bcb06",
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "The control pattern plays key k on step k within 20 cents at 100 ms",
+    "A rule holds for an effect when its prediction matches the key at 100 ms on every held step of every pattern using that effect"
+  ],
+  "limits": [
+    "Tempo 60, one melodic tone; FX 14 hold starts 3, 5, 7 and 9 only"
+  ]
+}

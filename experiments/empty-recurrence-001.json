@@ -1,0 +1,243 @@
+{
+  "analysis_version": "empty-prefix-recurrence-0.1",
+  "artifact_sha256": "e5b57f9d2667fab1bba08d24d63ca3da691434f37ecb9b217e090aa0909b1527",
+  "source_sha256": "fcd6d5e6772440342c1d19eee3c3c0a3f3064541ed21b6dfcc6964aa2aec1309",
+  "window_start": 8500,
+  "phase_views": {
+    "left_raw": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 255,
+          "holdout_errors": 251,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 249,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "left_phase": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 254,
+          "holdout_errors": 252,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 255,
+          "holdout_errors": 260,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "left_increments": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 263,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 270,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "left_coordinate_xor": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 253,
+          "holdout_errors": 253,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 270,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "right_raw": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 272,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 264,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "right_phase": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 233,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 247,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "right_increments": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 242,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 241,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    },
+    "right_coordinate_xor": {
+      "probes": [
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 256,
+          "holdout_errors": 255,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        },
+        {
+          "training_bits": 512,
+          "holdout_bits": 512,
+          "fitted_degree": 257,
+          "holdout_errors": 241,
+          "small_degree_bound": 32,
+          "small_recurrence_supported": false,
+          "trivial_zero_difference": false,
+          "tap_lags": null
+        }
+      ],
+      "decimated_mappings": 1056,
+      "small_candidates": []
+    }
+  },
+  "prefix": {
+    "left": {
+      "search_window": [
+        100,
+        8000
+      ],
+      "max_period": 1024,
+      "smallest_exact_period_symbols": 512,
+      "first_period_break_symbol": 8185,
+      "interpretation": "Repetition evidence; not a verified pilot/payload boundary"
+    },
+    "right": {
+      "search_window": [
+        100,
+        8000
+      ],
+      "max_period": 1024,
+      "smallest_exact_period_symbols": 128,
+      "first_period_break_symbol": 8185,
+      "interpretation": "Repetition evidence; not a verified pilot/payload boundary"
+    }
+  },
+  "payload_decoded": false,
+  "limits": [
+    "UI-cleared memory is not an all-zero known state image.",
+    "Bounded recurrence probes do not exclude all coding or identify encryption."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "experiment_id": "event-006-b-tone",
+  "capture_status": "received_and_validated",
+  "expected_file": "capture.wav",
+  "baseline_id": "event-005-b-joint",
+  "baseline_artifact": "../event-005-b-joint/derived/analysis-002/capture.symbols.npz",
+  "baseline_source_sha256": "8ae9bae0ec743a18c0de55b482f8c7aecc9125f15c52b0c88a8b765a3cd78d2d",
+  "user_confirmed_empty_melodic_slot": 8,
+  "planned_sample_source": "../calibration-source-001/tone-375hz.wav",
+  "planned_sample_source_sha256": "e82e7e07cd0138fd56d801092392cba3252e45c1d4a89e0833f86b15cb395103",
+  "planned_actions": [
+    "Keep the two-kick Pattern 1 state and other controls unchanged",
+    "Connect computer output to PO-33 line input",
+    "Record ordinary 375 Hz calibration tone into empty melodic slot 8 using record plus key 8",
+    "Release recording buttons after tone ends; do not trim or tweak sample parameters",
+    "Return to Sound 9 slice 1 with write mode off and playback stopped",
+    "Record full stereo backup at the same validated reduced recording level"
+  ],
+  "actual_actions": [
+    "User reported full storage, retained a partial tone sample, and supplied the full backup requested. Exact button-level actions not separately provided."
+  ],
+  "actual_recorded_sample_duration": {
+    "seconds_approx": 1,
+    "source": "user_estimate",
+    "verified_from_audio": false
+  },
+  "recording_time_remaining": {
+    "source": "user_report",
+    "status": "storage_full",
+    "exact_seconds": null
+  },
+  "capture_source_sha256": "dfcd59dfa2ae04973f49090b0997e7f1508aaf62e18a9293362240ad397e54f7",
+  "decoder_threshold": 0.0063,
+  "fresh_A_skipped": true,
+  "A_return_requested": false,
+  "test_purpose": "Use a known periodic sample to investigate transport body repetition and sample placement",
+  "limits": [
+    "ADC clock and sample quantization can differ from the digital source",
+    "No internal sample rate, codec, state offset or exact transport period is assumed",
+    "If recording memory is unavailable, report that before altering other slots",
+    "Corrected joint capture is reused explicitly; no fresh A is invented"
+  ],
+  "validation_reports": {
+    "inspection": "inspection.json",
+    "decode": "derived/analysis-001/decode.json",
+    "independent_waveform": "../waveform-probes-007.json",
+    "structure": "../tone-structure-001.json",
+    "checksums": "../checksum-probes-001.json"
+  },
+  "pending_control": null,
+  "sample_playback": {
+    "status": "received_and_analyzed",
+    "path": "sample-playback.wav",
+    "sha256": "23994e265f0479c49215d5401cb25c425bed8765cc43ff0afbc6a81987991197",
+    "measured_audible_duration_seconds": 1.26,
+    "measured_playback_frequency_hz": 561.9461303801698,
+    "native_stored_duration_seconds": null,
+    "native_sample_rate_hz": null,
+    "pitch_difference_to_input_semitones": 7.00249489153912
+  },
+  "next_series": "empty-001; hardware reset/deletion not yet reported"
+}

@@ -1,0 +1,110 @@
+{
+  "analysis_version": "drum-notes-registration-0.1",
+  "hardware_verified": false,
+  "registered_before_new_native_and_playback_captures": true,
+  "experiment_id": "compiled-drum-notes-001",
+  "source_artifact": "experiments/observe-drum11-record-001/derived/analysis-001/capture.symbols.npz",
+  "source_artifact_sha256": "4b6294d7c117d05c600d1980c6ae80c35013f2602a784a6da3803058a8a94eb4",
+  "source_capture_sha256": "b3fe95e64af95536f9c439b6bfde0fb459cc35e8387b8b7665f058a05ee58338",
+  "burst_frequencies_hz": [
+    400.0,
+    436.2,
+    475.68,
+    518.74,
+    565.69,
+    616.88,
+    672.72,
+    733.6,
+    800.0,
+    872.41,
+    951.37,
+    1037.47,
+    1131.37,
+    1233.77,
+    1345.43,
+    1467.21
+  ],
+  "plan_sha256": "5e01933e3ab8270075a070bdf89e403a6e2961a086509e7fecc5aeb90c6e758c",
+  "compile_report_sha256": "7af42b0982bd547efb55e7b737669cbc36901fff05ace6de4e2d4a79b89da0f7",
+  "expected_body_sha256": "1afe6d6666487cd9a7ed0a31a056fa69007bb90c72378497865ddeb23f1a94be",
+  "edited_artifact_sha256": "ea0f85fb5b45997693d838bd2dde08229a8b4df6b9f2c04722f7d3c19bfe5e29",
+  "restore_wav_sha256": "e2808e832912c815ea2c0f74428df7865734917777f088ec2b183e276d7267d9",
+  "method_settings": {
+    "band_hz": [
+      200.0,
+      8000.0
+    ],
+    "search_hz": [
+      300.0,
+      7500.0
+    ],
+    "onset_fraction_of_peak": 0.15,
+    "envelope_window_seconds": 0.003,
+    "step_seconds": 0.25,
+    "steps_per_loop": 16,
+    "loops": 5,
+    "window_seconds": 0.02,
+    "window_starts_ms": [
+      15.0,
+      25.0,
+      35.0
+    ],
+    "min_window_level_of_peak": 0.05,
+    "fft_size": 32768,
+    "cents_tolerance": 20.0,
+    "min_agreeing_loops": 4
+  },
+  "method_script_sha256": "9c3011f1e7aee81297dcbafd79379844c7f31ace617dbdfe8c3bca5b0d0fbc4d",
+  "models_cents": {
+    "key_k_plays_slice_k": [
+      0.0,
+      150.0,
+      300.0,
+      450.0,
+      600.0,
+      750.0,
+      900.0,
+      1050.0,
+      1200.0,
+      1350.0,
+      1500.0,
+      1650.0,
+      1800.0,
+      1950.0,
+      2100.0,
+      2250.0
+    ],
+    "every_key_plays_slice_1": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "absolute_models_cents_vs_burst1": {
+    "stored_rate": 0.0,
+    "plus_7_semitones": 700.0
+  },
+  "decision": [
+    "The backup must equal the compiled target exactly",
+    "Pitches are measured with the frozen grid method 15-55 ms after each grid onset; cents relative to step 1",
+    "A model holds when all 16 steps are within 20 cents in the five-loop median and in at least 4 of 5 loops",
+    "Secondary: the step 1 median is compared with the 400 Hz first burst; a model holds within 20 cents"
+  ],
+  "limits": [
+    "One drum sound (Sound11) holding one device recording; other drum slots follow by the same layout but are not played here",
+    "All notes share one parameter set at pitch code 13; drum pitch and other parameters are not varied"
+  ]
+}

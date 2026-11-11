@@ -1,0 +1,24 @@
+{
+  "validation_id": "pattern-hardware-tools-validation-001",
+  "date_local": "2026-10-08",
+  "pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --basetemp .tools/pytest-pattern-recapture-001 -p no:cacheprovider",
+    "passed": 210,
+    "failed": 0,
+    "duration_seconds": 59.5,
+    "filesystem_profile": "Normal filesystem access for pytest temporary fixtures"
+  },
+  "ruff": {
+    "lint_passed": true,
+    "format_check_passed": true,
+    "python_files": 80
+  },
+  "hardware_validation": "edited-pattern-001/hardware-validation.json",
+  "capture_context": "edited-pattern-001/capture-context.json",
+  "pattern_candidate_hardware_verified": true,
+  "native_body_matches_generated_target": true,
+  "capture_recorded_after_pattern_playback": true,
+  "playback_induced_native_differences_observed": false,
+  "next_control": "event-008-b-melodic-key2/experiment.json",
+  "next_control_hypotheses": "melodic-key2-predictions-001.json"
+}

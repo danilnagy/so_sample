@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/ericlewis/libpo32",
+  "commit": "3b3a0a758ba452fc809027c5bafcc5e2d0931532",
+  "reviewed_scope": "CRC/additive whitening primitives and protocol documentation; related-device hypothesis only",
+  "license": "MIT, copyright2026 Eric Lewis",
+  "files": {
+    "LICENSE": "1aef5d2492620d876ec6c786d44595844fe7b6a4972ec0dc5b901a90786f0787",
+    "README.md": "8491c0c1b7d75ac896ee7684b4d9daf5aa82b6541545f488951be8646d4be06c",
+    "core/src/po32.c": "53297ba8822223fcf14d0e38d59a7d09d004587ccff1f685b466eede67a27d46",
+    "core/docs/PROTOCOL.md": "08a4704f1b441d4ab290af9ab9b857dc71d5f3e177c50ef62c755099ac9b4c1a"
+  },
+  "upstream_programs_executed": false,
+  "implementation": "Independent mathematical CRC-CCITT0x1021/addition expression; no upstream code copied into package",
+  "local_report": "related-whitening-probes-001.json",
+  "result": "No16-byte varied constant0/255 candidate validates across2304 streams; no PO-33 decoder established"
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_id": "event-026-b-delete-shared-sound6",
+  "capture_status": "validated_full_shared_owner_transfer_to_sound7",
+  "expected_file": "capture.wav",
+  "baseline_id": "edited-sound6-to7-copy-001",
+  "preregistration": "../shared-sound6-deletion-predictions-001.json",
+  "decoder_threshold": 0.0063,
+  "hardware_restore": {
+    "status": "not_applicable_physical_control",
+    "observations": []
+  },
+  "actual_actions": {
+    "user_report": "done",
+    "deviations_reported": false
+  },
+  "source_sha256": "85944505d73d4a6097800da7220bf34badec35633286e1a2771476b9479c9c7b",
+  "planned_actions": [
+    "Keep Pattern1 stopped/write off with both knobs and all other sounds/notes/settings unchanged",
+    "Select Sound6 using sound+key6, release both, then hold record and press sound to delete only that sound; retain Sound7",
+    "Return to Sound8/TONE stopped/write off and save a full dump here as capture.wav before audition/playback, with one second trailing silence at established reduced levels",
+    "After saving audition Sound6/key1 for an empty slot, Sound7/key1 for the retained lower1.3second tone, and Sound4/Sound5/Pattern1 unchanged; return to Sound8/TONE and report checks or deviations"
+  ],
+  "analysis": "derived/analysis-001",
+  "results": "../shared-sound6-deletion-results-001.json",
+  "native_evidence": "native-evidence-001.json",
+  "manual_observation": "manual-observation.json",
+  "project": "../exported-shared-sound6-deletion-001/project.json"
+}

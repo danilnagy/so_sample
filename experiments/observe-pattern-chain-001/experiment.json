@@ -1,0 +1,20 @@
+{
+  "experiment_id": "observe-pattern-chain-001",
+  "kind": "device_side_observation_after_restore",
+  "capture_status": "validated_chain_storage_entries_and_length",
+  "restore_file": "restore.wav",
+  "source_artifact": "../compiled-selected-pattern-001/edited.symbols.npz",
+  "registration": "../pattern-chain-registration-001.json",
+  "playback_seconds": 26,
+  "observation_questions": [
+    "How did you make the chain, and what did the screen show? (Enter to skip)",
+    "Did playback alternate between rising and falling runs? Which came first? (Enter to skip)"
+  ],
+  "hardware_restore": {
+    "status": "restored_known_state_before_device_action"
+  },
+  "analysis": "derived/analysis-001",
+  "result": "../pattern-chain-result-001.json",
+  "hardware_observation": "hardware-observation-001.json",
+  "project": "../exported-pattern-chain-001/project.json"
+}

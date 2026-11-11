@@ -1,0 +1,15 @@
+# Netlify builds the web app from web/ and publishes its static output; the bundled kits and
+# projects ship inside it. Headers for caching are in web/public/_headers.
+[build]
+  base = "web"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The guide is the same page: the app reads the path and shows the guide.
+[[redirects]]
+  from = "/guide"
+  to = "/index.html"
+  status = 200

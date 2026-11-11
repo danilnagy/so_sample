@@ -1,0 +1,31 @@
+{
+  "analysis_version": "second-owner-copy-to-overwrite-workflow-audit-0.1",
+  "copy_results_sha256": "11d607eb4165b4e5682164423c9bc4bfc1925aab65bf17119f3a6991710aa266",
+  "next_registration_sha256": "2afb1c7986d1026f0756ac8eab335fed14a3fb0257f86522f774b77336f9f80f",
+  "project": "exported-second-owner-copy-001/project.json",
+  "exported_content_files_checked": 31,
+  "checks": {
+    "all_copy_control_checks_and_reference_hypothesis_pass": true,
+    "duplicate_buffer_alternative_remains_false": true,
+    "three_fixed_profiles_recover_identical_complete_body": true,
+    "uploaded_file_and_canonical_copy_preserved": true,
+    "selected_artifact_matches": true,
+    "all_export_checks_and_content_hashes_match": true,
+    "source_project_copies_match": true,
+    "raw_project_body_matches": true,
+    "sample4_and5_previews_identical": true,
+    "next_baseline_identity_matches": true,
+    "next_baseline_has_expected_shared_reference": true,
+    "replacement_tone_hash_format_and_frequency_match": true,
+    "next_control_registered_before_capture": true,
+    "export_remains_software_only": true
+  },
+  "passed": true,
+  "hardware_verified": false,
+  "validation": {
+    "targeted_tests": "21 passed in 2.76s",
+    "ruff_check": "passed",
+    "ruff_format": "146 files formatted"
+  },
+  "next_required_user_action": "Record the longer1250Hz tone into Sound4, retain Sound5, capture before audition and compare both sounds afterward"
+}
